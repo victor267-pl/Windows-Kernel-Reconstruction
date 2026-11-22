@@ -24,4 +24,16 @@ out = {"files": [{"name": p.name, "bytes": p.stat().st_size} for p in files], "c
 target = Path("reconstrucao/extraidos/function_format_probe.json")
 target.parent.mkdir(parents=True, exist_ok=True)
 target.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print(json.dumps({"counts": counts, "samples": samples}, ensure_ascii=False, indent=2))
+sample_contexts = []
+for p in sorted(Path("dados").glob("AnalisarKernel_parte_*.txt")):
+    lines = p.read_text(encoding="utf-8", errors="replace").splitlines()
+    for i, line in enumerate(lines):
+        if re.match(r"^\\s*FUNÇÃO\\s*:", line, re.I):
+            sample_contexts.append({"file": p.name, "line": i + 1, "context": lines[i:min(i + 35, len(lines))]})
+            if len(sample_contexts) >= 12:
+                break
+    if len(sample_contexts) >= 12:
+        break
+out["sample_contexts"] = sample_contexts
+target.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+print(json.dumps({"counts": counts, "sample_contexts": sample_contexts}, ensure_ascii=False, indent=2))
