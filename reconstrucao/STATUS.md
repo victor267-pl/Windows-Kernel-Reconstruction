@@ -58,3 +58,14 @@ O GitHub recebeu as sete partes em `dados/`. A integracao atual retorna o conteu
 - `extraidos/COMPILER_DIAGNOSTICS.md` contém um diagnóstico GCC de sintaxe, não uma validação de build. Os quatro arquivos C falham nesse teste devido a declarações ausentes, tipos Ghidra não resolvidos e incompatibilidades do pseudocódigo.
 - O diagnóstico encontrou 3 nomes de tipos ausentes de forma recorrente e 71 identificadores não declarados distintos nos trechos examinados. As primeiras ocorrências incluem variáveis globais DAT_ e registradores/variáveis especiais do Ghidra.
 - Próxima etapa técnica: correlacionar os símbolos DAT_ e os tipos não resolvidos com o inventário de dados/PDB, reconstruir declarações com evidência e compilar unidades menores. Não adicionar declarações genéricas para mascarar erros sem determinar seus tipos.
+
+
+## Evidências de símbolos e protótipos C
+
+- Varredura dos sete dumps originais confirma milhares de referências textuais a símbolos globais Ghidra, incluindo `DAT_140e0a740` (4.201 ocorrências), `DAT_140fc7d20` (2.347), `DAT_140fc7b04` (890), `DAT_140fc7ab8` (869), `DAT_140fc9c40` (593), `DAT_140fc7a88` (560) e `DAT_140e07748` (390). As ocorrências disponíveis são usos em pseudocódigo; não bastam para atribuir tipo/valor global com segurança.
+- `SOURCE_SYMBOL_EVIDENCE.md` guarda amostras com arquivo e linha de origem.
+- Foram gerados **33.556 protótipos C** a partir de assinaturas limpas que coincidem com o rótulo da função Ghidra. 217 assinaturas com divergência de rótulo, 43 trechos com texto de corpo antes da primeira chave e dois nomes com assinaturas conflitantes foram excluídos do header de protótipos.
+- Header gerado: `include/ghidra_function_prototypes.h`. Os quatro arquivos C incluem esse header, reduzindo chamadas sem protótipo quando a assinatura local foi recuperada.
+- `FUNCTION_PROTOTYPES.md` documenta critérios e exclusões.
+- `COMPILER_ERROR_CONTEXTS.md` associa os primeiros erros do GCC às funções e linhas específicas, permitindo corrigir dependências sem declarar símbolos arbitrariamente.
+- Limitação: protótipos reproduzem assinaturas do Ghidra, não são validação ABI nem headers WDK. Variáveis globais `DAT_`, símbolos de registradores, tipos desconhecidos e helpers decompilador ainda exigem resolução específica.
