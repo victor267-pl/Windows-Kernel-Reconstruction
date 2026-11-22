@@ -43,25 +43,45 @@ def main():
   for line_no,line in enumerate(t.splitlines(),1):
       for m in re.finditer(r"\bDAT_([0-9A-Fa-f]{8,16})\b",line):
        v=int(m.group(1),16); counts[v]+=1; first.setdefault(v,{"file":f.name,"line":line_no})
- mapped=[]; sec_counts=Counter()
+ mapped=[]; sec_counts=Counter(); storage_counts=Counter()
  for v,n in counts.items():
-  r=v-base if v>=base else None; s=next((x for x in secs if r is not None and x["va"]<=r<x["va"]+max(x["vs"],x["rs"])),None)
+  r=v-base if v>=base else None
+  s=next((x for x in secs if r is not None and x["va"]<=r<x["va"]+max(x["vs"],x["rs"])),None)
   fo=off_rva(r) if r is not None else None
   state="outside_image" if s is None else ("mapped_to_file" if fo is not None else "virtual_only")
+  delta=(r-s["va"]) if s is not None else None
+  if s is None:
+   storage="outside_image"; preview=None; initial="unknown"
+  elif delta < s["rs"]:
+   storage="file_backed"; preview=d[fo:fo+16].hex() if fo is not None else None; initial="bytes_from_PE_file"
+  elif delta < s["vs"]:
+   storage="loader_zero_fill"; preview="00"*16; initial="zero_filled_by_PE_loader"
+  else:
+   storage="raw_padding_outside_virtual_size"; preview=None; initial="not_a_validated_loaded_global"
   if s: sec_counts[s["name"]]+=n
-  mapped.append({"va":hex(v),"rva":hex(r) if r is not None else None,"references":n,"section":s["name"] if s else None,"mapping":state,"file_offset":fo,"first_source":first[v]})
+  storage_counts[storage]+=n
+  mapped.append({"va":hex(v),"rva":hex(r) if r is not None else None,"references":n,
+   "section":s["name"] if s else None,"mapping":state,"storage_state":storage,
+   "file_offset":fo,"initial_state":initial,"raw_preview_16_bytes":preview,"first_source":first[v]})
  mapped.sort(key=lambda x:-x["references"])
- result={"file":str(EXE.relative_to(ROOT)),"bytes":len(d),"sha256":hashlib.sha256(d).hexdigest(),"machine":hex(machine),"pe32_plus":is64,"timestamp":timestamp,"image_base":hex(base),"entry_rva":hex(entry),"size_image":sizeimg,"sections":secs,"codeview":cvs,"dat_unique":len(counts),"dat_references":sum(counts.values()),"dat_section_references":dict(sec_counts),"dat_map":mapped}
+ result={"file":str(EXE.relative_to(ROOT)),"bytes":len(d),"sha256":hashlib.sha256(d).hexdigest(),"machine":hex(machine),"pe32_plus":is64,"timestamp":timestamp,"image_base":hex(base),"entry_rva":hex(entry),"size_image":sizeimg,"sections":secs,"codeview":cvs,"dat_unique":len(counts),"dat_references":sum(counts.values()),"dat_section_references":dict(sec_counts),"dat_storage_reference_counts":dict(storage_counts),"dat_map":mapped}
  OUT.mkdir(parents=True,exist_ok=True)
  (OUT/"ntoskrnl_pe_analysis.json").write_text(json.dumps(result,indent=2)+"\n")
  lines=["# Análise da imagem PE do ntoskrnl.exe","",f"- Bytes: {len(d)}",f"- SHA-256: {result['sha256']}",f"- Machine: {hex(machine)}",f"- ImageBase: {hex(base)}",f"- Entry RVA: {hex(entry)}",f"- Endereços DAT_ únicos: {len(counts)}",f"- Referências DAT_: {sum(counts.values())}","","## Identidade CodeView"]
  lines += [f"- GUID {x['guid']}; Age {x['age']}; PDB {x['pdb_path']}" for x in cvs] or ["- Nenhum RSDS encontrado."]
  lines += ["","## Seções","|Nome|RVA|VirtualSize|RawSize|","|---|---:|---:|---:|"]
  lines += [f"|{s['name']}|{hex(s['va'])}|{hex(s['vs'])}|{hex(s['rs'])}|" for s in secs]
+ lines += ["","## Estado físico dos endereços DAT_",
+ "Contagem por referências, não por símbolos. `loader_zero_fill` significa que o RVA está na cauda virtual da seção além dos bytes armazenados no arquivo; o loader PE fornece zeros nessa região.",
+ ]+[f"- {k}: {v}" for k,v in storage_counts.most_common()]
  lines += ["","## Referências DAT_ por seção"]+[f"- {k}: {v}" for k,v in sec_counts.most_common()]
  lines += ["","## 100 endereços DAT_ mais referenciados","|VA|RVA|Refs|Seção|Mapeamento|","|---|---|---:|---|---|"]
  lines += [f"|{x['va']}|{x['rva']}|{x['references']}|{x['section']}|{x['mapping']}|" for x in mapped[:100]]
- lines += ["","O mapeamento é estrutural: não atribui tipos, valores ou semântica aos DAT_."]
+ lines += ["","## Interpretação e limites",
+ "- `file_backed`: há bytes correspondentes no executável; o preview é evidência bruta, não um tipo C.",
+ "- `loader_zero_fill`: endereço dentro de VirtualSize, mas além de SizeOfRawData; a imagem carregada começa com zeros nessa região.",
+ "- `outside_image`: endereço não pertence a uma seção mapeada pelo PE.",
+ "- O mapeamento não atribui tipos, nomes semânticos ou layouts C aos DAT_."]
  (OUT/"NTOSKRNL_PE_ANALYSIS.md").write_text("\n".join(lines)+"\n")
  print(json.dumps({"bytes":len(d),"sha256":result["sha256"],"machine":hex(machine),"image_base":hex(base),"codeview":cvs,"dat_unique":len(counts),"dat_references":sum(counts.values()),"section_refs":dict(sec_counts)},indent=2))
 if __name__=="__main__": main()
