@@ -1,0 +1,32 @@
+name: Analyze Ghidra kernel data
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'dados/**'
+      - 'reconstrucao/scripts/analisar_dados.py'
+      - '.github/workflows/analyze-kernel-data.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Analyze existing TXT exports
+        run: python3 reconstrucao/scripts/analisar_dados.py
+      - name: Commit analysis outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração nos resultados."
+          else
+            git commit -m "Analisar dados do Ghidra e extrair evidencias das estruturas"
+            git push
+          fi
