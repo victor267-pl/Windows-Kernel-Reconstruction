@@ -6,6 +6,7 @@ on:
       - 'reconstrucao/scripts/diagnose_compilation.py'
       - 'reconstrucao/src/decompiled_*.c'
       - 'reconstrucao/include/ghidra_types.h'
+      - 'reconstrucao/include/ghidra_function_prototypes.h'
       - '.github/workflows/diagnose-reconstructed-c.yml'
 permissions:
   contents: write
