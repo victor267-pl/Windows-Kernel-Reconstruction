@@ -1,0 +1,319 @@
+# Cruzamento de nomes do PDB com funções decompiladas
+
+Cruzamento literal. Correspondência não prova equivalência semântica; ausência de correspondência não prova ausência de símbolo.
+
+- Nomes distintos nos dumps PDB: 69077
+- Labels Ghidra: 33818
+- Correspondências exatas: 3178
+- Nomes PDB sem label Ghidra exato: 65899
+- Labels Ghidra sem nome PDB exato: 30640
+- Nomes de tipos compostos detectados: 2134
+
+## Correspondências exatas (amostra até 300)
+
+- `AlpcCreateSecurityContext` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:591475
+- `AlpcGetHeaderSize` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:449956
+- `AlpcGetMessageAttribute` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:449931
+- `AlpcInitializeMessageAttribute` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:449950
+- `ArbAddAllocation` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:597234
+- `ArbCommitAllocation` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:597720
+- `BgkDisplayCharacter` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:135661
+- `BgkGetConsoleState` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:135717
+- `BgkGetCursorState` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:135737
+- `BgkSetCursor` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:135789
+- `CarCopyRuleViolationDetails` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198295
+- `CarCreateRuleViolationDetails` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198417
+- `CarDeleteRuleViolationDetails` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198457
+- `CarDeregisterRuleClassConfiguration` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198479
+- `CarDeregisterRuleOverride` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198523
+- `CarInitializeRuleViolationDetails` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198666
+- `CarQueryReportAction` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198791
+- `CarQueryReportActionForTriage` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198808
+- `CarRegisterDefaultRuleClassConfiguration` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198857
+- `CarRegisterRuleClassConfiguration` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198888
+- `CarRegisterRuleOverride` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:198959
+- `CarRegisterRuleOverrideAllContexts` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199020
+- `CarRegisterRuleOverridesAllContexts` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199087
+- `CarReportDifPluginRuleViolation` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199104
+- `CarSetCustomIdInRuleOverride` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199240
+- `CarSetCustomRuleIdRange` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199265
+- `CcAddDirtyPagesToExternalCache` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:551053
+- `CcAsyncCopyRead` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:200313
+- `CcCanIWrite` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:345476
+- `CcCoherencyFlushAndPurgeCache` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:346468
+- `CcCopyRead` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:573881
+- `CcCopyReadEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:461875
+- `CcCopyWrite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:340797
+- `CcCopyWriteEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:340807
+- `CcCopyWriteWontFlush` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:532569
+- `CcDeductDirtyPagesFromExternalCache` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:527745
+- `CcDeferWrite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67399
+- `CcErrorCallbackRoutine` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67457
+- `CcFastCopyRead` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:620869
+- `CcFastCopyWrite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67485
+- `CcFlushCache` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:498050
+- `CcFlushCacheToLsn` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:497250
+- `CcGetCachedDirtyPageCountForFile` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67737
+- `CcGetDirtyPages` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:151856
+- `CcGetFileObjectFromBcb` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:548370
+- `CcGetFileObjectFromSectionPtrs` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:537535
+- `CcGetFileObjectFromSectionPtrsRef` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:66142
+- `CcGetFlushedValidData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:345348
+- `CcGetLsnForFileObject` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67752
+- `CcGetNumberOfMappedPages` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:562095
+- `CcInitializeCacheMap` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:352377
+- `CcInitializeCacheMapEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:66166
+- `CcInitializeCacheMapEx2` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:352387
+- `CcIsCacheManagerCallbackNeeded` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:445698
+- `CcIsThereDirtyData` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:503014
+- `CcIsThereDirtyDataEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67794
+- `CcIsThereDirtyLoggedPages` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:459775
+- `CcMapData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:400178
+- `CcMdlRead` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:656989
+- `CcMdlReadComplete` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:552600
+- `CcMdlWriteAbort` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67950
+- `CcMdlWriteComplete` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:609793
+- `CcPinMappedData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:461058
+- `CcPinRead` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:591226
+- `CcPrepareMdlWrite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:515639
+- `CcPreparePinWrite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:555270
+- `CcPurgeCacheSection` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:344150
+- `CcRegisterExternalCache` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:66943
+- `CcRemapBcb` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:395319
+- `CcRepinBcb` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:529050
+- `CcScheduleReadAhead` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67596
+- `CcScheduleReadAheadEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:342273
+- `CcSetAdditionalCacheAttributes` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:526493
+- `CcSetAdditionalCacheAttributesEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:526436
+- `CcSetBcbOwnerPointer` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:598994
+- `CcSetDirtyPageThreshold` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:66195
+- `CcSetDirtyPinnedData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:201450
+- `CcSetFileSizes` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:346104
+- `CcSetFileSizesEx` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:346114
+- `CcSetLogHandleForFile` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67841
+- `CcSetLogHandleForFileEx` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:448797
+- `CcSetLoggedDataThreshold` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:558797
+- `CcSetParallelFlushFile` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:446193
+- `CcSetReadAheadGranularity` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:490943
+- `CcSetReadAheadGranularityEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:567739
+- `CcTestControl` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:601416
+- `CcUninitializeCacheMap` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:345843
+- `CcUnmapFileOffsetFromSystemCache` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:552100
+- `CcUnpinData` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_03.c:447403
+- `CcUnpinDataForThread` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:599013
+- `CcUnpinRepinnedBcb` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:520903
+- `CcUnregisterExternalCache` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67141
+- `CcWaitForCurrentLazyWriterActivity` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:67234
+- `CcZeroData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:346246
+- `CcZeroDataOnDisk` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:346950
+- `CmCallbackGetKeyObjectID` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:468902
+- `CmCallbackGetKeyObjectIDEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:234736
+- `CmCallbackReleaseKeyObjectIDEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:505885
+- `CmGetBoundTransaction` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:596725
+- `CmGetCallbackVersion` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:86534
+- `CmRegisterCallback` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:86568
+- `CmRegisterCallbackEx` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_03.c:648476
+- `CmRegisterMachineHiveLoadedNotification` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:86858
+- `CmSetCallbackObjectContext` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:255470
+- `CmUnRegisterCallback` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:86578
+- `CmUnregisterMachineHiveLoadedNotification` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:86864
+- `CsanRead16NoCheck` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:426346
+- `CsanRead64NoCheck` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:558442
+- `CsanRead8NoCheck` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:423605
+- `CsanReadNoCheck` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:107547
+- `CsanWrite16NoCheck` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:584267
+- `CsanWrite64NoCheck` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:602380
+- `CsanWrite8NoCheck` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:46099
+- `CsanWriteNoCheck` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:107556
+- `DbgBreakPoint` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:603586
+- `DbgBreakPointWithStatus` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:603611
+- `DbgCommandString` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:152514
+- `DbgLoadImageSymbols` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:535063
+- `DbgPrint` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:200467
+- `DbgPrintEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:200723
+- `DbgPrompt` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:152599
+- `DbgQueryDebugFilterState` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:152622
+- `DbgSetDebugFilterState` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:152632
+- `DbgSetDebugPrintCallback` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:601060
+- `DbgkLkmdRegisterCallback` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:599876
+- `DbgkLkmdUnregisterCallback` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:599922
+- `DbgkWerCaptureLiveKernelDump` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:6247
+- `DbgkWerCaptureLiveKernelDump2` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:6257
+- `DifEnumeratePluginData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:193426
+- `DifFindThreadContextData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199286
+- `DifGetPluginPerDriverData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199463
+- `DifObjTrkInsertItem` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199652
+- `DifObjTrkQeuryInvokeDeleteRange` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199745
+- `DifObjTrkRemoveItem` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199751
+- `DifPluginSimplePerfControl` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199484
+- `DifPopThreadContextData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199309
+- `DifPushThreadContextData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199343
+- `DifRegisterClassDriverPlugin` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:193025
+- `DifRegisterObjectTracking` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199821
+- `DifRegisterPlugin` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:200239
+- `DifUtilDbgPrint` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:199547
+- `EmClientQueryRuleState` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:90572
+- `EmClientRuleDeregisterNotification` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:600827
+- `EmClientRuleEvaluate` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:90632
+- `EmClientRuleRegisterNotification` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:600895
+- `EmProviderDeregister` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:601056
+- `EmProviderDeregisterEntry` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:601193
+- `EmProviderRegister` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:601227
+- `EmProviderRegisterEntry` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:601244
+- `EmpProviderRegister` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:14567
+- `EtwActivityIdControl` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:409740
+- `EtwEnableTrace` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:569700
+- `EtwEventEnabled` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:108432
+- `EtwProviderEnabled` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:326844
+- `EtwRegister` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:588865
+- `EtwRegisterClassicProvider` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:640127
+- `EtwSendTraceBuffer` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:240608
+- `EtwSetInformation` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:55585
+- `EtwTelemetryCoverageReport` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:463689
+- `EtwUnregister` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_03.c:592928
+- `EtwWrite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:407834
+- `EtwWriteEndScenario` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:568867
+- `EtwWriteEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:89909
+- `EtwWriteStartScenario` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:654654
+- `EtwWriteString` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:539982
+- `EtwWriteTransfer` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:407891
+- `EtwpDisableStackWalkApc` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:553087
+- `EtwpReenableStackWalkApc` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:555571
+- `ExAcquireAutoExpandPushLockExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:94858
+- `ExAcquireAutoExpandPushLockShared` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:176473
+- `ExAcquireCacheAwarePushLockExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:456135
+- `ExAcquireCacheAwarePushLockExclusiveEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:455194
+- `ExAcquireCacheAwarePushLockSharedEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:176437
+- `ExAcquireFastMutex` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:176126
+- `ExAcquireFastMutexUnsafe` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:379893
+- `ExAcquireFastResourceExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:329790
+- `ExAcquireFastResourceShared` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:177590
+- `ExAcquireFastResourceSharedStarveExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:329652
+- `ExAcquireFastResourceWithFlags` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:246535
+- `ExAcquirePushLockExclusiveEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:176539
+- `ExAcquirePushLockSharedEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:176977
+- `ExAcquireResourceExclusiveLite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:180624
+- `ExAcquireResourceSharedLite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:178240
+- `ExAcquireRundownProtection` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:99994
+- `ExAcquireRundownProtectionCacheAware` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:64768
+- `ExAcquireRundownProtectionCacheAwareEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:397323
+- `ExAcquireRundownProtectionEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:407422
+- `ExAcquireSharedStarveExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:329594
+- `ExAcquireSharedWaitForExclusive` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:356068
+- `ExAcquireSpinLockExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:71895
+- `ExAcquireSpinLockExclusiveAtDpcLevel` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:72291
+- `ExAcquireSpinLockShared` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:75719
+- `ExAcquireSpinLockSharedAtDpcLevel` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:72254
+- `ExAllocateAutoExpandPushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:246368
+- `ExAllocateCacheAwarePushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:557118
+- `ExAllocateCacheAwareRundownProtection` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:446198
+- `ExAllocateFromLookasideListEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:353056
+- `ExAllocateFromNPagedLookasideList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:96827
+- `ExAllocateFromPagedLookasideList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:383958
+- `ExAllocatePool` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:420171
+- `ExAllocatePool2` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:97116
+- `ExAllocatePool3` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:98606
+- `ExAllocatePoolWithQuota` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:244606
+- `ExAllocatePoolWithQuotaTag` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:514636
+- `ExAllocatePoolWithTag` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:97061
+- `ExAllocatePoolWithTagPriority` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:433543
+- `ExAllocateTimer` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:251166
+- `ExBlockOnAddressPushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:148482
+- `ExBlockPushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:509885
+- `ExCancelDpcEventWait` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247460
+- `ExCancelTimer` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:248691
+- `ExCleanupAutoExpandPushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:436005
+- `ExConvertExclusiveToSharedLite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:102685
+- `ExConvertFastResourceExclusiveToShared` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:400452
+- `ExConvertPushLockExclusiveToShared` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:600074
+- `ExCreateCallback` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:601266
+- `ExCreateDpcEvent` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247470
+- `ExCreatePool` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:244635
+- `ExDeleteDpcEvent` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247514
+- `ExDeleteFastResource` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:352171
+- `ExDeleteLookasideListEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:494590
+- `ExDeleteNPagedLookasideList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:494564
+- `ExDeletePagedLookasideList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:494553
+- `ExDeleteResourceLite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:344845
+- `ExDeleteTimer` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:247859
+- `ExDestroyPool` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:244722
+- `ExDisableResourceBoostLite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:410581
+- `ExDisownFastResource` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:524052
+- `ExEnterCriticalRegionAndAcquireFastMutexUnsafe` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:379881
+- `ExEnterCriticalRegionAndAcquireResourceExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:180612
+- `ExEnterCriticalRegionAndAcquireResourceShared` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:179468
+- `ExEnterCriticalRegionAndAcquireSharedWaitForExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:356056
+- `ExEnterPriorityRegionAndAcquireResourceExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247059
+- `ExEnterPriorityRegionAndAcquireResourceShared` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:179615
+- `ExEnumHandleTable` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:251433
+- `ExEnumerateSystemFirmwareTables` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:63563
+- `ExExtendZone` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247552
+- `ExFlushLookasideListEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:494641
+- `ExFreeAutoExpandPushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:70969
+- `ExFreeCacheAwarePushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:602097
+- `ExFreeCacheAwareRundownProtection` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:506791
+- `ExFreeFfaInterface` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:576666
+- `ExFreePool` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:97456
+- `ExFreePool2` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:244745
+- `ExFreePoolWithTag` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:97466
+- `ExFreeToLookasideListEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:343942
+- `ExFreeToNPagedLookasideList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:96154
+- `ExFreeToPagedLookasideList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:339500
+- `ExGetCurrentProcessorCounts` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:521138
+- `ExGetCurrentProcessorCpuUsage` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:537589
+- `ExGetExclusiveWaiterCount` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:453701
+- `ExGetFfaInterface` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:627969
+- `ExGetFirmwareEnvironmentVariable` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:473085
+- `ExGetFirmwareType` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:601495
+- `ExGetLicenseTamperState` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:66851
+- `ExGetPreviousMode` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:446802
+- `ExGetPrmInterface` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:72042
+- `ExGetSharedWaiterCount` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:510774
+- `ExGetSystemFirmwareTable` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:63569
+- `ExInitializeAutoExpandPushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:443917
+- `ExInitializeDeviceAts` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247797
+- `ExInitializeFastOwnerEntry` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:402965
+- `ExInitializeFastResource` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:517074
+- `ExInitializeFastResource2` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:517084
+- `ExInitializeFastResourceAcquired` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:516957
+- `ExInitializeLookasideListEx` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:471758
+- `ExInitializeNPagedLookasideList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:471682
+- `ExInitializePagedLookasideList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:646050
+- `ExInitializePushLock` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:462546
+- `ExInitializeResourceLite` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:410641
+- `ExInitializeResourceLite2` — 1 label(s); PDB: {'globals.txt': 1, 'publics.txt': 1, 'symbols.txt': 1}; decompiled_01.c:410526
+- `ExInitializeRundownProtectionCacheAware` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:535979
+- `ExInitializeZone` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247582
+- `ExInterlockedAddLargeInteger` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:421902
+- `ExInterlockedAddUlong` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:421919
+- `ExInterlockedExtendZone` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247622
+- `ExInterlockedInsertHeadList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:422052
+- `ExInterlockedInsertTailList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:422085
+- `ExInterlockedPopEntryList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:248157
+- `ExInterlockedPushEntryList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:248175
+- `ExInterlockedRemoveHeadList` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:422143
+- `ExIsFastResourceContended` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:246753
+- `ExIsFastResourceHeld` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:389400
+- `ExIsFastResourceHeldExclusive` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:179437
+- `ExIsManufacturingModeEnabled` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_04.c:9574
+- `ExIsProcessorFeaturePresent` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:538551
+- `ExIsResourceAcquiredExclusiveLite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:391426
+- `ExIsResourceAcquiredSharedLite` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:42845
+- `ExIsSoftBoot` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:599948
+- `ExLocalTimeToSystemTime` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:510697
+- `ExMoveFastResourceOwnershipWithFlags` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:400504
+- `ExNotifyBootDeviceRemoval` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:246157
+- `ExNotifyCallback` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:237584
+- `ExQueryPoolBlockSize` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:245053
+- `ExQueryTimerResolution` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:536317
+- `ExQueryWnfStateData` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:553619
+- `ExQueueDpcEventWait` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_02.c:247525
+- `ExQueueWorkItem` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_01.c:158152
+- `ExRaiseAccessViolation` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:268852
+- `ExRaiseDatatypeMisalignment` — 1 label(s); PDB: {'publics.txt': 1}; decompiled_03.c:331145
+
+## Limites
+
+- Não associa automaticamente símbolos DAT_ a variáveis globais nomeadas.
+- Não infere endereços, tipos, tamanhos, valores iniciais ou semântica.
+- Os nomes de tipos são candidatos textuais e precisam de validação estrutural.
