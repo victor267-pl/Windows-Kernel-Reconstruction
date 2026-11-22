@@ -85,6 +85,9 @@ def main():
     publics = parse_publics((PDB/"publics.txt").read_text(encoding="utf-8", errors="replace"))
     source = parse_source_functions()
     source_labels = {x["label"] for values in source.values() for x in values}
+    prototype_text = (ROOT/"reconstrucao/include/ghidra_function_prototypes.h").read_text(encoding="utf-8", errors="replace")
+    declared_names = set(re.findall(r"\\b([A-Za-z_]\\w*)\\s*\\(", prototype_text))
+    section_va_matches = {x["section_number"]: x["matches"] for x in header_checks}
     by_address = defaultdict(list)
     stats = Counter()
     unresolved_segments = Counter()
@@ -106,6 +109,9 @@ def main():
             unresolved_segments[segment] += 1
             continue
         section = pe_sections[frame-1]
+        if not section_va_matches.get(frame, False):
+            stats["pdb_pe_section_header_mismatch"] += 1
+            continue
         if item["offset"] >= section["vs"]:
             stats["offset_outside_virtual_section"] += 1
             continue
@@ -119,6 +125,8 @@ def main():
             stats["mapped_executable_public_functions"] += 1
         else:
             stats["public_function_flag_in_non_executable_section"] += 1
+            by_address[va].pop()
+            stats["mapped_public_functions"] -= 1
 
     matches = []
     rename_candidates = []
@@ -132,7 +140,7 @@ def main():
         stats["source_functions_with_public_address_match"] += 1
         fun_labels = [x for x in labels if x["label"].startswith("FUN_")]
         valid = [n for n in unique_names if re.fullmatch(r"[A-Za-z_]\w*", n)]
-        if len(fun_labels) == 1 and len(valid) == 1 and len(unique_names) == 1 and valid[0] not in source_labels:
+        if len(fun_labels) == 1 and len(valid) == 1 and len(unique_names) == 1 and valid[0] not in source_labels and valid[0] not in declared_names:
             rename_candidates.append({"address": hex(va), "old": fun_labels[0]["label"],
                                       "new": valid[0], "file": fun_labels[0]["file"],
                                       "line": fun_labels[0]["line"],
@@ -152,7 +160,8 @@ def main():
         "unmapped_segment_examples": dict(unresolved_segments.most_common(30)),
         "source_address_matches": matches,
         "unique_safe_rename_candidates": rename_candidates,
-        "policy": "Address equality is required. A rename candidate must have exactly one public function name, one FUN_ source label, a valid C identifier, and no existing source-label collision. This script reports candidates only; it does not rewrite source."
+        "existing_prototype_names": len(declared_names),
+        "policy": "Address equality and matching PE/PDB section RVA are required. Only executable-section S_PUB32 functions are used. A rename candidate must have exactly one public name, one FUN_ source label, a valid C identifier, and no source-label or prototype-name collision. This script reports candidates only; it does not rewrite source."
     }
     (OUT/"pdb_public_address_reconciliation.json").write_text(json.dumps(result, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
     md = [
@@ -178,7 +187,8 @@ def main():
         md.append("- Nenhum candidato passou por todos os critérios.")
     md += ["", "## Limites", "",
            "- Os nomes vêm de registros públicos S_PUB32, não de símbolos privados de variáveis locais.",
-           "- Um endereço idêntico associa o ponto de entrada público à função decompilada, mas não recupera o corpo original.",
+           "- Um endereço idêntico em seção executável associa o ponto de entrada público à função decompilada, mas não recupera o corpo original.",
+           "- A seção `.reloc` apresenta divergência de RVA entre PDB e PE e foi excluída do cruzamento.",
            "- Este relatório não renomeia automaticamente funções nem infere protótipos.",
            ""]
     (OUT/"PDB_PUBLIC_ADDRESS_RECONCILIATION.md").write_text("\n".join(md), encoding="utf-8")
