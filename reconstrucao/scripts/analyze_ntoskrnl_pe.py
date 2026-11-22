@@ -37,12 +37,14 @@ def main():
     b=d[rp:rp+sz]
     if b[:4]==b"RSDS" and len(b)>=24:
      cvs.append({"guid":str(uuid.UUID(bytes_le=b[4:20])).upper(),"age":struct.unpack_from("<I",b,20)[0],"pdb_path":b[24:].split(b"\0")[0].decode("utf8","replace")})
- counts=Counter(); first={}
+ counts=Counter(); first={}; xor_stack_uses=Counter()
  for f in SRC.glob("decompiled_*.c"):
   t=f.read_text(encoding="utf8",errors="replace")
   for line_no,line in enumerate(t.splitlines(),1):
       for m in re.finditer(r"\bDAT_([0-9A-Fa-f]{8,16})\b",line):
        v=int(m.group(1),16); counts[v]+=1; first.setdefault(v,{"file":f.name,"line":line_no})
+       if re.search(re.escape(m.group(0))+r"\\s*\\^\\s*\\(ulonglong\\)\\s*auStack_",line):
+        xor_stack_uses[v]+=1
  mapped=[]; sec_counts=Counter(); storage_counts=Counter()
  for v,n in counts.items():
   r=v-base if v>=base else None
@@ -64,7 +66,18 @@ def main():
    "section":s["name"] if s else None,"mapping":state,"storage_state":storage,
    "file_offset":fo,"initial_state":initial,"raw_preview_16_bytes":preview,"first_source":first[v]})
  mapped.sort(key=lambda x:-x["references"])
- result={"file":str(EXE.relative_to(ROOT)),"bytes":len(d),"sha256":hashlib.sha256(d).hexdigest(),"machine":hex(machine),"pe32_plus":is64,"timestamp":timestamp,"image_base":hex(base),"entry_rva":hex(entry),"size_image":sizeimg,"sections":secs,"codeview":cvs,"dat_unique":len(counts),"dat_references":sum(counts.values()),"dat_section_references":dict(sec_counts),"dat_storage_reference_counts":dict(storage_counts),"dat_map":mapped}
+ semantic_candidates=[]
+ for item in mapped:
+  if item["storage_state"]=="file_backed" and item["file_offset"] is not None:
+   value=struct.unpack_from("<Q",d,item["file_offset"])[0]
+   va=int(item["va"],16)
+   if value==0x00002B992DDFA232 and xor_stack_uses[va]>=3:
+    semantic_candidates.append({"va":item["va"],"candidate":"__security_cookie",
+     "confidence":"high_candidate_not_PDB_symbol","raw_qword":hex(value),
+     "xor_with_stack_local_uses":xor_stack_uses[va],
+     "evidence":["The initial 64-bit value equals the documented default x64 MSVC security-cookie constant.",
+      "The decompiled source repeatedly XORs this global with stack-local addresses, matching stack-cookie prologue/epilogue behavior."]})
+ result={"file":str(EXE.relative_to(ROOT)),"bytes":len(d),"sha256":hashlib.sha256(d).hexdigest(),"machine":hex(machine),"pe32_plus":is64,"timestamp":timestamp,"image_base":hex(base),"entry_rva":hex(entry),"size_image":sizeimg,"sections":secs,"codeview":cvs,"dat_unique":len(counts),"dat_references":sum(counts.values()),"dat_section_references":dict(sec_counts),"dat_storage_reference_counts":dict(storage_counts),"semantic_candidates":semantic_candidates,"dat_map":mapped}
  OUT.mkdir(parents=True,exist_ok=True)
  (OUT/"ntoskrnl_pe_analysis.json").write_text(json.dumps(result,indent=2)+"\n")
  lines=["# Análise da imagem PE do ntoskrnl.exe","",f"- Bytes: {len(d)}",f"- SHA-256: {result['sha256']}",f"- Machine: {hex(machine)}",f"- ImageBase: {hex(base)}",f"- Entry RVA: {hex(entry)}",f"- Endereços DAT_ únicos: {len(counts)}",f"- Referências DAT_: {sum(counts.values())}","","## Identidade CodeView"]
@@ -79,6 +92,8 @@ def main():
   "|VA|RVA|Refs|Seção|Mapeamento|Armazenamento|16 bytes iniciais (hex)|",
   "|---|---|---:|---|---|---|---|"]
  lines += [f"|{x['va']}|{x['rva']}|{x['references']}|{x['section']}|{x['mapping']}|{x['storage_state']}|{x['raw_preview_16_bytes']}|" for x in mapped[:100]]
+ lines += ["","## Candidatos semânticos apoiados por evidência"]
+ lines += [f"- {x['va']}: provável `{x['candidate']}` (confiança alta, ainda não confirmado por símbolo PDB); valor bruto {x['raw_qword']}; usos XOR com variável local de stack: {x['xor_with_stack_local_uses']}." for x in semantic_candidates] or ["- Nenhum candidato passou pelos critérios."]
  lines += ["","## Interpretação e limites",
  "- `file_backed`: há bytes correspondentes no executável; o preview é evidência bruta, não um tipo C.",
  "- `loader_zero_fill`: endereço dentro de VirtualSize, mas além de SizeOfRawData; a imagem carregada começa com zeros nessa região.",
