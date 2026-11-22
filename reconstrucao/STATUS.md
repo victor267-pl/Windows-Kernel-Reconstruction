@@ -114,3 +114,11 @@ A afirmação de que os arquivos `.exe` e `.pdb` não estão no repositório est
 - Diagnóstico atual: **4/4 unidades C ainda falham**; **106 identificadores não declarados distintos**; classes registradas: 152 erros de identificador não declarado, 302 outros erros, 123 erros de sintaxe/estrutura esperada, 22 declarações implícitas e 3 tipos conflitantes. A contagem de erros pode mudar conforme correções permitem ao compilador avançar.
 - A geração conservadora atual examinou 33.823 definições e adicionou 11.811 declarações de encaminhamento sem aridade. Isso não comprova ABI nem linkedição.
 - **Não foi produzido um executável de kernel, não houve linkedição NT e não houve teste de boot em VM.** O objetivo de inicialização permanece não atingido.
+
+## Atualização adicional — globais e verificação isolada
+
+- Foram acrescentadas definições para `DAT_140fc7ad0` e `DAT_140f0cf28`: o primeiro é usado como `uint32_t *` (comparação com ponteiro nulo, desreferência e aritmética de ponteiro); o segundo é passado por endereço a `KeAcquireSpinLockRaiseToDpc`, compatível com a largura x64 de `KSPIN_LOCK`. Ambos estão no trecho zero-fill de `.data` e começam em zero.
+- As duas referências deixaram de constar como identificadores não declarados no diagnóstico atualizado. O total continua em 106 porque a compilação avança e expõe outros identificadores anteriormente ocultos pelo limite de diagnósticos.
+- O workflow `45053969654` revelou que a definição do ponteiro usava `NULL` sem incluir `<stddef.h>`; foi corrigido para inicializador C nulo `0`.
+- O workflow `45054019898` passou na etapa `gcc -std=gnu11 -Wall -Wextra -Werror -fsyntax-only` para `src/reconstructed_globals.c`. Isso valida somente esse arquivo de definições globais, não os quatro corpos decompilados nem o kernel completo.
+- Resultado geral permanece: 4/4 unidades de pseudocódigo C falham; zero tipos ausentes, 106 identificadores não declarados distintos e erros de sintaxe/tipos/funções ainda presentes. Sem linkedição NT ou teste de boot.
