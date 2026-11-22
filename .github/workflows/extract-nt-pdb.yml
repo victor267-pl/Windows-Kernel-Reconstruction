@@ -7,7 +7,7 @@ on:
       - 'reconstrucao/scripts/extract_nt_pdb.py'
       - '.github/workflows/extract-nt-pdb.yml'
 concurrency:
-  group: pdb-extraction-${{ github.ref }}
+  group: repo-main-writes-${{ github.ref }}
   cancel-in-progress: false
 permissions:
   contents: write
