@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Validate the NT kernel PDB and export machine-readable symbol evidence."""
+"""Validate the NT kernel PDB and export symbol/type evidence."""
 from pathlib import Path
-import re
 import os
 import shutil
 import subprocess
@@ -13,88 +12,87 @@ OUT = ROOT / "reconstrucao/extraidos/pdb"
 EXPECTED_GUID = "ce884f70-f5a9-025d-53db-35d8be8bff79"
 EXPECTED_AGE = "1"
 
-def run(tool, *args, output=None):
+def find_tool():
+    candidates = [
+        os.environ.get("LLVM_PDBUTIL"),
+        shutil.which("llvm-pdbutil"),
+        *[str(p) for p in sorted(Path("/usr/lib").glob("llvm-*/bin/llvm-pdbutil"), reverse=True)],
+        *[str(p) for p in sorted(Path("/usr/bin").glob("llvm-pdbutil-[0-9]*"), reverse=True)],
+    ]
+    for candidate in candidates:
+        if candidate and Path(candidate).is_file() and os.access(candidate, os.X_OK):
+            # Reject man pages and other non-ELF candidates.
+            try:
+                with open(candidate, "rb") as f:
+                    if f.read(4) == b"\x7fELF":
+                        return candidate
+            except OSError:
+                pass
+    raise SystemExit("Executável llvm-pdbutil não encontrado. Instale o pacote LLVM completo.")
+
+def run(tool, *args, output=None, allow_failure=False):
     cmd = [tool, "dump", *args, str(PDB)]
     proc = subprocess.run(cmd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-    if proc.returncode:
-        raise RuntimeError(f"Falha ({proc.returncode}) em {' '.join(cmd)}:\n{proc.stdout[-6000:]}")
     if output:
         (OUT / output).write_text(proc.stdout, encoding="utf-8")
-    return proc.stdout
+    if proc.returncode and not allow_failure:
+        raise RuntimeError(f"Falha ({proc.returncode}) em {' '.join(cmd)}:\n{proc.stdout[-6000:]}")
+    return proc.returncode, proc.stdout
 
 def main():
     if not PDB.is_file():
         raise SystemExit(f"PDB ausente: {PDB}")
-    tool = os.environ.get("LLVM_PDBUTIL") or shutil.which("llvm-pdbutil")
-    if not tool:
-        raise SystemExit("llvm-pdbutil não encontrado; instale o pacote LLVM.")
     OUT.mkdir(parents=True, exist_ok=True)
+    tool = find_tool()
+    version = subprocess.run([tool, "--version"], text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT).stdout.strip()
+    _, summary = run(tool, "-summary", output="summary.txt")
+    _, dbi = run(tool, "-dbi-stream", output="dbi-stream.txt", allow_failure=True)
 
-    summary = run(tool, "-summary", output="summary.txt")
+    import re
     guid_match = re.search(r"\bGuid\s*:\s*\{?([0-9A-Fa-f-]{36})\}?", summary, re.I)
-    if not guid_match:
-        raise SystemExit("GUID não encontrado no resumo do PDB. Consulte summary.txt.")
-
-    # The PDB Info Stream and DBI Stream carry separate Age fields. SymChk
-    # reports the DBI Age for image matching; do not mistake the Info Stream
-    # Age for it. Prefer an Age explicitly printed inside the DBI section.
-    dbi_section = re.search(
-        r"DBI Stream(.*?)(?:\n\S[^\n]*Stream|\Z)", summary, re.I | re.S
-    )
-    dbi_age_match = re.search(r"\bAge\s*:\s*(\d+)", dbi_section.group(1), re.I) if dbi_section else None
-    all_ages = re.findall(r"\bAge\s*:\s*(\d+)", summary, re.I)
-    if not dbi_age_match:
-        raise SystemExit(
-            "LLVM não expôs um campo Age identificável dentro da seção DBI Stream. "
-            f"Valores Age encontrados no resumo: {all_ages or 'nenhum'}. "
-            "A validação precisa distinguir Info Stream de DBI Stream; consulte summary.txt."
-        )
-
-    guid = guid_match.group(1).lower()
-    age = dbi_age_match.group(1)
-    if guid != EXPECTED_GUID or age != EXPECTED_AGE:
-        raise SystemExit(
-            f"PDB incompatível segundo os campos lidos: GUID={guid}, DBI Age={age}; "
-            f"esperado GUID={EXPECTED_GUID}, DBI Age={EXPECTED_AGE}. "
-            f"Todos os campos Age no resumo: {all_ages}"
-        )
-
-    commands = [
-        ("-types", "types.txt"),
-        ("-globals", "globals.txt"),
-        ("-publics", "publics.txt"),
-        ("-symbols", "symbols.txt"),
-    ]
-    counts = {}
-    for option, filename in commands:
-        content = run(tool, option, output=filename)
-        counts[filename] = len(content.splitlines())
+    info_age = re.search(r"\bAge\s*:\s*(\d+)", summary, re.I)
+    # DBI stream output exposes the DBI header Age independently of the PDB InfoStream Age.
+    dbi_age = re.search(r"\bAge\s*[:=]\s*(\d+)", dbi, re.I)
+    guid = guid_match.group(1).lower() if guid_match else "não encontrado"
+    info_age_value = info_age.group(1) if info_age else "não encontrado"
+    dbi_age_value = dbi_age.group(1) if dbi_age else "não encontrado"
 
     report = [
         "# Validação e extração do PDB do kernel",
         "",
-        "- Arquivo: `reconstrucao/entrada/ntkrnlmp.pdb`",
-        f"- Tamanho: {PDB.stat().st_size} bytes",
-        f"- GUID: `{guid}`",
-        f"- DBI Age: `{age}`",
-        f"- Valores Age apresentados no resumo: `{', '.join(all_ages) or 'nenhum'}`",
-        "- Compatibilidade com a identidade extraída de `ntoskrnl.exe`: **confirmada**",
-        "",
-        "## Dumps gerados",
+        f"- PDB: `reconstrucao/entrada/ntkrnlmp.pdb` ({PDB.stat().st_size} bytes)",
+        f"- Ferramenta: `{tool}` ({version})",
+        f"- GUID InfoStream: `{guid}`",
+        f"- Age InfoStream: `{info_age_value}`",
+        f"- Age DBI Stream: `{dbi_age_value}`",
+        "- SymChk da Microsoft: **PDB Matched=TRUE; DBI Age=1; Type Info=TRUE** (saída fornecida pelo usuário)",
         "",
     ]
-    for filename, lines in counts.items():
-        report.append(f"- `{filename}`: {lines} linhas")
+    if guid != EXPECTED_GUID or dbi_age_value != EXPECTED_AGE:
+        report += [
+            "**Extração interrompida:** a identidade ainda não foi confirmada pelos campos esperados.",
+            "Os arquivos `summary.txt` e `dbi-stream.txt` foram preservados para diagnóstico.",
+        ]
+        (ROOT / "reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md").write_text("\n".join(report) + "\n", encoding="utf-8")
+        raise SystemExit(f"Identidade não confirmada: GUID={guid}, Info Age={info_age_value}, DBI Age={dbi_age_value}")
+
+    counts = {}
+    for option, filename in [
+        ("-types", "types.txt"),
+        ("-globals", "globals.txt"),
+        ("-publics", "publics.txt"),
+        ("-symbols", "symbols.txt"),
+    ]:
+        _, output = run(tool, option, output=filename)
+        counts[filename] = len(output.splitlines())
+
+    report += ["## Dumps gerados", ""]
+    report += [f"- `{name}`: {count} linhas" for name, count in counts.items()]
     report += [
         "",
-        "A presença de tipos não implica que o PDB contenha símbolos globais ou públicos. "
-        "Consulte os respectivos dumps e as métricas do SymChk.",
-        "Os dumps completos são publicados como artefato do GitHub Actions. A extração não",
-        "equivale a reconstruir os corpos das funções nem comprova compilação ou boot.",
+        "A extração de tipos não implica reconstrução dos corpos das funções nem comprova compilação ou boot.",
     ]
-    (ROOT / "reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md").write_text(
-        "\n".join(report) + "\n", encoding="utf-8"
-    )
+    (ROOT / "reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md").write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
 
 if __name__ == "__main__":
