@@ -41,8 +41,8 @@ def main():
  for f in SRC.glob("decompiled_*.c"):
   t=f.read_text(encoding="utf8",errors="replace")
   for line_no,line in enumerate(t.splitlines(),1):
-  for m in re.finditer(r"\bDAT_([0-9A-Fa-f]{8,16})\b",line):
-   v=int(m.group(1),16); counts[v]+=1; first.setdefault(v,{"file":f.name,"line":line_no})
+      for m in re.finditer(r"\bDAT_([0-9A-Fa-f]{8,16})\b",line):
+       v=int(m.group(1),16); counts[v]+=1; first.setdefault(v,{"file":f.name,"line":line_no})
  mapped=[]; sec_counts=Counter()
  for v,n in counts.items():
   r=v-base if v>=base else None; s=next((x for x in secs if r is not None and x["va"]<=r<x["va"]+max(x["vs"],x["rs"])),None)
