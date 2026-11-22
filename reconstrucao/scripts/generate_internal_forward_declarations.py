@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate conservative forward declarations for extracted internal FUN_ functions.
+"""Generate conservative forward declarations for extracted internal extracted functions.
 
 Only the return type is copied from an actual extracted definition. The empty
 parameter list is intentional C old-style declaration syntax: it avoids
@@ -14,8 +14,8 @@ INC = Path("reconstrucao/include")
 OUT = Path("reconstrucao/extraidos")
 FILES = sorted(SRC.glob("decompiled_*.c"))
 KNOWN = {
-    "void","undefined1","undefined2","undefined4","undefined8","byte","ushort",
-    "uint","ulonglong","longlong","int","char","short","long","unsigned",
+    "void","undefined","undefined1","undefined2","undefined4","undefined7","undefined8","byte","ushort",
+    "uint","uint3","uint7","int7","unkint9","unkuint9","code","ulonglong","longlong","int","char","short","long","unsigned",
     "signed","int8_t","uint8_t","int16_t","uint16_t","int32_t","uint32_t",
     "int64_t","uint64_t","uintptr_t","intptr_t","bool","float","double",
     "size_t","ssize_t"
@@ -34,7 +34,7 @@ def main():
         markers = list(re.finditer(r"/\*\s*Ghidra label:\s*([^*]+?)\s*\*/", source))
         for i, marker in enumerate(markers):
             name = marker.group(1).strip()
-            if not re.fullmatch(r"FUN_[0-9A-Fa-f]+", name):
+            if not re.fullmatch(r"[A-Za-z_]\\w*", name):
                 continue
             scanned += 1
             end = markers[i+1].start() if i+1 < len(markers) else len(source)
@@ -54,6 +54,9 @@ def main():
                 rejects["label_signature_mismatch"] += 1
                 continue
             ret = sig[:match.start()].strip()
+            if re.search(r"\\bstatic\\b", ret):
+                rejects["static_function_not_exported"] += 1
+                continue
             ret = re.sub(r"\b(__fastcall|__cdecl|__stdcall|__thiscall|__usercall|__noreturn|static|extern|inline|const|volatile)\b", " ", ret)
             ret = re.sub(r"\s+", " ", ret).strip()
             if not ret or "*" not in ret and not re.fullmatch(r"[A-Za-z_]\w*(?:\s+[A-Za-z_]\w*)*", ret):
