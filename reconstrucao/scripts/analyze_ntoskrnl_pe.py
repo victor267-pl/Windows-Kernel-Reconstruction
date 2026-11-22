@@ -75,8 +75,10 @@ def main():
  "Contagem por referências, não por símbolos. `loader_zero_fill` significa que o RVA está na cauda virtual da seção além dos bytes armazenados no arquivo; o loader PE fornece zeros nessa região.",
  ]+[f"- {k}: {v}" for k,v in storage_counts.most_common()]
  lines += ["","## Referências DAT_ por seção"]+[f"- {k}: {v}" for k,v in sec_counts.most_common()]
- lines += ["","## 100 endereços DAT_ mais referenciados","|VA|RVA|Refs|Seção|Mapeamento|","|---|---|---:|---|---|"]
- lines += [f"|{x['va']}|{x['rva']}|{x['references']}|{x['section']}|{x['mapping']}|" for x in mapped[:100]]
+ lines += ["","## 100 endereços DAT_ mais referenciados",
+  "|VA|RVA|Refs|Seção|Mapeamento|Armazenamento|16 bytes iniciais (hex)|",
+  "|---|---|---:|---|---|---|---|"]
+ lines += [f"|{x['va']}|{x['rva']}|{x['references']}|{x['section']}|{x['mapping']}|{x['storage_state']}|{x['raw_preview_16_bytes']}|" for x in mapped[:100]]
  lines += ["","## Interpretação e limites",
  "- `file_backed`: há bytes correspondentes no executável; o preview é evidência bruta, não um tipo C.",
  "- `loader_zero_fill`: endereço dentro de VirtualSize, mas além de SizeOfRawData; a imagem carregada começa com zeros nessa região.",
