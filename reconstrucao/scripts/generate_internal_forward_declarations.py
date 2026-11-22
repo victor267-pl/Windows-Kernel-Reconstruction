@@ -20,7 +20,7 @@ KNOWN = {
     "int64_t","uint64_t","uintptr_t","intptr_t","bool","float","double",
     "size_t","ssize_t"
 }
-UNKNOWN = {"undefined","code","uint3","int7","unkint9","unkuint9","BADSPACEBASE"}
+UNKNOWN = {"BADSPACEBASE"}
 
 def main():
     existing = (INC / "ghidra_function_prototypes.h").read_text(encoding="utf-8", errors="replace")
