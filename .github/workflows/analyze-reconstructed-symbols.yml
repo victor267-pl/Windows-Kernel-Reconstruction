@@ -6,6 +6,9 @@ on:
       - 'reconstrucao/scripts/analyze_dependencies.py'
       - 'reconstrucao/src/decompiled_*.c'
       - '.github/workflows/analyze-reconstructed-symbols.yml'
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
