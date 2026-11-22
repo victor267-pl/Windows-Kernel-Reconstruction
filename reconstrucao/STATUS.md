@@ -80,3 +80,12 @@ O GitHub recebeu as sete partes em `dados/`. A integracao atual retorna o conteu
 - A validação GCC posterior não acusa mais erros dentro do cabeçalho de protótipos. Os quatro arquivos decompilados ainda falham na análise de sintaxe/semântica: permanecem globais `DAT_` sem declaração, variáveis especiais Ghidra (`FiberData`, `SystemReserved1`), tipos sem largura conhecida (`undefined`, `unkint9`, `code`), helpers Ghidra (`CONCAT71`, `LOCK`, `UNLOCK`) e funções WDK/importadas ou chamadas com assinaturas ainda não recuperadas.
 - O diagnóstico limita-se aos primeiros 120 erros por arquivo; não representa a contagem completa de erros. Não há ainda um build de kernel.
 - Arquivos de referência: `extraidos/prototype_arity_report.json`, `extraidos/PROTOTYPE_ARITY_AUDIT.md`, `extraidos/compiler_diagnostics.json` e `extraidos/COMPILER_ERROR_CONTEXTS.md`.
+
+
+## Blocos não extraídos — análise individual
+
+- O relatório `extraidos/REJECTED_FUNCTIONS.md` lista os **23** blocos que não viraram corpos C e informa o motivo e o TXT de origem.
+- 16 são marcados como `opening_brace_not_found`: o dump contém um rótulo, mas o parser não encontrou corpo de implementação. Não foram preenchidos com stubs nem confundidos com código recuperado.
+- 4 falharam em localizar a assinatura (`signature_not_found`).
+- 3 apresentam corpo sem balanceamento de chaves (`unbalanced_body`), exigindo inspeção manual do trecho original.
+- A extração foi reexecutada com sucesso e manteve o include do cabeçalho de protótipos auditados nos quatro arquivos C.
