@@ -126,3 +126,4 @@ md += ["","## Exemplos de incompatibilidade de argumentos",""]+[f"- {n}: esperad
 Path("reconstrucao/extraidos/FUNCTION_PROTOTYPES.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k!="arity_mismatch_examples"},indent=2))
 
+
