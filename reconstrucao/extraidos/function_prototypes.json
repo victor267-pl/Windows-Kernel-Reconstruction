@@ -1,23 +1,1446 @@
 {
   "source_files": 4,
   "clean_definitions_seen": 32290,
-  "unique_prototypes": 32281,
+  "unique_prototypes_before_arity_check": 32281,
+  "unique_prototypes": 20629,
   "conflicting_names_omitted": 2,
   "rejected_signatures": {
     "missing_return_type": 1093,
     "label_signature_mismatch": 217,
     "unresolved_type": 183,
-    "body_text_before_first_brace": 43
+    "body_text_before_first_brace": 43,
+    "call_arity_mismatch": 11652
   },
-  "conflicts": {
-    "write_char": [
-      "void write_char(byte param_1,longlong *param_2,int *param_3);",
-      "void write_char(wchar_t param_1,FILE *param_2,int *param_3);"
-    ],
-    "write_multi_char": [
-      "void write_multi_char(undefined1 param_1,int param_2,undefined8 param_3,int *param_4);",
-      "void write_multi_char(undefined2 param_1,int param_2,undefined8 param_3,int *param_4);"
-    ]
+  "arity_mismatch_examples": {
+    "FUN_140200008": {
+      "expected": 36,
+      "observed": [
+        2,
+        36
+      ]
+    },
+    "FUN_140200740": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140200820": {
+      "expected": 1,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140200950": {
+      "expected": 0,
+      "observed": [
+        1
+      ]
+    },
+    "FUN_140200e70": {
+      "expected": 0,
+      "observed": [
+        1
+      ]
+    },
+    "FUN_140200fc0": {
+      "expected": 0,
+      "observed": [
+        1
+      ]
+    },
+    "FUN_140200fd8": {
+      "expected": 3,
+      "observed": [
+        0,
+        3
+      ]
+    },
+    "FUN_140201918": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_1402023e8": {
+      "expected": 0,
+      "observed": [
+        1
+      ]
+    },
+    "KeRemoveProcessorAffinityEx": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140202530": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140202700": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "KeCheckProcessorAffinityEx": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140202870": {
+      "expected": 0,
+      "observed": [
+        1
+      ]
+    },
+    "KeIsEqualAffinityEx": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140202ce0": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140202e04": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140203720": {
+      "expected": 4,
+      "observed": [
+        0,
+        2,
+        4
+      ]
+    },
+    "FUN_140203934": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140203c94": {
+      "expected": 3,
+      "observed": [
+        1,
+        3
+      ]
+    },
+    "FUN_140203d50": {
+      "expected": 7,
+      "observed": [
+        0,
+        7
+      ]
+    },
+    "FUN_140203e40": {
+      "expected": 2,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140203e64": {
+      "expected": 7,
+      "observed": [
+        3,
+        7
+      ]
+    },
+    "FUN_140204374": {
+      "expected": 5,
+      "observed": [
+        0,
+        5
+      ]
+    },
+    "FUN_140204494": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_1402045a0": {
+      "expected": 3,
+      "observed": [
+        0,
+        3
+      ]
+    },
+    "FUN_1402047cc": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140204820": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_1402049ec": {
+      "expected": 2,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140204a70": {
+      "expected": 3,
+      "observed": [
+        0,
+        3
+      ]
+    },
+    "FUN_140204d7c": {
+      "expected": 5,
+      "observed": [
+        4,
+        5
+      ]
+    },
+    "FUN_140204dd4": {
+      "expected": 5,
+      "observed": [
+        0,
+        5
+      ]
+    },
+    "FUN_1402052b8": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140205528": {
+      "expected": 2,
+      "observed": [
+        2,
+        6
+      ]
+    },
+    "FUN_1402055c0": {
+      "expected": 6,
+      "observed": [
+        1,
+        6
+      ]
+    },
+    "FUN_140205f3c": {
+      "expected": 0,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "KeInvalidateRangeAllCaches": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140206024": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_1402061c0": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "KeInvalidateRangeAllCachesNoIpi": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "KeInvalidateAllCaches": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140206450": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_1402064e0": {
+      "expected": 5,
+      "observed": [
+        4,
+        5
+      ]
+    },
+    "FUN_140206630": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_14020674c": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140206b78": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140206ba8": {
+      "expected": 5,
+      "observed": [
+        1,
+        5
+      ]
+    },
+    "FUN_14020708c": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_1402072a4": {
+      "expected": 0,
+      "observed": [
+        1,
+        3
+      ]
+    },
+    "FUN_1402072f0": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140208094": {
+      "expected": 2,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140208890": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_1402088e0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "FUN_140209410": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140209d90": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_14020a0c8": {
+      "expected": 9,
+      "observed": [
+        2,
+        9
+      ]
+    },
+    "FUN_14020a600": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_14020a6b0": {
+      "expected": 4,
+      "observed": [
+        1,
+        3,
+        4
+      ]
+    },
+    "FUN_14020abb0": {
+      "expected": 4,
+      "observed": [
+        1,
+        4
+      ]
+    },
+    "FUN_14020ad20": {
+      "expected": 3,
+      "observed": [
+        1,
+        3
+      ]
+    },
+    "FUN_14020b460": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_14020bf14": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_14020bfa0": {
+      "expected": 3,
+      "observed": [
+        3,
+        5
+      ]
+    },
+    "FUN_14020c440": {
+      "expected": 3,
+      "observed": [
+        1,
+        2,
+        3
+      ]
+    },
+    "FUN_14020cb40": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14020cb70": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14020eaa0": {
+      "expected": 5,
+      "observed": [
+        1,
+        4,
+        5
+      ]
+    },
+    "FUN_14020f6a0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_1402102f0": {
+      "expected": 7,
+      "observed": [
+        3,
+        4,
+        7
+      ]
+    },
+    "FUN_140210bcc": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "HvlInvokeHypercall": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140211350": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_1402113a0": {
+      "expected": 4,
+      "observed": [
+        1,
+        4
+      ]
+    },
+    "FUN_1402117f0": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140211820": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140211e84": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_1402121d4": {
+      "expected": 3,
+      "observed": [
+        0,
+        3
+      ]
+    },
+    "FUN_140212530": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140213970": {
+      "expected": 3,
+      "observed": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "FUN_140213c20": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140213cf0": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140213d70": {
+      "expected": 3,
+      "observed": [
+        1,
+        3,
+        5
+      ]
+    },
+    "FUN_140214060": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140214540": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_1402145fc": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140214a50": {
+      "expected": 4,
+      "observed": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "FUN_140214d40": {
+      "expected": 5,
+      "observed": [
+        2,
+        5
+      ]
+    },
+    "FUN_1402153d0": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_1402169b0": {
+      "expected": 6,
+      "observed": [
+        4,
+        5,
+        6
+      ]
+    },
+    "FUN_1402174a0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140217540": {
+      "expected": 2,
+      "observed": [
+        0,
+        1,
+        2
+      ]
+    },
+    "FUN_140217590": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140217f44": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140218220": {
+      "expected": 5,
+      "observed": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    "FUN_1402197dc": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140219870": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_1402198b0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14021b0e8": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_14021b370": {
+      "expected": 8,
+      "observed": [
+        4,
+        8
+      ]
+    },
+    "FUN_14021b710": {
+      "expected": 2,
+      "observed": [
+        0,
+        1,
+        2
+      ]
+    },
+    "FUN_14021b744": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14021baa0": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_14021d200": {
+      "expected": 3,
+      "observed": [
+        1,
+        3
+      ]
+    },
+    "FUN_14021d570": {
+      "expected": 4,
+      "observed": [
+        2,
+        4
+      ]
+    },
+    "FUN_14021e780": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14021f850": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14021fafc": {
+      "expected": 2,
+      "observed": [
+        0,
+        1,
+        2
+      ]
+    },
+    "FUN_140220010": {
+      "expected": 3,
+      "observed": [
+        1,
+        3
+      ]
+    },
+    "FUN_14022014c": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_1402203d0": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_140220a00": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140220bd0": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140221390": {
+      "expected": 3,
+      "observed": [
+        0,
+        3
+      ]
+    },
+    "FUN_140221550": {
+      "expected": 3,
+      "observed": [
+        0,
+        3
+      ]
+    },
+    "FUN_140221810": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140222d1c": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140222e40": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140223bd8": {
+      "expected": 2,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140223ce0": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_1402242c4": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "MmMapIoSpaceEx": {
+      "expected": 3,
+      "observed": [
+        0,
+        1,
+        3
+      ]
+    },
+    "FUN_1402250b0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140225158": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140225afc": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_1402260b0": {
+      "expected": 9,
+      "observed": [
+        5,
+        9
+      ]
+    },
+    "FUN_1402265e0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1,
+        4
+      ]
+    },
+    "FUN_1402272c0": {
+      "expected": 3,
+      "observed": [
+        0,
+        3
+      ]
+    },
+    "FUN_1402279c0": {
+      "expected": 11,
+      "observed": [
+        0,
+        4,
+        11
+      ]
+    },
+    "FUN_140228af8": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140228b70": {
+      "expected": 5,
+      "observed": [
+        4,
+        5
+      ]
+    },
+    "FUN_14022b140": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_14022bad0": {
+      "expected": 4,
+      "observed": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    "FUN_14022c880": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14022da30": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14022efc0": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_14022f6f0": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_14022fa70": {
+      "expected": 4,
+      "observed": [
+        2,
+        4
+      ]
+    },
+    "FUN_14022ff90": {
+      "expected": 3,
+      "observed": [
+        0,
+        3
+      ]
+    },
+    "FUN_14023002c": {
+      "expected": 3,
+      "observed": [
+        0,
+        1,
+        3
+      ]
+    },
+    "FUN_1402310d0": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140231760": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140231c40": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140231d30": {
+      "expected": 2,
+      "observed": [
+        0,
+        1,
+        2
+      ]
+    },
+    "FUN_140231e80": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140234980": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140234b60": {
+      "expected": 1,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140234b90": {
+      "expected": 3,
+      "observed": [
+        3,
+        6
+      ]
+    },
+    "FUN_140235e30": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140235ef8": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140236930": {
+      "expected": 3,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_140237220": {
+      "expected": 5,
+      "observed": [
+        3,
+        5
+      ]
+    },
+    "FUN_140237ac0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140238f84": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14023c0e0": {
+      "expected": 5,
+      "observed": [
+        0,
+        3,
+        5
+      ]
+    },
+    "FUN_14023c420": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "KeSetEvent": {
+      "expected": 3,
+      "observed": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    "FUN_14023ddfc": {
+      "expected": 6,
+      "observed": [
+        4,
+        6
+      ]
+    },
+    "FUN_14023e1b0": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_14023eaf0": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "ExIsResourceAcquiredSharedLite": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_14023ee3c": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "KeReleaseInStackQueuedSpinLock": {
+      "expected": 1,
+      "observed": [
+        0,
+        1,
+        2
+      ]
+    },
+    "FUN_14023ffd0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1,
+        2
+      ]
+    },
+    "FUN_140240370": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_1402408b4": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140240af0": {
+      "expected": 0,
+      "observed": [
+        1
+      ]
+    },
+    "FUN_1402415c0": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_140241970": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140241be0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140243950": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140243a20": {
+      "expected": 5,
+      "observed": [
+        1,
+        3,
+        5
+      ]
+    },
+    "FUN_140244a70": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140244b10": {
+      "expected": 2,
+      "observed": [
+        0,
+        2
+      ]
+    },
+    "FUN_140245360": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140245d50": {
+      "expected": 2,
+      "observed": [
+        0,
+        1,
+        2
+      ]
+    },
+    "FUN_1402467d0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140246ad8": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140246d08": {
+      "expected": 5,
+      "observed": [
+        4,
+        5
+      ]
+    },
+    "FUN_140246ecc": {
+      "expected": 1,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140246fe0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "ExReleaseRundownProtection": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140247084": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140247110": {
+      "expected": 4,
+      "observed": [
+        3,
+        4
+      ]
+    },
+    "FUN_1402477a0": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_1402477f0": {
+      "expected": 0,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140248550": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_14024866c": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_140248710": {
+      "expected": 1,
+      "observed": [
+        0,
+        1
+      ]
+    },
+    "FUN_1402489c4": {
+      "expected": 3,
+      "observed": [
+        1,
+        3
+      ]
+    },
+    "FUN_1402491d8": {
+      "expected": 1,
+      "observed": [
+        0,
+        1,
+        2
+      ]
+    },
+    "FUN_140249244": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_140249730": {
+      "expected": 5,
+      "observed": [
+        4,
+        5
+      ]
+    },
+    "FUN_140249c80": {
+      "expected": 6,
+      "observed": [
+        4,
+        6
+      ]
+    },
+    "FUN_14024a924": {
+      "expected": 3,
+      "observed": [
+        2,
+        3
+      ]
+    },
+    "FUN_14024aaa0": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_14024aad0": {
+      "expected": 4,
+      "observed": [
+        2,
+        4
+      ]
+    },
+    "FUN_14024b100": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    "FUN_14024beb4": {
+      "expected": 3,
+      "observed": [
+        1,
+        3
+      ]
+    },
+    "FUN_14024c82c": {
+      "expected": 5,
+      "observed": [
+        4,
+        5
+      ]
+    },
+    "FUN_14024d8fc": {
+      "expected": 2,
+      "observed": [
+        1,
+        2
+      ]
+    }
   },
-  "header_sha256": "592324401293c01ebf6eaaa3bb427c6d0b0ad1e2b3f3130ad7cd73024f5789de"
+  "header_sha256": "8f13ad7a89d71b6377f33d422fdb5126d3e9eda19eeccb030765b2ff06c10f9b"
 }

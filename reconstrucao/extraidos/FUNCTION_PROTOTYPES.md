@@ -1,19 +1,120 @@
 # Protótipos de funções Ghidra
 
 - Assinaturas limpas examinadas: 32290
-- Protótipos únicos gerados: 32281
-- Nomes com assinaturas conflitantes omitidos: 2
+- Protótipos únicos antes da checagem de chamadas: 32281
+- Protótipos mantidos após checagem de aridade: 20629
+- Nomes com assinaturas conflitantes: 2
+- Funções excluídas por incompatibilidade no número de argumentos: 11652
 
-Somente assinaturas cujo nome coincide com o rótulo Ghidra foram incluídas. Protótipos reproduzem o pseudocódigo e não certificam a ABI original.
+Protótipos derivados do Ghidra. A aridade foi comparada com chamadas observadas nos quatro arquivos; tipos ainda precisam de validação semântica.
 
-## Assinaturas rejeitadas
+## Motivos de exclusão
 
 - missing_return_type: 1093
 - label_signature_mismatch: 217
 - unresolved_type: 183
 - body_text_before_first_brace: 43
+- call_arity_mismatch: 11652
 
-## Conflitos omitidos
+## Exemplos de incompatibilidade de argumentos
 
-- write_char: void write_char(byte param_1,longlong *param_2,int *param_3); | void write_char(wchar_t param_1,FILE *param_2,int *param_3);
-- write_multi_char: void write_multi_char(undefined1 param_1,int param_2,undefined8 param_3,int *param_4); | void write_multi_char(undefined2 param_1,int param_2,undefined8 param_3,int *param_4);
+- FUN_140200008: esperado 36; observado [2, 36]
+- FUN_140200740: esperado 1; observado [0, 1]
+- FUN_140200820: esperado 1; observado [1, 2]
+- FUN_140200950: esperado 0; observado [1]
+- FUN_140200e70: esperado 0; observado [1]
+- FUN_140200fc0: esperado 0; observado [1]
+- FUN_140200fd8: esperado 3; observado [0, 3]
+- FUN_140201918: esperado 2; observado [1, 2]
+- FUN_1402023e8: esperado 0; observado [1]
+- KeRemoveProcessorAffinityEx: esperado 2; observado [1, 2]
+- FUN_140202530: esperado 2; observado [0, 2]
+- FUN_140202700: esperado 0; observado [0, 1]
+- KeCheckProcessorAffinityEx: esperado 2; observado [1, 2]
+- FUN_140202870: esperado 0; observado [1]
+- KeIsEqualAffinityEx: esperado 2; observado [1, 2]
+- FUN_140202ce0: esperado 0; observado [0, 1]
+- FUN_140202e04: esperado 0; observado [0, 1]
+- FUN_140203720: esperado 4; observado [0, 2, 4]
+- FUN_140203934: esperado 2; observado [1, 2]
+- FUN_140203c94: esperado 3; observado [1, 3]
+- FUN_140203d50: esperado 7; observado [0, 7]
+- FUN_140203e40: esperado 2; observado [2, 3]
+- FUN_140203e64: esperado 7; observado [3, 7]
+- FUN_140204374: esperado 5; observado [0, 5]
+- FUN_140204494: esperado 2; observado [0, 2]
+- FUN_1402045a0: esperado 3; observado [0, 3]
+- FUN_1402047cc: esperado 2; observado [1, 2]
+- FUN_140204820: esperado 2; observado [0, 2]
+- FUN_1402049ec: esperado 2; observado [2, 3]
+- FUN_140204a70: esperado 3; observado [0, 3]
+- FUN_140204d7c: esperado 5; observado [4, 5]
+- FUN_140204dd4: esperado 5; observado [0, 5]
+- FUN_1402052b8: esperado 1; observado [0, 1]
+- FUN_140205528: esperado 2; observado [2, 6]
+- FUN_1402055c0: esperado 6; observado [1, 6]
+- FUN_140205f3c: esperado 0; observado [1, 2]
+- KeInvalidateRangeAllCaches: esperado 2; observado [0, 2]
+- FUN_140206024: esperado 4; observado [3, 4]
+- FUN_1402061c0: esperado 0; observado [0, 1]
+- KeInvalidateRangeAllCachesNoIpi: esperado 2; observado [0, 2]
+- KeInvalidateAllCaches: esperado 0; observado [0, 1]
+- FUN_140206450: esperado 0; observado [0, 1]
+- FUN_1402064e0: esperado 5; observado [4, 5]
+- FUN_140206630: esperado 4; observado [3, 4]
+- FUN_14020674c: esperado 0; observado [0, 1]
+- FUN_140206b78: esperado 1; observado [0, 1]
+- FUN_140206ba8: esperado 5; observado [1, 5]
+- FUN_14020708c: esperado 4; observado [3, 4]
+- FUN_1402072a4: esperado 0; observado [1, 3]
+- FUN_1402072f0: esperado 2; observado [0, 2]
+- FUN_140208094: esperado 2; observado [2, 3]
+- FUN_140208890: esperado 2; observado [1, 2]
+- FUN_1402088e0: esperado 1; observado [0, 1, 2, 3]
+- FUN_140209410: esperado 3; observado [2, 3]
+- FUN_140209d90: esperado 3; observado [2, 3]
+- FUN_14020a0c8: esperado 9; observado [2, 9]
+- FUN_14020a600: esperado 4; observado [3, 4]
+- FUN_14020a6b0: esperado 4; observado [1, 3, 4]
+- FUN_14020abb0: esperado 4; observado [1, 4]
+- FUN_14020ad20: esperado 3; observado [1, 3]
+- FUN_14020b460: esperado 2; observado [1, 2]
+- FUN_14020bf14: esperado 2; observado [1, 2]
+- FUN_14020bfa0: esperado 3; observado [3, 5]
+- FUN_14020c440: esperado 3; observado [1, 2, 3]
+- FUN_14020cb40: esperado 1; observado [0, 1]
+- FUN_14020cb70: esperado 0; observado [0, 1]
+- FUN_14020eaa0: esperado 5; observado [1, 4, 5]
+- FUN_14020f6a0: esperado 1; observado [0, 1]
+- FUN_1402102f0: esperado 7; observado [3, 4, 7]
+- FUN_140210bcc: esperado 1; observado [0, 1]
+- HvlInvokeHypercall: esperado 3; observado [2, 3]
+- FUN_140211350: esperado 0; observado [0, 1]
+- FUN_1402113a0: esperado 4; observado [1, 4]
+- FUN_1402117f0: esperado 2; observado [1, 2]
+- FUN_140211820: esperado 2; observado [0, 2]
+- FUN_140211e84: esperado 1; observado [0, 1]
+- FUN_1402121d4: esperado 3; observado [0, 3]
+- FUN_140212530: esperado 1; observado [0, 1]
+- FUN_140213970: esperado 3; observado [0, 1, 2, 3]
+- FUN_140213c20: esperado 2; observado [0, 2]
+- FUN_140213cf0: esperado 2; observado [0, 2]
+- FUN_140213d70: esperado 3; observado [1, 3, 5]
+- FUN_140214060: esperado 3; observado [2, 3]
+- FUN_140214540: esperado 1; observado [0, 1]
+- FUN_1402145fc: esperado 1; observado [0, 1]
+- FUN_140214a50: esperado 4; observado [0, 1, 2, 3, 4]
+- FUN_140214d40: esperado 5; observado [2, 5]
+- FUN_1402153d0: esperado 2; observado [0, 2]
+- FUN_1402169b0: esperado 6; observado [4, 5, 6]
+- FUN_1402174a0: esperado 1; observado [0, 1]
+- FUN_140217540: esperado 2; observado [0, 1, 2]
+- FUN_140217590: esperado 1; observado [0, 1]
+- FUN_140217f44: esperado 1; observado [0, 1]
+- FUN_140218220: esperado 5; observado [1, 3, 4, 5]
+- FUN_1402197dc: esperado 1; observado [0, 1]
+- FUN_140219870: esperado 1; observado [0, 1]
+- FUN_1402198b0: esperado 1; observado [0, 1]
+- FUN_14021b0e8: esperado 2; observado [1, 2]
+- FUN_14021b370: esperado 8; observado [4, 8]
+- FUN_14021b710: esperado 2; observado [0, 1, 2]
