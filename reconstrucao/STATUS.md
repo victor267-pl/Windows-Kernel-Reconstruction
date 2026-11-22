@@ -1,5 +1,14 @@
 # Reconstrucao — estado inicial
 
+## Análise automatizada concluída
+
+- Workflow `Analyze Ghidra kernel data` executado com sucesso em 2026-11-22.
+- Os sete TXT foram analisados; os resultados estão em `extraidos/`.
+- Ocorrências encontradas: `_EPROCESS` 165, `_ETHREAD` 117, `_KPROCESS` 59, `_KTHREAD` 240 e `_CONTEXT` 954.
+- Definições StructureDB identificadas: `_EPROCESS` 2112 bytes / 226 campos; `_ETHREAD` 1944 bytes / 76 campos; `_KPROCESS` 456 bytes / 53 campos; `_KTHREAD` 1216 bytes / 124 campos; `_CONTEXT` 1232 bytes / 46 campos.
+- Evidências e relações iniciais: `EVIDENCIAS_PRIORITARIAS.md`.
+- A análise automatizada não equivale à reconstrução dos headers; tipos aninhados, uniões, offsets e compilação ainda precisam ser validados.
+
 ## Artefato implementado
 
 - `include/client_id.h`: definicao C de `_CLIENT_ID` com dois campos de largura ponteiro.
