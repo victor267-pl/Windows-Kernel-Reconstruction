@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Integrate declaration header into extracted C units
         run: python3 reconstrucao/scripts/apply_global_declarations.py
+      - name: Compile reconstructed global definitions independently
+        run: gcc -std=gnu11 -Wall -Wextra -Werror -fsyntax-only -Ireconstrucao/include reconstrucao/src/reconstructed_globals.c
       - name: Re-run syntax diagnostics
         run: python3 reconstrucao/scripts/diagnose_compilation.py
       - name: Commit integration and diagnostics
