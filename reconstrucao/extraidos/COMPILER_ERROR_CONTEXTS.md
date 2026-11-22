@@ -2,536 +2,63 @@
 
 Cada erro está associado ao marcador de função Ghidra mais próximo. O contexto serve para reconstrução orientada por evidência.
 
-## FUN_140214060 */ — reconstrucao/src/decompiled_01.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:26: error: unknown type name ‘PCONTEXT’
+## FUN_140214060 */ — reconstrucao/src/decompiled_01.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:26: error: unknown type name ‘PCONTEXT’
 
-    15862:       FUN_1402f5950(puVar11 + 5,lVar9,puVar11 + 5);
-    15863:     }
-    15864:     if (lVar9 != 0) {
-    15865:       *(undefined1 *)(lVar9 + 10) = 1;
-    15866:     }
-    15867:     *(uint *)((longlong)pvVar6 + 0x5a8) = *(uint *)((longlong)pvVar6 + 0x5a8) | 0x80;
-    15868:     FUN_1402145fc(puVar11);
+    15869:     FUN_140214540(puVar11);
+    15870:     psVar3 = (short *)((longlong)pvVar6 + 0x1e6);
+    15871:     *psVar3 = *psVar3 + 1;
+    15872:     if ((*psVar3 == 0) &&
+    15873:        (*(longlong **)((longlong)pvVar6 + 0x98) != (longlong *)((longlong)pvVar6 + 0x98))) {
+    15874:       KiCheckForKernelApcDelivery();
+    15875:     }
 
-## FUN_140214060 */ — reconstrucao/src/decompiled_01.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:43: error: unknown type name ‘PCONTEXT’
+## FUN_140214060 */ — reconstrucao/src/decompiled_01.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:43: error: unknown type name ‘PCONTEXT’
 
-    15862:       FUN_1402f5950(puVar11 + 5,lVar9,puVar11 + 5);
-    15863:     }
-    15864:     if (lVar9 != 0) {
-    15865:       *(undefined1 *)(lVar9 + 10) = 1;
-    15866:     }
-    15867:     *(uint *)((longlong)pvVar6 + 0x5a8) = *(uint *)((longlong)pvVar6 + 0x5a8) | 0x80;
-    15868:     FUN_1402145fc(puVar11);
+    15869:     FUN_140214540(puVar11);
+    15870:     psVar3 = (short *)((longlong)pvVar6 + 0x1e6);
+    15871:     *psVar3 = *psVar3 + 1;
+    15872:     if ((*psVar3 == 0) &&
+    15873:        (*(longlong **)((longlong)pvVar6 + 0x98) != (longlong *)((longlong)pvVar6 + 0x98))) {
+    15874:       KiCheckForKernelApcDelivery();
+    15875:     }
 
-## FUN_140214060 */ — reconstrucao/src/decompiled_01.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:60: error: unknown type name ‘PCONTEXT’
+## FUN_140214060 */ — reconstrucao/src/decompiled_01.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:60: error: unknown type name ‘PCONTEXT’
 
-    15862:       FUN_1402f5950(puVar11 + 5,lVar9,puVar11 + 5);
-    15863:     }
-    15864:     if (lVar9 != 0) {
-    15865:       *(undefined1 *)(lVar9 + 10) = 1;
-    15866:     }
-    15867:     *(uint *)((longlong)pvVar6 + 0x5a8) = *(uint *)((longlong)pvVar6 + 0x5a8) | 0x80;
-    15868:     FUN_1402145fc(puVar11);
+    15869:     FUN_140214540(puVar11);
+    15870:     psVar3 = (short *)((longlong)pvVar6 + 0x1e6);
+    15871:     *psVar3 = *psVar3 + 1;
+    15872:     if ((*psVar3 == 0) &&
+    15873:        (*(longlong **)((longlong)pvVar6 + 0x98) != (longlong *)((longlong)pvVar6 + 0x98))) {
+    15874:       KiCheckForKernelApcDelivery();
+    15875:     }
 
-## FUN_140218c60 */ — reconstrucao/src/decompiled_01.c:18857
-reconstrucao/src/../include/ghidra_function_prototypes.h:18857:59: error: unknown type name ‘ULONGLONG’
+## FUN_14022c080 */ — reconstrucao/src/decompiled_01.c:31574
+reconstrucao/src/../include/ghidra_function_prototypes.h:31574:32: error: unknown type name ‘PCONTEXT’
 
-    18854:       return 1;
-    18855:     }
-    18856:     _DAT_140ef54b4 = _DAT_140ef54b4 + 1;
-    18857:     return 1;
-    18858:   }
-    18859:   if ((puVar10 < (undefined1 *)0xfffff68000000000) || ((undefined1 *)0xfffff6ffffffffff < puVar10))
-    18860:   {
-
-## FUN_14021e8b0 */ — reconstrucao/src/decompiled_01.c:22298
-reconstrucao/src/../include/ghidra_function_prototypes.h:22298:1: error: unknown type name ‘BADSPACEBASE’
-
-    22295: 
-    22296: {
-    22297:   ulonglong *puVar1;
-    22298:   longlong lVar2;
-    22299:   int iVar3;
-    22300:   ulonglong uVar4;
-    22301:   ulonglong uVar5;
-
-## FUN_1402249dc */ — reconstrucao/src/decompiled_01.c:26577
-reconstrucao/src/../include/ghidra_function_prototypes.h:26577:51: error: unknown type name ‘IMAGE_DOS_HEADER’
-
-    26574:         else {
-    26575:           uVar8 = lVar5 * 0x2000000 >> 0x10;
-    26576:           uStack_b8 = (ulonglong)uStack_c0 & 0xfffffff8;
-    26577:           lStack_b0 = uStack_c0 + uVar8;
-    26578:           param_2 = (uStack_c0 & 7) + param_2;
-    26579:           uVar9 = uVar11 * 0x1000 - uStack_b8;
-    26580:           uVar10 = uStack_c8 & 1;
-
-## FUN_1402287ec */ — reconstrucao/src/decompiled_01.c:29003
-reconstrucao/src/../include/ghidra_function_prototypes.h:29003:1: error: unknown type name ‘BADSPACEBASE’
-
-    29000: /* Ghidra label: FUN_1402287ec */
-    29001: /* Ghidra address: 1402287ec */
-    29002: void FUN_1402287ec(ulonglong *param_1)
-    29003: 
-    29004: {
-    29005:   ulonglong uVar1;
-    29006:   longlong lVar2;
-
-## FUN_14022b140 */ — reconstrucao/src/decompiled_01.c:30712
-reconstrucao/src/../include/ghidra_function_prototypes.h:30712:1: error: unknown type name ‘NTSTATUS’
-
-    30709:           }
-    30710:         }
-    30711:         puVar10 = (uint *)(*(longlong *)
-    30712:                             (*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x410) + 0x3ec);
-    30713:         if (((DAT_140fc7b04._2_1_ & 0x21) == 0) || (DAT_140f0e27c != 0)) {
-    30714:           uVar5 = *puVar10 & 0x7fffffff;
-    30715:           do {
-
-## FUN_14022b140 */ — reconstrucao/src/decompiled_01.c:30712
-reconstrucao/src/../include/ghidra_function_prototypes.h:30712:46: error: unknown type name ‘HANDLE’
-
-    30709:           }
-    30710:         }
-    30711:         puVar10 = (uint *)(*(longlong *)
-    30712:                             (*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x410) + 0x3ec);
-    30713:         if (((DAT_140fc7b04._2_1_ & 0x21) == 0) || (DAT_140f0e27c != 0)) {
-    30714:           uVar5 = *puVar10 & 0x7fffffff;
-    30715:           do {
-
-## FUN_14022b140 */ — reconstrucao/src/decompiled_01.c:30713
-reconstrucao/src/../include/ghidra_function_prototypes.h:30713:1: error: unknown type name ‘NTSTATUS’
-
-    30710:         }
-    30711:         puVar10 = (uint *)(*(longlong *)
-    30712:                             (*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x410) + 0x3ec);
-    30713:         if (((DAT_140fc7b04._2_1_ & 0x21) == 0) || (DAT_140f0e27c != 0)) {
-    30714:           uVar5 = *puVar10 & 0x7fffffff;
-    30715:           do {
-    30716:             uVar1 = uVar5 + 1;
-
-## FUN_14022c080 */ — reconstrucao/src/decompiled_01.c:31569
-reconstrucao/src/../include/ghidra_function_prototypes.h:31569:32: error: unknown type name ‘PCONTEXT’
-
-    31566:                 UNLOCK();
-    31567:                 if (-1 < (longlong)uVar6) break;
-    31568:                 do {
-    31569:                   uVar12 = uVar12 + 1;
-    31570:                   if ((((DAT_140fc62ac & uVar12) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
     31571:                      (cVar5 = FUN_14020cb70(), cVar5 != '\0')) {
     31572:                     FUN_14020cb40(uVar12);
+    31573:                   }
+    31574:                 } while (*(longlong *)(lVar7 + -0x21ffffffffe8) < 0);
+    31575:               }
+    31576:               if ((*(uint *)(lVar7 + -0x21ffffffffdc) >> 0x1a & 1) == 0) {
+    31577:                 iVar8 = (int)((ulonglong)*(undefined8 *)(lVar7 + -0x21fffffffff0) >> 0x10);
 
-## FUN_14022c080 */ — reconstrucao/src/decompiled_01.c:31569
-reconstrucao/src/../include/ghidra_function_prototypes.h:31569:55: error: unknown type name ‘_EXCEPTION_RECORD’
+## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32230
+reconstrucao/src/../include/ghidra_function_prototypes.h:32230:32: error: unknown type name ‘wctype_t’
 
-    31566:                 UNLOCK();
-    31567:                 if (-1 < (longlong)uVar6) break;
-    31568:                 do {
-    31569:                   uVar12 = uVar12 + 1;
-    31570:                   if ((((DAT_140fc62ac & uVar12) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
-    31571:                      (cVar5 = FUN_14020cb70(), cVar5 != '\0')) {
-    31572:                     FUN_14020cb40(uVar12);
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32166
-reconstrucao/src/../include/ghidra_function_prototypes.h:32166:1: error: unknown type name ‘errno_t’
-
-    32163:               } while (bVar20);
-    32164:             }
-    32165:           }
-    32166:         }
-    32167:         else {
-    32168:           if (uVar15 != 1) {
-    32169:             uVar12 = uStack_68;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32167
-reconstrucao/src/../include/ghidra_function_prototypes.h:32167:1: error: unknown type name ‘errno_t’
-
-    32164:             }
-    32165:           }
-    32166:         }
-    32167:         else {
-    32168:           if (uVar15 != 1) {
-    32169:             uVar12 = uStack_68;
-    32170:             if (uVar15 == 3) {
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32170
-reconstrucao/src/../include/ghidra_function_prototypes.h:32170:1: error: unknown type name ‘errno_t’
-
-    32167:         else {
-    32168:           if (uVar15 != 1) {
-    32169:             uVar12 = uStack_68;
-    32170:             if (uVar15 == 3) {
-    32171: LAB_14022d8a3:
-    32172:               FUN_14023002c(puVar16,uVar17,uVar12);
-    32173:               goto LAB_14022d4e0;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32172
-reconstrucao/src/../include/ghidra_function_prototypes.h:32172:1: error: unknown type name ‘errno_t’
-
-    32169:             uVar12 = uStack_68;
-    32170:             if (uVar15 == 3) {
-    32171: LAB_14022d8a3:
-    32172:               FUN_14023002c(puVar16,uVar17,uVar12);
-    32173:               goto LAB_14022d4e0;
-    32174:             }
-    32175:             uVar15 = (uint)((ulonglong)*(undefined8 *)(lVar5 + -0x21ffffffffe8) >> 0x3b) & 7;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32177
-reconstrucao/src/../include/ghidra_function_prototypes.h:32177:21: error: unknown type name ‘_JBTYPE’
-
-    32174:             }
-    32175:             uVar15 = (uint)((ulonglong)*(undefined8 *)(lVar5 + -0x21ffffffffe8) >> 0x3b) & 7;
-    32176:             if (uVar15 != 0) {
-    32177:               LOCK();
-    32178:               UNLOCK();
-    32179:               cVar3 = FUN_140457b68(uVar15,DAT_140fd0080,7);
-    32180:               if (cVar3 == '\0') {
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32189
-reconstrucao/src/../include/ghidra_function_prototypes.h:32189:1: error: unknown type name ‘errno_t’
-
-    32186:           if ((*(ulonglong *)(lVar5 + -0x21fffffffff0) & 0x3e0) != 0) {
-    32187:             FUN_14022f6f0(0,lVar7,uVar19 & 0xffffffff,uVar17);
-    32188:           }
-    32189:           uVar6 = FUN_140378e00(alStack_58[2]);
-    32190:           alStack_58[3] = alStack_58[3] + 1;
-    32191:           *(undefined8 *)(lVar5 + -0x21fffffffff0) = uVar6;
-    32192:           alStack_58[2] = lVar7;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32192
-reconstrucao/src/../include/ghidra_function_prototypes.h:32192:1: error: unknown type name ‘errno_t’
-
-    32189:           uVar6 = FUN_140378e00(alStack_58[2]);
-    32190:           alStack_58[3] = alStack_58[3] + 1;
-    32191:           *(undefined8 *)(lVar5 + -0x21fffffffff0) = uVar6;
-    32192:           alStack_58[2] = lVar7;
-    32193:         }
-    32194:       }
-    32195:       else {
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32196
-reconstrucao/src/../include/ghidra_function_prototypes.h:32196:1: error: unknown type name ‘errno_t’
-
-    32193:         }
-    32194:       }
-    32195:       else {
-    32196:         uVar6 = FUN_140378e00(alStack_58[0]);
-    32197:         *(undefined8 *)(lVar5 + -0x21fffffffff0) = uVar6;
-    32198:         alStack_58[1] = alStack_58[1] + 1;
-    32199:         alStack_58[0] = lVar7;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32197
-reconstrucao/src/../include/ghidra_function_prototypes.h:32197:1: error: unknown type name ‘errno_t’
-
-    32194:       }
-    32195:       else {
-    32196:         uVar6 = FUN_140378e00(alStack_58[0]);
-    32197:         *(undefined8 *)(lVar5 + -0x21fffffffff0) = uVar6;
-    32198:         alStack_58[1] = alStack_58[1] + 1;
-    32199:         alStack_58[0] = lVar7;
-    32200:         if (alStack_58[1] == 0x10) {
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32198
-reconstrucao/src/../include/ghidra_function_prototypes.h:32198:1: error: unknown type name ‘errno_t’
-
-    32195:       else {
-    32196:         uVar6 = FUN_140378e00(alStack_58[0]);
-    32197:         *(undefined8 *)(lVar5 + -0x21fffffffff0) = uVar6;
-    32198:         alStack_58[1] = alStack_58[1] + 1;
-    32199:         alStack_58[0] = lVar7;
-    32200:         if (alStack_58[1] == 0x10) {
-    32201:           FUN_1404fac14(alStack_58,uVar17,uVar15 & 1);
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32199
-reconstrucao/src/../include/ghidra_function_prototypes.h:32199:1: error: unknown type name ‘errno_t’
-
-    32196:         uVar6 = FUN_140378e00(alStack_58[0]);
-    32197:         *(undefined8 *)(lVar5 + -0x21fffffffff0) = uVar6;
-    32198:         alStack_58[1] = alStack_58[1] + 1;
-    32199:         alStack_58[0] = lVar7;
-    32200:         if (alStack_58[1] == 0x10) {
-    32201:           FUN_1404fac14(alStack_58,uVar17,uVar15 & 1);
-    32202:         }
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32202
-reconstrucao/src/../include/ghidra_function_prototypes.h:32202:53: error: unknown type name ‘_locale_t’; did you mean ‘locale_t’?
-
-    32199:         alStack_58[0] = lVar7;
-    32200:         if (alStack_58[1] == 0x10) {
-    32201:           FUN_1404fac14(alStack_58,uVar17,uVar15 & 1);
-    32202:         }
-    32203:       }
-    32204:       *puVar16 = param_1[0xb];
-    32205:       param_1[0xb] = puVar16;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32207
-reconstrucao/src/../include/ghidra_function_prototypes.h:32207:1: error: unknown type name ‘errno_t’
-
-    32204:       *puVar16 = param_1[0xb];
-    32205:       param_1[0xb] = puVar16;
-    32206:       if (param_1[0xc] == 0) {
-    32207:         param_1[0xc] = puVar16;
-    32208:       }
-    32209:       param_1[0xd] = param_1[0xd] + 1;
-    32210:       if ((param_1[0xd] == param_1[10]) ||
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32210
-reconstrucao/src/../include/ghidra_function_prototypes.h:32210:1: error: unknown type name ‘errno_t’
-
-    32207:         param_1[0xc] = puVar16;
-    32208:       }
-    32209:       param_1[0xd] = param_1[0xd] + 1;
-    32210:       if ((param_1[0xd] == param_1[10]) ||
-    32211:          ((((param_1[0xd] & 0xf) == 0 && ((*(uint *)(param_1 + 4) & 1) != 0)) &&
-    32212:           ((((*(uint *)((longlong)param_1 + 0x1c) >> 4 & 3) != 2 &&
-    32213:             (iVar4 = FUN_140337360(param_1[1]), iVar4 != 0)) ||
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32212
-reconstrucao/src/../include/ghidra_function_prototypes.h:32212:1: error: unknown type name ‘errno_t’
-
-    32209:       param_1[0xd] = param_1[0xd] + 1;
-    32210:       if ((param_1[0xd] == param_1[10]) ||
-    32211:          ((((param_1[0xd] & 0xf) == 0 && ((*(uint *)(param_1 + 4) & 1) != 0)) &&
-    32212:           ((((*(uint *)((longlong)param_1 + 0x1c) >> 4 & 3) != 2 &&
-    32213:             (iVar4 = FUN_140337360(param_1[1]), iVar4 != 0)) ||
-    32214:            (iVar4 = KeShouldYieldProcessor(), iVar4 != 0)))))) goto LAB_14022d559;
-    32215:       puVar18 = puStack_70;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32227
-reconstrucao/src/../include/ghidra_function_prototypes.h:32227:32: error: unknown type name ‘wctype_t’
-
-    32224:       uVar13 = *(uint *)(param_1 + 6);
-    32225:       puVar1 = (uint *)param_1[5];
-    32226:       LOCK();
     32227:       uVar14 = *puVar1;
-    32228:       *puVar1 = *puVar1 + 1;
-    32229:       UNLOCK();
-    32230:       lVar5 = FUN_1402b3c90(*param_1,(uVar14 % (uint)(&DAT_140e2dd40)[uVar13 >> 0x10 & 3] ^ uVar13)
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32231
-reconstrucao/src/../include/ghidra_function_prototypes.h:32231:22: error: unknown type name ‘_JBTYPE’
-
     32228:       *puVar1 = *puVar1 + 1;
     32229:       UNLOCK();
     32230:       lVar5 = FUN_1402b3c90(*param_1,(uVar14 % (uint)(&DAT_140e2dd40)[uVar13 >> 0x10 & 3] ^ uVar13)
     32231:                                      & 0xff ^ uVar13,uVar10);
     32232:       if ((lVar5 == -1) || (FUN_140340690(param_1,alStack_58,lVar5), param_1[0xd] == param_1[10]))
     32233:       break;
-    32234:       iVar4 = FUN_140465c7c(param_1,0x10);
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:1: error: unknown type name ‘errno_t’
-
-    32233:       break;
-    32234:       iVar4 = FUN_140465c7c(param_1,0x10);
-    32235:     } while (iVar4 == 0);
-    32236:   }
-    32237: LAB_14022d559:
-    32238:   uVar14 = 0;
-    32239:   do {
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32233:       break;
-    32234:       iVar4 = FUN_140465c7c(param_1,0x10);
-    32235:     } while (iVar4 == 0);
-    32236:   }
-    32237: LAB_14022d559:
-    32238:   uVar14 = 0;
-    32239:   do {
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32233:       break;
-    32234:       iVar4 = FUN_140465c7c(param_1,0x10);
-    32235:     } while (iVar4 == 0);
-    32236:   }
-    32237: LAB_14022d559:
-    32238:   uVar14 = 0;
-    32239:   do {
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:1: error: unknown type name ‘errno_t’
-
-    32234:       iVar4 = FUN_140465c7c(param_1,0x10);
-    32235:     } while (iVar4 == 0);
-    32236:   }
-    32237: LAB_14022d559:
-    32238:   uVar14 = 0;
-    32239:   do {
-    32240:     plVar11 = alStack_58 + (ulonglong)uVar14 * 2;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32234:       iVar4 = FUN_140465c7c(param_1,0x10);
-    32235:     } while (iVar4 == 0);
-    32236:   }
-    32237: LAB_14022d559:
-    32238:   uVar14 = 0;
-    32239:   do {
-    32240:     plVar11 = alStack_58 + (ulonglong)uVar14 * 2;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32234:       iVar4 = FUN_140465c7c(param_1,0x10);
-    32235:     } while (iVar4 == 0);
-    32236:   }
-    32237: LAB_14022d559:
-    32238:   uVar14 = 0;
-    32239:   do {
-    32240:     plVar11 = alStack_58 + (ulonglong)uVar14 * 2;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32247
-reconstrucao/src/../include/ghidra_function_prototypes.h:32247:1: error: unknown type name ‘errno_t’
-
-    32244:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-    32245:       }
-    32246:       else {
-    32247:         FUN_1402cbf80(plVar11,uVar13,DAT_140010430);
-    32248:       }
-    32249:     }
-    32250:     plVar11 = alStack_58 + (ulonglong)(uVar14 + 1) * 2;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32247
-reconstrucao/src/../include/ghidra_function_prototypes.h:32247:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32244:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-    32245:       }
-    32246:       else {
-    32247:         FUN_1402cbf80(plVar11,uVar13,DAT_140010430);
-    32248:       }
-    32249:     }
-    32250:     plVar11 = alStack_58 + (ulonglong)(uVar14 + 1) * 2;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32251
-reconstrucao/src/../include/ghidra_function_prototypes.h:32251:1: error: unknown type name ‘errno_t’
-
-    32248:       }
-    32249:     }
-    32250:     plVar11 = alStack_58 + (ulonglong)(uVar14 + 1) * 2;
-    32251:     if (*plVar11 != 0x7fffffffff) {
-    32252:       uVar13 = *(uint *)(param_1 + 6) >> 0x12 & 3;
-    32253:       if (uVar14 + 1 == 0) {
-    32254:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32251
-reconstrucao/src/../include/ghidra_function_prototypes.h:32251:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32248:       }
-    32249:     }
-    32250:     plVar11 = alStack_58 + (ulonglong)(uVar14 + 1) * 2;
-    32251:     if (*plVar11 != 0x7fffffffff) {
-    32252:       uVar13 = *(uint *)(param_1 + 6) >> 0x12 & 3;
-    32253:       if (uVar14 + 1 == 0) {
-    32254:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:1: error: unknown type name ‘errno_t’
-
-    32251:     if (*plVar11 != 0x7fffffffff) {
-    32252:       uVar13 = *(uint *)(param_1 + 6) >> 0x12 & 3;
-    32253:       if (uVar14 + 1 == 0) {
-    32254:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-    32255:       }
-    32256:       else {
-    32257:         FUN_1402cbf80(plVar11,uVar13,DAT_140010430,uVar10 & 1);
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32251:     if (*plVar11 != 0x7fffffffff) {
-    32252:       uVar13 = *(uint *)(param_1 + 6) >> 0x12 & 3;
-    32253:       if (uVar14 + 1 == 0) {
-    32254:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-    32255:       }
-    32256:       else {
-    32257:         FUN_1402cbf80(plVar11,uVar13,DAT_140010430,uVar10 & 1);
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32251:     if (*plVar11 != 0x7fffffffff) {
-    32252:       uVar13 = *(uint *)(param_1 + 6) >> 0x12 & 3;
-    32253:       if (uVar14 + 1 == 0) {
-    32254:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-    32255:       }
-    32256:       else {
-    32257:         FUN_1402cbf80(plVar11,uVar13,DAT_140010430,uVar10 & 1);
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:1: error: unknown type name ‘errno_t’
-
-    32254:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-    32255:       }
-    32256:       else {
-    32257:         FUN_1402cbf80(plVar11,uVar13,DAT_140010430,uVar10 & 1);
-    32258:       }
-    32259:     }
-    32260:     uVar14 = uVar14 + 2;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32254:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-    32255:       }
-    32256:       else {
-    32257:         FUN_1402cbf80(plVar11,uVar13,DAT_140010430,uVar10 & 1);
-    32258:       }
-    32259:     }
-    32260:     uVar14 = uVar14 + 2;
-
-## FUN_14022d290 */ — reconstrucao/src/decompiled_01.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32254:         FUN_1404fac14(plVar11,uVar13,uVar10 & 1);
-    32255:       }
-    32256:       else {
-    32257:         FUN_1402cbf80(plVar11,uVar13,DAT_140010430,uVar10 & 1);
-    32258:       }
-    32259:     }
-    32260:     uVar14 = uVar14 + 2;
-
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32282
-reconstrucao/src/../include/ghidra_function_prototypes.h:32282:19: error: conflicting types for ‘wcscat’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
-
-    32279: 
-    32280: /* Ghidra label: FUN_14022da30 */
-    32281: /* Ghidra address: 14022da30 */
-    32282: undefined1 FUN_14022da30(ulonglong param_1)
-    32283: 
-    32284: {
-    32285:   if (0xffff7fffffffffff < param_1) {
-
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32283
-reconstrucao/src/../include/ghidra_function_prototypes.h:32283:1: error: unknown type name ‘errno_t’
-
-    32280: /* Ghidra label: FUN_14022da30 */
-    32281: /* Ghidra address: 14022da30 */
-    32282: undefined1 FUN_14022da30(ulonglong param_1)
-    32283: 
-    32284: {
-    32285:   if (0xffff7fffffffffff < param_1) {
-    32286:     if ((0xfffff67fffffffff < param_1) && (param_1 < 0xfffff70000000000)) {
-
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32283
-reconstrucao/src/../include/ghidra_function_prototypes.h:32283:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32280: /* Ghidra label: FUN_14022da30 */
-    32281: /* Ghidra address: 14022da30 */
-    32282: undefined1 FUN_14022da30(ulonglong param_1)
-    32283: 
-    32284: {
-    32285:   if (0xffff7fffffffffff < param_1) {
-    32286:     if ((0xfffff67fffffffff < param_1) && (param_1 < 0xfffff70000000000)) {
 
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32284
-reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: conflicting types for ‘wcschr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: conflicting types for ‘wcscat’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32281: /* Ghidra address: 14022da30 */
     32282: undefined1 FUN_14022da30(ulonglong param_1)
@@ -541,19 +68,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: confli
     32286:     if ((0xfffff67fffffffff < param_1) && (param_1 < 0xfffff70000000000)) {
     32287:       return 0;
 
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32285
-reconstrucao/src/../include/ghidra_function_prototypes.h:32285:13: error: conflicting types for ‘wcscmp’; have ‘int(wchar_t *, wchar_t *)’ {aka ‘int(int *, int *)’}
-
-    32282: undefined1 FUN_14022da30(ulonglong param_1)
-    32283: 
-    32284: {
-    32285:   if (0xffff7fffffffffff < param_1) {
-    32286:     if ((0xfffff67fffffffff < param_1) && (param_1 < 0xfffff70000000000)) {
-    32287:       return 0;
-    32288:     }
-
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32286
-reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: conflicting types for ‘wcscpy’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: conflicting types for ‘wcschr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
 
     32283: 
     32284: {
@@ -564,18 +80,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: confli
     32289:     if ((param_1 < DAT_140e2f400) || (DAT_140e2f410 < param_1)) {
 
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32287
-reconstrucao/src/../include/ghidra_function_prototypes.h:32287:1: error: unknown type name ‘errno_t’
-
-    32284: {
-    32285:   if (0xffff7fffffffffff < param_1) {
-    32286:     if ((0xfffff67fffffffff < param_1) && (param_1 < 0xfffff70000000000)) {
-    32287:       return 0;
-    32288:     }
-    32289:     if ((param_1 < DAT_140e2f400) || (DAT_140e2f410 < param_1)) {
-    32290:       return DAT_140e2ef04;
-
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32287
-reconstrucao/src/../include/ghidra_function_prototypes.h:32287:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32287:13: error: conflicting types for ‘wcscmp’; have ‘int(wchar_t *, wchar_t *)’ {aka ‘int(int *, int *)’}
 
     32284: {
     32285:   if (0xffff7fffffffffff < param_1) {
@@ -586,7 +91,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32287:40: error: unknow
     32290:       return DAT_140e2ef04;
 
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32288
-reconstrucao/src/../include/ghidra_function_prototypes.h:32288:16: error: conflicting types for ‘wcscspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32288:19: error: conflicting types for ‘wcscpy’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32285:   if (0xffff7fffffffffff < param_1) {
     32286:     if ((0xfffff67fffffffff < param_1) && (param_1 < 0xfffff70000000000)) {
@@ -596,19 +101,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32288:16: error: confli
     32290:       return DAT_140e2ef04;
     32291:     }
 
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32289
-reconstrucao/src/../include/ghidra_function_prototypes.h:32289:16: error: conflicting types for ‘wcslen’; have ‘size_t(wchar_t *)’ {aka ‘long unsigned int(int *)’}
-
-    32286:     if ((0xfffff67fffffffff < param_1) && (param_1 < 0xfffff70000000000)) {
-    32287:       return 0;
-    32288:     }
-    32289:     if ((param_1 < DAT_140e2f400) || (DAT_140e2f410 < param_1)) {
-    32290:       return DAT_140e2ef04;
-    32291:     }
-    32292:   }
-
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32290
-reconstrucao/src/../include/ghidra_function_prototypes.h:32290:19: error: conflicting types for ‘wcsncat’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32290:16: error: conflicting types for ‘wcscspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
 
     32287:       return 0;
     32288:     }
@@ -619,29 +113,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32290:19: error: confli
     32293:   return DAT_140e2ef05;
 
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:1: error: unknown type name ‘errno_t’
-
-    32288:     }
-    32289:     if ((param_1 < DAT_140e2f400) || (DAT_140e2f410 < param_1)) {
-    32290:       return DAT_140e2ef04;
-    32291:     }
-    32292:   }
-    32293:   return DAT_140e2ef05;
-    32294: }
-
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32288:     }
-    32289:     if ((param_1 < DAT_140e2f400) || (DAT_140e2f410 < param_1)) {
-    32290:       return DAT_140e2ef04;
-    32291:     }
-    32292:   }
-    32293:   return DAT_140e2ef05;
-    32294: }
-
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32291:16: error: conflicting types for ‘wcslen’; have ‘size_t(wchar_t *)’ {aka ‘long unsigned int(int *)’}
 
     32288:     }
     32289:     if ((param_1 < DAT_140e2f400) || (DAT_140e2f410 < param_1)) {
@@ -652,7 +124,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32291:76: error: unknow
     32294: }
 
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32292
-reconstrucao/src/../include/ghidra_function_prototypes.h:32292:13: error: conflicting types for ‘wcsncmp’; have ‘int(wchar_t *, wchar_t *, size_t)’ {aka ‘int(int *, int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32292:19: error: conflicting types for ‘wcsncat’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
 
     32289:     if ((param_1 < DAT_140e2f400) || (DAT_140e2f410 < param_1)) {
     32290:       return DAT_140e2ef04;
@@ -662,41 +134,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32292:13: error: confli
     32294: }
     32295: 
 
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32293
-reconstrucao/src/../include/ghidra_function_prototypes.h:32293:19: error: conflicting types for ‘wcsncpy’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
-
-    32290:       return DAT_140e2ef04;
-    32291:     }
-    32292:   }
-    32293:   return DAT_140e2ef05;
-    32294: }
-    32295: 
-    32296: /* Ghidra label: FUN_14022da90 */
-
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:1: error: unknown type name ‘errno_t’
-
-    32291:     }
-    32292:   }
-    32293:   return DAT_140e2ef05;
-    32294: }
-    32295: 
-    32296: /* Ghidra label: FUN_14022da90 */
-    32297: /* Ghidra address: 14022da90 */
-
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32291:     }
-    32292:   }
-    32293:   return DAT_140e2ef05;
-    32294: }
-    32295: 
-    32296: /* Ghidra label: FUN_14022da90 */
-    32297: /* Ghidra address: 14022da90 */
-
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32294:13: error: conflicting types for ‘wcsncmp’; have ‘int(wchar_t *, wchar_t *, size_t)’ {aka ‘int(int *, int *, long unsigned int)’}
 
     32291:     }
     32292:   }
@@ -707,7 +146,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32294:76: error: unknow
     32297: /* Ghidra address: 14022da90 */
 
 ## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32295
-reconstrucao/src/../include/ghidra_function_prototypes.h:32295:16: error: conflicting types for ‘wcsnlen’; have ‘size_t(wchar_t *, size_t)’ {aka ‘long unsigned int(int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32295:19: error: conflicting types for ‘wcsncpy’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
 
     32292:   }
     32293:   return DAT_140e2ef05;
@@ -717,19 +156,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32295:16: error: confli
     32297: /* Ghidra address: 14022da90 */
     32298: undefined8 FUN_14022da90(longlong param_1,longlong param_2)
 
-## FUN_14022da30 */ — reconstrucao/src/decompiled_01.c:32296
-reconstrucao/src/../include/ghidra_function_prototypes.h:32296:19: error: conflicting types for ‘wcsrchr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
-
-    32293:   return DAT_140e2ef05;
-    32294: }
-    32295: 
-    32296: /* Ghidra label: FUN_14022da90 */
-    32297: /* Ghidra address: 14022da90 */
-    32298: undefined8 FUN_14022da90(longlong param_1,longlong param_2)
-    32299: 
-
 ## FUN_14022da90 */ — reconstrucao/src/decompiled_01.c:32297
-reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: conflicting types for ‘wcsspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: conflicting types for ‘wcsnlen’; have ‘size_t(wchar_t *, size_t)’ {aka ‘long unsigned int(int *, long unsigned int)’}
 
     32294: }
     32295: 
@@ -740,7 +168,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: confli
     32300: {
 
 ## FUN_14022da90 */ — reconstrucao/src/decompiled_01.c:32298
-reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: conflicting types for ‘wcsstr’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: conflicting types for ‘wcsrchr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
 
     32295: 
     32296: /* Ghidra label: FUN_14022da90 */
@@ -750,8 +178,19 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: confli
     32300: {
     32301:   ulonglong *puVar1;
 
+## FUN_14022da90 */ — reconstrucao/src/decompiled_01.c:32299
+reconstrucao/src/../include/ghidra_function_prototypes.h:32299:16: error: conflicting types for ‘wcsspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+
+    32296: /* Ghidra label: FUN_14022da90 */
+    32297: /* Ghidra address: 14022da90 */
+    32298: undefined8 FUN_14022da90(longlong param_1,longlong param_2)
+    32299: 
+    32300: {
+    32301:   ulonglong *puVar1;
+    32302:   uint uVar2;
+
 ## FUN_14022da90 */ — reconstrucao/src/decompiled_01.c:32300
-reconstrucao/src/../include/ghidra_function_prototypes.h:32300:18: error: conflicting types for ‘wcstoul’; have ‘uint32_t(wchar_t *, wchar_t **, int)’ {aka ‘unsigned int(int *, int **, int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32300:19: error: conflicting types for ‘wcsstr’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32297: /* Ghidra address: 14022da90 */
     32298: undefined8 FUN_14022da90(longlong param_1,longlong param_2)
@@ -760,6 +199,17 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32300:18: error: confli
     32301:   ulonglong *puVar1;
     32302:   uint uVar2;
     32303:   byte bVar3;
+
+## FUN_14022da90 */ — reconstrucao/src/decompiled_01.c:32302
+reconstrucao/src/../include/ghidra_function_prototypes.h:32302:18: error: conflicting types for ‘wcstoul’; have ‘uint32_t(wchar_t *, wchar_t **, int)’ {aka ‘unsigned int(int *, int **, int)’}
+
+    32299: 
+    32300: {
+    32301:   ulonglong *puVar1;
+    32302:   uint uVar2;
+    32303:   byte bVar3;
+    32304:   uint uVar4;
+    32305:   int iVar5;
 
 ## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:107
 reconstrucao/src/decompiled_01.c:107:15: error: ‘DAT_140e0a740’ undeclared (first use in this function)
@@ -1322,536 +772,613 @@ reconstrucao/src/decompiled_01.c:596:18: error: assignment to ‘undefined8’ {
     598:       uStack_108 = CONCAT44(uStack_108._4_4_,1);
     599:       puStack_f8 = puVar5;
 
-## FUN_14053f484 */ — reconstrucao/src/decompiled_02.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:26: error: unknown type name ‘PCONTEXT’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:598
+reconstrucao/src/decompiled_01.c:598:39: error: request for member ‘_4_4_’ in something not a structure or union
 
-    15862:     if (*(uint *)(param_2 + 0xd8) <= *(uint *)(param_2 + 0xdc)) {
-    15863:       KeReleaseInStackQueuedSpinLock(&uStack_28);
-    15864:       goto LAB_14053f4ea;
-    15865:     }
-    15866:     uVar2 = *(uint *)(param_2 + 0xd8) - *(uint *)(param_2 + 0xdc);
-    15867:     lVar4 = param_2;
-    15868:     if (uVar2 < param_3) {
+    595:     else {
+    596:       uStack_100 = pvVar1;
+    597:       uStack_f0 = *(ulonglong *)(puVar5 + 4);
+    598:       uStack_108 = CONCAT44(uStack_108._4_4_,1);
+    599:       puStack_f8 = puVar5;
+    600:     }
+    601:   }
 
-## FUN_14053f484 */ — reconstrucao/src/decompiled_02.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:43: error: unknown type name ‘PCONTEXT’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:603
+reconstrucao/src/decompiled_01.c:603:25: error: passing argument 1 of ‘FUN_140203fd4’ makes pointer from integer without a cast [-Wint-conversion]
 
-    15862:     if (*(uint *)(param_2 + 0xd8) <= *(uint *)(param_2 + 0xdc)) {
-    15863:       KeReleaseInStackQueuedSpinLock(&uStack_28);
-    15864:       goto LAB_14053f4ea;
-    15865:     }
-    15866:     uVar2 = *(uint *)(param_2 + 0xd8) - *(uint *)(param_2 + 0xdc);
-    15867:     lVar4 = param_2;
-    15868:     if (uVar2 < param_3) {
+    600:     }
+    601:   }
+    602:   uVar7 = uStack_f0;
+    603:   iVar4 = FUN_140203fd4(param_1,puVar5 + 2,(-(uint)((uVar6 & 2) != 0) & 0xfffff058) + 0xfe8);
+    604:   if (iVar4 == -1) {
+    605:     FUN_140210b60(&uStack_108);
+    606:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
 
-## FUN_14053f484 */ — reconstrucao/src/decompiled_02.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:60: error: unknown type name ‘PCONTEXT’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:603
+reconstrucao/src/decompiled_01.c:603:40: error: passing argument 2 of ‘FUN_140203fd4’ from incompatible pointer type [-Wincompatible-pointer-types]
 
-    15862:     if (*(uint *)(param_2 + 0xd8) <= *(uint *)(param_2 + 0xdc)) {
-    15863:       KeReleaseInStackQueuedSpinLock(&uStack_28);
-    15864:       goto LAB_14053f4ea;
-    15865:     }
-    15866:     uVar2 = *(uint *)(param_2 + 0xd8) - *(uint *)(param_2 + 0xdc);
-    15867:     lVar4 = param_2;
-    15868:     if (uVar2 < param_3) {
+    600:     }
+    601:   }
+    602:   uVar7 = uStack_f0;
+    603:   iVar4 = FUN_140203fd4(param_1,puVar5 + 2,(-(uint)((uVar6 & 2) != 0) & 0xfffff058) + 0xfe8);
+    604:   if (iVar4 == -1) {
+    605:     FUN_140210b60(&uStack_108);
+    606:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
 
-## FUN_14054308c */ — reconstrucao/src/decompiled_02.c:18857
-reconstrucao/src/../include/ghidra_function_prototypes.h:18857:59: error: unknown type name ‘ULONGLONG’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:605
+reconstrucao/src/decompiled_01.c:605:19: error: passing argument 1 of ‘FUN_140210b60’ from incompatible pointer type [-Wincompatible-pointer-types]
 
-    18854:   uint uVar13;
-    18855:   byte bVar14;
-    18856:   byte bVar15;
-    18857:   uint uVar16;
-    18858:   uint uVar17;
-    18859:   undefined1 auStack_b8 [32];
-    18860:   undefined8 uStack_98;
+    602:   uVar7 = uStack_f0;
+    603:   iVar4 = FUN_140203fd4(param_1,puVar5 + 2,(-(uint)((uVar6 & 2) != 0) & 0xfffff058) + 0xfe8);
+    604:   if (iVar4 == -1) {
+    605:     FUN_140210b60(&uStack_108);
+    606:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
+    607:     iVar4 = FUN_140203fd4(param_1,puVar5 + 2,0xfe8);
+    608:     uVar7 = uStack_f0;
 
-## HalRequestDeferredRecoveryServiceInterrupt */ — reconstrucao/src/decompiled_02.c:22298
-reconstrucao/src/../include/ghidra_function_prototypes.h:22298:1: error: unknown type name ‘BADSPACEBASE’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:606
+reconstrucao/src/decompiled_01.c:606:42: error: passing argument 1 of ‘FUN_14046f5e0’ from incompatible pointer type [-Wincompatible-pointer-types]
 
-    22295: }
-    22296: 
-    22297: /* Ghidra label: HalRequestDeferredRecoveryServiceInterrupt */
-    22298: /* Ghidra address: 1405474a0 */
-    22299: void HalRequestDeferredRecoveryServiceInterrupt(void)
-    22300: 
-    22301: {
+    603:   iVar4 = FUN_140203fd4(param_1,puVar5 + 2,(-(uint)((uVar6 & 2) != 0) & 0xfffff058) + 0xfe8);
+    604:   if (iVar4 == -1) {
+    605:     FUN_140210b60(&uStack_108);
+    606:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
+    607:     iVar4 = FUN_140203fd4(param_1,puVar5 + 2,0xfe8);
+    608:     uVar7 = uStack_f0;
+    609:   }
 
-## FUN_14054ca64 */ — reconstrucao/src/decompiled_02.c:26577
-reconstrucao/src/../include/ghidra_function_prototypes.h:26577:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:606
+reconstrucao/src/decompiled_01.c:606:28: error: too few arguments to function ‘FUN_14046f5e0’; expected 4, have 3
 
-    26574:     cVar1 = EtwEventEnabled(DAT_140fc25f8,&DAT_1400214f8);
-    26575:     if (cVar1 != '\0') {
-    26576:       uStack_5c = 0;
-    26577:       puStack_68 = auStackX_8;
-    26578:       uStack_4c = 0;
-    26579:       uStack_3c = 0;
-    26580:       uStack_2c = 0;
+    603:   iVar4 = FUN_140203fd4(param_1,puVar5 + 2,(-(uint)((uVar6 & 2) != 0) & 0xfffff058) + 0xfe8);
+    604:   if (iVar4 == -1) {
+    605:     FUN_140210b60(&uStack_108);
+    606:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
+    607:     iVar4 = FUN_140203fd4(param_1,puVar5 + 2,0xfe8);
+    608:     uVar7 = uStack_f0;
+    609:   }
 
-## FUN_14054fca0 */ — reconstrucao/src/decompiled_02.c:29003
-reconstrucao/src/../include/ghidra_function_prototypes.h:29003:1: error: unknown type name ‘BADSPACEBASE’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:607
+reconstrucao/src/decompiled_01.c:607:27: error: passing argument 1 of ‘FUN_140203fd4’ makes pointer from integer without a cast [-Wint-conversion]
 
-    29000:         *(undefined4 *)(puVar13 + 0x30) = uVar4;
-    29001:         *(undefined2 *)(puVar13 + 0x28) = *(undefined2 *)(lVar6 + 0x12);
-    29002:         uVar4 = *(undefined4 *)(lVar6 + 4);
-    29003:         *(undefined2 *)(puVar13 + 0x20) = *(undefined2 *)(lVar6 + 0x10);
-    29004:         *(undefined8 *)(puVar13 + -8) = 0x14054fe4e;
-    29005:         iVar9 = FUN_14054faf4(uVar4,uVar5,uVar3,uVar2);
-    29006:         if (-1 < iVar9) {
+    604:   if (iVar4 == -1) {
+    605:     FUN_140210b60(&uStack_108);
+    606:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
+    607:     iVar4 = FUN_140203fd4(param_1,puVar5 + 2,0xfe8);
+    608:     uVar7 = uStack_f0;
+    609:   }
+    610:   puVar5[1] = 0;
 
-## FUN_140551ad8 */ — reconstrucao/src/decompiled_02.c:30712
-reconstrucao/src/../include/ghidra_function_prototypes.h:30712:1: error: unknown type name ‘NTSTATUS’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:607
+reconstrucao/src/decompiled_01.c:607:42: error: passing argument 2 of ‘FUN_140203fd4’ from incompatible pointer type [-Wincompatible-pointer-types]
 
-    30709:     iVar2 = FUN_140551bdc(param_2,param_3,param_4);
-    30710:     if (iVar2 < 0) {
-    30711:       return -0x3fffff10;
-    30712:     }
-    30713:     plVar1 = (longlong *)*param_1;
-    30714:     if (*(char *)((longlong)param_4 + 0x25) == '\0') {
-    30715:       uVar3 = 0;
+    604:   if (iVar4 == -1) {
+    605:     FUN_140210b60(&uStack_108);
+    606:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
+    607:     iVar4 = FUN_140203fd4(param_1,puVar5 + 2,0xfe8);
+    608:     uVar7 = uStack_f0;
+    609:   }
+    610:   puVar5[1] = 0;
 
-## FUN_140551ad8 */ — reconstrucao/src/decompiled_02.c:30712
-reconstrucao/src/../include/ghidra_function_prototypes.h:30712:46: error: unknown type name ‘HANDLE’
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:614
+reconstrucao/src/decompiled_01.c:614:17: error: passing argument 1 of ‘FUN_140210b60’ from incompatible pointer type [-Wincompatible-pointer-types]
 
-    30709:     iVar2 = FUN_140551bdc(param_2,param_3,param_4);
-    30710:     if (iVar2 < 0) {
-    30711:       return -0x3fffff10;
-    30712:     }
-    30713:     plVar1 = (longlong *)*param_1;
-    30714:     if (*(char *)((longlong)param_4 + 0x25) == '\0') {
-    30715:       uVar3 = 0;
+    611:   *puVar5 = param_2;
+    612:   uStack_e8 = (ulonglong)(uint)((iVar4 + 7) * 0x4000) & 0xffffffff03fe0000 | 0x15;
+    613:   sVar3 = HvlInvokeHypercall(uStack_e8,uVar7,0);
+    614:   FUN_140210b60(&uStack_108);
+    615:   return -(uint)(sVar3 != 0) & 0xc0000001;
+    616: }
+    617: 
 
-## FUN_140551ad8 */ — reconstrucao/src/decompiled_02.c:30713
-reconstrucao/src/../include/ghidra_function_prototypes.h:30713:1: error: unknown type name ‘NTSTATUS’
+## FUN_140200dcc */ — reconstrucao/src/decompiled_01.c:635
+reconstrucao/src/decompiled_01.c:635:15: error: ‘DAT_140e0a740’ undeclared (first use in this function)
 
-    30710:     if (iVar2 < 0) {
-    30711:       return -0x3fffff10;
-    30712:     }
-    30713:     plVar1 = (longlong *)*param_1;
-    30714:     if (*(char *)((longlong)param_4 + 0x25) == '\0') {
-    30715:       uVar3 = 0;
-    30716:       uVar4 = (ulonglong)*(uint *)(plVar1 + 5);
+    632:   undefined4 uStack_1c;
+    633:   ulonglong uStack_18;
+    634:   
+    635:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_68;
+    636:   if (DAT_140e67941 != '\0') {
+    637:     auStackX_8[0] = param_1;
+    638:     cVar1 = EtwEventEnabled(DAT_140f0bb00,&DAT_140010400);
 
-## FUN_1405529b8 */ — reconstrucao/src/decompiled_02.c:31569
-reconstrucao/src/../include/ghidra_function_prototypes.h:31569:32: error: unknown type name ‘PCONTEXT’
+## FUN_140200dcc */ — reconstrucao/src/decompiled_01.c:636
+reconstrucao/src/decompiled_01.c:636:7: error: ‘DAT_140e67941’ undeclared (first use in this function)
 
-    31566:       uVar9 = (*(ulonglong *)(param_3 + 0x30) & 0xfffffffffffff000) + (ulonglong)(param_2 & 0xfff);
-    31567:       if ((param_5 == '\0') && (*(char *)(param_1 + 0x1bd) == '\0')) {
-    31568:         uVar5 = (uint)uVar9 - ((uint)uVar9 & ~(iVar3 - 1U));
-    31569:         uVar9 = uVar9 - uVar5;
-    31570:         uVar11 = (ulonglong)((param_4 - 1) + iVar3 + uVar5 & ~(iVar3 - 1U));
+    633:   ulonglong uStack_18;
+    634:   
+    635:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_68;
+    636:   if (DAT_140e67941 != '\0') {
+    637:     auStackX_8[0] = param_1;
+    638:     cVar1 = EtwEventEnabled(DAT_140f0bb00,&DAT_140010400);
+    639:     if (cVar1 != '\0') {
+
+## FUN_140200dcc */ — reconstrucao/src/decompiled_01.c:638
+reconstrucao/src/decompiled_01.c:638:29: error: ‘DAT_140f0bb00’ undeclared (first use in this function)
+
+    635:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_68;
+    636:   if (DAT_140e67941 != '\0') {
+    637:     auStackX_8[0] = param_1;
+    638:     cVar1 = EtwEventEnabled(DAT_140f0bb00,&DAT_140010400);
+    639:     if (cVar1 != '\0') {
+    640:       uStack_1c = 0;
+    641:       puStack_28 = auStackX_8;
+
+## FUN_140200dcc */ — reconstrucao/src/decompiled_01.c:638
+reconstrucao/src/decompiled_01.c:638:44: error: ‘DAT_140010400’ undeclared (first use in this function)
+
+    635:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_68;
+    636:   if (DAT_140e67941 != '\0') {
+    637:     auStackX_8[0] = param_1;
+    638:     cVar1 = EtwEventEnabled(DAT_140f0bb00,&DAT_140010400);
+    639:     if (cVar1 != '\0') {
+    640:       uStack_1c = 0;
+    641:       puStack_28 = auStackX_8;
+
+## FUN_140200dcc */ — reconstrucao/src/decompiled_01.c:647
+reconstrucao/src/decompiled_01.c:647:7: error: too few arguments to function ‘EtwWriteEx’; expected 8, have 3
+
+    644:       uStack_38 = 1;
+    645:       uStack_40 = 0;
+    646:       uStack_48 = 0;
+    647:       EtwWriteEx(DAT_140f0bb00,&DAT_140010400,0);
+    648:     }
+    649:   }
+    650:   return;
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:660
+reconstrucao/src/decompiled_01.c:660:3: error: unknown type name ‘code’
+
+    657: {
+    658:   ulonglong *puVar1;
+    659:   ulonglong uVar2;
+    660:   code *pcVar3;
+    661:   char cVar4;
+    662:   undefined8 *puVar5;
+    663:   undefined8 *puVar6;
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:674
+reconstrucao/src/decompiled_01.c:674:32: error: ‘DAT_140f230b0’ undeclared (first use in this function)
+
+    671:   undefined4 auStack_38 [8];
+    672:   undefined8 auStack_18 [2];
+    673:   
+    674:   KeAcquireSpinLockAtDpcLevel(&DAT_140f230b0);
+    675:   puVar9 = auStack_38;
+    676:   puVar12 = &DAT_140f230a0;
+    677:   puVar6 = DAT_140f230a0;
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:676
+reconstrucao/src/decompiled_01.c:676:14: error: ‘DAT_140f230a0’ undeclared (first use in this function); did you mean ‘FUN_1408230a0’?
+
+    673:   
+    674:   KeAcquireSpinLockAtDpcLevel(&DAT_140f230b0);
+    675:   puVar9 = auStack_38;
+    676:   puVar12 = &DAT_140f230a0;
+    677:   puVar6 = DAT_140f230a0;
+    678:   puVar8 = (undefined8 *)0x0;
+    679:   while (puVar5 = puVar6, puVar5 != puVar12) {
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:685
+reconstrucao/src/decompiled_01.c:685:17: error: ‘code’ undeclared (first use in this function)
+
+    682:     if (((undefined8 *)puVar11[1] != puVar5) || (puVar6 = puVar11, (undefined8 *)*puVar7 != puVar5))
+    683:     {
+    684:       puVar6 = (undefined8 *)0x3;
+    685:       pcVar3 = (code *)swi(0x29);
+    686:       puVar5 = (undefined8 *)(*pcVar3)();
+    687:       puVar9 = puVar9 + 2;
+    688:     }
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:685
+reconstrucao/src/decompiled_01.c:685:23: error: expected expression before ‘)’ token
+
+    682:     if (((undefined8 *)puVar11[1] != puVar5) || (puVar6 = puVar11, (undefined8 *)*puVar7 != puVar5))
+    683:     {
+    684:       puVar6 = (undefined8 *)0x3;
+    685:       pcVar3 = (code *)swi(0x29);
+    686:       puVar5 = (undefined8 *)(*pcVar3)();
+    687:       puVar9 = puVar9 + 2;
+    688:     }
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:686
+reconstrucao/src/decompiled_01.c:686:31: error: called object is not a function or function pointer
+
+    683:     {
+    684:       puVar6 = (undefined8 *)0x3;
+    685:       pcVar3 = (code *)swi(0x29);
+    686:       puVar5 = (undefined8 *)(*pcVar3)();
+    687:       puVar9 = puVar9 + 2;
+    688:     }
+    689:     *puVar7 = puVar11;
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:689
+reconstrucao/src/decompiled_01.c:689:13: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined8 *’ {aka ‘long unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
+
+    686:       puVar5 = (undefined8 *)(*pcVar3)();
+    687:       puVar9 = puVar9 + 2;
+    688:     }
+    689:     *puVar7 = puVar11;
+    690:     puVar11[1] = puVar7;
+    691:     *puVar5 = puVar8;
+    692:     puVar5[1] = 0;
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:690
+reconstrucao/src/decompiled_01.c:690:16: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined8 *’ {aka ‘long unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
+
+    687:       puVar9 = puVar9 + 2;
+    688:     }
+    689:     *puVar7 = puVar11;
+    690:     puVar11[1] = puVar7;
+    691:     *puVar5 = puVar8;
+    692:     puVar5[1] = 0;
+    693:     LOCK();
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:691
+reconstrucao/src/decompiled_01.c:691:13: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined8 *’ {aka ‘long unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
+
+    688:     }
+    689:     *puVar7 = puVar11;
+    690:     puVar11[1] = puVar7;
+    691:     *puVar5 = puVar8;
+    692:     puVar5[1] = 0;
+    693:     LOCK();
+    694:     *(short *)((longlong)puVar5 + -0x8c) = *(short *)((longlong)puVar5 + -0x8c) + 1;
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:717
+reconstrucao/src/decompiled_01.c:717:15: error: ‘DAT_140fc62ac’ undeclared (first use in this function)
+
+    714:       if ((uVar2 & 1) == 0) break;
+    715:       do {
+    716:         uVar10 = uVar10 + 1;
+    717:         if (((DAT_140fc62ac & uVar10) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) {
+    718:           *(undefined8 *)(puVar9 + -2) = 0x140200fa6;
+    719:           cVar4 = FUN_14020cb70();
+    720:           if (cVar4 != '\0') {
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:717
+reconstrucao/src/decompiled_01.c:717:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘FUN_1402c7ab8’?
+
+    714:       if ((uVar2 & 1) == 0) break;
+    715:       do {
+    716:         uVar10 = uVar10 + 1;
+    717:         if (((DAT_140fc62ac & uVar10) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) {
+    718:           *(undefined8 *)(puVar9 + -2) = 0x140200fa6;
+    719:           cVar4 = FUN_14020cb70();
+    720:           if (cVar4 != '\0') {
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:729
+reconstrucao/src/decompiled_01.c:729:28: error: passing argument 1 of ‘FUN_140201280’ makes integer from pointer without a cast [-Wint-conversion]
+
+    726:     }
+    727:     if ((*(uint *)(puVar8 + -0x6f) & 0x400000) != 0) {
+    728:       *(undefined8 *)(puVar9 + -2) = 0x140200edb;
+    729:       FUN_140201280(puVar8 + -0x7e,puVar9 + 8,1);
+    730:     }
+    731:     puVar8[-0x76] = 0;
+    732:     LOCK();
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:729
+reconstrucao/src/decompiled_01.c:729:43: error: passing argument 2 of ‘FUN_140201280’ makes integer from pointer without a cast [-Wint-conversion]
+
+    726:     }
+    727:     if ((*(uint *)(puVar8 + -0x6f) & 0x400000) != 0) {
+    728:       *(undefined8 *)(puVar9 + -2) = 0x140200edb;
+    729:       FUN_140201280(puVar8 + -0x7e,puVar9 + 8,1);
+    730:     }
+    731:     puVar8[-0x76] = 0;
+    732:     LOCK();
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:738
+reconstrucao/src/decompiled_01.c:738:17: error: ‘FiberData’ undeclared (first use in this function)
+
+    735:     puVar8 = puVar6;
+    736:   }
+    737:   *(undefined8 *)(puVar9 + -2) = 0x140200f06;
+    738:   FUN_140271070(FiberData,puVar9 + 8,2);
+    739:   return;
+    740: }
+    741: 
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:738
+reconstrucao/src/decompiled_01.c:738:34: error: passing argument 2 of ‘FUN_140271070’ from incompatible pointer type [-Wincompatible-pointer-types]
+
+    735:     puVar8 = puVar6;
+    736:   }
+    737:   *(undefined8 *)(puVar9 + -2) = 0x140200f06;
+    738:   FUN_140271070(FiberData,puVar9 + 8,2);
+    739:   return;
+    740: }
+    741: 
+
+## FUN_140200fc0 */ — reconstrucao/src/decompiled_01.c:747
+reconstrucao/src/decompiled_01.c:747:3: error: too few arguments to function ‘FUN_140200fd8’; expected 3, have 0
+
+    744: void FUN_140200fc0(void)
+    745: 
+    746: {
+    747:   FUN_140200fd8();
+    748:   return;
+    749: }
+    750: 
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:791
+reconstrucao/src/decompiled_01.c:791:37: error: passing argument 1 of ‘KeSetActualBasePriorityThread’ makes integer from pointer without a cast [-Wint-conversion]
+
+    788:       LOCK();
+    789:       *param_1 = *param_1 | 0x400000;
+    790:       UNLOCK();
+    791:       KeSetActualBasePriorityThread(param_1,1);
+    792:       return;
+    793:     }
+    794:     if ((param_1[0x1e] & 0x400000) == 0) {
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:797
+reconstrucao/src/decompiled_01.c:797:19: error: passing argument 1 of ‘FUN_14034b620’ makes integer from pointer without a cast [-Wint-conversion]
+
+    794:     if ((param_1[0x1e] & 0x400000) == 0) {
+    795:       return;
+    796:     }
+    797:     FUN_14034b620(param_1,auStackX_18);
+    798:     if (param_1[0x100] != 0x20) {
+    799:       FUN_14034b6b4(param_1,&uStackX_20,(int)(char)param_1[0x100],1);
+    800:       param_1[0x100] = 0x20;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:799
+reconstrucao/src/decompiled_01.c:799:21: error: passing argument 1 of ‘FUN_14034b6b4’ makes integer from pointer without a cast [-Wint-conversion]
+
+    796:     }
+    797:     FUN_14034b620(param_1,auStackX_18);
+    798:     if (param_1[0x100] != 0x20) {
+    799:       FUN_14034b6b4(param_1,&uStackX_20,(int)(char)param_1[0x100],1);
+    800:       param_1[0x100] = 0x20;
+    801:     }
+    802:     uStack_48 = 0;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:799
+reconstrucao/src/decompiled_01.c:799:29: error: passing argument 2 of ‘FUN_14034b6b4’ makes integer from pointer without a cast [-Wint-conversion]
+
+    796:     }
+    797:     FUN_14034b620(param_1,auStackX_18);
+    798:     if (param_1[0x100] != 0x20) {
+    799:       FUN_14034b6b4(param_1,&uStackX_20,(int)(char)param_1[0x100],1);
+    800:       param_1[0x100] = 0x20;
+    801:     }
+    802:     uStack_48 = 0;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:804
+reconstrucao/src/decompiled_01.c:804:27: error: passing argument 1 of ‘FUN_14020bfa0’ makes integer from pointer without a cast [-Wint-conversion]
+
+    801:     }
+    802:     uStack_48 = 0;
+    803:     uStack_40 = 0;
+    804:     uVar8 = FUN_14020bfa0(param_1,&pvStack_60,&uStack_68,&uStack_58,&uStack_48);
+    805:     LOCK();
+    806:     param_1[0x1e] = param_1[0x1e] & 0xffbfffff;
+    807:     UNLOCK();
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:804
+reconstrucao/src/decompiled_01.c:804:35: error: passing argument 2 of ‘FUN_14020bfa0’ makes integer from pointer without a cast [-Wint-conversion]
+
+    801:     }
+    802:     uStack_48 = 0;
+    803:     uStack_40 = 0;
+    804:     uVar8 = FUN_14020bfa0(param_1,&pvStack_60,&uStack_68,&uStack_58,&uStack_48);
+    805:     LOCK();
+    806:     param_1[0x1e] = param_1[0x1e] & 0xffbfffff;
+    807:     UNLOCK();
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:804
+reconstrucao/src/decompiled_01.c:804:13: error: too many arguments to function ‘FUN_14020bfa0’; expected 3, have 5
+
+    801:     }
+    802:     uStack_48 = 0;
+    803:     uStack_40 = 0;
+    804:     uVar8 = FUN_14020bfa0(param_1,&pvStack_60,&uStack_68,&uStack_58,&uStack_48);
+    805:     LOCK();
+    806:     param_1[0x1e] = param_1[0x1e] & 0xffbfffff;
+    807:     UNLOCK();
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:813
+reconstrucao/src/decompiled_01.c:813:25: error: passing argument 2 of ‘FUN_1402fd5d0’ makes integer from pointer without a cast [-Wint-conversion]
+
+    810:     LOCK();
+    811:     *param_1 = *param_1 & 0xffbfffff;
+    812:     UNLOCK();
+    813:     FUN_1402fd5d0(uVar8,pvStack_60,&uStack_68,uStack_58,&uStack_48);
+    814:     param_1[0x10] = 0;
+    815:     param_1[0x11] = 0;
+    816:     FUN_140271070(FiberData,&uStackX_20,auStackX_18[0]);
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:813
+reconstrucao/src/decompiled_01.c:813:47: error: passing argument 4 of ‘FUN_1402fd5d0’ makes pointer from integer without a cast [-Wint-conversion]
+
+    810:     LOCK();
+    811:     *param_1 = *param_1 & 0xffbfffff;
+    812:     UNLOCK();
+    813:     FUN_1402fd5d0(uVar8,pvStack_60,&uStack_68,uStack_58,&uStack_48);
+    814:     param_1[0x10] = 0;
+    815:     param_1[0x11] = 0;
+    816:     FUN_140271070(FiberData,&uStackX_20,auStackX_18[0]);
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:816
+reconstrucao/src/decompiled_01.c:816:19: error: ‘FiberData’ undeclared (first use in this function)
+
+    813:     FUN_1402fd5d0(uVar8,pvStack_60,&uStack_68,uStack_58,&uStack_48);
+    814:     param_1[0x10] = 0;
+    815:     param_1[0x11] = 0;
+    816:     FUN_140271070(FiberData,&uStackX_20,auStackX_18[0]);
+    817:     KeSetPriorityThread(param_1,(int)*(char *)((longlong)param_1 + 0x233));
+    818:     return;
+    819:   }
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:817
+reconstrucao/src/decompiled_01.c:817:25: error: passing argument 1 of ‘KeSetPriorityThread’ makes integer from pointer without a cast [-Wint-conversion]
+
+    814:     param_1[0x10] = 0;
+    815:     param_1[0x11] = 0;
+    816:     FUN_140271070(FiberData,&uStackX_20,auStackX_18[0]);
+    817:     KeSetPriorityThread(param_1,(int)*(char *)((longlong)param_1 + 0x233));
+    818:     return;
+    819:   }
+    820:   if (param_3 != 1) {
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:822
+reconstrucao/src/decompiled_01.c:822:12: error: ‘DAT_140fc7b14’ undeclared (first use in this function); did you mean ‘FUN_140ac7b14’?
+
+    819:   }
+    820:   if (param_3 != 1) {
+    821:     if ((param_3 == 2) || (param_3 == 3)) {
+    822:       if ((DAT_140fc7b14 & 0x20) != 0) {
+    823:         FUN_1406597f4(param_1,param_3);
+    824:       }
+    825:       FUN_14034b620(param_1,auStackX_18);
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:823
+reconstrucao/src/decompiled_01.c:823:23: error: passing argument 1 of ‘FUN_1406597f4’ makes integer from pointer without a cast [-Wint-conversion]
+
+    820:   if (param_3 != 1) {
+    821:     if ((param_3 == 2) || (param_3 == 3)) {
+    822:       if ((DAT_140fc7b14 & 0x20) != 0) {
+    823:         FUN_1406597f4(param_1,param_3);
+    824:       }
+    825:       FUN_14034b620(param_1,auStackX_18);
+    826:     }
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:825
+reconstrucao/src/decompiled_01.c:825:21: error: passing argument 1 of ‘FUN_14034b620’ makes integer from pointer without a cast [-Wint-conversion]
+
+    822:       if ((DAT_140fc7b14 & 0x20) != 0) {
+    823:         FUN_1406597f4(param_1,param_3);
+    824:       }
+    825:       FUN_14034b620(param_1,auStackX_18);
+    826:     }
+    827:     else {
+    828:       if (param_3 != 4) {
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:831
+reconstrucao/src/decompiled_01.c:831:21: error: passing argument 1 of ‘FUN_14034b620’ makes integer from pointer without a cast [-Wint-conversion]
+
+    828:       if (param_3 != 4) {
+    829:         return;
+    830:       }
+    831:       FUN_14034b620(param_1,auStackX_18);
+    832:       lVar2 = *(longlong *)(param_1 + 0xf2);
+    833:       if (lVar2 == 0) goto LAB_14020104d;
+    834:       LOCK();
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:840
+reconstrucao/src/decompiled_01.c:840:19: error: passing argument 1 of ‘FUN_140201280’ makes integer from pointer without a cast [-Wint-conversion]
+
+    837:       if ((*(longlong *)(lVar2 + 0x28) == *(longlong *)(lVar2 + 0x30)) ||
+    838:          ((char)param_1[0x61] != '\x01')) goto LAB_14020104d;
+    839:     }
+    840:     FUN_140201280(param_1,&uStackX_20,0);
+    841: LAB_14020104d:
+    842:     param_1[0x10] = 0;
+    843:     param_1[0x11] = 0;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:840
+reconstrucao/src/decompiled_01.c:840:27: error: passing argument 2 of ‘FUN_140201280’ makes integer from pointer without a cast [-Wint-conversion]
+
+    837:       if ((*(longlong *)(lVar2 + 0x28) == *(longlong *)(lVar2 + 0x30)) ||
+    838:          ((char)param_1[0x61] != '\x01')) goto LAB_14020104d;
+    839:     }
+    840:     FUN_140201280(param_1,&uStackX_20,0);
+    841: LAB_14020104d:
+    842:     param_1[0x10] = 0;
+    843:     param_1[0x11] = 0;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:851
+reconstrucao/src/decompiled_01.c:851:17: error: passing argument 1 of ‘FUN_14034b620’ makes integer from pointer without a cast [-Wint-conversion]
+
+    848:   if (lVar2 == 0) {
+    849:     return;
+    850:   }
+    851:   FUN_14034b620(param_1,auStackX_18);
+    852:   pvVar4 = FiberData;
+    853:   uVar5 = *(uint *)(lVar2 + 4);
+    854:   if (6 < (int)uVar5) goto LAB_14020115f;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:866
+reconstrucao/src/decompiled_01.c:866:25: error: passing argument 1 of ‘FUN_14020c440’ makes integer from pointer without a cast [-Wint-conversion]
+
+    863:   uStack_38 = 0;
+    864:   uStack_30 = 0;
+    865:   pvStack_60 = pvVar4;
+    866:   uVar8 = FUN_14020c440(pvVar4,1,&uStack_68);
+    867:   *(char *)(param_1 + 0x81) = (char)uVar5;
+    868:   if (*(longlong *)((longlong)pvVar4 + 0x10) == 0) {
+    869:     pvStack_50 = pvVar4;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:866
+reconstrucao/src/decompiled_01.c:866:9: error: invalid use of void expression
+
+    863:   uStack_38 = 0;
+    864:   uStack_30 = 0;
+    865:   pvStack_60 = pvVar4;
+    866:   uVar8 = FUN_14020c440(pvVar4,1,&uStack_68);
+    867:   *(char *)(param_1 + 0x81) = (char)uVar5;
+    868:   if (*(longlong *)((longlong)pvVar4 + 0x10) == 0) {
+    869:     pvStack_50 = pvVar4;
+
+## FUN_14053f484 */ — reconstrucao/src/decompiled_02.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:26: error: unknown type name ‘PCONTEXT’
+
+    15869:       param_3 = uVar2;
+    15870:     }
+    15871:   }
+    15872:   iVar3 = -1;
+    15873:   if (param_3 != 0) {
+    15874:     while (iVar3 = RtlFindClearBitsAndSet(*(undefined8 *)(param_2 + 0x18),param_3,0), iVar3 == -1) {
+    15875:       if ((param_4 != '\0') || (param_3 = param_3 >> 1, param_3 == 0)) goto LAB_14053f534;
+
+## FUN_14053f484 */ — reconstrucao/src/decompiled_02.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:43: error: unknown type name ‘PCONTEXT’
+
+    15869:       param_3 = uVar2;
+    15870:     }
+    15871:   }
+    15872:   iVar3 = -1;
+    15873:   if (param_3 != 0) {
+    15874:     while (iVar3 = RtlFindClearBitsAndSet(*(undefined8 *)(param_2 + 0x18),param_3,0), iVar3 == -1) {
+    15875:       if ((param_4 != '\0') || (param_3 = param_3 >> 1, param_3 == 0)) goto LAB_14053f534;
+
+## FUN_14053f484 */ — reconstrucao/src/decompiled_02.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:60: error: unknown type name ‘PCONTEXT’
+
+    15869:       param_3 = uVar2;
+    15870:     }
+    15871:   }
+    15872:   iVar3 = -1;
+    15873:   if (param_3 != 0) {
+    15874:     while (iVar3 = RtlFindClearBitsAndSet(*(undefined8 *)(param_2 + 0x18),param_3,0), iVar3 == -1) {
+    15875:       if ((param_4 != '\0') || (param_3 = param_3 >> 1, param_3 == 0)) goto LAB_14053f534;
+
+## FUN_1405529b8 */ — reconstrucao/src/decompiled_02.c:31574
+reconstrucao/src/../include/ghidra_function_prototypes.h:31574:32: error: unknown type name ‘PCONTEXT’
+
     31571:       }
     31572:       bVar2 = bVar15;
+    31573:       if (bVar15 < 3) {
+    31574:         bVar2 = KeAcquireSpinLockRaiseToDpc(param_1 + 0x138);
+    31575:       }
+    31576:       puVar1 = *(undefined8 **)(param_1 + 0x130);
+    31577:       *puVar1 = 0;
 
-## FUN_1405529b8 */ — reconstrucao/src/decompiled_02.c:31569
-reconstrucao/src/../include/ghidra_function_prototypes.h:31569:55: error: unknown type name ‘_EXCEPTION_RECORD’
+## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32230
+reconstrucao/src/../include/ghidra_function_prototypes.h:32230:32: error: unknown type name ‘wctype_t’
 
-    31566:       uVar9 = (*(ulonglong *)(param_3 + 0x30) & 0xfffffffffffff000) + (ulonglong)(param_2 & 0xfff);
-    31567:       if ((param_5 == '\0') && (*(char *)(param_1 + 0x1bd) == '\0')) {
-    31568:         uVar5 = (uint)uVar9 - ((uint)uVar9 & ~(iVar3 - 1U));
-    31569:         uVar9 = uVar9 - uVar5;
-    31570:         uVar11 = (ulonglong)((param_4 - 1) + iVar3 + uVar5 & ~(iVar3 - 1U));
-    31571:       }
-    31572:       bVar2 = bVar15;
-
-## FUN_140553270 */ — reconstrucao/src/decompiled_02.c:32166
-reconstrucao/src/../include/ghidra_function_prototypes.h:32166:1: error: unknown type name ‘errno_t’
-
-    32163:     *(undefined8 *)(puVar17 + -8) = 0x14055354d;
-    32164:     FUN_1403ea524();
-    32165:   }
-    32166:   if (puVar18 != (undefined8 *)0x0) {
-    32167:     *(undefined8 *)(puVar17 + -8) = 0x14055355a;
-    32168:     FUN_1403ea524();
-    32169:   }
-
-## FUN_140553270 */ — reconstrucao/src/decompiled_02.c:32167
-reconstrucao/src/../include/ghidra_function_prototypes.h:32167:1: error: unknown type name ‘errno_t’
-
-    32164:     FUN_1403ea524();
-    32165:   }
-    32166:   if (puVar18 != (undefined8 *)0x0) {
-    32167:     *(undefined8 *)(puVar17 + -8) = 0x14055355a;
-    32168:     FUN_1403ea524();
-    32169:   }
-    32170:   return puVar8;
-
-## FUN_140553270 */ — reconstrucao/src/decompiled_02.c:32170
-reconstrucao/src/../include/ghidra_function_prototypes.h:32170:1: error: unknown type name ‘errno_t’
-
-    32167:     *(undefined8 *)(puVar17 + -8) = 0x14055355a;
-    32168:     FUN_1403ea524();
-    32169:   }
-    32170:   return puVar8;
-    32171: }
-    32172: 
-    32173: /* Ghidra label: FUN_140553574 */
-
-## FUN_140553270 */ — reconstrucao/src/decompiled_02.c:32172
-reconstrucao/src/../include/ghidra_function_prototypes.h:32172:1: error: unknown type name ‘errno_t’
-
-    32169:   }
-    32170:   return puVar8;
-    32171: }
-    32172: 
-    32173: /* Ghidra label: FUN_140553574 */
-    32174: /* Ghidra address: 140553574 */
-    32175: undefined8 FUN_140553574(ulonglong param_1,ulonglong param_2)
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32177
-reconstrucao/src/../include/ghidra_function_prototypes.h:32177:21: error: unknown type name ‘_JBTYPE’
-
-    32174: /* Ghidra address: 140553574 */
-    32175: undefined8 FUN_140553574(ulonglong param_1,ulonglong param_2)
-    32176: 
-    32177: {
-    32178:   undefined8 uVar1;
-    32179:   undefined8 *puStackX_20;
-    32180:   
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32189
-reconstrucao/src/../include/ghidra_function_prototypes.h:32189:1: error: unknown type name ‘errno_t’
-
-    32186:     else if (~param_2 < param_1) {
-    32187:       uVar1 = 0xc000000d;
-    32188:     }
-    32189:     else if (DAT_140fc1bb0 == 0) {
-    32190:       uVar1 = FUN_140562710(param_1,0x20,&puStackX_20);
-    32191:       if (-1 < (int)uVar1) {
-    32192:         puStackX_20[1] = param_1;
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32192
-reconstrucao/src/../include/ghidra_function_prototypes.h:32192:1: error: unknown type name ‘errno_t’
-
-    32189:     else if (DAT_140fc1bb0 == 0) {
-    32190:       uVar1 = FUN_140562710(param_1,0x20,&puStackX_20);
-    32191:       if (-1 < (int)uVar1) {
-    32192:         puStackX_20[1] = param_1;
-    32193:         puStackX_20[2] = param_2 >> 0xc;
-    32194:         *(undefined1 *)(puStackX_20 + 3) = 0;
-    32195:         *puStackX_20 = DAT_140fc1aa0;
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32196
-reconstrucao/src/../include/ghidra_function_prototypes.h:32196:1: error: unknown type name ‘errno_t’
-
-    32193:         puStackX_20[2] = param_2 >> 0xc;
-    32194:         *(undefined1 *)(puStackX_20 + 3) = 0;
-    32195:         *puStackX_20 = DAT_140fc1aa0;
-    32196:         DAT_140fc1aa8 = DAT_140fc1aa8 + 1;
-    32197:         DAT_140fc1aa0 = puStackX_20;
-    32198:       }
-    32199:     }
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32197
-reconstrucao/src/../include/ghidra_function_prototypes.h:32197:1: error: unknown type name ‘errno_t’
-
-    32194:         *(undefined1 *)(puStackX_20 + 3) = 0;
-    32195:         *puStackX_20 = DAT_140fc1aa0;
-    32196:         DAT_140fc1aa8 = DAT_140fc1aa8 + 1;
-    32197:         DAT_140fc1aa0 = puStackX_20;
-    32198:       }
-    32199:     }
-    32200:     else {
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32198
-reconstrucao/src/../include/ghidra_function_prototypes.h:32198:1: error: unknown type name ‘errno_t’
-
-    32195:         *puStackX_20 = DAT_140fc1aa0;
-    32196:         DAT_140fc1aa8 = DAT_140fc1aa8 + 1;
-    32197:         DAT_140fc1aa0 = puStackX_20;
-    32198:       }
-    32199:     }
-    32200:     else {
-    32201:       uVar1 = 0xc0000189;
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32199
-reconstrucao/src/../include/ghidra_function_prototypes.h:32199:1: error: unknown type name ‘errno_t’
-
-    32196:         DAT_140fc1aa8 = DAT_140fc1aa8 + 1;
-    32197:         DAT_140fc1aa0 = puStackX_20;
-    32198:       }
-    32199:     }
-    32200:     else {
-    32201:       uVar1 = 0xc0000189;
-    32202:     }
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32202
-reconstrucao/src/../include/ghidra_function_prototypes.h:32202:53: error: unknown type name ‘_locale_t’; did you mean ‘locale_t’?
-
-    32199:     }
-    32200:     else {
-    32201:       uVar1 = 0xc0000189;
-    32202:     }
-    32203:   }
-    32204:   else {
-    32205:     uVar1 = 0xc00000ef;
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32207
-reconstrucao/src/../include/ghidra_function_prototypes.h:32207:1: error: unknown type name ‘errno_t’
-
-    32204:   else {
-    32205:     uVar1 = 0xc00000ef;
-    32206:   }
-    32207:   return uVar1;
-    32208: }
-    32209: 
-    32210: /* Ghidra label: FUN_140553628 */
-
-## FUN_140553574 */ — reconstrucao/src/decompiled_02.c:32210
-reconstrucao/src/../include/ghidra_function_prototypes.h:32210:1: error: unknown type name ‘errno_t’
-
-    32207:   return uVar1;
-    32208: }
-    32209: 
-    32210: /* Ghidra label: FUN_140553628 */
-    32211: /* Ghidra address: 140553628 */
-    32212: void FUN_140553628(longlong param_1)
-    32213: 
-
-## FUN_140553628 */ — reconstrucao/src/decompiled_02.c:32212
-reconstrucao/src/../include/ghidra_function_prototypes.h:32212:1: error: unknown type name ‘errno_t’
-
-    32209: 
-    32210: /* Ghidra label: FUN_140553628 */
-    32211: /* Ghidra address: 140553628 */
-    32212: void FUN_140553628(longlong param_1)
-    32213: 
-    32214: {
-    32215:   int iVar1;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32227
-reconstrucao/src/../include/ghidra_function_prototypes.h:32227:32: error: unknown type name ‘wctype_t’
-
-    32224: }
-    32225: 
-    32226: /* Ghidra label: FUN_140553678 */
     32227: /* Ghidra address: 140553678 */
-    32228: longlong FUN_140553678(undefined8 param_1,int param_2)
-    32229: 
-    32230: {
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32231
-reconstrucao/src/../include/ghidra_function_prototypes.h:32231:22: error: unknown type name ‘_JBTYPE’
-
     32228: longlong FUN_140553678(undefined8 param_1,int param_2)
     32229: 
     32230: {
     32231:   int iVar1;
     32232:   longlong lVar2;
     32233:   uint *puVar3;
-    32234:   longlong lVar4;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:1: error: unknown type name ‘errno_t’
-
-    32233:   uint *puVar3;
-    32234:   longlong lVar4;
-    32235:   ulonglong uVar5;
-    32236:   uint *puVar6;
-    32237:   uint *puVar7;
-    32238:   ulonglong uVar8;
-    32239:   ulonglong uVar9;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32233:   uint *puVar3;
-    32234:   longlong lVar4;
-    32235:   ulonglong uVar5;
-    32236:   uint *puVar6;
-    32237:   uint *puVar7;
-    32238:   ulonglong uVar8;
-    32239:   ulonglong uVar9;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32233:   uint *puVar3;
-    32234:   longlong lVar4;
-    32235:   ulonglong uVar5;
-    32236:   uint *puVar6;
-    32237:   uint *puVar7;
-    32238:   ulonglong uVar8;
-    32239:   ulonglong uVar9;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:1: error: unknown type name ‘errno_t’
-
-    32234:   longlong lVar4;
-    32235:   ulonglong uVar5;
-    32236:   uint *puVar6;
-    32237:   uint *puVar7;
-    32238:   ulonglong uVar8;
-    32239:   ulonglong uVar9;
-    32240:   longlong lVar10;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32234:   longlong lVar4;
-    32235:   ulonglong uVar5;
-    32236:   uint *puVar6;
-    32237:   uint *puVar7;
-    32238:   ulonglong uVar8;
-    32239:   ulonglong uVar9;
-    32240:   longlong lVar10;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32234:   longlong lVar4;
-    32235:   ulonglong uVar5;
-    32236:   uint *puVar6;
-    32237:   uint *puVar7;
-    32238:   ulonglong uVar8;
-    32239:   ulonglong uVar9;
-    32240:   longlong lVar10;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32247
-reconstrucao/src/../include/ghidra_function_prototypes.h:32247:1: error: unknown type name ‘errno_t’
-
-    32244:   uint uVar14;
-    32245:   int aiStackX_18 [2];
-    32246:   uint uStackX_20;
-    32247:   ulonglong uStack_a8;
-    32248:   uint *puStack_a0;
-    32249:   longlong lStack_98;
-    32250:   undefined1 auStack_88 [8];
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32247
-reconstrucao/src/../include/ghidra_function_prototypes.h:32247:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32244:   uint uVar14;
-    32245:   int aiStackX_18 [2];
-    32246:   uint uStackX_20;
-    32247:   ulonglong uStack_a8;
-    32248:   uint *puStack_a0;
-    32249:   longlong lStack_98;
-    32250:   undefined1 auStack_88 [8];
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32251
-reconstrucao/src/../include/ghidra_function_prototypes.h:32251:1: error: unknown type name ‘errno_t’
-
-    32248:   uint *puStack_a0;
-    32249:   longlong lStack_98;
-    32250:   undefined1 auStack_88 [8];
-    32251:   undefined8 uStack_80;
-    32252:   longlong lStack_40;
-    32253:   
-    32254:   uStack_a8 = 0;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32251
-reconstrucao/src/../include/ghidra_function_prototypes.h:32251:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32248:   uint *puStack_a0;
-    32249:   longlong lStack_98;
-    32250:   undefined1 auStack_88 [8];
-    32251:   undefined8 uStack_80;
-    32252:   longlong lStack_40;
-    32253:   
-    32254:   uStack_a8 = 0;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:1: error: unknown type name ‘errno_t’
-
-    32251:   undefined8 uStack_80;
-    32252:   longlong lStack_40;
-    32253:   
-    32254:   uStack_a8 = 0;
-    32255:   aiStackX_18[0] = 0;
-    32256:   FUN_1406d1200(auStack_88,0,0x50);
-    32257:   lVar4 = 0;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32251:   undefined8 uStack_80;
-    32252:   longlong lStack_40;
-    32253:   
-    32254:   uStack_a8 = 0;
-    32255:   aiStackX_18[0] = 0;
-    32256:   FUN_1406d1200(auStack_88,0,0x50);
-    32257:   lVar4 = 0;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32251:   undefined8 uStack_80;
-    32252:   longlong lStack_40;
-    32253:   
-    32254:   uStack_a8 = 0;
-    32255:   aiStackX_18[0] = 0;
-    32256:   FUN_1406d1200(auStack_88,0,0x50);
-    32257:   lVar4 = 0;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:1: error: unknown type name ‘errno_t’
-
-    32254:   uStack_a8 = 0;
-    32255:   aiStackX_18[0] = 0;
-    32256:   FUN_1406d1200(auStack_88,0,0x50);
-    32257:   lVar4 = 0;
-    32258:   uStackX_20 = 0;
-    32259:   iVar12 = 0;
-    32260:   iVar1 = FUN_14053f900(param_1,auStack_88);
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32254:   uStack_a8 = 0;
-    32255:   aiStackX_18[0] = 0;
-    32256:   FUN_1406d1200(auStack_88,0,0x50);
-    32257:   lVar4 = 0;
-    32258:   uStackX_20 = 0;
-    32259:   iVar12 = 0;
-    32260:   iVar1 = FUN_14053f900(param_1,auStack_88);
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32254:   uStack_a8 = 0;
-    32255:   aiStackX_18[0] = 0;
-    32256:   FUN_1406d1200(auStack_88,0,0x50);
-    32257:   lVar4 = 0;
-    32258:   uStackX_20 = 0;
-    32259:   iVar12 = 0;
-    32260:   iVar1 = FUN_14053f900(param_1,auStack_88);
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32282
-reconstrucao/src/../include/ghidra_function_prototypes.h:32282:19: error: conflicting types for ‘wcscat’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
-
-    32279:                     iVar12 = iVar12 + 1;
-    32280:                   }
-    32281:                   puVar7 = puVar7 + 5;
-    32282:                   uVar9 = uVar9 - 1;
-    32283:                 } while (uVar9 != 0);
-    32284:               }
-    32285:               puVar6 = puVar6 + 9;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32283
-reconstrucao/src/../include/ghidra_function_prototypes.h:32283:1: error: unknown type name ‘errno_t’
-
-    32280:                   }
-    32281:                   puVar7 = puVar7 + 5;
-    32282:                   uVar9 = uVar9 - 1;
-    32283:                 } while (uVar9 != 0);
-    32284:               }
-    32285:               puVar6 = puVar6 + 9;
-    32286:               uVar11 = uVar11 - 1;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32283
-reconstrucao/src/../include/ghidra_function_prototypes.h:32283:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32280:                   }
-    32281:                   puVar7 = puVar7 + 5;
-    32282:                   uVar9 = uVar9 - 1;
-    32283:                 } while (uVar9 != 0);
-    32284:               }
-    32285:               puVar6 = puVar6 + 9;
-    32286:               uVar11 = uVar11 - 1;
 
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32284
-reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: conflicting types for ‘wcschr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: conflicting types for ‘wcscat’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32281:                   puVar7 = puVar7 + 5;
     32282:                   uVar9 = uVar9 - 1;
@@ -1861,19 +1388,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: confli
     32286:               uVar11 = uVar11 - 1;
     32287:             } while (uVar11 != 0);
 
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32285
-reconstrucao/src/../include/ghidra_function_prototypes.h:32285:13: error: conflicting types for ‘wcscmp’; have ‘int(wchar_t *, wchar_t *)’ {aka ‘int(int *, int *)’}
-
-    32282:                   uVar9 = uVar9 - 1;
-    32283:                 } while (uVar9 != 0);
-    32284:               }
-    32285:               puVar6 = puVar6 + 9;
-    32286:               uVar11 = uVar11 - 1;
-    32287:             } while (uVar11 != 0);
-    32288:           }
-
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32286
-reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: conflicting types for ‘wcscpy’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: conflicting types for ‘wcschr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
 
     32283:                 } while (uVar9 != 0);
     32284:               }
@@ -1884,18 +1400,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: confli
     32289:           aiStackX_18[0] = iVar12 << 5;
 
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32287
-reconstrucao/src/../include/ghidra_function_prototypes.h:32287:1: error: unknown type name ‘errno_t’
-
-    32284:               }
-    32285:               puVar6 = puVar6 + 9;
-    32286:               uVar11 = uVar11 - 1;
-    32287:             } while (uVar11 != 0);
-    32288:           }
-    32289:           aiStackX_18[0] = iVar12 << 5;
-    32290:           lVar4 = FUN_1403e9cd8();
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32287
-reconstrucao/src/../include/ghidra_function_prototypes.h:32287:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32287:13: error: conflicting types for ‘wcscmp’; have ‘int(wchar_t *, wchar_t *)’ {aka ‘int(int *, int *)’}
 
     32284:               }
     32285:               puVar6 = puVar6 + 9;
@@ -1906,7 +1411,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32287:40: error: unknow
     32290:           lVar4 = FUN_1403e9cd8();
 
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32288
-reconstrucao/src/../include/ghidra_function_prototypes.h:32288:16: error: conflicting types for ‘wcscspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32288:19: error: conflicting types for ‘wcscpy’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32285:               puVar6 = puVar6 + 9;
     32286:               uVar11 = uVar11 - 1;
@@ -1916,19 +1421,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32288:16: error: confli
     32290:           lVar4 = FUN_1403e9cd8();
     32291:           if (lVar4 != 0) {
 
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32289
-reconstrucao/src/../include/ghidra_function_prototypes.h:32289:16: error: conflicting types for ‘wcslen’; have ‘size_t(wchar_t *)’ {aka ‘long unsigned int(int *)’}
-
-    32286:               uVar11 = uVar11 - 1;
-    32287:             } while (uVar11 != 0);
-    32288:           }
-    32289:           aiStackX_18[0] = iVar12 << 5;
-    32290:           lVar4 = FUN_1403e9cd8();
-    32291:           if (lVar4 != 0) {
-    32292:             uVar11 = 0;
-
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32290
-reconstrucao/src/../include/ghidra_function_prototypes.h:32290:19: error: conflicting types for ‘wcsncat’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32290:16: error: conflicting types for ‘wcscspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
 
     32287:             } while (uVar11 != 0);
     32288:           }
@@ -1939,29 +1433,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32290:19: error: confli
     32293:             if (*puVar3 != 0) {
 
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:1: error: unknown type name ‘errno_t’
-
-    32288:           }
-    32289:           aiStackX_18[0] = iVar12 << 5;
-    32290:           lVar4 = FUN_1403e9cd8();
-    32291:           if (lVar4 != 0) {
-    32292:             uVar11 = 0;
-    32293:             if (*puVar3 != 0) {
-    32294:               uVar14 = uStackX_20;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32288:           }
-    32289:           aiStackX_18[0] = iVar12 << 5;
-    32290:           lVar4 = FUN_1403e9cd8();
-    32291:           if (lVar4 != 0) {
-    32292:             uVar11 = 0;
-    32293:             if (*puVar3 != 0) {
-    32294:               uVar14 = uStackX_20;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32291:16: error: conflicting types for ‘wcslen’; have ‘size_t(wchar_t *)’ {aka ‘long unsigned int(int *)’}
 
     32288:           }
     32289:           aiStackX_18[0] = iVar12 << 5;
@@ -1972,7 +1444,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32291:76: error: unknow
     32294:               uVar14 = uStackX_20;
 
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32292
-reconstrucao/src/../include/ghidra_function_prototypes.h:32292:13: error: conflicting types for ‘wcsncmp’; have ‘int(wchar_t *, wchar_t *, size_t)’ {aka ‘int(int *, int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32292:19: error: conflicting types for ‘wcsncat’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
 
     32289:           aiStackX_18[0] = iVar12 << 5;
     32290:           lVar4 = FUN_1403e9cd8();
@@ -1982,41 +1454,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32292:13: error: confli
     32294:               uVar14 = uStackX_20;
     32295:               do {
 
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32293
-reconstrucao/src/../include/ghidra_function_prototypes.h:32293:19: error: conflicting types for ‘wcsncpy’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
-
-    32290:           lVar4 = FUN_1403e9cd8();
-    32291:           if (lVar4 != 0) {
-    32292:             uVar11 = 0;
-    32293:             if (*puVar3 != 0) {
-    32294:               uVar14 = uStackX_20;
-    32295:               do {
-    32296:                 lVar2 = uVar11 * 9;
-
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:1: error: unknown type name ‘errno_t’
-
-    32291:           if (lVar4 != 0) {
-    32292:             uVar11 = 0;
-    32293:             if (*puVar3 != 0) {
-    32294:               uVar14 = uStackX_20;
-    32295:               do {
-    32296:                 lVar2 = uVar11 * 9;
-    32297:                 uVar9 = 0;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32291:           if (lVar4 != 0) {
-    32292:             uVar11 = 0;
-    32293:             if (*puVar3 != 0) {
-    32294:               uVar14 = uStackX_20;
-    32295:               do {
-    32296:                 lVar2 = uVar11 * 9;
-    32297:                 uVar9 = 0;
-
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32294:13: error: conflicting types for ‘wcsncmp’; have ‘int(wchar_t *, wchar_t *, size_t)’ {aka ‘int(int *, int *, long unsigned int)’}
 
     32291:           if (lVar4 != 0) {
     32292:             uVar11 = 0;
@@ -2027,7 +1466,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32294:76: error: unknow
     32297:                 uVar9 = 0;
 
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32295
-reconstrucao/src/../include/ghidra_function_prototypes.h:32295:16: error: conflicting types for ‘wcsnlen’; have ‘size_t(wchar_t *, size_t)’ {aka ‘long unsigned int(int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32295:19: error: conflicting types for ‘wcsncpy’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
 
     32292:             uVar11 = 0;
     32293:             if (*puVar3 != 0) {
@@ -2037,19 +1476,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32295:16: error: confli
     32297:                 uVar9 = 0;
     32298:                 if (puVar3[lVar2 + 4] != 0) {
 
-## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32296
-reconstrucao/src/../include/ghidra_function_prototypes.h:32296:19: error: conflicting types for ‘wcsrchr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
-
-    32293:             if (*puVar3 != 0) {
-    32294:               uVar14 = uStackX_20;
-    32295:               do {
-    32296:                 lVar2 = uVar11 * 9;
-    32297:                 uVar9 = 0;
-    32298:                 if (puVar3[lVar2 + 4] != 0) {
-    32299:                   do {
-
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32297
-reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: conflicting types for ‘wcsspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: conflicting types for ‘wcsnlen’; have ‘size_t(wchar_t *, size_t)’ {aka ‘long unsigned int(int *, long unsigned int)’}
 
     32294:               uVar14 = uStackX_20;
     32295:               do {
@@ -2060,7 +1488,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: confli
     32300:                     if (((char)puVar3[lVar2 + uVar9 * 5 + 5] - 3U & 0xfb) == 0) {
 
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32298
-reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: conflicting types for ‘wcsstr’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: conflicting types for ‘wcsrchr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
 
     32295:               do {
     32296:                 lVar2 = uVar11 * 9;
@@ -2070,8 +1498,19 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: confli
     32300:                     if (((char)puVar3[lVar2 + uVar9 * 5 + 5] - 3U & 0xfb) == 0) {
     32301:                       uVar5 = RtlCmDecodeMemIoResource(puVar3 + lVar2 + uVar9 * 5 + 5,&uStack_a8);
 
+## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32299
+reconstrucao/src/../include/ghidra_function_prototypes.h:32299:16: error: conflicting types for ‘wcsspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+
+    32296:                 lVar2 = uVar11 * 9;
+    32297:                 uVar9 = 0;
+    32298:                 if (puVar3[lVar2 + 4] != 0) {
+    32299:                   do {
+    32300:                     if (((char)puVar3[lVar2 + uVar9 * 5 + 5] - 3U & 0xfb) == 0) {
+    32301:                       uVar5 = RtlCmDecodeMemIoResource(puVar3 + lVar2 + uVar9 * 5 + 5,&uStack_a8);
+    32302:                       lVar10 = (ulonglong)uVar14 * 0x20;
+
 ## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32300
-reconstrucao/src/../include/ghidra_function_prototypes.h:32300:18: error: conflicting types for ‘wcstoul’; have ‘uint32_t(wchar_t *, wchar_t **, int)’ {aka ‘unsigned int(int *, int **, int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32300:19: error: conflicting types for ‘wcsstr’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32297:                 uVar9 = 0;
     32298:                 if (puVar3[lVar2 + 4] != 0) {
@@ -2080,6 +1519,17 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32300:18: error: confli
     32301:                       uVar5 = RtlCmDecodeMemIoResource(puVar3 + lVar2 + uVar9 * 5 + 5,&uStack_a8);
     32302:                       lVar10 = (ulonglong)uVar14 * 0x20;
     32303:                       if (param_2 == 2) {
+
+## FUN_140553678 */ — reconstrucao/src/decompiled_02.c:32302
+reconstrucao/src/../include/ghidra_function_prototypes.h:32302:18: error: conflicting types for ‘wcstoul’; have ‘uint32_t(wchar_t *, wchar_t **, int)’ {aka ‘unsigned int(int *, int **, int)’}
+
+    32299:                   do {
+    32300:                     if (((char)puVar3[lVar2 + uVar9 * 5 + 5] - 3U & 0xfb) == 0) {
+    32301:                       uVar5 = RtlCmDecodeMemIoResource(puVar3 + lVar2 + uVar9 * 5 + 5,&uStack_a8);
+    32302:                       lVar10 = (ulonglong)uVar14 * 0x20;
+    32303:                       if (param_2 == 2) {
+    32304:                         uVar8 = uStack_a8 & 0xffffff8000000000;
+    32305:                         *(ulonglong *)(lVar10 + 8 + lVar4) = uVar8;
 
 ## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:14
 reconstrucao/src/decompiled_02.c:14:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
@@ -2642,536 +2092,613 @@ reconstrucao/src/decompiled_02.c:191:10: error: request for member ‘_8_8_’ i
     193:   auVar53._8_8_ = 0;
     194:   auVar53._0_8_ = param_3[1];
 
-## FUN_140792760 */ — reconstrucao/src/decompiled_03.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:26: error: unknown type name ‘PCONTEXT’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:192
+reconstrucao/src/decompiled_02.c:192:10: error: request for member ‘_0_8_’ in something not a structure or union
 
-    15862:   uStackX_20 = 0;
-    15863:   iVar1 = FUN_1408771e0(param_1,0x2000,PsProcessType,
-    15864:                         *(undefined1 *)((longlong)SystemReserved1[0xf] + 0x232),0x79517350,
-    15865:                         &uStackX_20,0,0);
-    15866:   if (-1 < iVar1) {
-    15867:     iVar1 = FUN_140722a98(uStackX_20,param_2,param_3);
-    15868:     ObfDereferenceObjectWithTag(uStackX_20,0x79517350);
+    189:   Var10 = (unkuint9)(uVar83 + uVar7) + (unkuint9)SUB168(auVar20 * auVar52,0);
+    190:   Var6 = (unkuint9)(uVar3 + uVar86) + (unkuint9)SUB168(auVar20 * auVar52,8);
+    191:   auVar21._8_8_ = 0;
+    192:   auVar21._0_8_ = uVar1;
+    193:   auVar53._8_8_ = 0;
+    194:   auVar53._0_8_ = param_3[1];
+    195:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar21 * auVar53,0) +
 
-## FUN_140792760 */ — reconstrucao/src/decompiled_03.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:43: error: unknown type name ‘PCONTEXT’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:193
+reconstrucao/src/decompiled_02.c:193:10: error: request for member ‘_8_8_’ in something not a structure or union
 
-    15862:   uStackX_20 = 0;
-    15863:   iVar1 = FUN_1408771e0(param_1,0x2000,PsProcessType,
-    15864:                         *(undefined1 *)((longlong)SystemReserved1[0xf] + 0x232),0x79517350,
-    15865:                         &uStackX_20,0,0);
-    15866:   if (-1 < iVar1) {
-    15867:     iVar1 = FUN_140722a98(uStackX_20,param_2,param_3);
-    15868:     ObfDereferenceObjectWithTag(uStackX_20,0x79517350);
+    190:   Var6 = (unkuint9)(uVar3 + uVar86) + (unkuint9)SUB168(auVar20 * auVar52,8);
+    191:   auVar21._8_8_ = 0;
+    192:   auVar21._0_8_ = uVar1;
+    193:   auVar53._8_8_ = 0;
+    194:   auVar53._0_8_ = param_3[1];
+    195:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar21 * auVar53,0) +
+    196:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
 
-## FUN_140792760 */ — reconstrucao/src/decompiled_03.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:60: error: unknown type name ‘PCONTEXT’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:194
+reconstrucao/src/decompiled_02.c:194:10: error: request for member ‘_0_8_’ in something not a structure or union
 
-    15862:   uStackX_20 = 0;
-    15863:   iVar1 = FUN_1408771e0(param_1,0x2000,PsProcessType,
-    15864:                         *(undefined1 *)((longlong)SystemReserved1[0xf] + 0x232),0x79517350,
-    15865:                         &uStackX_20,0,0);
-    15866:   if (-1 < iVar1) {
-    15867:     iVar1 = FUN_140722a98(uStackX_20,param_2,param_3);
-    15868:     ObfDereferenceObjectWithTag(uStackX_20,0x79517350);
+    191:   auVar21._8_8_ = 0;
+    192:   auVar21._0_8_ = uVar1;
+    193:   auVar53._8_8_ = 0;
+    194:   auVar53._0_8_ = param_3[1];
+    195:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar21 * auVar53,0) +
+    196:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    197:   Var6 = (unkuint9)(uVar82 + uVar2) + (unkuint9)SUB168(auVar21 * auVar53,8) +
 
-## RtlDecompressChunks */ — reconstrucao/src/decompiled_03.c:18857
-reconstrucao/src/../include/ghidra_function_prototypes.h:18857:59: error: unknown type name ‘ULONGLONG’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:195
+reconstrucao/src/decompiled_02.c:195:22: error: expected expression before ‘ulonglong’
 
-    18854: {
-    18855:   void *pvVar1;
-    18856:   void *_Dst;
-    18857:   uint uVar2;
-    18858:   undefined8 uVar3;
-    18859:   ulonglong uVar4;
-    18860:   uint uVar5;
+    192:   auVar21._0_8_ = uVar1;
+    193:   auVar53._8_8_ = 0;
+    194:   auVar53._0_8_ = param_3[1];
+    195:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar21 * auVar53,0) +
+    196:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    197:   Var6 = (unkuint9)(uVar82 + uVar2) + (unkuint9)SUB168(auVar21 * auVar53,8) +
+    198:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
 
-## FUN_14079accc */ — reconstrucao/src/decompiled_03.c:22298
-reconstrucao/src/../include/ghidra_function_prototypes.h:22298:1: error: unknown type name ‘BADSPACEBASE’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:195
+reconstrucao/src/decompiled_02.c:195:32: error: expected ‘;’ before ‘Var6’
 
-    22295:   uStack_238 = 0;
-    22296:   puStack_230 = (undefined1 *)0x0;
-    22297:   FUN_1406d1200(auStack_128,0,0x110);
-    22298:   uStack_168 = 0;
-    22299:   uStack_160 = 0;
-    22300:   uStack_188 = 0;
-    22301:   uStack_180 = 0;
+    192:   auVar21._0_8_ = uVar1;
+    193:   auVar53._8_8_ = 0;
+    194:   auVar53._0_8_ = param_3[1];
+    195:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar21 * auVar53,0) +
+    196:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    197:   Var6 = (unkuint9)(uVar82 + uVar2) + (unkuint9)SUB168(auVar21 * auVar53,8) +
+    198:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
 
-## FUN_14079ffac */ — reconstrucao/src/decompiled_03.c:26577
-reconstrucao/src/../include/ghidra_function_prototypes.h:26577:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:197
+reconstrucao/src/decompiled_02.c:197:49: error: expected ‘;’ before ‘SUB168’
 
-    26574:   _DAT_140e28260 = 0;
-    26575:   return;
-    26576: }
-    26577: 
-    26578: /* Ghidra label: FUN_14079ffdc */
-    26579: /* Ghidra address: 14079ffdc */
-    26580: undefined8 FUN_14079ffdc(uint *param_1,longlong param_2,char param_3,longlong *param_4)
+    194:   auVar53._0_8_ = param_3[1];
+    195:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar21 * auVar53,0) +
+    196:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    197:   Var6 = (unkuint9)(uVar82 + uVar2) + (unkuint9)SUB168(auVar21 * auVar53,8) +
+    198:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    199:   auVar22._8_8_ = 0;
+    200:   auVar22._0_8_ = uVar1;
 
-## FUN_1407a2c30 */ — reconstrucao/src/decompiled_03.c:29003
-reconstrucao/src/../include/ghidra_function_prototypes.h:29003:1: error: unknown type name ‘BADSPACEBASE’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:199
+reconstrucao/src/decompiled_02.c:199:10: error: request for member ‘_8_8_’ in something not a structure or union
 
-    29000:   
-    29001:   iVar11 = *(int *)(param_1 + 3);
-    29002:   auStack_58[1] = 0;
-    29003:   iVar2 = (int)param_6[1];
-    29004:   uVar9 = *(ushort *)*param_1 & 0x1f;
-    29005:   iVar5 = (1 << (sbyte)uVar9) - (*(ushort *)*param_1 >> 5 & 7);
-    29006:   auStack_48[1] = 0;
+    196:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    197:   Var6 = (unkuint9)(uVar82 + uVar2) + (unkuint9)SUB168(auVar21 * auVar53,8) +
+    198:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    199:   auVar22._8_8_ = 0;
+    200:   auVar22._0_8_ = uVar1;
+    201:   auVar54._8_8_ = 0;
+    202:   auVar54._0_8_ = param_3[2];
 
-## FUN_1407a4e54 */ — reconstrucao/src/decompiled_03.c:30712
-reconstrucao/src/../include/ghidra_function_prototypes.h:30712:1: error: unknown type name ‘NTSTATUS’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:200
+reconstrucao/src/decompiled_02.c:200:10: error: request for member ‘_0_8_’ in something not a structure or union
 
-    30709:         }
-    30710:         return uVar2;
-    30711:       }
-    30712:     }
-    30713:     else if (((uVar1 == 1) || (uVar1 == 2)) || (uVar1 == 3)) {
-    30714:       return 0xc0000002;
-    30715:     }
+    197:   Var6 = (unkuint9)(uVar82 + uVar2) + (unkuint9)SUB168(auVar21 * auVar53,8) +
+    198:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    199:   auVar22._8_8_ = 0;
+    200:   auVar22._0_8_ = uVar1;
+    201:   auVar54._8_8_ = 0;
+    202:   auVar54._0_8_ = param_3[2];
+    203:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar22 * auVar54,0) +
 
-## FUN_1407a4e54 */ — reconstrucao/src/decompiled_03.c:30712
-reconstrucao/src/../include/ghidra_function_prototypes.h:30712:46: error: unknown type name ‘HANDLE’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:201
+reconstrucao/src/decompiled_02.c:201:10: error: request for member ‘_8_8_’ in something not a structure or union
 
-    30709:         }
-    30710:         return uVar2;
-    30711:       }
-    30712:     }
-    30713:     else if (((uVar1 == 1) || (uVar1 == 2)) || (uVar1 == 3)) {
-    30714:       return 0xc0000002;
-    30715:     }
+    198:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    199:   auVar22._8_8_ = 0;
+    200:   auVar22._0_8_ = uVar1;
+    201:   auVar54._8_8_ = 0;
+    202:   auVar54._0_8_ = param_3[2];
+    203:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar22 * auVar54,0) +
+    204:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
 
-## FUN_1407a4e54 */ — reconstrucao/src/decompiled_03.c:30713
-reconstrucao/src/../include/ghidra_function_prototypes.h:30713:1: error: unknown type name ‘NTSTATUS’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:202
+reconstrucao/src/decompiled_02.c:202:10: error: request for member ‘_0_8_’ in something not a structure or union
 
-    30710:         return uVar2;
-    30711:       }
-    30712:     }
-    30713:     else if (((uVar1 == 1) || (uVar1 == 2)) || (uVar1 == 3)) {
-    30714:       return 0xc0000002;
-    30715:     }
-    30716:   }
+    199:   auVar22._8_8_ = 0;
+    200:   auVar22._0_8_ = uVar1;
+    201:   auVar54._8_8_ = 0;
+    202:   auVar54._0_8_ = param_3[2];
+    203:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar22 * auVar54,0) +
+    204:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    205:   Var6 = (unkuint9)
 
-## FUN_1407a5df0 */ — reconstrucao/src/decompiled_03.c:31569
-reconstrucao/src/../include/ghidra_function_prototypes.h:31569:32: error: unknown type name ‘PCONTEXT’
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:203
+reconstrucao/src/decompiled_02.c:203:22: error: expected expression before ‘ulonglong’
 
-    31566:         }
-    31567:         else {
-    31568:           piVar5 = *(int **)(param_1 + 0x18);
-    31569:           while (piVar5 != (int *)0x0) {
-    31570:             iVar3 = FUN_1407a5a34(alStackX_18,piVar5);
+    200:   auVar22._0_8_ = uVar1;
+    201:   auVar54._8_8_ = 0;
+    202:   auVar54._0_8_ = param_3[2];
+    203:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar22 * auVar54,0) +
+    204:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    205:   Var6 = (unkuint9)
+    206:          (SUB168(auVar19 * auVar51,8) + (ulonglong)(CARRY8(uVar81,uVar5) || CARRY8(uVar82,uVar2))) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:203
+reconstrucao/src/decompiled_02.c:203:32: error: expected ‘;’ before ‘Var6’
+
+    200:   auVar22._0_8_ = uVar1;
+    201:   auVar54._8_8_ = 0;
+    202:   auVar54._0_8_ = param_3[2];
+    203:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar22 * auVar54,0) +
+    204:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    205:   Var6 = (unkuint9)
+    206:          (SUB168(auVar19 * auVar51,8) + (ulonglong)(CARRY8(uVar81,uVar5) || CARRY8(uVar82,uVar2))) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:206
+reconstrucao/src/decompiled_02.c:206:26: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    203:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar22 * auVar54,0) +
+    204:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    205:   Var6 = (unkuint9)
+    206:          (SUB168(auVar19 * auVar51,8) + (ulonglong)(CARRY8(uVar81,uVar5) || CARRY8(uVar82,uVar2))) +
+    207:          (unkuint9)SUB168(auVar22 * auVar54,8) + (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    208:   auVar23._8_8_ = 0;
+    209:   auVar23._0_8_ = uVar1;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:207
+reconstrucao/src/decompiled_02.c:207:20: error: expected ‘;’ before ‘SUB168’
+
+    204:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    205:   Var6 = (unkuint9)
+    206:          (SUB168(auVar19 * auVar51,8) + (ulonglong)(CARRY8(uVar81,uVar5) || CARRY8(uVar82,uVar2))) +
+    207:          (unkuint9)SUB168(auVar22 * auVar54,8) + (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    208:   auVar23._8_8_ = 0;
+    209:   auVar23._0_8_ = uVar1;
+    210:   auVar55._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:208
+reconstrucao/src/decompiled_02.c:208:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    205:   Var6 = (unkuint9)
+    206:          (SUB168(auVar19 * auVar51,8) + (ulonglong)(CARRY8(uVar81,uVar5) || CARRY8(uVar82,uVar2))) +
+    207:          (unkuint9)SUB168(auVar22 * auVar54,8) + (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    208:   auVar23._8_8_ = 0;
+    209:   auVar23._0_8_ = uVar1;
+    210:   auVar55._8_8_ = 0;
+    211:   auVar55._0_8_ = param_3[3];
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:209
+reconstrucao/src/decompiled_02.c:209:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    206:          (SUB168(auVar19 * auVar51,8) + (ulonglong)(CARRY8(uVar81,uVar5) || CARRY8(uVar82,uVar2))) +
+    207:          (unkuint9)SUB168(auVar22 * auVar54,8) + (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    208:   auVar23._8_8_ = 0;
+    209:   auVar23._0_8_ = uVar1;
+    210:   auVar55._8_8_ = 0;
+    211:   auVar55._0_8_ = param_3[3];
+    212:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:210
+reconstrucao/src/decompiled_02.c:210:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    207:          (unkuint9)SUB168(auVar22 * auVar54,8) + (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    208:   auVar23._8_8_ = 0;
+    209:   auVar23._0_8_ = uVar1;
+    210:   auVar55._8_8_ = 0;
+    211:   auVar55._0_8_ = param_3[3];
+    212:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:211
+reconstrucao/src/decompiled_02.c:211:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    208:   auVar23._8_8_ = 0;
+    209:   auVar23._0_8_ = uVar1;
+    210:   auVar55._8_8_ = 0;
+    211:   auVar55._0_8_ = param_3[3];
+    212:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:212
+reconstrucao/src/decompiled_02.c:212:22: error: expected expression before ‘ulonglong’
+
+    209:   auVar23._0_8_ = uVar1;
+    210:   auVar55._8_8_ = 0;
+    211:   auVar55._0_8_ = param_3[3];
+    212:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    215:   auVar24._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:212
+reconstrucao/src/decompiled_02.c:212:32: error: expected ‘;’ before ‘Var6’
+
+    209:   auVar23._0_8_ = uVar1;
+    210:   auVar55._8_8_ = 0;
+    211:   auVar55._0_8_ = param_3[3];
+    212:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    215:   auVar24._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:214
+reconstrucao/src/decompiled_02.c:214:26: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    211:   auVar55._0_8_ = param_3[3];
+    212:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    215:   auVar24._8_8_ = 0;
+    216:   auVar24._0_8_ = uVar85;
+    217:   auVar56._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:214
+reconstrucao/src/decompiled_02.c:214:70: error: expected ‘)’ before ‘Var6’
+
+    211:   auVar55._0_8_ = param_3[3];
+    212:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    215:   auVar24._8_8_ = 0;
+    216:   auVar24._0_8_ = uVar85;
+    217:   auVar56._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:215
+reconstrucao/src/decompiled_02.c:215:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    212:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    215:   auVar24._8_8_ = 0;
+    216:   auVar24._0_8_ = uVar85;
+    217:   auVar56._8_8_ = 0;
+    218:   auVar56._0_8_ = *puVar80;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:216
+reconstrucao/src/decompiled_02.c:216:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    215:   auVar24._8_8_ = 0;
+    216:   auVar24._0_8_ = uVar85;
+    217:   auVar56._8_8_ = 0;
+    218:   auVar56._0_8_ = *puVar80;
+    219:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:217
+reconstrucao/src/decompiled_02.c:217:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    215:   auVar24._8_8_ = 0;
+    216:   auVar24._0_8_ = uVar85;
+    217:   auVar56._8_8_ = 0;
+    218:   auVar56._0_8_ = *puVar80;
+    219:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
+    220:   uVar82 = (ulonglong)Var6;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:218
+reconstrucao/src/decompiled_02.c:218:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    215:   auVar24._8_8_ = 0;
+    216:   auVar24._0_8_ = uVar85;
+    217:   auVar56._8_8_ = 0;
+    218:   auVar56._0_8_ = *puVar80;
+    219:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
+    220:   uVar82 = (ulonglong)Var6;
+    221:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:219
+reconstrucao/src/decompiled_02.c:219:20: error: expected ‘;’ before ‘uVar4’
+
+    216:   auVar24._0_8_ = uVar85;
+    217:   auVar56._8_8_ = 0;
+    218:   auVar56._0_8_ = *puVar80;
+    219:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
+    220:   uVar82 = (ulonglong)Var6;
+    221:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
+    222:   auVar25._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:221
+reconstrucao/src/decompiled_02.c:221:22: error: expected expression before ‘ulonglong’
+
+    218:   auVar56._0_8_ = *puVar80;
+    219:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
+    220:   uVar82 = (ulonglong)Var6;
+    221:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
+    222:   auVar25._8_8_ = 0;
+    223:   auVar25._0_8_ = uVar85;
+    224:   auVar57._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:221
+reconstrucao/src/decompiled_02.c:221:32: error: expected ‘;’ before ‘Var10’
+
+    218:   auVar56._0_8_ = *puVar80;
+    219:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
+    220:   uVar82 = (ulonglong)Var6;
+    221:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
+    222:   auVar25._8_8_ = 0;
+    223:   auVar25._0_8_ = uVar85;
+    224:   auVar57._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:222
+reconstrucao/src/decompiled_02.c:222:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    219:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
+    220:   uVar82 = (ulonglong)Var6;
+    221:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
+    222:   auVar25._8_8_ = 0;
+    223:   auVar25._0_8_ = uVar85;
+    224:   auVar57._8_8_ = 0;
+    225:   auVar57._0_8_ = *(ulonglong *)(param_1 + 0x88);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:223
+reconstrucao/src/decompiled_02.c:223:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    220:   uVar82 = (ulonglong)Var6;
+    221:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
+    222:   auVar25._8_8_ = 0;
+    223:   auVar25._0_8_ = uVar85;
+    224:   auVar57._8_8_ = 0;
+    225:   auVar57._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    226:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:224
+reconstrucao/src/decompiled_02.c:224:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    221:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
+    222:   auVar25._8_8_ = 0;
+    223:   auVar25._0_8_ = uVar85;
+    224:   auVar57._8_8_ = 0;
+    225:   auVar57._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    226:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
+    227:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:225
+reconstrucao/src/decompiled_02.c:225:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    222:   auVar25._8_8_ = 0;
+    223:   auVar25._0_8_ = uVar85;
+    224:   auVar57._8_8_ = 0;
+    225:   auVar57._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    226:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
+    227:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    228:   uVar4 = (ulonglong)Var6;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:226
+reconstrucao/src/decompiled_02.c:226:21: error: expected expression before ‘ulonglong’
+
+    223:   auVar25._0_8_ = uVar85;
+    224:   auVar57._8_8_ = 0;
+    225:   auVar57._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    226:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
+    227:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    228:   uVar4 = (ulonglong)Var6;
+    229:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:226
+reconstrucao/src/decompiled_02.c:226:31: error: expected ‘;’ before ‘Var10’
+
+    223:   auVar25._0_8_ = uVar85;
+    224:   auVar57._8_8_ = 0;
+    225:   auVar57._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    226:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
+    227:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    228:   uVar4 = (ulonglong)Var6;
+    229:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:229
+reconstrucao/src/decompiled_02.c:229:22: error: expected expression before ‘ulonglong’
+
+    226:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
+    227:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    228:   uVar4 = (ulonglong)Var6;
+    229:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
+    230:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    231:   auVar26._8_8_ = 0;
+    232:   auVar26._0_8_ = uVar85;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:229
+reconstrucao/src/decompiled_02.c:229:32: error: expected ‘;’ before ‘Var12’
+
+    226:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
+    227:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    228:   uVar4 = (ulonglong)Var6;
+    229:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
+    230:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    231:   auVar26._8_8_ = 0;
+    232:   auVar26._0_8_ = uVar85;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:231
+reconstrucao/src/decompiled_02.c:231:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    228:   uVar4 = (ulonglong)Var6;
+    229:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
+    230:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    231:   auVar26._8_8_ = 0;
+    232:   auVar26._0_8_ = uVar85;
+    233:   auVar58._8_8_ = 0;
+    234:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:232
+reconstrucao/src/decompiled_02.c:232:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    229:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
+    230:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    231:   auVar26._8_8_ = 0;
+    232:   auVar26._0_8_ = uVar85;
+    233:   auVar58._8_8_ = 0;
+    234:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    235:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:233
+reconstrucao/src/decompiled_02.c:233:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    230:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    231:   auVar26._8_8_ = 0;
+    232:   auVar26._0_8_ = uVar85;
+    233:   auVar58._8_8_ = 0;
+    234:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    235:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
+    236:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:234
+reconstrucao/src/decompiled_02.c:234:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    231:   auVar26._8_8_ = 0;
+    232:   auVar26._0_8_ = uVar85;
+    233:   auVar58._8_8_ = 0;
+    234:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    235:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
+    236:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    237:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:235
+reconstrucao/src/decompiled_02.c:235:21: error: expected expression before ‘ulonglong’
+
+    232:   auVar26._0_8_ = uVar85;
+    233:   auVar58._8_8_ = 0;
+    234:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    235:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
+    236:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    237:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
+    238:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:235
+reconstrucao/src/decompiled_02.c:235:31: error: expected ‘;’ before ‘Var10’
+
+    232:   auVar26._0_8_ = uVar85;
+    233:   auVar58._8_8_ = 0;
+    234:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    235:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
+    236:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    237:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
+    238:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:237
+reconstrucao/src/decompiled_02.c:237:22: error: expected expression before ‘ulonglong’
+
+    234:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    235:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
+    236:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    237:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
+    238:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    239:   auVar27._8_8_ = 0;
+    240:   auVar27._0_8_ = uVar85;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:237
+reconstrucao/src/decompiled_02.c:237:32: error: expected ‘;’ before ‘Var13’
+
+    234:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    235:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
+    236:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    237:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
+    238:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    239:   auVar27._8_8_ = 0;
+    240:   auVar27._0_8_ = uVar85;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:239
+reconstrucao/src/decompiled_02.c:239:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    236:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    237:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
+    238:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    239:   auVar27._8_8_ = 0;
+    240:   auVar27._0_8_ = uVar85;
+    241:   auVar59._8_8_ = 0;
+    242:   auVar59._0_8_ = *(ulonglong *)(param_1 + 0x98);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:240
+reconstrucao/src/decompiled_02.c:240:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    237:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
+    238:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    239:   auVar27._8_8_ = 0;
+    240:   auVar27._0_8_ = uVar85;
+    241:   auVar59._8_8_ = 0;
+    242:   auVar59._0_8_ = *(ulonglong *)(param_1 + 0x98);
+    243:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar27 * auVar59,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:241
+reconstrucao/src/decompiled_02.c:241:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    238:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    239:   auVar27._8_8_ = 0;
+    240:   auVar27._0_8_ = uVar85;
+    241:   auVar59._8_8_ = 0;
+    242:   auVar59._0_8_ = *(ulonglong *)(param_1 + 0x98);
+    243:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar27 * auVar59,0) +
+    244:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:242
+reconstrucao/src/decompiled_02.c:242:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    239:   auVar27._8_8_ = 0;
+    240:   auVar27._0_8_ = uVar85;
+    241:   auVar59._8_8_ = 0;
+    242:   auVar59._0_8_ = *(ulonglong *)(param_1 + 0x98);
+    243:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar27 * auVar59,0) +
+    244:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    245:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar27 * auVar59,8) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:243
+reconstrucao/src/decompiled_02.c:243:22: error: expected expression before ‘ulonglong’
+
+    240:   auVar27._0_8_ = uVar85;
+    241:   auVar59._8_8_ = 0;
+    242:   auVar59._0_8_ = *(ulonglong *)(param_1 + 0x98);
+    243:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar27 * auVar59,0) +
+    244:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    245:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar27 * auVar59,8) +
+    246:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+
+## FUN_140792760 */ — reconstrucao/src/decompiled_03.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:26: error: unknown type name ‘PCONTEXT’
+
+    15869:   }
+    15870:   return iVar1;
+    15871: }
+    15872: 
+    15873: /* Ghidra label: FUN_1407927f8 */
+    15874: /* Ghidra address: 1407927f8 */
+    15875: void FUN_1407927f8(longlong param_1)
+
+## FUN_140792760 */ — reconstrucao/src/decompiled_03.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:43: error: unknown type name ‘PCONTEXT’
+
+    15869:   }
+    15870:   return iVar1;
+    15871: }
+    15872: 
+    15873: /* Ghidra label: FUN_1407927f8 */
+    15874: /* Ghidra address: 1407927f8 */
+    15875: void FUN_1407927f8(longlong param_1)
+
+## FUN_140792760 */ — reconstrucao/src/decompiled_03.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:60: error: unknown type name ‘PCONTEXT’
+
+    15869:   }
+    15870:   return iVar1;
+    15871: }
+    15872: 
+    15873: /* Ghidra label: FUN_1407927f8 */
+    15874: /* Ghidra address: 1407927f8 */
+    15875: void FUN_1407927f8(longlong param_1)
+
+## FUN_1407a5df0 */ — reconstrucao/src/decompiled_03.c:31574
+reconstrucao/src/../include/ghidra_function_prototypes.h:31574:32: error: unknown type name ‘PCONTEXT’
+
     31571:             if (iVar3 < 0) {
     31572:               piVar5 = *(int **)piVar5;
+    31573:             }
+    31574:             else {
+    31575:               if (iVar3 < 1) break;
+    31576:               piVar5 = *(int **)(piVar5 + 2);
+    31577:             }
 
-## FUN_1407a5df0 */ — reconstrucao/src/decompiled_03.c:31569
-reconstrucao/src/../include/ghidra_function_prototypes.h:31569:55: error: unknown type name ‘_EXCEPTION_RECORD’
+## FUN_1407a6b60 */ — reconstrucao/src/decompiled_03.c:32230
+reconstrucao/src/../include/ghidra_function_prototypes.h:32230:32: error: unknown type name ‘wctype_t’
 
-    31566:         }
-    31567:         else {
-    31568:           piVar5 = *(int **)(param_1 + 0x18);
-    31569:           while (piVar5 != (int *)0x0) {
-    31570:             iVar3 = FUN_1407a5a34(alStackX_18,piVar5);
-    31571:             if (iVar3 < 0) {
-    31572:               piVar5 = *(int **)piVar5;
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32166
-reconstrucao/src/../include/ghidra_function_prototypes.h:32166:1: error: unknown type name ‘errno_t’
-
-    32163:                       if (uVar7 != 0) {
-    32164:                         if ((uVar8 < uVar7) || (uVar12 <= uVar10)) {
-    32165:                           iVar3 = -0x7ffffffb;
-    32166:                           goto LAB_1407a6aee;
-    32167:                         }
-    32168:                         uVar1 = (ushort)puVar5[1];
-    32169:                         if (uVar7 <= (ushort)puVar5[1]) {
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32167
-reconstrucao/src/../include/ghidra_function_prototypes.h:32167:1: error: unknown type name ‘errno_t’
-
-    32164:                         if ((uVar8 < uVar7) || (uVar12 <= uVar10)) {
-    32165:                           iVar3 = -0x7ffffffb;
-    32166:                           goto LAB_1407a6aee;
-    32167:                         }
-    32168:                         uVar1 = (ushort)puVar5[1];
-    32169:                         if (uVar7 <= (ushort)puVar5[1]) {
-    32170:                           uVar1 = (ushort)uVar7;
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32170
-reconstrucao/src/../include/ghidra_function_prototypes.h:32170:1: error: unknown type name ‘errno_t’
-
-    32167:                         }
-    32168:                         uVar1 = (ushort)puVar5[1];
-    32169:                         if (uVar7 <= (ushort)puVar5[1]) {
-    32170:                           uVar1 = (ushort)uVar7;
-    32171:                         }
-    32172:                         *(ushort *)(puVar5 + 1) = uVar1;
-    32173:                         uVar1 = *(ushort *)((longlong)puVar5 + 6);
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32172
-reconstrucao/src/../include/ghidra_function_prototypes.h:32172:1: error: unknown type name ‘errno_t’
-
-    32169:                         if (uVar7 <= (ushort)puVar5[1]) {
-    32170:                           uVar1 = (ushort)uVar7;
-    32171:                         }
-    32172:                         *(ushort *)(puVar5 + 1) = uVar1;
-    32173:                         uVar1 = *(ushort *)((longlong)puVar5 + 6);
-    32174:                         if ((uint)*(ushort *)((longlong)puVar5 + 6) <= *(uint *)(lVar4 + 8)) {
-    32175:                           uVar1 = (ushort)*(uint *)(lVar4 + 8);
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32177
-reconstrucao/src/../include/ghidra_function_prototypes.h:32177:21: error: unknown type name ‘_JBTYPE’
-
-    32174:                         if ((uint)*(ushort *)((longlong)puVar5 + 6) <= *(uint *)(lVar4 + 8)) {
-    32175:                           uVar1 = (ushort)*(uint *)(lVar4 + 8);
-    32176:                         }
-    32177:                         *(ushort *)((longlong)puVar5 + 6) = uVar1;
-    32178:                         *(uint **)(puVar5 + uVar11 * 4 + 4) = puStack_b0;
-    32179:                         *(undefined2 *)(puVar5 + uVar11 * 4 + 2) = *(undefined2 *)(lVar4 + 8);
-    32180:                         *(undefined2 *)((longlong)puVar5 + uVar11 * 0x10 + 10) =
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32189
-reconstrucao/src/../include/ghidra_function_prototypes.h:32189:1: error: unknown type name ‘errno_t’
-
-    32186:                         uVar8 = uVar8 - *(uint *)(lVar4 + 8);
-    32187:                         uVar11 = (ulonglong)(uVar10 + 1);
-    32188:                       }
-    32189:                     }
-    32190:                     uVar9 = uVar9 + 1;
-    32191:                   }
-    32192:                   *(short *)(puVar5 + 1) = (short)puVar5[1] + 8;
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32192
-reconstrucao/src/../include/ghidra_function_prototypes.h:32192:1: error: unknown type name ‘errno_t’
-
-    32189:                     }
-    32190:                     uVar9 = uVar9 + 1;
-    32191:                   }
-    32192:                   *(short *)(puVar5 + 1) = (short)puVar5[1] + 8;
-    32193:                   *(short *)((longlong)puVar5 + 6U) = *(short *)((longlong)puVar5 + 6U) + 8;
-    32194:                   uVar6 = 0;
-    32195:                   *puVar5 = uVar10;
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32196
-reconstrucao/src/../include/ghidra_function_prototypes.h:32196:1: error: unknown type name ‘errno_t’
-
-    32193:                   *(short *)((longlong)puVar5 + 6U) = *(short *)((longlong)puVar5 + 6U) + 8;
-    32194:                   uVar6 = 0;
-    32195:                   *puVar5 = uVar10;
-    32196:                   LOCK();
-    32197:                   uVar11 = *(ulonglong *)(lStack_a8 + 0x28);
-    32198:                   if (uVar11 == 0) {
-    32199:                     *(ulonglong *)(lStack_a8 + 0x28) = (ulonglong)puVar5;
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32197
-reconstrucao/src/../include/ghidra_function_prototypes.h:32197:1: error: unknown type name ‘errno_t’
-
-    32194:                   uVar6 = 0;
-    32195:                   *puVar5 = uVar10;
-    32196:                   LOCK();
-    32197:                   uVar11 = *(ulonglong *)(lStack_a8 + 0x28);
-    32198:                   if (uVar11 == 0) {
-    32199:                     *(ulonglong *)(lStack_a8 + 0x28) = (ulonglong)puVar5;
-    32200:                   }
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32198
-reconstrucao/src/../include/ghidra_function_prototypes.h:32198:1: error: unknown type name ‘errno_t’
-
-    32195:                   *puVar5 = uVar10;
-    32196:                   LOCK();
-    32197:                   uVar11 = *(ulonglong *)(lStack_a8 + 0x28);
-    32198:                   if (uVar11 == 0) {
-    32199:                     *(ulonglong *)(lStack_a8 + 0x28) = (ulonglong)puVar5;
-    32200:                   }
-    32201:                   else {
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32199
-reconstrucao/src/../include/ghidra_function_prototypes.h:32199:1: error: unknown type name ‘errno_t’
-
-    32196:                   LOCK();
-    32197:                   uVar11 = *(ulonglong *)(lStack_a8 + 0x28);
-    32198:                   if (uVar11 == 0) {
-    32199:                     *(ulonglong *)(lStack_a8 + 0x28) = (ulonglong)puVar5;
-    32200:                   }
-    32201:                   else {
-    32202:                     uVar6 = uVar11;
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32202
-reconstrucao/src/../include/ghidra_function_prototypes.h:32202:53: error: unknown type name ‘_locale_t’; did you mean ‘locale_t’?
-
-    32199:                     *(ulonglong *)(lStack_a8 + 0x28) = (ulonglong)puVar5;
-    32200:                   }
-    32201:                   else {
-    32202:                     uVar6 = uVar11;
-    32203:                   }
-    32204:                   UNLOCK();
-    32205:                   puVar5 = (uint *)((ulonglong)puVar5 & -(ulonglong)(uVar6 != 0));
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32207
-reconstrucao/src/../include/ghidra_function_prototypes.h:32207:1: error: unknown type name ‘errno_t’
-
-    32204:                   UNLOCK();
-    32205:                   puVar5 = (uint *)((ulonglong)puVar5 & -(ulonglong)(uVar6 != 0));
-    32206:                 }
-    32207: LAB_1407a6aee:
-    32208:                 if (puVar5 != (uint *)0x0) {
-    32209:                   ExFreePoolWithTag(puVar5,0x63734943);
-    32210:                 }
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32210
-reconstrucao/src/../include/ghidra_function_prototypes.h:32210:1: error: unknown type name ‘errno_t’
-
-    32207: LAB_1407a6aee:
-    32208:                 if (puVar5 != (uint *)0x0) {
-    32209:                   ExFreePoolWithTag(puVar5,0x63734943);
-    32210:                 }
-    32211:                 ExFreePoolWithTag(lVar4,0x63734943);
-    32212:               }
-    32213:             }
-
-## FUN_1407a67fc */ — reconstrucao/src/decompiled_03.c:32212
-reconstrucao/src/../include/ghidra_function_prototypes.h:32212:1: error: unknown type name ‘errno_t’
-
-    32209:                   ExFreePoolWithTag(puVar5,0x63734943);
-    32210:                 }
-    32211:                 ExFreePoolWithTag(lVar4,0x63734943);
-    32212:               }
-    32213:             }
-    32214:           }
-    32215:         }
-
-## FUN_1407a6b60 */ — reconstrucao/src/decompiled_03.c:32227
-reconstrucao/src/../include/ghidra_function_prototypes.h:32227:32: error: unknown type name ‘wctype_t’
-
-    32224: }
-    32225: 
-    32226: /* Ghidra label: FUN_1407a6b60 */
     32227: /* Ghidra address: 1407a6b60 */
-    32228: void FUN_1407a6b60(undefined1 param_1)
-    32229: 
-    32230: {
-
-## FUN_1407a6b60 */ — reconstrucao/src/decompiled_03.c:32231
-reconstrucao/src/../include/ghidra_function_prototypes.h:32231:22: error: unknown type name ‘_JBTYPE’
-
     32228: void FUN_1407a6b60(undefined1 param_1)
     32229: 
     32230: {
     32231:   DAT_140e67e3c = param_1;
     32232:   return;
     32233: }
-    32234: 
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:1: error: unknown type name ‘errno_t’
-
-    32233: }
-    32234: 
-    32235: /* Ghidra label: FUN_1407a6b70 */
-    32236: /* Ghidra address: 1407a6b70 */
-    32237: undefined8 FUN_1407a6b70(longlong param_1)
-    32238: 
-    32239: {
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32233: }
-    32234: 
-    32235: /* Ghidra label: FUN_1407a6b70 */
-    32236: /* Ghidra address: 1407a6b70 */
-    32237: undefined8 FUN_1407a6b70(longlong param_1)
-    32238: 
-    32239: {
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32233: }
-    32234: 
-    32235: /* Ghidra label: FUN_1407a6b70 */
-    32236: /* Ghidra address: 1407a6b70 */
-    32237: undefined8 FUN_1407a6b70(longlong param_1)
-    32238: 
-    32239: {
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:1: error: unknown type name ‘errno_t’
-
-    32234: 
-    32235: /* Ghidra label: FUN_1407a6b70 */
-    32236: /* Ghidra address: 1407a6b70 */
-    32237: undefined8 FUN_1407a6b70(longlong param_1)
-    32238: 
-    32239: {
-    32240:   undefined4 *puVar1;
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32234: 
-    32235: /* Ghidra label: FUN_1407a6b70 */
-    32236: /* Ghidra address: 1407a6b70 */
-    32237: undefined8 FUN_1407a6b70(longlong param_1)
-    32238: 
-    32239: {
-    32240:   undefined4 *puVar1;
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32234: 
-    32235: /* Ghidra label: FUN_1407a6b70 */
-    32236: /* Ghidra address: 1407a6b70 */
-    32237: undefined8 FUN_1407a6b70(longlong param_1)
-    32238: 
-    32239: {
-    32240:   undefined4 *puVar1;
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32247
-reconstrucao/src/../include/ghidra_function_prototypes.h:32247:1: error: unknown type name ‘errno_t’
-
-    32244:   longlong lVar5;
-    32245:   undefined8 uVar6;
-    32246:   longlong lVar7;
-    32247:   ulonglong uVar8;
-    32248:   bool bVar9;
-    32249:   
-    32250:   uVar6 = 0;
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32247
-reconstrucao/src/../include/ghidra_function_prototypes.h:32247:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32244:   longlong lVar5;
-    32245:   undefined8 uVar6;
-    32246:   longlong lVar7;
-    32247:   ulonglong uVar8;
-    32248:   bool bVar9;
-    32249:   
-    32250:   uVar6 = 0;
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32251
-reconstrucao/src/../include/ghidra_function_prototypes.h:32251:1: error: unknown type name ‘errno_t’
-
-    32248:   bool bVar9;
-    32249:   
-    32250:   uVar6 = 0;
-    32251:   FUN_1407a67fc();
-    32252:   lVar2 = FUN_1402e1b60();
-    32253:   uVar8 = (ulonglong)*(ushort *)(lVar2 + 0x4d0) + 0x1e;
-    32254:   if ((DAT_140fc4e80 & 0x10) == 0) {
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32251
-reconstrucao/src/../include/ghidra_function_prototypes.h:32251:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32248:   bool bVar9;
-    32249:   
-    32250:   uVar6 = 0;
-    32251:   FUN_1407a67fc();
-    32252:   lVar2 = FUN_1402e1b60();
-    32253:   uVar8 = (ulonglong)*(ushort *)(lVar2 + 0x4d0) + 0x1e;
-    32254:   if ((DAT_140fc4e80 & 0x10) == 0) {
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:1: error: unknown type name ‘errno_t’
-
-    32251:   FUN_1407a67fc();
-    32252:   lVar2 = FUN_1402e1b60();
-    32253:   uVar8 = (ulonglong)*(ushort *)(lVar2 + 0x4d0) + 0x1e;
-    32254:   if ((DAT_140fc4e80 & 0x10) == 0) {
-    32255:     uVar4 = DAT_140fc4e80 | 1;
-    32256:     FUN_14053fd44(&PTR_DAT_1400df268,uVar4,3,1);
-    32257:     FUN_14053fdd4(uVar4,3,&PTR_DAT_1400df268);
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32251:   FUN_1407a67fc();
-    32252:   lVar2 = FUN_1402e1b60();
-    32253:   uVar8 = (ulonglong)*(ushort *)(lVar2 + 0x4d0) + 0x1e;
-    32254:   if ((DAT_140fc4e80 & 0x10) == 0) {
-    32255:     uVar4 = DAT_140fc4e80 | 1;
-    32256:     FUN_14053fd44(&PTR_DAT_1400df268,uVar4,3,1);
-    32257:     FUN_14053fdd4(uVar4,3,&PTR_DAT_1400df268);
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32251:   FUN_1407a67fc();
-    32252:   lVar2 = FUN_1402e1b60();
-    32253:   uVar8 = (ulonglong)*(ushort *)(lVar2 + 0x4d0) + 0x1e;
-    32254:   if ((DAT_140fc4e80 & 0x10) == 0) {
-    32255:     uVar4 = DAT_140fc4e80 | 1;
-    32256:     FUN_14053fd44(&PTR_DAT_1400df268,uVar4,3,1);
-    32257:     FUN_14053fdd4(uVar4,3,&PTR_DAT_1400df268);
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:1: error: unknown type name ‘errno_t’
-
-    32254:   if ((DAT_140fc4e80 & 0x10) == 0) {
-    32255:     uVar4 = DAT_140fc4e80 | 1;
-    32256:     FUN_14053fd44(&PTR_DAT_1400df268,uVar4,3,1);
-    32257:     FUN_14053fdd4(uVar4,3,&PTR_DAT_1400df268);
-    32258:   }
-    32259:   lVar7 = (ulonglong)*(ushort *)(lVar2 + 0x4d0) + 0x22;
-    32260:   puVar3 = (undefined4 *)ExAllocatePool2(0x100,uVar8 * 2 + 0x40 + lVar7,0x63734943);
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32254:   if ((DAT_140fc4e80 & 0x10) == 0) {
-    32255:     uVar4 = DAT_140fc4e80 | 1;
-    32256:     FUN_14053fd44(&PTR_DAT_1400df268,uVar4,3,1);
-    32257:     FUN_14053fdd4(uVar4,3,&PTR_DAT_1400df268);
-    32258:   }
-    32259:   lVar7 = (ulonglong)*(ushort *)(lVar2 + 0x4d0) + 0x22;
-    32260:   puVar3 = (undefined4 *)ExAllocatePool2(0x100,uVar8 * 2 + 0x40 + lVar7,0x63734943);
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32257
-reconstrucao/src/../include/ghidra_function_prototypes.h:32257:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32254:   if ((DAT_140fc4e80 & 0x10) == 0) {
-    32255:     uVar4 = DAT_140fc4e80 | 1;
-    32256:     FUN_14053fd44(&PTR_DAT_1400df268,uVar4,3,1);
-    32257:     FUN_14053fdd4(uVar4,3,&PTR_DAT_1400df268);
-    32258:   }
-    32259:   lVar7 = (ulonglong)*(ushort *)(lVar2 + 0x4d0) + 0x22;
-    32260:   puVar3 = (undefined4 *)ExAllocatePool2(0x100,uVar8 * 2 + 0x40 + lVar7,0x63734943);
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32282
-reconstrucao/src/../include/ghidra_function_prototypes.h:32282:19: error: conflicting types for ‘wcscat’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
-
-    32279:       FUN_14053fdd4(uVar4,3,&PTR_DAT_1400df268);
-    32280:     }
-    32281:     lVar5 = lVar5 + (uVar8 & 0xfffffffffffffffe);
-    32282:     FUN_14040d3e0(lVar5,lVar7,L"\\??\\%ws\\SystemApps\\",*(undefined8 *)(lVar2 + 0x4d8));
-    32283:     RtlInitUnicodeString(puVar3 + 0xc,lVar5);
-    32284:     LOCK();
-    32285:     bVar9 = *(longlong *)(param_1 + 0x20) == 0;
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32283
-reconstrucao/src/../include/ghidra_function_prototypes.h:32283:1: error: unknown type name ‘errno_t’
-
-    32280:     }
-    32281:     lVar5 = lVar5 + (uVar8 & 0xfffffffffffffffe);
-    32282:     FUN_14040d3e0(lVar5,lVar7,L"\\??\\%ws\\SystemApps\\",*(undefined8 *)(lVar2 + 0x4d8));
-    32283:     RtlInitUnicodeString(puVar3 + 0xc,lVar5);
-    32284:     LOCK();
-    32285:     bVar9 = *(longlong *)(param_1 + 0x20) == 0;
-    32286:     if (bVar9) {
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32283
-reconstrucao/src/../include/ghidra_function_prototypes.h:32283:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32280:     }
-    32281:     lVar5 = lVar5 + (uVar8 & 0xfffffffffffffffe);
-    32282:     FUN_14040d3e0(lVar5,lVar7,L"\\??\\%ws\\SystemApps\\",*(undefined8 *)(lVar2 + 0x4d8));
-    32283:     RtlInitUnicodeString(puVar3 + 0xc,lVar5);
-    32284:     LOCK();
-    32285:     bVar9 = *(longlong *)(param_1 + 0x20) == 0;
-    32286:     if (bVar9) {
 
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32284
-reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: conflicting types for ‘wcschr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: conflicting types for ‘wcscat’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32281:     lVar5 = lVar5 + (uVar8 & 0xfffffffffffffffe);
     32282:     FUN_14040d3e0(lVar5,lVar7,L"\\??\\%ws\\SystemApps\\",*(undefined8 *)(lVar2 + 0x4d8));
@@ -3181,19 +2708,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: confli
     32286:     if (bVar9) {
     32287:       *(longlong *)(param_1 + 0x20) = (longlong)puVar3;
 
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32285
-reconstrucao/src/../include/ghidra_function_prototypes.h:32285:13: error: conflicting types for ‘wcscmp’; have ‘int(wchar_t *, wchar_t *)’ {aka ‘int(int *, int *)’}
-
-    32282:     FUN_14040d3e0(lVar5,lVar7,L"\\??\\%ws\\SystemApps\\",*(undefined8 *)(lVar2 + 0x4d8));
-    32283:     RtlInitUnicodeString(puVar3 + 0xc,lVar5);
-    32284:     LOCK();
-    32285:     bVar9 = *(longlong *)(param_1 + 0x20) == 0;
-    32286:     if (bVar9) {
-    32287:       *(longlong *)(param_1 + 0x20) = (longlong)puVar3;
-    32288:     }
-
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32286
-reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: conflicting types for ‘wcscpy’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: conflicting types for ‘wcschr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
 
     32283:     RtlInitUnicodeString(puVar3 + 0xc,lVar5);
     32284:     LOCK();
@@ -3204,18 +2720,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: confli
     32289:     UNLOCK();
 
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32287
-reconstrucao/src/../include/ghidra_function_prototypes.h:32287:1: error: unknown type name ‘errno_t’
-
-    32284:     LOCK();
-    32285:     bVar9 = *(longlong *)(param_1 + 0x20) == 0;
-    32286:     if (bVar9) {
-    32287:       *(longlong *)(param_1 + 0x20) = (longlong)puVar3;
-    32288:     }
-    32289:     UNLOCK();
-    32290:     if (!bVar9) {
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32287
-reconstrucao/src/../include/ghidra_function_prototypes.h:32287:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32287:13: error: conflicting types for ‘wcscmp’; have ‘int(wchar_t *, wchar_t *)’ {aka ‘int(int *, int *)’}
 
     32284:     LOCK();
     32285:     bVar9 = *(longlong *)(param_1 + 0x20) == 0;
@@ -3226,7 +2731,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32287:40: error: unknow
     32290:     if (!bVar9) {
 
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32288
-reconstrucao/src/../include/ghidra_function_prototypes.h:32288:16: error: conflicting types for ‘wcscspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32288:19: error: conflicting types for ‘wcscpy’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32285:     bVar9 = *(longlong *)(param_1 + 0x20) == 0;
     32286:     if (bVar9) {
@@ -3236,19 +2741,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32288:16: error: confli
     32290:     if (!bVar9) {
     32291:       ExFreePoolWithTag(puVar3,0x63734943);
 
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32289
-reconstrucao/src/../include/ghidra_function_prototypes.h:32289:16: error: conflicting types for ‘wcslen’; have ‘size_t(wchar_t *)’ {aka ‘long unsigned int(int *)’}
-
-    32286:     if (bVar9) {
-    32287:       *(longlong *)(param_1 + 0x20) = (longlong)puVar3;
-    32288:     }
-    32289:     UNLOCK();
-    32290:     if (!bVar9) {
-    32291:       ExFreePoolWithTag(puVar3,0x63734943);
-    32292:     }
-
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32290
-reconstrucao/src/../include/ghidra_function_prototypes.h:32290:19: error: conflicting types for ‘wcsncat’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32290:16: error: conflicting types for ‘wcscspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
 
     32287:       *(longlong *)(param_1 + 0x20) = (longlong)puVar3;
     32288:     }
@@ -3259,29 +2753,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32290:19: error: confli
     32293:   }
 
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:1: error: unknown type name ‘errno_t’
-
-    32288:     }
-    32289:     UNLOCK();
-    32290:     if (!bVar9) {
-    32291:       ExFreePoolWithTag(puVar3,0x63734943);
-    32292:     }
-    32293:   }
-    32294:   return uVar6;
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32288:     }
-    32289:     UNLOCK();
-    32290:     if (!bVar9) {
-    32291:       ExFreePoolWithTag(puVar3,0x63734943);
-    32292:     }
-    32293:   }
-    32294:   return uVar6;
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32291
-reconstrucao/src/../include/ghidra_function_prototypes.h:32291:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32291:16: error: conflicting types for ‘wcslen’; have ‘size_t(wchar_t *)’ {aka ‘long unsigned int(int *)’}
 
     32288:     }
     32289:     UNLOCK();
@@ -3292,7 +2764,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32291:76: error: unknow
     32294:   return uVar6;
 
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32292
-reconstrucao/src/../include/ghidra_function_prototypes.h:32292:13: error: conflicting types for ‘wcsncmp’; have ‘int(wchar_t *, wchar_t *, size_t)’ {aka ‘int(int *, int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32292:19: error: conflicting types for ‘wcsncat’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
 
     32289:     UNLOCK();
     32290:     if (!bVar9) {
@@ -3302,41 +2774,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32292:13: error: confli
     32294:   return uVar6;
     32295: }
 
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32293
-reconstrucao/src/../include/ghidra_function_prototypes.h:32293:19: error: conflicting types for ‘wcsncpy’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
-
-    32290:     if (!bVar9) {
-    32291:       ExFreePoolWithTag(puVar3,0x63734943);
-    32292:     }
-    32293:   }
-    32294:   return uVar6;
-    32295: }
-    32296: 
-
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:1: error: unknown type name ‘errno_t’
-
-    32291:       ExFreePoolWithTag(puVar3,0x63734943);
-    32292:     }
-    32293:   }
-    32294:   return uVar6;
-    32295: }
-    32296: 
-    32297: /* Ghidra label: FUN_1407a6d5c */
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    32291:       ExFreePoolWithTag(puVar3,0x63734943);
-    32292:     }
-    32293:   }
-    32294:   return uVar6;
-    32295: }
-    32296: 
-    32297: /* Ghidra label: FUN_1407a6d5c */
-
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32294
-reconstrucao/src/../include/ghidra_function_prototypes.h:32294:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:32294:13: error: conflicting types for ‘wcsncmp’; have ‘int(wchar_t *, wchar_t *, size_t)’ {aka ‘int(int *, int *, long unsigned int)’}
 
     32291:       ExFreePoolWithTag(puVar3,0x63734943);
     32292:     }
@@ -3347,7 +2786,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32294:76: error: unknow
     32297: /* Ghidra label: FUN_1407a6d5c */
 
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32295
-reconstrucao/src/../include/ghidra_function_prototypes.h:32295:16: error: conflicting types for ‘wcsnlen’; have ‘size_t(wchar_t *, size_t)’ {aka ‘long unsigned int(int *, long unsigned int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32295:19: error: conflicting types for ‘wcsncpy’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
 
     32292:     }
     32293:   }
@@ -3357,19 +2796,8 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32295:16: error: confli
     32297: /* Ghidra label: FUN_1407a6d5c */
     32298: /* Ghidra address: 1407a6d5c */
 
-## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32296
-reconstrucao/src/../include/ghidra_function_prototypes.h:32296:19: error: conflicting types for ‘wcsrchr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
-
-    32293:   }
-    32294:   return uVar6;
-    32295: }
-    32296: 
-    32297: /* Ghidra label: FUN_1407a6d5c */
-    32298: /* Ghidra address: 1407a6d5c */
-    32299: void FUN_1407a6d5c(char param_1,char param_2,char *param_3,char *param_4)
-
 ## FUN_1407a6b70 */ — reconstrucao/src/decompiled_03.c:32297
-reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: conflicting types for ‘wcsspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: conflicting types for ‘wcsnlen’; have ‘size_t(wchar_t *, size_t)’ {aka ‘long unsigned int(int *, long unsigned int)’}
 
     32294:   return uVar6;
     32295: }
@@ -3380,7 +2808,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: confli
     32300: 
 
 ## FUN_1407a6d5c */ — reconstrucao/src/decompiled_03.c:32298
-reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: conflicting types for ‘wcsstr’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: conflicting types for ‘wcsrchr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
 
     32295: }
     32296: 
@@ -3390,8 +2818,19 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: confli
     32300: 
     32301: {
 
+## FUN_1407a6d5c */ — reconstrucao/src/decompiled_03.c:32299
+reconstrucao/src/../include/ghidra_function_prototypes.h:32299:16: error: conflicting types for ‘wcsspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+
+    32296: 
+    32297: /* Ghidra label: FUN_1407a6d5c */
+    32298: /* Ghidra address: 1407a6d5c */
+    32299: void FUN_1407a6d5c(char param_1,char param_2,char *param_3,char *param_4)
+    32300: 
+    32301: {
+    32302:   int iVar1;
+
 ## FUN_1407a6d5c */ — reconstrucao/src/decompiled_03.c:32300
-reconstrucao/src/../include/ghidra_function_prototypes.h:32300:18: error: conflicting types for ‘wcstoul’; have ‘uint32_t(wchar_t *, wchar_t **, int)’ {aka ‘unsigned int(int *, int **, int)’}
+reconstrucao/src/../include/ghidra_function_prototypes.h:32300:19: error: conflicting types for ‘wcsstr’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
     32297: /* Ghidra label: FUN_1407a6d5c */
     32298: /* Ghidra address: 1407a6d5c */
@@ -3400,6 +2839,17 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:32300:18: error: confli
     32301: {
     32302:   int iVar1;
     32303:   bool bVar2;
+
+## FUN_1407a6d5c */ — reconstrucao/src/decompiled_03.c:32302
+reconstrucao/src/../include/ghidra_function_prototypes.h:32302:18: error: conflicting types for ‘wcstoul’; have ‘uint32_t(wchar_t *, wchar_t **, int)’ {aka ‘unsigned int(int *, int **, int)’}
+
+    32299: void FUN_1407a6d5c(char param_1,char param_2,char *param_3,char *param_4)
+    32300: 
+    32301: {
+    32302:   int iVar1;
+    32303:   bool bVar2;
+    32304:   char acStack_18 [16];
+    32305:   
 
 ## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:45
 reconstrucao/src/decompiled_03.c:45:88: error: passing argument 4 of ‘FUN_140a33084’ from incompatible pointer type [-Wincompatible-pointer-types]
@@ -3962,443 +3412,993 @@ reconstrucao/src/decompiled_03.c:282:35: error: passing argument 2 of ‘FUN_140
     284:     if (-1 < iVar1) {
     285:       iVar1 = FUN_140a329d0(lStack_28,&puStackX_8);
 
-## FUN_140ad6940 */ — reconstrucao/src/decompiled_04.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:26: error: unknown type name ‘PCONTEXT’
+## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:285
+reconstrucao/src/decompiled_03.c:285:29: error: passing argument 1 of ‘FUN_140a329d0’ makes pointer from integer without a cast [-Wint-conversion]
 
-    15862:     pvStack_48 = _Dst;
-    15863:     if (_Dst == (void *)0x0) {
-    15864:       iVar3 = -0x3fffff66;
-    15865:       goto LAB_140ad6b43;
-    15866:     }
-    15867:     if ((_Size != 0) && ((*(ulonglong *)(param_1 + 0x10) & 7) != 0)) {
-    15868:                     /* WARNING: Subroutine does not return */
+    282:     iVar1 = FUN_140a324f0(param_1,alStack_20,param_3,&lStack_28);
+    283:     lVar3 = lStack_28;
+    284:     if (-1 < iVar1) {
+    285:       iVar1 = FUN_140a329d0(lStack_28,&puStackX_8);
+    286:       if (-1 < iVar1) goto LAB_14077f8d9;
+    287:       puVar2 = puStackX_8;
+    288:     }
 
-## FUN_140ad6940 */ — reconstrucao/src/decompiled_04.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:43: error: unknown type name ‘PCONTEXT’
+## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:285
+reconstrucao/src/decompiled_03.c:285:39: error: passing argument 2 of ‘FUN_140a329d0’ from incompatible pointer type [-Wincompatible-pointer-types]
 
-    15862:     pvStack_48 = _Dst;
-    15863:     if (_Dst == (void *)0x0) {
-    15864:       iVar3 = -0x3fffff66;
-    15865:       goto LAB_140ad6b43;
-    15866:     }
-    15867:     if ((_Size != 0) && ((*(ulonglong *)(param_1 + 0x10) & 7) != 0)) {
-    15868:                     /* WARNING: Subroutine does not return */
+    282:     iVar1 = FUN_140a324f0(param_1,alStack_20,param_3,&lStack_28);
+    283:     lVar3 = lStack_28;
+    284:     if (-1 < iVar1) {
+    285:       iVar1 = FUN_140a329d0(lStack_28,&puStackX_8);
+    286:       if (-1 < iVar1) goto LAB_14077f8d9;
+    287:       puVar2 = puStackX_8;
+    288:     }
 
-## FUN_140ad6940 */ — reconstrucao/src/decompiled_04.c:15865
-reconstrucao/src/../include/ghidra_function_prototypes.h:15865:60: error: unknown type name ‘PCONTEXT’
+## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:291
+reconstrucao/src/decompiled_03.c:291:19: error: passing argument 1 of ‘FUN_140a32d80’ makes pointer from integer without a cast [-Wint-conversion]
 
-    15862:     pvStack_48 = _Dst;
-    15863:     if (_Dst == (void *)0x0) {
-    15864:       iVar3 = -0x3fffff66;
-    15865:       goto LAB_140ad6b43;
-    15866:     }
-    15867:     if ((_Size != 0) && ((*(ulonglong *)(param_1 + 0x10) & 7) != 0)) {
-    15868:                     /* WARNING: Subroutine does not return */
+    288:     }
+    289:   }
+    290:   if (lVar3 != 0) {
+    291:     FUN_140a32d80(lVar3);
+    292:   }
+    293:   if (puVar2 != (undefined *)0x0) {
+    294:     FUN_140485460(puVar2);
 
-## FUN_140ada5c8 */ — reconstrucao/src/decompiled_04.c:18857
-reconstrucao/src/../include/ghidra_function_prototypes.h:18857:59: error: unknown type name ‘ULONGLONG’
+## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:293
+reconstrucao/src/decompiled_03.c:293:29: error: expected expression before ‘)’ token
 
-    18854:   uint *puVar13;
-    18855:   int *piVar14;
-    18856:   uint *puVar15;
-    18857:   uint uVar16;
-    18858:   int *piVar17;
-    18859:   int aiStackX_18 [4];
-    18860:   void *pvStack_50;
+    290:   if (lVar3 != 0) {
+    291:     FUN_140a32d80(lVar3);
+    292:   }
+    293:   if (puVar2 != (undefined *)0x0) {
+    294:     FUN_140485460(puVar2);
+    295:   }
+    296:   if (iVar1 != -0x3fffff45) {
 
-## FUN_140ade634 */ — reconstrucao/src/decompiled_04.c:22298
-reconstrucao/src/../include/ghidra_function_prototypes.h:22298:1: error: unknown type name ‘BADSPACEBASE’
+## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:294
+reconstrucao/src/decompiled_03.c:294:19: error: passing argument 1 of ‘FUN_140485460’ makes integer from pointer without a cast [-Wint-conversion]
 
-    22295:     puVar1 = *(undefined8 **)(param_1 + 0x20);
-    22296:     while (puVar5 = puVar1, puVar5 != (undefined8 *)(param_1 + 0x20)) {
-    22297:       puVar1 = (undefined8 *)*puVar5;
-    22298:       if (*(char *)(puVar5 + 7) == '\0') {
-    22299:         puVar6 = (undefined8 *)puVar5[5];
-    22300:         while (puVar6 != puVar5 + 5) {
-    22301:           puVar2 = (undefined8 *)*puVar6;
+    291:     FUN_140a32d80(lVar3);
+    292:   }
+    293:   if (puVar2 != (undefined *)0x0) {
+    294:     FUN_140485460(puVar2);
+    295:   }
+    296:   if (iVar1 != -0x3fffff45) {
+    297:     return iVar1;
 
-## FUN_140ae3d7c */ — reconstrucao/src/decompiled_04.c:26577
-reconstrucao/src/../include/ghidra_function_prototypes.h:26577:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:299
+reconstrucao/src/decompiled_03.c:299:17: error: ‘DAT_140f06d48’ undeclared (first use in this function)
 
-    26574:   return;
-    26575: }
-    26576: 
-    26577: /* Ghidra label: FUN_140ae3e00 */
-    26578: /* Ghidra address: 140ae3e00 */
-    26579: int FUN_140ae3e00(void)
-    26580: 
+    296:   if (iVar1 != -0x3fffff45) {
+    297:     return iVar1;
+    298:   }
+    299:   puStackX_8 = &DAT_140f06d48;
+    300:   iVar1 = 0;
+    301: LAB_14077f8d9:
+    302:   *param_4 = puStackX_8;
 
-## FUN_140ae7108 */ — reconstrucao/src/decompiled_04.c:29003
-reconstrucao/src/../include/ghidra_function_prototypes.h:29003:1: error: unknown type name ‘BADSPACEBASE’
+## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:302
+reconstrucao/src/decompiled_03.c:302:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
 
-    29000:     plVar11 = *(longlong **)(param_1 + 8);
-    29001:     if (*plVar11 != param_1) {
-    29002:       pcVar4 = (code *)swi(0x29);
-    29003:       plVar11 = (longlong *)(*pcVar4)(3);
-    29004:       puVar13 = auStack_40;
-    29005:     }
-    29006:     *plVar8 = param_1;
+    299:   puStackX_8 = &DAT_140f06d48;
+    300:   iVar1 = 0;
+    301: LAB_14077f8d9:
+    302:   *param_4 = puStackX_8;
+    303:   return iVar1;
+    304: }
+    305: 
 
-## FUN_140ae97f0 */ — reconstrucao/src/decompiled_04.c:30712
-reconstrucao/src/../include/ghidra_function_prototypes.h:30712:1: error: unknown type name ‘NTSTATUS’
+## FUN_14077f900 */ — reconstrucao/src/decompiled_03.c:311
+reconstrucao/src/decompiled_03.c:311:3: error: implicit declaration of function ‘FUN_14077f250’; did you mean ‘FUN_14077f220’? [-Wimplicit-function-declaration]
 
-    30709:   undefined1 auStack_218 [32];
-    30710:   undefined4 uStack_1f8;
-    30711:   undefined1 *puStack_1f0;
-    30712:   uint uStack_1e8;
-    30713:   uint uStack_1e4;
-    30714:   uint uStack_1e0;
-    30715:   uint uStack_1dc;
+    308: void FUN_14077f900(void)
+    309: 
+    310: {
+    311:   FUN_14077f250();
+    312:   return;
+    313: }
+    314: 
 
-## FUN_140ae97f0 */ — reconstrucao/src/decompiled_04.c:30712
-reconstrucao/src/../include/ghidra_function_prototypes.h:30712:46: error: unknown type name ‘HANDLE’
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:325
+reconstrucao/src/decompiled_03.c:325:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
 
-    30709:   undefined1 auStack_218 [32];
-    30710:   undefined4 uStack_1f8;
-    30711:   undefined1 *puStack_1f0;
-    30712:   uint uStack_1e8;
-    30713:   uint uStack_1e4;
-    30714:   uint uStack_1e0;
-    30715:   uint uStack_1dc;
+    322:   undefined8 uStack_18;
+    323:   undefined8 uStack_10;
+    324:   
+    325:   lVar2 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    326:   LOCK();
+    327:   uVar1 = DAT_140f06ba8 & 1;
+    328:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
 
-## FUN_140ae97f0 */ — reconstrucao/src/decompiled_04.c:30713
-reconstrucao/src/../include/ghidra_function_prototypes.h:30713:1: error: unknown type name ‘NTSTATUS’
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:325
+reconstrucao/src/decompiled_03.c:325:11: error: too many arguments to function ‘FUN_1402f5ef0’; expected 2, have 3
 
-    30710:   undefined4 uStack_1f8;
-    30711:   undefined1 *puStack_1f0;
-    30712:   uint uStack_1e8;
-    30713:   uint uStack_1e4;
-    30714:   uint uStack_1e0;
-    30715:   uint uStack_1dc;
-    30716:   uint uStack_1d8;
+    322:   undefined8 uStack_18;
+    323:   undefined8 uStack_10;
+    324:   
+    325:   lVar2 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    326:   LOCK();
+    327:   uVar1 = DAT_140f06ba8 & 1;
+    328:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:31569
-reconstrucao/src/../include/ghidra_function_prototypes.h:31569:32: error: unknown type name ‘PCONTEXT’
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:326
+reconstrucao/src/decompiled_03.c:326:3: error: implicit declaration of function ‘LOCK’ [-Wimplicit-function-declaration]
 
-    31566:           if ((*(uint *)((longlong)puVar13 + 100) & 2) != 0) {
-    31567:             iVar7 = FUN_140a9f9b0(puVar24,0);
-    31568:           }
-    31569:           *(int *)(puVar13 + 0x12) = iVar7;
-    31570:           iStack_4d8 = 0;
+    323:   undefined8 uStack_10;
+    324:   
+    325:   lVar2 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    326:   LOCK();
+    327:   uVar1 = DAT_140f06ba8 & 1;
+    328:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
+    329:   UNLOCK();
+
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:329
+reconstrucao/src/decompiled_03.c:329:3: error: implicit declaration of function ‘UNLOCK’ [-Wimplicit-function-declaration]
+
+    326:   LOCK();
+    327:   uVar1 = DAT_140f06ba8 & 1;
+    328:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
+    329:   UNLOCK();
+    330:   if (uVar1 != 0) {
+    331:     FUN_1402f5950(&DAT_140f06ba8,lVar2,&DAT_140f06ba8);
+    332:   }
+
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:331
+reconstrucao/src/decompiled_03.c:331:34: error: passing argument 2 of ‘FUN_1402f5950’ makes pointer from integer without a cast [-Wint-conversion]
+
+    328:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
+    329:   UNLOCK();
+    330:   if (uVar1 != 0) {
+    331:     FUN_1402f5950(&DAT_140f06ba8,lVar2,&DAT_140f06ba8);
+    332:   }
+    333:   if (lVar2 != 0) {
+    334:     *(undefined1 *)(lVar2 + 10) = 1;
+
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:336
+reconstrucao/src/decompiled_03.c:336:3: error: ‘DAT_140f06bb8’ undeclared (first use in this function)
+
+    333:   if (lVar2 != 0) {
+    334:     *(undefined1 *)(lVar2 + 10) = 1;
+    335:   }
+    336:   DAT_140f06bb8 = DAT_140f06bb8 + -1;
+    337:   if (DAT_140f06bb8 == 0) {
+    338:     uStack_18 = 0;
+    339:     uStack_10 = 0xffffffffffffffff;
+
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:340
+reconstrucao/src/decompiled_03.c:340:18: error: ‘DAT_140f06bc0’ undeclared (first use in this function)
+
+    337:   if (DAT_140f06bb8 == 0) {
+    338:     uStack_18 = 0;
+    339:     uStack_10 = 0xffffffffffffffff;
+    340:     KeSetTimer2(&DAT_140f06bc0,0xfffffffffd050f80,0,&uStack_18);
+    341:   }
+    342:   FUN_1404935fc(&DAT_140f06ba8);
+    343:   return;
+
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:340
+reconstrucao/src/decompiled_03.c:340:53: error: passing argument 4 of ‘KeSetTimer2’ makes integer from pointer without a cast [-Wint-conversion]
+
+    337:   if (DAT_140f06bb8 == 0) {
+    338:     uStack_18 = 0;
+    339:     uStack_10 = 0xffffffffffffffff;
+    340:     KeSetTimer2(&DAT_140f06bc0,0xfffffffffd050f80,0,&uStack_18);
+    341:   }
+    342:   FUN_1404935fc(&DAT_140f06ba8);
+    343:   return;
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:365
+reconstrucao/src/decompiled_03.c:365:21: error: passing argument 1 of ‘FUN_1406d1200’ makes pointer from integer without a cast [-Wint-conversion]
+
+    362:   if (lVar2 != 0) {
+    363:     lVar3 = ExAllocatePool2(0x100,0x40,0x70687373);
+    364:     if (lVar3 != 0) {
+    365:       FUN_1406d1200(lVar2,0,0xa0);
+    366:       FUN_1406d1200(lVar3,0,0x40);
+    367:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    368:       while( true ) {
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:365
+reconstrucao/src/decompiled_03.c:365:29: error: passing argument 3 of ‘FUN_1406d1200’ makes pointer from integer without a cast [-Wint-conversion]
+
+    362:   if (lVar2 != 0) {
+    363:     lVar3 = ExAllocatePool2(0x100,0x40,0x70687373);
+    364:     if (lVar3 != 0) {
+    365:       FUN_1406d1200(lVar2,0,0xa0);
+    366:       FUN_1406d1200(lVar3,0,0x40);
+    367:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    368:       while( true ) {
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:366
+reconstrucao/src/decompiled_03.c:366:21: error: passing argument 1 of ‘FUN_1406d1200’ makes pointer from integer without a cast [-Wint-conversion]
+
+    363:     lVar3 = ExAllocatePool2(0x100,0x40,0x70687373);
+    364:     if (lVar3 != 0) {
+    365:       FUN_1406d1200(lVar2,0,0xa0);
+    366:       FUN_1406d1200(lVar3,0,0x40);
+    367:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    368:       while( true ) {
+    369:         uStackX_20 = 0x40;
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:366
+reconstrucao/src/decompiled_03.c:366:29: error: passing argument 3 of ‘FUN_1406d1200’ makes pointer from integer without a cast [-Wint-conversion]
+
+    363:     lVar3 = ExAllocatePool2(0x100,0x40,0x70687373);
+    364:     if (lVar3 != 0) {
+    365:       FUN_1406d1200(lVar2,0,0xa0);
+    366:       FUN_1406d1200(lVar3,0,0x40);
+    367:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    368:       while( true ) {
+    369:         uStackX_20 = 0x40;
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:367
+reconstrucao/src/decompiled_03.c:367:7: error: implicit declaration of function ‘AlpcInitializeMessageAttribute’; did you mean ‘AlpcGetMessageAttribute’? [-Wimplicit-function-declaration]
+
+    364:     if (lVar3 != 0) {
+    365:       FUN_1406d1200(lVar2,0,0xa0);
+    366:       FUN_1406d1200(lVar3,0,0x40);
+    367:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    368:       while( true ) {
+    369:         uStackX_20 = 0x40;
+    370:         iVar1 = ZwAlpcSendWaitReceivePort(DAT_140f06ba0,0,0,0,lVar3,&uStackX_20,lVar2,&uStack_18);
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:370
+reconstrucao/src/decompiled_03.c:370:43: error: ‘DAT_140f06ba0’ undeclared (first use in this function)
+
+    367:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    368:       while( true ) {
+    369:         uStackX_20 = 0x40;
+    370:         iVar1 = ZwAlpcSendWaitReceivePort(DAT_140f06ba0,0,0,0,lVar3,&uStackX_20,lVar2,&uStack_18);
+    371:         if (iVar1 != 0) break;
+    372:         uVar4 = AlpcGetMessageAttribute(lVar2,0x20000000);
+    373:         FUN_14077fb9c(lVar3,uVar4);
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:370
+reconstrucao/src/decompiled_03.c:370:17: error: too many arguments to function ‘ZwAlpcSendWaitReceivePort’; expected 0, have 8
+
+    367:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    368:       while( true ) {
+    369:         uStackX_20 = 0x40;
+    370:         iVar1 = ZwAlpcSendWaitReceivePort(DAT_140f06ba0,0,0,0,lVar3,&uStackX_20,lVar2,&uStack_18);
+    371:         if (iVar1 != 0) break;
+    372:         uVar4 = AlpcGetMessageAttribute(lVar2,0x20000000);
+    373:         FUN_14077fb9c(lVar3,uVar4);
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:370
+reconstrucao/src/decompiled_03.c:370:15: error: invalid use of void expression
+
+    367:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    368:       while( true ) {
+    369:         uStackX_20 = 0x40;
+    370:         iVar1 = ZwAlpcSendWaitReceivePort(DAT_140f06ba0,0,0,0,lVar3,&uStackX_20,lVar2,&uStack_18);
+    371:         if (iVar1 != 0) break;
+    372:         uVar4 = AlpcGetMessageAttribute(lVar2,0x20000000);
+    373:         FUN_14077fb9c(lVar3,uVar4);
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:372
+reconstrucao/src/decompiled_03.c:372:41: error: passing argument 1 of ‘AlpcGetMessageAttribute’ makes pointer from integer without a cast [-Wint-conversion]
+
+    369:         uStackX_20 = 0x40;
+    370:         iVar1 = ZwAlpcSendWaitReceivePort(DAT_140f06ba0,0,0,0,lVar3,&uStackX_20,lVar2,&uStack_18);
+    371:         if (iVar1 != 0) break;
+    372:         uVar4 = AlpcGetMessageAttribute(lVar2,0x20000000);
+    373:         FUN_14077fb9c(lVar3,uVar4);
+    374:         AlpcInitializeMessageAttribute(0x20000000);
+    375:         uStack_18 = 0;
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:373
+reconstrucao/src/decompiled_03.c:373:9: error: too many arguments to function ‘FUN_14077fb9c’; expected 1, have 2
+
+    370:         iVar1 = ZwAlpcSendWaitReceivePort(DAT_140f06ba0,0,0,0,lVar3,&uStackX_20,lVar2,&uStack_18);
+    371:         if (iVar1 != 0) break;
+    372:         uVar4 = AlpcGetMessageAttribute(lVar2,0x20000000);
+    373:         FUN_14077fb9c(lVar3,uVar4);
+    374:         AlpcInitializeMessageAttribute(0x20000000);
+    375:         uStack_18 = 0;
+    376:       }
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:377
+reconstrucao/src/decompiled_03.c:377:7: error: too many arguments to function ‘FUN_140447c40’; expected 0, have 2
+
+    374:         AlpcInitializeMessageAttribute(0x20000000);
+    375:         uStack_18 = 0;
+    376:       }
+    377:       FUN_140447c40(lVar3,0x70687373);
+    378:     }
+    379:     FUN_140447c40(lVar2,0x70687373);
+    380:   }
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:379
+reconstrucao/src/decompiled_03.c:379:5: error: too many arguments to function ‘FUN_140447c40’; expected 0, have 2
+
+    376:       }
+    377:       FUN_140447c40(lVar3,0x70687373);
+    378:     }
+    379:     FUN_140447c40(lVar2,0x70687373);
+    380:   }
+    381:   return;
+    382: }
+
+## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:392
+reconstrucao/src/decompiled_03.c:392:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
+
+    389:   ulonglong uVar1;
+    390:   longlong lVar2;
+    391:   
+    392:   lVar2 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    393:   LOCK();
+    394:   uVar1 = DAT_140f06ba8 & 1;
+    395:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
+
+## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:392
+reconstrucao/src/decompiled_03.c:392:11: error: too many arguments to function ‘FUN_1402f5ef0’; expected 2, have 3
+
+    389:   ulonglong uVar1;
+    390:   longlong lVar2;
+    391:   
+    392:   lVar2 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    393:   LOCK();
+    394:   uVar1 = DAT_140f06ba8 & 1;
+    395:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
+
+## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:398
+reconstrucao/src/decompiled_03.c:398:34: error: passing argument 2 of ‘FUN_1402f5950’ makes pointer from integer without a cast [-Wint-conversion]
+
+    395:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
+    396:   UNLOCK();
+    397:   if (uVar1 != 0) {
+    398:     FUN_1402f5950(&DAT_140f06ba8,lVar2,&DAT_140f06ba8);
+    399:   }
+    400:   if (lVar2 != 0) {
+    401:     *(undefined1 *)(lVar2 + 10) = 1;
+
+## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:404
+reconstrucao/src/decompiled_03.c:404:10: error: ‘DAT_140f06bbc’ undeclared (first use in this function)
+
+    401:     *(undefined1 *)(lVar2 + 10) = 1;
+    402:   }
+    403:   lVar2 = (longlong)param_1 * 0xc0;
+    404:   if (((&DAT_140f06bbc)[lVar2] != '\0') && ((&DAT_140f06bb8)[(longlong)param_1 * 0x30] == 0)) {
+    405:     FUN_14077ff18();
+    406:     (&DAT_140f06bbc)[lVar2] = 0;
+    407:   }
+
+## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:404
+reconstrucao/src/decompiled_03.c:404:47: error: ‘DAT_140f06bb8’ undeclared (first use in this function)
+
+    401:     *(undefined1 *)(lVar2 + 10) = 1;
+    402:   }
+    403:   lVar2 = (longlong)param_1 * 0xc0;
+    404:   if (((&DAT_140f06bbc)[lVar2] != '\0') && ((&DAT_140f06bb8)[(longlong)param_1 * 0x30] == 0)) {
+    405:     FUN_14077ff18();
+    406:     (&DAT_140f06bbc)[lVar2] = 0;
+    407:   }
+
+## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:405
+reconstrucao/src/decompiled_03.c:405:5: error: too few arguments to function ‘FUN_14077ff18’; expected 5, have 0
+
+    402:   }
+    403:   lVar2 = (longlong)param_1 * 0xc0;
+    404:   if (((&DAT_140f06bbc)[lVar2] != '\0') && ((&DAT_140f06bb8)[(longlong)param_1 * 0x30] == 0)) {
+    405:     FUN_14077ff18();
+    406:     (&DAT_140f06bbc)[lVar2] = 0;
+    407:   }
+    408:   FUN_1404935fc(&DAT_140f06ba8);
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:441
+reconstrucao/src/decompiled_03.c:441:15: error: ‘DAT_140e0a740’ undeclared (first use in this function)
+
+    438:   undefined8 uStack_68;
+    439:   ulonglong uStack_28;
+    440:   
+    441:   uStack_28 = DAT_140e0a740 ^ (ulonglong)auStack_108;
+    442:   uStack_ac = 0;
+    443:   uStack_94 = 0;
+    444:   uVar5 = *(ushort *)(param_1 + 4) & 0xff;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:448
+reconstrucao/src/decompiled_03.c:448:32: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
+
+    445:   if (uVar5 != 1) {
+    446:     if ((uVar5 != 2) && (uVar5 != 3)) {
+    447:       if ((uVar5 == 5) || (uVar5 == 6)) {
+    448:         lVar4 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    449:         LOCK();
+    450:         uVar1 = DAT_140f06ba8 & 1;
+    451:         DAT_140f06ba8 = DAT_140f06ba8 | 1;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:448
+reconstrucao/src/decompiled_03.c:448:17: error: too many arguments to function ‘FUN_1402f5ef0’; expected 2, have 3
+
+    445:   if (uVar5 != 1) {
+    446:     if ((uVar5 != 2) && (uVar5 != 3)) {
+    447:       if ((uVar5 == 5) || (uVar5 == 6)) {
+    448:         lVar4 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    449:         LOCK();
+    450:         uVar1 = DAT_140f06ba8 & 1;
+    451:         DAT_140f06ba8 = DAT_140f06ba8 | 1;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:454
+reconstrucao/src/decompiled_03.c:454:40: error: passing argument 2 of ‘FUN_1402f5950’ makes pointer from integer without a cast [-Wint-conversion]
+
+    451:         DAT_140f06ba8 = DAT_140f06ba8 | 1;
+    452:         UNLOCK();
+    453:         if (uVar1 != 0) {
+    454:           FUN_1402f5950(&DAT_140f06ba8,lVar4,&DAT_140f06ba8);
+    455:         }
+    456:         if (lVar4 != 0) {
+    457:           *(undefined1 *)(lVar4 + 10) = 1;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:459
+reconstrucao/src/decompiled_03.c:459:17: error: ‘DAT_140f06bb0’ undeclared (first use in this function)
+
+    456:         if (lVar4 != 0) {
+    457:           *(undefined1 *)(lVar4 + 10) = 1;
+    458:         }
+    459:         lVar4 = DAT_140f06bb0;
+    460:         DAT_140f06bb0 = 0;
+    461:         FUN_1404935fc(&DAT_140f06ba8);
+    462:         ZwClose(lVar4);
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:462
+reconstrucao/src/decompiled_03.c:462:9: error: too many arguments to function ‘ZwClose’; expected 0, have 1
+
+    459:         lVar4 = DAT_140f06bb0;
+    460:         DAT_140f06bb0 = 0;
+    461:         FUN_1404935fc(&DAT_140f06ba8);
+    462:         ZwClose(lVar4);
+    463:         return 0;
+    464:       }
+    465:       if (uVar5 != 10) {
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:474
+reconstrucao/src/decompiled_03.c:474:21: error: passing argument 1 of ‘FUN_1406d1200’ from incompatible pointer type [-Wincompatible-pointer-types]
+
+    471:       uStack_a0 = 0;
+    472:       uStack_90 = 0;
+    473:       uStack_88 = 0;
+    474:       FUN_1406d1200(auStack_78,0,0x48);
+    475:       uStack_68 = 0x40;
+    476:       lVar4 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    477:       LOCK();
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:474
+reconstrucao/src/decompiled_03.c:474:34: error: passing argument 3 of ‘FUN_1406d1200’ makes pointer from integer without a cast [-Wint-conversion]
+
+    471:       uStack_a0 = 0;
+    472:       uStack_90 = 0;
+    473:       uStack_88 = 0;
+    474:       FUN_1406d1200(auStack_78,0,0x48);
+    475:       uStack_68 = 0x40;
+    476:       lVar4 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    477:       LOCK();
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:476
+reconstrucao/src/decompiled_03.c:476:15: error: too many arguments to function ‘FUN_1402f5ef0’; expected 2, have 3
+
+    473:       uStack_88 = 0;
+    474:       FUN_1406d1200(auStack_78,0,0x48);
+    475:       uStack_68 = 0x40;
+    476:       lVar4 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    477:       LOCK();
+    478:       uVar1 = DAT_140f06ba8 & 1;
+    479:       DAT_140f06ba8 = DAT_140f06ba8 | 1;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:482
+reconstrucao/src/decompiled_03.c:482:38: error: passing argument 2 of ‘FUN_1402f5950’ makes pointer from integer without a cast [-Wint-conversion]
+
+    479:       DAT_140f06ba8 = DAT_140f06ba8 | 1;
+    480:       UNLOCK();
+    481:       if (uVar1 != 0) {
+    482:         FUN_1402f5950(&DAT_140f06ba8,lVar4,&DAT_140f06ba8);
+    483:       }
+    484:       if (lVar4 != 0) {
+    485:         *(undefined1 *)(lVar4 + 10) = 1;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:492
+reconstrucao/src/decompiled_03.c:492:54: error: ‘DAT_140f06ba0’ undeclared (first use in this function)
+
+    489:       uStack_d0 = 0;
+    490:       uStack_e0 = 0;
+    491:       lStack_d8 = param_1;
+    492:       iVar2 = ZwAlpcAcceptConnectPort(&DAT_140f06bb0,DAT_140f06ba0,0,&uStack_b0);
+    493:       if (iVar2 < 0) {
+    494:         puStack_e8 = auStack_78;
+    495:         uStack_c8 = 0;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:492
+reconstrucao/src/decompiled_03.c:492:15: error: too many arguments to function ‘ZwAlpcAcceptConnectPort’; expected 0, have 4
+
+    489:       uStack_d0 = 0;
+    490:       uStack_e0 = 0;
+    491:       lStack_d8 = param_1;
+    492:       iVar2 = ZwAlpcAcceptConnectPort(&DAT_140f06bb0,DAT_140f06ba0,0,&uStack_b0);
+    493:       if (iVar2 < 0) {
+    494:         puStack_e8 = auStack_78;
+    495:         uStack_c8 = 0;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:492
+reconstrucao/src/decompiled_03.c:492:13: error: invalid use of void expression
+
+    489:       uStack_d0 = 0;
+    490:       uStack_e0 = 0;
+    491:       lStack_d8 = param_1;
+    492:       iVar2 = ZwAlpcAcceptConnectPort(&DAT_140f06bb0,DAT_140f06ba0,0,&uStack_b0);
+    493:       if (iVar2 < 0) {
+    494:         puStack_e8 = auStack_78;
+    495:         uStack_c8 = 0;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:499
+reconstrucao/src/decompiled_03.c:499:9: error: too many arguments to function ‘ZwAlpcAcceptConnectPort’; expected 0, have 4
+
+    496:         uStack_d0 = 0;
+    497:         uStack_e0 = 0;
+    498:         lStack_d8 = param_1;
+    499:         ZwAlpcAcceptConnectPort(&DAT_140f06bb0,DAT_140f06ba0,0,&uStack_b0);
+    500:       }
+    501:       else {
+    502:         uStack_b8 = (ulonglong)DAT_140fc4ac0;
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:502
+reconstrucao/src/decompiled_03.c:502:32: error: ‘DAT_140fc4ac0’ undeclared (first use in this function)
+
+    499:         ZwAlpcAcceptConnectPort(&DAT_140f06bb0,DAT_140f06ba0,0,&uStack_b0);
+    500:       }
+    501:       else {
+    502:         uStack_b8 = (ulonglong)DAT_140fc4ac0;
+    503:         if ((DAT_140fc4ac0 & 0x10) == 0) {
+    504:           uStack_b8 = (ulonglong)(DAT_140fc4ac0 | 1);
+    505:           FUN_14053fd44(&PTR_DAT_1400dd860,uStack_b8,3,1);
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:505
+reconstrucao/src/decompiled_03.c:505:26: error: ‘PTR_DAT_1400dd860’ undeclared (first use in this function)
+
+    502:         uStack_b8 = (ulonglong)DAT_140fc4ac0;
+    503:         if ((DAT_140fc4ac0 & 0x10) == 0) {
+    504:           uStack_b8 = (ulonglong)(DAT_140fc4ac0 | 1);
+    505:           FUN_14053fd44(&PTR_DAT_1400dd860,uStack_b8,3,1);
+    506:           FUN_14053fdd4(uStack_b8,3,&PTR_DAT_1400dd860);
+    507:         }
+    508:       }
+
+## FUN_140ad6940 */ — reconstrucao/src/decompiled_04.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:26: error: unknown type name ‘PCONTEXT’
+
+    15869:       ExRaiseDatatypeMisalignment();
+    15870:     }
+    15871:     RtlCopyMemory(_Dst,*(void **)(param_1 + 0x10),_Size);
+    15872:     for (uVar6 = 0; (uint)uVar6 < *(uint *)(param_1 + 8); uVar6 = (ulonglong)((uint)uVar6 + 1)) {
+    15873:       pvStack_38 = (void *)((longlong)_Dst + uVar6 * 0x18);
+    15874:       ProbeForWrite(*(undefined8 *)((longlong)pvStack_38 + 8));
+    15875:     }
+
+## FUN_140ad6940 */ — reconstrucao/src/decompiled_04.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:43: error: unknown type name ‘PCONTEXT’
+
+    15869:       ExRaiseDatatypeMisalignment();
+    15870:     }
+    15871:     RtlCopyMemory(_Dst,*(void **)(param_1 + 0x10),_Size);
+    15872:     for (uVar6 = 0; (uint)uVar6 < *(uint *)(param_1 + 8); uVar6 = (ulonglong)((uint)uVar6 + 1)) {
+    15873:       pvStack_38 = (void *)((longlong)_Dst + uVar6 * 0x18);
+    15874:       ProbeForWrite(*(undefined8 *)((longlong)pvStack_38 + 8));
+    15875:     }
+
+## FUN_140ad6940 */ — reconstrucao/src/decompiled_04.c:15872
+reconstrucao/src/../include/ghidra_function_prototypes.h:15872:60: error: unknown type name ‘PCONTEXT’
+
+    15869:       ExRaiseDatatypeMisalignment();
+    15870:     }
+    15871:     RtlCopyMemory(_Dst,*(void **)(param_1 + 0x10),_Size);
+    15872:     for (uVar6 = 0; (uint)uVar6 < *(uint *)(param_1 + 8); uVar6 = (ulonglong)((uint)uVar6 + 1)) {
+    15873:       pvStack_38 = (void *)((longlong)_Dst + uVar6 * 0x18);
+    15874:       ProbeForWrite(*(undefined8 *)((longlong)pvStack_38 + 8));
+    15875:     }
+
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:31574
+reconstrucao/src/../include/ghidra_function_prototypes.h:31574:32: error: unknown type name ‘PCONTEXT’
+
     31571:           if (iVar7 != -1) {
     31572:             iStack_4d8 = iVar7;
+    31573:           }
+    31574:           uStack_4e0 = *(undefined4 *)(puVar13 + 0xe);
+    31575:           uStack_4e8 = *(undefined4 *)((longlong)puVar13 + 0x6c);
+    31576:           piStack_4f0 = (int *)CONCAT44(piStack_4f0._4_4_,*(undefined4 *)(puVar13 + 0xd));
+    31577:           puStack_4f8 = (ulonglong *)
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:31569
-reconstrucao/src/../include/ghidra_function_prototypes.h:31569:55: error: unknown type name ‘_EXCEPTION_RECORD’
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32230
+reconstrucao/src/../include/ghidra_function_prototypes.h:32230:32: error: unknown type name ‘wctype_t’
 
-    31566:           if ((*(uint *)((longlong)puVar13 + 100) & 2) != 0) {
-    31567:             iVar7 = FUN_140a9f9b0(puVar24,0);
-    31568:           }
-    31569:           *(int *)(puVar13 + 0x12) = iVar7;
-    31570:           iStack_4d8 = 0;
-    31571:           if (iVar7 != -1) {
-    31572:             iStack_4d8 = iVar7;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32166
-reconstrucao/src/../include/ghidra_function_prototypes.h:32166:1: error: unknown type name ‘errno_t’
-
-    32163:         puStack_258 = puVar22 + 0x68;
-    32164:         uStack_250 = 4;
-    32165:         if (DAT_140f0c5a0 == 0) {
-    32166:           uVar15 = uVar14;
-    32167:         }
-    32168:         else {
-    32169:           uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32167
-reconstrucao/src/../include/ghidra_function_prototypes.h:32167:1: error: unknown type name ‘errno_t’
-
-    32164:         uStack_250 = 4;
-    32165:         if (DAT_140f0c5a0 == 0) {
-    32166:           uVar15 = uVar14;
-    32167:         }
-    32168:         else {
-    32169:           uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
-    32170:         }
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32170
-reconstrucao/src/../include/ghidra_function_prototypes.h:32170:1: error: unknown type name ‘errno_t’
-
-    32167:         }
-    32168:         else {
-    32169:           uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
-    32170:         }
-    32171:         pcVar20 = "Relative Capacity Unit";
-    32172:         *(int *)(puVar22 + 0x5c) = (int)uVar15;
-    32173:         puStack_248 = (ulonglong *)(puVar22 + 0x5c);
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32172
-reconstrucao/src/../include/ghidra_function_prototypes.h:32172:1: error: unknown type name ‘errno_t’
-
-    32169:           uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
-    32170:         }
-    32171:         pcVar20 = "Relative Capacity Unit";
-    32172:         *(int *)(puVar22 + 0x5c) = (int)uVar15;
-    32173:         puStack_248 = (ulonglong *)(puVar22 + 0x5c);
-    32174:         uStack_240 = 4;
-    32175:         uStack_474 = DAT_140f0c564;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32177
-reconstrucao/src/../include/ghidra_function_prototypes.h:32177:21: error: unknown type name ‘_JBTYPE’
-
-    32174:         uStack_240 = 4;
-    32175:         uStack_474 = DAT_140f0c564;
-    32176:         puStack_238 = &uStack_474;
-    32177:         puStack_228 = &uStack_470;
-    32178:         uStack_484 = DAT_140f0c568;
-    32179:         puStack_218 = &uStack_484;
-    32180:         uStack_480 = DAT_140f0c56c;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32189
-reconstrucao/src/../include/ghidra_function_prototypes.h:32189:1: error: unknown type name ‘errno_t’
-
-    32186:           pcVar20 = "mWh Unit";
-    32187:         }
-    32188:         uStack_230 = 4;
-    32189:         uStack_470 = DAT_140f0c5a0;
-    32190:         uStack_220 = 4;
-    32191:         uStack_210 = 4;
-    32192:         uStack_200 = 4;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32192
-reconstrucao/src/../include/ghidra_function_prototypes.h:32192:1: error: unknown type name ‘errno_t’
-
-    32189:         uStack_470 = DAT_140f0c5a0;
-    32190:         uStack_220 = 4;
-    32191:         uStack_210 = 4;
-    32192:         uStack_200 = 4;
-    32193:         uStack_1f0 = 4;
-    32194:         uStack_1e0 = 4;
-    32195:         *(undefined8 *)(puVar22 + -8) = 0x140aebb4e;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32196
-reconstrucao/src/../include/ghidra_function_prototypes.h:32196:1: error: unknown type name ‘errno_t’
-
-    32193:         uStack_1f0 = 4;
-    32194:         uStack_1e0 = 4;
-    32195:         *(undefined8 *)(puVar22 + -8) = 0x140aebb4e;
-    32196:         uStack_478 = uVar17;
-    32197:         FUN_14043d694(&puStack_1d8,pcVar20);
-    32198:         puStack_1c8 = &uStack_490;
-    32199:         puVar21 = &DAT_14004e058;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32197
-reconstrucao/src/../include/ghidra_function_prototypes.h:32197:1: error: unknown type name ‘errno_t’
-
-    32194:         uStack_1e0 = 4;
-    32195:         *(undefined8 *)(puVar22 + -8) = 0x140aebb4e;
-    32196:         uStack_478 = uVar17;
-    32197:         FUN_14043d694(&puStack_1d8,pcVar20);
-    32198:         puStack_1c8 = &uStack_490;
-    32199:         puVar21 = &DAT_14004e058;
-    32200:         puStack_1b8 = puVar22 + 0x78;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32198
-reconstrucao/src/../include/ghidra_function_prototypes.h:32198:1: error: unknown type name ‘errno_t’
-
-    32195:         *(undefined8 *)(puVar22 + -8) = 0x140aebb4e;
-    32196:         uStack_478 = uVar17;
-    32197:         FUN_14043d694(&puStack_1d8,pcVar20);
-    32198:         puStack_1c8 = &uStack_490;
-    32199:         puVar21 = &DAT_14004e058;
-    32200:         puStack_1b8 = puVar22 + 0x78;
-    32201:         uStack_490 = CONCAT44(uStack_490._4_4_,DAT_140f0c59c);
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32199
-reconstrucao/src/../include/ghidra_function_prototypes.h:32199:1: error: unknown type name ‘errno_t’
-
-    32196:         uStack_478 = uVar17;
-    32197:         FUN_14043d694(&puStack_1d8,pcVar20);
-    32198:         puStack_1c8 = &uStack_490;
-    32199:         puVar21 = &DAT_14004e058;
-    32200:         puStack_1b8 = puVar22 + 0x78;
-    32201:         uStack_490 = CONCAT44(uStack_490._4_4_,DAT_140f0c59c);
-    32202:         *(undefined1 **)(puVar22 + 0x28) = auStack_318;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32202
-reconstrucao/src/../include/ghidra_function_prototypes.h:32202:53: error: unknown type name ‘_locale_t’; did you mean ‘locale_t’?
-
-    32199:         puVar21 = &DAT_14004e058;
-    32200:         puStack_1b8 = puVar22 + 0x78;
-    32201:         uStack_490 = CONCAT44(uStack_490._4_4_,DAT_140f0c59c);
-    32202:         *(undefined1 **)(puVar22 + 0x28) = auStack_318;
-    32203:         *(undefined4 *)(puVar22 + 0x20) = 0x17;
-    32204:         uStack_1c0 = 4;
-    32205:         *(undefined4 *)(puVar22 + 0x78) = uVar11;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32207
-reconstrucao/src/../include/ghidra_function_prototypes.h:32207:1: error: unknown type name ‘errno_t’
-
-    32204:         uStack_1c0 = 4;
-    32205:         *(undefined4 *)(puVar22 + 0x78) = uVar11;
-    32206:         goto LAB_140aebead;
-    32207:       }
-    32208:     }
-    32209:   }
-    32210:   else if (5 < DAT_140e07748) {
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32210
-reconstrucao/src/../include/ghidra_function_prototypes.h:32210:1: error: unknown type name ‘errno_t’
-
-    32207:       }
-    32208:     }
-    32209:   }
-    32210:   else if (5 < DAT_140e07748) {
-    32211:     *(undefined8 *)(puVar22 + -8) = 0x140aebbc0;
-    32212:     cVar5 = FUN_14042b0b0(&DAT_140e07748,0x400000000000);
-    32213:     if (cVar5 != '\0') {
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32212
-reconstrucao/src/../include/ghidra_function_prototypes.h:32212:1: error: unknown type name ‘errno_t’
-
-    32209:   }
-    32210:   else if (5 < DAT_140e07748) {
-    32211:     *(undefined8 *)(puVar22 + -8) = 0x140aebbc0;
-    32212:     cVar5 = FUN_14042b0b0(&DAT_140e07748,0x400000000000);
-    32213:     if (cVar5 != '\0') {
-    32214:       uVar15 = (ulonglong)DAT_140f0c560;
-    32215:       puStack_2f8 = puVar22 + 0x78;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32227
-reconstrucao/src/../include/ghidra_function_prototypes.h:32227:32: error: unknown type name ‘wctype_t’
-
-    32224:       FUN_14043d694(auStack_2e8,pcVar20);
-    32225:       pcVar20 = "Battery Discharging";
-    32226:       pcVar28 = "-";
     32227:       if ((uVar15 & 2) == 0) {
-    32228:         pcVar20 = "-";
-    32229:       }
-    32230:       *(undefined8 *)(puVar22 + -8) = 0x140aebc35;
-
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32231
-reconstrucao/src/../include/ghidra_function_prototypes.h:32231:22: error: unknown type name ‘_JBTYPE’
-
     32228:         pcVar20 = "-";
     32229:       }
     32230:       *(undefined8 *)(puVar22 + -8) = 0x140aebc35;
     32231:       FUN_14043d694(auStack_2d8,pcVar20);
     32232:       pcVar20 = "Battery Charging";
     32233:       if ((bVar16 & (byte)uVar15) == 0) {
-    32234:         pcVar20 = pcVar28;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:1: error: unknown type name ‘errno_t’
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32284
+reconstrucao/src/../include/ghidra_function_prototypes.h:32284:19: error: conflicting types for ‘wcscat’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
-    32233:       if ((bVar16 & (byte)uVar15) == 0) {
-    32234:         pcVar20 = pcVar28;
-    32235:       }
-    32236:       *(undefined8 *)(puVar22 + -8) = 0x140aebc4f;
-    32237:       FUN_14043d694(auStack_2c8,pcVar20);
-    32238:       pcVar20 = "Battery Critical";
-    32239:       if ((uVar15 & 8) == 0) {
+    32281:       }
+    32282:       uStack_490 = CONCAT44(uStack_490._4_4_,(int)uVar15);
+    32283:       puStack_248 = &uStack_490;
+    32284:       uStack_240 = 4;
+    32285:       if (DAT_140f0c5a0 == 0) {
+    32286:         uVar15 = uVar14;
+    32287:       }
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32286
+reconstrucao/src/../include/ghidra_function_prototypes.h:32286:19: error: conflicting types for ‘wcschr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
 
-    32233:       if ((bVar16 & (byte)uVar15) == 0) {
-    32234:         pcVar20 = pcVar28;
-    32235:       }
-    32236:       *(undefined8 *)(puVar22 + -8) = 0x140aebc4f;
-    32237:       FUN_14043d694(auStack_2c8,pcVar20);
-    32238:       pcVar20 = "Battery Critical";
-    32239:       if ((uVar15 & 8) == 0) {
+    32283:       puStack_248 = &uStack_490;
+    32284:       uStack_240 = 4;
+    32285:       if (DAT_140f0c5a0 == 0) {
+    32286:         uVar15 = uVar14;
+    32287:       }
+    32288:       else {
+    32289:         uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32236
-reconstrucao/src/../include/ghidra_function_prototypes.h:32236:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32287
+reconstrucao/src/../include/ghidra_function_prototypes.h:32287:13: error: conflicting types for ‘wcscmp’; have ‘int(wchar_t *, wchar_t *)’ {aka ‘int(int *, int *)’}
 
-    32233:       if ((bVar16 & (byte)uVar15) == 0) {
-    32234:         pcVar20 = pcVar28;
-    32235:       }
-    32236:       *(undefined8 *)(puVar22 + -8) = 0x140aebc4f;
-    32237:       FUN_14043d694(auStack_2c8,pcVar20);
-    32238:       pcVar20 = "Battery Critical";
-    32239:       if ((uVar15 & 8) == 0) {
+    32284:       uStack_240 = 4;
+    32285:       if (DAT_140f0c5a0 == 0) {
+    32286:         uVar15 = uVar14;
+    32287:       }
+    32288:       else {
+    32289:         uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
+    32290:       }
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:1: error: unknown type name ‘errno_t’
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32288
+reconstrucao/src/../include/ghidra_function_prototypes.h:32288:19: error: conflicting types for ‘wcscpy’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
 
-    32234:         pcVar20 = pcVar28;
-    32235:       }
-    32236:       *(undefined8 *)(puVar22 + -8) = 0x140aebc4f;
-    32237:       FUN_14043d694(auStack_2c8,pcVar20);
-    32238:       pcVar20 = "Battery Critical";
-    32239:       if ((uVar15 & 8) == 0) {
-    32240:         pcVar20 = pcVar28;
+    32285:       if (DAT_140f0c5a0 == 0) {
+    32286:         uVar15 = uVar14;
+    32287:       }
+    32288:       else {
+    32289:         uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
+    32290:       }
+    32291:       pcVar20 = "Relative Capacity Unit";
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32290
+reconstrucao/src/../include/ghidra_function_prototypes.h:32290:16: error: conflicting types for ‘wcscspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
 
-    32234:         pcVar20 = pcVar28;
-    32235:       }
-    32236:       *(undefined8 *)(puVar22 + -8) = 0x140aebc4f;
-    32237:       FUN_14043d694(auStack_2c8,pcVar20);
-    32238:       pcVar20 = "Battery Critical";
-    32239:       if ((uVar15 & 8) == 0) {
-    32240:         pcVar20 = pcVar28;
+    32287:       }
+    32288:       else {
+    32289:         uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
+    32290:       }
+    32291:       pcVar20 = "Relative Capacity Unit";
+    32292:       uStack_478 = (uint)uVar15;
+    32293:       puStack_238 = &uStack_478;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32237
-reconstrucao/src/../include/ghidra_function_prototypes.h:32237:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32291
+reconstrucao/src/../include/ghidra_function_prototypes.h:32291:16: error: conflicting types for ‘wcslen’; have ‘size_t(wchar_t *)’ {aka ‘long unsigned int(int *)’}
 
-    32234:         pcVar20 = pcVar28;
-    32235:       }
-    32236:       *(undefined8 *)(puVar22 + -8) = 0x140aebc4f;
-    32237:       FUN_14043d694(auStack_2c8,pcVar20);
-    32238:       pcVar20 = "Battery Critical";
-    32239:       if ((uVar15 & 8) == 0) {
-    32240:         pcVar20 = pcVar28;
+    32288:       else {
+    32289:         uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
+    32290:       }
+    32291:       pcVar20 = "Relative Capacity Unit";
+    32292:       uStack_478 = (uint)uVar15;
+    32293:       puStack_238 = &uStack_478;
+    32294:       uStack_230 = 4;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32247
-reconstrucao/src/../include/ghidra_function_prototypes.h:32247:1: error: unknown type name ‘errno_t’
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32292
+reconstrucao/src/../include/ghidra_function_prototypes.h:32292:19: error: conflicting types for ‘wcsncat’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
 
-    32244:       pcVar20 = "Battery charge limiting mode";
-    32245:       if ((uVar15 & 0x10) == 0) {
-    32246:         pcVar20 = pcVar28;
-    32247:       }
-    32248:       *(undefined8 *)(puVar22 + -8) = 0x140aebc88;
-    32249:       FUN_14043d694(auStack_2a8,pcVar20);
-    32250:       pcVar20 = "Battery charging state power supply present";
+    32289:         uVar15 = ((ulonglong)DAT_140f0c564 * 100000) / (ulonglong)DAT_140f0c5a0;
+    32290:       }
+    32291:       pcVar20 = "Relative Capacity Unit";
+    32292:       uStack_478 = (uint)uVar15;
+    32293:       puStack_238 = &uStack_478;
+    32294:       uStack_230 = 4;
+    32295:       uStack_47c = DAT_140f0c564;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32247
-reconstrucao/src/../include/ghidra_function_prototypes.h:32247:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32294
+reconstrucao/src/../include/ghidra_function_prototypes.h:32294:13: error: conflicting types for ‘wcsncmp’; have ‘int(wchar_t *, wchar_t *, size_t)’ {aka ‘int(int *, int *, long unsigned int)’}
 
-    32244:       pcVar20 = "Battery charge limiting mode";
-    32245:       if ((uVar15 & 0x10) == 0) {
-    32246:         pcVar20 = pcVar28;
-    32247:       }
-    32248:       *(undefined8 *)(puVar22 + -8) = 0x140aebc88;
-    32249:       FUN_14043d694(auStack_2a8,pcVar20);
-    32250:       pcVar20 = "Battery charging state power supply present";
+    32291:       pcVar20 = "Relative Capacity Unit";
+    32292:       uStack_478 = (uint)uVar15;
+    32293:       puStack_238 = &uStack_478;
+    32294:       uStack_230 = 4;
+    32295:       uStack_47c = DAT_140f0c564;
+    32296:       puStack_228 = &uStack_47c;
+    32297:       puStack_218 = &uStack_480;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32251
-reconstrucao/src/../include/ghidra_function_prototypes.h:32251:1: error: unknown type name ‘errno_t’
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32295
+reconstrucao/src/../include/ghidra_function_prototypes.h:32295:19: error: conflicting types for ‘wcsncpy’; have ‘wchar_t *(wchar_t *, wchar_t *, size_t)’ {aka ‘int *(int *, int *, long unsigned int)’}
 
-    32248:       *(undefined8 *)(puVar22 + -8) = 0x140aebc88;
-    32249:       FUN_14043d694(auStack_2a8,pcVar20);
-    32250:       pcVar20 = "Battery charging state power supply present";
-    32251:       if ((uVar15 & 0x20) == 0) {
-    32252:         pcVar20 = pcVar28;
-    32253:       }
-    32254:       *(undefined8 *)(puVar22 + -8) = 0x140aebca3;
+    32292:       uStack_478 = (uint)uVar15;
+    32293:       puStack_238 = &uStack_478;
+    32294:       uStack_230 = 4;
+    32295:       uStack_47c = DAT_140f0c564;
+    32296:       puStack_228 = &uStack_47c;
+    32297:       puStack_218 = &uStack_480;
+    32298:       uStack_484 = DAT_140f0c568;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32251
-reconstrucao/src/../include/ghidra_function_prototypes.h:32251:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32297
+reconstrucao/src/../include/ghidra_function_prototypes.h:32297:16: error: conflicting types for ‘wcsnlen’; have ‘size_t(wchar_t *, size_t)’ {aka ‘long unsigned int(int *, long unsigned int)’}
 
-    32248:       *(undefined8 *)(puVar22 + -8) = 0x140aebc88;
-    32249:       FUN_14043d694(auStack_2a8,pcVar20);
-    32250:       pcVar20 = "Battery charging state power supply present";
-    32251:       if ((uVar15 & 0x20) == 0) {
-    32252:         pcVar20 = pcVar28;
-    32253:       }
-    32254:       *(undefined8 *)(puVar22 + -8) = 0x140aebca3;
+    32294:       uStack_230 = 4;
+    32295:       uStack_47c = DAT_140f0c564;
+    32296:       puStack_228 = &uStack_47c;
+    32297:       puStack_218 = &uStack_480;
+    32298:       uStack_484 = DAT_140f0c568;
+    32299:       puStack_208 = &uStack_484;
+    32300:       uStack_470 = DAT_140f0c56c;
 
-## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32254
-reconstrucao/src/../include/ghidra_function_prototypes.h:32254:1: error: unknown type name ‘errno_t’
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32298
+reconstrucao/src/../include/ghidra_function_prototypes.h:32298:19: error: conflicting types for ‘wcsrchr’; have ‘wchar_t *(wchar_t *, wchar_t)’ {aka ‘int *(int *, int)’}
 
-    32251:       if ((uVar15 & 0x20) == 0) {
-    32252:         pcVar20 = pcVar28;
-    32253:       }
-    32254:       *(undefined8 *)(puVar22 + -8) = 0x140aebca3;
-    32255:       FUN_14043d694(auStack_298,pcVar20);
-    32256:       pcVar20 = "Battery charging state adequate";
-    32257:       if ((uVar15 & 0x40) == 0) {
+    32295:       uStack_47c = DAT_140f0c564;
+    32296:       puStack_228 = &uStack_47c;
+    32297:       puStack_218 = &uStack_480;
+    32298:       uStack_484 = DAT_140f0c568;
+    32299:       puStack_208 = &uStack_484;
+    32300:       uStack_470 = DAT_140f0c56c;
+    32301:       puStack_1f8 = &uStack_470;
+
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32299
+reconstrucao/src/../include/ghidra_function_prototypes.h:32299:16: error: conflicting types for ‘wcsspn’; have ‘size_t(wchar_t *, wchar_t *)’ {aka ‘long unsigned int(int *, int *)’}
+
+    32296:       puStack_228 = &uStack_47c;
+    32297:       puStack_218 = &uStack_480;
+    32298:       uStack_484 = DAT_140f0c568;
+    32299:       puStack_208 = &uStack_484;
+    32300:       uStack_470 = DAT_140f0c56c;
+    32301:       puStack_1f8 = &uStack_470;
+    32302:       uStack_474 = DAT_140f0c530;
+
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32300
+reconstrucao/src/../include/ghidra_function_prototypes.h:32300:19: error: conflicting types for ‘wcsstr’; have ‘wchar_t *(wchar_t *, wchar_t *)’ {aka ‘int *(int *, int *)’}
+
+    32297:       puStack_218 = &uStack_480;
+    32298:       uStack_484 = DAT_140f0c568;
+    32299:       puStack_208 = &uStack_484;
+    32300:       uStack_470 = DAT_140f0c56c;
+    32301:       puStack_1f8 = &uStack_470;
+    32302:       uStack_474 = DAT_140f0c530;
+    32303:       puStack_1e8 = &uStack_474;
+
+## FUN_140aea7c0 */ — reconstrucao/src/decompiled_04.c:32302
+reconstrucao/src/../include/ghidra_function_prototypes.h:32302:18: error: conflicting types for ‘wcstoul’; have ‘uint32_t(wchar_t *, wchar_t **, int)’ {aka ‘unsigned int(int *, int **, int)’}
+
+    32299:       puStack_208 = &uStack_484;
+    32300:       uStack_470 = DAT_140f0c56c;
+    32301:       puStack_1f8 = &uStack_470;
+    32302:       uStack_474 = DAT_140f0c530;
+    32303:       puStack_1e8 = &uStack_474;
+    32304:       puStack_1d8 = puVar22 + 0x70;
+    32305:       if ((_DAT_140f0c590 & 0x40000000) == 0) {
+
+## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:24
+reconstrucao/src/decompiled_04.c:24:34: error: passing argument 3 of ‘FUN_14090ef10’ from incompatible pointer type [-Wincompatible-pointer-types]
+
+    21:   uStack_40 = 0x500;
+    22:   uStack_38 = *(undefined8 *)(param_1 + 0x30);
+    23:   uStack_28 = (ulonglong)*(uint *)(param_1 + 0x40);
+    24:   FUN_14090ef10(param_1 + 0x48,0,&uStack_40,param_4,0x38);
+    25:   return 0;
+    26: }
+    27: 
+
+## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:24
+reconstrucao/src/decompiled_04.c:24:3: error: too many arguments to function ‘FUN_14090ef10’; expected 3, have 5
+
+    21:   uStack_40 = 0x500;
+    22:   uStack_38 = *(undefined8 *)(param_1 + 0x30);
+    23:   uStack_28 = (ulonglong)*(uint *)(param_1 + 0x40);
+    24:   FUN_14090ef10(param_1 + 0x48,0,&uStack_40,param_4,0x38);
+    25:   return 0;
+    26: }
+    27: 
+
+## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:37
+reconstrucao/src/decompiled_04.c:37:9: error: invalid use of void expression
+
+    34:   longlong lVar2;
+    35:   longlong lVar3;
+    36:   
+    37:   lVar2 = FUN_14041b0bc(param_1,8);
+    38:   lVar1 = *(longlong *)(lVar2 + 8);
+    39:   do {
+    40:     lVar3 = lVar1;
+
+## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:43
+reconstrucao/src/decompiled_04.c:43:21: error: passing argument 1 of ‘FUN_14031db18’ makes pointer from integer without a cast [-Wint-conversion]
+
+    40:     lVar3 = lVar1;
+    41:     if (*(int *)(lVar1 + 0xb0) == 1) {
+    42: LAB_140ac2dd5:
+    43:       FUN_14031db18(lVar3,0,0);
+    44:       return lVar3;
+    45:     }
+    46:     lVar3 = FUN_14031d8f0(0,0);
+
+## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:46
+reconstrucao/src/decompiled_04.c:46:11: error: assignment to ‘longlong’ {aka ‘long int’} from ‘longlong *’ {aka ‘long int *’} makes integer from pointer without a cast [-Wint-conversion]
+
+    43:       FUN_14031db18(lVar3,0,0);
+    44:       return lVar3;
+    45:     }
+    46:     lVar3 = FUN_14031d8f0(0,0);
+    47:     if (lVar3 != 0) {
+    48:       FUN_14033e740(lVar1);
+    49:       *(longlong *)(lVar2 + 8) = lVar3;
+
+## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:48
+reconstrucao/src/decompiled_04.c:48:21: error: passing argument 1 of ‘FUN_14033e740’ makes pointer from integer without a cast [-Wint-conversion]
+
+    45:     }
+    46:     lVar3 = FUN_14031d8f0(0,0);
+    47:     if (lVar3 != 0) {
+    48:       FUN_14033e740(lVar1);
+    49:       *(longlong *)(lVar2 + 8) = lVar3;
+    50:       goto LAB_140ac2dd5;
+    51:     }
+
+## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:52
+reconstrucao/src/decompiled_04.c:52:5: error: too few arguments to function ‘KeDelayExecutionThread’; expected 3, have 1
+
+    49:       *(longlong *)(lVar2 + 8) = lVar3;
+    50:       goto LAB_140ac2dd5;
+    51:     }
+    52:     KeDelayExecutionThread(0);
+    53:   } while( true );
+    54: }
+    55: 
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:159
+reconstrucao/src/decompiled_04.c:159:15: error: ‘DAT_140e0a740’ undeclared (first use in this function)
+
+    156:   undefined4 uStack_b0;
+    157:   ulonglong uStack_58;
+    158:   
+    159:   uStack_58 = DAT_140e0a740 ^ (ulonglong)auStack_388;
+    160:   pwStack_360 = (wchar_t *)0x0;
+    161:   iStack_2d4 = 1;
+    162:   lStack_2e0 = 0;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:206
+reconstrucao/src/decompiled_04.c:206:11: error: too few arguments to function ‘FUN_1408dfac0’; expected 6, have 4
+
+    203:   plStack_308 = param_4;
+    204:   lStack_280 = param_3;
+    205:   lStack_218 = param_1;
+    206:   iVar5 = FUN_1408dfac0(param_2,param_3,0,0x20019);
+    207:   if (iVar5 < 0) goto LAB_140ac33b1;
+    208:   FUN_1406d1200(auStack_1e8,0,0x188);
+    209:   uStack_120 = 0x4000000;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:208
+reconstrucao/src/decompiled_04.c:208:17: error: passing argument 1 of ‘FUN_1406d1200’ from incompatible pointer type [-Wincompatible-pointer-types]
+
+    205:   lStack_218 = param_1;
+    206:   iVar5 = FUN_1408dfac0(param_2,param_3,0,0x20019);
+    207:   if (iVar5 < 0) goto LAB_140ac33b1;
+    208:   FUN_1406d1200(auStack_1e8,0,0x188);
+    209:   uStack_120 = 0x4000000;
+    210:   uStack_1e0 = 0x130;
+    211:   uStack_1c8 = 0x7000000;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:208
+reconstrucao/src/decompiled_04.c:208:31: error: passing argument 3 of ‘FUN_1406d1200’ makes pointer from integer without a cast [-Wint-conversion]
+
+    205:   lStack_218 = param_1;
+    206:   iVar5 = FUN_1408dfac0(param_2,param_3,0,0x20019);
+    207:   if (iVar5 < 0) goto LAB_140ac33b1;
+    208:   FUN_1406d1200(auStack_1e8,0,0x188);
+    209:   uStack_120 = 0x4000000;
+    210:   uStack_1e0 = 0x130;
+    211:   uStack_1c8 = 0x7000000;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:233
+reconstrucao/src/decompiled_04.c:233:28: error: implicit declaration of function ‘CONCAT71’ [-Wimplicit-function-declaration]
+
+    230:   uStack_e8 = 0x1000000;
+    231:   uStack_c8 = 0x120;
+    232:   uStack_b0 = 0x1000000;
+    233:   pwStack_360 = (wchar_t *)CONCAT71(pwStack_360._1_7_,1);
+    234:   iVar5 = FUN_14093ded0(0xc0000000,lStack_2e0,auStack_1e8,0);
+    235:   if (iVar5 < 0) goto LAB_140ac33b1;
+    236:   if ((lStack_2b0 != 0) && ((ushort)uStack_2b8 < 3)) {
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:233
+reconstrucao/src/decompiled_04.c:233:48: error: request for member ‘_1_7_’ in something not a structure or union
+
+    230:   uStack_e8 = 0x1000000;
+    231:   uStack_c8 = 0x120;
+    232:   uStack_b0 = 0x1000000;
+    233:   pwStack_360 = (wchar_t *)CONCAT71(pwStack_360._1_7_,1);
+    234:   iVar5 = FUN_14093ded0(0xc0000000,lStack_2e0,auStack_1e8,0);
+    235:   if (iVar5 < 0) goto LAB_140ac33b1;
+    236:   if ((lStack_2b0 != 0) && ((ushort)uStack_2b8 < 3)) {
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:234
+reconstrucao/src/decompiled_04.c:234:47: error: passing argument 3 of ‘FUN_14093ded0’ from incompatible pointer type [-Wincompatible-pointer-types]
+
+    231:   uStack_c8 = 0x120;
+    232:   uStack_b0 = 0x1000000;
+    233:   pwStack_360 = (wchar_t *)CONCAT71(pwStack_360._1_7_,1);
+    234:   iVar5 = FUN_14093ded0(0xc0000000,lStack_2e0,auStack_1e8,0);
+    235:   if (iVar5 < 0) goto LAB_140ac33b1;
+    236:   if ((lStack_2b0 != 0) && ((ushort)uStack_2b8 < 3)) {
+    237:     RtlFreeAnsiString(&uStack_2b8);
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:234
+reconstrucao/src/decompiled_04.c:234:11: error: too few arguments to function ‘FUN_14093ded0’; expected 6, have 4
+
+    231:   uStack_c8 = 0x120;
+    232:   uStack_b0 = 0x1000000;
+    233:   pwStack_360 = (wchar_t *)CONCAT71(pwStack_360._1_7_,1);
+    234:   iVar5 = FUN_14093ded0(0xc0000000,lStack_2e0,auStack_1e8,0);
+    235:   if (iVar5 < 0) goto LAB_140ac33b1;
+    236:   if ((lStack_2b0 != 0) && ((ushort)uStack_2b8 < 3)) {
+    237:     RtlFreeAnsiString(&uStack_2b8);
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:251
+reconstrucao/src/decompiled_04.c:251:57: error: passing argument 1 of ‘RtlGUIDFromString’ from incompatible pointer type [-Wincompatible-pointer-types]
+
+    248:     if ((ushort)uStack_298 < 2) {
+    249:       RtlFreeAnsiString(&uStack_298);
+    250:     }
+    251:     if ((lStack_290 == 0) || (iVar6 = RtlGUIDFromString(&uStack_298), iVar6 < 0))
+    252:     goto LAB_140ac309a;
+    253:   }
+    254:   if ((puStack_258 != (uint *)0x0) && ((ushort)uStack_260 < 2)) {
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:251
+reconstrucao/src/decompiled_04.c:251:39: error: too few arguments to function ‘RtlGUIDFromString’; expected 2, have 1
+
+    248:     if ((ushort)uStack_298 < 2) {
+    249:       RtlFreeAnsiString(&uStack_298);
+    250:     }
+    251:     if ((lStack_290 == 0) || (iVar6 = RtlGUIDFromString(&uStack_298), iVar6 < 0))
+    252:     goto LAB_140ac309a;
+    253:   }
+    254:   if ((puStack_258 != (uint *)0x0) && ((ushort)uStack_260 < 2)) {
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:269
+reconstrucao/src/decompiled_04.c:269:20: error: ‘DAT_140f8c958’ undeclared (first use in this function)
+
+    266:   plStack_208 = plStack_2a0;
+    267:   uStack_220 = 2;
+    268:   uStack_21c = 3;
+    269:   for (; lVar11 != DAT_140f8c958; lVar11 = *(longlong *)(lVar11 + 0x10)) {
+    270:     if (*(longlong *)(*(longlong *)(lVar11 + 0x20) + 8) == DAT_140f8adc0) {
+    271:       RtlInitUnicodeString(auStack_240,L"SWD\\");
+    272:       cVar4 = RtlPrefixUnicodeString(auStack_240,lVar11 + 0x28);
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:270
+reconstrucao/src/decompiled_04.c:270:60: error: ‘DAT_140f8adc0’ undeclared (first use in this function)
+
+    267:   uStack_220 = 2;
+    268:   uStack_21c = 3;
+    269:   for (; lVar11 != DAT_140f8c958; lVar11 = *(longlong *)(lVar11 + 0x10)) {
+    270:     if (*(longlong *)(*(longlong *)(lVar11 + 0x20) + 8) == DAT_140f8adc0) {
+    271:       RtlInitUnicodeString(auStack_240,L"SWD\\");
+    272:       cVar4 = RtlPrefixUnicodeString(auStack_240,lVar11 + 0x28);
+    273:       if (cVar4 != '\0') {
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:271
+reconstrucao/src/decompiled_04.c:271:28: error: passing argument 1 of ‘RtlInitUnicodeString’ from incompatible pointer type [-Wincompatible-pointer-types]
+
+    268:   uStack_21c = 3;
+    269:   for (; lVar11 != DAT_140f8c958; lVar11 = *(longlong *)(lVar11 + 0x10)) {
+    270:     if (*(longlong *)(*(longlong *)(lVar11 + 0x20) + 8) == DAT_140f8adc0) {
+    271:       RtlInitUnicodeString(auStack_240,L"SWD\\");
+    272:       cVar4 = RtlPrefixUnicodeString(auStack_240,lVar11 + 0x28);
+    273:       if (cVar4 != '\0') {
+    274:         RtlInitUnicodeString
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:272
+reconstrucao/src/decompiled_04.c:272:38: error: passing argument 1 of ‘RtlPrefixUnicodeString’ from incompatible pointer type [-Wincompatible-pointer-types]
+
+    269:   for (; lVar11 != DAT_140f8c958; lVar11 = *(longlong *)(lVar11 + 0x10)) {
+    270:     if (*(longlong *)(*(longlong *)(lVar11 + 0x20) + 8) == DAT_140f8adc0) {
+    271:       RtlInitUnicodeString(auStack_240,L"SWD\\");
+    272:       cVar4 = RtlPrefixUnicodeString(auStack_240,lVar11 + 0x28);
+    273:       if (cVar4 != '\0') {
+    274:         RtlInitUnicodeString
+    275:                   (&uStack_270,*(longlong *)(lVar11 + 0x30) + (auStack_240[0] >> 1 & 0x7fff) * 2);
 
