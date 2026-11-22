@@ -3,6 +3,9 @@ name: Extract kernel archive
 on:
   workflow_dispatch:
 
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 
