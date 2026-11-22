@@ -1,0 +1,566 @@
+
+
+                      Section Headers                       
+============================================================
+  
+  SECTION HEADER #1
+    .rdata name
+     E0080 virtual size
+      1000 virtual address
+     E1000 size of raw data
+      1000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  48000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #2
+    .pdata name
+     6F8F4 virtual size
+     E2000 virtual address
+     70000 size of raw data
+     E2000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  48000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #3
+    .idata name
+      297C virtual size
+    152000 virtual address
+      3000 size of raw data
+    152000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  48000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #4
+    .edata name
+     1B546 virtual size
+    155000 virtual address
+     1C000 size of raw data
+    155000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  40000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #5
+  PROTDATA name
+         1 virtual size
+    171000 virtual address
+      1000 size of raw data
+    171000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  48000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #6
+     GFIDS name
+      AB5C virtual size
+    172000 virtual address
+      B000 size of raw data
+    172000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  42000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #7
+      Pad1 name
+     83000 virtual size
+    17D000 virtual address
+         0 size of raw data
+         0 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  42000080 flags
+           IMAGE_SCN_CNT_UNINITIALIZED_DATA
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #8
+     .text name
+    506481 virtual size
+    200000 virtual address
+    507000 size of raw data
+    17D000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  68000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #9
+      PAGE name
+    45C698 virtual size
+    707000 virtual address
+    45D000 size of raw data
+    684000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  60000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #10
+    PAGELK name
+     2646C virtual size
+    B64000 virtual address
+     27000 size of raw data
+    AE1000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  60000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #11
+  POOLCODE)% name
+      2529 virtual size
+    B8B000 virtual address
+      3000 size of raw data
+    B08000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  68000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #12
+    PAGEKD name
+      5DEA virtual size
+    B8E000 virtual address
+      6000 size of raw data
+    B0B000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  60000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #13
+  PAGEVRFY	 name
+     31509 virtual size
+    B94000 virtual address
+     32000 size of raw data
+    B11000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  60000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #14
+  PAGEHDLS�# name
+      2380 virtual size
+    BC6000 virtual address
+      3000 size of raw data
+    B43000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  60000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #15
+  PAGEBGFXdi name
+      6964 virtual size
+    BC9000 virtual address
+      7000 size of raw data
+    B46000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  60000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #16
+  TRACESUP� name
+      19A3 virtual size
+    BD0000 virtual address
+      2000 size of raw data
+    B4D000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  68000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #17
+  PAGECMRCM name
+      104D virtual size
+    BD2000 virtual address
+      2000 size of raw data
+    B4F000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  60000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #18
+  KVASCODE�$ name
+      2498 virtual size
+    BD4000 virtual address
+      3000 size of raw data
+    B51000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  68000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #19
+      KSCP name
+       840 virtual size
+    BD7000 virtual address
+      1000 size of raw data
+    B54000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  68000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #20
+    DRVPRX name
+        B7 virtual size
+    BD8000 virtual address
+      1000 size of raw data
+    B55000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  68000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #21
+     fothk name
+      1000 virtual size
+    BD9000 virtual address
+      1000 size of raw data
+    B56000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  68000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #22
+  INITKDBG6� name
+     19C36 virtual size
+    BDA000 virtual address
+     1A000 size of raw data
+    B57000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  68000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #23
+    MINIEX name
+      26BC virtual size
+    BF4000 virtual address
+      3000 size of raw data
+    B71000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  62000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #24
+      INIT name
+     A373B virtual size
+    BF7000 virtual address
+     A4000 size of raw data
+    B74000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  62000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #25
+      Pad2 name
+    165000 virtual size
+    C9B000 virtual address
+         0 size of raw data
+         0 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  62000080 flags
+           IMAGE_SCN_CNT_UNINITIALIZED_DATA
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_EXECUTE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #26
+     .data name
+    1C52A8 virtual size
+    E00000 virtual address
+     10000 size of raw data
+    C18000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  C8000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #27
+  ALMOSTRO�� name
+      9C80 virtual size
+    FC6000 virtual address
+      2000 size of raw data
+    C28000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  C8000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #28
+  CACHEALI�� name
+      8D80 virtual size
+    FD0000 virtual address
+      1000 size of raw data
+    C2A000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  C8000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #29
+  PAGEDATA�� name
+     1B490 virtual size
+    FD9000 virtual address
+      2000 size of raw data
+    C2B000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  C0000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #30
+  PAGEVRFDP< name
+     13C50 virtual size
+    FF5000 virtual address
+      A000 size of raw data
+    C2D000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  C0000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #31
+  INITDATA� name
+     214B4 virtual size
+   1009000 virtual address
+      1000 size of raw data
+    C37000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  C2000020 flags
+           IMAGE_SCN_CNT_CODE
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #32
+      Pad3 name
+    1D5000 virtual size
+   102B000 virtual address
+         0 size of raw data
+         0 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  C2000080 flags
+           IMAGE_SCN_CNT_UNINITIALIZED_DATA
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #33
+     CFGRO name
+      2040 virtual size
+   1200000 virtual address
+      3000 size of raw data
+    C38000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  C8000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #34
+      Pad4 name
+    1FD000 virtual size
+   1203000 virtual address
+         0 size of raw data
+         0 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  CA000080 flags
+           IMAGE_SCN_CNT_UNINITIALIZED_DATA
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_NOT_PAGED
+           IMAGE_SCN_MEM_READ
+           IMAGE_SCN_MEM_WRITE
+  
+  SECTION HEADER #35
+     .rsrc name
+     33878 virtual size
+   1400000 virtual address
+     34000 size of raw data
+    C3B000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  42000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_READ
+  
+  SECTION HEADER #36
+    .reloc name
+     1666C virtual size
+   1434000 virtual address
+     17000 size of raw data
+    C6F000 file pointer to raw data
+         0 file pointer to relocation table
+         0 file pointer to line numbers
+         0 number of relocations
+         0 number of line numbers
+  42000040 flags
+           IMAGE_SCN_CNT_INITIALIZED_DATA
+           IMAGE_SCN_MEM_DISCARDABLE
+           IMAGE_SCN_MEM_READ
+
+                  Original Section Headers                  
+============================================================
+  PDB does not contain the requested image section header type
