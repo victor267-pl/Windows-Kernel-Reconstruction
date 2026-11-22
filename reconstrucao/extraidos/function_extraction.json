@@ -88,9 +88,9 @@
           "signature_name": "if"
         }
       ],
-      "output_bytes": 19240730,
-      "sha256": "75963bcd802fbded3440d5764bd89d54c48de25e92eb9c98167909a61c063d03",
-      "rejection_examples": [
+      "output_bytes": 19240781,
+      "sha256": "d9410042c95a10340bcd409482c3d56349f4d4f9af8d5ba22a79bf377467eb7f",
+      "rejected_functions": [
         {
           "name": "MmAllocatePagesForMdl",
           "reason": "opening_brace_not_found"
@@ -213,9 +213,9 @@
           "signature_name": "if"
         }
       ],
-      "output_bytes": 19085841,
-      "sha256": "b0a42b85fc7111de2701331b58ca9b462436e2913daed8d1a4894a97eae55e23",
-      "rejection_examples": [
+      "output_bytes": 19085892,
+      "sha256": "dcb08e2c16b56eeb63e7da26ad6fbcdb32389212e3587fc2b5f45c99e619a65c",
+      "rejected_functions": [
         {
           "name": "DbgPrintReturnControlC",
           "reason": "opening_brace_not_found"
@@ -330,9 +330,9 @@
           "signature_name": "if"
         }
       ],
-      "output_bytes": 19070394,
-      "sha256": "bfb31d332a023422acc68978a106fdd241689671849c7789aefb459fa3adf5c9",
-      "rejection_examples": [
+      "output_bytes": 19070445,
+      "sha256": "54c833d19d7d3f93715281572144bcfdf52a521427811073795326f5d20a8657",
+      "rejected_functions": [
         {
           "name": "PsRegisterSystemAvailableCpusChangeNotification",
           "reason": "opening_brace_not_found"
@@ -403,9 +403,9 @@
           "signature_name": "if"
         }
       ],
-      "output_bytes": 7635812,
-      "sha256": "c6fb39c07be1244bc9631d91d03a0c4c059eb2deb55d7fa947e3eba5e7eaf48f",
-      "rejection_examples": [
+      "output_bytes": 7635863,
+      "sha256": "bffd5025f5b269de05f50f92dca46bf338233ce842bf374b2a6cb15f8b8da270",
+      "rejected_functions": [
         {
           "name": "IoFastQueryNetworkAttributes",
           "reason": "opening_brace_not_found"
