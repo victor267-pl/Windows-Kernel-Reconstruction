@@ -1,0 +1,25 @@
+name: Analyze exact NT kernel PE image
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/entrada/ntoskrnl.exe'
+      - 'reconstrucao/scripts/analyze_ntoskrnl_pe.py'
+      - '.github/workflows/analyze-ntoskrnl-pe.yml'
+permissions:
+  contents: write
+jobs:
+  pe-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Analyze PE and map DAT addresses
+        run: python3 reconstrucao/scripts/analyze_ntoskrnl_pe.py
+      - name: Commit analysis
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/ntoskrnl_pe_analysis.json reconstrucao/extraidos/NTOSKRNL_PE_ANALYSIS.md
+          git commit -m "Analisar imagem PE exata do kernel NT" || exit 0
+          git pull --rebase origin main
+          git push
