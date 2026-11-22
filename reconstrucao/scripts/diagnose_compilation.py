@@ -50,3 +50,4 @@ Path("reconstrucao/extraidos/COMPILER_DIAGNOSTICS.md").write_text("\n".join(md)+
 print(json.dumps({"files":len(files),"files_failed":report["files_failed"],
  "missing_type_names":len(type_counts),"undeclared_identifiers":len(ident_counts),
  "error_classes":dict(classes)},indent=2))
+
