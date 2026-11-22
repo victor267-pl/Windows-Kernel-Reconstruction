@@ -14,4 +14,10 @@
  */
 extern uint64_t DAT_140e0a740;
 
+/* PE .data zero-fill; decompiler consistently treats this as uint32_t*. */
+extern uint32_t *DAT_140fc7ad0;
+
+/* Passed by address to KeAcquireSpinLockRaiseToDpc: x64 KSPIN_LOCK width. */
+extern uintptr_t DAT_140f0cf28;
+
 #endif
