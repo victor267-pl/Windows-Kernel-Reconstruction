@@ -1,0 +1,35 @@
+name: Generate conservative internal declarations and recheck C
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/generate_internal_forward_declarations.py'
+      - 'reconstrucao/src/decompiled_*.c'
+      - 'reconstrucao/include/ghidra_function_prototypes.h'
+      - '.github/workflows/generate-internal-forward-declarations.yml'
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  declarations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate declarations from extracted definitions
+        run: python3 reconstrucao/scripts/generate_internal_forward_declarations.py
+      - name: Re-run compiler diagnostics
+        run: python3 reconstrucao/scripts/diagnose_compilation.py
+      - name: Commit source includes, declarations, and diagnostics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/src/decompiled_*.c reconstrucao/include/ghidra_internal_forward_decls.h reconstrucao/extraidos/internal_forward_declarations.json reconstrucao/extraidos/INTERNAL_FORWARD_DECLARATIONS.md reconstrucao/extraidos/compiler_diagnostics.json reconstrucao/extraidos/COMPILER_DIAGNOSTICS.md reconstrucao/extraidos/COMPILER_ERROR_CONTEXTS.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Adicionar encaminhamentos internos e reavaliar compilacao"
+          git pull --rebase origin main
+          git push
