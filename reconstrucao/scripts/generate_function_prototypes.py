@@ -125,3 +125,4 @@ md += ["","## Motivos de exclusão",""]+[f"- {k}: {v}" for k,v in rejected.items
 md += ["","## Exemplos de incompatibilidade de argumentos",""]+[f"- {n}: esperado {v['expected']}; observado {v['observed']}" for n,v in list(arity_mismatch.items())[:100]]
 Path("reconstrucao/extraidos/FUNCTION_PROTOTYPES.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k!="arity_mismatch_examples"},indent=2))
+
