@@ -51,6 +51,12 @@
 |.rsrc|0x1400000|0x38cf0|0x39000|
 |.reloc|0x1439000|0x1666c|0x17000|
 
+## Estado físico dos endereços DAT_
+Contagem por referências, não por símbolos. `loader_zero_fill` significa que o RVA está na cauda virtual da seção além dos bytes armazenados no arquivo; o loader PE fornece zeros nessa região.
+- loader_zero_fill: 60700
+- file_backed: 35339
+- outside_image: 3238
+
 ## Referências DAT_ por seção
 - .data: 62917
 - ALMOSTRO: 19514
@@ -175,4 +181,8 @@
 |0x140f8f530|0xf8f530|92|.data|virtual_only|
 |0x140fc8250|0xfc8250|92|ALMOSTRO|virtual_only|
 
-O mapeamento é estrutural: não atribui tipos, valores ou semântica aos DAT_.
+## Interpretação e limites
+- `file_backed`: há bytes correspondentes no executável; o preview é evidência bruta, não um tipo C.
+- `loader_zero_fill`: endereço dentro de VirtualSize, mas além de SizeOfRawData; a imagem carregada começa com zeros nessa região.
+- `outside_image`: endereço não pertence a uma seção mapeada pelo PE.
+- O mapeamento não atribui tipos, nomes semânticos ou layouts C aos DAT_.
