@@ -74,3 +74,4 @@ Path("reconstrucao/extraidos/FUNCTION_PROTOTYPES.md").write_text("\n".join(md)+"
 print(json.dumps({k:v for k,v in report.items() if k!="conflicts"},indent=2))
 
 
+
