@@ -1,0 +1,34 @@
+name: Apply evidence-backed global declarations and recheck C
+on:
+  push:
+    paths:
+      - 'reconstrucao/scripts/apply_global_declarations.py'
+      - 'reconstrucao/include/ghidra_global_declarations.h'
+      - 'reconstrucao/src/reconstructed_globals.c'
+      - '.github/workflows/apply-global-declarations.yml'
+  workflow_dispatch:
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  integrate-and-diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Integrate declaration header into extracted C units
+        run: python3 reconstrucao/scripts/apply_global_declarations.py
+      - name: Re-run syntax diagnostics
+        run: python3 reconstrucao/scripts/diagnose_compilation.py
+      - name: Commit integration and diagnostics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/src/decompiled_*.c reconstrucao/extraidos/compiler_diagnostics.json reconstrucao/extraidos/COMPILER_DIAGNOSTICS.md reconstrucao/extraidos/COMPILER_ERROR_CONTEXTS.md
+          if git diff --cached --quiet; then
+            echo "No integration changes."
+            exit 0
+          fi
+          git commit -m "Integrar global evidenciado e reavaliar codigo C"
+          git push
