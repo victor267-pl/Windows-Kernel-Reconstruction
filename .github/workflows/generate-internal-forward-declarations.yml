@@ -6,6 +6,7 @@ on:
       - 'reconstrucao/scripts/generate_internal_forward_declarations.py'
       - 'reconstrucao/src/decompiled_*.c'
       - 'reconstrucao/include/ghidra_function_prototypes.h'
+      - 'reconstrucao/include/ghidra_types.h'
       - '.github/workflows/generate-internal-forward-declarations.yml'
 concurrency:
   group: repo-main-writes-${{ github.ref }}
