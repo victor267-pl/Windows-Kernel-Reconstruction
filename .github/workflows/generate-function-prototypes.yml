@@ -1,0 +1,25 @@
+name: Generate Ghidra function prototypes
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/generate_function_prototypes.py'
+      - 'reconstrucao/src/decompiled_*.c'
+      - '.github/workflows/generate-function-prototypes.yml'
+permissions:
+  contents: write
+jobs:
+  prototypes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate declarations
+        run: python3 reconstrucao/scripts/generate_function_prototypes.py
+      - name: Commit generated prototypes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/include/ghidra_function_prototypes.h reconstrucao/src reconstrucao/extraidos/function_prototypes.json reconstrucao/extraidos/FUNCTION_PROTOTYPES.md
+          git commit -m "Gerar prototipos das funcoes Ghidra" || exit 0
+          git pull --rebase origin main
+          git push
