@@ -2,6 +2,7 @@
 """Validate the exact NT PDB and export machine-readable symbol evidence."""
 from pathlib import Path
 import re
+import os
 import shutil
 import subprocess
 import sys
@@ -24,7 +25,7 @@ def run(tool, *args, output=None):
 def main():
     if not PDB.is_file():
         raise SystemExit(f"PDB ausente: {PDB}")
-    tool = shutil.which("llvm-pdbutil")
+    tool = os.environ.get("LLVM_PDBUTIL") or shutil.which("llvm-pdbutil")
     if not tool:
         raise SystemExit("llvm-pdbutil não encontrado; instale o pacote LLVM.")
     OUT.mkdir(parents=True, exist_ok=True)
