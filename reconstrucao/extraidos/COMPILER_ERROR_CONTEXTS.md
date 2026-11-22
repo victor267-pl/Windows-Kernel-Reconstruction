@@ -2,1262 +2,228 @@
 
 Cada erro está associado ao marcador de função Ghidra mais próximo. O contexto serve para reconstrução orientada por evidência.
 
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:11
-reconstrucao/src/../include/ghidra_function_prototypes.h:11:1: error: type defaults to ‘int’ in declaration of ‘BgkDisplayCharacter’ [-Wimplicit-int]
+## FUN_140200444 */ — reconstrucao/src/decompiled_01.c:216
+reconstrucao/src/../include/ghidra_function_prototypes.h:216:43: error: unknown type name ‘code’
+
+    213:   longlong *plVar4;
+    214:   longlong lVar5;
+    215:   
+    216:   *(longlong *)(param_1 + 0x4e0) = *(longlong *)(param_1 + 0x4e0) + *(longlong *)(param_1 + 0x10);
+    217:   uVar3 = *(ulonglong *)(param_1 + 0x4e8);
+    218:   if (*(ulonglong *)(param_1 + 0x4e8) <= *(ulonglong *)(param_1 + 0x18)) {
+    219:     uVar3 = *(ulonglong *)(param_1 + 0x18);
+
+## KeSetSelectedCpuSetsThread */ — reconstrucao/src/decompiled_01.c:541
+reconstrucao/src/../include/ghidra_function_prototypes.h:541:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    538:   return uVar5;
+    539: }
+    540: 
+    541: /* Ghidra label: FUN_140200bc0 */
+    542: /* Ghidra address: 140200bc0 */
+    543: uint FUN_140200bc0(undefined8 param_1,undefined4 param_2)
+    544: 
+
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:706
+reconstrucao/src/../include/ghidra_function_prototypes.h:706:19: error: unknown type name ‘code’
+
+    703:     *puVar8 = 1;
+    704:     LOCK();
+    705:     *puVar9 = *puVar9;
+    706:     UNLOCK();
+    707:     uVar10 = 0;
+    708:     while( true ) {
+    709:       LOCK();
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:785
+reconstrucao/src/../include/ghidra_function_prototypes.h:785:75: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    782:     if (param_2 != 0) {
+    783:       *(longlong *)(param_1 + 0xf2) = param_2;
+    784:       param_1[0x100] = 0x20;
+    785:       LOCK();
+    786:       param_1[0x1e] = param_1[0x1e] | 0x400000;
+    787:       UNLOCK();
+    788:       LOCK();
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:880
+reconstrucao/src/../include/ghidra_function_prototypes.h:880:55: error: unknown type name ‘code’
+
+    877:         bVar1 = *(byte *)(*(longlong *)((longlong)*ppvVar6 + 0x38) + 0x40);
+    878:         *(byte *)(*(longlong *)((longlong)*ppvVar6 + 0x38) + 0x40) =
+    879:              (bVar1 ^ (byte)param_1[0x81]) & 7 ^ bVar1;
+    880:         uVar8 = FUN_14027835c();
+    881:         ppvVar6 = ppvVar6 + 1;
+    882:         uVar7 = uVar7 - 1;
+    883:       } while (uVar7 != 0);
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:902
+reconstrucao/src/../include/ghidra_function_prototypes.h:902:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    8: void FUN_140200008(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
-    9:                   undefined8 param_5,undefined8 param_6,undefined8 param_7,undefined8 param_8,
-    10:                   undefined8 *param_9,undefined8 *param_10,undefined8 param_11,undefined8 param_12,
-    11:                   undefined8 *param_13,undefined8 param_14,undefined8 param_15,undefined8 *param_16,
-    12:                   undefined8 param_17,undefined8 param_18,undefined8 *param_19,undefined8 param_20,
-    13:                   undefined8 param_21,undefined8 *param_22,undefined8 param_23,undefined8 param_24,
-    14:                   undefined8 *param_25,undefined8 param_26,undefined8 param_27,undefined8 *param_28,
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:31
-reconstrucao/src/../include/ghidra_function_prototypes.h:31:1: error: type defaults to ‘int’ in declaration of ‘CcAsyncCopyRead’ [-Wimplicit-int]
-
-    28:   undefined8 uStack_280;
-    29:   undefined8 uStack_278;
-    30:   undefined8 uStack_270;
-    31:   undefined8 uStack_268;
-    32:   undefined8 uStack_260;
-    33:   uint *puStack_258;
-    34:   undefined8 uStack_250;
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:46
-reconstrucao/src/../include/ghidra_function_prototypes.h:46:1: error: type defaults to ‘int’ in declaration of ‘CcGetDirtyPages’ [-Wimplicit-int]
-
-    43:   undefined8 uStack_208;
-    44:   uint auStack_200 [2];
-    45:   undefined8 uStack_1f8;
-    46:   undefined8 uStack_1f0;
-    47:   undefined8 uStack_1e8;
-    48:   undefined8 uStack_1e0;
-    49:   uint *puStack_1d8;
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:60
-reconstrucao/src/../include/ghidra_function_prototypes.h:60:1: error: type defaults to ‘int’ in declaration of ‘CcMapData’ [-Wimplicit-int]
-
-    57:   uint *puStack_198;
-    58:   undefined8 uStack_190;
-    59:   undefined8 uStack_188;
-    60:   uint auStack_180 [2];
-    61:   undefined8 uStack_178;
-    62:   undefined8 uStack_170;
-    63:   undefined8 uStack_168;
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:97
-reconstrucao/src/../include/ghidra_function_prototypes.h:97:1: error: type defaults to ‘int’ in declaration of ‘CmCallbackGetKeyObjectID’ [-Wimplicit-int]
-
-    94:   undefined8 uStack_70;
-    95:   undefined8 uStack_68;
-    96:   undefined8 uStack_60;
-    97:   uint *puStack_58;
-    98:   undefined8 uStack_50;
-    99:   undefined8 uStack_48;
-    100:   uint auStack_40 [2];
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:102
-reconstrucao/src/../include/ghidra_function_prototypes.h:102:1: error: type defaults to ‘int’ in declaration of ‘CmSetCallbackObjectContext’ [-Wimplicit-int]
-
-    99:   undefined8 uStack_48;
-    100:   uint auStack_40 [2];
-    101:   undefined8 uStack_38;
-    102:   undefined8 uStack_30;
-    103:   undefined8 uStack_28;
-    104:   undefined8 uStack_20;
-    105:   ulonglong uStack_18;
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:133
-reconstrucao/src/../include/ghidra_function_prototypes.h:133:1: error: type defaults to ‘int’ in declaration of ‘DifRegisterClassDriverPlugin’ [-Wimplicit-int]
-
-    130:   puStack_158 = auStack_140;
-    131:   uStack_148 = *param_22;
-    132:   auStack_140[0] = (uint)*(ushort *)(param_22 + 1);
-    133:   uStack_168 = param_21;
-    134:   uStack_178 = param_20;
-    135:   uStack_20 = 1;
-    136:   uStack_30 = 4;
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:150
-reconstrucao/src/../include/ghidra_function_prototypes.h:150:1: error: type defaults to ‘int’ in declaration of ‘EtwSendTraceBuffer’ [-Wimplicit-int]
-
-    147:   uStack_e0 = 1;
-    148:   uStack_f0 = 8;
-    149:   uStack_110 = 2;
-    150:   auStack_100[1] = 0;
-    151:   uStack_120 = 1;
-    152:   uStack_130 = 8;
-    153:   uStack_150 = 2;
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:155
-reconstrucao/src/../include/ghidra_function_prototypes.h:155:1: error: type defaults to ‘int’ in declaration of ‘EtwWriteEndScenario’ [-Wimplicit-int]
-
-    152:   uStack_130 = 8;
-    153:   uStack_150 = 2;
-    154:   auStack_140[1] = 0;
-    155:   uStack_160 = 1;
-    156:   puStack_198 = auStack_180;
-    157:   uStack_170 = 8;
-    158:   uStack_190 = 2;
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:170
-reconstrucao/src/../include/ghidra_function_prototypes.h:170:1: error: type defaults to ‘int’ in declaration of ‘ExAcquireFastResourceSharedStarveExclusive’ [-Wimplicit-int]
-
-    167:   uStack_1f8 = param_14;
-    168:   puStack_218 = auStack_200;
-    169:   uStack_208 = *param_13;
-    170:   auStack_200[0] = (uint)*(ushort *)(param_13 + 1);
-    171:   uStack_228 = param_12;
-    172:   uStack_238 = param_11;
-    173:   puStack_258 = auStack_240;
-
-## FUN_140200444 */ — reconstrucao/src/decompiled_01.c:226
-reconstrucao/src/../include/ghidra_function_prototypes.h:226:43: error: unknown type name ‘code’
-
-    223:   *(undefined8 *)(param_1 + 0x500) = *(undefined8 *)(param_1 + 0x30);
-    224:   *(longlong *)(param_1 + 0x508) = *(longlong *)(param_1 + 0x38) + *(longlong *)(param_1 + 0x508);
-    225:   *(longlong *)(param_1 + 0x510) = *(longlong *)(param_1 + 0x40) + *(longlong *)(param_1 + 0x510);
-    226:   *(ulonglong *)(param_1 + 0x4e8) = uVar3;
-    227:   lVar5 = 10;
-    228:   uVar3 = *(ulonglong *)(param_1 + 0x518);
-    229:   if (*(ulonglong *)(param_1 + 0x518) <= *(ulonglong *)(param_1 + 0x48)) {
-
-## FUN_140200444 */ — reconstrucao/src/decompiled_01.c:265
-reconstrucao/src/../include/ghidra_function_prototypes.h:265:1: error: type defaults to ‘int’ in declaration of ‘ExInterlockedExtendZone’ [-Wimplicit-int]
-
-    262:   if (uVar3 == 0) {
-    263:     if (uVar2 <= uVar1) {
-    264:       uVar2 = uVar1;
-    265:     }
-    266:   }
-    267:   else {
-    268:     uVar2 = (uVar1 * *(longlong *)(param_1 + 0xc0) + *(longlong *)(param_1 + 0x590) * uVar2) / uVar3
-
-## FUN_140200740 */ — reconstrucao/src/decompiled_01.c:334
-reconstrucao/src/../include/ghidra_function_prototypes.h:334:1: error: type defaults to ‘int’ in declaration of ‘ExSecurePoolValidate’ [-Wimplicit-int]
-
-    331: {
-    332:   undefined1 in_CR8;
-    333:   undefined8 auStackX_10 [3];
-    334:   
-    335:   auStackX_10[0] = 0;
-    336:   if (DAT_140fc7d20 != 0) {
-    337:     FUN_1404f6e6c(in_CR8,2);
-
-## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:393
-reconstrucao/src/../include/ghidra_function_prototypes.h:393:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402009ec’ [-Wimplicit-int]
-
-    390:   uStackX_20 = 0;
-    391:   uStackX_18 = 0;
-    392:   iVar1 = *(int *)(param_1 + 0x24c);
-    393:   uStack_48 = 0;
-    394:   uStack_40 = 0;
-    395:   if ((*(uint *)(param_1 + 0x74) & 8) == 0) {
-    396:     FUN_14020bfa0(0,&uStackX_20,&uStackX_18,auStackX_8,&uStack_48);
-
-## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:430
-reconstrucao/src/../include/ghidra_function_prototypes.h:430:1: error: type defaults to ‘int’ in declaration of ‘FUN_140203980’ [-Wimplicit-int]
-
-    427:   ulonglong uVar6;
-    428:   
-    429:   if (DAT_140fc7ad0 != (uint *)0x0) {
-    430:     uVar2 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
-    431:     uVar6 = 0;
-    432:     if (*DAT_140fc7ad0 != 0) {
-    433:       do {
-
-## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:437
-reconstrucao/src/../include/ghidra_function_prototypes.h:437:1: error: type defaults to ‘int’ in declaration of ‘FUN_140204158’ [-Wimplicit-int]
-
-    434:         puVar1 = DAT_140fc7ad0;
-    435:         uVar4 = 0;
-    436:         uVar5 = uVar4;
-    437:         if (DAT_140fc7ad0[uVar6 * 0x70 + 0x1b] != 0) {
-    438:           do {
-    439:             uVar3 = (int)uVar5 + 1;
-    440:             uVar4 = (ulonglong)uVar3;
-
-## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:451
-reconstrucao/src/../include/ghidra_function_prototypes.h:451:1: error: type defaults to ‘int’ in declaration of ‘FUN_140204eb0’ [-Wimplicit-int]
-
-    448:       } while (uVar3 < *DAT_140fc7ad0);
-    449:     }
-    450:     KeReleaseSpinLock(&DAT_140f0cf28,uVar2);
-    451:   }
-    452:   return;
-    453: }
-    454: 
-
-## FUN_1402009ec */ — reconstrucao/src/decompiled_01.c:457
-reconstrucao/src/../include/ghidra_function_prototypes.h:457:1: error: type defaults to ‘int’ in declaration of ‘FUN_140205970’ [-Wimplicit-int]
-
-    454: 
-    455: /* Ghidra label: FUN_1402009ec */
-    456: /* Ghidra address: 1402009ec */
-    457: FUN_1402009ec(undefined4 param_1,undefined8 param_2,undefined8 param_3,undefined4 param_4,
-    458:              undefined1 param_5)
-    459: 
-    460: {
-
-## FUN_140200a58 */ — reconstrucao/src/decompiled_01.c:485
-reconstrucao/src/../include/ghidra_function_prototypes.h:485:1: error: type defaults to ‘int’ in declaration of ‘FUN_140209980’ [-Wimplicit-int]
-
-    482:   return;
-    483: }
-    484: 
-    485: /* Ghidra label: KeSetSelectedCpuSetsThread */
-    486: /* Ghidra address: 140200ab0 */
-    487: undefined8 KeSetSelectedCpuSetsThread(longlong param_1,undefined4 param_2,undefined8 param_3)
-    488: 
-
-## KeSetSelectedCpuSetsThread */ — reconstrucao/src/decompiled_01.c:528
-reconstrucao/src/../include/ghidra_function_prototypes.h:528:1: error: type defaults to ‘int’ in declaration of ‘FUN_140212424’ [-Wimplicit-int]
-
-    525:         uVar8 = uVar8 + 1;
-    526:         if ((((DAT_140fc62ac & uVar8) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
-    527:            (cVar4 = FUN_14020cb70(), cVar4 != '\0')) {
-    528:           FUN_14020cb40(uVar8);
-    529:         }
-    530:       } while (*(longlong *)(param_1 + 0x40) != 0);
-    531:     }
-
-## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:548
-reconstrucao/src/../include/ghidra_function_prototypes.h:548:1: error: type defaults to ‘int’ in declaration of ‘FUN_140214e80’ [-Wimplicit-int]
-
-    545: {
-    546:   void *pvVar1;
-    547:   undefined1 uVar2;
-    548:   short sVar3;
-    549:   int iVar4;
-    550:   undefined4 *puVar5;
-    551:   uint uVar6;
-
-## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:549
-reconstrucao/src/../include/ghidra_function_prototypes.h:549:1: error: type defaults to ‘int’ in declaration of ‘FUN_140214f74’ [-Wimplicit-int]
-
-    546:   void *pvVar1;
-    547:   undefined1 uVar2;
-    548:   short sVar3;
-    549:   int iVar4;
-    550:   undefined4 *puVar5;
-    551:   uint uVar6;
-    552:   ulonglong uVar7;
-
-## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:562
-reconstrucao/src/../include/ghidra_function_prototypes.h:562:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    559:   ulonglong uStack_e8;
-    560:   undefined4 auStack_e0 [21];
-    561:   undefined1 auStack_89 [89];
-    562:   ulonglong uStack_30;
-    563:   
-    564:   pvVar1 = FiberData;
-    565:   uStack_30 = DAT_140e0a740 ^ (ulonglong)auStack_128;
-
-## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:566
-reconstrucao/src/../include/ghidra_function_prototypes.h:566:1: error: type defaults to ‘int’ in declaration of ‘FUN_140218c60’ [-Wimplicit-int]
-
-    563:   
-    564:   pvVar1 = FiberData;
-    565:   uStack_30 = DAT_140e0a740 ^ (ulonglong)auStack_128;
-    566:   puStack_f8 = (undefined4 *)0x0;
-    567:   uStack_f0 = uStack_f0 & 0xffffffff00000000;
-    568:   uVar6 = 0;
-    569:   uStack_108 = 0;
-
-## FUN_140200dcc */ — reconstrucao/src/decompiled_01.c:624
-reconstrucao/src/../include/ghidra_function_prototypes.h:624:1: error: type defaults to ‘int’ in declaration of ‘FUN_140222e6c’ [-Wimplicit-int]
-
-    621: 
-    622: {
-    623:   char cVar1;
-    624:   undefined4 auStackX_8 [8];
-    625:   undefined1 auStack_68 [32];
-    626:   undefined8 uStack_48;
-    627:   undefined8 uStack_40;
-
-## FUN_140200dcc */ — reconstrucao/src/decompiled_01.c:640
-reconstrucao/src/../include/ghidra_function_prototypes.h:640:1: error: type defaults to ‘int’ in declaration of ‘FUN_140224800’ [-Wimplicit-int]
-
-    637:     auStackX_8[0] = param_1;
-    638:     cVar1 = EtwEventEnabled(DAT_140f0bb00,&DAT_140010400);
-    639:     if (cVar1 != '\0') {
-    640:       uStack_1c = 0;
-    641:       puStack_28 = auStackX_8;
-    642:       ppuStack_30 = &puStack_28;
-    643:       uStack_20 = 4;
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:664
-reconstrucao/src/../include/ghidra_function_prototypes.h:664:1: error: type defaults to ‘int’ in declaration of ‘FUN_140228880’ [-Wimplicit-int]
-
-    661:   char cVar4;
-    662:   undefined8 *puVar5;
-    663:   undefined8 *puVar6;
-    664:   undefined8 *puVar7;
-    665:   undefined8 *puVar8;
-    666:   undefined4 *puVar9;
-    667:   uint uVar10;
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:669
-reconstrucao/src/../include/ghidra_function_prototypes.h:669:1: error: type defaults to ‘int’ in declaration of ‘FUN_14022a7e0’ [-Wimplicit-int]
-
-    666:   undefined4 *puVar9;
-    667:   uint uVar10;
-    668:   undefined8 *puVar11;
-    669:   undefined8 *puVar12;
-    670:   undefined8 uStack_40;
-    671:   undefined4 auStack_38 [8];
-    672:   undefined8 auStack_18 [2];
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:688
-reconstrucao/src/../include/ghidra_function_prototypes.h:688:1: error: type defaults to ‘int’ in declaration of ‘FUN_140230420’ [-Wimplicit-int]
-
-    685:       pcVar3 = (code *)swi(0x29);
-    686:       puVar5 = (undefined8 *)(*pcVar3)();
-    687:       puVar9 = puVar9 + 2;
-    688:     }
-    689:     *puVar7 = puVar11;
-    690:     puVar11[1] = puVar7;
-    691:     *puVar5 = puVar8;
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:720
-reconstrucao/src/../include/ghidra_function_prototypes.h:720:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023a5e0’ [-Wimplicit-int]
-
-    717:         if (((DAT_140fc62ac & uVar10) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) {
-    718:           *(undefined8 *)(puVar9 + -2) = 0x140200fa6;
-    719:           cVar4 = FUN_14020cb70();
-    720:           if (cVar4 != '\0') {
-    721:             *(undefined8 *)(puVar9 + -2) = 0x140200fb1;
-    722:             FUN_14020cb40(uVar10);
-    723:           }
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:727
-reconstrucao/src/../include/ghidra_function_prototypes.h:727:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023cca0’ [-Wimplicit-int]
-
-    724:         }
-    725:       } while (puVar8[-0x76] != 0);
-    726:     }
-    727:     if ((*(uint *)(puVar8 + -0x6f) & 0x400000) != 0) {
-    728:       *(undefined8 *)(puVar9 + -2) = 0x140200edb;
-    729:       FUN_140201280(puVar8 + -0x7e,puVar9 + 8,1);
-    730:     }
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:735
-reconstrucao/src/../include/ghidra_function_prototypes.h:735:19: error: unknown type name ‘code’
-
-    732:     LOCK();
-    733:     *(short *)((longlong)puVar8 + -0x8c) = *(short *)((longlong)puVar8 + -0x8c) + -1;
-    734:     UNLOCK();
-    735:     puVar8 = puVar6;
-    736:   }
-    737:   *(undefined8 *)(puVar9 + -2) = 0x140200f06;
-    738:   FUN_140271070(FiberData,puVar9 + 8,2);
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:736
-reconstrucao/src/../include/ghidra_function_prototypes.h:736:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023f1f0’ [-Wimplicit-int]
-
-    733:     *(short *)((longlong)puVar8 + -0x8c) = *(short *)((longlong)puVar8 + -0x8c) + -1;
-    734:     UNLOCK();
-    735:     puVar8 = puVar6;
-    736:   }
-    737:   *(undefined8 *)(puVar9 + -2) = 0x140200f06;
-    738:   FUN_140271070(FiberData,puVar9 + 8,2);
-    739:   return;
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:739
-reconstrucao/src/../include/ghidra_function_prototypes.h:739:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402401d0’ [-Wimplicit-int]
-
-    736:   }
-    737:   *(undefined8 *)(puVar9 + -2) = 0x140200f06;
-    738:   FUN_140271070(FiberData,puVar9 + 8,2);
-    739:   return;
-    740: }
-    741: 
-    742: /* Ghidra label: FUN_140200fc0 */
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:754
-reconstrucao/src/../include/ghidra_function_prototypes.h:754:1: error: type defaults to ‘int’ in declaration of ‘FUN_140242870’ [-Wimplicit-int]
-
-    751: /* Ghidra label: FUN_140200fd8 */
-    752: /* Ghidra address: 140200fd8 */
-    753: void FUN_140200fd8(uint *param_1,longlong param_2,int param_3)
-    754: 
-    755: {
-    756:   byte bVar1;
-    757:   longlong lVar2;
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:777
-reconstrucao/src/../include/ghidra_function_prototypes.h:777:1: error: type defaults to ‘int’ in declaration of ‘FUN_140246190’ [-Wimplicit-int]
-
-    774:   undefined8 uStack_30;
-    775:   
-    776:   auStackX_18[0] = 0;
-    777:   pvStack_60 = (void *)0x0;
-    778:   uStackX_20 = 0;
-    779:   uStack_58 = 0;
-    780:   uStack_68 = 0;
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:812
-reconstrucao/src/../include/ghidra_function_prototypes.h:812:1: error: type defaults to ‘int’ in declaration of ‘FUN_140249d74’ [-Wimplicit-int]
-
-    809:     param_1[0xf3] = 0;
-    810:     LOCK();
-    811:     *param_1 = *param_1 & 0xffbfffff;
-    812:     UNLOCK();
-    813:     FUN_1402fd5d0(uVar8,pvStack_60,&uStack_68,uStack_58,&uStack_48);
-    814:     param_1[0x10] = 0;
-    815:     param_1[0x11] = 0;
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:819
-reconstrucao/src/../include/ghidra_function_prototypes.h:819:75: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    816:     FUN_140271070(FiberData,&uStackX_20,auStackX_18[0]);
-    817:     KeSetPriorityThread(param_1,(int)*(char *)((longlong)param_1 + 0x233));
-    818:     return;
-    819:   }
-    820:   if (param_3 != 1) {
-    821:     if ((param_3 == 2) || (param_3 == 3)) {
-    822:       if ((DAT_140fc7b14 & 0x20) != 0) {
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:822
-reconstrucao/src/../include/ghidra_function_prototypes.h:822:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024b21c’ [-Wimplicit-int]
-
-    819:   }
-    820:   if (param_3 != 1) {
-    821:     if ((param_3 == 2) || (param_3 == 3)) {
-    822:       if ((DAT_140fc7b14 & 0x20) != 0) {
-    823:         FUN_1406597f4(param_1,param_3);
-    824:       }
-    825:       FUN_14034b620(param_1,auStackX_18);
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:826
-reconstrucao/src/../include/ghidra_function_prototypes.h:826:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024b730’ [-Wimplicit-int]
-
-    823:         FUN_1406597f4(param_1,param_3);
-    824:       }
-    825:       FUN_14034b620(param_1,auStackX_18);
-    826:     }
-    827:     else {
-    828:       if (param_3 != 4) {
-    829:         return;
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:829
-reconstrucao/src/../include/ghidra_function_prototypes.h:829:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024be10’ [-Wimplicit-int]
-
-    826:     }
-    827:     else {
-    828:       if (param_3 != 4) {
-    829:         return;
-    830:       }
-    831:       FUN_14034b620(param_1,auStackX_18);
-    832:       lVar2 = *(longlong *)(param_1 + 0xf2);
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:833
-reconstrucao/src/../include/ghidra_function_prototypes.h:833:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024c0c8’ [-Wimplicit-int]
-
-    830:       }
-    831:       FUN_14034b620(param_1,auStackX_18);
-    832:       lVar2 = *(longlong *)(param_1 + 0xf2);
-    833:       if (lVar2 == 0) goto LAB_14020104d;
-    834:       LOCK();
-    835:       *(longlong *)(lVar2 + 0x28) = *(longlong *)(lVar2 + 0x28) + 1;
-    836:       UNLOCK();
-
-## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:898
-reconstrucao/src/../include/ghidra_function_prototypes.h:898:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025703c’ [-Wimplicit-int]
-
-    895:   param_1[0x11] = 0;
-    896:   FUN_140295160(pvVar4,param_1);
-    897:   if (DAT_140fc7d20 != 0) {
-    898:     FUN_1404f6e08(in_CR8,auStackX_18[0]);
     899:   }
     900:   return;
     901: }
+    902: 
+    903: /* Ghidra label: FUN_140201280 */
+    904: /* Ghidra address: 140201280 */
+    905: void FUN_140201280(longlong param_1,undefined8 param_2,char param_3)
 
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:919
-reconstrucao/src/../include/ghidra_function_prototypes.h:919:55: error: unknown type name ‘code’
+## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:915
+reconstrucao/src/../include/ghidra_function_prototypes.h:915:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
+    912:   int iVar5;
+    913:   int iVar6;
+    914:   longlong lVar7;
+    915:   ulonglong uVar8;
     916:   int iVar9;
     917:   longlong *plVar10;
     918:   undefined4 extraout_XMM0_Da;
-    919:   undefined4 uVar11;
-    920:   uint auStackX_8 [2];
-    921:   uint auStackX_20 [2];
-    922:   longlong lStack_88;
 
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:923
-reconstrucao/src/../include/ghidra_function_prototypes.h:923:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025abd0’ [-Wimplicit-int]
+## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:960
+reconstrucao/src/../include/ghidra_function_prototypes.h:960:1: error: unknown type name ‘code’
 
-    920:   uint auStackX_8 [2];
-    921:   uint auStackX_20 [2];
-    922:   longlong lStack_88;
-    923:   longlong *plStack_80;
-    924:   longlong *plStack_78;
-    925:   undefined8 uStack_70;
-    926:   undefined8 uStack_68;
-
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:940
-reconstrucao/src/../include/ghidra_function_prototypes.h:940:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025f5f0’ [-Wimplicit-int]
-
-    937:     UNLOCK();
-    938:   }
-    939:   iVar5 = FUN_1402022c4(param_1,&uStack_60);
-    940:   iVar9 = *(int *)(param_1 + 0x400);
-    941:   if (iVar5 != iVar9) {
-    942:     lVar7 = (longlong)(char)iVar5;
-    943:     cVar3 = *(char *)(lVar7 + 0x338 + param_1);
-
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:943
-reconstrucao/src/../include/ghidra_function_prototypes.h:943:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    940:   iVar9 = *(int *)(param_1 + 0x400);
-    941:   if (iVar5 != iVar9) {
-    942:     lVar7 = (longlong)(char)iVar5;
-    943:     cVar3 = *(char *)(lVar7 + 0x338 + param_1);
-    944:     if (cVar3 == -1) {
-    945:                     /* WARNING: Subroutine does not return */
-    946:       KeBugCheckEx(0x157,param_1,lVar7,1,0);
-
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:954
-reconstrucao/src/../include/ghidra_function_prototypes.h:954:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402623d0’ [-Wimplicit-int]
-
-    951:       lVar7 = (longlong)(char)iVar9;
-    952:       cVar3 = *(char *)(lVar7 + 0x338 + param_1);
-    953:       if (cVar3 == '\0') {
-    954:                     /* WARNING: Subroutine does not return */
-    955:         KeBugCheckEx(0x157,param_1,lVar7,2,0);
-    956:       }
-    957:       cVar3 = cVar3 + -1;
-
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:957
-reconstrucao/src/../include/ghidra_function_prototypes.h:957:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    954:                     /* WARNING: Subroutine does not return */
-    955:         KeBugCheckEx(0x157,param_1,lVar7,2,0);
-    956:       }
     957:       cVar3 = cVar3 + -1;
     958:       *(char *)(lVar7 + 0x338 + param_1) = cVar3;
     959:       if (cVar3 == '\0') {
     960:         *(uint *)(param_1 + 0x358) = *(uint *)(param_1 + 0x358) ^ 1 << ((int)(char)iVar9 & 0x1fU);
+    961:       }
+    962:     }
+    963:     *(int *)(param_1 + 0x400) = iVar5;
 
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:997
-reconstrucao/src/../include/ghidra_function_prototypes.h:997:1: error: type defaults to ‘int’ in declaration of ‘FUN_14026df50’ [-Wimplicit-int]
+## FUN_1402015a0 */ — reconstrucao/src/decompiled_01.c:1077
+reconstrucao/src/../include/ghidra_function_prototypes.h:1077:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    994:         uVar11 = FUN_1403fce40(alStack_50,*(uint *)(param_1 + 0x78) >> 1 & 1,&plStack_78,auStackX_20
-    995:                               );
-    996:         if (auStackX_20[0] != 0) {
-    997:           uVar8 = (ulonglong)auStackX_20[0];
-    998:           plVar10 = plStack_78;
-    999:           do {
-    1000:             bVar1 = *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40);
-
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1003
-reconstrucao/src/../include/ghidra_function_prototypes.h:1003:1: error: unknown type name ‘code’
-
-    1000:             bVar1 = *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40);
-    1001:             *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40) =
-    1002:                  bVar1 ^ (bVar1 ^ *(byte *)(param_1 + 0x204)) & 7;
-    1003:             uVar11 = FUN_14027835c();
-    1004:             plVar10 = plVar10 + 1;
-    1005:             uVar8 = uVar8 - 1;
-    1006:           } while (uVar8 != 0);
-
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1022
-reconstrucao/src/../include/ghidra_function_prototypes.h:1022:1: error: type defaults to ‘int’ in declaration of ‘FUN_140275d74’ [-Wimplicit-int]
-
-    1019:           bVar1 = *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40);
-    1020:           *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40) =
-    1021:                bVar1 ^ (bVar1 ^ *(byte *)(param_1 + 0x204)) & 7;
-    1022:           uVar11 = FUN_14027835c();
-    1023:           plVar10 = plVar10 + 1;
-    1024:           uVar8 = uVar8 - 1;
-    1025:         } while (uVar8 != 0);
-
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1024
-reconstrucao/src/../include/ghidra_function_prototypes.h:1024:1: error: type defaults to ‘int’ in declaration of ‘FUN_140276940’ [-Wimplicit-int]
-
-    1021:                bVar1 ^ (bVar1 ^ *(byte *)(param_1 + 0x204)) & 7;
-    1022:           uVar11 = FUN_14027835c();
-    1023:           plVar10 = plVar10 + 1;
-    1024:           uVar8 = uVar8 - 1;
-    1025:         } while (uVar8 != 0);
-    1026:       }
-    1027:     }
-
-## FUN_1402015a0 */ — reconstrucao/src/decompiled_01.c:1051
-reconstrucao/src/../include/ghidra_function_prototypes.h:1051:1: error: type defaults to ‘int’ in declaration of ‘FUN_14027fd50’ [-Wimplicit-int]
-
-    1048:   uint uVar3;
-    1049:   longlong lStackX_10;
-    1050:   
-    1051:   lStackX_10 = 0;
-    1052:   uVar2 = KeAcquireSpinLockRaiseToDpc(&DAT_140f08470);
-    1053:   puVar1 = DAT_140f08468;
-    1054:   if (DAT_140f08468 != (uint *)0x0) {
-
-## FUN_1402015a0 */ — reconstrucao/src/decompiled_01.c:1071
-reconstrucao/src/../include/ghidra_function_prototypes.h:1071:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402862d0’ [-Wimplicit-int]
-
-    1068:         }
-    1069:         *(longlong *)(puVar1 + 2) = lStackX_10;
-    1070:       }
-    1071:     }
-    1072:   }
-    1073:   KeReleaseSpinLock(&DAT_140f08470,uVar2);
-    1074:   return;
-
-## FUN_1402015a0 */ — reconstrucao/src/decompiled_01.c:1072
-reconstrucao/src/../include/ghidra_function_prototypes.h:1072:1: error: type defaults to ‘int’ in declaration of ‘FUN_140286be0’ [-Wimplicit-int]
-
-    1069:         *(longlong *)(puVar1 + 2) = lStackX_10;
-    1070:       }
-    1071:     }
-    1072:   }
-    1073:   KeReleaseSpinLock(&DAT_140f08470,uVar2);
     1074:   return;
     1075: }
-
-## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1081
-reconstrucao/src/../include/ghidra_function_prototypes.h:1081:1: error: type defaults to ‘int’ in declaration of ‘FUN_140288de8’ [-Wimplicit-int]
-
+    1076: 
+    1077: /* Ghidra label: FUN_14020164c */
     1078: /* Ghidra address: 14020164c */
     1079: void FUN_14020164c(uint param_1,char param_2)
     1080: 
-    1081: {
-    1082:   undefined1 uVar1;
-    1083:   
-    1084:   uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
 
-## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1082
-reconstrucao/src/../include/ghidra_function_prototypes.h:1082:1: error: type defaults to ‘int’ in declaration of ‘FUN_140288ee0’ [-Wimplicit-int]
+## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1343
+reconstrucao/src/../include/ghidra_function_prototypes.h:1343:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1079: void FUN_14020164c(uint param_1,char param_2)
-    1080: 
-    1081: {
-    1082:   undefined1 uVar1;
-    1083:   
-    1084:   uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
-    1085:   FUN_140201790(DAT_140fc7ad0 + (ulonglong)param_1 * 0x70 + 0x14,1,param_2);
+    1340:         puStack_38 = puStack_38 + 2;
+    1341:         uVar8 = (uint)uVar4 + 1;
+    1342:         uVar4 = (ulonglong)uVar8;
+    1343:         param_2 = param_2 + 1;
+    1344:         lVar10 = lVar10 + 2;
+    1345:       } while (uVar8 < 0x20);
+    1346:       if (param_4 == 0) {
 
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1108
-reconstrucao/src/../include/ghidra_function_prototypes.h:1108:1: error: type defaults to ‘int’ in declaration of ‘FUN_14028b864’ [-Wimplicit-int]
+## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1473
+reconstrucao/src/../include/ghidra_function_prototypes.h:1473:37: error: unknown type name ‘code’
 
-    1105: /* Ghidra address: 140201708 */
-    1106: void FUN_140201708(undefined1 param_1)
-    1107: 
-    1108: {
-    1109:   undefined1 uVar1;
-    1110:   uint uVar2;
-    1111:   ulonglong uVar3;
+    1470:               plVar1 = (longlong *)plVar11[1];
+    1471:               if ((*(longlong **)(lVar9 + 8) != plVar11) || ((longlong *)*plVar1 != plVar11))
+    1472:               goto LAB_140201cd0;
+    1473:               *plVar1 = lVar9;
+    1474:               *(longlong **)(lVar9 + 8) = plVar1;
+    1475:               param_1[0x23] = (longlong)plVar11;
+    1476:             }
 
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1119
-reconstrucao/src/../include/ghidra_function_prototypes.h:1119:1: error: type defaults to ‘int’ in declaration of ‘FUN_14028c480’ [-Wimplicit-int]
+## FUN_140201ec0 */ — reconstrucao/src/decompiled_01.c:1566
+reconstrucao/src/../include/ghidra_function_prototypes.h:1566:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1116:     if (*DAT_140fc7ad0 != 0) {
-    1117:       do {
-    1118:         FUN_140201790(DAT_140fc7ad0 + uVar3 * 0x70 + 0x14,CONCAT71((int7)(uVar3 >> 8),2),
-    1119:                       CONCAT71((int7)(uVar3 * 0x1c0 >> 8),param_1));
-    1120:         uVar2 = (int)uVar3 + 1;
-    1121:         uVar3 = (ulonglong)uVar2;
-    1122:       } while (uVar2 < *DAT_140fc7ad0);
+    1563:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_158;
+    1564:   acStack_138[0] = '\0';
+    1565:   FUN_1406d1200(auStack_120,0,0x100);
+    1566:   puVar1 = DAT_140fc7ad0;
+    1567:   if (DAT_140fc7ad0 == (uint *)0x0) {
+    1568:     return -0x3fffff45;
+    1569:   }
 
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+## FUN_140201ec0 */ — reconstrucao/src/decompiled_01.c:1602
+reconstrucao/src/../include/ghidra_function_prototypes.h:1602:26: error: unknown type name ‘code’
 
-    1126:   return;
-    1127: }
-    1128: 
-    1129: /* Ghidra label: FUN_140201790 */
-    1130: /* Ghidra address: 140201790 */
-    1131: void FUN_140201790(longlong param_1,byte param_2,char param_3)
-    1132: 
+    1599:         FUN_14038b9f4(&uStack_128,HalAdjustResourceList,0,0);
+    1600:         return iVar4;
+    1601:       }
+    1602:     }
+    1603:   }
+    1604: LAB_140201f9b:
+    1605:   KeReleaseSpinLock(&DAT_140f0cf28,uVar3);
 
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1256
-reconstrucao/src/../include/ghidra_function_prototypes.h:1256:1: error: type defaults to ‘int’ in declaration of ‘FUN_140299720’ [-Wimplicit-int]
+## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1617
+reconstrucao/src/../include/ghidra_function_prototypes.h:1617:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1253: 
-    1254: {
-    1255:   ulonglong uVar1;
-    1256:   int iVar2;
-    1257:   undefined8 uVar3;
-    1258:   ulonglong uVar4;
-    1259:   ulonglong uVar5;
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1286
-reconstrucao/src/../include/ghidra_function_prototypes.h:1286:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029c6a4’ [-Wimplicit-int]
-
-    1283:         while ((uVar4 & 1) != 0) {
-    1284:           uVar4 = DAT_140fc7bf8;
-    1285:         }
-    1286:         LOCK();
-    1287:         bVar13 = uVar4 == DAT_140fc7bf8;
-    1288:         if (bVar13) {
-    1289:           DAT_140fc7bf8 = uVar4 + 1;
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1292
-reconstrucao/src/../include/ghidra_function_prototypes.h:1292:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029d5c4’ [-Wimplicit-int]
-
-    1289:           DAT_140fc7bf8 = uVar4 + 1;
-    1290:         }
-    1291:         else {
-    1292:           uVar4 = DAT_140fc7bf8;
-    1293:         }
-    1294:         UNLOCK();
-    1295:       } while (!bVar13);
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1306
-reconstrucao/src/../include/ghidra_function_prototypes.h:1306:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029e864’ [-Wimplicit-int]
-
-    1303:         if (param_3 == (ushort *)0x0) {
-    1304:           if ((uint)uVar4 < uVar12) {
-    1305:             uVar5 = *param_2;
-    1306:           }
-    1307:           else {
-    1308:             uVar5 = 0;
-    1309:             if (param_4 == 0) {
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1308
-reconstrucao/src/../include/ghidra_function_prototypes.h:1308:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029eba0’ [-Wimplicit-int]
-
-    1305:             uVar5 = *param_2;
-    1306:           }
-    1307:           else {
-    1308:             uVar5 = 0;
-    1309:             if (param_4 == 0) {
-    1310:               uVar5 = uVar1;
-    1311:             }
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1351
-reconstrucao/src/../include/ghidra_function_prototypes.h:1351:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402aefd0’ [-Wimplicit-int]
-
-    1348:       }
-    1349:       DAT_140fc7bf8 = DAT_140fc7bf8 + 1;
-    1350:       FUN_140202990(0);
-    1351:       uVar3 = 0;
-    1352:     }
-    1353:     else {
-    1354:       uVar3 = 0xc000000d;
-
-## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1366
-reconstrucao/src/../include/ghidra_function_prototypes.h:1366:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402b2100’ [-Wimplicit-int]
-
-    1363: 
-    1364: {
-    1365:   ulonglong uVar1;
-    1366:   bool bVar2;
-    1367:   
-    1368:   uVar1 = param_1[1];
-    1369:   bVar2 = false;
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1395
-reconstrucao/src/../include/ghidra_function_prototypes.h:1395:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402b75b0’ [-Wimplicit-int]
-
-    1392:   int iVar10;
-    1393:   longlong *plVar11;
-    1394:   uint uVar12;
-    1395:   ulonglong uVar13;
-    1396:   ushort uVar14;
-    1397:   undefined4 *puVar15;
-    1398:   undefined4 *puVar16;
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1403
-reconstrucao/src/../include/ghidra_function_prototypes.h:1403:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1400:   undefined1 in_CR8;
-    1401:   undefined4 auStackX_8 [2];
-    1402:   undefined8 uStack_50;
-    1403:   undefined4 auStack_48 [8];
-    1404:   
-    1405:   puVar16 = auStack_48;
-    1406:   lVar5 = *param_1;
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1405
-reconstrucao/src/../include/ghidra_function_prototypes.h:1405:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402ba488’ [-Wimplicit-int]
-
-    1402:   undefined8 uStack_50;
-    1403:   undefined4 auStack_48 [8];
-    1404:   
-    1405:   puVar16 = auStack_48;
-    1406:   lVar5 = *param_1;
-    1407:   uVar13 = (ulonglong)DAT_140fc601a;
-    1408:   puVar15 = auStack_48;
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1412
-reconstrucao/src/../include/ghidra_function_prototypes.h:1412:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402bbe00’ [-Wimplicit-int]
-
-    1409:   if (DAT_140fc7d20 != 0) goto LAB_140201cd7;
-    1410:   do {
-    1411:     LOCK();
-    1412:     plVar1 = param_1 + 1;
-    1413:     lVar9 = *plVar1;
-    1414:     *(int *)plVar1 = (int)*plVar1 + -1;
-    1415:     UNLOCK();
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1484
-reconstrucao/src/../include/ghidra_function_prototypes.h:1484:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c54a8’ [-Wimplicit-int]
-
-    1481:         }
-    1482:         uVar7 = 0;
-    1483:         if (uVar17 != 0) {
-    1484:           for (; (uVar17 >> uVar7 & 1) == 0; uVar7 = uVar7 + 1) {
-    1485:           }
-    1486:         }
-    1487:         uVar17 = uVar17 & ~(1L << (uVar7 & 0x3f));
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1486
-reconstrucao/src/../include/ghidra_function_prototypes.h:1486:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c5b84’ [-Wimplicit-int]
-
-    1483:         if (uVar17 != 0) {
-    1484:           for (; (uVar17 >> uVar7 & 1) == 0; uVar7 = uVar7 + 1) {
-    1485:           }
-    1486:         }
-    1487:         uVar17 = uVar17 & ~(1L << (uVar7 & 0x3f));
-    1488:         piVar2 = (int *)((longlong)plVar11 +
-    1489:                         (ulonglong)
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1490
-reconstrucao/src/../include/ghidra_function_prototypes.h:1490:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6100’ [-Wimplicit-int]
-
-    1487:         uVar17 = uVar17 & ~(1L << (uVar7 & 0x3f));
-    1488:         piVar2 = (int *)((longlong)plVar11 +
-    1489:                         (ulonglong)
-    1490:                         *(uint *)(DAT_140f23818 +
-    1491:                                  (ulonglong)((uint)uVar14 * 0x40 + ((uint)uVar7 & 0xff)) * 4) * 4 +
-    1492:                         0x120);
-    1493:         *piVar2 = *piVar2 + -1;
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1491
-reconstrucao/src/../include/ghidra_function_prototypes.h:1491:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6490’ [-Wimplicit-int]
-
-    1488:         piVar2 = (int *)((longlong)plVar11 +
-    1489:                         (ulonglong)
-    1490:                         *(uint *)(DAT_140f23818 +
-    1491:                                  (ulonglong)((uint)uVar14 * 0x40 + ((uint)uVar7 & 0xff)) * 4) * 4 +
-    1492:                         0x120);
-    1493:         *piVar2 = *piVar2 + -1;
-    1494:         if (*piVar2 == 0) {
-
-## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1492
-reconstrucao/src/../include/ghidra_function_prototypes.h:1492:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6a60’ [-Wimplicit-int]
-
-    1489:                         (ulonglong)
-    1490:                         *(uint *)(DAT_140f23818 +
-    1491:                                  (ulonglong)((uint)uVar14 * 0x40 + ((uint)uVar7 & 0xff)) * 4) * 4 +
-    1492:                         0x120);
-    1493:         *piVar2 = *piVar2 + -1;
-    1494:         if (*piVar2 == 0) {
-    1495:           *(undefined8 *)(puVar15 + -2) = 0x140201d63;
-
-## FUN_140201e00 */ — reconstrucao/src/decompiled_01.c:1529
-reconstrucao/src/../include/ghidra_function_prototypes.h:1529:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402cb680’ [-Wimplicit-int]
-
-    1526:   if (param_1 == '\0') {
-    1527:     DAT_140e27f44 = DAT_140e27f44 + -1;
-    1528:     if (DAT_140e27f44 != 0) goto LAB_140201e85;
-    1529:     FUN_14049fa04(1,&DAT_140e27df0,&DAT_140e27df8);
-    1530:     uVar2 = 1;
-    1531:   }
-    1532:   else {
-
-## FUN_140201e00 */ — reconstrucao/src/decompiled_01.c:1541
-reconstrucao/src/../include/ghidra_function_prototypes.h:1541:37: error: unknown type name ‘code’
-
-    1538:   FUN_14049f910(uVar2,&DAT_140e27e00,&DAT_140e27e08,&DAT_140e27e10);
-    1539: LAB_140201e85:
-    1540:   FUN_140200dcc(DAT_140e27f44);
-    1541:   KeReleaseSpinLock(&DAT_140e27f48,uVar1);
-    1542:   return;
-    1543: }
-    1544: 
-
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1623
-reconstrucao/src/../include/ghidra_function_prototypes.h:1623:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d3be8’ [-Wimplicit-int]
-
+    1614:   uint *puVar1;
+    1615:   uint *puVar2;
+    1616:   longlong lVar3;
+    1617:   longlong *plVar4;
+    1618:   undefined8 *puVar5;
+    1619:   code *pcVar6;
     1620:   longlong lVar7;
+
+## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1624
+reconstrucao/src/../include/ghidra_function_prototypes.h:1624:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
     1621:   uint *puVar8;
     1622:   undefined8 uVar9;
     1623:   undefined1 auStackX_20 [8];
     1624:   
     1625:   *param_4 = 0;
     1626:   if (param_2 != 0) {
+    1627:     lVar3 = *(longlong *)(param_3 + 8);
 
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1635
-reconstrucao/src/../include/ghidra_function_prototypes.h:1635:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+## FUN_1402022c4 */ — reconstrucao/src/decompiled_01.c:1840
+reconstrucao/src/../include/ghidra_function_prototypes.h:1840:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1632:         if (puVar8[4] == param_2) {
-    1633:           if (puVar8[5] == 0xffffffff) {
-    1634:             return 0xc0000095;
-    1635:           }
-    1636:           puVar8[5] = puVar8[5] + 1;
-    1637:           return 0;
-    1638:         }
+    1837:     if (0x1e < iVar6 - 1U) {
+    1838:       iVar6 = 1;
+    1839:     }
+    1840:     iVar5 = (int)*(char *)(param_1 + 0x233);
+    1841:     if (*(char *)(param_1 + 0x233) <= iVar6) {
+    1842:       iVar5 = iVar6;
+    1843:     }
 
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1661
-reconstrucao/src/../include/ghidra_function_prototypes.h:1661:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d8ae0’ [-Wimplicit-int]
+## FUN_1402023e8 */ — reconstrucao/src/decompiled_01.c:1867
+reconstrucao/src/../include/ghidra_function_prototypes.h:1867:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1658:         }
-    1659:       }
-    1660:       puVar8[4] = param_2;
-    1661:       puVar8[5] = 1;
-    1662:       if (*(uint **)puVar1 == puVar1) goto LAB_140202174;
-    1663:       goto LAB_140202164;
-    1664:     }
+    1864: undefined1 FUN_1402023e8(void)
+    1865: 
+    1866: {
+    1867:   longlong lVar1;
+    1868:   undefined4 *puVar2;
+    1869:   undefined8 uVar3;
+    1870:   void *pvVar4;
 
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1664
-reconstrucao/src/../include/ghidra_function_prototypes.h:1664:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d9970’ [-Wimplicit-int]
+## FUN_140202530 */ — reconstrucao/src/decompiled_01.c:1920
+reconstrucao/src/../include/ghidra_function_prototypes.h:1920:73: error: unknown type name ‘va_list’
 
-    1661:       puVar8[5] = 1;
-    1662:       if (*(uint **)puVar1 == puVar1) goto LAB_140202174;
-    1663:       goto LAB_140202164;
-    1664:     }
-    1665:     for (; puVar8 != puVar1; puVar8 = *(uint **)puVar8) {
-    1666:       if (puVar8[4] == param_2) {
-    1667:         puVar2 = puVar8 + 5;
-
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1672
-reconstrucao/src/../include/ghidra_function_prototypes.h:1672:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dba50’ [-Wimplicit-int]
-
-    1669:         if (*puVar2 != 0) {
-    1670:           return 0;
-    1671:         }
-    1672:         lVar7 = *(longlong *)puVar8;
-    1673:         if ((*(uint **)(lVar7 + 8) != puVar8) ||
-    1674:            (plVar4 = *(longlong **)(puVar8 + 2), (uint *)*plVar4 != puVar8)) {
-    1675:           do {
-
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1674
-reconstrucao/src/../include/ghidra_function_prototypes.h:1674:26: error: unknown type name ‘code’
-
-    1671:         }
-    1672:         lVar7 = *(longlong *)puVar8;
-    1673:         if ((*(uint **)(lVar7 + 8) != puVar8) ||
-    1674:            (plVar4 = *(longlong **)(puVar8 + 2), (uint *)*plVar4 != puVar8)) {
-    1675:           do {
-    1676:             pcVar6 = (code *)swi(0x29);
-    1677:             (*pcVar6)(3);
-
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1676
-reconstrucao/src/../include/ghidra_function_prototypes.h:1676:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dc0f0’ [-Wimplicit-int]
-
-    1673:         if ((*(uint **)(lVar7 + 8) != puVar8) ||
-    1674:            (plVar4 = *(longlong **)(puVar8 + 2), (uint *)*plVar4 != puVar8)) {
-    1675:           do {
-    1676:             pcVar6 = (code *)swi(0x29);
-    1677:             (*pcVar6)(3);
-    1678: LAB_140202174:
-    1679:             LOCK();
-
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1677
-reconstrucao/src/../include/ghidra_function_prototypes.h:1677:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dc250’ [-Wimplicit-int]
-
-    1674:            (plVar4 = *(longlong **)(puVar8 + 2), (uint *)*plVar4 != puVar8)) {
-    1675:           do {
-    1676:             pcVar6 = (code *)swi(0x29);
-    1677:             (*pcVar6)(3);
-    1678: LAB_140202174:
-    1679:             LOCK();
-    1680:             *param_3 = *param_3 | 1;
-
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1679
-reconstrucao/src/../include/ghidra_function_prototypes.h:1679:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dcff0’ [-Wimplicit-int]
-
-    1676:             pcVar6 = (code *)swi(0x29);
-    1677:             (*pcVar6)(3);
-    1678: LAB_140202174:
-    1679:             LOCK();
-    1680:             *param_3 = *param_3 | 1;
-    1681:             UNLOCK();
-    1682:             *param_4 = 1;
-
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1692
-reconstrucao/src/../include/ghidra_function_prototypes.h:1692:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1689:           *(uint **)(param_3 + 4) = puVar8;
-    1690:           return 0;
-    1691:         }
-    1692:         *plVar4 = lVar7;
-    1693:         *(longlong **)(lVar7 + 8) = plVar4;
-    1694:         if (lVar3 == 0) {
-    1695:           ExFreePoolWithTag(puVar8,0x694d5050);
-
-## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1699
-reconstrucao/src/../include/ghidra_function_prototypes.h:1699:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1696:         }
-    1697:         else {
-    1698:           puVar8[0] = 0;
-    1699:           puVar8[1] = 0;
-    1700:           puVar8[2] = 0;
-    1701:           puVar8[3] = 0;
-    1702:           lVar7 = FUN_1402f0180(auStackX_20);
-
-## FUN_1402021f4 */ — reconstrucao/src/decompiled_01.c:1776
-reconstrucao/src/../include/ghidra_function_prototypes.h:1776:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402e97a0’ [-Wimplicit-int]
-
-    1773:       EtwWriteEx(DAT_140f085e0,puVar2,0,0);
-    1774:     }
-    1775:   }
-    1776:   return;
-    1777: }
-    1778: 
-    1779: /* Ghidra label: FUN_1402022c4 */
-
-## FUN_1402021f4 */ — reconstrucao/src/decompiled_01.c:1777
-reconstrucao/src/../include/ghidra_function_prototypes.h:1777:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402e987c’ [-Wimplicit-int]
-
-    1774:     }
-    1775:   }
-    1776:   return;
-    1777: }
-    1778: 
-    1779: /* Ghidra label: FUN_1402022c4 */
-    1780: /* Ghidra address: 1402022c4 */
-
-## FUN_1402022c4 */ — reconstrucao/src/decompiled_01.c:1797
-reconstrucao/src/../include/ghidra_function_prototypes.h:1797:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402ecdd0’ [-Wimplicit-int]
-
-    1794:   undefined8 uStackX_8;
-    1795:   
-    1796:   uStackX_8 = 0;
-    1797:   puVar2 = *(uint **)(param_1 + 0x3c8);
-    1798:   if (puVar2 == (uint *)0x0) {
-    1799:     iVar5 = (int)*(char *)(param_1 + 0xc3);
-    1800:   }
-
-## FUN_140202530 */ — reconstrucao/src/decompiled_01.c:1918
-reconstrucao/src/../include/ghidra_function_prototypes.h:1918:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1915: }
-    1916: 
     1917: /* Ghidra label: FUN_140202530 */
     1918: /* Ghidra address: 140202530 */
     1919: ulonglong FUN_140202530(longlong param_1,undefined4 param_2)
     1920: 
     1921: {
+    1922:   undefined8 uVar1;
+    1923:   short sVar2;
 
-## FUN_140202530 */ — reconstrucao/src/decompiled_01.c:1941
-reconstrucao/src/../include/ghidra_function_prototypes.h:1941:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030df30’ [-Wimplicit-int]
+## FUN_140202738 */ — reconstrucao/src/decompiled_01.c:2038
+reconstrucao/src/../include/ghidra_function_prototypes.h:2038:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1938:     }
-    1939:     else {
-    1940:       uVar3 = FUN_140200bc0(param_1,param_2);
-    1941:     }
-    1942:   }
-    1943:   else {
-    1944:     uVar1 = *(undefined8 *)(param_1 + 8);
-
-## FUN_140202530 */ — reconstrucao/src/decompiled_01.c:1946
-reconstrucao/src/../include/ghidra_function_prototypes.h:1946:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1943:   else {
-    1944:     uVar1 = *(undefined8 *)(param_1 + 8);
-    1945:     uStack_38 = 0xb;
-    1946:     if (DAT_140fc6007 == '\0') {
-    1947:       uVar3 = FUN_1406e0c44(0,&DAT_140fce263);
-    1948:       return uVar3;
-    1949:     }
-
-## FUN_140202530 */ — reconstrucao/src/decompiled_01.c:1949
-reconstrucao/src/../include/ghidra_function_prototypes.h:1949:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030eb04’ [-Wimplicit-int]
-
-    1946:     if (DAT_140fc6007 == '\0') {
-    1947:       uVar3 = FUN_1406e0c44(0,&DAT_140fce263);
-    1948:       return uVar3;
-    1949:     }
-    1950:     uStack_38 = 0x1000b;
-    1951:     uStack_30 = 0;
-    1952:     uStack_28 = 0;
-
-## FUN_140202530 */ — reconstrucao/src/decompiled_01.c:1950
-reconstrucao/src/../include/ghidra_function_prototypes.h:1950:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030ec30’ [-Wimplicit-int]
-
-    1947:       uVar3 = FUN_1406e0c44(0,&DAT_140fce263);
-    1948:       return uVar3;
-    1949:     }
-    1950:     uStack_38 = 0x1000b;
-    1951:     uStack_30 = 0;
-    1952:     uStack_28 = 0;
-    1953:     uStack_20 = 0;
-
-## FUN_140202700 */ — reconstrucao/src/decompiled_01.c:1992
-reconstrucao/src/../include/ghidra_function_prototypes.h:1992:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403137f0’ [-Wimplicit-int]
-
-    1989: }
-    1990: 
-    1991: /* Ghidra label: FUN_140202700 */
-    1992: /* Ghidra address: 140202700 */
-    1993: void FUN_140202700(void)
-    1994: 
-    1995: {
-
-## FUN_140202700 */ — reconstrucao/src/decompiled_01.c:2002
-reconstrucao/src/../include/ghidra_function_prototypes.h:2002:73: error: unknown type name ‘va_list’
-
-    1999:   return;
-    2000: }
-    2001: 
-    2002: /* Ghidra label: FUN_140202738 */
-    2003: /* Ghidra address: 140202738 */
-    2004: undefined1 FUN_140202738(longlong param_1)
-    2005: 
-
-## FUN_140202738 */ — reconstrucao/src/decompiled_01.c:2043
-reconstrucao/src/../include/ghidra_function_prototypes.h:2043:1: error: type defaults to ‘int’ in declaration of ‘FUN_14031ddfc’ [-Wimplicit-int]
-
+    2035:       return 1;
+    2036:     }
+    2037:     if (*(char *)(param_1 + 0x9608) == '\0') {
+    2038:       return 0;
+    2039:     }
     2040:     if (_DAT_fffff78000000008 <= *(ulonglong *)(param_1 + 0x9580)) {
     2041:       return 0;
-    2042:     }
-    2043:   }
-    2044:   KeAddProcessorAffinityEx(&DAT_140e0ac90,uVar5);
-    2045:   return 0;
-    2046: }
 
-## KeCheckProcessorAffinityEx */ — reconstrucao/src/decompiled_01.c:2052
-reconstrucao/src/../include/ghidra_function_prototypes.h:2052:1: error: type defaults to ‘int’ in declaration of ‘FUN_14031f4dc’ [-Wimplicit-int]
+## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2280
+reconstrucao/src/../include/ghidra_function_prototypes.h:2280:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    2049: /* Ghidra address: 140202830 */
-    2050: uint KeCheckProcessorAffinityEx(ushort *param_1,ulonglong param_2)
-    2051: 
-    2052: {
-    2053:   uint uVar1;
-    2054:   uint uVar2;
-    2055:   
-
-## KeCheckProcessorAffinityEx */ — reconstrucao/src/decompiled_01.c:2058
-reconstrucao/src/../include/ghidra_function_prototypes.h:2058:1: error: type defaults to ‘int’ in declaration of ‘FUN_140321058’ [-Wimplicit-int]
-
-    2055:   
-    2056:                     /* 0x202830  1243  KeCheckProcessorAffinityEx */
-    2057:   uVar1 = *(uint *)(DAT_140f23810 + (param_2 & 0xffffffff) * 4);
-    2058:   uVar2 = uVar1 >> 6;
-    2059:   if (uVar2 < *param_1) {
-    2060:     return (uint)(*(ulonglong *)(param_1 + (ulonglong)uVar2 * 4 + 4) >> ((byte)uVar1 & 0x3f)) & 1;
-    2061:   }
-
-## FUN_140202870 */ — reconstrucao/src/decompiled_01.c:2071
-reconstrucao/src/../include/ghidra_function_prototypes.h:2071:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403230bc’ [-Wimplicit-int]
-
-    2068: 
-    2069: {
-    2070:   int iVar1;
-    2071:   
-    2072:   if (DAT_140f085a0 != 0) {
-    2073:     iVar1 = KeIsEqualAffinityEx(&DAT_140e0b870,&DAT_140e0bdc0);
-    2074:     if (iVar1 == 0) {
-
-## FUN_140202870 */ — reconstrucao/src/decompiled_01.c:2074
-reconstrucao/src/../include/ghidra_function_prototypes.h:2074:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403237e8’ [-Wimplicit-int]
-
-    2071:   
-    2072:   if (DAT_140f085a0 != 0) {
-    2073:     iVar1 = KeIsEqualAffinityEx(&DAT_140e0b870,&DAT_140e0bdc0);
-    2074:     if (iVar1 == 0) {
-    2075:       FUN_14037dda0(&DAT_140e0bdc0,DAT_140e0bdc2,&DAT_140e0b870);
-    2076:       if (1 < *(int *)((longlong)FiberData + 0x8920)) {
-    2077:         FUN_140202e04();
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2125
-reconstrucao/src/../include/ghidra_function_prototypes.h:2125:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    2122: void FUN_140202990(ushort *param_1)
-    2123: 
-    2124: {
-    2125:   longlong lVar1;
-    2126:   ulonglong uVar2;
-    2127:   ulonglong uVar3;
-    2128:   ulonglong uVar4;
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2153
-reconstrucao/src/../include/ghidra_function_prototypes.h:2153:1: error: type defaults to ‘int’ in declaration of ‘FUN_14032c468’ [-Wimplicit-int]
-
-    2150:   uVar11 = (uint)DAT_140fc6018;
-    2151:   uStack_164 = uVar11;
-    2152:   puStack_160 = param_1;
-    2153:   if (param_1 != (ushort *)0x0) {
-    2154:     KeAcquireSpinLockAtDpcLevel(&DAT_140f23730);
-    2155:   }
-    2156:   iStack_168 = 0;
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2161
-reconstrucao/src/../include/ghidra_function_prototypes.h:2161:1: error: type defaults to ‘int’ in declaration of ‘FUN_14032caf4’ [-Wimplicit-int]
-
-    2158:   if (uVar11 != 0) {
-    2159:     uVar6 = 0;
-    2160:     do {
-    2161:       uVar4 = (ulonglong)uVar5;
-    2162:       uVar3 = (&DAT_140fc8128)[uVar4];
-    2163:       if (puStack_160 == (ushort *)0x0) {
-    2164:         uVar9 = (&DAT_140fc91c0)[uVar4];
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2191
-reconstrucao/src/../include/ghidra_function_prototypes.h:2191:1: error: type defaults to ‘int’ in declaration of ‘FUN_140330130’ [-Wimplicit-int]
-
-    2188:           uVar12 = -(ulonglong)bVar13 & uVar7;
-    2189:           uStack_148 = -(ulonglong)bVar13 & (uVar7 ^ uVar3);
-    2190:           uVar7 = uVar3 ^ (&DAT_140fc9320)[uVar4 * 2];
-    2191:           uVar4 = uVar9 & uVar7;
-    2192:           if ((uVar7 != 0) && (uVar4 != 0)) {
-    2193:             uVar7 = uVar7 & uVar8;
-    2194:             uVar8 = uVar8 ^ uVar7;
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2214
-reconstrucao/src/../include/ghidra_function_prototypes.h:2214:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403334d0’ [-Wimplicit-int]
-
-    2211:                   uVar10 = uVar12 & uVar4;
-    2212:                 }
-    2213:                 *(ulonglong *)((longlong)DAT_140fc7e18 + (ulonglong)(iStack_154 + uVar6 * 0x40) * 8)
-    2214:                      = uVar10;
-    2215:               } while (uVar7 != 0);
-    2216:               uVar11 = uStack_164;
-    2217:             }
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2241
-reconstrucao/src/../include/ghidra_function_prototypes.h:2241:1: error: type defaults to ‘int’ in declaration of ‘FUN_140335f74’ [-Wimplicit-int]
-
-    2238:               }
-    2239:             }
-    2240:             else if ((uVar7 & uVar12 & uVar9) != 0) {
-    2241:               uVar3 = uVar12;
-    2242:               goto LAB_140202c4e;
-    2243:             }
-    2244:             *(ulonglong *)((longlong)DAT_140fc7e18 + (ulonglong)(iStack_150 + uVar6 * 0x40) * 8) =
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2253
-reconstrucao/src/../include/ghidra_function_prototypes.h:2253:1: error: type defaults to ‘int’ in declaration of ‘FUN_140337658’ [-Wimplicit-int]
-
-    2250:         if (uVar5 < *puStack_160) {
-    2251:           uVar9 = *(ulonglong *)(puStack_160 + uVar4 * 4 + 4);
-    2252:         }
-    2253:         else {
-    2254:           uVar9 = 0;
-    2255:         }
-    2256:         uVar9 = uVar9 ^ uVar3;
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2257
-reconstrucao/src/../include/ghidra_function_prototypes.h:2257:1: error: type defaults to ‘int’ in declaration of ‘FUN_140337e0c’ [-Wimplicit-int]
-
-    2254:           uVar9 = 0;
-    2255:         }
-    2256:         uVar9 = uVar9 ^ uVar3;
-    2257:         auStack_138[uVar4] = uVar9;
-    2258:         if ((&DAT_140fc91c0)[uVar4] != uVar9) goto LAB_140202a55;
-    2259:       }
-    2260: LAB_140202a79:
-
-## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2277
-reconstrucao/src/../include/ghidra_function_prototypes.h:2277:1: error: type defaults to ‘int’ in declaration of ‘FUN_14033b710’ [-Wimplicit-int]
-
-    2274:       if (bVar13) {
-    2275:         DAT_140fc7bf8 = uVar3 + 1;
-    2276:       }
     2277:       else {
     2278:         uVar3 = DAT_140fc7bf8;
     2279:       }
     2280:       UNLOCK();
+    2281:     } while (!bVar13);
+    2282:     uVar3 = 0;
+    2283:     if (uVar11 != 0) {
 
 ## FUN_140202990 */ — reconstrucao/src/decompiled_01.c:2284
-reconstrucao/src/../include/ghidra_function_prototypes.h:2284:1: error: type defaults to ‘int’ in declaration of ‘FUN_14033e328’ [-Wimplicit-int]
+reconstrucao/src/../include/ghidra_function_prototypes.h:2284:36: error: unknown type name ‘code’
 
     2281:     } while (!bVar13);
     2282:     uVar3 = 0;
@@ -1267,1317 +233,1317 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:2284:1: error: type def
     2286:         (&DAT_140fc91c0)[uVar3] = auStack_138[uVar3];
     2287:         uVar3 = (ulonglong)uVar5;
 
-## FUN_140202ce0 */ — reconstrucao/src/decompiled_01.c:2318
-reconstrucao/src/../include/ghidra_function_prototypes.h:2318:1: error: type defaults to ‘int’ in declaration of ‘FUN_140344710’ [-Wimplicit-int]
-
-    2315:   undefined8 uVar12;
-    2316:   longlong lVar13;
-    2317:   undefined8 *puVar14;
-    2318:   undefined8 *puVar15;
-    2319:   undefined8 *puVar16;
-    2320:   
-    2321:   ExAcquireSpinLockExclusiveAtDpcLevel(&DAT_140e2edc0);
-
-## FUN_140202ce0 */ — reconstrucao/src/decompiled_01.c:2319
-reconstrucao/src/../include/ghidra_function_prototypes.h:2319:1: error: type defaults to ‘int’ in declaration of ‘FUN_140344850’ [-Wimplicit-int]
-
-    2316:   longlong lVar13;
-    2317:   undefined8 *puVar14;
-    2318:   undefined8 *puVar15;
-    2319:   undefined8 *puVar16;
-    2320:   
-    2321:   ExAcquireSpinLockExclusiveAtDpcLevel(&DAT_140e2edc0);
-    2322:   puVar16 = (undefined8 *)&DAT_140e0b870;
-
-## FUN_140202ce0 */ — reconstrucao/src/decompiled_01.c:2367
-reconstrucao/src/../include/ghidra_function_prototypes.h:2367:1: error: type defaults to ‘int’ in declaration of ‘FUN_14034c820’ [-Wimplicit-int]
-
-    2364:       *(undefined4 *)((longlong)puVar14 + 100) = uVar2;
-    2365:       *(undefined4 *)(puVar14 + 0xd) = uVar3;
-    2366:       *(undefined4 *)((longlong)puVar14 + 0x6c) = uVar4;
-    2367:       puVar15 = puVar14 + 0x10;
-    2368:       *(undefined4 *)(puVar14 + 0xe) = uVar5;
-    2369:       *(undefined4 *)((longlong)puVar14 + 0x74) = uVar6;
-    2370:       *(undefined4 *)(puVar14 + 0xf) = uVar7;
-
-## FUN_140202ce0 */ — reconstrucao/src/decompiled_01.c:2379
-reconstrucao/src/../include/ghidra_function_prototypes.h:2379:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    2376:     if (DAT_140e2eee8 == 0) {
-    2377:       _DAT_140e2eed0 = 0;
-    2378:       _DAT_140e2eee0 = FUN_14047e690;
-    2379:       DAT_140e2eee8 = 1;
-    2380:       ExQueueWorkItem(&DAT_140e2eed0,1);
-    2381:     }
-    2382:     else if (DAT_140e2eee8 == 1) {
-
-## FUN_140202ce0 */ — reconstrucao/src/decompiled_01.c:2383
-reconstrucao/src/../include/ghidra_function_prototypes.h:2383:36: error: unknown type name ‘code’
-
-    2380:       ExQueueWorkItem(&DAT_140e2eed0,1);
-    2381:     }
-    2382:     else if (DAT_140e2eee8 == 1) {
-    2383:       DAT_140e2eee8 = 2;
-    2384:     }
-    2385:     ExReleaseSpinLockExclusiveFromDpcLevel(&DAT_140e2edc0);
-    2386:     FUN_140202ef0(&DAT_140e38d80,1);
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:11
-reconstrucao/src/../include/ghidra_function_prototypes.h:11:1: error: type defaults to ‘int’ in declaration of ‘BgkDisplayCharacter’ [-Wimplicit-int]
-
-    8: void FUN_140531850(longlong param_1,ulonglong *param_2,ulonglong *param_3,ulonglong *param_4)
-    9: 
-    10: {
-    11:   ulonglong uVar1;
-    12:   ulonglong uVar2;
-    13:   ulonglong uVar3;
-    14:   unkint9 Var4;
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:31
-reconstrucao/src/../include/ghidra_function_prototypes.h:31:1: error: type defaults to ‘int’ in declaration of ‘CcAsyncCopyRead’ [-Wimplicit-int]
-
-    28:   uVar3 = (ulonglong)Var4;
-    29:   Var4 = (unkuint9)param_2[3] + (unkuint9)param_3[3] +
-    30:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
-    31:   uVar10 = (ulonglong)Var4;
-    32:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x100) + (unkuint9)uVar1;
-    33:   uVar6 = (ulonglong)Var5;
-    34:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x108) + (unkuint9)uVar2 +
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:46
-reconstrucao/src/../include/ghidra_function_prototypes.h:46:1: error: type defaults to ‘int’ in declaration of ‘CcGetDirtyPages’ [-Wimplicit-int]
-
-    43:   if ((char)((unkuint9)Var4 >> 0x40) != '\0') {
-    44:     uVar10 = uVar9;
-    45:     uVar3 = uVar8;
-    46:     uVar2 = uVar7;
-    47:     uVar1 = uVar6;
-    48:   }
-    49:   if ((char)((unkuint9)Var5 >> 0x40) != '\0') {
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:60
-reconstrucao/src/../include/ghidra_function_prototypes.h:60:1: error: type defaults to ‘int’ in declaration of ‘CcMapData’ [-Wimplicit-int]
-
-    57:   param_4[2] = uVar3;
-    58:   param_4[3] = uVar10;
-    59:   return;
-    60: }
-    61: 
-    62: /* Ghidra label: FUN_1405318f0 */
-    63: /* Ghidra address: 1405318f0 */
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:97
-reconstrucao/src/../include/ghidra_function_prototypes.h:97:1: error: type defaults to ‘int’ in declaration of ‘CmCallbackGetKeyObjectID’ [-Wimplicit-int]
-
-    94:   undefined1 auVar28 [16];
-    95:   undefined1 auVar29 [16];
-    96:   undefined1 auVar30 [16];
-    97:   undefined1 auVar31 [16];
-    98:   undefined1 auVar32 [16];
-    99:   undefined1 auVar33 [16];
-    100:   undefined1 auVar34 [16];
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:102
-reconstrucao/src/../include/ghidra_function_prototypes.h:102:1: error: type defaults to ‘int’ in declaration of ‘CmSetCallbackObjectContext’ [-Wimplicit-int]
-
-    99:   undefined1 auVar33 [16];
-    100:   undefined1 auVar34 [16];
-    101:   undefined1 auVar35 [16];
-    102:   undefined1 auVar36 [16];
-    103:   undefined1 auVar37 [16];
-    104:   undefined1 auVar38 [16];
-    105:   undefined1 auVar39 [16];
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:133
-reconstrucao/src/../include/ghidra_function_prototypes.h:133:1: error: type defaults to ‘int’ in declaration of ‘DifRegisterClassDriverPlugin’ [-Wimplicit-int]
-
-    130:   undefined1 auVar64 [16];
-    131:   undefined1 auVar65 [16];
-    132:   undefined1 auVar66 [16];
-    133:   undefined1 auVar67 [16];
-    134:   undefined1 auVar68 [16];
-    135:   undefined1 auVar69 [16];
-    136:   undefined1 auVar70 [16];
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:150
-reconstrucao/src/../include/ghidra_function_prototypes.h:150:1: error: type defaults to ‘int’ in declaration of ‘EtwSendTraceBuffer’ [-Wimplicit-int]
-
-    147:   ulonglong uVar81;
-    148:   ulonglong uVar82;
-    149:   ulonglong uVar83;
-    150:   ulonglong uVar84;
-    151:   ulonglong uVar85;
-    152:   ulonglong uVar86;
-    153:   
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:155
-reconstrucao/src/../include/ghidra_function_prototypes.h:155:1: error: type defaults to ‘int’ in declaration of ‘EtwWriteEndScenario’ [-Wimplicit-int]
-
-    152:   ulonglong uVar86;
-    153:   
-    154:   uVar1 = *param_2;
-    155:   auVar16._8_8_ = 0;
-    156:   auVar16._0_8_ = uVar1;
-    157:   auVar48._8_8_ = 0;
-    158:   auVar48._0_8_ = *param_3;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:170
-reconstrucao/src/../include/ghidra_function_prototypes.h:170:1: error: type defaults to ‘int’ in declaration of ‘ExAcquireFastResourceSharedStarveExclusive’ [-Wimplicit-int]
-
-    167:   auVar18._8_8_ = 0;
-    168:   auVar18._0_8_ = uVar1;
-    169:   auVar50._8_8_ = 0;
-    170:   auVar50._0_8_ = param_3[2];
-    171:   uVar2 = SUB168(auVar18 * auVar50,0);
-    172:   uVar81 = SUB168(auVar18 * auVar50,8);
-    173:   uVar86 = (ulonglong)CARRY8(uVar83,uVar7);
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:226
-reconstrucao/src/../include/ghidra_function_prototypes.h:226:43: error: unknown type name ‘code’
-
-    223:   auVar25._0_8_ = uVar85;
-    224:   auVar57._8_8_ = 0;
-    225:   auVar57._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    226:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
-    227:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    228:   uVar4 = (ulonglong)Var6;
-    229:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:265
-reconstrucao/src/../include/ghidra_function_prototypes.h:265:1: error: type defaults to ‘int’ in declaration of ‘ExInterlockedExtendZone’ [-Wimplicit-int]
-
-    262:   auVar29._0_8_ = uVar1;
-    263:   auVar61._8_8_ = 0;
-    264:   auVar61._0_8_ = param_3[1];
-    265:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar29 * auVar61,0) +
-    266:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    267:   Var6 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar29 * auVar61,8) +
-    268:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:334
-reconstrucao/src/../include/ghidra_function_prototypes.h:334:1: error: type defaults to ‘int’ in declaration of ‘ExSecurePoolValidate’ [-Wimplicit-int]
-
-    331:   auVar37._8_8_ = 0;
-    332:   auVar37._0_8_ = uVar1;
-    333:   auVar69._8_8_ = 0;
-    334:   auVar69._0_8_ = param_3[1];
-    335:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar37 * auVar69,0) +
-    336:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    337:   Var6 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar37 * auVar69,8) +
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:393
-reconstrucao/src/../include/ghidra_function_prototypes.h:393:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402009ec’ [-Wimplicit-int]
-
-    390:            (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    391:   uVar1 = (ulonglong)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    392:   uVar82 = uVar11 + uVar81;
-    393:   uVar86 = uVar3 * *(longlong *)(param_1 + 0x18);
-    394:   auVar44._8_8_ = 0;
-    395:   auVar44._0_8_ = uVar86;
-    396:   auVar76._8_8_ = 0;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:430
-reconstrucao/src/../include/ghidra_function_prototypes.h:430:1: error: type defaults to ‘int’ in declaration of ‘FUN_140203980’ [-Wimplicit-int]
-
-    427:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    428:   uVar84 = (ulonglong)Var6;
-    429:   uVar86 = (ulonglong)CARRY8(*(ulonglong *)(param_1 + 0x100),uVar85);
-    430:   uVar4 = *(ulonglong *)(param_1 + 0x108) + uVar8;
-    431:   uVar2 = (ulonglong)(CARRY8(*(ulonglong *)(param_1 + 0x108),uVar8) || CARRY8(uVar4,uVar86));
-    432:   uVar7 = *(ulonglong *)(param_1 + 0x110) + uVar9;
-    433:   uVar3 = (ulonglong)(CARRY8(*(ulonglong *)(param_1 + 0x110),uVar9) || CARRY8(uVar7,uVar2));
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:437
-reconstrucao/src/../include/ghidra_function_prototypes.h:437:1: error: type defaults to ‘int’ in declaration of ‘FUN_140204158’ [-Wimplicit-int]
-
-    434:   uVar5 = *(ulonglong *)(param_1 + 0x118) + uVar84;
-    435:   if ((uVar83 * 2 + (ulonglong)(CARRY8(uVar11,uVar81) || CARRY8(uVar82,uVar1)) +
-    436:        (ulonglong)((char)((unkuint9)Var10 >> 0x40) != '\0') +
-    437:       (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0')) * 2 +
-    438:       (ulonglong)(CARRY8(*(ulonglong *)(param_1 + 0x118),uVar84) || CARRY8(uVar5,uVar3)) != 0) {
-    439:     uVar84 = uVar5 + uVar3;
-    440:     uVar9 = uVar7 + uVar2;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:451
-reconstrucao/src/../include/ghidra_function_prototypes.h:451:1: error: type defaults to ‘int’ in declaration of ‘FUN_140204eb0’ [-Wimplicit-int]
-
-    448:   return;
-    449: }
-    450: 
-    451: /* Ghidra label: FUN_140531c40 */
-    452: /* Ghidra address: 140531c40 */
-    453: void FUN_140531c40(longlong param_1,ulonglong *param_2,ulonglong *param_3)
-    454: 
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:457
-reconstrucao/src/../include/ghidra_function_prototypes.h:457:1: error: type defaults to ‘int’ in declaration of ‘FUN_140205970’ [-Wimplicit-int]
-
-    454: 
-    455: {
-    456:   ulonglong uVar1;
-    457:   ulonglong uVar2;
-    458:   ulonglong uVar3;
-    459:   ulonglong uVar4;
-    460:   ulonglong uVar5;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:485
-reconstrucao/src/../include/ghidra_function_prototypes.h:485:1: error: type defaults to ‘int’ in declaration of ‘FUN_140209980’ [-Wimplicit-int]
-
-    482:   undefined1 auVar27 [16];
-    483:   undefined1 auVar28 [16];
-    484:   undefined1 auVar29 [16];
-    485:   undefined1 auVar30 [16];
-    486:   undefined1 auVar31 [16];
-    487:   undefined1 auVar32 [16];
-    488:   undefined1 auVar33 [16];
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:528
-reconstrucao/src/../include/ghidra_function_prototypes.h:528:1: error: type defaults to ‘int’ in declaration of ‘FUN_140212424’ [-Wimplicit-int]
-
-    525:   undefined1 auVar70 [16];
-    526:   undefined1 auVar71 [16];
-    527:   undefined1 auVar72 [16];
-    528:   undefined1 auVar73 [16];
-    529:   undefined1 auVar74 [16];
-    530:   undefined1 auVar75 [16];
-    531:   undefined1 auVar76 [16];
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:548
-reconstrucao/src/../include/ghidra_function_prototypes.h:548:1: error: type defaults to ‘int’ in declaration of ‘FUN_140214e80’ [-Wimplicit-int]
-
-    545:   if (&uStack0000000000000000 == &DAT_00000038) {
-    546:     pcVar6 = (code *)swi(3);
-    547:     (*pcVar6)();
-    548:     return;
-    549:   }
-    550:   uVar1 = *param_2;
-    551:   auVar17._8_8_ = 0;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:549
-reconstrucao/src/../include/ghidra_function_prototypes.h:549:1: error: type defaults to ‘int’ in declaration of ‘FUN_140214f74’ [-Wimplicit-int]
-
-    546:     pcVar6 = (code *)swi(3);
-    547:     (*pcVar6)();
-    548:     return;
-    549:   }
-    550:   uVar1 = *param_2;
-    551:   auVar17._8_8_ = 0;
-    552:   auVar17._0_8_ = uVar1;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:562
-reconstrucao/src/../include/ghidra_function_prototypes.h:562:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    559:   auVar50._8_8_ = 0;
-    560:   auVar50._0_8_ = param_2[1];
-    561:   uVar8 = SUB168(auVar18 * auVar50,0);
-    562:   uVar83 = SUB168(auVar18 * auVar50,8);
-    563:   auVar19._8_8_ = 0;
-    564:   auVar19._0_8_ = uVar1;
-    565:   auVar51._8_8_ = 0;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:566
-reconstrucao/src/../include/ghidra_function_prototypes.h:566:1: error: type defaults to ‘int’ in declaration of ‘FUN_140218c60’ [-Wimplicit-int]
-
-    563:   auVar19._8_8_ = 0;
-    564:   auVar19._0_8_ = uVar1;
-    565:   auVar51._8_8_ = 0;
-    566:   auVar51._0_8_ = param_2[2];
-    567:   uVar2 = SUB168(auVar19 * auVar51,0);
-    568:   uVar82 = SUB168(auVar19 * auVar51,8);
-    569:   uVar87 = (ulonglong)CARRY8(uVar84,uVar8);
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:624
-reconstrucao/src/../include/ghidra_function_prototypes.h:624:1: error: type defaults to ‘int’ in declaration of ‘FUN_140222e6c’ [-Wimplicit-int]
-
-    621:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    622:   Var7 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar26 * auVar58,0) +
-    623:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    624:   uVar4 = (ulonglong)Var7;
-    625:   Var11 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
-    626:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    627:   auVar27._8_8_ = 0;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:640
-reconstrucao/src/../include/ghidra_function_prototypes.h:640:1: error: type defaults to ‘int’ in declaration of ‘FUN_140224800’ [-Wimplicit-int]
-
-    637:   auVar60._8_8_ = 0;
-    638:   auVar60._0_8_ = *(ulonglong *)(param_1 + 0x98);
-    639:   Var11 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar28 * auVar60,0) +
-    640:           (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    641:   Var14 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar28 * auVar60,8) +
-    642:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    643:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)uVar83 +
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:664
-reconstrucao/src/../include/ghidra_function_prototypes.h:664:1: error: type defaults to ‘int’ in declaration of ‘FUN_140228880’ [-Wimplicit-int]
-
-    661:   Var15 = (unkuint9)(ulonglong)Var7 + (unkuint9)SUB168(auVar30 * auVar62,0) +
-    662:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
-    663:   Var7 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar30 * auVar62,8) +
-    664:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    665:   auVar31._8_8_ = 0;
-    666:   auVar31._0_8_ = uVar1;
-    667:   auVar63._8_8_ = 0;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:669
-reconstrucao/src/../include/ghidra_function_prototypes.h:669:1: error: type defaults to ‘int’ in declaration of ‘FUN_14022a7e0’ [-Wimplicit-int]
-
-    666:   auVar31._0_8_ = uVar1;
-    667:   auVar63._8_8_ = 0;
-    668:   auVar63._0_8_ = param_2[2];
-    669:   Var13 = (unkuint9)(ulonglong)Var7 + (unkuint9)SUB168(auVar31 * auVar63,0) +
-    670:           (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
-    671:   Var7 = (unkuint9)(uVar2 + uVar87) + (unkuint9)SUB168(auVar31 * auVar63,8) +
-    672:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:688
-reconstrucao/src/../include/ghidra_function_prototypes.h:688:1: error: type defaults to ‘int’ in declaration of ‘FUN_140230420’ [-Wimplicit-int]
-
-    685:   uVar4 = (ulonglong)Var7;
-    686:   Var11 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar33 * auVar65,8);
-    687:   auVar34._8_8_ = 0;
-    688:   auVar34._0_8_ = uVar84;
-    689:   auVar66._8_8_ = 0;
-    690:   auVar66._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    691:   Var7 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar34 * auVar66,0) +
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:720
-reconstrucao/src/../include/ghidra_function_prototypes.h:720:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023a5e0’ [-Wimplicit-int]
-
-    717:   uVar87 = (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    718:   uVar2 = uVar83 + uVar8;
-    719:   uVar86 = uVar5 * *(longlong *)(param_1 + 0x18);
-    720:   uVar1 = param_2[3];
-    721:   auVar37._8_8_ = 0;
-    722:   auVar37._0_8_ = uVar1;
-    723:   auVar69._8_8_ = 0;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:727
-reconstrucao/src/../include/ghidra_function_prototypes.h:727:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023cca0’ [-Wimplicit-int]
-
-    724:   auVar69._0_8_ = *param_2;
-    725:   Var14 = (unkuint9)(ulonglong)Var7 + (unkuint9)SUB168(auVar37 * auVar69,0);
-    726:   Var7 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar37 * auVar69,8);
-    727:   auVar38._8_8_ = 0;
-    728:   auVar38._0_8_ = uVar1;
-    729:   auVar70._8_8_ = 0;
-    730:   auVar70._0_8_ = param_2[1];
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:735
-reconstrucao/src/../include/ghidra_function_prototypes.h:735:19: error: unknown type name ‘code’
-
-    732:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
-    733:   Var7 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar38 * auVar70,8) +
-    734:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    735:   auVar39._8_8_ = 0;
-    736:   auVar39._0_8_ = uVar1;
-    737:   auVar71._8_8_ = 0;
-    738:   auVar71._0_8_ = param_2[2];
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:736
-reconstrucao/src/../include/ghidra_function_prototypes.h:736:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023f1f0’ [-Wimplicit-int]
-
-    733:   Var7 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar38 * auVar70,8) +
-    734:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    735:   auVar39._8_8_ = 0;
-    736:   auVar39._0_8_ = uVar1;
-    737:   auVar71._8_8_ = 0;
-    738:   auVar71._0_8_ = param_2[2];
-    739:   Var13 = (unkuint9)(ulonglong)Var7 + (unkuint9)SUB168(auVar39 * auVar71,0) +
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:739
-reconstrucao/src/../include/ghidra_function_prototypes.h:739:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402401d0’ [-Wimplicit-int]
-
-    736:   auVar39._0_8_ = uVar1;
-    737:   auVar71._8_8_ = 0;
-    738:   auVar71._0_8_ = param_2[2];
-    739:   Var13 = (unkuint9)(ulonglong)Var7 + (unkuint9)SUB168(auVar39 * auVar71,0) +
-    740:           (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
-    741:   Var7 = (unkuint9)(uVar2 + uVar87) + (unkuint9)SUB168(auVar39 * auVar71,8) +
-    742:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:754
-reconstrucao/src/../include/ghidra_function_prototypes.h:754:1: error: type defaults to ‘int’ in declaration of ‘FUN_140242870’ [-Wimplicit-int]
-
-    751:   auVar41._0_8_ = uVar86;
-    752:   auVar73._8_8_ = 0;
-    753:   auVar73._0_8_ = *puVar81;
-    754:   Var7 = (unkuint9)uVar5 + (unkuint9)SUB168(auVar41 * auVar73,0);
-    755:   uVar84 = (ulonglong)Var7;
-    756:   Var11 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar41 * auVar73,8);
-    757:   auVar42._8_8_ = 0;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:777
-reconstrucao/src/../include/ghidra_function_prototypes.h:777:1: error: type defaults to ‘int’ in declaration of ‘FUN_140246190’ [-Wimplicit-int]
-
-    774:   auVar44._8_8_ = 0;
-    775:   auVar44._0_8_ = uVar86;
-    776:   auVar76._8_8_ = 0;
-    777:   auVar76._0_8_ = *(ulonglong *)(param_1 + 0x98);
-    778:   Var11 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar44 * auVar76,0) +
-    779:           (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    780:   Var14 = (unkuint9)(ulonglong)Var16 + (unkuint9)SUB168(auVar44 * auVar76,8) +
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:812
-reconstrucao/src/../include/ghidra_function_prototypes.h:812:1: error: type defaults to ‘int’ in declaration of ‘FUN_140249d74’ [-Wimplicit-int]
-
-    809:   Var7 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar47 * auVar79,0) +
-    810:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    811:   uVar9 = (ulonglong)Var7;
-    812:   Var11 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar47 * auVar79,8) +
-    813:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    814:   auVar48._8_8_ = 0;
-    815:   auVar48._0_8_ = uVar87;
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:819
-reconstrucao/src/../include/ghidra_function_prototypes.h:819:75: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    816:   auVar80._8_8_ = 0;
-    817:   auVar80._0_8_ = *(ulonglong *)(param_1 + 0x98);
-    818:   Var7 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar48 * auVar80,0) +
-    819:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    820:   uVar10 = (ulonglong)Var7;
-    821:   Var11 = (unkuint9)(uVar83 + uVar1) + (unkuint9)SUB168(auVar48 * auVar80,8) +
-    822:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:822
-reconstrucao/src/../include/ghidra_function_prototypes.h:822:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024b21c’ [-Wimplicit-int]
-
-    819:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    820:   uVar10 = (ulonglong)Var7;
-    821:   Var11 = (unkuint9)(uVar83 + uVar1) + (unkuint9)SUB168(auVar48 * auVar80,8) +
-    822:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    823:   Var7 = (unkuint9)(ulonglong)Var11 + (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    824:   uVar85 = (ulonglong)Var7;
-    825:   uVar87 = (ulonglong)CARRY8(*(ulonglong *)(param_1 + 0x100),uVar86);
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:826
-reconstrucao/src/../include/ghidra_function_prototypes.h:826:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024b730’ [-Wimplicit-int]
-
-    823:   Var7 = (unkuint9)(ulonglong)Var11 + (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    824:   uVar85 = (ulonglong)Var7;
-    825:   uVar87 = (ulonglong)CARRY8(*(ulonglong *)(param_1 + 0x100),uVar86);
-    826:   uVar4 = *(ulonglong *)(param_1 + 0x108) + uVar9;
-    827:   uVar2 = (ulonglong)(CARRY8(*(ulonglong *)(param_1 + 0x108),uVar9) || CARRY8(uVar4,uVar87));
-    828:   uVar8 = *(ulonglong *)(param_1 + 0x110) + uVar10;
-    829:   uVar3 = (ulonglong)(CARRY8(*(ulonglong *)(param_1 + 0x110),uVar10) || CARRY8(uVar8,uVar2));
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:829
-reconstrucao/src/../include/ghidra_function_prototypes.h:829:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024be10’ [-Wimplicit-int]
-
-    826:   uVar4 = *(ulonglong *)(param_1 + 0x108) + uVar9;
-    827:   uVar2 = (ulonglong)(CARRY8(*(ulonglong *)(param_1 + 0x108),uVar9) || CARRY8(uVar4,uVar87));
-    828:   uVar8 = *(ulonglong *)(param_1 + 0x110) + uVar10;
-    829:   uVar3 = (ulonglong)(CARRY8(*(ulonglong *)(param_1 + 0x110),uVar10) || CARRY8(uVar8,uVar2));
-    830:   uVar5 = *(ulonglong *)(param_1 + 0x118) + uVar85;
-    831:   if ((uVar84 * 2 + (ulonglong)(CARRY8(uVar12,uVar82) || CARRY8(uVar83,uVar1)) +
-    832:        (ulonglong)((char)((unkuint9)Var11 >> 0x40) != '\0') +
-
-## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:833
-reconstrucao/src/../include/ghidra_function_prototypes.h:833:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024c0c8’ [-Wimplicit-int]
-
-    830:   uVar5 = *(ulonglong *)(param_1 + 0x118) + uVar85;
-    831:   if ((uVar84 * 2 + (ulonglong)(CARRY8(uVar12,uVar82) || CARRY8(uVar83,uVar1)) +
-    832:        (ulonglong)((char)((unkuint9)Var11 >> 0x40) != '\0') +
-    833:       (ulonglong)((char)((unkuint9)Var7 >> 0x40) != '\0')) * 2 +
-    834:       (ulonglong)(CARRY8(*(ulonglong *)(param_1 + 0x118),uVar85) || CARRY8(uVar5,uVar3)) != 0) {
-    835:     uVar85 = uVar5 + uVar3;
-    836:     uVar10 = uVar8 + uVar2;
-
-## FUN_140531c70 */ — reconstrucao/src/decompiled_02.c:898
-reconstrucao/src/../include/ghidra_function_prototypes.h:898:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025703c’ [-Wimplicit-int]
-
-    895:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
-    896:   uVar12 = (ulonglong)Var7;
-    897:   Var7 = (unkuint9)*(ulonglong *)(param_1 + 0x128) + (unkuint9)uVar14 +
-    898:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
+## FUN_140203980 */ — reconstrucao/src/decompiled_01.c:2977
+reconstrucao/src/../include/ghidra_function_prototypes.h:2977:43: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    2974:   undefined8 uStack_2b0;
+    2975:   undefined8 uStack_2a8;
+    2976:   undefined8 *puStack_2a0;
+    2977:   ulonglong uStack_298;
+    2978:   undefined8 uStack_290;
+    2979:   undefined8 uStack_288;
+    2980:   undefined4 *puStack_280;
+
+## FUN_140203d50 */ — reconstrucao/src/decompiled_01.c:3209
+reconstrucao/src/../include/ghidra_function_prototypes.h:3209:19: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    3206:   undefined8 uStack_18;
+    3207:   undefined8 uStack_10;
+    3208:   
+    3209:   lStack_28 = 0;
+    3210:   uVar6 = (ulonglong)param_4;
+    3211:   uStack_10 = 0;
+    3212:   uStack_20 = 0;
+
+## FUN_140204660 */ — reconstrucao/src/decompiled_01.c:3674
+reconstrucao/src/../include/ghidra_function_prototypes.h:3674:72: error: unknown type name ‘code’
+
+    3671:     }
+    3672:     bVar3 = false;
+    3673:     lVar6 = *(longlong *)(param_2 + 2);
+    3674:     uVar9 = *(longlong *)(param_2 + 4) << 0xc;
+    3675:   }
+    3676:   if (uVar9 == 0) {
+    3677:     return 0xc00000f0;
+
+## FUN_140204eb0 */ — reconstrucao/src/decompiled_01.c:4161
+reconstrucao/src/../include/ghidra_function_prototypes.h:4161:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4158:             if (uStack_104 == 0) {
+    4159:               lVar8 = 0;
+    4160:             }
+    4161:             else if (param_6 == '\0') {
+    4162:               lVar8 = *(longlong *)
+    4163:                        (((uVar16 * 8 + -0x28) - (longlong)puVar7) + (longlong)plStack_c0 +
+    4164:                        (longlong)plVar10);
+
+## FUN_140204eb0 */ — reconstrucao/src/decompiled_01.c:4198
+reconstrucao/src/../include/ghidra_function_prototypes.h:4198:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4195:                 lVar13 = *(longlong *)((longlong)FiberData + 0x8c00);
+    4196:               }
+    4197:               pvVar11 = (void *)((ulonglong)uStack_f0 & 0xff);
+    4198:               *(undefined8 *)(lVar13 + 0x10) = uStack_e0;
+    4199:               uVar12 = uStack_e0;
+    4200:               if ((char)uStack_f0 != '\0') {
+    4201:                 puVar2 = *(uint **)((longlong)FiberData + 0x8eb8);
+
+## FUN_1402052f0 */ — reconstrucao/src/decompiled_01.c:4296
+reconstrucao/src/../include/ghidra_function_prototypes.h:4296:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4293: }
+    4294: 
+    4295: /* Ghidra label: FUN_1402052f0 */
+    4296: /* Ghidra address: 1402052f0 */
+    4297: int FUN_1402052f0(longlong param_1,undefined4 param_2,int *param_3)
+    4298: 
+    4299: {
+
+## FUN_1402055c0 */ — reconstrucao/src/decompiled_01.c:4566
+reconstrucao/src/../include/ghidra_function_prototypes.h:4566:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4563:   while (*(ulonglong *)(lVar6 + 0x38) != uVar10) {
+    4564:     iVar4 = FUN_1403e97f0(param_1,lVar6);
+    4565:     if (iVar4 < 0) goto LAB_140205865;
+    4566:     lVar1 = *(longlong *)(lVar6 + 0x18);
+    4567:     if ((*(longlong *)(lVar1 + 0x38) + -1 + *(ulonglong *)(lVar1 + 0x30) < (uVar10 - 1) + uVar12) ||
+    4568:        ((uVar13 - uVar10) + 1 < *(ulonglong *)(lVar1 + 0x30))) {
+    4569:       bVar2 = false;
+
+## FUN_1402055c0 */ — reconstrucao/src/decompiled_01.c:4568
+reconstrucao/src/../include/ghidra_function_prototypes.h:4568:38: error: unknown type name ‘code’
+
+    4565:     if (iVar4 < 0) goto LAB_140205865;
+    4566:     lVar1 = *(longlong *)(lVar6 + 0x18);
+    4567:     if ((*(longlong *)(lVar1 + 0x38) + -1 + *(ulonglong *)(lVar1 + 0x30) < (uVar10 - 1) + uVar12) ||
+    4568:        ((uVar13 - uVar10) + 1 < *(ulonglong *)(lVar1 + 0x30))) {
+    4569:       bVar2 = false;
+    4570:     }
+    4571:     else {
+
+## FUN_140205970 */ — reconstrucao/src/decompiled_01.c:4709
+reconstrucao/src/../include/ghidra_function_prototypes.h:4709:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4706:         uVar14 = uStack_a4;
+    4707:       }
+    4708:       lVar10 = *(longlong *)(lVar16 + (ulonglong)uVar12 * 8);
+    4709:       uVar9 = (ulonglong)(uVar13 + 1);
+    4710:       alStack_78[uVar9] = lVar10;
+    4711:     }
+    4712:     uVar4 = *(uint *)(param_2 + 0x24 + uVar9 * 4);
+
+## FUN_140205970 */ — reconstrucao/src/decompiled_01.c:4711
+reconstrucao/src/../include/ghidra_function_prototypes.h:4711:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4708:       lVar10 = *(longlong *)(lVar16 + (ulonglong)uVar12 * 8);
+    4709:       uVar9 = (ulonglong)(uVar13 + 1);
+    4710:       alStack_78[uVar9] = lVar10;
+    4711:     }
+    4712:     uVar4 = *(uint *)(param_2 + 0x24 + uVar9 * 4);
+    4713:     bVar7 = (byte)uVar4;
+    4714:     iVar2 = (int)uStack_a0;
+
+## FUN_1402061c0 */ — reconstrucao/src/decompiled_01.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:20: error: unknown type name ‘PSLIST_HEADER’
+
+    5017:   uVar2 = FUN_1402064e0(1,3,2,acStackX_10,abStackX_8);
+    5018:   if ((char)uVar2 != '\0') {
+    5019:     if ((DAT_140fc7a87 != '\0') &&
+    5020:        (*(char *)(*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x160) == '\0')) {
+    5021:       FUN_1406bc4a0();
+    5022:     }
+    5023:     if (DAT_140fc7d20 != 0) {
+
+## FUN_1402061c0 */ — reconstrucao/src/decompiled_01.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:42: error: unknown type name ‘code’
+
+    5017:   uVar2 = FUN_1402064e0(1,3,2,acStackX_10,abStackX_8);
+    5018:   if ((char)uVar2 != '\0') {
+    5019:     if ((DAT_140fc7a87 != '\0') &&
+    5020:        (*(char *)(*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x160) == '\0')) {
+    5021:       FUN_1406bc4a0();
+    5022:     }
+    5023:     if (DAT_140fc7d20 != 0) {
+
+## FUN_1402061c0 */ — reconstrucao/src/decompiled_01.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:56: error: unknown type name ‘code’
+
+    5017:   uVar2 = FUN_1402064e0(1,3,2,acStackX_10,abStackX_8);
+    5018:   if ((char)uVar2 != '\0') {
+    5019:     if ((DAT_140fc7a87 != '\0') &&
+    5020:        (*(char *)(*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x160) == '\0')) {
+    5021:       FUN_1406bc4a0();
+    5022:     }
+    5023:     if (DAT_140fc7d20 != 0) {
+
+## FUN_1402061c0 */ — reconstrucao/src/decompiled_01.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:20: error: unknown type name ‘PSLIST_HEADER’
+
+    5018:   if ((char)uVar2 != '\0') {
+    5019:     if ((DAT_140fc7a87 != '\0') &&
+    5020:        (*(char *)(*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x160) == '\0')) {
+    5021:       FUN_1406bc4a0();
+    5022:     }
+    5023:     if (DAT_140fc7d20 != 0) {
+    5024:       FUN_1404f6e08(in_CR8,abStackX_8[0]);
+
+## FUN_1402061c0 */ — reconstrucao/src/decompiled_01.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:42: error: unknown type name ‘code’
+
+    5018:   if ((char)uVar2 != '\0') {
+    5019:     if ((DAT_140fc7a87 != '\0') &&
+    5020:        (*(char *)(*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x160) == '\0')) {
+    5021:       FUN_1406bc4a0();
+    5022:     }
+    5023:     if (DAT_140fc7d20 != 0) {
+    5024:       FUN_1404f6e08(in_CR8,abStackX_8[0]);
+
+## FUN_1402061c0 */ — reconstrucao/src/decompiled_01.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:56: error: unknown type name ‘code’
+
+    5018:   if ((char)uVar2 != '\0') {
+    5019:     if ((DAT_140fc7a87 != '\0') &&
+    5020:        (*(char *)(*(longlong *)((longlong)SystemReserved1[0xf] + 0xb8) + 0x160) == '\0')) {
+    5021:       FUN_1406bc4a0();
+    5022:     }
+    5023:     if (DAT_140fc7d20 != 0) {
+    5024:       FUN_1404f6e08(in_CR8,abStackX_8[0]);
+
+## KeInvalidateRangeAllCachesNoIpi */ — reconstrucao/src/decompiled_01.c:5063
+reconstrucao/src/../include/ghidra_function_prototypes.h:5063:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5060: 
+    5061: {
+    5062:   undefined1 *puVar1;
+    5063:   ulonglong uVar2;
+    5064:   
+    5065:                     /* 0x206330  1332  KeInvalidateRangeAllCachesNoIpi */
+    5066:   if (param_2 < DAT_140fc61d0) {
+
+## KeInvalidateRangeAllCachesNoIpi */ — reconstrucao/src/decompiled_01.c:5063
+reconstrucao/src/../include/ghidra_function_prototypes.h:5063:28: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5060: 
+    5061: {
+    5062:   undefined1 *puVar1;
+    5063:   ulonglong uVar2;
+    5064:   
+    5065:                     /* 0x206330  1332  KeInvalidateRangeAllCachesNoIpi */
+    5066:   if (param_2 < DAT_140fc61d0) {
+
+## FUN_1402064e0 */ — reconstrucao/src/decompiled_01.c:5182
+reconstrucao/src/../include/ghidra_function_prototypes.h:5182:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5179:       uVar5 = FUN_140206b78(param_2);
+    5180:       if ((char)uVar5 != '\0') goto LAB_14020661d;
+    5181:     }
+    5182:     uVar5 = (ulonglong)DAT_140fc7a80;
+    5183:     if (DAT_140fc7a80 == 1) goto LAB_1402065b7;
+    5184:     if (param_3 == 0) {
+    5185:       LOCK();
+
+## FUN_140206630 */ — reconstrucao/src/decompiled_01.c:5221
+reconstrucao/src/../include/ghidra_function_prototypes.h:5221:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5218: 
+    5219: /* Ghidra label: FUN_140206630 */
+    5220: /* Ghidra address: 140206630 */
+    5221: ulonglong FUN_140206630(longlong param_1,longlong param_2,undefined1 param_3,char param_4)
+    5222: 
+    5223: {
+    5224:   char cVar1;
+
+## FUN_140206630 */ — reconstrucao/src/decompiled_01.c:5242
+reconstrucao/src/../include/ghidra_function_prototypes.h:5242:37: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5239:             FUN_1402121d4();
+    5240:           }
+    5241:           else {
+    5242:             FUN_14043eae4(0,0,param_3);
+    5243:           }
+    5244:           LOCK();
+    5245:           DAT_140fd0080 = DAT_140fd0080 + 1;
+
+## FUN_140206774 */ — reconstrucao/src/decompiled_01.c:5311
+reconstrucao/src/../include/ghidra_function_prototypes.h:5311:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5308:   uVar7 = 3;
+    5309:   if (param_1 == 1) {
+    5310:     uVar7 = 0x80000003;
+    5311:   }
+    5312:   else if (param_1 == 0) {
+    5313:     bVar8 = DAT_141201840 == '\0';
+    5314:   }
+
+## FUN_140206a94 */ — reconstrucao/src/decompiled_01.c:5395
+reconstrucao/src/../include/ghidra_function_prototypes.h:5395:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5392:     }
+    5393:     for (puVar3 = *(undefined8 **)(param_1 + 0x10); puVar3 != (undefined8 *)(param_1 + 0x10);
+    5394:         puVar3 = (undefined8 *)*puVar3) {
+    5395:       if (DAT_140fc1a30 == '\0') {
+    5396:         FUN_1406c4fb0(*(undefined8 *)(puVar3[3] + 0x10),puVar3 + 4,0,1,&puStackX_10);
+    5397:       }
+    5398:     }
+
+## FUN_140206ba8 */ — reconstrucao/src/decompiled_01.c:5530
+reconstrucao/src/../include/ghidra_function_prototypes.h:5530:40: error: unknown type name ‘code’
+
+    5527:         uVar14 = uVar16;
+    5528:       }
+    5529:       plVar21[-3] = uVar14;
+    5530:       uVar15 = *(uint *)(param_1 + 0xd8);
+    5531:       lVar18 = plVar21[-4];
+    5532:       plVar21[-4] = *puVar2;
+    5533:       lVar18 = lVar18 - *puVar2;
+
+## FUN_140206ba8 */ — reconstrucao/src/decompiled_01.c:5616
+reconstrucao/src/../include/ghidra_function_prototypes.h:5616:59: error: unknown type name ‘DWORD64’
+
+    5613:               uVar15 = bVar10 & 0x7f;
+    5614:             }
+    5615:             FUN_14046ceb0(*(longlong *)(param_1 + 0x8eb8),uVar15,0);
+    5616:           }
+    5617:         }
+    5618: LAB_140206d52:
+    5619:         FUN_14020708c(puVar2,0,param_1,0);
+
+## FUN_14020708c */ — reconstrucao/src/decompiled_01.c:5832
+reconstrucao/src/../include/ghidra_function_prototypes.h:5832:65: error: unknown type name ‘va_list’
+
+    5829:            ((((longlong *)*plVar6 != plVar15 || (*(longlong **)(*plVar4 + 8) != plVar4)) ||
+    5830:             ((longlong *)*plVar5 != plVar4)))) goto LAB_1406e1207;
+    5831:         *plVar6 = (longlong)plVar4;
+    5832:         plVar15[1] = plVar4[1];
+    5833:         *(longlong **)plVar4[1] = plVar15;
+    5834:         plVar4[1] = (longlong)plVar6;
+    5835:       }
+
+## FUN_1402072f0 */ — reconstrucao/src/decompiled_01.c:6363
+reconstrucao/src/../include/ghidra_function_prototypes.h:6363:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    6360:   }
+    6361:   return;
+    6362: }
+    6363: 
+    6364: /* Ghidra label: FUN_140207d10 */
+    6365: /* Ghidra address: 140207d10 */
+    6366: void FUN_140207d10(longlong param_1,void *param_2,longlong param_3)
+
+## FUN_140208094 */ — reconstrucao/src/decompiled_01.c:6638
+reconstrucao/src/../include/ghidra_function_prototypes.h:6638:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    6635:   *(longlong **)(puVar14 + 0x20) = alStack_50;
+    6636:   *(undefined8 *)(puVar14 + -8) = 0x1402080fd;
+    6637:   FUN_140206ba8(param_1);
+    6638:   pbVar5 = *(byte **)(param_1 + 0x37e8);
+    6639:   lStack_58 = 0;
+    6640:   *(undefined8 *)(puVar14 + -8) = 0x140208119;
+    6641:   FUN_1406d1200(pbVar5,0,0xf0);
+
+## FUN_140208900 */ — reconstrucao/src/decompiled_01.c:7015
+reconstrucao/src/../include/ghidra_function_prototypes.h:7015:20: error: unknown type name ‘code’
+
+    7012:   undefined8 uVar5;
+    7013:   bool bVar6;
+    7014:   bool bVar7;
+    7015:   bool bVar8;
+    7016:   char cVar9;
+    7017:   char cVar10;
+    7018:   byte *pbVar11;
+
+## FUN_140208900 */ — reconstrucao/src/decompiled_01.c:7083
+reconstrucao/src/../include/ghidra_function_prototypes.h:7083:43: error: unknown type name ‘ulong’; did you mean ‘long’?
+
+    7080:           goto LAB_1402089e7;
+    7081:         }
+    7082:         if (puVar16[3] <= *puVar16) {
+    7083:           FUN_140452538(lVar15,puVar16,param_1);
+    7084:           if (puVar18 == puVar16) {
+    7085:             bVar8 = true;
+    7086:           }
+
+## FUN_140208900 */ — reconstrucao/src/decompiled_01.c:7117
+reconstrucao/src/../include/ghidra_function_prototypes.h:7117:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    7114:     puVar14 = (ulonglong *)((ulonglong)*(uint *)(param_1 + 0xd8) + *(longlong *)(param_3 + 0x68));
+    7115:   }
+    7116:   pbVar4 = *(byte **)(param_1 + 0x37e8);
+    7117:   puStack_60 = puVar13;
+    7118:   puStack_58 = puVar16;
+    7119:   FUN_1406d1200(pbVar4,0,0xf0);
+    7120:   FUN_140209d90(pbVar4,param_2,0);
+
+## FUN_140208ef8 */ — reconstrucao/src/decompiled_01.c:7456
+reconstrucao/src/../include/ghidra_function_prototypes.h:7456:39: error: unknown type name ‘code’
+
+    7453:             *(uint *)(lVar7 + 8) = uVar12;
+    7454:             if ((DAT_140fc7b14 & 0x20) != 0) {
+    7455:               FUN_1404fc940(*(undefined4 *)(uVar8 + 0x24),2);
+    7456:             }
+    7457:             wrmsr(0x400000c2,(ulonglong)uVar12);
+    7458:             uVar12 = 1;
+    7459:           }
+
+## FUN_140209534 */ — reconstrucao/src/decompiled_01.c:7577
+reconstrucao/src/../include/ghidra_function_prototypes.h:7577:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    7574:   undefined4 uVar12;
+    7575:   ulonglong *puVar13;
+    7576:   byte bVar14;
+    7577:   ulonglong uVar15;
+    7578:   uint uVar16;
+    7579:   bool bVar17;
+    7580:   byte bStackX_8;
+
+## FUN_140209534 */ — reconstrucao/src/decompiled_01.c:7605
+reconstrucao/src/../include/ghidra_function_prototypes.h:7605:36: error: unknown type name ‘wint_t’; did you mean ‘uint8_t’?
+
+    7602:       }
+    7603:       else {
+    7604:         uVar16 = uVar8;
+    7605:       }
+    7606:       UNLOCK();
+    7607:     } while (!bVar17);
+    7608:     if ((uVar16 >> 0x15 & 1) != 0) {
+
+## FUN_140209534 */ — reconstrucao/src/decompiled_01.c:7610
+reconstrucao/src/../include/ghidra_function_prototypes.h:7610:20: error: unknown type name ‘code’
+
+    7607:     } while (!bVar17);
+    7608:     if ((uVar16 >> 0x15 & 1) != 0) {
+    7609:       FUN_140283a40();
+    7610:     }
+    7611:   }
+    7612:   bVar14 = **(byte **)(param_1 + 0x38);
+    7613:   uStack_68 = param_1;
+
+## FUN_140209534 */ — reconstrucao/src/decompiled_01.c:7620
+reconstrucao/src/../include/ghidra_function_prototypes.h:7620:66: error: unknown type name ‘code’
+
+    7617:     uVar16 = (uint)bVar6;
+    7618:   }
+    7619:   uStackX_18 = param_1 & 0xfffffffffffffffe | (ulonglong)uVar16;
+    7620:   if (uVar16 == 0) {
+    7621:     puVar13 = &uStack_68;
+    7622:     uVar16 = 1;
+    7623: LAB_1402095bf:
+
+## FUN_140209534 */ — reconstrucao/src/decompiled_01.c:7656
+reconstrucao/src/../include/ghidra_function_prototypes.h:7656:33: error: unknown type name ‘uint3’; did you mean ‘uint32’?
+
+    7653:   if ((char)(bVar14 ^ **(byte **)(param_1 + 0x38)) < '\0') {
+    7654:     FUN_140431610(param_1);
+    7655:   }
+    7656:   uVar15 = uStackX_18;
+    7657:   if ((*(uint *)(param_1 + 0xec) & 0x800) == 0) {
+    7658:     *(uint *)(param_1 + 0xec) = *(uint *)(param_1 + 0xec) | 0x800;
+    7659:   }
+
+## FUN_14020a6b0 */ — reconstrucao/src/decompiled_01.c:8523
+reconstrucao/src/../include/ghidra_function_prototypes.h:8523:1: error: unknown type name ‘code’
+
+    8520:       FUN_14046ceb0(*(longlong *)(lVar2 + 0x8eb8),uVar16,0);
+    8521:     }
+    8522:     bVar10 = *(byte *)(*(longlong *)(lVar2 + 0x38) + 0x40);
+    8523:     bVar10 = bVar10 ^ (bVar10 ^ *(byte *)(uVar21 + 0x204)) & 7;
+    8524:     uVar16 = *(uint *)(uVar21 + 0x50);
+    8525:     if (*(uint *)(uVar21 + 0x50) <= *(uint *)(uVar21 + 0x54)) {
+    8526:       uVar16 = *(uint *)(uVar21 + 0x54);
+
+## FUN_14020a6b0 */ — reconstrucao/src/decompiled_01.c:8557
+reconstrucao/src/../include/ghidra_function_prototypes.h:8557:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    8554:         *(undefined1 *)(lVar14 + 0x235) = 1;
+    8555:       }
+    8556:       if ((*(byte *)((longlong)param_1 + 0x22) & 1) == 0) {
+    8557:         FUN_1402e7000(param_4,lVar14);
+    8558:       }
+    8559:     }
+    8560:     else if (lVar14 == *(longlong *)(lVar2 + 0x18)) {
+
+## FUN_14020abb0 */ — reconstrucao/src/decompiled_01.c:8807
+reconstrucao/src/../include/ghidra_function_prototypes.h:8807:1: error: unknown type name ‘code’
+
+    8804:       if (puVar3 <= param_3) {
+    8805:         return;
+    8806:       }
+    8807:       uVar5 = *param_3;
+    8808: LAB_14020ac03:
+    8809:       param_3 = param_3 + 1;
+    8810:       uVar6 = uVar5;
+
+## FUN_14020b590 */ — reconstrucao/src/decompiled_01.c:9391
+reconstrucao/src/../include/ghidra_function_prototypes.h:9391:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    9388:   undefined8 uStack_40;
+    9389:   undefined8 uStack_38;
+    9390:   undefined8 uStack_30;
+    9391:   
+    9392:   puVar16 = (undefined8 *)(param_3 + 0x9178);
+    9393:   plVar17 = (longlong *)(param_3 + 0x9170);
+    9394:   puStack_b0 = (undefined8 *)0x0;
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:10748
+reconstrucao/src/../include/ghidra_function_prototypes.h:10748:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10745:           if (cVar4 != '\0') {
+    10746:             cVar4 = FUN_140311700();
+    10747:             if (cVar4 == '\0') {
+    10748:               uVar24 = FUN_1402e8420(*(undefined2 *)(param_2 + 0x88),uVar24);
+    10749:               uStack_110 = uVar24;
+    10750:               if (DAT_140fc7d1c != 0) {
+    10751:                 cVar4 = FUN_1404f983c(lVar11,param_1);
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:10749
+reconstrucao/src/../include/ghidra_function_prototypes.h:10749:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10746:             cVar4 = FUN_140311700();
+    10747:             if (cVar4 == '\0') {
+    10748:               uVar24 = FUN_1402e8420(*(undefined2 *)(param_2 + 0x88),uVar24);
+    10749:               uStack_110 = uVar24;
+    10750:               if (DAT_140fc7d1c != 0) {
+    10751:                 cVar4 = FUN_1404f983c(lVar11,param_1);
+    10752:                 if (cVar4 != '\0') {
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:10750
+reconstrucao/src/../include/ghidra_function_prototypes.h:10750:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10747:             if (cVar4 == '\0') {
+    10748:               uVar24 = FUN_1402e8420(*(undefined2 *)(param_2 + 0x88),uVar24);
+    10749:               uStack_110 = uVar24;
+    10750:               if (DAT_140fc7d1c != 0) {
+    10751:                 cVar4 = FUN_1404f983c(lVar11,param_1);
+    10752:                 if (cVar4 != '\0') {
+    10753:                   FUN_14040294c(param_2,&uStack_110);
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:10751
+reconstrucao/src/../include/ghidra_function_prototypes.h:10751:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10748:               uVar24 = FUN_1402e8420(*(undefined2 *)(param_2 + 0x88),uVar24);
+    10749:               uStack_110 = uVar24;
+    10750:               if (DAT_140fc7d1c != 0) {
+    10751:                 cVar4 = FUN_1404f983c(lVar11,param_1);
+    10752:                 if (cVar4 != '\0') {
+    10753:                   FUN_14040294c(param_2,&uStack_110);
+    10754:                   uVar24 = uStack_110;
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:10847
+reconstrucao/src/../include/ghidra_function_prototypes.h:10847:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10844:                 goto LAB_14020e320;
+    10845:               }
+    10846: LAB_14020e85b:
+    10847:               uVar23 = uVar23 & ~*(ulonglong *)(lVar20 + 200);
+    10848:               uVar24 = uVar24 & ~*(ulonglong *)(lVar20 + 200);
+    10849:               uStack_110 = uVar23;
+    10850:               FUN_14034eff0(alStack_f8 + 1);
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:10850
+reconstrucao/src/../include/ghidra_function_prototypes.h:10850:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10847:               uVar23 = uVar23 & ~*(ulonglong *)(lVar20 + 200);
+    10848:               uVar24 = uVar24 & ~*(ulonglong *)(lVar20 + 200);
+    10849:               uStack_110 = uVar23;
+    10850:               FUN_14034eff0(alStack_f8 + 1);
+    10851:             }
+    10852:           }
+    10853:           if (uVar23 == 0) {
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:10937
+reconstrucao/src/../include/ghidra_function_prototypes.h:10937:26: error: unknown type name ‘PVOID’
+
+    10934:           }
+    10935:           FUN_140272b80(&uStack_b8,uVar17);
+    10936:         }
+    10937:         else {
+    10938:           FUN_14020bf14(param_1 + 0x35e0,*(undefined1 *)(param_1 + 0x35d8));
+    10939:         }
+    10940:         if (*(char *)(param_1 + 0x35d9) == '\x02') {
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:10976
+reconstrucao/src/../include/ghidra_function_prototypes.h:10976:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10973:     lStack_120 = 0;
+    10974:     lStack_148 = 0;
+    10975:     uStack_138 = 0;
+    10976:     plStack_128 = (longlong *)0x0;
+    10977:     uStack_130 = 0x2000000000;
+    10978:     plStack_150 = (longlong *)0x0;
+    10979:     uStack_158 = 0x2000000000;
+
+## FUN_14020cbe0 */ — reconstrucao/src/decompiled_01.c:11021
+reconstrucao/src/../include/ghidra_function_prototypes.h:11021:1: error: unknown type name ‘code’
+
+    11018:       }
+    11019:       uStack_108 = 0;
+    11020:       uStack_18c = 0;
+    11021:       uStack_198 = 0;
+    11022:       plVar15 = plStack_128;
+    11023:       uStack_138 = param_5;
+    11024: LAB_14020cf3d:
+
+## FUN_14020f2b0 */ — reconstrucao/src/decompiled_01.c:12411
+reconstrucao/src/../include/ghidra_function_prototypes.h:12411:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    12408:               if (0x3ffff < uVar12) {
+    12409:                 if (*(longlong *)(lVar7 + 8) != 0) {
+    12410:                   FUN_140425064(param_1,lVar7);
+    12411:                 }
+    12412:                 lVar7 = *(longlong *)(param_1 + 0x48);
+    12413:                 FUN_140488178(param_1,lVar11);
+    12414:                 uVar12 = 0;
+
+## FUN_14020f6a0 */ — reconstrucao/src/decompiled_01.c:12816
+reconstrucao/src/../include/ghidra_function_prototypes.h:12816:19: error: unknown type name ‘DWORD64’
+
+    12813:           lVar5 = *(longlong *)((longlong)pvVar9 + (ulonglong)uVar11 * 8 + 0x2dc0);
+    12814:           if ((lVar5 != 0) &&
+    12815:              ((uVar11 != *(byte *)((longlong)pvStack_1a8 + 0xd0) ||
+    12816:               (lVar5 != *(longlong *)((longlong)pvStack_1a8 + 200))))) {
+    12817:             uStack_1e8 = 0x80000004;
+    12818:             if (iStack_1c4 != 1) {
+    12819:               uStack_1e8 = 4;
+
+## FUN_140210e10 */ — reconstrucao/src/decompiled_01.c:13515
+reconstrucao/src/../include/ghidra_function_prototypes.h:13515:38: error: unknown type name ‘PVOID’
+
+    13512:   undefined8 uStack_f8;
+    13513:   undefined8 uStack_f0;
+    13514:   ulonglong uStack_48;
+    13515:   
+    13516:   uStack_48 = DAT_140e0a740 ^ (ulonglong)auStack_158;
+    13517:   iStack_124 = param_4;
+    13518:   FUN_1406d1200(&lStack_118,0,200);
+
+## FUN_140210e10 */ — reconstrucao/src/decompiled_01.c:13533
+reconstrucao/src/../include/ghidra_function_prototypes.h:13533:38: error: unknown type name ‘code’
+
+    13530:       uStack_110 = 0;
+    13531:       uStack_108 = 9;
+    13532:     }
+    13533:     else {
+    13534:       uStack_108 = 8;
+    13535:       uStack_110 = 0;
+    13536:       if ((*(uint *)(param_1 + 0xb8) & 0xf) == 0) {
+
+## FUN_140210e10 */ — reconstrucao/src/decompiled_01.c:13537
+reconstrucao/src/../include/ghidra_function_prototypes.h:13537:20: error: unknown type name ‘code’
+
+    13534:       uStack_108 = 8;
+    13535:       uStack_110 = 0;
+    13536:       if ((*(uint *)(param_1 + 0xb8) & 0xf) == 0) {
+    13537:         uStack_110 = 1;
+    13538:       }
+    13539:     }
+    13540:     uStack_ff = 0;
+
+## FUN_140211820 */ — reconstrucao/src/decompiled_01.c:13916
+reconstrucao/src/../include/ghidra_function_prototypes.h:13916:20: error: unknown type name ‘code’
+
+    13913:   ushort uVar4;
+    13914:   longlong lVar5;
+    13915:   void *pvVar6;
+    13916:   longlong lVar7;
+    13917:   ulonglong uVar8;
+    13918:   longlong lVar9;
+    13919:   void *in_CR8;
+
+## FUN_140211820 */ — reconstrucao/src/decompiled_01.c:13916
+reconstrucao/src/../include/ghidra_function_prototypes.h:13916:34: error: unknown type name ‘code’
+
+    13913:   ushort uVar4;
+    13914:   longlong lVar5;
+    13915:   void *pvVar6;
+    13916:   longlong lVar7;
+    13917:   ulonglong uVar8;
+    13918:   longlong lVar9;
+    13919:   void *in_CR8;
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:1: error: unknown type name ‘code’
+
+    14216:                 puVar3 = puVar4;
+    14217:               } while (puVar4 != (ulonglong *)0x0);
+    14218:               if (puVar6 != (ulonglong *)0x0) {
+    14219:                 puVar11 = puVar6;
+    14220:               }
+    14221:             }
+    14222:             break;
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:22: error: unknown type name ‘code’
+
+    14216:                 puVar3 = puVar4;
+    14217:               } while (puVar4 != (ulonglong *)0x0);
+    14218:               if (puVar6 != (ulonglong *)0x0) {
+    14219:                 puVar11 = puVar6;
+    14220:               }
+    14221:             }
+    14222:             break;
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:36: error: unknown type name ‘code’
+
+    14216:                 puVar3 = puVar4;
+    14217:               } while (puVar4 != (ulonglong *)0x0);
+    14218:               if (puVar6 != (ulonglong *)0x0) {
+    14219:                 puVar11 = puVar6;
+    14220:               }
+    14221:             }
+    14222:             break;
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:1: error: unknown type name ‘code’
+
+    14217:               } while (puVar4 != (ulonglong *)0x0);
+    14218:               if (puVar6 != (ulonglong *)0x0) {
+    14219:                 puVar11 = puVar6;
+    14220:               }
+    14221:             }
+    14222:             break;
+    14223:           }
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:22: error: unknown type name ‘code’
+
+    14217:               } while (puVar4 != (ulonglong *)0x0);
+    14218:               if (puVar6 != (ulonglong *)0x0) {
+    14219:                 puVar11 = puVar6;
+    14220:               }
+    14221:             }
+    14222:             break;
+    14223:           }
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:36: error: unknown type name ‘code’
+
+    14217:               } while (puVar4 != (ulonglong *)0x0);
+    14218:               if (puVar6 != (ulonglong *)0x0) {
+    14219:                 puVar11 = puVar6;
+    14220:               }
+    14221:             }
+    14222:             break;
+    14223:           }
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:1: error: unknown type name ‘code’
+
+    14282:       uStack_40 = (uVar13 - uStack_48) + 1;
+    14283:       if ((puVar11[9] & 2) != 0) {
+    14284:         *param_6 = *param_6 | 2;
+    14285:       }
+    14286:       if (!bVar2) {
+    14287:         return uVar9;
+    14288:       }
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:22: error: unknown type name ‘code’
+
+    14282:       uStack_40 = (uVar13 - uStack_48) + 1;
+    14283:       if ((puVar11[9] & 2) != 0) {
+    14284:         *param_6 = *param_6 | 2;
+    14285:       }
+    14286:       if (!bVar2) {
+    14287:         return uVar9;
+    14288:       }
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:36: error: unknown type name ‘code’
+
+    14282:       uStack_40 = (uVar13 - uStack_48) + 1;
+    14283:       if ((puVar11[9] & 2) != 0) {
+    14284:         *param_6 = *param_6 | 2;
+    14285:       }
+    14286:       if (!bVar2) {
+    14287:         return uVar9;
+    14288:       }
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14351
+reconstrucao/src/../include/ghidra_function_prototypes.h:14351:20: error: unknown type name ‘code’
+
+    14348:       lVar5 = param_1;
+    14349:     }
+    14350:   } while( true );
+    14351: }
+    14352: 
+    14353: /* Ghidra label: FUN_1402121d4 */
+    14354: /* Ghidra address: 1402121d4 */
+
+## FUN_140211ed0 */ — reconstrucao/src/decompiled_01.c:14351
+reconstrucao/src/../include/ghidra_function_prototypes.h:14351:34: error: unknown type name ‘code’
+
+    14348:       lVar5 = param_1;
+    14349:     }
+    14350:   } while( true );
+    14351: }
+    14352: 
+    14353: /* Ghidra label: FUN_1402121d4 */
+    14354: /* Ghidra address: 1402121d4 */
+
+## FUN_1402121d4 */ — reconstrucao/src/decompiled_01.c:14384
+reconstrucao/src/../include/ghidra_function_prototypes.h:14384:20: error: unknown type name ‘code’
+
+    14381:   uVar3 = ~-(uint)(param_3 != '\0') & 4;
+    14382:   uVar6 = uVar3 | 2;
+    14383:   if (param_1 != 0) {
+    14384:     uVar6 = uVar3;
+    14385:   }
+    14386:   uVar7 = (ulonglong)uVar6;
+    14387:   if (param_2 == 0) {
+
+## FUN_1402121d4 */ — reconstrucao/src/decompiled_01.c:14384
+reconstrucao/src/../include/ghidra_function_prototypes.h:14384:34: error: unknown type name ‘code’
+
+    14381:   uVar3 = ~-(uint)(param_3 != '\0') & 4;
+    14382:   uVar6 = uVar3 | 2;
+    14383:   if (param_1 != 0) {
+    14384:     uVar6 = uVar3;
+    14385:   }
+    14386:   uVar7 = (ulonglong)uVar6;
+    14387:   if (param_2 == 0) {
+
+## FUN_1402121d4 */ — reconstrucao/src/decompiled_01.c:14417
+reconstrucao/src/../include/ghidra_function_prototypes.h:14417:20: error: unknown type name ‘code’
+
+    14414:     uVar3 = *(uint *)(DAT_140fd0c80 + 0x11a8);
+    14415:     while( true ) {
+    14416:       uVar1 = 0;
+    14417:       if (uVar3 != 0) {
+    14418:         for (; (uVar3 >> uVar1 & 1) == 0; uVar1 = uVar1 + 1) {
+    14419:         }
+    14420:       }
+
+## FUN_1402121d4 */ — reconstrucao/src/decompiled_01.c:14417
+reconstrucao/src/../include/ghidra_function_prototypes.h:14417:34: error: unknown type name ‘code’
+
+    14414:     uVar3 = *(uint *)(DAT_140fd0c80 + 0x11a8);
+    14415:     while( true ) {
+    14416:       uVar1 = 0;
+    14417:       if (uVar3 != 0) {
+    14418:         for (; (uVar3 >> uVar1 & 1) == 0; uVar1 = uVar1 + 1) {
+    14419:         }
+    14420:       }
+
+## FUN_1402121d4 */ — reconstrucao/src/decompiled_01.c:14450
+reconstrucao/src/../include/ghidra_function_prototypes.h:14450:20: error: unknown type name ‘code’
+
+    14447:   }
+    14448:   else {
+    14449:     uStack_40 = FUN_140359514();
+    14450:   }
+    14451: LAB_14021225b:
+    14452:   FUN_1406c6320(uStack_60,&lStack_38,0x18);
+    14453:   if (bVar2) {
+
+## FUN_1402121d4 */ — reconstrucao/src/decompiled_01.c:14450
+reconstrucao/src/../include/ghidra_function_prototypes.h:14450:34: error: unknown type name ‘code’
+
+    14447:   }
+    14448:   else {
+    14449:     uStack_40 = FUN_140359514();
+    14450:   }
+    14451: LAB_14021225b:
+    14452:   FUN_1406c6320(uStack_60,&lStack_38,0x18);
+    14453:   if (bVar2) {
+
+## FUN_1402123a0 */ — reconstrucao/src/decompiled_01.c:14483
+reconstrucao/src/../include/ghidra_function_prototypes.h:14483:20: error: unknown type name ‘code’
+
+    14480:       UNLOCK();
+    14481:       if ((uVar3 & 1) == 0) {
+    14482:         return 1;
+    14483:       }
+    14484:     }
+    14485:     uVar4 = uVar4 + 1;
+    14486:     if ((((DAT_140fc62ac & uVar4) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
+
+## FUN_1402123a0 */ — reconstrucao/src/decompiled_01.c:14483
+reconstrucao/src/../include/ghidra_function_prototypes.h:14483:34: error: unknown type name ‘code’
+
+    14480:       UNLOCK();
+    14481:       if ((uVar3 & 1) == 0) {
+    14482:         return 1;
+    14483:       }
+    14484:     }
+    14485:     uVar4 = uVar4 + 1;
+    14486:     if ((((DAT_140fc62ac & uVar4) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
+
+## FUN_140212530 */ — reconstrucao/src/decompiled_01.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:1: error: unknown type name ‘code’
+
+    14581:     iVar6 = FUN_140208890(pvVar4,puVar8);
+    14582:     if (iVar6 == 0) goto LAB_140212684;
+    14583:   }
+    14584:   else {
+    14585:     puVar8 = (ushort *)0x0;
+    14586:     uVar9 = 1;
+    14587:     if (DAT_141201840 != '\0') {
+
+## FUN_140212530 */ — reconstrucao/src/decompiled_01.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:22: error: unknown type name ‘code’
+
+    14581:     iVar6 = FUN_140208890(pvVar4,puVar8);
+    14582:     if (iVar6 == 0) goto LAB_140212684;
+    14583:   }
+    14584:   else {
+    14585:     puVar8 = (ushort *)0x0;
+    14586:     uVar9 = 1;
+    14587:     if (DAT_141201840 != '\0') {
+
+## FUN_140212530 */ — reconstrucao/src/decompiled_01.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:36: error: unknown type name ‘code’
+
+    14581:     iVar6 = FUN_140208890(pvVar4,puVar8);
+    14582:     if (iVar6 == 0) goto LAB_140212684;
+    14583:   }
+    14584:   else {
+    14585:     puVar8 = (ushort *)0x0;
+    14586:     uVar9 = 1;
+    14587:     if (DAT_141201840 != '\0') {
+
+## FUN_1402126f8 */ — reconstrucao/src/decompiled_01.c:14649
+reconstrucao/src/../include/ghidra_function_prototypes.h:14649:26: error: unknown type name ‘code’
+
+    14646:     }
+    14647:     uStackX_8 = *(uint *)(lVar3 + 0x20) & 0xfffeffff | 0x60000;
+    14648:     *(uint *)(lVar3 + 0x20) = uStackX_8;
+    14649:     FUN_1402310d0(lVar3,0);
+    14650:     LOCK();
+    14651:     *(ulonglong *)(lVar3 + 0x18) = *(ulonglong *)(lVar3 + 0x18) & 0x7fffffffffffffff;
+    14652:     UNLOCK();
+
+## FUN_1402126f8 */ — reconstrucao/src/decompiled_01.c:14649
+reconstrucao/src/../include/ghidra_function_prototypes.h:14649:40: error: unknown type name ‘code’
+
+    14646:     }
+    14647:     uStackX_8 = *(uint *)(lVar3 + 0x20) & 0xfffeffff | 0x60000;
+    14648:     *(uint *)(lVar3 + 0x20) = uStackX_8;
+    14649:     FUN_1402310d0(lVar3,0);
+    14650:     LOCK();
+    14651:     *(ulonglong *)(lVar3 + 0x18) = *(ulonglong *)(lVar3 + 0x18) & 0x7fffffffffffffff;
+    14652:     UNLOCK();
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:1: error: unknown type name ‘code’
+
+    14712:   undefined8 uStack_148;
+    14713:   undefined8 uStack_140;
+    14714:   undefined8 uStack_138;
+    14715:   undefined8 uStack_130;
+    14716:   undefined8 uStack_128;
+    14717:   undefined8 uStack_120;
+    14718:   undefined8 uStack_118;
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:22: error: unknown type name ‘code’
+
+    14712:   undefined8 uStack_148;
+    14713:   undefined8 uStack_140;
+    14714:   undefined8 uStack_138;
+    14715:   undefined8 uStack_130;
+    14716:   undefined8 uStack_128;
+    14717:   undefined8 uStack_120;
+    14718:   undefined8 uStack_118;
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:36: error: unknown type name ‘code’
+
+    14712:   undefined8 uStack_148;
+    14713:   undefined8 uStack_140;
+    14714:   undefined8 uStack_138;
+    14715:   undefined8 uStack_130;
+    14716:   undefined8 uStack_128;
+    14717:   undefined8 uStack_120;
+    14718:   undefined8 uStack_118;
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:14947
+reconstrucao/src/../include/ghidra_function_prototypes.h:14947:20: error: unknown type name ‘code’
+
+    14944:             UNLOCK();
+    14945:             if (-1 < (longlong)uVar14) break;
+    14946:             do {
+    14947:               uVar16 = uVar16 + 1;
+    14948:               if ((((DAT_140fc62ac & uVar16) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
+    14949:                  (cVar7 = FUN_14020cb70(), cVar7 != '\0')) {
+    14950:                 FUN_14020cb40(uVar16);
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:14947
+reconstrucao/src/../include/ghidra_function_prototypes.h:14947:34: error: unknown type name ‘code’
+
+    14944:             UNLOCK();
+    14945:             if (-1 < (longlong)uVar14) break;
+    14946:             do {
+    14947:               uVar16 = uVar16 + 1;
+    14948:               if ((((DAT_140fc62ac & uVar16) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
+    14949:                  (cVar7 = FUN_14020cb70(), cVar7 != '\0')) {
+    14950:                 FUN_14020cb40(uVar16);
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:14980
+reconstrucao/src/../include/ghidra_function_prototypes.h:14980:20: error: unknown type name ‘code’
+
+    14977:             LOCK();
+    14978:             *(ulonglong *)(lVar12 + 0x18) = *(ulonglong *)(lVar12 + 0x18) & 0x7fffffffffffffff;
+    14979:             UNLOCK();
+    14980:             if ((((puVar22 == (ulonglong *)(*(ulonglong *)(lVar12 + 8) | 0x8000000000000000)) &&
+    14981:                  (-1 < *(longlong *)(lVar12 + 0x28))) &&
+    14982:                 (((*(ulonglong *)(lVar12 + 0x28) >> 0x28 & 1) == 0 &&
+    14983:                  ((((*(uint *)(lVar12 + 0x20) >> 0x18 & 8) == 0 &&
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:14980
+reconstrucao/src/../include/ghidra_function_prototypes.h:14980:34: error: unknown type name ‘code’
+
+    14977:             LOCK();
+    14978:             *(ulonglong *)(lVar12 + 0x18) = *(ulonglong *)(lVar12 + 0x18) & 0x7fffffffffffffff;
+    14979:             UNLOCK();
+    14980:             if ((((puVar22 == (ulonglong *)(*(ulonglong *)(lVar12 + 8) | 0x8000000000000000)) &&
+    14981:                  (-1 < *(longlong *)(lVar12 + 0x28))) &&
+    14982:                 (((*(ulonglong *)(lVar12 + 0x28) >> 0x28 & 1) == 0 &&
+    14983:                  ((((*(uint *)(lVar12 + 0x20) >> 0x18 & 8) == 0 &&
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15014
+reconstrucao/src/../include/ghidra_function_prototypes.h:15014:20: error: unknown type name ‘code’
+
+    15011:                 if (uStack_1c8 < 8) {
+    15012:                   lVar17 = 2;
+    15013:                 }
+    15014:                 else {
+    15015:                   FUN_1404641b0(puVar22,lVar11);
+    15016:                   FUN_1402b9f00(uStack_198,iVar8 != 1);
+    15017:                 }
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15014
+reconstrucao/src/../include/ghidra_function_prototypes.h:15014:34: error: unknown type name ‘code’
+
+    15011:                 if (uStack_1c8 < 8) {
+    15012:                   lVar17 = 2;
+    15013:                 }
+    15014:                 else {
+    15015:                   FUN_1404641b0(puVar22,lVar11);
+    15016:                   FUN_1402b9f00(uStack_198,iVar8 != 1);
+    15017:                 }
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15047
+reconstrucao/src/../include/ghidra_function_prototypes.h:15047:20: error: unknown type name ‘code’
+
+    15044:                     *(undefined4 *)((longlong)plStack_1c0 + 0x1c) = 0;
+    15045:                     plStack_1c0[4] = 0;
+    15046:                     plStack_1c0[5] = 0;
+    15047:                     plStack_1d0 = plStack_1c0;
+    15048:                   }
+    15049:                   plVar20 = plStack_1d0;
+    15050:                   FUN_140214a50(plStack_1d0);
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15047
+reconstrucao/src/../include/ghidra_function_prototypes.h:15047:34: error: unknown type name ‘code’
+
+    15044:                     *(undefined4 *)((longlong)plStack_1c0 + 0x1c) = 0;
+    15045:                     plStack_1c0[4] = 0;
+    15046:                     plStack_1c0[5] = 0;
+    15047:                     plStack_1d0 = plStack_1c0;
+    15048:                   }
+    15049:                   plVar20 = plStack_1d0;
+    15050:                   FUN_140214a50(plStack_1d0);
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:1: error: unknown type name ‘code’
+
+    15077:                   LOCK();
+    15078:                   *(ulonglong *)(lVar12 + 0x18) = *(ulonglong *)(lVar12 + 0x18) & 0x7fffffffffffffff
+    15079:                   ;
+    15080:                   UNLOCK();
+    15081:                   if (iVar9 != 0) {
+    15082:                     bVar23 = plStack_1c0 != (longlong *)0x0;
+    15083:                     if (!bVar23) {
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:22: error: unknown type name ‘code’
+
+    15077:                   LOCK();
+    15078:                   *(ulonglong *)(lVar12 + 0x18) = *(ulonglong *)(lVar12 + 0x18) & 0x7fffffffffffffff
+    15079:                   ;
+    15080:                   UNLOCK();
+    15081:                   if (iVar9 != 0) {
+    15082:                     bVar23 = plStack_1c0 != (longlong *)0x0;
+    15083:                     if (!bVar23) {
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:36: error: unknown type name ‘code’
+
+    15077:                   LOCK();
+    15078:                   *(ulonglong *)(lVar12 + 0x18) = *(ulonglong *)(lVar12 + 0x18) & 0x7fffffffffffffff
+    15079:                   ;
+    15080:                   UNLOCK();
+    15081:                   if (iVar9 != 0) {
+    15082:                     bVar23 = plStack_1c0 != (longlong *)0x0;
+    15083:                     if (!bVar23) {
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:1: error: unknown type name ‘code’
+
+    15142:           }
+    15143:           uVar21 = uStack_1b8;
+    15144: LAB_14021320d:
+    15145:           lVar11 = lStack_170;
+    15146:           puVar19 = puStack_1e8;
+    15147:           bVar23 = false;
+    15148:           uVar10 = FUN_1402203d0(puStack_1e8 + 0x20,3,2,4);
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:22: error: unknown type name ‘code’
+
+    15142:           }
+    15143:           uVar21 = uStack_1b8;
+    15144: LAB_14021320d:
+    15145:           lVar11 = lStack_170;
+    15146:           puVar19 = puStack_1e8;
+    15147:           bVar23 = false;
+    15148:           uVar10 = FUN_1402203d0(puStack_1e8 + 0x20,3,2,4);
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:36: error: unknown type name ‘code’
+
+    15142:           }
+    15143:           uVar21 = uStack_1b8;
+    15144: LAB_14021320d:
+    15145:           lVar11 = lStack_170;
+    15146:           puVar19 = puStack_1e8;
+    15147:           bVar23 = false;
+    15148:           uVar10 = FUN_1402203d0(puStack_1e8 + 0x20,3,2,4);
+
+## FUN_1402127f0 */ — reconstrucao/src/decompiled_01.c:15210
+reconstrucao/src/../include/ghidra_function_prototypes.h:15210:20: error: unknown type name ‘code’
+
+    15207:         puVar15 = puVar19;
+    15208:       }
+    15209:       bVar23 = false;
+    15210:       puVar19 = puVar15;
+    15211:       goto LAB_1402129fa;
+    15212:     }
+    15213:     uStack_1c8 = uStack_1c8 + 1;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:216
+reconstrucao/src/../include/ghidra_function_prototypes.h:216:43: error: unknown type name ‘code’
+
+    213:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    214:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    215:   auVar24._8_8_ = 0;
+    216:   auVar24._0_8_ = uVar85;
+    217:   auVar56._8_8_ = 0;
+    218:   auVar56._0_8_ = *puVar80;
+    219:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
+
+## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:541
+reconstrucao/src/../include/ghidra_function_prototypes.h:541:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    538:   ulonglong uVar83;
+    539:   ulonglong uVar84;
+    540:   ulonglong uVar85;
+    541:   ulonglong uVar86;
+    542:   ulonglong uVar87;
+    543:   undefined1 uStack0000000000000000;
+    544:   
+
+## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:706
+reconstrucao/src/../include/ghidra_function_prototypes.h:706:19: error: unknown type name ‘code’
+
+    703:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
+    704:   auVar36._8_8_ = 0;
+    705:   auVar36._0_8_ = uVar84;
+    706:   auVar68._8_8_ = 0;
+    707:   auVar68._0_8_ = *(ulonglong *)(param_1 + 0x98);
+    708:   Var11 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar36 * auVar68,0) +
+    709:           (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
+
+## FUN_140531c40 */ — reconstrucao/src/decompiled_02.c:785
+reconstrucao/src/../include/ghidra_function_prototypes.h:785:75: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    782:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)uVar84 +
+    783:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
+    784:   uVar12 = uVar4 * 2 + (ulonglong)(CARRY8(uVar83,uVar8) || CARRY8(uVar2,uVar87)) +
+    785:            (ulonglong)((char)((unkuint9)Var16 >> 0x40) != '\0') + uVar84 +
+    786:            (ulonglong)((char)((unkuint9)Var14 >> 0x40) != '\0');
+    787:   uVar1 = (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    788:   uVar83 = uVar12 + uVar82;
+
+## FUN_140531c70 */ — reconstrucao/src/decompiled_02.c:880
+reconstrucao/src/../include/ghidra_function_prototypes.h:880:55: error: unknown type name ‘code’
+
+    877:   Var6 = (unkuint9)param_2[4] + (unkuint9)param_3[4] +
+    878:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    879:   uVar5 = (ulonglong)Var6;
+    880:   Var6 = (unkuint9)param_2[5] + (unkuint9)param_3[5] +
+    881:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    882:   uVar14 = (ulonglong)Var6;
+    883:   Var7 = (unkuint9)*(ulonglong *)(param_1 + 0x100) + (unkuint9)uVar1;
+
+## FUN_140531c70 */ — reconstrucao/src/decompiled_02.c:902
+reconstrucao/src/../include/ghidra_function_prototypes.h:902:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
     899:   uVar13 = (ulonglong)Var7;
     900:   if ((char)((unkuint9)Var6 >> 0x40) != '\0') {
     901:     uVar14 = uVar13;
+    902:     uVar5 = uVar12;
+    903:     uVar4 = uVar11;
+    904:     uVar3 = uVar10;
+    905:     uVar2 = uVar9;
 
-## FUN_140531c70 */ — reconstrucao/src/decompiled_02.c:919
-reconstrucao/src/../include/ghidra_function_prototypes.h:919:55: error: unknown type name ‘code’
+## FUN_140531c70 */ — reconstrucao/src/decompiled_02.c:915
+reconstrucao/src/../include/ghidra_function_prototypes.h:915:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
+    912:     uVar3 = uVar10;
+    913:     uVar2 = uVar9;
+    914:     uVar1 = uVar8;
+    915:   }
     916:   *param_4 = uVar1;
     917:   param_4[1] = uVar2;
     918:   param_4[2] = uVar3;
-    919:   param_4[3] = uVar4;
-    920:   param_4[4] = uVar5;
-    921:   param_4[5] = uVar14;
-    922:   return;
 
-## FUN_140531c70 */ — reconstrucao/src/decompiled_02.c:923
-reconstrucao/src/../include/ghidra_function_prototypes.h:923:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025abd0’ [-Wimplicit-int]
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:960
+reconstrucao/src/../include/ghidra_function_prototypes.h:960:1: error: unknown type name ‘code’
 
-    920:   param_4[4] = uVar5;
-    921:   param_4[5] = uVar14;
-    922:   return;
-    923: }
-    924: 
-    925: /* Ghidra label: FUN_140531d60 */
-    926: /* Ghidra address: 140531d60 */
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:940
-reconstrucao/src/../include/ghidra_function_prototypes.h:940:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025f5f0’ [-Wimplicit-int]
-
-    937:   unkint9 Var8;
-    938:   ulonglong uVar9;
-    939:   unkint9 Var10;
-    940:   unkint9 Var11;
-    941:   unkint9 Var12;
-    942:   unkint9 Var13;
-    943:   unkint9 Var14;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:943
-reconstrucao/src/../include/ghidra_function_prototypes.h:943:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    940:   unkint9 Var11;
-    941:   unkint9 Var12;
-    942:   unkint9 Var13;
-    943:   unkint9 Var14;
-    944:   unkint9 Var15;
-    945:   undefined1 auVar16 [16];
-    946:   undefined1 auVar17 [16];
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:954
-reconstrucao/src/../include/ghidra_function_prototypes.h:954:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402623d0’ [-Wimplicit-int]
-
-    951:   undefined1 auVar22 [16];
-    952:   undefined1 auVar23 [16];
-    953:   undefined1 auVar24 [16];
-    954:   undefined1 auVar25 [16];
-    955:   undefined1 auVar26 [16];
-    956:   undefined1 auVar27 [16];
-    957:   undefined1 auVar28 [16];
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:957
-reconstrucao/src/../include/ghidra_function_prototypes.h:957:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    954:   undefined1 auVar25 [16];
-    955:   undefined1 auVar26 [16];
-    956:   undefined1 auVar27 [16];
     957:   undefined1 auVar28 [16];
     958:   undefined1 auVar29 [16];
     959:   undefined1 auVar30 [16];
     960:   undefined1 auVar31 [16];
+    961:   undefined1 auVar32 [16];
+    962:   undefined1 auVar33 [16];
+    963:   undefined1 auVar34 [16];
 
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:997
-reconstrucao/src/../include/ghidra_function_prototypes.h:997:1: error: type defaults to ‘int’ in declaration of ‘FUN_14026df50’ [-Wimplicit-int]
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1077
+reconstrucao/src/../include/ghidra_function_prototypes.h:1077:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    994:   undefined1 auVar65 [16];
-    995:   undefined1 auVar66 [16];
-    996:   undefined1 auVar67 [16];
-    997:   undefined1 auVar68 [16];
-    998:   undefined1 auVar69 [16];
-    999:   undefined1 auVar70 [16];
-    1000:   undefined1 auVar71 [16];
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1003
-reconstrucao/src/../include/ghidra_function_prototypes.h:1003:1: error: unknown type name ‘code’
-
-    1000:   undefined1 auVar71 [16];
-    1001:   undefined1 auVar72 [16];
-    1002:   undefined1 auVar73 [16];
-    1003:   undefined1 auVar74 [16];
-    1004:   undefined1 auVar75 [16];
-    1005:   undefined1 auVar76 [16];
-    1006:   undefined1 auVar77 [16];
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1022
-reconstrucao/src/../include/ghidra_function_prototypes.h:1022:1: error: type defaults to ‘int’ in declaration of ‘FUN_140275d74’ [-Wimplicit-int]
-
-    1019:   undefined1 auVar90 [16];
-    1020:   undefined1 auVar91 [16];
-    1021:   undefined1 auVar92 [16];
-    1022:   undefined1 auVar93 [16];
-    1023:   undefined1 auVar94 [16];
-    1024:   undefined1 auVar95 [16];
-    1025:   undefined1 auVar96 [16];
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1024
-reconstrucao/src/../include/ghidra_function_prototypes.h:1024:1: error: type defaults to ‘int’ in declaration of ‘FUN_140276940’ [-Wimplicit-int]
-
-    1021:   undefined1 auVar92 [16];
-    1022:   undefined1 auVar93 [16];
-    1023:   undefined1 auVar94 [16];
-    1024:   undefined1 auVar95 [16];
-    1025:   undefined1 auVar96 [16];
-    1026:   undefined1 auVar97 [16];
-    1027:   undefined1 auVar98 [16];
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1051
-reconstrucao/src/../include/ghidra_function_prototypes.h:1051:1: error: type defaults to ‘int’ in declaration of ‘FUN_14027fd50’ [-Wimplicit-int]
-
-    1048:   undefined1 auVar119 [16];
-    1049:   undefined1 auVar120 [16];
-    1050:   undefined1 auVar121 [16];
-    1051:   undefined1 auVar122 [16];
-    1052:   undefined1 auVar123 [16];
-    1053:   ulonglong *puVar124;
-    1054:   ulonglong uVar125;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1071
-reconstrucao/src/../include/ghidra_function_prototypes.h:1071:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402862d0’ [-Wimplicit-int]
-
-    1068:   auVar16._8_8_ = 0;
-    1069:   auVar16._0_8_ = uVar1;
-    1070:   auVar70._8_8_ = 0;
-    1071:   auVar70._0_8_ = *param_3;
-    1072:   uVar7 = SUB168(auVar16 * auVar70,0);
-    1073:   uVar130 = SUB168(auVar16 * auVar70,8);
-    1074:   auVar17._8_8_ = 0;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1072
-reconstrucao/src/../include/ghidra_function_prototypes.h:1072:1: error: type defaults to ‘int’ in declaration of ‘FUN_140286be0’ [-Wimplicit-int]
-
-    1069:   auVar16._0_8_ = uVar1;
-    1070:   auVar70._8_8_ = 0;
-    1071:   auVar70._0_8_ = *param_3;
-    1072:   uVar7 = SUB168(auVar16 * auVar70,0);
-    1073:   uVar130 = SUB168(auVar16 * auVar70,8);
     1074:   auVar17._8_8_ = 0;
     1075:   auVar17._0_8_ = uVar1;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1081
-reconstrucao/src/../include/ghidra_function_prototypes.h:1081:1: error: type defaults to ‘int’ in declaration of ‘FUN_140288de8’ [-Wimplicit-int]
-
+    1076:   auVar71._8_8_ = 0;
+    1077:   auVar71._0_8_ = param_3[1];
     1078:   uVar9 = SUB168(auVar17 * auVar71,0);
     1079:   uVar129 = SUB168(auVar17 * auVar71,8);
     1080:   auVar18._8_8_ = 0;
-    1081:   auVar18._0_8_ = uVar1;
-    1082:   auVar72._8_8_ = 0;
-    1083:   auVar72._0_8_ = param_3[2];
-    1084:   uVar3 = SUB168(auVar18 * auVar72,0);
 
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1082
-reconstrucao/src/../include/ghidra_function_prototypes.h:1082:1: error: type defaults to ‘int’ in declaration of ‘FUN_140288ee0’ [-Wimplicit-int]
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1343
+reconstrucao/src/../include/ghidra_function_prototypes.h:1343:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1079:   uVar129 = SUB168(auVar17 * auVar71,8);
-    1080:   auVar18._8_8_ = 0;
-    1081:   auVar18._0_8_ = uVar1;
-    1082:   auVar72._8_8_ = 0;
-    1083:   auVar72._0_8_ = param_3[2];
-    1084:   uVar3 = SUB168(auVar18 * auVar72,0);
-    1085:   uVar126 = SUB168(auVar18 * auVar72,8);
+    1340:   Var15 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar46 * auVar100,8) +
+    1341:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
+    1342:   auVar47._8_8_ = 0;
+    1343:   auVar47._0_8_ = uVar1;
+    1344:   auVar101._8_8_ = 0;
+    1345:   auVar101._0_8_ = param_3[4];
+    1346:   Var14 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar47 * auVar101,0) +
 
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1108
-reconstrucao/src/../include/ghidra_function_prototypes.h:1108:1: error: type defaults to ‘int’ in declaration of ‘FUN_14028b864’ [-Wimplicit-int]
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1473
+reconstrucao/src/../include/ghidra_function_prototypes.h:1473:37: error: unknown type name ‘code’
 
-    1105:   auVar21._8_8_ = 0;
-    1106:   auVar21._0_8_ = uVar1;
-    1107:   auVar75._8_8_ = 0;
-    1108:   auVar75._0_8_ = param_3[5];
-    1109:   uVar1 = SUB168(auVar21 * auVar75,0);
-    1110:   uVar129 = (ulonglong)(CARRY8(uVar134,uVar6) || CARRY8(uVar5,uVar3));
-    1111:   uVar6 = uVar135 + uVar1;
+    1470:   auVar60._0_8_ = uVar127;
+    1471:   auVar114._8_8_ = 0;
+    1472:   auVar114._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    1473:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar60 * auVar114,0) +
+    1474:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
+    1475:   Var13 = (unkuint9)(uVar4 - uVar129) + (unkuint9)SUB168(auVar60 * auVar114,8) +
+    1476:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
 
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1119
-reconstrucao/src/../include/ghidra_function_prototypes.h:1119:1: error: type defaults to ‘int’ in declaration of ‘FUN_14028c480’ [-Wimplicit-int]
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1566
+reconstrucao/src/../include/ghidra_function_prototypes.h:1566:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1116:   auVar22._8_8_ = 0;
-    1117:   auVar22._0_8_ = uVar134;
-    1118:   auVar76._8_8_ = 0;
-    1119:   auVar76._0_8_ = *puVar124;
-    1120:   Var8 = (unkuint9)uVar7 + (unkuint9)SUB168(auVar22 * auVar76,0);
-    1121:   uVar7 = (ulonglong)Var8;
-    1122:   Var10 = (unkuint9)(uVar130 + uVar9) + (unkuint9)SUB168(auVar22 * auVar76,8);
+    1563:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    1564:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)uVar9 +
+    1565:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
+    1566:   uVar127 = (ulonglong)Var8;
+    1567:   uVar131 = (uVar9 * 2 - (ulonglong)(uVar126 < uVar125 || uVar3 < uVar2)) +
+    1568:             (ulonglong)((char)((unkuint9)Var10 >> 0x40) != '\0') +
+    1569:             (ulonglong)((char)((unkuint9)Var8 >> 0x40) != '\0');
 
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1602
+reconstrucao/src/../include/ghidra_function_prototypes.h:1602:26: error: unknown type name ‘code’
 
-    1126:   auVar77._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    1127:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar23 * auVar77,0) +
-    1128:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-    1129:   Var12 = (unkuint9)(uVar4 + uVar2) + (unkuint9)SUB168(auVar23 * auVar77,8) +
-    1130:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    1131:   auVar24._8_8_ = 0;
-    1132:   auVar24._0_8_ = uVar134;
+    1599:   param_4[5] = uVar136;
+    1600:   return;
+    1601: }
+    1602: 
+    1603: /* Ghidra label: FUN_1405322e0 */
+    1604: /* Ghidra address: 1405322e0 */
+    1605: void FUN_1405322e0(longlong param_1,ulonglong *param_2,ulonglong *param_3)
 
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1256
-reconstrucao/src/../include/ghidra_function_prototypes.h:1256:1: error: type defaults to ‘int’ in declaration of ‘FUN_140299720’ [-Wimplicit-int]
+## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1617
+reconstrucao/src/../include/ghidra_function_prototypes.h:1617:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1253:          (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    1254:   uVar9 = (ulonglong)Var8;
-    1255:   Var15 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar37 * auVar91,8) +
-    1256:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
-    1257:   auVar38._8_8_ = 0;
-    1258:   auVar38._0_8_ = uVar1;
-    1259:   auVar92._8_8_ = 0;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1286
-reconstrucao/src/../include/ghidra_function_prototypes.h:1286:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029c6a4’ [-Wimplicit-int]
-
-    1283:   uVar4 = uVar9 - uVar134;
-    1284:   auVar40._8_8_ = 0;
-    1285:   auVar40._0_8_ = uVar134;
-    1286:   auVar94._8_8_ = 0;
-    1287:   auVar94._0_8_ = *puVar124;
-    1288:   Var8 = (unkuint9)uVar7 + (unkuint9)SUB168(auVar40 * auVar94,0);
-    1289:   uVar5 = (ulonglong)Var8;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1292
-reconstrucao/src/../include/ghidra_function_prototypes.h:1292:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029d5c4’ [-Wimplicit-int]
-
-    1289:   uVar5 = (ulonglong)Var8;
-    1290:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar40 * auVar94,8);
-    1291:   auVar41._8_8_ = 0;
-    1292:   auVar41._0_8_ = uVar134;
-    1293:   auVar95._8_8_ = 0;
-    1294:   auVar95._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    1295:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar41 * auVar95,0) +
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1306
-reconstrucao/src/../include/ghidra_function_prototypes.h:1306:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029e864’ [-Wimplicit-int]
-
-    1303:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar42 * auVar96,0) +
-    1304:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-    1305:   Var13 = (unkuint9)(uVar4 - uVar129) + (unkuint9)SUB168(auVar42 * auVar96,8) +
-    1306:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    1307:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar5 +
-    1308:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    1309:   uVar1 = param_2[3];
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1308
-reconstrucao/src/../include/ghidra_function_prototypes.h:1308:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029eba0’ [-Wimplicit-int]
-
-    1305:   Var13 = (unkuint9)(uVar4 - uVar129) + (unkuint9)SUB168(auVar42 * auVar96,8) +
-    1306:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    1307:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar5 +
-    1308:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    1309:   uVar1 = param_2[3];
-    1310:   auVar43._8_8_ = 0;
-    1311:   auVar43._0_8_ = uVar1;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1351
-reconstrucao/src/../include/ghidra_function_prototypes.h:1351:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402aefd0’ [-Wimplicit-int]
-
-    1348:   Var8 = (unkuint9)(uVar127 + uVar134) + (unkuint9)SUB168(auVar47 * auVar101,8) +
-    1349:          (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
-    1350:   auVar48._8_8_ = 0;
-    1351:   auVar48._0_8_ = uVar1;
-    1352:   auVar102._8_8_ = 0;
-    1353:   auVar102._0_8_ = param_3[5];
-    1354:   uVar135 = SUB168(auVar48 * auVar102,8);
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1366
-reconstrucao/src/../include/ghidra_function_prototypes.h:1366:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402b2100’ [-Wimplicit-int]
-
-    1363:   uVar130 = uVar6 * *(longlong *)(param_1 + 0x18);
-    1364:   uVar129 = (ulonglong)
-    1365:             ((uVar5 * 2 - (ulonglong)(uVar9 < uVar134 || uVar4 < uVar129)) +
-    1366:              (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0') +
-    1367:              (ulonglong)((char)((unkuint9)Var12 >> 0x40) != '\0') != 0);
-    1368:   uVar4 = uVar7 - uVar130;
-    1369:   auVar49._8_8_ = 0;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1395
-reconstrucao/src/../include/ghidra_function_prototypes.h:1395:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402b75b0’ [-Wimplicit-int]
-
-    1392:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar5 +
-    1393:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    1394:   uVar1 = param_2[4];
-    1395:   auVar52._8_8_ = 0;
-    1396:   auVar52._0_8_ = uVar1;
-    1397:   auVar106._8_8_ = 0;
-    1398:   auVar106._0_8_ = *param_3;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1403
-reconstrucao/src/../include/ghidra_function_prototypes.h:1403:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1400:   uVar6 = (ulonglong)Var8;
-    1401:   Var11 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar52 * auVar106,8);
-    1402:   auVar53._8_8_ = 0;
-    1403:   auVar53._0_8_ = uVar1;
-    1404:   auVar107._8_8_ = 0;
-    1405:   auVar107._0_8_ = param_3[1];
-    1406:   Var10 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar53 * auVar107,0) +
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1405
-reconstrucao/src/../include/ghidra_function_prototypes.h:1405:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402ba488’ [-Wimplicit-int]
-
-    1402:   auVar53._8_8_ = 0;
-    1403:   auVar53._0_8_ = uVar1;
-    1404:   auVar107._8_8_ = 0;
-    1405:   auVar107._0_8_ = param_3[1];
-    1406:   Var10 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar53 * auVar107,0) +
-    1407:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-    1408:   Var8 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar53 * auVar107,8) +
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1412
-reconstrucao/src/../include/ghidra_function_prototypes.h:1412:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402bbe00’ [-Wimplicit-int]
-
-    1409:          (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    1410:   auVar54._8_8_ = 0;
-    1411:   auVar54._0_8_ = uVar1;
-    1412:   auVar108._8_8_ = 0;
-    1413:   auVar108._0_8_ = param_3[2];
-    1414:   Var11 = (unkuint9)(ulonglong)Var8 + (unkuint9)SUB168(auVar54 * auVar108,0) +
-    1415:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1484
-reconstrucao/src/../include/ghidra_function_prototypes.h:1484:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c54a8’ [-Wimplicit-int]
-
-    1481:   auVar61._0_8_ = uVar1;
-    1482:   auVar115._8_8_ = 0;
-    1483:   auVar115._0_8_ = *param_3;
-    1484:   Var8 = (unkuint9)(ulonglong)Var8 + (unkuint9)SUB168(auVar61 * auVar115,0);
-    1485:   uVar7 = (ulonglong)Var8;
-    1486:   Var11 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar61 * auVar115,8);
-    1487:   auVar62._8_8_ = 0;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1486
-reconstrucao/src/../include/ghidra_function_prototypes.h:1486:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c5b84’ [-Wimplicit-int]
-
-    1483:   auVar115._0_8_ = *param_3;
-    1484:   Var8 = (unkuint9)(ulonglong)Var8 + (unkuint9)SUB168(auVar61 * auVar115,0);
-    1485:   uVar7 = (ulonglong)Var8;
-    1486:   Var11 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar61 * auVar115,8);
-    1487:   auVar62._8_8_ = 0;
-    1488:   auVar62._0_8_ = uVar1;
-    1489:   auVar116._8_8_ = 0;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1490
-reconstrucao/src/../include/ghidra_function_prototypes.h:1490:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6100’ [-Wimplicit-int]
-
-    1487:   auVar62._8_8_ = 0;
-    1488:   auVar62._0_8_ = uVar1;
-    1489:   auVar116._8_8_ = 0;
-    1490:   auVar116._0_8_ = param_3[1];
-    1491:   Var10 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar62 * auVar116,0) +
-    1492:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-    1493:   Var8 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar62 * auVar116,8) +
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1491
-reconstrucao/src/../include/ghidra_function_prototypes.h:1491:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6490’ [-Wimplicit-int]
-
-    1488:   auVar62._0_8_ = uVar1;
-    1489:   auVar116._8_8_ = 0;
-    1490:   auVar116._0_8_ = param_3[1];
-    1491:   Var10 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar62 * auVar116,0) +
-    1492:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-    1493:   Var8 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar62 * auVar116,8) +
-    1494:          (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1492
-reconstrucao/src/../include/ghidra_function_prototypes.h:1492:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6a60’ [-Wimplicit-int]
-
-    1489:   auVar116._8_8_ = 0;
-    1490:   auVar116._0_8_ = param_3[1];
-    1491:   Var10 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar62 * auVar116,0) +
-    1492:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-    1493:   Var8 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar62 * auVar116,8) +
-    1494:          (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    1495:   auVar63._8_8_ = 0;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1529
-reconstrucao/src/../include/ghidra_function_prototypes.h:1529:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402cb680’ [-Wimplicit-int]
-
-    1526:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
-    1527:   uVar135 = (CARRY8(uVar134,uVar132) || CARRY8(uVar3,uVar2)) + uVar5 +
-    1528:             (ulonglong)CARRY8(uVar135,uVar127) + (ulonglong)((char)((unkuint9)Var8 >> 0x40) != '\0')
-    1529:   ;
-    1530:   uVar1 = (ulonglong)((char)((unkuint9)Var15 >> 0x40) != '\0');
-    1531:   uVar6 = uVar135 + uVar133;
-    1532:   uVar128 = uVar6 + uVar1;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1541
-reconstrucao/src/../include/ghidra_function_prototypes.h:1541:37: error: unknown type name ‘code’
-
-    1538:   uVar3 = uVar126 - uVar125;
-    1539:   auVar67._8_8_ = 0;
-    1540:   auVar67._0_8_ = uVar125;
-    1541:   auVar121._8_8_ = 0;
-    1542:   auVar121._0_8_ = *puVar124;
-    1543:   Var8 = (unkuint9)uVar7 + (unkuint9)SUB168(auVar67 * auVar121,0);
-    1544:   uVar9 = (ulonglong)Var8;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1623
-reconstrucao/src/../include/ghidra_function_prototypes.h:1623:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d3be8’ [-Wimplicit-int]
-
+    1614:   ulonglong uVar7;
+    1615:   code *pcVar8;
+    1616:   unkint9 Var9;
+    1617:   ulonglong uVar10;
+    1618:   unkint9 Var11;
+    1619:   unkint9 Var12;
     1620:   unkint9 Var13;
+
+## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1624
+reconstrucao/src/../include/ghidra_function_prototypes.h:1624:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
     1621:   unkint9 Var14;
     1622:   unkint9 Var15;
     1623:   unkint9 Var16;
     1624:   undefined1 auVar17 [16];
     1625:   undefined1 auVar18 [16];
     1626:   undefined1 auVar19 [16];
+    1627:   undefined1 auVar20 [16];
 
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1635
-reconstrucao/src/../include/ghidra_function_prototypes.h:1635:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1840
+reconstrucao/src/../include/ghidra_function_prototypes.h:1840:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1632:   undefined1 auVar25 [16];
-    1633:   undefined1 auVar26 [16];
-    1634:   undefined1 auVar27 [16];
-    1635:   undefined1 auVar28 [16];
-    1636:   undefined1 auVar29 [16];
-    1637:   undefined1 auVar30 [16];
-    1638:   undefined1 auVar31 [16];
+    1837:   auVar81._0_8_ = param_2[1];
+    1838:   Var11 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar27 * auVar81,0) +
+    1839:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
+    1840:   Var9 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar27 * auVar81,8) +
+    1841:          (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    1842:   auVar28._8_8_ = 0;
+    1843:   auVar28._0_8_ = uVar1;
 
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1661
-reconstrucao/src/../include/ghidra_function_prototypes.h:1661:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d8ae0’ [-Wimplicit-int]
+## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1867
+reconstrucao/src/../include/ghidra_function_prototypes.h:1867:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1658:   undefined1 auVar51 [16];
-    1659:   undefined1 auVar52 [16];
-    1660:   undefined1 auVar53 [16];
-    1661:   undefined1 auVar54 [16];
-    1662:   undefined1 auVar55 [16];
-    1663:   undefined1 auVar56 [16];
-    1664:   undefined1 auVar57 [16];
+    1864:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
+    1865:   Var9 = (unkuint9)(uVar127 + uVar135) + (unkuint9)SUB168(auVar30 * auVar84,8) +
+    1866:          (unkuint9)((char)((unkuint9)Var16 >> 0x40) != '\0');
+    1867:   auVar31._8_8_ = 0;
+    1868:   auVar31._0_8_ = uVar1;
+    1869:   auVar85._8_8_ = 0;
+    1870:   auVar85._0_8_ = param_2[5];
 
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1664
-reconstrucao/src/../include/ghidra_function_prototypes.h:1664:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d9970’ [-Wimplicit-int]
+## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1920
+reconstrucao/src/../include/ghidra_function_prototypes.h:1920:73: error: unknown type name ‘va_list’
 
-    1661:   undefined1 auVar54 [16];
-    1662:   undefined1 auVar55 [16];
-    1663:   undefined1 auVar56 [16];
-    1664:   undefined1 auVar57 [16];
-    1665:   undefined1 auVar58 [16];
-    1666:   undefined1 auVar59 [16];
-    1667:   undefined1 auVar60 [16];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1672
-reconstrucao/src/../include/ghidra_function_prototypes.h:1672:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dba50’ [-Wimplicit-int]
-
-    1669:   undefined1 auVar62 [16];
-    1670:   undefined1 auVar63 [16];
-    1671:   undefined1 auVar64 [16];
-    1672:   undefined1 auVar65 [16];
-    1673:   undefined1 auVar66 [16];
-    1674:   undefined1 auVar67 [16];
-    1675:   undefined1 auVar68 [16];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1674
-reconstrucao/src/../include/ghidra_function_prototypes.h:1674:26: error: unknown type name ‘code’
-
-    1671:   undefined1 auVar64 [16];
-    1672:   undefined1 auVar65 [16];
-    1673:   undefined1 auVar66 [16];
-    1674:   undefined1 auVar67 [16];
-    1675:   undefined1 auVar68 [16];
-    1676:   undefined1 auVar69 [16];
-    1677:   undefined1 auVar70 [16];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1676
-reconstrucao/src/../include/ghidra_function_prototypes.h:1676:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dc0f0’ [-Wimplicit-int]
-
-    1673:   undefined1 auVar66 [16];
-    1674:   undefined1 auVar67 [16];
-    1675:   undefined1 auVar68 [16];
-    1676:   undefined1 auVar69 [16];
-    1677:   undefined1 auVar70 [16];
-    1678:   undefined1 auVar71 [16];
-    1679:   undefined1 auVar72 [16];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1677
-reconstrucao/src/../include/ghidra_function_prototypes.h:1677:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dc250’ [-Wimplicit-int]
-
-    1674:   undefined1 auVar67 [16];
-    1675:   undefined1 auVar68 [16];
-    1676:   undefined1 auVar69 [16];
-    1677:   undefined1 auVar70 [16];
-    1678:   undefined1 auVar71 [16];
-    1679:   undefined1 auVar72 [16];
-    1680:   undefined1 auVar73 [16];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1679
-reconstrucao/src/../include/ghidra_function_prototypes.h:1679:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dcff0’ [-Wimplicit-int]
-
-    1676:   undefined1 auVar69 [16];
-    1677:   undefined1 auVar70 [16];
-    1678:   undefined1 auVar71 [16];
-    1679:   undefined1 auVar72 [16];
-    1680:   undefined1 auVar73 [16];
-    1681:   undefined1 auVar74 [16];
-    1682:   undefined1 auVar75 [16];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1692
-reconstrucao/src/../include/ghidra_function_prototypes.h:1692:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1689:   undefined1 auVar82 [16];
-    1690:   undefined1 auVar83 [16];
-    1691:   undefined1 auVar84 [16];
-    1692:   undefined1 auVar85 [16];
-    1693:   undefined1 auVar86 [16];
-    1694:   undefined1 auVar87 [16];
-    1695:   undefined1 auVar88 [16];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1699
-reconstrucao/src/../include/ghidra_function_prototypes.h:1699:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1696:   undefined1 auVar89 [16];
-    1697:   undefined1 auVar90 [16];
-    1698:   undefined1 auVar91 [16];
-    1699:   undefined1 auVar92 [16];
-    1700:   undefined1 auVar93 [16];
-    1701:   undefined1 auVar94 [16];
-    1702:   undefined1 auVar95 [16];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1776
-reconstrucao/src/../include/ghidra_function_prototypes.h:1776:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402e97a0’ [-Wimplicit-int]
-
-    1773:   auVar20._8_8_ = 0;
-    1774:   auVar20._0_8_ = uVar1;
-    1775:   auVar74._8_8_ = 0;
-    1776:   auVar74._0_8_ = param_2[3];
-    1777:   uVar5 = SUB168(auVar20 * auVar74,0);
-    1778:   uVar135 = SUB168(auVar20 * auVar74,8);
-    1779:   uVar3 = (ulonglong)(CARRY8(uVar130,uVar3) || CARRY8(uVar4,uVar2));
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1777
-reconstrucao/src/../include/ghidra_function_prototypes.h:1777:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402e987c’ [-Wimplicit-int]
-
-    1774:   auVar20._0_8_ = uVar1;
-    1775:   auVar74._8_8_ = 0;
-    1776:   auVar74._0_8_ = param_2[3];
-    1777:   uVar5 = SUB168(auVar20 * auVar74,0);
-    1778:   uVar135 = SUB168(auVar20 * auVar74,8);
-    1779:   uVar3 = (ulonglong)(CARRY8(uVar130,uVar3) || CARRY8(uVar4,uVar2));
-    1780:   uVar130 = uVar127 + uVar5;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1797
-reconstrucao/src/../include/ghidra_function_prototypes.h:1797:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402ecdd0’ [-Wimplicit-int]
-
-    1794:   uVar1 = SUB168(auVar22 * auVar76,0);
-    1795:   uVar130 = (ulonglong)(CARRY8(uVar135,uVar6) || CARRY8(uVar5,uVar3));
-    1796:   uVar6 = uVar136 + uVar1;
-    1797:   uVar127 = SUB168(auVar22 * auVar76,8) +
-    1798:             (ulonglong)(CARRY8(uVar136,uVar1) || CARRY8(uVar6,uVar130));
-    1799:   puVar125 = (ulonglong *)(param_1 + 0x80);
-    1800:   uVar135 = uVar7 * *(longlong *)(param_1 + 0x18);
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1918
-reconstrucao/src/../include/ghidra_function_prototypes.h:1918:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1915:   uVar7 = (ulonglong)Var9;
-    1916:   Var12 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar35 * auVar89,8);
     1917:   auVar36._8_8_ = 0;
     1918:   auVar36._0_8_ = uVar1;
     1919:   auVar90._8_8_ = 0;
     1920:   auVar90._0_8_ = param_2[1];
     1921:   Var11 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar36 * auVar90,0) +
+    1922:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
+    1923:   Var9 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar36 * auVar90,8) +
 
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1941
-reconstrucao/src/../include/ghidra_function_prototypes.h:1941:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030df30’ [-Wimplicit-int]
+## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2038
+reconstrucao/src/../include/ghidra_function_prototypes.h:2038:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1938:          (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    1939:   uVar10 = (ulonglong)Var9;
-    1940:   Var16 = (unkuint9)(ulonglong)Var16 + (unkuint9)SUB168(auVar38 * auVar92,8) +
-    1941:           (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
-    1942:   auVar39._8_8_ = 0;
-    1943:   auVar39._0_8_ = uVar1;
-    1944:   auVar93._8_8_ = 0;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1946
-reconstrucao/src/../include/ghidra_function_prototypes.h:1946:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1943:   auVar39._0_8_ = uVar1;
-    1944:   auVar93._8_8_ = 0;
-    1945:   auVar93._0_8_ = param_2[4];
-    1946:   Var15 = (unkuint9)(ulonglong)Var16 + (unkuint9)SUB168(auVar39 * auVar93,0) +
-    1947:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    1948:   Var9 = (unkuint9)(uVar137 + uVar131) + (unkuint9)SUB168(auVar39 * auVar93,8) +
-    1949:          (unkuint9)((char)((unkuint9)Var16 >> 0x40) != '\0');
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1949
-reconstrucao/src/../include/ghidra_function_prototypes.h:1949:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030eb04’ [-Wimplicit-int]
-
-    1946:   Var15 = (unkuint9)(ulonglong)Var16 + (unkuint9)SUB168(auVar39 * auVar93,0) +
-    1947:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    1948:   Var9 = (unkuint9)(uVar137 + uVar131) + (unkuint9)SUB168(auVar39 * auVar93,8) +
-    1949:          (unkuint9)((char)((unkuint9)Var16 >> 0x40) != '\0');
-    1950:   auVar40._8_8_ = 0;
-    1951:   auVar40._0_8_ = uVar1;
-    1952:   auVar94._8_8_ = 0;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1950
-reconstrucao/src/../include/ghidra_function_prototypes.h:1950:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030ec30’ [-Wimplicit-int]
-
-    1947:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    1948:   Var9 = (unkuint9)(uVar137 + uVar131) + (unkuint9)SUB168(auVar39 * auVar93,8) +
-    1949:          (unkuint9)((char)((unkuint9)Var16 >> 0x40) != '\0');
-    1950:   auVar40._8_8_ = 0;
-    1951:   auVar40._0_8_ = uVar1;
-    1952:   auVar94._8_8_ = 0;
-    1953:   auVar94._0_8_ = param_2[5];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:1992
-reconstrucao/src/../include/ghidra_function_prototypes.h:1992:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403137f0’ [-Wimplicit-int]
-
-    1989:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    1990:   Var14 = (unkuint9)(uVar4 - uVar130) + (unkuint9)SUB168(auVar43 * auVar97,8) +
-    1991:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    1992:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)uVar5 +
-    1993:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    1994:   uVar1 = param_2[3];
-    1995:   auVar44._8_8_ = 0;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2002
-reconstrucao/src/../include/ghidra_function_prototypes.h:2002:73: error: unknown type name ‘va_list’
-
-    1999:   Var9 = (unkuint9)(ulonglong)Var9 + (unkuint9)SUB168(auVar44 * auVar98,0);
-    2000:   uVar6 = (ulonglong)Var9;
-    2001:   Var12 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar44 * auVar98,8);
-    2002:   auVar45._8_8_ = 0;
-    2003:   auVar45._0_8_ = uVar1;
-    2004:   auVar99._8_8_ = 0;
-    2005:   auVar99._0_8_ = param_2[1];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2043
-reconstrucao/src/../include/ghidra_function_prototypes.h:2043:1: error: type defaults to ‘int’ in declaration of ‘FUN_14031ddfc’ [-Wimplicit-int]
-
+    2035:   auVar49._8_8_ = 0;
+    2036:   auVar49._0_8_ = uVar1;
+    2037:   auVar103._8_8_ = 0;
+    2038:   auVar103._0_8_ = param_2[5];
+    2039:   uVar136 = SUB168(auVar49 * auVar103,8);
     2040:   Var16 = (unkuint9)(ulonglong)Var9 + (unkuint9)SUB168(auVar49 * auVar103,0) +
     2041:           (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
-    2042:   uVar127 = (CARRY8(uVar127,uVar133) || CARRY8(uVar3,uVar2)) + uVar5 +
-    2043:             (ulonglong)CARRY8(uVar128,uVar135) + (ulonglong)((char)((unkuint9)Var9 >> 0x40) != '\0')
-    2044:   ;
-    2045:   uVar2 = (ulonglong)((char)((unkuint9)Var16 >> 0x40) != '\0');
-    2046:   uVar3 = uVar127 + uVar136;
 
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2052
-reconstrucao/src/../include/ghidra_function_prototypes.h:2052:1: error: type defaults to ‘int’ in declaration of ‘FUN_14031f4dc’ [-Wimplicit-int]
+## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2280
+reconstrucao/src/../include/ghidra_function_prototypes.h:2280:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    2049:   uVar130 = (ulonglong)
-    2050:             ((uVar5 * 2 - (ulonglong)(uVar10 < uVar135 || uVar4 < uVar130)) +
-    2051:              (ulonglong)((char)((unkuint9)Var14 >> 0x40) != '\0') +
-    2052:              (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0') != 0);
-    2053:   uVar4 = uVar7 - uVar131;
-    2054:   auVar50._8_8_ = 0;
-    2055:   auVar50._0_8_ = uVar131;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2058
-reconstrucao/src/../include/ghidra_function_prototypes.h:2058:1: error: type defaults to ‘int’ in declaration of ‘FUN_140321058’ [-Wimplicit-int]
-
-    2055:   auVar50._0_8_ = uVar131;
-    2056:   auVar104._8_8_ = 0;
-    2057:   auVar104._0_8_ = *puVar125;
-    2058:   Var9 = (unkuint9)uVar6 + (unkuint9)SUB168(auVar50 * auVar104,0);
-    2059:   uVar5 = (ulonglong)Var9;
-    2060:   Var11 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar50 * auVar104,8);
-    2061:   auVar51._8_8_ = 0;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2071
-reconstrucao/src/../include/ghidra_function_prototypes.h:2071:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403230bc’ [-Wimplicit-int]
-
-    2068:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    2069:   auVar52._8_8_ = 0;
-    2070:   auVar52._0_8_ = uVar131;
-    2071:   auVar106._8_8_ = 0;
-    2072:   auVar106._0_8_ = *(ulonglong *)(param_1 + 0x90);
-    2073:   Var11 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar52 * auVar106,0) +
-    2074:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2074
-reconstrucao/src/../include/ghidra_function_prototypes.h:2074:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403237e8’ [-Wimplicit-int]
-
-    2071:   auVar106._8_8_ = 0;
-    2072:   auVar106._0_8_ = *(ulonglong *)(param_1 + 0x90);
-    2073:   Var11 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar52 * auVar106,0) +
-    2074:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    2075:   Var14 = (unkuint9)(uVar4 - uVar130) + (unkuint9)SUB168(auVar52 * auVar106,8) +
-    2076:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    2077:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)uVar5 +
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2125
-reconstrucao/src/../include/ghidra_function_prototypes.h:2125:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    2122:   auVar112._8_8_ = 0;
-    2123:   auVar112._0_8_ = param_2[5];
-    2124:   uVar133 = SUB168(auVar58 * auVar112,8);
-    2125:   Var16 = (unkuint9)(ulonglong)Var9 + (unkuint9)SUB168(auVar58 * auVar112,0) +
-    2126:           (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
-    2127:   uVar135 = (CARRY8(uVar127,uVar136) || CARRY8(uVar3,uVar2)) + uVar5 +
-    2128:             (ulonglong)CARRY8(uVar128,uVar131) + (ulonglong)((char)((unkuint9)Var9 >> 0x40) != '\0')
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2153
-reconstrucao/src/../include/ghidra_function_prototypes.h:2153:1: error: type defaults to ‘int’ in declaration of ‘FUN_14032c468’ [-Wimplicit-int]
-
-    2150:   Var9 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar60 * auVar114,0) +
-    2151:          (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    2152:   Var13 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar60 * auVar114,8) +
-    2153:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    2154:   auVar61._8_8_ = 0;
-    2155:   auVar61._0_8_ = uVar128;
-    2156:   auVar115._8_8_ = 0;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2161
-reconstrucao/src/../include/ghidra_function_prototypes.h:2161:1: error: type defaults to ‘int’ in declaration of ‘FUN_14032caf4’ [-Wimplicit-int]
-
-    2158:   Var11 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar61 * auVar115,0) +
-    2159:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    2160:   Var14 = (unkuint9)(uVar4 - uVar130) + (unkuint9)SUB168(auVar61 * auVar115,8) +
-    2161:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    2162:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)uVar5 +
-    2163:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    2164:   uVar1 = param_2[5];
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2191
-reconstrucao/src/../include/ghidra_function_prototypes.h:2191:1: error: type defaults to ‘int’ in declaration of ‘FUN_140330130’ [-Wimplicit-int]
-
-    2188:   auVar65._8_8_ = 0;
-    2189:   auVar65._0_8_ = uVar1;
-    2190:   auVar119._8_8_ = 0;
-    2191:   auVar119._0_8_ = param_2[3];
-    2192:   Var9 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar65 * auVar119,0) +
-    2193:          (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    2194:   uVar127 = (ulonglong)Var9;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2214
-reconstrucao/src/../include/ghidra_function_prototypes.h:2214:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403334d0’ [-Wimplicit-int]
-
-    2211:           (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
-    2212:   uVar136 = (CARRY8(uVar135,uVar133) || CARRY8(uVar3,uVar2)) + uVar5 +
-    2213:             (ulonglong)CARRY8(uVar136,uVar128) + (ulonglong)((char)((unkuint9)Var9 >> 0x40) != '\0')
-    2214:   ;
-    2215:   uVar1 = (ulonglong)((char)((unkuint9)Var16 >> 0x40) != '\0');
-    2216:   uVar6 = uVar136 + uVar134;
-    2217:   uVar129 = uVar6 + uVar1;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2241
-reconstrucao/src/../include/ghidra_function_prototypes.h:2241:1: error: type defaults to ‘int’ in declaration of ‘FUN_140335f74’ [-Wimplicit-int]
-
-    2238:   Var11 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar69 * auVar123,8) +
-    2239:           (unkuint9)((char)((unkuint9)Var11 >> 0x40) != '\0');
-    2240:   auVar70._8_8_ = 0;
-    2241:   auVar70._0_8_ = uVar126;
-    2242:   auVar124._8_8_ = 0;
-    2243:   auVar124._0_8_ = *(ulonglong *)(param_1 + 0x90);
-    2244:   Var9 = (unkuint9)(ulonglong)Var11 + (unkuint9)SUB168(auVar70 * auVar124,0) +
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2253
-reconstrucao/src/../include/ghidra_function_prototypes.h:2253:1: error: type defaults to ‘int’ in declaration of ‘FUN_140337658’ [-Wimplicit-int]
-
-    2250:          (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    2251:   uVar128 = (ulonglong)Var9;
-    2252:   uVar132 = (uVar10 * 2 - (ulonglong)(uVar127 < uVar126 || uVar3 < uVar2)) +
-    2253:             (ulonglong)((char)((unkuint9)Var11 >> 0x40) != '\0') +
-    2254:             (ulonglong)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    2255:   Var9 = (unkuint9)(ulonglong)Var15 + (unkuint9)uVar132;
-    2256:   uVar127 = (ulonglong)Var9;
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2257
-reconstrucao/src/../include/ghidra_function_prototypes.h:2257:1: error: type defaults to ‘int’ in declaration of ‘FUN_140337e0c’ [-Wimplicit-int]
-
-    2254:             (ulonglong)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    2255:   Var9 = (unkuint9)(ulonglong)Var15 + (unkuint9)uVar132;
-    2256:   uVar127 = (ulonglong)Var9;
-    2257:   Var9 = (unkuint9)(ulonglong)Var16 + (unkuint9)uVar132 +
-    2258:          (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
-    2259:   uVar133 = (ulonglong)Var9;
-    2260:   Var9 = (unkuint9)(uVar129 + uVar126) + (unkuint9)uVar132 +
-
-## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2277
-reconstrucao/src/../include/ghidra_function_prototypes.h:2277:1: error: type defaults to ‘int’ in declaration of ‘FUN_14033b710’ [-Wimplicit-int]
-
-    2274:     uVar133 = uVar133 + uVar4;
-    2275:     uVar127 = uVar127 + uVar130;
-    2276:     uVar128 = uVar128 + 1 + uVar3;
     2277:     uVar131 = uVar7 + uVar2;
     2278:     uVar135 = *(ulonglong *)(param_1 + 0x100) + uVar135;
     2279:   }
     2280:   *param_3 = uVar135;
+    2281:   param_3[1] = uVar131;
+    2282:   param_3[2] = uVar128;
+    2283:   param_3[3] = uVar127;
 
 ## FUN_1405322e0 */ — reconstrucao/src/decompiled_02.c:2284
-reconstrucao/src/../include/ghidra_function_prototypes.h:2284:1: error: type defaults to ‘int’ in declaration of ‘FUN_14033e328’ [-Wimplicit-int]
+reconstrucao/src/../include/ghidra_function_prototypes.h:2284:36: error: unknown type name ‘code’
 
     2281:   param_3[1] = uVar131;
     2282:   param_3[2] = uVar128;
@@ -2587,1317 +1553,1317 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:2284:1: error: type def
     2286:   return;
     2287: }
 
-## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:2318
-reconstrucao/src/../include/ghidra_function_prototypes.h:2318:1: error: type defaults to ‘int’ in declaration of ‘FUN_140344710’ [-Wimplicit-int]
-
-    2315:   undefined1 auVar22 [16];
-    2316:   undefined1 auVar23 [16];
-    2317:   undefined1 auVar24 [16];
-    2318:   undefined1 auVar25 [16];
-    2319:   undefined1 auVar26 [16];
-    2320:   undefined1 auVar27 [16];
-    2321:   undefined1 auVar28 [16];
-
-## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:2319
-reconstrucao/src/../include/ghidra_function_prototypes.h:2319:1: error: type defaults to ‘int’ in declaration of ‘FUN_140344850’ [-Wimplicit-int]
-
-    2316:   undefined1 auVar23 [16];
-    2317:   undefined1 auVar24 [16];
-    2318:   undefined1 auVar25 [16];
-    2319:   undefined1 auVar26 [16];
-    2320:   undefined1 auVar27 [16];
-    2321:   undefined1 auVar28 [16];
-    2322:   undefined1 auVar29 [16];
-
-## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:2367
-reconstrucao/src/../include/ghidra_function_prototypes.h:2367:1: error: type defaults to ‘int’ in declaration of ‘FUN_14034c820’ [-Wimplicit-int]
-
-    2364:   undefined1 auVar71 [16];
-    2365:   undefined1 auVar72 [16];
-    2366:   undefined1 auVar73 [16];
-    2367:   undefined1 auVar74 [16];
-    2368:   undefined1 auVar75 [16];
-    2369:   undefined1 auVar76 [16];
-    2370:   undefined1 auVar77 [16];
-
-## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:2379
-reconstrucao/src/../include/ghidra_function_prototypes.h:2379:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    2376:   undefined1 auVar83 [16];
-    2377:   undefined1 auVar84 [16];
-    2378:   undefined1 auVar85 [16];
-    2379:   undefined1 auVar86 [16];
-    2380:   undefined1 auVar87 [16];
-    2381:   undefined1 auVar88 [16];
-    2382:   undefined1 auVar89 [16];
-
-## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:2383
-reconstrucao/src/../include/ghidra_function_prototypes.h:2383:36: error: unknown type name ‘code’
-
-    2380:   undefined1 auVar87 [16];
-    2381:   undefined1 auVar88 [16];
-    2382:   undefined1 auVar89 [16];
-    2383:   undefined1 auVar90 [16];
-    2384:   undefined1 auVar91 [16];
-    2385:   undefined1 auVar92 [16];
-    2386:   undefined1 auVar93 [16];
-
-## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:11
-reconstrucao/src/../include/ghidra_function_prototypes.h:11:1: error: type defaults to ‘int’ in declaration of ‘BgkDisplayCharacter’ [-Wimplicit-int]
-
-    8: int FUN_14077f3e0(longlong param_1,undefined4 *param_2,longlong param_3,undefined4 param_4,
-    9:                  longlong *param_5)
-    10: 
-    11: {
-    12:   undefined4 uVar1;
-    13:   undefined4 uVar2;
-    14:   undefined4 uVar3;
-
-## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:31
-reconstrucao/src/../include/ghidra_function_prototypes.h:31:1: error: type defaults to ‘int’ in declaration of ‘CcAsyncCopyRead’ [-Wimplicit-int]
-
-    28:       iVar5 = -0x3fffff66;
-    29:     }
-    30:     else {
-    31:       *(undefined4 *)(plVar6 + 1) = 0;
-    32:       *plVar6 = param_1;
-    33:       uVar1 = *param_2;
-    34:       uVar2 = param_2[1];
-
-## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:46
-reconstrucao/src/../include/ghidra_function_prototypes.h:46:1: error: type defaults to ‘int’ in declaration of ‘CcGetDirtyPages’ [-Wimplicit-int]
-
-    43:       *(undefined4 *)(plVar6 + 5) = 0xcccc;
-    44:       *(undefined1 *)(plVar6 + 0xb) = 1;
-    45:       iVar5 = FUN_140a33084(param_3,auStackX_20,*(undefined4 *)(param_1 + 0x18),plVar6 + 6);
-    46:       if ((-1 < iVar5) &&
-    47:          (iVar5 = FUN_140a33348(param_3,*(undefined4 *)(param_1 + 0x18),plVar6 + 9), -1 < iVar5)) {
-    48:         *param_5 = (longlong)plVar6;
-    49:         return 0;
-
-## FUN_14077f4e0 */ — reconstrucao/src/decompiled_03.c:60
-reconstrucao/src/../include/ghidra_function_prototypes.h:60:1: error: type defaults to ‘int’ in declaration of ‘CcMapData’ [-Wimplicit-int]
-
-    57: /* Ghidra label: FUN_14077f4e0 */
-    58: /* Ghidra address: 14077f4e0 */
-    59: undefined8 FUN_14077f4e0(longlong param_1,undefined1 param_2)
-    60: 
-    61: {
-    62:   undefined8 uVar1;
-    63:   
-
-## FUN_14077f55c */ — reconstrucao/src/decompiled_03.c:97
-reconstrucao/src/../include/ghidra_function_prototypes.h:97:1: error: type defaults to ‘int’ in declaration of ‘CmCallbackGetKeyObjectID’ [-Wimplicit-int]
-
-    94: {
-    95:   PoUnregisterPowerSettingCallback(DAT_140f06d38);
-    96:   return;
-    97: }
-    98: 
-    99: /* Ghidra label: FUN_14077f580 */
-    100: /* Ghidra address: 14077f580 */
-
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:102
-reconstrucao/src/../include/ghidra_function_prototypes.h:102:1: error: type defaults to ‘int’ in declaration of ‘CmSetCallbackObjectContext’ [-Wimplicit-int]
-
-    99: /* Ghidra label: FUN_14077f580 */
-    100: /* Ghidra address: 14077f580 */
-    101: int FUN_14077f580(longlong param_1,undefined4 *param_2,undefined4 *param_3,longlong param_4,
-    102:                  undefined8 *param_5)
-    103: 
-    104: {
-    105:   int iVar1;
-
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:133
-reconstrucao/src/../include/ghidra_function_prototypes.h:133:1: error: type defaults to ‘int’ in declaration of ‘DifRegisterClassDriverPlugin’ [-Wimplicit-int]
-
-    130:     uStack_24 = param_2[3];
-    131:     uStack_40 = *param_3;
-    132:     uStack_3c = param_3[1];
-    133:     uStack_38 = param_3[2];
-    134:     uStack_34 = param_3[3];
-    135:     iVar1 = FUN_1403dcb90(uStack_30,&uStack_30,&uStack_40,param_4,0,&lStack_48);
-    136:     lVar3 = lStack_48;
-
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:150
-reconstrucao/src/../include/ghidra_function_prototypes.h:150:1: error: type defaults to ‘int’ in declaration of ‘EtwSendTraceBuffer’ [-Wimplicit-int]
-
-    147:     FUN_140485460(puVar2);
-    148:   }
-    149:   if (iVar1 != -0x3fffff45) {
-    150:     return iVar1;
-    151:   }
-    152:   puStackX_8 = &DAT_140f06d48;
-    153:   iVar1 = 0;
-
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:155
-reconstrucao/src/../include/ghidra_function_prototypes.h:155:1: error: type defaults to ‘int’ in declaration of ‘EtwWriteEndScenario’ [-Wimplicit-int]
-
-    152:   puStackX_8 = &DAT_140f06d48;
-    153:   iVar1 = 0;
-    154: LAB_14077f637:
-    155:   *param_5 = puStackX_8;
-    156:   return iVar1;
-    157: }
-    158: 
-
-## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:170
-reconstrucao/src/../include/ghidra_function_prototypes.h:170:1: error: type defaults to ‘int’ in declaration of ‘ExAcquireFastResourceSharedStarveExclusive’ [-Wimplicit-int]
-
-    167:   undefined *puStackX_8;
-    168:   longlong lStack_28;
-    169:   undefined4 uStack_20;
-    170:   undefined4 uStack_1c;
-    171:   undefined4 uStack_18;
-    172:   undefined4 uStack_14;
-    173:   
-
-## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:226
-reconstrucao/src/../include/ghidra_function_prototypes.h:226:43: error: unknown type name ‘code’
-
-    223:   puStackX_8 = (undefined *)0x0;
-    224:   alStack_38[0] = 0;
-    225:   alStack_38[1] = 0;
-    226:   alStack_38[2] = 0;
-    227:   if ((((param_1 == 0) || (param_2 == 0)) || (param_3 == 0)) || (param_4 == (undefined8 *)0x0)) {
-    228:     iVar1 = -0x3ffffff3;
-    229: LAB_14077f7d4:
-
-## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:265
-reconstrucao/src/../include/ghidra_function_prototypes.h:265:1: error: type defaults to ‘int’ in declaration of ‘ExInterlockedExtendZone’ [-Wimplicit-int]
-
-    262: int FUN_14077f830(longlong param_1,longlong param_2,longlong param_3,undefined8 *param_4)
-    263: 
-    264: {
-    265:   int iVar1;
-    266:   undefined *puVar2;
-    267:   longlong lVar3;
-    268:   undefined *puStackX_8;
-
-## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:334
-reconstrucao/src/../include/ghidra_function_prototypes.h:334:1: error: type defaults to ‘int’ in declaration of ‘ExSecurePoolValidate’ [-Wimplicit-int]
-
-    331:     FUN_1402f5950(&DAT_140f06ba8,lVar2,&DAT_140f06ba8);
-    332:   }
-    333:   if (lVar2 != 0) {
-    334:     *(undefined1 *)(lVar2 + 10) = 1;
-    335:   }
-    336:   DAT_140f06bb8 = DAT_140f06bb8 + -1;
-    337:   if (DAT_140f06bb8 == 0) {
-
-## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:393
-reconstrucao/src/../include/ghidra_function_prototypes.h:393:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402009ec’ [-Wimplicit-int]
-
-    390:   longlong lVar2;
-    391:   
-    392:   lVar2 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
-    393:   LOCK();
-    394:   uVar1 = DAT_140f06ba8 & 1;
-    395:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
-    396:   UNLOCK();
-
-## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:430
-reconstrucao/src/../include/ghidra_function_prototypes.h:430:1: error: type defaults to ‘int’ in declaration of ‘FUN_140203980’ [-Wimplicit-int]
-
-    427:   undefined1 uStack_c8;
-    428:   ulonglong uStack_b8;
-    429:   undefined4 uStack_b0;
-    430:   undefined4 uStack_ac;
-    431:   undefined8 uStack_a8;
-    432:   undefined8 uStack_a0;
-    433:   undefined4 uStack_98;
-
-## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:437
-reconstrucao/src/../include/ghidra_function_prototypes.h:437:1: error: type defaults to ‘int’ in declaration of ‘FUN_140204158’ [-Wimplicit-int]
-
-    434:   undefined4 uStack_94;
-    435:   undefined8 uStack_90;
-    436:   undefined8 uStack_88;
-    437:   undefined1 auStack_78 [16];
-    438:   undefined8 uStack_68;
-    439:   ulonglong uStack_28;
-    440:   
-
-## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:451
-reconstrucao/src/../include/ghidra_function_prototypes.h:451:1: error: type defaults to ‘int’ in declaration of ‘FUN_140204eb0’ [-Wimplicit-int]
-
-    448:         lVar4 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
-    449:         LOCK();
-    450:         uVar1 = DAT_140f06ba8 & 1;
-    451:         DAT_140f06ba8 = DAT_140f06ba8 | 1;
-    452:         UNLOCK();
-    453:         if (uVar1 != 0) {
-    454:           FUN_1402f5950(&DAT_140f06ba8,lVar4,&DAT_140f06ba8);
-
-## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:457
-reconstrucao/src/../include/ghidra_function_prototypes.h:457:1: error: type defaults to ‘int’ in declaration of ‘FUN_140205970’ [-Wimplicit-int]
-
-    454:           FUN_1402f5950(&DAT_140f06ba8,lVar4,&DAT_140f06ba8);
-    455:         }
-    456:         if (lVar4 != 0) {
-    457:           *(undefined1 *)(lVar4 + 10) = 1;
-    458:         }
-    459:         lVar4 = DAT_140f06bb0;
-    460:         DAT_140f06bb0 = 0;
-
-## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:485
-reconstrucao/src/../include/ghidra_function_prototypes.h:485:1: error: type defaults to ‘int’ in declaration of ‘FUN_140209980’ [-Wimplicit-int]
-
-    482:         FUN_1402f5950(&DAT_140f06ba8,lVar4,&DAT_140f06ba8);
-    483:       }
-    484:       if (lVar4 != 0) {
-    485:         *(undefined1 *)(lVar4 + 10) = 1;
-    486:       }
-    487:       uStack_c8 = DAT_140f06bb0 == 0;
-    488:       puStack_e8 = auStack_78;
-
-## FUN_14077fdf8 */ — reconstrucao/src/decompiled_03.c:528
-reconstrucao/src/../include/ghidra_function_prototypes.h:528:1: error: type defaults to ‘int’ in declaration of ‘FUN_140212424’ [-Wimplicit-int]
-
-    525: {
-    526:   undefined4 uVar1;
-    527:   uint uVar2;
-    528:   
-    529:   if (*(int *)(param_1 + 0x28) == 0) {
-    530:     if ((DAT_140fc4ac0 & 0x10) == 0) {
-    531:       uVar2 = DAT_140fc4ac0 | 1;
-
-## FUN_14077fdf8 */ — reconstrucao/src/decompiled_03.c:548
-reconstrucao/src/../include/ghidra_function_prototypes.h:548:1: error: type defaults to ‘int’ in declaration of ‘FUN_140214e80’ [-Wimplicit-int]
-
-    545:     return 0;
-    546:   }
-    547:   return 0xc00000bb;
-    548: }
-    549: 
-    550: /* Ghidra label: FUN_14077ff18 */
-    551: /* Ghidra address: 14077ff18 */
-
-## FUN_14077fdf8 */ — reconstrucao/src/decompiled_03.c:549
-reconstrucao/src/../include/ghidra_function_prototypes.h:549:1: error: type defaults to ‘int’ in declaration of ‘FUN_140214f74’ [-Wimplicit-int]
-
-    546:   }
-    547:   return 0xc00000bb;
-    548: }
-    549: 
-    550: /* Ghidra label: FUN_14077ff18 */
-    551: /* Ghidra address: 14077ff18 */
-    552: void FUN_14077ff18(undefined8 param_1,uint param_2,uint param_3,void *param_4,char param_5)
-
-## FUN_14077ff18 */ — reconstrucao/src/decompiled_03.c:562
-reconstrucao/src/../include/ghidra_function_prototypes.h:562:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    559:   undefined8 *puStack_130;
-    560:   undefined1 *puStack_128;
-    561:   undefined8 *puStack_120;
-    562:   undefined8 uStack_118;
-    563:   undefined8 uStack_110;
-    564:   undefined8 uStack_108;
-    565:   undefined8 uStack_100;
-
-## FUN_14077ff18 */ — reconstrucao/src/decompiled_03.c:566
-reconstrucao/src/../include/ghidra_function_prototypes.h:566:1: error: type defaults to ‘int’ in declaration of ‘FUN_140218c60’ [-Wimplicit-int]
-
-    563:   undefined8 uStack_110;
-    564:   undefined8 uStack_108;
-    565:   undefined8 uStack_100;
-    566:   undefined8 uStack_f8;
-    567:   undefined8 uStack_f0;
-    568:   undefined8 uStack_e8;
-    569:   ulonglong uStack_e0;
-
-## TtmNotifyDeviceDeparture */ — reconstrucao/src/decompiled_03.c:624
-reconstrucao/src/../include/ghidra_function_prototypes.h:624:1: error: type defaults to ‘int’ in declaration of ‘FUN_140222e6c’ [-Wimplicit-int]
-
-    621: {
-    622:   char cVar1;
-    623:   int iVar2;
-    624:   undefined8 uStackX_18;
-    625:   longlong lStackX_20;
-    626:   
-    627:                     /* 0x780320  2857  TtmNotifyDeviceDeparture */
-
-## TtmNotifyDeviceDeparture */ — reconstrucao/src/decompiled_03.c:640
-reconstrucao/src/../include/ghidra_function_prototypes.h:640:1: error: type defaults to ‘int’ in declaration of ‘FUN_140224800’ [-Wimplicit-int]
-
-    637:     if (cVar1 != '\0') {
-    638:       if ((*(uint *)(lStackX_20 + 600) & 4) == 0) {
-    639:         *(uint *)(lStackX_20 + 600) = *(uint *)(lStackX_20 + 600) | 4;
-    640:         FUN_140781cb4(uStackX_18,1);
-    641:       }
-    642:     }
-    643:     ExReleaseResourceLite(&DAT_140f06b20);
-
-## TtmNotifyDeviceInput */ — reconstrucao/src/decompiled_03.c:664
-reconstrucao/src/../include/ghidra_function_prototypes.h:664:1: error: type defaults to ‘int’ in declaration of ‘FUN_140228880’ [-Wimplicit-int]
-
-    661:   longlong lVar7;
-    662:   longlong lStackX_20;
-    663:   longlong lStack_38;
-    664:   undefined8 uStack_30;
-    665:   
-    666:                     /* 0x7803e0  2858  TtmNotifyDeviceInput */
-    667:   lStack_38 = 0;
-
-## TtmNotifyDeviceInput */ — reconstrucao/src/decompiled_03.c:669
-reconstrucao/src/../include/ghidra_function_prototypes.h:669:1: error: type defaults to ‘int’ in declaration of ‘FUN_14022a7e0’ [-Wimplicit-int]
-
-    666:                     /* 0x7803e0  2858  TtmNotifyDeviceInput */
-    667:   lStack_38 = 0;
-    668:   lStackX_20 = 0;
-    669:   cVar1 = '\0';
-    670:   uStack_30 = 0;
-    671:   uVar2 = 0;
-    672:   uVar6 = 0;
-
-## TtmNotifyDeviceInput */ — reconstrucao/src/decompiled_03.c:688
-reconstrucao/src/../include/ghidra_function_prototypes.h:688:1: error: type defaults to ‘int’ in declaration of ‘FUN_140230420’ [-Wimplicit-int]
-
-    685:         uVar4 = 0x311;
-    686:         iVar3 = -0x3ffffddb;
-    687:         lVar5 = lVar7;
-    688:       }
-    689:       else {
-    690:         *(undefined8 *)(lStack_38 + 0x260) = _DAT_fffff78000000008;
-    691:         if (*(int *)(lStack_38 + 0x254) == -1) goto LAB_140780444;
-
-## TtmNotifyDeviceInput */ — reconstrucao/src/decompiled_03.c:720
-reconstrucao/src/../include/ghidra_function_prototypes.h:720:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023a5e0’ [-Wimplicit-int]
-
-    717:     ExReleaseResourceLite(&DAT_140f06b20);
-    718:     KeLeaveCriticalRegion();
-    719:   }
-    720:   return;
-    721: }
-    722: 
-    723: /* Ghidra label: FUN_14078056c */
-
-## FUN_14078056c */ — reconstrucao/src/decompiled_03.c:727
-reconstrucao/src/../include/ghidra_function_prototypes.h:727:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023cca0’ [-Wimplicit-int]
-
-    724: /* Ghidra address: 14078056c */
-    725: undefined8 FUN_14078056c(undefined8 param_1,longlong param_2,undefined4 param_3)
-    726: 
-    727: {
-    728:   longlong lVar1;
-    729:   char cVar2;
-    730:   undefined8 uVar3;
-
-## FUN_14078056c */ — reconstrucao/src/decompiled_03.c:735
-reconstrucao/src/../include/ghidra_function_prototypes.h:735:19: error: unknown type name ‘code’
-
-    732:   
-    733:   uVar3 = 0;
-    734:   lStackX_20 = 0;
-    735:   cVar2 = FUN_140781064(param_1,param_3,&lStackX_20);
-    736:   lVar1 = lStackX_20;
-    737:   if (cVar2 == '\0') {
-    738:     uVar3 = 0xc0000225;
-
-## FUN_14078056c */ — reconstrucao/src/decompiled_03.c:736
-reconstrucao/src/../include/ghidra_function_prototypes.h:736:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023f1f0’ [-Wimplicit-int]
-
-    733:   uVar3 = 0;
-    734:   lStackX_20 = 0;
-    735:   cVar2 = FUN_140781064(param_1,param_3,&lStackX_20);
-    736:   lVar1 = lStackX_20;
-    737:   if (cVar2 == '\0') {
-    738:     uVar3 = 0xc0000225;
-    739:     FUN_1409a24bc("TtmiAssignDevice",0x465,0xffffffff,0xc0000225);
-
-## FUN_14078056c */ — reconstrucao/src/decompiled_03.c:739
-reconstrucao/src/../include/ghidra_function_prototypes.h:739:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402401d0’ [-Wimplicit-int]
-
-    736:   lVar1 = lStackX_20;
-    737:   if (cVar2 == '\0') {
-    738:     uVar3 = 0xc0000225;
-    739:     FUN_1409a24bc("TtmiAssignDevice",0x465,0xffffffff,0xc0000225);
-    740:   }
-    741:   else {
-    742:     *(undefined4 *)(lStackX_20 + 0x254) = *(undefined4 *)(param_2 + 0x1c);
-
-## FUN_14078062c */ — reconstrucao/src/decompiled_03.c:754
-reconstrucao/src/../include/ghidra_function_prototypes.h:754:1: error: type defaults to ‘int’ in declaration of ‘FUN_140242870’ [-Wimplicit-int]
-
-    751: /* Ghidra label: FUN_14078062c */
-    752: /* Ghidra address: 14078062c */
-    753: void FUN_14078062c(undefined4 *param_1)
-    754: 
-    755: {
-    756:   undefined4 uVar1;
-    757:   undefined8 *puVar2;
-
-## FUN_14078062c */ — reconstrucao/src/decompiled_03.c:777
-reconstrucao/src/../include/ghidra_function_prototypes.h:777:1: error: type defaults to ‘int’ in declaration of ‘FUN_140246190’ [-Wimplicit-int]
-
-    774:         uStack_18 = puVar2[0x4c];
-    775:         _uStack_28 = CONCAT44(*(uint *)(puVar2 + 0x4b),*(undefined4 *)(puVar2 + 9));
-    776:         _uStack_38 = CONCAT44(*(undefined4 *)((longlong)puVar2 + 0x254),uVar1);
-    777:         FUN_140784830(&uStack_38);
-    778:       }
-    779:     }
-    780:   }
-
-## FUN_14078073c */ — reconstrucao/src/decompiled_03.c:812
-reconstrucao/src/../include/ghidra_function_prototypes.h:812:1: error: type defaults to ‘int’ in declaration of ‘FUN_140249d74’ [-Wimplicit-int]
-
-    809: 
-    810: {
-    811:   int iVar1;
-    812:   undefined8 *puVar2;
-    813:   
-    814:   puVar2 = *(undefined8 **)(param_1 + 0x60);
-    815:   while( true ) {
-
-## FUN_14078073c */ — reconstrucao/src/decompiled_03.c:819
-reconstrucao/src/../include/ghidra_function_prototypes.h:819:75: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    816:     if (puVar2 == (undefined8 *)(param_1 + 0x60)) {
-    817:       return 0;
-    818:     }
-    819:     if ((((byte)*(undefined4 *)(puVar2 + 0x4b) & 10) == 2) &&
-    820:        (iVar1 = FUN_140781248(param_1,param_2,puVar2,0), iVar1 < 0)) break;
-    821:     puVar2 = (undefined8 *)*puVar2;
-    822:   }
-
-## FUN_14078073c */ — reconstrucao/src/decompiled_03.c:822
-reconstrucao/src/../include/ghidra_function_prototypes.h:822:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024b21c’ [-Wimplicit-int]
-
-    819:     if ((((byte)*(undefined4 *)(puVar2 + 0x4b) & 10) == 2) &&
-    820:        (iVar1 = FUN_140781248(param_1,param_2,puVar2,0), iVar1 < 0)) break;
-    821:     puVar2 = (undefined8 *)*puVar2;
-    822:   }
-    823:   FUN_1409a24bc("TtmiPublishDeviceEnumerationEvents",0x41e,iVar1,iVar1);
-    824:   return iVar1;
-    825: }
-
-## FUN_14078073c */ — reconstrucao/src/decompiled_03.c:826
-reconstrucao/src/../include/ghidra_function_prototypes.h:826:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024b730’ [-Wimplicit-int]
-
-    823:   FUN_1409a24bc("TtmiPublishDeviceEnumerationEvents",0x41e,iVar1,iVar1);
-    824:   return iVar1;
-    825: }
-    826: 
-    827: /* Ghidra label: FUN_1407807d0 */
-    828: /* Ghidra address: 1407807d0 */
-    829: void FUN_1407807d0(longlong param_1)
-
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:829
-reconstrucao/src/../include/ghidra_function_prototypes.h:829:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024be10’ [-Wimplicit-int]
-
-    826: 
-    827: /* Ghidra label: FUN_1407807d0 */
-    828: /* Ghidra address: 1407807d0 */
-    829: void FUN_1407807d0(longlong param_1)
-    830: 
-    831: {
-    832:   uint uVar1;
-
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:833
-reconstrucao/src/../include/ghidra_function_prototypes.h:833:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024c0c8’ [-Wimplicit-int]
-
-    830: 
-    831: {
-    832:   uint uVar1;
-    833:   longlong lVar2;
-    834:   code *pcVar3;
-    835:   char cVar4;
-    836:   longlong *plVar5;
-
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:898
-reconstrucao/src/../include/ghidra_function_prototypes.h:898:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025703c’ [-Wimplicit-int]
-
-    895:         uStack_30 = 0;
-    896:         uStack_28 = 0;
-    897:         uStack_20 = 0;
-    898:         FUN_1407815d4(&uStack_38,param_1,plVar6,2,plVar6[5],0);
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:2977
+reconstrucao/src/../include/ghidra_function_prototypes.h:2977:43: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    2974:   Var5 = (unkuint9)(ulonglong)Var5 + (unkuint9)SUB168(auVar29 * auVar285,8) +
+    2975:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
+    2976:   auVar30._8_8_ = 0;
+    2977:   auVar30._0_8_ = uVar1;
+    2978:   auVar286._8_8_ = 0;
+    2979:   auVar286._0_8_ = param_1[3];
+    2980:   Var4 = (unkuint9)(ulonglong)Var5 + (unkuint9)SUB168(auVar30 * auVar286,0) +
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:3209
+reconstrucao/src/../include/ghidra_function_prototypes.h:3209:19: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    3206:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    3207:   Var10 = (unkuint9)
+    3208:           ((ulonglong)((char)((unkuint9)Var10 >> 0x40) != '\0') + SUB168(auVar50 * auVar306,8) +
+    3209:           (ulonglong)((char)((unkuint9)Var8 >> 0x40) != '\0')) +
+    3210:           (unkuint9)SUB168(auVar57 * auVar313,8) +
+    3211:           (unkuint9)((char)((unkuint9)Var9 >> 0x40) != '\0');
+    3212:   auVar58._8_8_ = 0;
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:3674
+reconstrucao/src/../include/ghidra_function_prototypes.h:3674:72: error: unknown type name ‘code’
+
+    3671:   auVar113._0_8_ = uVar1;
+    3672:   auVar369._8_8_ = 0;
+    3673:   auVar369._0_8_ = param_1[6];
+    3674:   Var7 = (unkuint9)(ulonglong)Var9 + (unkuint9)SUB168(auVar113 * auVar369,0) +
+    3675:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    3676:   Var10 = (unkuint9)
+    3677:           ((ulonglong)((char)((unkuint9)Var10 >> 0x40) != '\0') + SUB168(auVar106 * auVar362,8) +
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:4161
+reconstrucao/src/../include/ghidra_function_prototypes.h:4161:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4158:   param_4[0xc] = (ulonglong)Var2;
+    4159:   auVar172._8_8_ = 0;
+    4160:   auVar172._0_8_ = uVar1;
+    4161:   auVar428._8_8_ = 0;
+    4162:   auVar428._0_8_ = param_1[9];
+    4163:   Var2 = (unkuint9)(ulonglong)Var3 + (unkuint9)SUB168(auVar172 * auVar428,0) +
+    4164:          (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\0');
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:4198
+reconstrucao/src/../include/ghidra_function_prototypes.h:4198:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4195:   Var6 = (unkuint9)(ulonglong)Var7 + (unkuint9)SUB168(auVar176 * auVar432,0) +
+    4196:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
+    4197:   Var9 = (unkuint9)(ulonglong)Var8 + (unkuint9)SUB168(auVar176 * auVar432,8) +
+    4198:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
+    4199:   auVar177._8_8_ = 0;
+    4200:   auVar177._0_8_ = uVar1;
+    4201:   auVar433._8_8_ = 0;
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:4296
+reconstrucao/src/../include/ghidra_function_prototypes.h:4296:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4293:   auVar188._8_8_ = 0;
+    4294:   auVar188._0_8_ = uVar1;
+    4295:   auVar444._8_8_ = 0;
+    4296:   auVar444._0_8_ = param_1[9];
+    4297:   Var2 = (unkuint9)(ulonglong)Var3 + (unkuint9)SUB168(auVar188 * auVar444,0) +
+    4298:          (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\0');
+    4299:   Var4 = (unkuint9)(ulonglong)Var4 + (unkuint9)SUB168(auVar188 * auVar444,8) +
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:4566
+reconstrucao/src/../include/ghidra_function_prototypes.h:4566:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4563:   auVar476._8_8_ = 0;
+    4564:   auVar476._0_8_ = param_1[9];
+    4565:   Var2 = (unkuint9)(ulonglong)Var3 + (unkuint9)SUB168(auVar220 * auVar476,0) +
+    4566:          (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\0');
+    4567:   Var4 = (unkuint9)(ulonglong)Var4 + (unkuint9)SUB168(auVar220 * auVar476,8) +
+    4568:          (unkuint9)((char)((unkuint9)Var3 >> 0x40) != '\0');
+    4569:   auVar221._8_8_ = 0;
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:4568
+reconstrucao/src/../include/ghidra_function_prototypes.h:4568:38: error: unknown type name ‘code’
+
+    4565:   Var2 = (unkuint9)(ulonglong)Var3 + (unkuint9)SUB168(auVar220 * auVar476,0) +
+    4566:          (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\0');
+    4567:   Var4 = (unkuint9)(ulonglong)Var4 + (unkuint9)SUB168(auVar220 * auVar476,8) +
+    4568:          (unkuint9)((char)((unkuint9)Var3 >> 0x40) != '\0');
+    4569:   auVar221._8_8_ = 0;
+    4570:   auVar221._0_8_ = uVar1;
+    4571:   auVar477._8_8_ = 0;
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:4709
+reconstrucao/src/../include/ghidra_function_prototypes.h:4709:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4706:   auVar493._0_8_ = param_1[10];
+    4707:   Var3 = (unkuint9)(ulonglong)Var4 + (unkuint9)SUB168(auVar237 * auVar493,0) +
+    4708:          (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\0');
+    4709:   Var5 = (unkuint9)(ulonglong)Var5 + (unkuint9)SUB168(auVar237 * auVar493,8) +
+    4710:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
+    4711:   auVar238._8_8_ = 0;
+    4712:   auVar238._0_8_ = uVar1;
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:4711
+reconstrucao/src/../include/ghidra_function_prototypes.h:4711:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4708:          (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\0');
+    4709:   Var5 = (unkuint9)(ulonglong)Var5 + (unkuint9)SUB168(auVar237 * auVar493,8) +
+    4710:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
+    4711:   auVar238._8_8_ = 0;
+    4712:   auVar238._0_8_ = uVar1;
+    4713:   auVar494._8_8_ = 0;
+    4714:   auVar494._0_8_ = param_1[0xb];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:20: error: unknown type name ‘PSLIST_HEADER’
+
+    5017:   undefined1 auVar47 [16];
+    5018:   undefined1 auVar48 [16];
+    5019:   undefined1 auVar49 [16];
+    5020:   undefined1 auVar50 [16];
+    5021:   undefined1 auVar51 [16];
+    5022:   undefined1 auVar52 [16];
+    5023:   undefined1 auVar53 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:42: error: unknown type name ‘code’
+
+    5017:   undefined1 auVar47 [16];
+    5018:   undefined1 auVar48 [16];
+    5019:   undefined1 auVar49 [16];
+    5020:   undefined1 auVar50 [16];
+    5021:   undefined1 auVar51 [16];
+    5022:   undefined1 auVar52 [16];
+    5023:   undefined1 auVar53 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:56: error: unknown type name ‘code’
+
+    5017:   undefined1 auVar47 [16];
+    5018:   undefined1 auVar48 [16];
+    5019:   undefined1 auVar49 [16];
+    5020:   undefined1 auVar50 [16];
+    5021:   undefined1 auVar51 [16];
+    5022:   undefined1 auVar52 [16];
+    5023:   undefined1 auVar53 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:20: error: unknown type name ‘PSLIST_HEADER’
+
+    5018:   undefined1 auVar48 [16];
+    5019:   undefined1 auVar49 [16];
+    5020:   undefined1 auVar50 [16];
+    5021:   undefined1 auVar51 [16];
+    5022:   undefined1 auVar52 [16];
+    5023:   undefined1 auVar53 [16];
+    5024:   undefined1 auVar54 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:42: error: unknown type name ‘code’
+
+    5018:   undefined1 auVar48 [16];
+    5019:   undefined1 auVar49 [16];
+    5020:   undefined1 auVar50 [16];
+    5021:   undefined1 auVar51 [16];
+    5022:   undefined1 auVar52 [16];
+    5023:   undefined1 auVar53 [16];
+    5024:   undefined1 auVar54 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:56: error: unknown type name ‘code’
+
+    5018:   undefined1 auVar48 [16];
+    5019:   undefined1 auVar49 [16];
+    5020:   undefined1 auVar50 [16];
+    5021:   undefined1 auVar51 [16];
+    5022:   undefined1 auVar52 [16];
+    5023:   undefined1 auVar53 [16];
+    5024:   undefined1 auVar54 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5063
+reconstrucao/src/../include/ghidra_function_prototypes.h:5063:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5060:   undefined1 auVar90 [16];
+    5061:   undefined1 auVar91 [16];
+    5062:   undefined1 auVar92 [16];
+    5063:   undefined1 auVar93 [16];
+    5064:   undefined1 auVar94 [16];
+    5065:   undefined1 auVar95 [16];
+    5066:   undefined1 auVar96 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5063
+reconstrucao/src/../include/ghidra_function_prototypes.h:5063:28: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5060:   undefined1 auVar90 [16];
+    5061:   undefined1 auVar91 [16];
+    5062:   undefined1 auVar92 [16];
+    5063:   undefined1 auVar93 [16];
+    5064:   undefined1 auVar94 [16];
+    5065:   undefined1 auVar95 [16];
+    5066:   undefined1 auVar96 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5182
+reconstrucao/src/../include/ghidra_function_prototypes.h:5182:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5179:   undefined1 auVar209 [16];
+    5180:   undefined1 auVar210 [16];
+    5181:   undefined1 auVar211 [16];
+    5182:   undefined1 auVar212 [16];
+    5183:   undefined1 auVar213 [16];
+    5184:   undefined1 auVar214 [16];
+    5185:   undefined1 auVar215 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5221
+reconstrucao/src/../include/ghidra_function_prototypes.h:5221:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5218:   undefined1 auVar248 [16];
+    5219:   undefined1 auVar249 [16];
+    5220:   undefined1 auVar250 [16];
+    5221:   undefined1 auVar251 [16];
+    5222:   undefined1 auVar252 [16];
+    5223:   undefined1 auVar253 [16];
+    5224:   undefined1 auVar254 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5242
+reconstrucao/src/../include/ghidra_function_prototypes.h:5242:37: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5239:   undefined1 auVar269 [16];
+    5240:   undefined1 auVar270 [16];
+    5241:   undefined1 auVar271 [16];
+    5242:   undefined1 auVar272 [16];
+    5243:   undefined1 auVar273 [16];
+    5244:   undefined1 auVar274 [16];
+    5245:   undefined1 auVar275 [16];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5311
+reconstrucao/src/../include/ghidra_function_prototypes.h:5311:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5308:   Var8 = (unkuint9)param_3[6] + (unkuint9)SUB168(auVar15 * auVar151,8) +
+    5309:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
+    5310:   auVar16._8_8_ = 0;
+    5311:   auVar16._0_8_ = uVar1;
+    5312:   auVar152._8_8_ = 0;
+    5313:   auVar152._0_8_ = param_1[6];
+    5314:   Var7 = (unkuint9)(ulonglong)Var8 + (unkuint9)SUB168(auVar16 * auVar152,0) +
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5395
+reconstrucao/src/../include/ghidra_function_prototypes.h:5395:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5392:   auVar26._8_8_ = 0;
+    5393:   auVar26._0_8_ = uVar1;
+    5394:   auVar162._8_8_ = 0;
+    5395:   auVar162._0_8_ = param_1[4];
+    5396:   Var3 = (unkuint9)(ulonglong)Var4 + (unkuint9)SUB168(auVar26 * auVar162,0) +
+    5397:          (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\0');
+    5398:   Var5 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar26 * auVar162,8) +
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5530
+reconstrucao/src/../include/ghidra_function_prototypes.h:5530:40: error: unknown type name ‘code’
+
+    5527:   auVar42._0_8_ = uVar1;
+    5528:   auVar178._8_8_ = 0;
+    5529:   auVar178._0_8_ = param_1[3];
+    5530:   Var4 = (unkuint9)(ulonglong)Var5 + (unkuint9)SUB168(auVar42 * auVar178,0) +
+    5531:          (unkuint9)((char)((unkuint9)Var3 >> 0x40) != '\0');
+    5532:   Var6 = (unkuint9)(ulonglong)Var7 + (unkuint9)SUB168(auVar42 * auVar178,8) +
+    5533:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5616
+reconstrucao/src/../include/ghidra_function_prototypes.h:5616:59: error: unknown type name ‘DWORD64’
+
+    5613:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
+    5614:   Var9 = (unkuint9)(ulonglong)Var8 + (unkuint9)SUB168(auVar52 * auVar188,8) +
+    5615:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
+    5616:   auVar53._8_8_ = 0;
+    5617:   auVar53._0_8_ = uVar1;
+    5618:   auVar189._8_8_ = 0;
+    5619:   auVar189._0_8_ = param_1[6];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:5832
+reconstrucao/src/../include/ghidra_function_prototypes.h:5832:65: error: unknown type name ‘va_list’
+
+    5829:   auVar78._0_8_ = uVar1;
+    5830:   auVar214._8_8_ = 0;
+    5831:   auVar214._0_8_ = param_1[7];
+    5832:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar78 * auVar214,0) +
+    5833:          (unkuint9)((char)((unkuint9)Var7 >> 0x40) != '\0');
+    5834:   uVar1 = param_1[0xd];
+    5835:   Var9 = (unkuint9)(ulonglong)Var2 + (unkuint9)param_3[0xd];
+
+## FUN_1405339c0 */ — reconstrucao/src/decompiled_02.c:6363
+reconstrucao/src/../include/ghidra_function_prototypes.h:6363:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    6360:   Var3 = (unkuint9)(ulonglong)Var2 + (unkuint9)param_3[10] +
+    6361:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
+    6362:   Var2 = (unkuint9)SUB168(auVar136 * auVar272,8) + (unkuint9)param_3[0xb] +
+    6363:          (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\0');
+    6364:   Var4 = (unkuint9)(ulonglong)Var2 + (unkuint9)param_3[0xb] +
+    6365:          (unkuint9)((char)((unkuint9)Var3 >> 0x40) != '\0');
+    6366:   param_3[10] = (ulonglong)Var3;
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:6638
+reconstrucao/src/../include/ghidra_function_prototypes.h:6638:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    6635:   undefined1 auVar121 [16];
+    6636:   undefined1 auVar122 [16];
+    6637:   undefined1 auVar123 [16];
+    6638:   undefined1 auVar124 [16];
+    6639:   undefined1 auVar125 [16];
+    6640:   undefined1 auVar126 [16];
+    6641:   undefined1 auVar127 [16];
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7015
+reconstrucao/src/../include/ghidra_function_prototypes.h:7015:20: error: unknown type name ‘code’
+
+    7012:     auVar47._0_8_ = uVar281;
+    7013:     auVar175._8_8_ = 0;
+    7014:     auVar175._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    7015:     Var13 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar47 * auVar175,0) +
+    7016:             (unkuint9)((char)((unkuint9)uVar2 + (unkuint9)0xffffffffffffffff >> 0x40) != '\0');
+    7017:     uVar2 = (ulonglong)Var13;
+    7018:     Var14 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar47 * auVar175,8) +
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7083
+reconstrucao/src/../include/ghidra_function_prototypes.h:7083:43: error: unknown type name ‘ulong’; did you mean ‘long’?
+
+    7080:     Var13 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar55 * auVar183,0) +
+    7081:             (unkuint9)((char)((unkuint9)uVar2 + (unkuint9)0xffffffffffffffff >> 0x40) != '\0');
+    7082:     uVar2 = (ulonglong)Var13;
+    7083:     Var14 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar55 * auVar183,8) +
+    7084:             (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
+    7085:     auVar56._8_8_ = 0;
+    7086:     auVar56._0_8_ = uVar281;
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7117
+reconstrucao/src/../include/ghidra_function_prototypes.h:7117:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    7114:             (unkuint9)((char)((unkuint9)Var16 >> 0x40) != '\0');
+    7115:     Var15 = (unkuint9)(ulonglong)Var19 + (unkuint9)SUB168(auVar59 * auVar187,8) +
+    7116:             (unkuint9)((char)((unkuint9)Var18 >> 0x40) != '\0');
+    7117:     auVar60._8_8_ = 0;
+    7118:     auVar60._0_8_ = uVar281;
+    7119:     auVar188._8_8_ = 0;
+    7120:     auVar188._0_8_ = *(ulonglong *)(param_1 + 0xb0);
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7456
+reconstrucao/src/../include/ghidra_function_prototypes.h:7456:39: error: unknown type name ‘code’
+
+    7453:             ((ulonglong)((char)((unkuint9)Var21 >> 0x40) != '\0') + SUB168(auVar93 * auVar221,8) +
+    7454:             (ulonglong)((char)((unkuint9)Var19 >> 0x40) != '\0')) +
+    7455:             (unkuint9)SUB168(auVar100 * auVar228,8) +
+    7456:             (unkuint9)((char)((unkuint9)Var20 >> 0x40) != '\0');
+    7457:     auVar101._8_8_ = 0;
+    7458:     auVar101._0_8_ = uVar2;
+    7459:     auVar229._8_8_ = 0;
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7577
+reconstrucao/src/../include/ghidra_function_prototypes.h:7577:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    7574:     auVar243._8_8_ = 0;
+    7575:     auVar243._0_8_ = *(ulonglong *)(param_1 + 0xe8);
+    7576:     Var18 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar115 * auVar243,0) +
+    7577:             (unkuint9)((char)((unkuint9)Var17 >> 0x40) != '\0');
+    7578:     Var20 = (unkuint9)(ulonglong)Var19 + (unkuint9)SUB168(auVar115 * auVar243,8) +
+    7579:             (unkuint9)((char)((unkuint9)Var15 >> 0x40) != '\0');
+    7580:     auVar116._8_8_ = 0;
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7605
+reconstrucao/src/../include/ghidra_function_prototypes.h:7605:36: error: unknown type name ‘wint_t’; did you mean ‘uint8_t’?
+
+    7602:     auVar246._0_8_ = *puVar280;
+    7603:     Var13 = (unkuint9)(ulonglong)Var20 + (unkuint9)SUB168(auVar118 * auVar246,0);
+    7604:     Var14 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar118 * auVar246,8) +
+    7605:             (unkuint9)((char)((unkuint9)Var20 >> 0x40) != '\0');
+    7606:     puVar283[0xc] = (ulonglong)Var13;
+    7607:     auVar119._8_8_ = 0;
+    7608:     auVar119._0_8_ = uVar2;
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7610
+reconstrucao/src/../include/ghidra_function_prototypes.h:7610:20: error: unknown type name ‘code’
+
+    7607:     auVar119._8_8_ = 0;
+    7608:     auVar119._0_8_ = uVar2;
+    7609:     auVar247._8_8_ = 0;
+    7610:     auVar247._0_8_ = *(ulonglong *)(param_1 + 200);
+    7611:     Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar119 * auVar247,0) +
+    7612:             (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    7613:     Var16 = (unkuint9)(ulonglong)Var16 + (unkuint9)SUB168(auVar119 * auVar247,8) +
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7620
+reconstrucao/src/../include/ghidra_function_prototypes.h:7620:66: error: unknown type name ‘code’
+
+    7617:     auVar248._8_8_ = 0;
+    7618:     auVar248._0_8_ = *(ulonglong *)(param_1 + 0xd0);
+    7619:     Var14 = (unkuint9)(ulonglong)Var16 + (unkuint9)SUB168(auVar120 * auVar248,0) +
+    7620:             (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    7621:     Var17 = (unkuint9)(ulonglong)Var17 + (unkuint9)SUB168(auVar120 * auVar248,8) +
+    7622:             (unkuint9)((char)((unkuint9)Var16 >> 0x40) != '\0');
+    7623:     auVar121._8_8_ = 0;
+
+## FUN_140534860 */ — reconstrucao/src/decompiled_02.c:7656
+reconstrucao/src/../include/ghidra_function_prototypes.h:7656:33: error: unknown type name ‘uint3’; did you mean ‘uint32’?
+
+    7653:     Var21 = (unkuint9)
+    7654:             ((ulonglong)((char)((unkuint9)Var21 >> 0x40) != '\0') + SUB168(auVar117 * auVar245,8) +
+    7655:             (ulonglong)((char)((unkuint9)Var19 >> 0x40) != '\0')) +
+    7656:             (unkuint9)SUB168(auVar124 * auVar252,8) +
+    7657:             (unkuint9)((char)((unkuint9)Var20 >> 0x40) != '\0');
+    7658:     auVar125._8_8_ = 0;
+    7659:     auVar125._0_8_ = uVar2;
+
+## FUN_140535f20 */ — reconstrucao/src/decompiled_02.c:8523
+reconstrucao/src/../include/ghidra_function_prototypes.h:8523:1: error: unknown type name ‘code’
+
+    8520:     }
+    8521:     else {
+    8522:       FUN_140526f48(param_1,uStack_70,uStack_68);
+    8523:     }
+    8524:     lStack_98 = lVar12;
+    8525:     FUN_140535ea4(param_1,uVar8,uVar6,lVar13);
+    8526:     uVar7 = FUN_140526c68(param_1);
+
+## FUN_140535f20 */ — reconstrucao/src/decompiled_02.c:8557
+reconstrucao/src/../include/ghidra_function_prototypes.h:8557:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    8554:             if (uVar1 != 0) {
+    8555:               for (; (uVar1 >> iStack_48 & 1) == 0; iStack_48 = iStack_48 + 1) {
+    8556:               }
+    8557:             }
+    8558:           }
+    8559:           FUN_140526c10(uVar6,iStack_48,uVar6);
+    8560:           FUN_140535988(param_1,uVar5,iStack_48,uVar5);
+
+## FUN_1405367a0 */ — reconstrucao/src/decompiled_02.c:8807
+reconstrucao/src/../include/ghidra_function_prototypes.h:8807:1: error: unknown type name ‘code’
+
+    8804:   return;
+    8805: }
+    8806: 
+    8807: /* Ghidra label: FUN_1405367c0 */
+    8808: /* Ghidra address: 1405367c0 */
+    8809: void FUN_1405367c0(longlong param_1,undefined8 param_2)
+    8810: 
+
+## FUN_140537374 */ — reconstrucao/src/decompiled_02.c:9391
+reconstrucao/src/../include/ghidra_function_prototypes.h:9391:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    9388: 
+    9389: /* Ghidra label: FUN_140537374 */
+    9390: /* Ghidra address: 140537374 */
+    9391: void FUN_140537374(void)
+    9392: 
+    9393: {
+    9394:   FUN_140537510();
+
+## FUN_1405385c0 */ — reconstrucao/src/decompiled_02.c:10748
+reconstrucao/src/../include/ghidra_function_prototypes.h:10748:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10745:   uVar14 = uVar4 - uVar3;
+    10746:   uVar3 = (ulonglong)(param_2[2] < param_3[2] || uVar4 < uVar3);
+    10747:   uVar4 = param_2[3] - param_3[3];
+    10748:   uVar10 = uVar4 - uVar3;
+    10749:   uVar3 = (ulonglong)(param_2[3] < param_3[3] || uVar4 < uVar3);
+    10750:   uVar4 = param_2[4] - param_3[4];
+    10751:   uVar11 = uVar4 - uVar3;
+
+## FUN_1405385c0 */ — reconstrucao/src/decompiled_02.c:10749
+reconstrucao/src/../include/ghidra_function_prototypes.h:10749:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10746:   uVar3 = (ulonglong)(param_2[2] < param_3[2] || uVar4 < uVar3);
+    10747:   uVar4 = param_2[3] - param_3[3];
+    10748:   uVar10 = uVar4 - uVar3;
+    10749:   uVar3 = (ulonglong)(param_2[3] < param_3[3] || uVar4 < uVar3);
+    10750:   uVar4 = param_2[4] - param_3[4];
+    10751:   uVar11 = uVar4 - uVar3;
+    10752:   uVar3 = (ulonglong)(param_2[4] < param_3[4] || uVar4 < uVar3);
+
+## FUN_1405385c0 */ — reconstrucao/src/decompiled_02.c:10750
+reconstrucao/src/../include/ghidra_function_prototypes.h:10750:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10747:   uVar4 = param_2[3] - param_3[3];
+    10748:   uVar10 = uVar4 - uVar3;
+    10749:   uVar3 = (ulonglong)(param_2[3] < param_3[3] || uVar4 < uVar3);
+    10750:   uVar4 = param_2[4] - param_3[4];
+    10751:   uVar11 = uVar4 - uVar3;
+    10752:   uVar3 = (ulonglong)(param_2[4] < param_3[4] || uVar4 < uVar3);
+    10753:   bVar17 = param_2[5] < param_3[5];
+
+## FUN_1405385c0 */ — reconstrucao/src/decompiled_02.c:10751
+reconstrucao/src/../include/ghidra_function_prototypes.h:10751:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10748:   uVar10 = uVar4 - uVar3;
+    10749:   uVar3 = (ulonglong)(param_2[3] < param_3[3] || uVar4 < uVar3);
+    10750:   uVar4 = param_2[4] - param_3[4];
+    10751:   uVar11 = uVar4 - uVar3;
+    10752:   uVar3 = (ulonglong)(param_2[4] < param_3[4] || uVar4 < uVar3);
+    10753:   bVar17 = param_2[5] < param_3[5];
+    10754:   uVar4 = param_2[5] - param_3[5];
+
+## FUN_140538680 */ — reconstrucao/src/decompiled_02.c:10847
+reconstrucao/src/../include/ghidra_function_prototypes.h:10847:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10844:   undefined1 auVar42 [16];
+    10845:   undefined1 auVar43 [16];
+    10846:   undefined1 auVar44 [16];
+    10847:   undefined1 auVar45 [16];
+    10848:   undefined1 auVar46 [16];
+    10849:   undefined1 auVar47 [16];
+    10850:   undefined1 auVar48 [16];
+
+## FUN_140538680 */ — reconstrucao/src/decompiled_02.c:10850
+reconstrucao/src/../include/ghidra_function_prototypes.h:10850:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10847:   undefined1 auVar45 [16];
+    10848:   undefined1 auVar46 [16];
+    10849:   undefined1 auVar47 [16];
+    10850:   undefined1 auVar48 [16];
+    10851:   undefined1 auVar49 [16];
+    10852:   undefined1 auVar50 [16];
+    10853:   undefined1 auVar51 [16];
+
+## FUN_140538680 */ — reconstrucao/src/decompiled_02.c:10937
+reconstrucao/src/../include/ghidra_function_prototypes.h:10937:26: error: unknown type name ‘PVOID’
+
+    10934:   auVar2._0_8_ = *param_3;
+    10935:   auVar34._8_8_ = 0;
+    10936:   auVar34._0_8_ = uVar120;
+    10937:   auVar66._8_8_ = 0;
+    10938:   auVar66._0_8_ = SUB168(auVar2 * auVar34,8);
+    10939:   lVar114 = SUB168(auVar2 * auVar34,0);
+    10940:   auVar3._8_8_ = 0;
+
+## FUN_140538680 */ — reconstrucao/src/decompiled_02.c:10976
+reconstrucao/src/../include/ghidra_function_prototypes.h:10976:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10973:   auVar90._8_8_ = 0;
+    10974:   auVar90._0_8_ = auVar69._0_8_;
+    10975:   auVar71._8_8_ = 0;
+    10976:   auVar71._0_8_ = auVar69._8_8_;
+    10977:   auVar7._8_8_ = 0;
+    10978:   auVar7._0_8_ = param_3[1];
+    10979:   auVar39._8_8_ = 0;
+
+## FUN_140538680 */ — reconstrucao/src/decompiled_02.c:11021
+reconstrucao/src/../include/ghidra_function_prototypes.h:11021:1: error: unknown type name ‘code’
+
+    11018:   auVar78 = auVar11 * auVar43 + auVar77 + auVar78;
+    11019:   auVar83._8_8_ = 0;
+    11020:   auVar83._0_8_ = auVar78._0_8_;
+    11021:   auVar80._8_8_ = 0;
+    11022:   auVar80._0_8_ = auVar78._8_8_;
+    11023:   auVar12._8_8_ = 0;
+    11024:   auVar12._0_8_ = param_3[2];
+
+## FUN_14053a5c0 */ — reconstrucao/src/decompiled_02.c:12411
+reconstrucao/src/../include/ghidra_function_prototypes.h:12411:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    12408: 
+    12409: {
+    12410:   undefined4 uVar1;
+    12411:   int iVar2;
+    12412:   int iVar3;
+    12413:   int iVar4;
+    12414:   uint uVar5;
+
+## FUN_14053b120 */ — reconstrucao/src/decompiled_02.c:12816
+reconstrucao/src/../include/ghidra_function_prototypes.h:12816:19: error: unknown type name ‘DWORD64’
+
+    12813: 
+    12814: {
+    12815:   FUN_14053ad30();
+    12816:   return;
+    12817: }
+    12818: 
+    12819: /* Ghidra label: FUN_14053b150 */
+
+## FUN_14053c624 */ — reconstrucao/src/decompiled_02.c:13515
+reconstrucao/src/../include/ghidra_function_prototypes.h:13515:38: error: unknown type name ‘PVOID’
+
+    13512:   uint uVar14;
+    13513:   uint uVar15;
+    13514:   uint uVar16;
+    13515:   uint uVar17;
+    13516:   uint uVar18;
+    13517:   uint uVar19;
+    13518:   uint uVar20;
+
+## FUN_14053c624 */ — reconstrucao/src/decompiled_02.c:13533
+reconstrucao/src/../include/ghidra_function_prototypes.h:13533:38: error: unknown type name ‘code’
+
+    13530:   uint uVar32;
+    13531:   uint uVar33;
+    13532:   uint uVar34;
+    13533:   uint uVar35;
+    13534:   uint uVar36;
+    13535:   uint uVar37;
+    13536:   uint uVar38;
+
+## FUN_14053c624 */ — reconstrucao/src/decompiled_02.c:13537
+reconstrucao/src/../include/ghidra_function_prototypes.h:13537:20: error: unknown type name ‘code’
+
+    13534:   uint uVar36;
+    13535:   uint uVar37;
+    13536:   uint uVar38;
+    13537:   int iVar39;
+    13538:   int iVar40;
+    13539:   int iVar41;
+    13540:   int iVar42;
+
+## FUN_14053cc30 */ — reconstrucao/src/decompiled_02.c:13916
+reconstrucao/src/../include/ghidra_function_prototypes.h:13916:20: error: unknown type name ‘code’
+
+    13913:   undefined1 auVar6 [16];
+    13914:   undefined1 auVar7 [16];
+    13915:   undefined1 auVar8 [16];
+    13916:   undefined1 auVar9 [16];
+    13917:   undefined1 auVar10 [16];
+    13918:   undefined1 auVar11 [16];
+    13919:   undefined1 auVar12 [16];
+
+## FUN_14053cc30 */ — reconstrucao/src/decompiled_02.c:13916
+reconstrucao/src/../include/ghidra_function_prototypes.h:13916:34: error: unknown type name ‘code’
+
+    13913:   undefined1 auVar6 [16];
+    13914:   undefined1 auVar7 [16];
+    13915:   undefined1 auVar8 [16];
+    13916:   undefined1 auVar9 [16];
+    13917:   undefined1 auVar10 [16];
+    13918:   undefined1 auVar11 [16];
+    13919:   undefined1 auVar12 [16];
+
+## FUN_14053d0a0 */ — reconstrucao/src/decompiled_02.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:1: error: unknown type name ‘code’
+
+    14216:     }
+    14217:   }
+    14218:   DAT_140e0f4a0 = 1;
+    14219:   DAT_140e65f18 = 0;
+    14220:   FUN_14053cedc(1);
+    14221:   return;
+    14222: }
+
+## FUN_14053d0a0 */ — reconstrucao/src/decompiled_02.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:22: error: unknown type name ‘code’
+
+    14216:     }
+    14217:   }
+    14218:   DAT_140e0f4a0 = 1;
+    14219:   DAT_140e65f18 = 0;
+    14220:   FUN_14053cedc(1);
+    14221:   return;
+    14222: }
+
+## FUN_14053d0a0 */ — reconstrucao/src/decompiled_02.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:36: error: unknown type name ‘code’
+
+    14216:     }
+    14217:   }
+    14218:   DAT_140e0f4a0 = 1;
+    14219:   DAT_140e65f18 = 0;
+    14220:   FUN_14053cedc(1);
+    14221:   return;
+    14222: }
+
+## FUN_14053d0a0 */ — reconstrucao/src/decompiled_02.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:1: error: unknown type name ‘code’
+
+    14217:   }
+    14218:   DAT_140e0f4a0 = 1;
+    14219:   DAT_140e65f18 = 0;
+    14220:   FUN_14053cedc(1);
+    14221:   return;
+    14222: }
+    14223: 
+
+## FUN_14053d0a0 */ — reconstrucao/src/decompiled_02.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:22: error: unknown type name ‘code’
+
+    14217:   }
+    14218:   DAT_140e0f4a0 = 1;
+    14219:   DAT_140e65f18 = 0;
+    14220:   FUN_14053cedc(1);
+    14221:   return;
+    14222: }
+    14223: 
+
+## FUN_14053d0a0 */ — reconstrucao/src/decompiled_02.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:36: error: unknown type name ‘code’
+
+    14217:   }
+    14218:   DAT_140e0f4a0 = 1;
+    14219:   DAT_140e65f18 = 0;
+    14220:   FUN_14053cedc(1);
+    14221:   return;
+    14222: }
+    14223: 
+
+## FUN_14053d1b8 */ — reconstrucao/src/decompiled_02.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:1: error: unknown type name ‘code’
+
+    14282:       alStackX_18[0] = 0;
+    14283:       uVar1 = FUN_1404473a0(lVar3,uVar2,alStackX_18,&LAB_140c81c60);
+    14284:       lVar3 = lVar3 + alStackX_18[0];
+    14285:       uVar2 = uVar2 - alStackX_18[0];
+    14286:       if (((int)uVar1 < 0) && ((int)uVar1 != -0x7ffffffb)) {
+    14287:         return uVar1;
+    14288:       }
+
+## FUN_14053d1b8 */ — reconstrucao/src/decompiled_02.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:22: error: unknown type name ‘code’
+
+    14282:       alStackX_18[0] = 0;
+    14283:       uVar1 = FUN_1404473a0(lVar3,uVar2,alStackX_18,&LAB_140c81c60);
+    14284:       lVar3 = lVar3 + alStackX_18[0];
+    14285:       uVar2 = uVar2 - alStackX_18[0];
+    14286:       if (((int)uVar1 < 0) && ((int)uVar1 != -0x7ffffffb)) {
+    14287:         return uVar1;
+    14288:       }
+
+## FUN_14053d1b8 */ — reconstrucao/src/decompiled_02.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:36: error: unknown type name ‘code’
+
+    14282:       alStackX_18[0] = 0;
+    14283:       uVar1 = FUN_1404473a0(lVar3,uVar2,alStackX_18,&LAB_140c81c60);
+    14284:       lVar3 = lVar3 + alStackX_18[0];
+    14285:       uVar2 = uVar2 - alStackX_18[0];
+    14286:       if (((int)uVar1 < 0) && ((int)uVar1 != -0x7ffffffb)) {
+    14287:         return uVar1;
+    14288:       }
+
+## FUN_14053d2b8 */ — reconstrucao/src/decompiled_02.c:14351
+reconstrucao/src/../include/ghidra_function_prototypes.h:14351:20: error: unknown type name ‘code’
+
+    14348:       uVar3 = param_2;
+    14349:       if (*param_6 == '\0') goto LAB_14053d37e;
+    14350:       iVar1 = (-(uint)(param_1 != (undefined1 *)0x0) & 0xbffffff8) + 0xc000000d;
+    14351:       puStack_58 = param_1;
+    14352:       auStack_50[0] = param_2;
+    14353:     }
+    14354:     else {
+
+## FUN_14053d2b8 */ — reconstrucao/src/decompiled_02.c:14351
+reconstrucao/src/../include/ghidra_function_prototypes.h:14351:34: error: unknown type name ‘code’
+
+    14348:       uVar3 = param_2;
+    14349:       if (*param_6 == '\0') goto LAB_14053d37e;
+    14350:       iVar1 = (-(uint)(param_1 != (undefined1 *)0x0) & 0xbffffff8) + 0xc000000d;
+    14351:       puStack_58 = param_1;
+    14352:       auStack_50[0] = param_2;
+    14353:     }
+    14354:     else {
+
+## FUN_14053d2b8 */ — reconstrucao/src/decompiled_02.c:14384
+reconstrucao/src/../include/ghidra_function_prototypes.h:14384:20: error: unknown type name ‘code’
+
+    14381:     FUN_14053d474(param_1,param_2,0,&puStack_58,auStack_50,param_5);
+    14382:   }
+    14383:   puVar2 = puStack_58;
+    14384:   uVar3 = auStack_50[0];
+    14385:   if (((iVar1 + 0x80000000U & 0x80000000) == 0) && (iVar1 != -0x7ffffffb)) {
+    14386:     return iVar1;
+    14387:   }
+
+## FUN_14053d2b8 */ — reconstrucao/src/decompiled_02.c:14384
+reconstrucao/src/../include/ghidra_function_prototypes.h:14384:34: error: unknown type name ‘code’
+
+    14381:     FUN_14053d474(param_1,param_2,0,&puStack_58,auStack_50,param_5);
+    14382:   }
+    14383:   puVar2 = puStack_58;
+    14384:   uVar3 = auStack_50[0];
+    14385:   if (((iVar1 + 0x80000000U & 0x80000000) == 0) && (iVar1 != -0x7ffffffb)) {
+    14386:     return iVar1;
+    14387:   }
+
+## FUN_14053d474 */ — reconstrucao/src/decompiled_02.c:14417
+reconstrucao/src/../include/ghidra_function_prototypes.h:14417:20: error: unknown type name ‘code’
+
+    14414: {
+    14415:   if ((param_2 != 0) && ((param_6 & 0x1000) != 0)) {
+    14416:     *param_4 = param_1 + param_3;
+    14417:     *param_5 = param_2 - param_3;
+    14418:     param_1[param_3] = 0;
+    14419:   }
+    14420:   if ((param_6 & 0x400) != 0) {
+
+## FUN_14053d474 */ — reconstrucao/src/decompiled_02.c:14417
+reconstrucao/src/../include/ghidra_function_prototypes.h:14417:34: error: unknown type name ‘code’
+
+    14414: {
+    14415:   if ((param_2 != 0) && ((param_6 & 0x1000) != 0)) {
+    14416:     *param_4 = param_1 + param_3;
+    14417:     *param_5 = param_2 - param_3;
+    14418:     param_1[param_3] = 0;
+    14419:   }
+    14420:   if ((param_6 & 0x400) != 0) {
+
+## FUN_14053d538 */ — reconstrucao/src/decompiled_02.c:14450
+reconstrucao/src/../include/ghidra_function_prototypes.h:14450:20: error: unknown type name ‘code’
+
+    14447: /* Ghidra address: 14053d538 */
+    14448: undefined8 FUN_14053d538(longlong param_1,ulonglong param_2,undefined8 param_3,uint param_4)
+    14449: 
+    14450: {
+    14451:   undefined8 uVar1;
+    14452:   
+    14453:   uVar1 = 0;
+
+## FUN_14053d538 */ — reconstrucao/src/decompiled_02.c:14450
+reconstrucao/src/../include/ghidra_function_prototypes.h:14450:34: error: unknown type name ‘code’
+
+    14447: /* Ghidra address: 14053d538 */
+    14448: undefined8 FUN_14053d538(longlong param_1,ulonglong param_2,undefined8 param_3,uint param_4)
+    14449: 
+    14450: {
+    14451:   undefined8 uVar1;
+    14452:   
+    14453:   uVar1 = 0;
+
+## FUN_14053d578 */ — reconstrucao/src/decompiled_02.c:14483
+reconstrucao/src/../include/ghidra_function_prototypes.h:14483:20: error: unknown type name ‘code’
+
+    14480:   uVar1 = ~-(uint)(lVar2 != 0) & 0xc000000d;
+    14481:   if (param_3 != (longlong *)0x0) {
+    14482:     if (lVar2 != 0) {
+    14483:       *param_3 = 0x100 - lVar2;
+    14484:       return uVar1;
+    14485:     }
+    14486:     *param_3 = 0;
+
+## FUN_14053d578 */ — reconstrucao/src/decompiled_02.c:14483
+reconstrucao/src/../include/ghidra_function_prototypes.h:14483:34: error: unknown type name ‘code’
+
+    14480:   uVar1 = ~-(uint)(lVar2 != 0) & 0xc000000d;
+    14481:   if (param_3 != (longlong *)0x0) {
+    14482:     if (lVar2 != 0) {
+    14483:       *param_3 = 0x100 - lVar2;
+    14484:       return uVar1;
+    14485:     }
+    14486:     *param_3 = 0;
+
+## FUN_14053d780 */ — reconstrucao/src/decompiled_02.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:1: error: unknown type name ‘code’
+
+    14581:     do {
+    14582:       puVar5 = puVar1;
+    14583:       if ((undefined8 **)puVar5 == &DAT_140fc4460) goto LAB_14053d7f3;
+    14584:       puVar1 = (undefined8 *)*puVar5;
+    14585:       puVar4 = puVar5;
+    14586:     } while (((*(uint *)(puVar5 + 0x17) & 4) == 0) || ((*(uint *)(puVar5 + 0x1c) & 1) == 0));
+    14587:     uVar3 = FUN_1402ef1c0(puVar5);
+
+## FUN_14053d780 */ — reconstrucao/src/decompiled_02.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:22: error: unknown type name ‘code’
+
+    14581:     do {
+    14582:       puVar5 = puVar1;
+    14583:       if ((undefined8 **)puVar5 == &DAT_140fc4460) goto LAB_14053d7f3;
+    14584:       puVar1 = (undefined8 *)*puVar5;
+    14585:       puVar4 = puVar5;
+    14586:     } while (((*(uint *)(puVar5 + 0x17) & 4) == 0) || ((*(uint *)(puVar5 + 0x1c) & 1) == 0));
+    14587:     uVar3 = FUN_1402ef1c0(puVar5);
+
+## FUN_14053d780 */ — reconstrucao/src/decompiled_02.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:36: error: unknown type name ‘code’
+
+    14581:     do {
+    14582:       puVar5 = puVar1;
+    14583:       if ((undefined8 **)puVar5 == &DAT_140fc4460) goto LAB_14053d7f3;
+    14584:       puVar1 = (undefined8 *)*puVar5;
+    14585:       puVar4 = puVar5;
+    14586:     } while (((*(uint *)(puVar5 + 0x17) & 4) == 0) || ((*(uint *)(puVar5 + 0x1c) & 1) == 0));
+    14587:     uVar3 = FUN_1402ef1c0(puVar5);
+
+## FUN_14053d840 */ — reconstrucao/src/decompiled_02.c:14649
+reconstrucao/src/../include/ghidra_function_prototypes.h:14649:26: error: unknown type name ‘code’
+
+    14646:         if (*(int *)(DAT_140fc4310 + 0xe4) == 5) {
+    14647:           puVar4 = (undefined4 *)FUN_140545ff0(0x1000,1);
+    14648:           if (puVar4 == (undefined4 *)0x0) {
+    14649:             iVar1 = -0x3fffff66;
+    14650:             DAT_140fc4420 = (undefined4 *)0x0;
+    14651:             goto LAB_14053d8b3;
+    14652:           }
+
+## FUN_14053d840 */ — reconstrucao/src/decompiled_02.c:14649
+reconstrucao/src/../include/ghidra_function_prototypes.h:14649:40: error: unknown type name ‘code’
+
+    14646:         if (*(int *)(DAT_140fc4310 + 0xe4) == 5) {
+    14647:           puVar4 = (undefined4 *)FUN_140545ff0(0x1000,1);
+    14648:           if (puVar4 == (undefined4 *)0x0) {
+    14649:             iVar1 = -0x3fffff66;
+    14650:             DAT_140fc4420 = (undefined4 *)0x0;
+    14651:             goto LAB_14053d8b3;
+    14652:           }
+
+## FUN_14053da88 */ — reconstrucao/src/decompiled_02.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:1: error: unknown type name ‘code’
+
+    14712:     if (uVar5 == 0) {
+    14713:       uVar5 = 1;
+    14714:     }
+    14715:     lVar1 = uVar5 * 2;
+    14716:   }
+    14717:   DAT_140fc42e8 = lVar1;
+    14718:   return;
+
+## FUN_14053da88 */ — reconstrucao/src/decompiled_02.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:22: error: unknown type name ‘code’
+
+    14712:     if (uVar5 == 0) {
+    14713:       uVar5 = 1;
+    14714:     }
+    14715:     lVar1 = uVar5 * 2;
+    14716:   }
+    14717:   DAT_140fc42e8 = lVar1;
+    14718:   return;
+
+## FUN_14053da88 */ — reconstrucao/src/decompiled_02.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:36: error: unknown type name ‘code’
+
+    14712:     if (uVar5 == 0) {
+    14713:       uVar5 = 1;
+    14714:     }
+    14715:     lVar1 = uVar5 * 2;
+    14716:   }
+    14717:   DAT_140fc42e8 = lVar1;
+    14718:   return;
+
+## FUN_14053e110 */ — reconstrucao/src/decompiled_02.c:14947
+reconstrucao/src/../include/ghidra_function_prototypes.h:14947:20: error: unknown type name ‘code’
+
+    14944:       if (lVar1 == 0) break;
+    14945:       if (*(longlong *)(lVar1 + 0xc0) != 0) {
+    14946:         FUN_140549a0c(lVar1,&uStackX_10);
+    14947:         if ((299999999 < uStackX_10) &&
+    14948:            ((2999999999 < uStackX_10 ||
+    14949:             ((*(int *)(lVar1 + 0xe4) != 8 && ((*(uint *)(lVar1 + 0xe0) & 0x80000) != 0))))))
+    14950:         goto LAB_14053e197;
+
+## FUN_14053e110 */ — reconstrucao/src/decompiled_02.c:14947
+reconstrucao/src/../include/ghidra_function_prototypes.h:14947:34: error: unknown type name ‘code’
+
+    14944:       if (lVar1 == 0) break;
+    14945:       if (*(longlong *)(lVar1 + 0xc0) != 0) {
+    14946:         FUN_140549a0c(lVar1,&uStackX_10);
+    14947:         if ((299999999 < uStackX_10) &&
+    14948:            ((2999999999 < uStackX_10 ||
+    14949:             ((*(int *)(lVar1 + 0xe4) != 8 && ((*(uint *)(lVar1 + 0xe0) & 0x80000) != 0))))))
+    14950:         goto LAB_14053e197;
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:14980
+reconstrucao/src/../include/ghidra_function_prototypes.h:14980:20: error: unknown type name ‘code’
+
+    14977:   undefined4 extraout_XMM0_Da;
+    14978:   undefined1 auStack_68 [32];
+    14979:   undefined8 uStack_48;
+    14980:   longlong lStack_38;
+    14981:   ulonglong auStack_30 [2];
+    14982:   undefined4 uStack_20;
+    14983:   ulonglong uStack_18;
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:14980
+reconstrucao/src/../include/ghidra_function_prototypes.h:14980:34: error: unknown type name ‘code’
+
+    14977:   undefined4 extraout_XMM0_Da;
+    14978:   undefined1 auStack_68 [32];
+    14979:   undefined8 uStack_48;
+    14980:   longlong lStack_38;
+    14981:   ulonglong auStack_30 [2];
+    14982:   undefined4 uStack_20;
+    14983:   ulonglong uStack_18;
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:15014
+reconstrucao/src/../include/ghidra_function_prototypes.h:15014:20: error: unknown type name ‘code’
+
+    15011:     PTR__guard_check_icall_140e00ad0 = FUN_140549960;
+    15012:     PTR_FUN_140e00af8 = FUN_140549d60;
+    15013:     PTR_ExGetFfaInterface_140e00a50 = FUN_14053e830;
+    15014:     PTR_HalAdjustResourceList_140e00c60 = FUN_1404c3180;
+    15015:     PTR_CcTestControl_140e00b88 = FUN_14048bbe0;
+    15016:     PTR_CcTestControl_140e00b80 = FUN_14053db40;
+    15017:     PTR_CcTestControl_140e00b90 = FUN_14053e800;
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:15014
+reconstrucao/src/../include/ghidra_function_prototypes.h:15014:34: error: unknown type name ‘code’
+
+    15011:     PTR__guard_check_icall_140e00ad0 = FUN_140549960;
+    15012:     PTR_FUN_140e00af8 = FUN_140549d60;
+    15013:     PTR_ExGetFfaInterface_140e00a50 = FUN_14053e830;
+    15014:     PTR_HalAdjustResourceList_140e00c60 = FUN_1404c3180;
+    15015:     PTR_CcTestControl_140e00b88 = FUN_14048bbe0;
+    15016:     PTR_CcTestControl_140e00b80 = FUN_14053db40;
+    15017:     PTR_CcTestControl_140e00b90 = FUN_14053e800;
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:15047
+reconstrucao/src/../include/ghidra_function_prototypes.h:15047:20: error: unknown type name ‘code’
+
+    15044:   }
+    15045:   if (param_1 == 0x13) {
+    15046:     uVar4 = 0;
+    15047:     if (DAT_140fc1fc8 == 0) {
+    15048:       param_2 = 0;
+    15049:       uVar4 = 0x10;
+    15050:       wrmsr(0x10,0);
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:15047
+reconstrucao/src/../include/ghidra_function_prototypes.h:15047:34: error: unknown type name ‘code’
+
+    15044:   }
+    15045:   if (param_1 == 0x13) {
+    15046:     uVar4 = 0;
+    15047:     if (DAT_140fc1fc8 == 0) {
+    15048:       param_2 = 0;
+    15049:       uVar4 = 0x10;
+    15050:       wrmsr(0x10,0);
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:1: error: unknown type name ‘code’
+
+    15077:   }
+    15078:   FUN_14053e9e8();
+    15079:   FUN_14054d40c();
+    15080:   PTR_IoDriverProxyCreateHotSwappableWorkerThread_140e00c40 = FUN_14053e890;
+    15081:   iVar2 = FUN_1403833bc();
+    15082:   if (iVar2 == 1) {
+    15083:     if ((DAT_140fc4458 == '\0') && (*(int *)(DAT_140fc4310 + 0xe4) != 5)) {
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:22: error: unknown type name ‘code’
+
+    15077:   }
+    15078:   FUN_14053e9e8();
+    15079:   FUN_14054d40c();
+    15080:   PTR_IoDriverProxyCreateHotSwappableWorkerThread_140e00c40 = FUN_14053e890;
+    15081:   iVar2 = FUN_1403833bc();
+    15082:   if (iVar2 == 1) {
+    15083:     if ((DAT_140fc4458 == '\0') && (*(int *)(DAT_140fc4310 + 0xe4) != 5)) {
+
+## FUN_14053e1d0 */ — reconstrucao/src/decompiled_02.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:36: error: unknown type name ‘code’
+
+    15077:   }
+    15078:   FUN_14053e9e8();
+    15079:   FUN_14054d40c();
+    15080:   PTR_IoDriverProxyCreateHotSwappableWorkerThread_140e00c40 = FUN_14053e890;
+    15081:   iVar2 = FUN_1403833bc();
+    15082:   if (iVar2 == 1) {
+    15083:     if ((DAT_140fc4458 == '\0') && (*(int *)(DAT_140fc4310 + 0xe4) != 5)) {
+
+## FUN_14053e598 */ — reconstrucao/src/decompiled_02.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:1: error: unknown type name ‘code’
+
+    15142:       FUN_1404fc544(param_1,0xf,iVar1,"minkernel\\hals\\lib\\timers\\common\\timer.c",0xa1d);
+    15143:     }
+    15144:     else if ((*(uint *)(param_1 + 0xe0) & 2) != 0) {
+    15145:       uVar2 = FUN_1402ef1c0(param_1);
+    15146:       uVar2 = FUN_1406c4fb0(uVar2);
+    15147:       LOCK();
+    15148:       *(undefined8 *)(param_1 + 200) = uVar2;
+
+## FUN_14053e598 */ — reconstrucao/src/decompiled_02.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:22: error: unknown type name ‘code’
+
+    15142:       FUN_1404fc544(param_1,0xf,iVar1,"minkernel\\hals\\lib\\timers\\common\\timer.c",0xa1d);
+    15143:     }
+    15144:     else if ((*(uint *)(param_1 + 0xe0) & 2) != 0) {
+    15145:       uVar2 = FUN_1402ef1c0(param_1);
+    15146:       uVar2 = FUN_1406c4fb0(uVar2);
+    15147:       LOCK();
+    15148:       *(undefined8 *)(param_1 + 200) = uVar2;
+
+## FUN_14053e598 */ — reconstrucao/src/decompiled_02.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:36: error: unknown type name ‘code’
+
+    15142:       FUN_1404fc544(param_1,0xf,iVar1,"minkernel\\hals\\lib\\timers\\common\\timer.c",0xa1d);
+    15143:     }
+    15144:     else if ((*(uint *)(param_1 + 0xe0) & 2) != 0) {
+    15145:       uVar2 = FUN_1402ef1c0(param_1);
+    15146:       uVar2 = FUN_1406c4fb0(uVar2);
+    15147:       LOCK();
+    15148:       *(undefined8 *)(param_1 + 200) = uVar2;
+
+## FUN_14053e63c */ — reconstrucao/src/decompiled_02.c:15210
+reconstrucao/src/../include/ghidra_function_prototypes.h:15210:20: error: unknown type name ‘code’
+
+    15207:     DAT_140e103b8 = 0x15;
+    15208:   }
+    15209: LAB_14053e757:
+    15210:   return uVar4 & 0xffffffff;
+    15211: }
+    15212: 
+    15213: /* Ghidra label: FUN_14053e76c */
+
+## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:216
+reconstrucao/src/../include/ghidra_function_prototypes.h:216:43: error: unknown type name ‘code’
+
+    213: 
+    214: {
+    215:   int iVar1;
+    216:   undefined *puVar2;
+    217:   longlong lVar3;
+    218:   undefined *puStackX_8;
+    219:   longlong alStack_38 [4];
+
+## FUN_14077fdf8 */ — reconstrucao/src/decompiled_03.c:541
+reconstrucao/src/../include/ghidra_function_prototypes.h:541:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    538:       uVar2 = DAT_140fc4ac0 | 1;
+    539:       FUN_14053fd44(&PTR_DAT_1400dd860,uVar2,3,1);
+    540:       FUN_14053fdd4(uVar2,3,&PTR_DAT_1400dd860);
+    541:     }
+    542:     uVar1 = FUN_14077eff0(*(undefined8 *)(param_1 + 0x30));
+    543:     *(undefined4 *)(param_1 + 0x30) = uVar1;
+    544:     ZwAlpcSendWaitReceivePort(DAT_140f06bb0,0x10000,param_1,0,0,0,0,0);
+
+## TtmNotifyDeviceInput */ — reconstrucao/src/decompiled_03.c:706
+reconstrucao/src/../include/ghidra_function_prototypes.h:706:19: error: unknown type name ‘code’
+
+    703:         }
+    704:         uVar4 = 0x324;
+    705:       }
+    706:     }
+    707:     else {
+    708:       uVar4 = 0x300;
+    709:       iVar3 = -0x3ffffbab;
+
+## FUN_1407806d4 */ — reconstrucao/src/decompiled_03.c:785
+reconstrucao/src/../include/ghidra_function_prototypes.h:785:75: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    782: }
+    783: 
+    784: /* Ghidra label: FUN_1407806d4 */
+    785: /* Ghidra address: 1407806d4 */
+    786: undefined1 FUN_1407806d4(longlong param_1,longlong param_2)
+    787: 
+    788: {
+
+## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:880
+reconstrucao/src/../include/ghidra_function_prototypes.h:880:55: error: unknown type name ‘code’
+
+    877:     if (((byte)*(uint *)(plVar6 + 0x4b) & 0x44) == 0x40) {
+    878:       *(uint *)(plVar6 + 0x4b) = *(uint *)(plVar6 + 0x4b) & 0xffffffbf;
+    879:       cVar4 = FUN_140781420(param_1,plVar6);
+    880:       if (cVar4 != '\0') {
+    881:         *(uint *)(plVar6 + 0x4b) = *(uint *)(plVar6 + 0x4b) | 0x40;
+    882:         *(uint *)(param_1 + 4) = *(uint *)(param_1 + 4) | 0x1000;
+    883:       }
+
+## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:902
+reconstrucao/src/../include/ghidra_function_prototypes.h:902:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
     899:         FUN_1406c4fb0(plVar6[3]);
     900:         FUN_140781754(&uStack_38,0);
     901:       }
+    902:       lVar2 = *plVar6;
+    903:       plVar5 = (longlong *)plVar6[1];
+    904:       if ((*(longlong **)(lVar2 + 8) != plVar6) || ((longlong *)*plVar5 != plVar6)) {
+    905:         pcVar3 = (code *)swi(0x29);
 
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:919
-reconstrucao/src/../include/ghidra_function_prototypes.h:919:55: error: unknown type name ‘code’
+## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:915
+reconstrucao/src/../include/ghidra_function_prototypes.h:915:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
+    912:       *(longlong **)(lVar2 + 8) = plVar5;
+    913:       *(int *)(param_1 + 0x74) = *(int *)(param_1 + 0x74) + -1;
+    914:       ExFreePoolWithTag(plVar6);
+    915:     }
     916:     plVar6 = (longlong *)*plVar5;
     917:   } while( true );
     918: }
-    919: 
-    920: /* Ghidra label: FUN_1407809b4 */
-    921: /* Ghidra address: 1407809b4 */
-    922: undefined4 FUN_1407809b4(undefined8 param_1,longlong param_2,undefined4 param_3,int param_4)
 
-## FUN_1407809b4 */ — reconstrucao/src/decompiled_03.c:923
-reconstrucao/src/../include/ghidra_function_prototypes.h:923:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025abd0’ [-Wimplicit-int]
+## FUN_140780a78 */ — reconstrucao/src/decompiled_03.c:960
+reconstrucao/src/../include/ghidra_function_prototypes.h:960:1: error: unknown type name ‘code’
 
-    920: /* Ghidra label: FUN_1407809b4 */
-    921: /* Ghidra address: 1407809b4 */
-    922: undefined4 FUN_1407809b4(undefined8 param_1,longlong param_2,undefined4 param_3,int param_4)
-    923: 
-    924: {
-    925:   uint uVar1;
-    926:   longlong lVar2;
-
-## FUN_1407809b4 */ — reconstrucao/src/decompiled_03.c:940
-reconstrucao/src/../include/ghidra_function_prototypes.h:940:1: error: type defaults to ‘int’ in declaration of ‘FUN_14025f5f0’ [-Wimplicit-int]
-
-    937:     uVar4 = 0x532;
-    938:   }
-    939:   else {
-    940:     if (*(int *)(param_2 + 0x1c) == *(int *)(alStack_18[0] + 0x254)) {
-    941:       FUN_140784988();
-    942:       uVar1 = *(uint *)(lVar2 + 600);
-    943:       *(uint *)(lVar2 + 600) = (param_4 << 7 ^ uVar1) & 0x80 ^ uVar1 | 0x40;
-
-## FUN_1407809b4 */ — reconstrucao/src/decompiled_03.c:943
-reconstrucao/src/../include/ghidra_function_prototypes.h:943:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    940:     if (*(int *)(param_2 + 0x1c) == *(int *)(alStack_18[0] + 0x254)) {
-    941:       FUN_140784988();
-    942:       uVar1 = *(uint *)(lVar2 + 600);
-    943:       *(uint *)(lVar2 + 600) = (param_4 << 7 ^ uVar1) & 0x80 ^ uVar1 | 0x40;
-    944:       FUN_140781cb4(param_1,1);
-    945:       return 0;
-    946:     }
-
-## FUN_1407809b4 */ — reconstrucao/src/decompiled_03.c:954
-reconstrucao/src/../include/ghidra_function_prototypes.h:954:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402623d0’ [-Wimplicit-int]
-
-    951:   return uVar5;
-    952: }
-    953: 
-    954: /* Ghidra label: FUN_140780a78 */
-    955: /* Ghidra address: 140780a78 */
-    956: void FUN_140780a78(longlong param_1,longlong param_2)
-    957: 
-
-## FUN_140780a78 */ — reconstrucao/src/decompiled_03.c:957
-reconstrucao/src/../include/ghidra_function_prototypes.h:957:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    954: /* Ghidra label: FUN_140780a78 */
-    955: /* Ghidra address: 140780a78 */
-    956: void FUN_140780a78(longlong param_1,longlong param_2)
     957: 
     958: {
     959:   uint *puVar1;
     960:   
+    961:   puVar1 = (uint *)(param_2 + 600);
+    962:   if ((*(uint *)(param_1 + 4) & 0x800) != 0) {
+    963:     *(undefined4 *)(param_2 + 0x254) = 0;
 
-## FUN_140780aa0 */ — reconstrucao/src/decompiled_03.c:997
-reconstrucao/src/../include/ghidra_function_prototypes.h:997:1: error: type defaults to ‘int’ in declaration of ‘FUN_14026df50’ [-Wimplicit-int]
+## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1077
+reconstrucao/src/../include/ghidra_function_prototypes.h:1077:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    994:     }
-    995:   }
-    996:   return;
-    997: }
-    998: 
-    999: /* Ghidra label: FUN_140780b3c */
-    1000: /* Ghidra address: 140780b3c */
-
-## FUN_140780b3c */ — reconstrucao/src/decompiled_03.c:1003
-reconstrucao/src/../include/ghidra_function_prototypes.h:1003:1: error: unknown type name ‘code’
-
-    1000: /* Ghidra address: 140780b3c */
-    1001: void FUN_140780b3c(undefined4 *param_1,longlong param_2,undefined4 param_3)
-    1002: 
-    1003: {
-    1004:   undefined8 uStack_38;
-    1005:   undefined8 uStack_30;
-    1006:   undefined8 uStack_28;
-
-## FUN_140780b3c */ — reconstrucao/src/decompiled_03.c:1022
-reconstrucao/src/../include/ghidra_function_prototypes.h:1022:1: error: type defaults to ‘int’ in declaration of ‘FUN_140275d74’ [-Wimplicit-int]
-
-    1019:   }
-    1020:   return;
-    1021: }
-    1022: 
-    1023: /* Ghidra label: FUN_140780bbc */
-    1024: /* Ghidra address: 140780bbc */
-    1025: void FUN_140780bbc(longlong param_1,longlong param_2,undefined4 param_3)
-
-## FUN_140780bbc */ — reconstrucao/src/decompiled_03.c:1024
-reconstrucao/src/../include/ghidra_function_prototypes.h:1024:1: error: type defaults to ‘int’ in declaration of ‘FUN_140276940’ [-Wimplicit-int]
-
-    1021: }
-    1022: 
-    1023: /* Ghidra label: FUN_140780bbc */
-    1024: /* Ghidra address: 140780bbc */
-    1025: void FUN_140780bbc(longlong param_1,longlong param_2,undefined4 param_3)
-    1026: 
-    1027: {
-
-## FUN_140780bbc */ — reconstrucao/src/decompiled_03.c:1051
-reconstrucao/src/../include/ghidra_function_prototypes.h:1051:1: error: type defaults to ‘int’ in declaration of ‘FUN_14027fd50’ [-Wimplicit-int]
-
-    1048:   return;
-    1049: }
-    1050: 
-    1051: /* Ghidra label: FUN_140780c6c */
-    1052: /* Ghidra address: 140780c6c */
-    1053: void FUN_140780c6c(undefined8 param_1,longlong param_2,undefined4 param_3)
-    1054: 
-
-## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1071
-reconstrucao/src/../include/ghidra_function_prototypes.h:1071:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402862d0’ [-Wimplicit-int]
-
-    1068:     uStack_18 = 0;
-    1069:     FUN_1407815d4(&uStack_38,param_1,param_2,3,*(longlong *)(param_2 + 0x40),param_3);
-    1070:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3);
-    1071:     FUN_140781754(&uStack_38,iVar1);
-    1072:     if (iVar1 < 0) {
-    1073:       FUN_1409a24bc("TtmpCallSetInputMode",0x9c7,iVar1,0xffffffff);
-    1074:     }
-
-## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1072
-reconstrucao/src/../include/ghidra_function_prototypes.h:1072:1: error: type defaults to ‘int’ in declaration of ‘FUN_140286be0’ [-Wimplicit-int]
-
-    1069:     FUN_1407815d4(&uStack_38,param_1,param_2,3,*(longlong *)(param_2 + 0x40),param_3);
-    1070:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3);
-    1071:     FUN_140781754(&uStack_38,iVar1);
-    1072:     if (iVar1 < 0) {
-    1073:       FUN_1409a24bc("TtmpCallSetInputMode",0x9c7,iVar1,0xffffffff);
     1074:     }
     1075:   }
-
-## FUN_140780d0c */ — reconstrucao/src/decompiled_03.c:1081
-reconstrucao/src/../include/ghidra_function_prototypes.h:1081:1: error: type defaults to ‘int’ in declaration of ‘FUN_140288de8’ [-Wimplicit-int]
-
+    1076:   return;
+    1077: }
     1078: 
     1079: /* Ghidra label: FUN_140780d0c */
     1080: /* Ghidra address: 140780d0c */
-    1081: void FUN_140780d0c(longlong param_1,undefined4 param_2,undefined4 param_3,undefined8 param_4)
-    1082: 
-    1083: {
-    1084:   undefined8 uStack_68;
 
-## FUN_140780d0c */ — reconstrucao/src/decompiled_03.c:1082
-reconstrucao/src/../include/ghidra_function_prototypes.h:1082:1: error: type defaults to ‘int’ in declaration of ‘FUN_140288ee0’ [-Wimplicit-int]
+## FUN_140781128 */ — reconstrucao/src/decompiled_03.c:1343
+reconstrucao/src/../include/ghidra_function_prototypes.h:1343:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1079: /* Ghidra label: FUN_140780d0c */
-    1080: /* Ghidra address: 140780d0c */
-    1081: void FUN_140780d0c(longlong param_1,undefined4 param_2,undefined4 param_3,undefined8 param_4)
-    1082: 
-    1083: {
-    1084:   undefined8 uStack_68;
-    1085:   longlong lStack_60;
+    1340:   RtlInitUnicodeString(&uStack_78,L"\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control\\Power")
+    1341:   ;
+    1342:   uStack_50 = 0;
+    1343:   puStack_48 = &uStack_78;
+    1344:   uStack_58 = 0x30;
+    1345:   uStack_40 = 0x240;
+    1346:   uStack_38 = 0;
 
-## FUN_140780d0c */ — reconstrucao/src/decompiled_03.c:1108
-reconstrucao/src/../include/ghidra_function_prototypes.h:1108:1: error: type defaults to ‘int’ in declaration of ‘FUN_14028b864’ [-Wimplicit-int]
+## FUN_140781420 */ — reconstrucao/src/decompiled_03.c:1473
+reconstrucao/src/../include/ghidra_function_prototypes.h:1473:37: error: unknown type name ‘code’
 
-    1105:     pvStack_38 = SystemReserved1[0xf];
-    1106:     puStack_18 = &uStack_68;
-    1107:     pcStack_20 = FUN_140780db0;
-    1108:     uStack_58 = param_3;
-    1109:     uStack_54 = param_2;
-    1110:     uStack_30 = param_4;
-    1111:     FUN_1409e7d20(0x57,&uStack_68,0x60,0,0);
+    1470:     }
+    1471:     else {
+    1472:       FUN_1407814f0(param_1,param_2);
+    1473:       iVar2 = *(int *)(lVar1 + 0x30);
+    1474:       if ((iVar2 == 2) && (iVar2 = 2, (*(byte *)(param_2 + 600) & 0x80) == 0)) {
+    1475:         iVar2 = 1;
+    1476:       }
 
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1119
-reconstrucao/src/../include/ghidra_function_prototypes.h:1119:1: error: type defaults to ‘int’ in declaration of ‘FUN_14028c480’ [-Wimplicit-int]
+## FUN_1407815d4 */ — reconstrucao/src/decompiled_03.c:1566
+reconstrucao/src/../include/ghidra_function_prototypes.h:1566:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1116: /* Ghidra label: FUN_140780db0 */
-    1117: /* Ghidra address: 140780db0 */
-    1118: FUN_140780db0(undefined8 param_1,undefined4 param_2,undefined8 param_3,undefined8 param_4,
-    1119:              undefined8 param_5,undefined8 param_6)
-    1120: 
-    1121: {
-    1122:   int iVar1;
+    1563:       puVar7 = puVar7 + 6;
+    1564:       lVar5 = lVar5 + -1;
+    1565:     } while (lVar5 != 0);
+    1566:     FUN_140781128();
+    1567:     DAT_140e67b51 = '\x01';
+    1568:   }
+    1569:   *param_1 = param_2;
 
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+## FUN_140781754 */ — reconstrucao/src/decompiled_03.c:1602
+reconstrucao/src/../include/ghidra_function_prototypes.h:1602:26: error: unknown type name ‘code’
 
-    1126:   
-    1127:   aiStack_18[0] = 0;
-    1128:   uStack_c = 0;
-    1129:   uStack_10 = 0x25;
-    1130:   iVar1 = FUN_1409e7d20(0x57,&uStack_10,8,aiStack_18,4);
-    1131:   if (iVar1 < 0) {
-    1132:     iVar1 = -1;
+    1599: 
+    1600: /* Ghidra label: FUN_140781754 */
+    1601: /* Ghidra address: 140781754 */
+    1602: void FUN_140781754(longlong param_1,undefined4 param_2)
+    1603: 
+    1604: {
+    1605:   undefined4 uVar1;
 
-## FUN_140781098 */ — reconstrucao/src/decompiled_03.c:1256
-reconstrucao/src/../include/ghidra_function_prototypes.h:1256:1: error: type defaults to ‘int’ in declaration of ‘FUN_140299720’ [-Wimplicit-int]
+## FUN_140781754 */ — reconstrucao/src/decompiled_03.c:1617
+reconstrucao/src/../include/ghidra_function_prototypes.h:1617:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1253: {
-    1254:   undefined8 *puVar1;
-    1255:   undefined8 *puVar2;
-    1256:   
-    1257:   puVar1 = *(undefined8 **)(param_1 + 0x60);
-    1258:   do {
-    1259:     puVar2 = (undefined8 *)0x0;
-
-## FUN_1407810d0 */ — reconstrucao/src/decompiled_03.c:1286
-reconstrucao/src/../include/ghidra_function_prototypes.h:1286:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029c6a4’ [-Wimplicit-int]
-
-    1283:   if (param_1 == 2) {
-    1284:     return 0x736f6c43;
-    1285:   }
-    1286:   if (param_1 == 3) {
-    1287:     return 0x4d706e49;
-    1288:   }
-    1289:   if (param_1 == 4) {
-
-## FUN_1407810d0 */ — reconstrucao/src/decompiled_03.c:1292
-reconstrucao/src/../include/ghidra_function_prototypes.h:1292:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029d5c4’ [-Wimplicit-int]
-
-    1289:   if (param_1 == 4) {
-    1290:     return 0x53736944;
-    1291:   }
-    1292:   if (param_1 == 5) {
-    1293:     return 0x53504253;
-    1294:   }
-    1295:   if (param_1 == 6) {
-
-## FUN_140781128 */ — reconstrucao/src/decompiled_03.c:1306
-reconstrucao/src/../include/ghidra_function_prototypes.h:1306:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029e864’ [-Wimplicit-int]
-
-    1303: ulonglong FUN_140781128(undefined8 param_1,undefined8 param_2,undefined4 *param_3)
-    1304: 
-    1305: {
-    1306:   int iVar1;
-    1307:   ulonglong uVar2;
-    1308:   undefined1 auStack_b8 [32];
-    1309:   undefined4 uStack_98;
-
-## FUN_140781128 */ — reconstrucao/src/decompiled_03.c:1308
-reconstrucao/src/../include/ghidra_function_prototypes.h:1308:1: error: type defaults to ‘int’ in declaration of ‘FUN_14029eba0’ [-Wimplicit-int]
-
-    1305: {
-    1306:   int iVar1;
-    1307:   ulonglong uVar2;
-    1308:   undefined1 auStack_b8 [32];
-    1309:   undefined4 uStack_98;
-    1310:   undefined4 *puStack_90;
-    1311:   undefined4 auStack_88 [2];
-
-## FUN_140781128 */ — reconstrucao/src/decompiled_03.c:1351
-reconstrucao/src/../include/ghidra_function_prototypes.h:1351:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402aefd0’ [-Wimplicit-int]
-
-    1348:   uVar2 = ZwOpenKey(&uStack_80,0x20019,&uStack_58);
-    1349:   if (-1 < (int)uVar2) {
-    1350:     RtlInitUnicodeString(&uStack_68,param_2);
-    1351:     puStack_90 = auStack_88;
-    1352:     uStack_98 = 0x10;
-    1353:     iVar1 = ZwQueryValueKey(uStack_80,&uStack_68,2,&uStack_28);
-    1354:     uVar2 = ZwClose(uStack_80);
-
-## FUN_140781248 */ — reconstrucao/src/decompiled_03.c:1366
-reconstrucao/src/../include/ghidra_function_prototypes.h:1366:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402b2100’ [-Wimplicit-int]
-
-    1363: 
-    1364: /* Ghidra label: FUN_140781248 */
-    1365: /* Ghidra address: 140781248 */
-    1366: undefined4 FUN_140781248(undefined8 param_1,longlong param_2,longlong param_3,int param_4)
-    1367: 
-    1368: {
-    1369:   undefined4 uVar1;
-
-## FUN_140781248 */ — reconstrucao/src/decompiled_03.c:1395
-reconstrucao/src/../include/ghidra_function_prototypes.h:1395:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402b75b0’ [-Wimplicit-int]
-
-    1392:     else {
-    1393:       FUN_140784038(*(undefined4 *)(param_3 + 0x20),*(undefined4 *)(param_3 + 0x254),
-    1394:                     *(undefined4 *)(param_3 + 0x10),*(undefined4 *)(param_3 + 0x48),lVar2);
-    1395:     }
-    1396:   }
-    1397:   else if (param_4 == 4) {
-    1398:     uStack_230 = *(undefined4 *)(param_3 + 0x20);
-
-## FUN_140781248 */ — reconstrucao/src/decompiled_03.c:1403
-reconstrucao/src/../include/ghidra_function_prototypes.h:1403:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1400:     FUN_140784178();
-    1401:   }
-    1402:   else if (param_4 == 5) {
-    1403:     uStack_230 = *(undefined4 *)(param_3 + 0x20);
-    1404:     FUN_140784268();
-    1405:   }
-    1406:   if (param_2 == 0) {
-
-## FUN_140781248 */ — reconstrucao/src/decompiled_03.c:1405
-reconstrucao/src/../include/ghidra_function_prototypes.h:1405:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402ba488’ [-Wimplicit-int]
-
-    1402:   else if (param_4 == 5) {
-    1403:     uStack_230 = *(undefined4 *)(param_3 + 0x20);
-    1404:     FUN_140784268();
-    1405:   }
-    1406:   if (param_2 == 0) {
-    1407:     FUN_1407820dc(param_1,&iStack_238);
-    1408:   }
-
-## FUN_140781248 */ — reconstrucao/src/decompiled_03.c:1412
-reconstrucao/src/../include/ghidra_function_prototypes.h:1412:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402bbe00’ [-Wimplicit-int]
-
-    1409:   else {
-    1410:     uVar1 = FUN_140788934(param_2);
-    1411:   }
-    1412:   return uVar1;
-    1413: }
-    1414: 
-    1415: /* Ghidra label: FUN_140781368 */
-
-## FUN_140781420 */ — reconstrucao/src/decompiled_03.c:1484
-reconstrucao/src/../include/ghidra_function_prototypes.h:1484:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c54a8’ [-Wimplicit-int]
-
-    1481:   }
-    1482:   return uVar3;
-    1483: }
-    1484: 
-    1485: /* Ghidra label: FUN_1407814f0 */
-    1486: /* Ghidra address: 1407814f0 */
-    1487: void FUN_1407814f0(longlong param_1,longlong param_2,int param_3)
-
-## FUN_1407814f0 */ — reconstrucao/src/decompiled_03.c:1486
-reconstrucao/src/../include/ghidra_function_prototypes.h:1486:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c5b84’ [-Wimplicit-int]
-
-    1483: }
-    1484: 
-    1485: /* Ghidra label: FUN_1407814f0 */
-    1486: /* Ghidra address: 1407814f0 */
-    1487: void FUN_1407814f0(longlong param_1,longlong param_2,int param_3)
-    1488: 
-    1489: {
-
-## FUN_1407814f0 */ — reconstrucao/src/decompiled_03.c:1490
-reconstrucao/src/../include/ghidra_function_prototypes.h:1490:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6100’ [-Wimplicit-int]
-
-    1487: void FUN_1407814f0(longlong param_1,longlong param_2,int param_3)
-    1488: 
-    1489: {
-    1490:   ulonglong uVar1;
-    1491:   code *pcVar2;
-    1492:   longlong lVar3;
-    1493:   longlong *plVar4;
-
-## FUN_1407814f0 */ — reconstrucao/src/decompiled_03.c:1491
-reconstrucao/src/../include/ghidra_function_prototypes.h:1491:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6490’ [-Wimplicit-int]
-
-    1488: 
-    1489: {
-    1490:   ulonglong uVar1;
-    1491:   code *pcVar2;
-    1492:   longlong lVar3;
-    1493:   longlong *plVar4;
-    1494:   undefined8 uVar5;
-
-## FUN_1407814f0 */ — reconstrucao/src/decompiled_03.c:1492
-reconstrucao/src/../include/ghidra_function_prototypes.h:1492:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402c6a60’ [-Wimplicit-int]
-
-    1489: {
-    1490:   ulonglong uVar1;
-    1491:   code *pcVar2;
-    1492:   longlong lVar3;
-    1493:   longlong *plVar4;
-    1494:   undefined8 uVar5;
-    1495:   longlong *plVar6;
-
-## FUN_1407814f0 */ — reconstrucao/src/decompiled_03.c:1529
-reconstrucao/src/../include/ghidra_function_prototypes.h:1529:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402cb680’ [-Wimplicit-int]
-
-    1526:         plVar4 = (longlong *)0x3;
-    1527:         pcVar2 = (code *)swi(0x29);
-    1528:         lVar3 = (*pcVar2)();
-    1529:       }
-    1530:       *plVar4 = lVar3;
-    1531:       plVar4[1] = (longlong)plVar6;
-    1532:       *(longlong **)(lVar3 + 8) = plVar4;
-
-## FUN_1407815d4 */ — reconstrucao/src/decompiled_03.c:1541
-reconstrucao/src/../include/ghidra_function_prototypes.h:1541:37: error: unknown type name ‘code’
-
-    1538: 
-    1539: /* Ghidra label: FUN_1407815d4 */
-    1540: /* Ghidra address: 1407815d4 */
-    1541: void FUN_1407815d4(undefined8 *param_1,undefined4 *param_2,longlong param_3,int param_4,
-    1542:                   undefined8 param_5,undefined4 param_6)
-    1543: 
-    1544: {
-
-## FUN_140781754 */ — reconstrucao/src/decompiled_03.c:1623
-reconstrucao/src/../include/ghidra_function_prototypes.h:1623:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d3be8’ [-Wimplicit-int]
-
+    1614:   if (lVar3 != 0) {
+    1615:     FUN_1406d1200(auStack_68,0,0x60);
+    1616:     *(undefined8 *)(param_1 + 0x18) = 0;
+    1617:     auStack_68[0] = 0x15;
+    1618:     uStack_10 = 1;
+    1619:     lStack_60 = lVar3;
     1620:     FUN_1409e7d20(0x57,auStack_68,0x60,0,0);
+
+## FUN_140781754 */ — reconstrucao/src/decompiled_03.c:1624
+reconstrucao/src/../include/ghidra_function_prototypes.h:1624:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
     1621:   }
     1622:   lVar3 = *(longlong *)(param_1 + 8);
     1623:   uVar1 = FUN_1407810d0(*(undefined4 *)(param_1 + 0x10));
     1624:   FUN_140783b44(*(undefined4 *)(lVar3 + 0x10),*(undefined4 *)(lVar3 + 0x48),
     1625:                 *(undefined8 *)(lVar3 + 0x18),uVar1,param_2,lVar2);
     1626:   FUN_14070a408();
+    1627:   return;
 
-## FUN_14078181c */ — reconstrucao/src/decompiled_03.c:1635
-reconstrucao/src/../include/ghidra_function_prototypes.h:1635:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+## FUN_140781cb4 */ — reconstrucao/src/decompiled_03.c:1840
+reconstrucao/src/../include/ghidra_function_prototypes.h:1840:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1632: void FUN_14078181c(undefined8 param_1,longlong param_2,undefined4 param_3)
-    1633: 
-    1634: {
-    1635:   undefined4 auStackX_18 [4];
-    1636:   undefined8 uStack_38;
-    1637:   undefined8 uStack_30;
-    1638:   undefined8 uStack_28;
+    1837: 
+    1838: {
+    1839:   *(uint *)(param_1 + 0xe0) = *(uint *)(param_1 + 0xe0) | param_2;
+    1840:   if ((*(uint *)(param_1 + 4) & 3) == 0) {
+    1841:     LOCK();
+    1842:     *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + 1;
+    1843:     UNLOCK();
 
-## FUN_1407818b0 */ — reconstrucao/src/decompiled_03.c:1661
-reconstrucao/src/../include/ghidra_function_prototypes.h:1661:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d8ae0’ [-Wimplicit-int]
+## FUN_140781cec */ — reconstrucao/src/decompiled_03.c:1867
+reconstrucao/src/../include/ghidra_function_prototypes.h:1867:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1658: void FUN_1407818b0(void)
-    1659: 
-    1660: {
-    1661:   FUN_140788698();
-    1662:   ExInitializeResourceLite(&DAT_140f06b20);
-    1663:   DAT_140fdab90 = 0;
-    1664:   FUN_140787570();
+    1864:   undefined4 uStack_20;
+    1865:   undefined4 uStack_1c;
+    1866:   undefined4 uStack_18;
+    1867:   undefined4 uStack_14;
+    1868:   
+    1869:   puStackX_8 = (undefined4 *)0x0;
+    1870:   iVar2 = FUN_140781b40(&puStackX_8);
 
-## FUN_1407818b0 */ — reconstrucao/src/decompiled_03.c:1664
-reconstrucao/src/../include/ghidra_function_prototypes.h:1664:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402d9970’ [-Wimplicit-int]
+## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:1920
+reconstrucao/src/../include/ghidra_function_prototypes.h:1920:73: error: unknown type name ‘va_list’
 
-    1661:   FUN_140788698();
-    1662:   ExInitializeResourceLite(&DAT_140f06b20);
-    1663:   DAT_140fdab90 = 0;
-    1664:   FUN_140787570();
-    1665:   FUN_140a7333c(&DAT_140fd98c8,FUN_140787250,0);
-    1666:   FUN_140a7333c(&DAT_140fd9890,0,0);
-    1667:   return;
-
-## FUN_140781908 */ — reconstrucao/src/decompiled_03.c:1672
-reconstrucao/src/../include/ghidra_function_prototypes.h:1672:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dba50’ [-Wimplicit-int]
-
-    1669: 
-    1670: /* Ghidra label: FUN_140781908 */
-    1671: /* Ghidra address: 140781908 */
-    1672: void FUN_140781908(undefined4 param_1,undefined4 param_2,undefined8 param_3,undefined8 param_4)
-    1673: 
-    1674: {
-    1675:   undefined1 uVar1;
-
-## FUN_140781908 */ — reconstrucao/src/decompiled_03.c:1674
-reconstrucao/src/../include/ghidra_function_prototypes.h:1674:26: error: unknown type name ‘code’
-
-    1671: /* Ghidra address: 140781908 */
-    1672: void FUN_140781908(undefined4 param_1,undefined4 param_2,undefined8 param_3,undefined8 param_4)
-    1673: 
-    1674: {
-    1675:   undefined1 uVar1;
-    1676:   undefined8 uVar2;
-    1677:   
-
-## FUN_140781908 */ — reconstrucao/src/decompiled_03.c:1676
-reconstrucao/src/../include/ghidra_function_prototypes.h:1676:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dc0f0’ [-Wimplicit-int]
-
-    1673: 
-    1674: {
-    1675:   undefined1 uVar1;
-    1676:   undefined8 uVar2;
-    1677:   
-    1678:   uVar2 = 0;
-    1679:   uVar1 = FUN_1407825c8();
-
-## FUN_140781908 */ — reconstrucao/src/decompiled_03.c:1677
-reconstrucao/src/../include/ghidra_function_prototypes.h:1677:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dc250’ [-Wimplicit-int]
-
-    1674: {
-    1675:   undefined1 uVar1;
-    1676:   undefined8 uVar2;
-    1677:   
-    1678:   uVar2 = 0;
-    1679:   uVar1 = FUN_1407825c8();
-    1680:   FUN_140785f4c(param_1,param_2,uVar1,param_4,uVar2);
-
-## FUN_140781908 */ — reconstrucao/src/decompiled_03.c:1679
-reconstrucao/src/../include/ghidra_function_prototypes.h:1679:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402dcff0’ [-Wimplicit-int]
-
-    1676:   undefined8 uVar2;
-    1677:   
-    1678:   uVar2 = 0;
-    1679:   uVar1 = FUN_1407825c8();
-    1680:   FUN_140785f4c(param_1,param_2,uVar1,param_4,uVar2);
-    1681:   return;
-    1682: }
-
-## FUN_140781940 */ — reconstrucao/src/decompiled_03.c:1692
-reconstrucao/src/../include/ghidra_function_prototypes.h:1692:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1689:   uint *puVar1;
-    1690:   ulonglong *puVar2;
-    1691:   uint uVar3;
-    1692:   ulonglong uVar4;
-    1693:   int iVar5;
-    1694:   ulonglong *puVar6;
-    1695:   undefined1 uVar7;
-
-## FUN_140781940 */ — reconstrucao/src/decompiled_03.c:1699
-reconstrucao/src/../include/ghidra_function_prototypes.h:1699:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1696:   ulonglong uVar8;
-    1697:   ulonglong uVar9;
-    1698:   undefined8 uStackX_18;
-    1699:   
-    1700:   uStackX_18 = 0;
-    1701:   iVar5 = FUN_1409a2614(&uStackX_18,param_1);
-    1702:   uVar4 = uStackX_18;
-
-## FUN_140781b40 */ — reconstrucao/src/decompiled_03.c:1776
-reconstrucao/src/../include/ghidra_function_prototypes.h:1776:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402e97a0’ [-Wimplicit-int]
-
-    1773:   if (iVar1 == -1) {
-    1774:     uVar2 = 0xc0000455;
-    1775:     FUN_1409a24bc("TtmiAcquireCurrentSession",0x6de,0xffffffff,0xc0000455);
-    1776:   }
-    1777:   else {
-    1778:     uVar2 = FUN_1409a2614(param_1,iVar1);
-    1779:   }
-
-## FUN_140781b40 */ — reconstrucao/src/decompiled_03.c:1777
-reconstrucao/src/../include/ghidra_function_prototypes.h:1777:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402e987c’ [-Wimplicit-int]
-
-    1774:     uVar2 = 0xc0000455;
-    1775:     FUN_1409a24bc("TtmiAcquireCurrentSession",0x6de,0xffffffff,0xc0000455);
-    1776:   }
-    1777:   else {
-    1778:     uVar2 = FUN_1409a2614(param_1,iVar1);
-    1779:   }
-    1780:   return uVar2;
-
-## FUN_140781ba0 */ — reconstrucao/src/decompiled_03.c:1797
-reconstrucao/src/../include/ghidra_function_prototypes.h:1797:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402ecdd0’ [-Wimplicit-int]
-
-    1794:   
-    1795:   puVar3 = *(ulonglong **)(param_1 + 0x118);
-    1796:   puVar6 = puVar3;
-    1797:   while( true ) {
-    1798:     if ((puVar3 == (ulonglong *)0x0) ||
-    1799:        (puVar3 = (ulonglong *)*puVar3, ((ulonglong)puVar3 & 1) != 0)) {
-    1800:       do {
-
-## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:1918
-reconstrucao/src/../include/ghidra_function_prototypes.h:1918:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1915:   longlong *plVar14;
-    1916:   undefined8 *puVar15;
     1917:   longlong *plVar16;
     1918:   undefined1 auStack_58 [8];
     1919:   undefined1 auStack_50 [24];
     1920:   undefined4 uStack_38;
     1921:   longlong lStack_28;
+    1922:   longlong lStack_20;
+    1923:   
 
-## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:1941
-reconstrucao/src/../include/ghidra_function_prototypes.h:1941:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030df30’ [-Wimplicit-int]
+## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:2038
+reconstrucao/src/../include/ghidra_function_prototypes.h:2038:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    1938:         iVar4 = FUN_140787534(&lStack_20,param_1,(int)plVar14[-1]);
-    1939:         if ((-1 < iVar4) && (*(int *)(lStack_20 + 0x1c) == *(int *)(param_2 + 0x1c))) {
-    1940:           lVar1 = *plVar14;
-    1941:           if ((*(longlong **)(lVar1 + 8) != plVar14) ||
-    1942:              (plVar16 = (longlong *)plVar14[1], (longlong *)*plVar16 != plVar14))
-    1943:           goto LAB_140781f97;
-    1944:           *plVar16 = lVar1;
-
-## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:1946
-reconstrucao/src/../include/ghidra_function_prototypes.h:1946:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    1943:           goto LAB_140781f97;
-    1944:           *plVar16 = lVar1;
-    1945:           *(longlong **)(lVar1 + 8) = plVar16;
-    1946:           ExFreePoolWithTag(plVar14 + -1,0x52507454);
-    1947:           if (*(int *)(param_2 + 0x20) == 0) {
-    1948:             uVar7 = 0xc000000d;
-    1949:             uVar6 = 0x3ee;
-
-## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:1949
-reconstrucao/src/../include/ghidra_function_prototypes.h:1949:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030eb04’ [-Wimplicit-int]
-
-    1946:           ExFreePoolWithTag(plVar14 + -1,0x52507454);
-    1947:           if (*(int *)(param_2 + 0x20) == 0) {
-    1948:             uVar7 = 0xc000000d;
-    1949:             uVar6 = 0x3ee;
-    1950:             goto LAB_140781fa8;
-    1951:           }
-    1952:           iVar4 = *(int *)(param_2 + 0x20) + -1;
-
-## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:1950
-reconstrucao/src/../include/ghidra_function_prototypes.h:1950:1: error: type defaults to ‘int’ in declaration of ‘FUN_14030ec30’ [-Wimplicit-int]
-
-    1947:           if (*(int *)(param_2 + 0x20) == 0) {
-    1948:             uVar7 = 0xc000000d;
-    1949:             uVar6 = 0x3ee;
-    1950:             goto LAB_140781fa8;
-    1951:           }
-    1952:           iVar4 = *(int *)(param_2 + 0x20) + -1;
-    1953:           *(int *)(param_2 + 0x20) = iVar4;
-
-## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:1992
-reconstrucao/src/../include/ghidra_function_prototypes.h:1992:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403137f0’ [-Wimplicit-int]
-
-    1989:         uVar7 = 0xc000022a;
-    1990:         uVar6 = 0x35e;
-    1991:         puVar10 = auStack_58;
-    1992:         goto LAB_140781fa8;
-    1993:       }
-    1994:     }
-    1995:     if (*(int *)(param_2 + 0x20) == -1) {
-
-## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:2002
-reconstrucao/src/../include/ghidra_function_prototypes.h:2002:73: error: unknown type name ‘va_list’
-
-    1999:     }
-    2000:     if (1 < *(int *)(param_2 + 0x28) - 2U) {
-    2001:       uVar7 = 0xc00000bb;
-    2002:       puVar10 = auStack_58;
-    2003:       goto LAB_140781fbb;
-    2004:     }
-    2005:     if (*(int *)(param_2 + 0x28) == 2) {
-
-## FUN_140781dac */ — reconstrucao/src/decompiled_03.c:2043
-reconstrucao/src/../include/ghidra_function_prototypes.h:2043:1: error: type defaults to ‘int’ in declaration of ‘FUN_14031ddfc’ [-Wimplicit-int]
-
+    2035:   FUN_1409a24bc("TtmiSetDisplayPowerRequest",uVar6,uVar11,uVar12);
+    2036:   puVar10 = puVar9;
+    2037: LAB_140781fbb:
+    2038:   uVar11 = *(undefined4 *)(param_2 + 0x1c);
+    2039:   *(undefined8 *)(puVar10 + -8) = 0x140781fcc;
     2040:   FUN_140784b88(uVar11,param_3,param_4,uVar7);
     2041:   return uVar7;
-    2042: }
-    2043: 
-    2044: /* Ghidra label: FUN_140781ff4 */
-    2045: /* Ghidra address: 140781ff4 */
-    2046: undefined8 FUN_140781ff4(longlong param_1,char param_2,undefined4 param_3)
 
-## FUN_140781ff4 */ — reconstrucao/src/decompiled_03.c:2052
-reconstrucao/src/../include/ghidra_function_prototypes.h:2052:1: error: type defaults to ‘int’ in declaration of ‘FUN_14031f4dc’ [-Wimplicit-int]
+## FUN_1407823c8 */ — reconstrucao/src/decompiled_03.c:2280
+reconstrucao/src/../include/ghidra_function_prototypes.h:2280:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
 
-    2049:   uint uVar1;
-    2050:   ulonglong uVar2;
-    2051:   undefined1 uVar3;
-    2052:   
-    2053:   uVar3 = 0;
-    2054:   if (param_2 == '\0') {
-    2055:     uVar1 = *(int *)(param_1 + 0x4c) - 1;
-
-## FUN_140781ff4 */ — reconstrucao/src/decompiled_03.c:2058
-reconstrucao/src/../include/ghidra_function_prototypes.h:2058:1: error: type defaults to ‘int’ in declaration of ‘FUN_140321058’ [-Wimplicit-int]
-
-    2055:     uVar1 = *(int *)(param_1 + 0x4c) - 1;
-    2056:     uVar2 = (ulonglong)uVar1;
-    2057:     *(uint *)(param_1 + 0x4c) = uVar1;
-    2058:     if (uVar1 != 0) goto LAB_140782032;
-    2059:     *(undefined4 *)(param_1 + 0x10) = param_3;
-    2060:     uVar1 = *(uint *)(param_1 + 4) & 0xffffffef | 0x20;
-    2061:   }
-
-## FUN_140781ff4 */ — reconstrucao/src/decompiled_03.c:2071
-reconstrucao/src/../include/ghidra_function_prototypes.h:2071:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403230bc’ [-Wimplicit-int]
-
-    2068:     uVar1 = *(uint *)(param_1 + 4) & 0xffffffdf | 0x10;
-    2069:   }
-    2070:   uVar2 = (ulonglong)uVar1;
-    2071:   uVar3 = 1;
-    2072:   *(uint *)(param_1 + 4) = uVar1;
-    2073: LAB_140782032:
-    2074:   return CONCAT71((int7)(uVar2 >> 8),uVar3);
-
-## FUN_140781ff4 */ — reconstrucao/src/decompiled_03.c:2074
-reconstrucao/src/../include/ghidra_function_prototypes.h:2074:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403237e8’ [-Wimplicit-int]
-
-    2071:   uVar3 = 1;
-    2072:   *(uint *)(param_1 + 4) = uVar1;
-    2073: LAB_140782032:
-    2074:   return CONCAT71((int7)(uVar2 >> 8),uVar3);
-    2075: }
-    2076: 
-    2077: /* Ghidra label: FUN_140782040 */
-
-## FUN_1407820dc */ — reconstrucao/src/decompiled_03.c:2125
-reconstrucao/src/../include/ghidra_function_prototypes.h:2125:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    2122:       if (puVar7 == (undefined8 *)(param_1 + 0x50)) {
-    2123:         return;
-    2124:       }
-    2125:       puVar2 = (undefined8 *)*puVar7;
-    2126:       iVar6 = FUN_140788934(puVar7,param_2);
-    2127:     } while (-1 < iVar6);
-    2128:     FUN_1409a24bc("TtmiWriteEventToAllQueues",0x892,iVar6,0xffffffff);
-
-## FUN_1407821bc */ — reconstrucao/src/decompiled_03.c:2153
-reconstrucao/src/../include/ghidra_function_prototypes.h:2153:1: error: type defaults to ‘int’ in declaration of ‘FUN_14032c468’ [-Wimplicit-int]
-
-    2150: /* Ghidra label: FUN_1407821bc */
-    2151: /* Ghidra address: 1407821bc */
-    2152: int FUN_1407821bc(longlong param_1)
-    2153: 
-    2154: {
-    2155:   uint *puVar1;
-    2156:   uint uVar2;
-
-## FUN_1407821bc */ — reconstrucao/src/decompiled_03.c:2161
-reconstrucao/src/../include/ghidra_function_prototypes.h:2161:1: error: type defaults to ‘int’ in declaration of ‘FUN_14032caf4’ [-Wimplicit-int]
-
-    2158:   uint uVar4;
-    2159:   
-    2160:   puVar1 = (uint *)(param_1 + 4);
-    2161:   uVar4 = *puVar1;
-    2162:   if ((uVar4 & 8) != 0) {
-    2163:     *puVar1 = uVar4 & 0xffffffef;
-    2164:     return 0;
-
-## FUN_1407821bc */ — reconstrucao/src/decompiled_03.c:2191
-reconstrucao/src/../include/ghidra_function_prototypes.h:2191:1: error: type defaults to ‘int’ in declaration of ‘FUN_140330130’ [-Wimplicit-int]
-
-    2188:     if (-1 < (char)uVar4) {
-    2189:       *puVar1 = uVar4 | 0x80;
-    2190:       FUN_1407829fc(param_1,1,*(undefined4 *)(param_1 + 0xc));
-    2191:     }
-    2192:   }
-    2193:   return 0x103;
-    2194: }
-
-## FUN_140782274 */ — reconstrucao/src/decompiled_03.c:2214
-reconstrucao/src/../include/ghidra_function_prototypes.h:2214:1: error: type defaults to ‘int’ in declaration of ‘FUN_1403334d0’ [-Wimplicit-int]
-
-    2211:   undefined1 auStack_30 [24];
-    2212:   
-    2213:   puVar5 = *(ulonglong **)(param_1 + 0x118);
-    2214:   puVar8 = puVar5;
-    2215:   while( true ) {
-    2216:     if ((puVar5 == (ulonglong *)0x0) ||
-    2217:        (puVar6 = (ulonglong *)*puVar5, ((ulonglong)puVar6 & 1) != 0)) {
-
-## FUN_140782274 */ — reconstrucao/src/decompiled_03.c:2241
-reconstrucao/src/../include/ghidra_function_prototypes.h:2241:1: error: type defaults to ‘int’ in declaration of ‘FUN_140335f74’ [-Wimplicit-int]
-
-    2238:       puVar5 = puVar9;
-    2239:     }
-    2240:     puVar9 = (ulonglong *)0x0;
-    2241:     puVar5 = puVar6;
-    2242: LAB_140782341:
-    2243:     puVar6 = puVar9 + 6;
-    2244:     while (puVar1 = (ulonglong *)*puVar6, puVar1 != puVar6) {
-
-## FUN_140782274 */ — reconstrucao/src/decompiled_03.c:2253
-reconstrucao/src/../include/ghidra_function_prototypes.h:2253:1: error: type defaults to ‘int’ in declaration of ‘FUN_140337658’ [-Wimplicit-int]
-
-    2250:         goto LAB_14078238c;
-    2251:       }
-    2252:       *puVar6 = uVar2;
-    2253:       *(ulonglong **)(uVar2 + 8) = puVar6;
-    2254:       ExFreePoolWithTag(puVar1 + -1,0x52507454);
-    2255:     }
-    2256:     ExFreePoolWithTag(puVar9,0x52507454);
-
-## FUN_140782274 */ — reconstrucao/src/decompiled_03.c:2257
-reconstrucao/src/../include/ghidra_function_prototypes.h:2257:1: error: type defaults to ‘int’ in declaration of ‘FUN_140337e0c’ [-Wimplicit-int]
-
-    2254:       ExFreePoolWithTag(puVar1 + -1,0x52507454);
-    2255:     }
-    2256:     ExFreePoolWithTag(puVar9,0x52507454);
-    2257:   }
-    2258: LAB_14078238c:
-    2259:   lVar3 = *(longlong *)(param_1 + 0x118);
-    2260:   if (lVar3 != 0) {
-
-## FUN_1407823c8 */ — reconstrucao/src/decompiled_03.c:2277
-reconstrucao/src/../include/ghidra_function_prototypes.h:2277:1: error: type defaults to ‘int’ in declaration of ‘FUN_14033b710’ [-Wimplicit-int]
-
-    2274:   
-    2275:   LOCK();
-    2276:   piVar1 = (int *)(param_1 + 8);
     2277:   iVar2 = *piVar1;
     2278:   *piVar1 = *piVar1 + -1;
     2279:   UNLOCK();
     2280:   if (iVar2 + -1 == 0) {
+    2281:     ExFreePoolWithTag(param_1,0x536d7454);
+    2282:   }
+    2283:   return iVar2 + -1;
 
 ## FUN_1407823c8 */ — reconstrucao/src/decompiled_03.c:2284
-reconstrucao/src/../include/ghidra_function_prototypes.h:2284:1: error: type defaults to ‘int’ in declaration of ‘FUN_14033e328’ [-Wimplicit-int]
+reconstrucao/src/../include/ghidra_function_prototypes.h:2284:36: error: unknown type name ‘code’
 
     2281:     ExFreePoolWithTag(param_1,0x536d7454);
     2282:   }
@@ -3907,498 +2873,1532 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:2284:1: error: type def
     2286: /* Ghidra label: FUN_1407823f4 */
     2287: /* Ghidra address: 1407823f4 */
 
-## FUN_1407823f4 */ — reconstrucao/src/decompiled_03.c:2318
-reconstrucao/src/../include/ghidra_function_prototypes.h:2318:1: error: type defaults to ‘int’ in declaration of ‘FUN_140344710’ [-Wimplicit-int]
-
-    2315:         bStackX_9 = (byte)(uVar5 >> 8);
-    2316:         bStackX_a = (byte)(uVar5 >> 0x10);
-    2317:         bStackX_b = (byte)(uVar5 >> 0x18);
-    2318:         bStackX_c = (byte)(uVar5 >> 0x20);
-    2319:         bStackX_d = (byte)(uVar5 >> 0x28);
-    2320:         bStackX_e = (byte)(uVar5 >> 0x30);
-    2321:         bStackX_f = (byte)(uVar5 >> 0x38);
-
-## FUN_1407823f4 */ — reconstrucao/src/decompiled_03.c:2319
-reconstrucao/src/../include/ghidra_function_prototypes.h:2319:1: error: type defaults to ‘int’ in declaration of ‘FUN_140344850’ [-Wimplicit-int]
-
-    2316:         bStackX_a = (byte)(uVar5 >> 0x10);
-    2317:         bStackX_b = (byte)(uVar5 >> 0x18);
-    2318:         bStackX_c = (byte)(uVar5 >> 0x20);
-    2319:         bStackX_d = (byte)(uVar5 >> 0x28);
-    2320:         bStackX_e = (byte)(uVar5 >> 0x30);
-    2321:         bStackX_f = (byte)(uVar5 >> 0x38);
-    2322:         puVar3 = (ulonglong *)
-
-## FUN_140782548 */ — reconstrucao/src/decompiled_03.c:2367
-reconstrucao/src/../include/ghidra_function_prototypes.h:2367:1: error: type defaults to ‘int’ in declaration of ‘FUN_14034c820’ [-Wimplicit-int]
-
-    2364:   FUN_14070a408();
-    2365:   *(void **)(param_1 + 0xe8) = SystemReserved1[0xf];
-    2366:   FUN_140785130(uVar1);
-    2367:   return uVar1;
-    2368: }
-    2369: 
-    2370: /* Ghidra label: FUN_1407825c8 */
-
-## FUN_1407825c8 */ — reconstrucao/src/decompiled_03.c:2379
-reconstrucao/src/../include/ghidra_function_prototypes.h:2379:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    2376:   undefined8 *puVar1;
-    2377:   longlong lVar2;
-    2378:   ulonglong uVar3;
-    2379:   int iVar4;
-    2380:   undefined8 *puVar5;
-    2381:   ulonglong *puVar6;
-    2382:   byte bVar7;
-
-## FUN_1407825c8 */ — reconstrucao/src/decompiled_03.c:2383
-reconstrucao/src/../include/ghidra_function_prototypes.h:2383:36: error: unknown type name ‘code’
-
-    2380:   undefined8 *puVar5;
-    2381:   ulonglong *puVar6;
-    2382:   byte bVar7;
-    2383:   undefined8 uVar8;
-    2384:   uint uVar9;
-    2385:   ulonglong uVar10;
-    2386:   ulonglong uVar11;
-
-## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:11
-reconstrucao/src/../include/ghidra_function_prototypes.h:11:1: error: type defaults to ‘int’ in declaration of ‘BgkDisplayCharacter’ [-Wimplicit-int]
-
-    8: undefined8 FUN_140ac2d20(longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
-    9: 
-    10: {
-    11:   undefined8 uStack_40;
-    12:   undefined8 uStack_38;
-    13:   undefined8 uStack_30;
-    14:   ulonglong uStack_28;
-
-## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:31
-reconstrucao/src/../include/ghidra_function_prototypes.h:31:1: error: type defaults to ‘int’ in declaration of ‘CcAsyncCopyRead’ [-Wimplicit-int]
-
-    28: /* Ghidra label: FUN_140ac2d78 */
-    29: /* Ghidra address: 140ac2d78 */
-    30: longlong FUN_140ac2d78(undefined8 param_1)
-    31: 
-    32: {
-    33:   longlong lVar1;
-    34:   longlong lVar2;
-
-## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:46
-reconstrucao/src/../include/ghidra_function_prototypes.h:46:1: error: type defaults to ‘int’ in declaration of ‘CcGetDirtyPages’ [-Wimplicit-int]
-
-    43:       FUN_14031db18(lVar3,0,0);
-    44:       return lVar3;
-    45:     }
-    46:     lVar3 = FUN_14031d8f0(0,0);
-    47:     if (lVar3 != 0) {
-    48:       FUN_14033e740(lVar1);
-    49:       *(longlong *)(lVar2 + 8) = lVar3;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:60
-reconstrucao/src/../include/ghidra_function_prototypes.h:60:1: error: type defaults to ‘int’ in declaration of ‘CcMapData’ [-Wimplicit-int]
-
-    57: /* Ghidra address: 140ac2e00 */
-    58: undefined8 FUN_140ac2e00(longlong param_1,undefined8 param_2,longlong param_3,longlong *param_4)
-    59: 
-    60: {
-    61:   undefined4 uVar1;
-    62:   undefined4 uVar2;
-    63:   uint uVar3;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:97
-reconstrucao/src/../include/ghidra_function_prototypes.h:97:1: error: type defaults to ‘int’ in declaration of ‘CmCallbackGetKeyObjectID’ [-Wimplicit-int]
-
-    94:   longlong *plStack_308;
-    95:   longlong lStack_300;
-    96:   int iStack_2f8;
-    97:   int iStack_2f4;
-    98:   uint auStack_2f0 [2];
-    99:   longlong *plStack_2e8;
-    100:   longlong lStack_2e0;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:102
-reconstrucao/src/../include/ghidra_function_prototypes.h:102:1: error: type defaults to ‘int’ in declaration of ‘CmSetCallbackObjectContext’ [-Wimplicit-int]
-
-    99:   longlong *plStack_2e8;
-    100:   longlong lStack_2e0;
-    101:   uint uStack_2d8;
-    102:   int iStack_2d4;
-    103:   int iStack_2d0;
-    104:   uint uStack_2cc;
-    105:   uint uStack_2c8;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:133
-reconstrucao/src/../include/ghidra_function_prototypes.h:133:1: error: type defaults to ‘int’ in declaration of ‘DifRegisterClassDriverPlugin’ [-Wimplicit-int]
-
-    130:   undefined8 uStack_200;
-    131:   undefined8 uStack_1f8;
-    132:   undefined1 auStack_1e8 [8];
-    133:   undefined4 uStack_1e0;
-    134:   wchar_t *pwStack_1d8;
-    135:   undefined8 *puStack_1d0;
-    136:   undefined4 uStack_1c8;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:150
-reconstrucao/src/../include/ghidra_function_prototypes.h:150:1: error: type defaults to ‘int’ in declaration of ‘EtwSendTraceBuffer’ [-Wimplicit-int]
-
-    147:   uint *puStack_128;
-    148:   undefined4 uStack_120;
-    149:   undefined4 uStack_100;
-    150:   wchar_t *pwStack_f8;
-    151:   undefined8 *puStack_f0;
-    152:   undefined4 uStack_e8;
-    153:   undefined4 uStack_c8;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:155
-reconstrucao/src/../include/ghidra_function_prototypes.h:155:1: error: type defaults to ‘int’ in declaration of ‘EtwWriteEndScenario’ [-Wimplicit-int]
-
-    152:   undefined4 uStack_e8;
-    153:   undefined4 uStack_c8;
-    154:   wchar_t *pwStack_c0;
-    155:   undefined8 *puStack_b8;
-    156:   undefined4 uStack_b0;
-    157:   ulonglong uStack_58;
-    158:   
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:170
-reconstrucao/src/../include/ghidra_function_prototypes.h:170:1: error: type defaults to ‘int’ in declaration of ‘ExAcquireFastResourceSharedStarveExclusive’ [-Wimplicit-int]
-
-    167:   iStack_2f8 = 0;
-    168:   pwVar7 = (wchar_t *)0x0;
-    169:   uStack_2d8 = 0;
-    170:   lVar11 = 0;
-    171:   lStack_300 = 0;
-    172:   lVar8 = 0;
-    173:   lStack_278 = 0;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:226
-reconstrucao/src/../include/ghidra_function_prototypes.h:226:43: error: unknown type name ‘code’
-
-    223:   puStack_128 = auStack_2f0;
-    224:   pwStack_f8 = L"Description";
-    225:   puStack_f0 = &uStack_260;
-    226:   pwStack_c0 = L"LocationInfo";
-    227:   puStack_b8 = &uStack_250;
-    228:   uStack_138 = 0x120;
-    229:   uStack_100 = 0x120;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:265
-reconstrucao/src/../include/ghidra_function_prototypes.h:265:1: error: type defaults to ‘int’ in declaration of ‘ExInterlockedExtendZone’ [-Wimplicit-int]
-
-    262:     goto LAB_140ac33b1;
-    263:   }
-    264:   lVar11 = *param_4;
-    265:   lStack_210 = lStack_2b0;
-    266:   plStack_208 = plStack_2a0;
-    267:   uStack_220 = 2;
-    268:   uStack_21c = 3;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:334
-reconstrucao/src/../include/ghidra_function_prototypes.h:334:1: error: type defaults to ‘int’ in declaration of ‘ExSecurePoolValidate’ [-Wimplicit-int]
-
-    331:                       lVar8 = lVar9 + 1;
-    332:                     } while (_Str1[lVar8] != L'\0');
-    333:                   }
-    334:                   puVar14 = puStack_288;
-    335:                 }
-    336:                 if (*plVar10 == 0) {
-    337:                   if (*pwVar7 != L'\0') break;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:393
-reconstrucao/src/../include/ghidra_function_prototypes.h:393:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402009ec’ [-Wimplicit-int]
-
-    390:             if (iVar5 < 0) goto LAB_140ac37bb;
-    391:             if (auStack_318[0] == 0) goto LAB_140ac3800;
-    392:             lStack_2c0 = ExAllocatePool2(0x100,uVar18 * 0x30);
-    393:             if (lStack_2c0 == 0) {
-    394:               iVar5 = -0x3fffff66;
-    395:               goto LAB_140ac37bb;
-    396:             }
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:430
-reconstrucao/src/../include/ghidra_function_prototypes.h:430:1: error: type defaults to ‘int’ in declaration of ‘FUN_140203980’ [-Wimplicit-int]
-
-    427:           lVar12 = lVar13 + 1;
-    428:         } while (*(short *)(lStack_280 + lVar12 * 2) != 0);
-    429:         do {
-    430:           lVar20 = lVar20 + 1;
-    431:         } while (*(short *)(lStack_310 + lVar20 * 2) != 0);
-    432:         uStack_230._0_4_ = CONCAT22(((short)lVar13 + 3 + (short)lVar20) * 2,(undefined2)uStack_230);
-    433:         lStack_228 = ExAllocatePool2(0x100,(lVar12 + lVar20) * 2 + 4U & 0xffff,0x67727453);
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:437
-reconstrucao/src/../include/ghidra_function_prototypes.h:437:1: error: type defaults to ‘int’ in declaration of ‘FUN_140204158’ [-Wimplicit-int]
-
-    434:         if (lStack_228 == 0) {
-    435:           iVar5 = -0x3fffff66;
-    436:         }
-    437:         else {
-    438:           iVar5 = FUN_140489994(&uStack_230,L"%ws&%ws",lVar9,lVar8);
-    439:           if (-1 < iVar5) goto LAB_140ac35e6;
-    440:         }
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:451
-reconstrucao/src/../include/ghidra_function_prototypes.h:451:1: error: type defaults to ‘int’ in declaration of ‘FUN_140204eb0’ [-Wimplicit-int]
-
-    448:     ExFreePool();
-    449:   }
-    450:   if (lVar8 != 0) {
-    451:     ExFreePoolWithTag(lVar8,0);
-    452:   }
-    453:   if (lStack_2b0 != 0) {
-    454:     ExFreePool();
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:457
-reconstrucao/src/../include/ghidra_function_prototypes.h:457:1: error: type defaults to ‘int’ in declaration of ‘FUN_140205970’ [-Wimplicit-int]
-
-    454:     ExFreePool();
-    455:     uStack_2b8 = 0;
-    456:     lStack_2b0 = 0;
-    457:   }
-    458:   if (plStack_2a0 != (longlong *)0x0) {
-    459:     ExFreePool();
-    460:     uStack_2a8 = 0;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:485
-reconstrucao/src/../include/ghidra_function_prototypes.h:485:1: error: type defaults to ‘int’ in declaration of ‘FUN_140209980’ [-Wimplicit-int]
-
-    482:     ExFreePoolWithTag(pwVar7,0);
-    483:   }
-    484:   if (lStack_2e0 != 0) {
-    485:     ZwClose();
-    486:   }
-    487:   if ((iVar5 < 0) && ((DAT_140ef02c4 & 4) != 0)) {
-    488:     pwStack_360 = (wchar_t *)CONCAT44(pwStack_360._4_4_,iVar5);
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:528
-reconstrucao/src/../include/ghidra_function_prototypes.h:528:1: error: type defaults to ‘int’ in declaration of ‘FUN_140212424’ [-Wimplicit-int]
-
-    525:         ExFreePoolWithTag(plVar15[1],0);
-    526:       }
-    527:       *(uint *)((longlong)plVar15 + 4) = auStack_318[0];
-    528:       lVar11 = ExAllocatePool2(0x100,auStack_318[0]);
-    529:       plVar15[1] = lVar11;
-    530:       if (lVar11 == 0) {
-    531:         iVar5 = -0x3fffff66;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:548
-reconstrucao/src/../include/ghidra_function_prototypes.h:548:1: error: type defaults to ‘int’ in declaration of ‘FUN_140214e80’ [-Wimplicit-int]
-
-    545:   lVar11 = lStack_2c0;
-    546:   uStack_328 = uVar3;
-    547:   pwStack_360 = (wchar_t *)(-(ulonglong)(lStack_290 != 0) & (ulonglong)&uStack_200);
-    548:   lStack_330 = lStack_2c0;
-    549:   uStack_338 = uStack_2cc;
-    550:   lStack_340 = lStack_278;
-    551:   lStack_348 = lStack_248;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:549
-reconstrucao/src/../include/ghidra_function_prototypes.h:549:1: error: type defaults to ‘int’ in declaration of ‘FUN_140214f74’ [-Wimplicit-int]
-
-    546:   uStack_328 = uVar3;
-    547:   pwStack_360 = (wchar_t *)(-(ulonglong)(lStack_290 != 0) & (ulonglong)&uStack_200);
-    548:   lStack_330 = lStack_2c0;
-    549:   uStack_338 = uStack_2cc;
-    550:   lStack_340 = lStack_278;
-    551:   lStack_348 = lStack_248;
-    552:   puStack_350 = puStack_258;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:562
-reconstrucao/src/../include/ghidra_function_prototypes.h:562:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    559:       plVar15 = (longlong *)(lVar11 + 0x28);
-    560:       do {
-    561:         if (*plVar15 != 0) {
-    562:           ExFreePoolWithTag(*plVar15,0);
-    563:         }
-    564:         plVar15 = plVar15 + 6;
-    565:         uVar18 = uVar18 - 1;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:566
-reconstrucao/src/../include/ghidra_function_prototypes.h:566:1: error: type defaults to ‘int’ in declaration of ‘FUN_140218c60’ [-Wimplicit-int]
-
-    563:         }
-    564:         plVar15 = plVar15 + 6;
-    565:         uVar18 = uVar18 - 1;
-    566:       } while (uVar18 != 0);
-    567:     }
-    568:     ExFreePoolWithTag(lVar11,0);
-    569:   }
-
-## FUN_140ac38b0 */ — reconstrucao/src/decompiled_04.c:624
-reconstrucao/src/../include/ghidra_function_prototypes.h:624:1: error: type defaults to ‘int’ in declaration of ‘FUN_140222e6c’ [-Wimplicit-int]
-
-    621:         } while (*(char *)(*(longlong *)(param_1 + 2) + lVar3) != '\0');
-    622:         lVar4 = lVar4 + 0x1a;
-    623:       }
-    624:       *param_2 = lVar4;
-    625:       return uVar2;
-    626:     }
-    627:     if (iVar1 != 5) {
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:640
-reconstrucao/src/../include/ghidra_function_prototypes.h:640:1: error: type defaults to ‘int’ in declaration of ‘FUN_140224800’ [-Wimplicit-int]
-
-    637: void FUN_140ac393c(void)
-    638: 
-    639: {
-    640:   uint uVar1;
-    641:   int iVar2;
-    642:   uint *puVar3;
-    643:   char cVar4;
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:664
-reconstrucao/src/../include/ghidra_function_prototypes.h:664:1: error: type defaults to ‘int’ in declaration of ‘FUN_140228880’ [-Wimplicit-int]
-
-    661:         auStackX_8[0] = *DAT_140fc7ad0;
-    662:       }
-    663:       uVar1 = auStackX_8[0] * 2 + 1;
-    664:       plVar5 = (longlong *)ExAllocatePool2(0x100,uVar1 * 0x10 + auStackX_8[0] * 0xc,0x654d5050);
-    665:       if (plVar5 != (longlong *)0x0) {
-    666:         *(undefined4 *)((longlong)plVar5 + 0xc) = 0;
-    667:         uVar10 = 0;
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:669
-reconstrucao/src/../include/ghidra_function_prototypes.h:669:1: error: type defaults to ‘int’ in declaration of ‘FUN_14022a7e0’ [-Wimplicit-int]
-
-    666:         *(undefined4 *)((longlong)plVar5 + 0xc) = 0;
-    667:         uVar10 = 0;
-    668:         puVar8 = (uint *)(plVar5 + (ulonglong)uVar1 * 2);
-    669:         *(undefined4 *)(plVar5 + 1) = 4;
-    670:         *plVar5 = (longlong)auStackX_8;
-    671:         if (auStackX_8[0] != 0) {
-    672:           do {
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:688
-reconstrucao/src/../include/ghidra_function_prototypes.h:688:1: error: type defaults to ‘int’ in declaration of ‘FUN_140230420’ [-Wimplicit-int]
-
-    685:               pwVar11 = L"<unspecified>";
-    686:             }
-    687:             else {
-    688:               uVar9 = (uint)*(ushort *)(uVar10 * 0x1c0 + 0x18a + (longlong)puVar3);
-    689:             }
-    690:             plVar5[uVar7 * 2] = (longlong)pwVar11;
-    691:             puVar8 = puVar8 + 3;
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:720
-reconstrucao/src/../include/ghidra_function_prototypes.h:720:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023a5e0’ [-Wimplicit-int]
-
-    717:   ushort *puVar7;
-    718:   short *psVar8;
-    719:   undefined4 uVar9;
-    720:   ushort *puVar10;
-    721:   undefined4 uVar11;
-    722:   undefined4 uStack_48;
-    723:   undefined4 uStack_44;
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:727
-reconstrucao/src/../include/ghidra_function_prototypes.h:727:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023cca0’ [-Wimplicit-int]
-
-    724:   undefined8 uStack_40;
-    725:   undefined8 uStack_38;
-    726:   undefined8 uStack_30;
-    727:   undefined8 uStack_28;
-    728:   undefined8 uStack_20;
-    729:   
-    730:   puVar7 = (ushort *)(param_1 + 0x28);
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:735
-reconstrucao/src/../include/ghidra_function_prototypes.h:735:19: error: unknown type name ‘code’
-
-    732:   iVar6 = *puVar7 + 4 + (uint)*puVar10;
-    733:   uStack_44 = 0;
-    734:   uStack_38 = 0;
-    735:   uStack_30 = 0;
-    736:   uStack_28 = 0;
-    737:   uStack_20 = 0;
-    738:   if (*(longlong *)(param_1 + 0x60) != 0) {
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:736
-reconstrucao/src/../include/ghidra_function_prototypes.h:736:1: error: type defaults to ‘int’ in declaration of ‘FUN_14023f1f0’ [-Wimplicit-int]
-
-    733:   uStack_44 = 0;
-    734:   uStack_38 = 0;
-    735:   uStack_30 = 0;
-    736:   uStack_28 = 0;
-    737:   uStack_20 = 0;
-    738:   if (*(longlong *)(param_1 + 0x60) != 0) {
-    739:     iVar6 = iVar6 + *(ushort *)(param_1 + 0x58) + 2;
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:739
-reconstrucao/src/../include/ghidra_function_prototypes.h:739:1: error: type defaults to ‘int’ in declaration of ‘FUN_1402401d0’ [-Wimplicit-int]
-
-    736:   uStack_28 = 0;
-    737:   uStack_20 = 0;
-    738:   if (*(longlong *)(param_1 + 0x60) != 0) {
-    739:     iVar6 = iVar6 + *(ushort *)(param_1 + 0x58) + 2;
-    740:   }
-    741:   cVar3 = FUN_140965660(param_1 + 0xbc);
-    742:   iVar2 = iVar6 + 0x48;
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:754
-reconstrucao/src/../include/ghidra_function_prototypes.h:754:1: error: type defaults to ‘int’ in declaration of ‘FUN_140242870’ [-Wimplicit-int]
-
-    751:   uStack_40 = ExAllocatePool2(0x100,sVar5,0x67727453);
-    752:   if (uStack_40 == 0) {
-    753:     iVar6 = -0x3fffff66;
-    754:     lVar4 = uStack_40;
-    755:     goto LAB_140ac3cc3;
-    756:   }
-    757:   iVar6 = FUN_1404a86a0(&uStack_48,&uStack_38,0x800,L"%wZ:%wZ",puVar7,puVar10);
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:777
-reconstrucao/src/../include/ghidra_function_prototypes.h:777:1: error: type defaults to ‘int’ in declaration of ‘FUN_140246190’ [-Wimplicit-int]
-
-    774:       uStack_48 = CONCAT22(uStack_48._2_2_,sVar5);
-    775:     }
-    776:     uVar11 = (undefined4)((ulonglong)puVar10 >> 0x20);
-    777:     cVar3 = FUN_140965660(param_1 + 0xbc);
-    778:     if (cVar3 == '\0') {
-    779:       if (*(longlong *)(param_1 + 0x60) == 0) {
-    780:         iVar6 = FUN_1405a6570(&uStack_38,&LAB_140b08590,&uStack_38,0x800);
-
-## PsGetSiloContainerId */ — reconstrucao/src/decompiled_04.c:812
-reconstrucao/src/../include/ghidra_function_prototypes.h:812:1: error: type defaults to ‘int’ in declaration of ‘FUN_140249d74’ [-Wimplicit-int]
-
-    809: 
-    810: {
-    811:                     /* 0xac3d00  2024  PsGetSiloContainerId */
-    812:   return -(ulonglong)(param_1 != 0) & param_1 + 0x5c0U;
-    813: }
-    814: 
-    815: /* Ghidra label: FUN_140ac3d18 */
-
-## FUN_140ac3d18 */ — reconstrucao/src/decompiled_04.c:819
-reconstrucao/src/../include/ghidra_function_prototypes.h:819:75: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    816: /* Ghidra address: 140ac3d18 */
-    817: void FUN_140ac3d18(undefined4 *param_1)
-    818: 
-    819: {
-    820:   *param_1 = DAT_140f09690;
-    821:   return;
-    822: }
-
-## FUN_140ac3d18 */ — reconstrucao/src/decompiled_04.c:822
-reconstrucao/src/../include/ghidra_function_prototypes.h:822:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024b21c’ [-Wimplicit-int]
-
-    819: {
-    820:   *param_1 = DAT_140f09690;
-    821:   return;
-    822: }
-    823: 
-    824: /* Ghidra label: FUN_140ac3d30 */
-    825: /* Ghidra address: 140ac3d30 */
-
-## FUN_140ac3d30 */ — reconstrucao/src/decompiled_04.c:826
-reconstrucao/src/../include/ghidra_function_prototypes.h:826:1: error: type defaults to ‘int’ in declaration of ‘FUN_14024b730’ [-Wimplicit-int]
-
-    823: 
-    824: /* Ghidra label: FUN_140ac3d30 */
-    825: /* Ghidra address: 140ac3d30 */
-    826: undefined8 FUN_140ac3d30(undefined *param_1,undefined8 param_2,undefined8 *param_3)
-    827: 
-    828: {
-    829:   longlong *plVar1;
+## FUN_1407831a0 */ — reconstrucao/src/decompiled_03.c:2977
+reconstrucao/src/../include/ghidra_function_prototypes.h:2977:43: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    2974:   lStackX_8 = 0;
+    2975:   iVar1 = FUN_140783074(*(undefined8 *)(param_1 + 8),1,1,&lStackX_10,&lStackX_8);
+    2976:   if (iVar1 < 0) {
+    2977:     FUN_1409a24bc("TtmpDispatchAssignDevice",0x30b,iVar1,iVar1);
+    2978:   }
+    2979:   else {
+    2980:     iVar1 = FUN_14078056c(lStackX_10,lStackX_8,*(undefined4 *)(param_1 + 0x10));
+
+## FUN_140783684 */ — reconstrucao/src/decompiled_03.c:3209
+reconstrucao/src/../include/ghidra_function_prototypes.h:3209:19: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    3206:          (uint)(*(char *)(param_1 + 0x10) != '\0') << 0xb | *(uint *)(lStackX_8 + 4) & 0xfffff7ff;
+    3207:     FUN_140785acc();
+    3208:     iVar2 = 0;
+    3209:   }
+    3210:   if (lVar1 != 0) {
+    3211:     ExReleaseResourceLite(&DAT_140f06b20);
+    3212:     KeLeaveCriticalRegion();
+
+## FUN_140784038 */ — reconstrucao/src/decompiled_03.c:3674
+reconstrucao/src/../include/ghidra_function_prototypes.h:3674:72: error: unknown type name ‘code’
+
+    3671: /* Ghidra label: FUN_140784038 */
+    3672: /* Ghidra address: 140784038 */
+    3673: void FUN_140784038(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+    3674:                   undefined8 param_5)
+    3675: 
+    3676: {
+    3677:   char cVar1;
+
+## FUN_140784830 */ — reconstrucao/src/decompiled_03.c:4161
+reconstrucao/src/../include/ghidra_function_prototypes.h:4161:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4158:       uStack_30 = 8;
+    4159:       uStack_20 = 4;
+    4160:       FUN_1403a0f70(&DAT_140fd98c8,&DAT_1400522ab,0,0);
+    4161:     }
+    4162:   }
+    4163:   return;
+    4164: }
+
+## FUN_140784988 */ — reconstrucao/src/decompiled_03.c:4198
+reconstrucao/src/../include/ghidra_function_prototypes.h:4198:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4195:   if (5 < DAT_140fd98c8) {
+    4196:     cVar1 = FUN_14042b0b0(&DAT_140fd98c8,1);
+    4197:     if (cVar1 != '\0') {
+    4198:       uStack_88 = PsGetProcessSessionIdEx(*(undefined8 *)((longlong)SystemReserved1[0xf] + 0xb8));
+    4199:       uStack_4c = 0;
+    4200:       uStack_3c = 0;
+    4201:       uStack_2c = 0;
+
+## FUN_140784b88 */ — reconstrucao/src/decompiled_03.c:4296
+reconstrucao/src/../include/ghidra_function_prototypes.h:4296:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4293:   undefined4 uStack_3c;
+    4294:   undefined4 *puStack_38;
+    4295:   undefined4 uStack_30;
+    4296:   undefined4 uStack_2c;
+    4297:   undefined4 *puStack_28;
+    4298:   undefined4 uStack_20;
+    4299:   undefined4 uStack_1c;
+
+## FUN_140785130 */ — reconstrucao/src/decompiled_03.c:4566
+reconstrucao/src/../include/ghidra_function_prototypes.h:4566:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4563:   char cVar1;
+    4564:   undefined1 auStack_98 [32];
+    4565:   undefined4 uStack_78;
+    4566:   undefined1 *puStack_70;
+    4567:   undefined4 uStack_68;
+    4568:   undefined4 auStack_64 [3];
+    4569:   undefined1 auStack_58 [32];
+
+## FUN_140785130 */ — reconstrucao/src/decompiled_03.c:4568
+reconstrucao/src/../include/ghidra_function_prototypes.h:4568:38: error: unknown type name ‘code’
+
+    4565:   undefined4 uStack_78;
+    4566:   undefined1 *puStack_70;
+    4567:   undefined4 uStack_68;
+    4568:   undefined4 auStack_64 [3];
+    4569:   undefined1 auStack_58 [32];
+    4570:   undefined4 *puStack_38;
+    4571:   undefined4 uStack_30;
+
+## FUN_140785320 */ — reconstrucao/src/decompiled_03.c:4709
+reconstrucao/src/../include/ghidra_function_prototypes.h:4709:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4706:       uStack_2c = 0;
+    4707:       uStack_1c = 0;
+    4708:       puStack_78 = &uStack_b4;
+    4709:       puStack_68 = auStack_b8;
+    4710:       puStack_58 = &uStack_a0;
+    4711:       puStack_48 = &uStack_b0;
+    4712:       puStack_38 = &uStack_ac;
+
+## FUN_140785320 */ — reconstrucao/src/decompiled_03.c:4711
+reconstrucao/src/../include/ghidra_function_prototypes.h:4711:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4708:       puStack_78 = &uStack_b4;
+    4709:       puStack_68 = auStack_b8;
+    4710:       puStack_58 = &uStack_a0;
+    4711:       puStack_48 = &uStack_b0;
+    4712:       puStack_38 = &uStack_ac;
+    4713:       auStack_a8[0] = param_5;
+    4714:       puStack_28 = auStack_a8;
+
+## FUN_140785990 */ — reconstrucao/src/decompiled_03.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:20: error: unknown type name ‘PSLIST_HEADER’
+
+    5017:   undefined1 auStack_40 [32];
+    5018:   undefined4 *puStack_20;
+    5019:   undefined4 uStack_18;
+    5020:   undefined4 uStack_14;
+    5021:   ulonglong uStack_10;
+    5022:   
+    5023:   uStack_10 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+
+## FUN_140785990 */ — reconstrucao/src/decompiled_03.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:42: error: unknown type name ‘code’
+
+    5017:   undefined1 auStack_40 [32];
+    5018:   undefined4 *puStack_20;
+    5019:   undefined4 uStack_18;
+    5020:   undefined4 uStack_14;
+    5021:   ulonglong uStack_10;
+    5022:   
+    5023:   uStack_10 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+
+## FUN_140785990 */ — reconstrucao/src/decompiled_03.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:56: error: unknown type name ‘code’
+
+    5017:   undefined1 auStack_40 [32];
+    5018:   undefined4 *puStack_20;
+    5019:   undefined4 uStack_18;
+    5020:   undefined4 uStack_14;
+    5021:   ulonglong uStack_10;
+    5022:   
+    5023:   uStack_10 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+
+## FUN_140785990 */ — reconstrucao/src/decompiled_03.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:20: error: unknown type name ‘PSLIST_HEADER’
+
+    5018:   undefined4 *puStack_20;
+    5019:   undefined4 uStack_18;
+    5020:   undefined4 uStack_14;
+    5021:   ulonglong uStack_10;
+    5022:   
+    5023:   uStack_10 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+    5024:   if (5 < DAT_140fd98c8) {
+
+## FUN_140785990 */ — reconstrucao/src/decompiled_03.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:42: error: unknown type name ‘code’
+
+    5018:   undefined4 *puStack_20;
+    5019:   undefined4 uStack_18;
+    5020:   undefined4 uStack_14;
+    5021:   ulonglong uStack_10;
+    5022:   
+    5023:   uStack_10 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+    5024:   if (5 < DAT_140fd98c8) {
+
+## FUN_140785990 */ — reconstrucao/src/decompiled_03.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:56: error: unknown type name ‘code’
+
+    5018:   undefined4 *puStack_20;
+    5019:   undefined4 uStack_18;
+    5020:   undefined4 uStack_14;
+    5021:   ulonglong uStack_10;
+    5022:   
+    5023:   uStack_10 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+    5024:   if (5 < DAT_140fd98c8) {
+
+## FUN_140785a24 */ — reconstrucao/src/decompiled_03.c:5063
+reconstrucao/src/../include/ghidra_function_prototypes.h:5063:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5060:            PsGetProcessSessionIdEx(*(undefined8 *)((longlong)SystemReserved1[0xf] + 0xb8));
+    5061:       uStack_14 = 0;
+    5062:       puStack_20 = auStack_48;
+    5063:       uStack_18 = 4;
+    5064:       puStack_50 = auStack_40;
+    5065:       uStack_58 = 3;
+    5066:       FUN_1403a0f70(&DAT_140fd98c8,&DAT_140052a9d,0,0);
+
+## FUN_140785a24 */ — reconstrucao/src/decompiled_03.c:5063
+reconstrucao/src/../include/ghidra_function_prototypes.h:5063:28: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5060:            PsGetProcessSessionIdEx(*(undefined8 *)((longlong)SystemReserved1[0xf] + 0xb8));
+    5061:       uStack_14 = 0;
+    5062:       puStack_20 = auStack_48;
+    5063:       uStack_18 = 4;
+    5064:       puStack_50 = auStack_40;
+    5065:       uStack_58 = 3;
+    5066:       FUN_1403a0f70(&DAT_140fd98c8,&DAT_140052a9d,0,0);
+
+## FUN_140785c60 */ — reconstrucao/src/decompiled_03.c:5182
+reconstrucao/src/../include/ghidra_function_prototypes.h:5182:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5179:   ulonglong uStack_18;
+    5180:   
+    5181:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_a8;
+    5182:   if (5 < DAT_140fd98c8) {
+    5183:     cVar1 = FUN_14042b0b0(&DAT_140fd98c8,1);
+    5184:     if (cVar1 != '\0') {
+    5185:       uStack_74 = PsGetProcessSessionIdEx(*(undefined8 *)((longlong)SystemReserved1[0xf] + 0xb8));
+
+## FUN_140785d54 */ — reconstrucao/src/decompiled_03.c:5221
+reconstrucao/src/../include/ghidra_function_prototypes.h:5221:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5218:   undefined4 uStack_14;
+    5219:   ulonglong uStack_10;
+    5220:   
+    5221:   uStack_10 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+    5222:   if (5 < DAT_140fd98c8) {
+    5223:     cVar1 = FUN_14042b0b0(&DAT_140fd98c8,1);
+    5224:     if (cVar1 != '\0') {
+
+## FUN_140785dfc */ — reconstrucao/src/decompiled_03.c:5242
+reconstrucao/src/../include/ghidra_function_prototypes.h:5242:37: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5239: /* Ghidra address: 140785dfc */
+    5240: void FUN_140785dfc(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined8 param_4,
+    5241:                   undefined8 param_5,undefined8 param_6,undefined1 param_7,undefined1 param_8)
+    5242: 
+    5243: {
+    5244:   char cVar1;
+    5245:   undefined1 auStack_118 [32];
+
+## FUN_140785dfc */ — reconstrucao/src/decompiled_03.c:5311
+reconstrucao/src/../include/ghidra_function_prototypes.h:5311:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5308:       puStack_f0 = auStack_b8;
+    5309:       uStack_90 = 4;
+    5310:       uStack_80 = 4;
+    5311:       uStack_70 = 4;
+    5312:       uStack_60 = 8;
+    5313:       uStack_50 = 8;
+    5314:       uStack_40 = 4;
+
+## FUN_14078600c */ — reconstrucao/src/decompiled_03.c:5395
+reconstrucao/src/../include/ghidra_function_prototypes.h:5395:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5392:   
+    5393:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_a8;
+    5394:   if (5 < DAT_140fd98c8) {
+    5395:     uVar2 = 1;
+    5396:     auStack_78[0] = param_3;
+    5397:     cVar1 = FUN_14042b0b0(&DAT_140fd98c8);
+    5398:     if (cVar1 != '\0') {
+
+## FUN_1407861a0 */ — reconstrucao/src/decompiled_03.c:5530
+reconstrucao/src/../include/ghidra_function_prototypes.h:5530:40: error: unknown type name ‘code’
+
+    5527:       uStack_80 = 4;
+    5528:       uStack_70 = 4;
+    5529:       uStack_60 = 4;
+    5530:       uStack_50 = 4;
+    5531:       uStack_40 = 4;
+    5532:       uStack_30 = 4;
+    5533:       uStack_20 = 4;
+
+## FUN_140786480 */ — reconstrucao/src/decompiled_03.c:5616
+reconstrucao/src/../include/ghidra_function_prototypes.h:5616:59: error: unknown type name ‘DWORD64’
+
+    5613: 
+    5614: /* Ghidra label: FUN_140786480 */
+    5615: /* Ghidra address: 140786480 */
+    5616: void FUN_140786480(undefined4 param_1,undefined4 param_2)
+    5617: 
+    5618: {
+    5619:   char cVar1;
+
+## FUN_140786784 */ — reconstrucao/src/decompiled_03.c:5832
+reconstrucao/src/../include/ghidra_function_prototypes.h:5832:65: error: unknown type name ‘va_list’
+
+    5829:   return;
+    5830: }
+    5831: 
+    5832: /* Ghidra label: FUN_140786894 */
+    5833: /* Ghidra address: 140786894 */
+    5834: void FUN_140786894(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4,
+    5835:                   undefined8 param_5,undefined8 param_6)
+
+## FUN_140786fe4 */ — reconstrucao/src/decompiled_03.c:6363
+reconstrucao/src/../include/ghidra_function_prototypes.h:6363:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    6360:       uStack_16c = param_3[2];
+    6361:       puStack_48 = &uStack_16c;
+    6362:       uStack_148 = *(undefined8 *)(param_3 + 4);
+    6363:       puStack_38 = &uStack_148;
+    6364:       uStack_140 = *(undefined8 *)(param_3 + 6);
+    6365:       puStack_28 = &uStack_140;
+    6366:       uStack_110 = 4;
+
+## FUN_140787570 */ — reconstrucao/src/decompiled_03.c:6638
+reconstrucao/src/../include/ghidra_function_prototypes.h:6638:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    6635:     uStack_b0 = 0;
+    6636:     pcStack_b8 = FUN_1407884c0;
+    6637:     ExSubscribeWnfStateChange(&uStack_a8,&DAT_140020800,1,0);
+    6638:   }
+    6639:   return;
+    6640: }
+    6641: 
+
+## FUN_140787fc0 */ — reconstrucao/src/decompiled_03.c:7015
+reconstrucao/src/../include/ghidra_function_prototypes.h:7015:20: error: unknown type name ‘code’
+
+    7012:     uVar1 = PsGetProcessId(param_3,param_2,0);
+    7013:   }
+    7014:   FUN_140786a7c(**(undefined4 **)(param_4 + 0x10),*(undefined4 *)(param_4 + 0x1c),uVar1,param_1);
+    7015:   return 0;
+    7016: }
+    7017: 
+    7018: /* Ghidra label: FUN_140788014 */
+
+## FUN_140788124 */ — reconstrucao/src/decompiled_03.c:7083
+reconstrucao/src/../include/ghidra_function_prototypes.h:7083:43: error: unknown type name ‘ulong’; did you mean ‘long’?
+
+    7080:   longlong lVar1;
+    7081:   ulonglong uVar2;
+    7082:   undefined1 uVar3;
+    7083:   
+    7084:   *(int *)(param_1 + 0x108) = *(int *)(param_1 + 0x108) + 1;
+    7085:   lVar1 = _DAT_fffff78000000008;
+    7086:   uVar3 = 0;
+
+## FUN_1407881c0 */ — reconstrucao/src/decompiled_03.c:7117
+reconstrucao/src/../include/ghidra_function_prototypes.h:7117:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    7114:   } while (iVar1 != 1);
+    7115:   return;
+    7116: }
+    7117: 
+    7118: /* Ghidra label: FUN_140788204 */
+    7119: /* Ghidra address: 140788204 */
+    7120: void FUN_140788204(int *param_1,int *param_2)
+
+## FUN_140788698 */ — reconstrucao/src/decompiled_03.c:7456
+reconstrucao/src/../include/ghidra_function_prototypes.h:7456:39: error: unknown type name ‘code’
+
+    7453:     uStack_8c = _DAT_14002b608;
+    7454:     uStack_84 = _UNK_14002b610;
+    7455:     uStack_6c = 0xb0;
+    7456:     lVar5 = 0x7fff;
+    7457:     uStack_a8 = 0;
+    7458:     puStack_a0 = (undefined2 *)0x0;
+    7459:     do {
+
+## FUN_1407887e8 */ — reconstrucao/src/decompiled_03.c:7577
+reconstrucao/src/../include/ghidra_function_prototypes.h:7577:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    7574:     uVar10 = 0x1e1;
+    7575:   }
+    7576:   FUN_1409a24bc("TtmiRetrieveEventFromQueue",uVar10,0xffffffff,uVar12);
+    7577: LAB_140788901:
+    7578:   FUN_140788bf0(param_1);
+    7579:   return (ulonglong)uVar12;
+    7580: }
+
+## FUN_140788934 */ — reconstrucao/src/decompiled_03.c:7605
+reconstrucao/src/../include/ghidra_function_prototypes.h:7605:36: error: unknown type name ‘wint_t’; did you mean ‘uint8_t’?
+
+    7602:   FUN_140788a78();
+    7603:   uVar10 = 0;
+    7604:   if (*(char *)(param_1 + 0xa8) == '\0') {
+    7605:     uVar10 = 0xc0000700;
+    7606:     uVar9 = 0x19c;
+    7607:   }
+    7608:   else {
+
+## FUN_140788934 */ — reconstrucao/src/decompiled_03.c:7610
+reconstrucao/src/../include/ghidra_function_prototypes.h:7610:20: error: unknown type name ‘code’
+
+    7607:   }
+    7608:   else {
+    7609:     plVar5 = (longlong *)ExAllocatePool2(0x100,0x230,0x716d7454);
+    7610:     if (plVar5 != (longlong *)0x0) {
+    7611:       lVar7 = 4;
+    7612:       plVar8 = plVar5 + 2;
+    7613:       do {
+
+## FUN_140788934 */ — reconstrucao/src/decompiled_03.c:7620
+reconstrucao/src/../include/ghidra_function_prototypes.h:7620:66: error: unknown type name ‘code’
+
+    7617:         *plVar6 = *plVar12;
+    7618:         plVar6[1] = lVar4;
+    7619:         lVar4 = plVar12[3];
+    7620:         plVar6[2] = plVar12[2];
+    7621:         plVar6[3] = lVar4;
+    7622:         lVar4 = plVar12[5];
+    7623:         plVar6[4] = plVar12[4];
+
+## FUN_140788934 */ — reconstrucao/src/decompiled_03.c:7656
+reconstrucao/src/../include/ghidra_function_prototypes.h:7656:33: error: unknown type name ‘uint3’; did you mean ‘uint32’?
+
+    7653:       uVar3 = *(undefined4 *)((longlong)plVar12 + 0x9c);
+    7654:       *(int *)(plVar6 + 0x12) = (int)plVar12[0x12];
+    7655:       *(undefined4 *)((longlong)plVar6 + 0x94) = uVar2;
+    7656:       *(int *)(plVar6 + 0x13) = (int)lVar7;
+    7657:       *(undefined4 *)((longlong)plVar6 + 0x9c) = uVar3;
+    7658:       FUN_14078569c(param_1);
+    7659:       puVar11 = auStack_28;
+
+## FUN_1407898c0 */ — reconstrucao/src/decompiled_03.c:8523
+reconstrucao/src/../include/ghidra_function_prototypes.h:8523:1: error: unknown type name ‘code’
+
+    8520:           }
+    8521:         }
+    8522:       }
+    8523:       ppuVar5 = ppuVar5 + 1;
+    8524:     }
+    8525:   }
+    8526:   return 0;
+
+## FUN_1407899c8 */ — reconstrucao/src/decompiled_03.c:8557
+reconstrucao/src/../include/ghidra_function_prototypes.h:8557:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    8554:   *(undefined4 *)(param_1 + 0x3d4) = *(undefined4 *)(param_1 + 0x4dc);
+    8555:   puVar1 = *(undefined4 **)(param_1 + 0x4d8);
+    8556:   sVar3 = (*(short *)(param_1 + 0x4d0) + 0x2a) * 2;
+    8557:   *(short *)(param_1 + 0x3d8) = sVar3;
+    8558:   sVar3 = sVar3 + 2;
+    8559:   *(short *)(param_1 + 0x3da) = sVar3;
+    8560:   puVar4 = (undefined8 *)
+
+## PsGetCurrentServerSiloName */ — reconstrucao/src/decompiled_03.c:8807
+reconstrucao/src/../include/ghidra_function_prototypes.h:8807:1: error: unknown type name ‘code’
+
+    8804:   psVar2 = (short *)&DAT_140b55478;
+    8805:   if (*(short *)(lVar1 + 0x4e0) != 0) {
+    8806:     psVar2 = (short *)(lVar1 + 0x4e0);
+    8807:   }
+    8808:   return psVar2;
+    8809: }
+    8810: 
+
+## FUN_14078aa10 */ — reconstrucao/src/decompiled_03.c:9391
+reconstrucao/src/../include/ghidra_function_prototypes.h:9391:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    9388:         PsDetachSiloFromCurrentThread(uVar5);
+    9389:         if (((-1 < iVar1) && (iVar1 = FUN_140757a4c(param_1), -1 < iVar1)) &&
+    9390:            (iVar1 = FUN_1407d14e0(param_1), -1 < iVar1)) {
+    9391:           uVar5 = PsAttachSiloToCurrentThread(param_1);
+    9392:           iVar1 = FUN_140ae3c38();
+    9393:           if (-1 < iVar1) {
+    9394:             lVar6 = FUN_1402e1b60();
+
+## FUN_14078c53c */ — reconstrucao/src/decompiled_03.c:10748
+reconstrucao/src/../include/ghidra_function_prototypes.h:10748:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10745:   int aiStackX_8 [8];
+    10746:   undefined1 auStack_78 [8];
+    10747:   undefined4 uStack_70;
+    10748:   wchar_t *pwStack_68;
+    10749:   int *piStack_60;
+    10750:   undefined4 uStack_58;
+    10751:   
+
+## FUN_14078c53c */ — reconstrucao/src/decompiled_03.c:10749
+reconstrucao/src/../include/ghidra_function_prototypes.h:10749:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10746:   undefined1 auStack_78 [8];
+    10747:   undefined4 uStack_70;
+    10748:   wchar_t *pwStack_68;
+    10749:   int *piStack_60;
+    10750:   undefined4 uStack_58;
+    10751:   
+    10752:   aiStackX_8[0] = 0;
+
+## FUN_14078c53c */ — reconstrucao/src/decompiled_03.c:10750
+reconstrucao/src/../include/ghidra_function_prototypes.h:10750:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10747:   undefined4 uStack_70;
+    10748:   wchar_t *pwStack_68;
+    10749:   int *piStack_60;
+    10750:   undefined4 uStack_58;
+    10751:   
+    10752:   aiStackX_8[0] = 0;
+    10753:   FUN_1406d1200(auStack_78,0,0x70);
+
+## FUN_14078c53c */ — reconstrucao/src/decompiled_03.c:10751
+reconstrucao/src/../include/ghidra_function_prototypes.h:10751:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10748:   wchar_t *pwStack_68;
+    10749:   int *piStack_60;
+    10750:   undefined4 uStack_58;
+    10751:   
+    10752:   aiStackX_8[0] = 0;
+    10753:   FUN_1406d1200(auStack_78,0,0x70);
+    10754:   uStack_70 = 0x124;
+
+## FUN_14078c6e8 */ — reconstrucao/src/decompiled_03.c:10847
+reconstrucao/src/../include/ghidra_function_prototypes.h:10847:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10844:     FUN_140246fe0(param_1 + 0x1e8);
+    10845:   }
+    10846:   return uVar1;
+    10847: }
+    10848: 
+    10849: /* Ghidra label: FUN_14078c754 */
+    10850: /* Ghidra address: 14078c754 */
+
+## FUN_14078c754 */ — reconstrucao/src/decompiled_03.c:10850
+reconstrucao/src/../include/ghidra_function_prototypes.h:10850:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10847: }
+    10848: 
+    10849: /* Ghidra label: FUN_14078c754 */
+    10850: /* Ghidra address: 14078c754 */
+    10851: undefined4 FUN_14078c754(longlong param_1,undefined8 param_2)
+    10852: 
+    10853: {
+
+## PsUnregisterAvailableCpusChangeNotification */ — reconstrucao/src/decompiled_03.c:10937
+reconstrucao/src/../include/ghidra_function_prototypes.h:10937:26: error: unknown type name ‘PVOID’
+
+    10934: 
+    10935: {
+    10936:                     /* 0x78c8c0  2146  PsUnregisterAvailableCpusChangeNotification */
+    10937:   FUN_140750104();
+    10938:   return;
+    10939: }
+    10940: 
+
+## FUN_14078c8d8 */ — reconstrucao/src/decompiled_03.c:10976
+reconstrucao/src/../include/ghidra_function_prototypes.h:10976:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    10973:   }
+    10974:   if (lVar12 != 0) {
+    10975:     *(undefined1 *)(lVar12 + 10) = 1;
+    10976:   }
+    10977:   iVar11 = KeIsSubsetAffinityEx(&DAT_140fc8120,&DAT_140e0c480);
+    10978:   if (iVar11 == 0) {
+    10979:     lVar12 = 2;
+
+## FUN_14078c8d8 */ — reconstrucao/src/decompiled_03.c:11021
+reconstrucao/src/../include/ghidra_function_prototypes.h:11021:1: error: unknown type name ‘code’
+
+    11018:       puVar15[0xe] = uVar6;
+    11019:       puVar15[0xf] = uVar7;
+    11020:       lVar12 = lVar12 + -1;
+    11021:       puVar15 = puVar16;
+    11022:     } while (lVar12 != 0);
+    11023:     *puVar16 = *puVar13;
+    11024:     lVar12 = 0;
+
+## PsCheckProcessFileSigningLevel */ — reconstrucao/src/decompiled_03.c:12411
+reconstrucao/src/../include/ghidra_function_prototypes.h:12411:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    12408:   if (lStackX_20 - 1U < 0xfffffffffffffffe) {
+    12409:     ObCloseHandle(lStackX_20,0);
+    12410:   }
+    12411:   if (alStack_80[0] != 0) {
+    12412:     ObCloseHandle(alStack_80[0],0);
+    12413:   }
+    12414:   return uVar3;
+
+## FUN_14078ec60 */ — reconstrucao/src/decompiled_03.c:12816
+reconstrucao/src/../include/ghidra_function_prototypes.h:12816:19: error: unknown type name ‘DWORD64’
+
+    12813:   uint *puStack_1c0;
+    12814:   uint *puStack_1b8;
+    12815:   uint auStack_1a8 [4];
+    12816:   undefined1 auStack_198 [32];
+    12817:   undefined1 auStack_178 [128];
+    12818:   undefined1 auStack_f8 [224];
+    12819:   ulonglong uStack_18;
+
+## FUN_14078fb74 */ — reconstrucao/src/decompiled_03.c:13515
+reconstrucao/src/../include/ghidra_function_prototypes.h:13515:38: error: unknown type name ‘PVOID’
+
+    13512: }
+    13513: 
+    13514: /* Ghidra label: FUN_14078fb74 */
+    13515: /* Ghidra address: 14078fb74 */
+    13516: ulonglong FUN_14078fb74(longlong param_1)
+    13517: 
+    13518: {
+
+## FUN_14078fbbc */ — reconstrucao/src/decompiled_03.c:13533
+reconstrucao/src/../include/ghidra_function_prototypes.h:13533:38: error: unknown type name ‘code’
+
+    13530: 
+    13531: /* Ghidra label: FUN_14078fbbc */
+    13532: /* Ghidra address: 14078fbbc */
+    13533: void FUN_14078fbbc(longlong param_1,uint param_2,char param_3)
+    13534: 
+    13535: {
+    13536:   longlong lVar1;
+
+## FUN_14078fbbc */ — reconstrucao/src/decompiled_03.c:13537
+reconstrucao/src/../include/ghidra_function_prototypes.h:13537:20: error: unknown type name ‘code’
+
+    13534: 
+    13535: {
+    13536:   longlong lVar1;
+    13537:   
+    13538:   for (lVar1 = *(longlong *)(param_1 + 0x518); lVar1 != 0; lVar1 = *(longlong *)(lVar1 + 0x518)) {
+    13539:     if (param_3 == '\0') {
+    13540:       LOCK();
+
+## FUN_14079025c */ — reconstrucao/src/decompiled_03.c:13916
+reconstrucao/src/../include/ghidra_function_prototypes.h:13916:20: error: unknown type name ‘code’
+
+    13913:   }
+    13914:   if (uVar1 == 0) {
+    13915:     if (uVar5 != 0) {
+    13916:       iVar2 = -0x3fffff45;
+    13917:       goto LAB_140790357;
+    13918:     }
+    13919:     lVar3 = FUN_1408939a0(0);
+
+## FUN_14079025c */ — reconstrucao/src/decompiled_03.c:13916
+reconstrucao/src/../include/ghidra_function_prototypes.h:13916:34: error: unknown type name ‘code’
+
+    13913:   }
+    13914:   if (uVar1 == 0) {
+    13915:     if (uVar5 != 0) {
+    13916:       iVar2 = -0x3fffff45;
+    13917:       goto LAB_140790357;
+    13918:     }
+    13919:     lVar3 = FUN_1408939a0(0);
+
+## FUN_140790818 */ — reconstrucao/src/decompiled_03.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:1: error: unknown type name ‘code’
+
+    14216:   if (param_1[3] < param_2[3]) {
+    14217:     uVar1 = 0;
+    14218:   }
+    14219:   else {
+    14220:     uVar1 = param_1[3] - param_2[3];
+    14221:   }
+    14222:   param_1[3] = uVar1;
+
+## FUN_140790818 */ — reconstrucao/src/decompiled_03.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:22: error: unknown type name ‘code’
+
+    14216:   if (param_1[3] < param_2[3]) {
+    14217:     uVar1 = 0;
+    14218:   }
+    14219:   else {
+    14220:     uVar1 = param_1[3] - param_2[3];
+    14221:   }
+    14222:   param_1[3] = uVar1;
+
+## FUN_140790818 */ — reconstrucao/src/decompiled_03.c:14219
+reconstrucao/src/../include/ghidra_function_prototypes.h:14219:36: error: unknown type name ‘code’
+
+    14216:   if (param_1[3] < param_2[3]) {
+    14217:     uVar1 = 0;
+    14218:   }
+    14219:   else {
+    14220:     uVar1 = param_1[3] - param_2[3];
+    14221:   }
+    14222:   param_1[3] = uVar1;
+
+## FUN_140790818 */ — reconstrucao/src/decompiled_03.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:1: error: unknown type name ‘code’
+
+    14217:     uVar1 = 0;
+    14218:   }
+    14219:   else {
+    14220:     uVar1 = param_1[3] - param_2[3];
+    14221:   }
+    14222:   param_1[3] = uVar1;
+    14223:   if ((longlong)param_1[5] < (longlong)param_2[5]) {
+
+## FUN_140790818 */ — reconstrucao/src/decompiled_03.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:22: error: unknown type name ‘code’
+
+    14217:     uVar1 = 0;
+    14218:   }
+    14219:   else {
+    14220:     uVar1 = param_1[3] - param_2[3];
+    14221:   }
+    14222:   param_1[3] = uVar1;
+    14223:   if ((longlong)param_1[5] < (longlong)param_2[5]) {
+
+## FUN_140790818 */ — reconstrucao/src/decompiled_03.c:14220
+reconstrucao/src/../include/ghidra_function_prototypes.h:14220:36: error: unknown type name ‘code’
+
+    14217:     uVar1 = 0;
+    14218:   }
+    14219:   else {
+    14220:     uVar1 = param_1[3] - param_2[3];
+    14221:   }
+    14222:   param_1[3] = uVar1;
+    14223:   if ((longlong)param_1[5] < (longlong)param_2[5]) {
+
+## FUN_140790910 */ — reconstrucao/src/decompiled_03.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:1: error: unknown type name ‘code’
+
+    14282:   while (lVar2 = FUN_1408bf060(param_1,pvVar1,&uStack_28,lVar2), lVar2 != 0) {
+    14283:     if (((*(uint *)(lVar2 + 0x5fc) & 0x40) == 0) &&
+    14284:        (lVar2 != *(longlong *)((longlong)SystemReserved1[0xf] + 0xb8))) {
+    14285:       *(byte *)(param_2 + 4) = *(byte *)(param_2 + 4) | 2;
+    14286:       FUN_14079114c(lVar2);
+    14287:     }
+    14288:   }
+
+## FUN_140790910 */ — reconstrucao/src/decompiled_03.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:22: error: unknown type name ‘code’
+
+    14282:   while (lVar2 = FUN_1408bf060(param_1,pvVar1,&uStack_28,lVar2), lVar2 != 0) {
+    14283:     if (((*(uint *)(lVar2 + 0x5fc) & 0x40) == 0) &&
+    14284:        (lVar2 != *(longlong *)((longlong)SystemReserved1[0xf] + 0xb8))) {
+    14285:       *(byte *)(param_2 + 4) = *(byte *)(param_2 + 4) | 2;
+    14286:       FUN_14079114c(lVar2);
+    14287:     }
+    14288:   }
+
+## FUN_140790910 */ — reconstrucao/src/decompiled_03.c:14285
+reconstrucao/src/../include/ghidra_function_prototypes.h:14285:36: error: unknown type name ‘code’
+
+    14282:   while (lVar2 = FUN_1408bf060(param_1,pvVar1,&uStack_28,lVar2), lVar2 != 0) {
+    14283:     if (((*(uint *)(lVar2 + 0x5fc) & 0x40) == 0) &&
+    14284:        (lVar2 != *(longlong *)((longlong)SystemReserved1[0xf] + 0xb8))) {
+    14285:       *(byte *)(param_2 + 4) = *(byte *)(param_2 + 4) | 2;
+    14286:       FUN_14079114c(lVar2);
+    14287:     }
+    14288:   }
+
+## FUN_1407909c4 */ — reconstrucao/src/decompiled_03.c:14351
+reconstrucao/src/../include/ghidra_function_prototypes.h:14351:20: error: unknown type name ‘code’
+
+    14348:       pcVar3 = (code *)swi(0x2c);
+    14349:       (*pcVar3)();
+    14350:       puVar12 = (undefined4 *)auStack_80;
+    14351:     }
+    14352:     lVar9 = 0;
+    14353:     while( true ) {
+    14354:       *(undefined8 *)(puVar12 + -2) = 0x140790a5f;
+
+## FUN_1407909c4 */ — reconstrucao/src/decompiled_03.c:14351
+reconstrucao/src/../include/ghidra_function_prototypes.h:14351:34: error: unknown type name ‘code’
+
+    14348:       pcVar3 = (code *)swi(0x2c);
+    14349:       (*pcVar3)();
+    14350:       puVar12 = (undefined4 *)auStack_80;
+    14351:     }
+    14352:     lVar9 = 0;
+    14353:     while( true ) {
+    14354:       *(undefined8 *)(puVar12 + -2) = 0x140790a5f;
+
+## FUN_1407909c4 */ — reconstrucao/src/decompiled_03.c:14384
+reconstrucao/src/../include/ghidra_function_prototypes.h:14384:20: error: unknown type name ‘code’
+
+    14381:             ObfReferenceObject(lVar9);
+    14382:             *(longlong *)(puVar12 + uVar15 * 2 + 0x12) = lVar9;
+    14383:             uVar15 = (ulonglong)((uint)uVar15 + 1);
+    14384:           }
+    14385:         }
+    14386:         *(undefined8 *)(puVar12 + -2) = 0x140790aed;
+    14387:         lVar9 = FUN_1408c3510(lVar9);
+
+## FUN_1407909c4 */ — reconstrucao/src/decompiled_03.c:14384
+reconstrucao/src/../include/ghidra_function_prototypes.h:14384:34: error: unknown type name ‘code’
+
+    14381:             ObfReferenceObject(lVar9);
+    14382:             *(longlong *)(puVar12 + uVar15 * 2 + 0x12) = lVar9;
+    14383:             uVar15 = (ulonglong)((uint)uVar15 + 1);
+    14384:           }
+    14385:         }
+    14386:         *(undefined8 *)(puVar12 + -2) = 0x140790aed;
+    14387:         lVar9 = FUN_1408c3510(lVar9);
+
+## FUN_1407909c4 */ — reconstrucao/src/decompiled_03.c:14417
+reconstrucao/src/../include/ghidra_function_prototypes.h:14417:20: error: unknown type name ‘code’
+
+    14414:     }
+    14415:     ppuVar11 = &PTR_PTR_140fd9130;
+    14416:     lVar7 = 6;
+    14417:     do {
+    14418:       if (*ppuVar11 != (undefined *)0x0) {
+    14419:         lVar9 = *(longlong *)(*ppuVar11 + 0x20);
+    14420:         if (lVar9 != 0) {
+
+## FUN_1407909c4 */ — reconstrucao/src/decompiled_03.c:14417
+reconstrucao/src/../include/ghidra_function_prototypes.h:14417:34: error: unknown type name ‘code’
+
+    14414:     }
+    14415:     ppuVar11 = &PTR_PTR_140fd9130;
+    14416:     lVar7 = 6;
+    14417:     do {
+    14418:       if (*ppuVar11 != (undefined *)0x0) {
+    14419:         lVar9 = *(longlong *)(*ppuVar11 + 0x20);
+    14420:         if (lVar9 != 0) {
+
+## FUN_1407909c4 */ — reconstrucao/src/decompiled_03.c:14450
+reconstrucao/src/../include/ghidra_function_prototypes.h:14450:20: error: unknown type name ‘code’
+
+    14447:     uVar2 = *(undefined8 *)(DAT_140fc7ea0 + 0x80);
+    14448:     *(undefined8 *)(puVar12 + -2) = 0x140790c3d;
+    14449:     ZwClose(uVar2);
+    14450:     *(undefined8 *)(DAT_140fc7ea0 + 0x80) = 0;
+    14451:     if (1 < *(ulonglong *)(PsInitialSystemProcess + 0x348)) {
+    14452:       *(undefined8 *)(puVar12 + -2) = 0x140790c64;
+    14453:       ObfDereferenceObject();
+
+## FUN_1407909c4 */ — reconstrucao/src/decompiled_03.c:14450
+reconstrucao/src/../include/ghidra_function_prototypes.h:14450:34: error: unknown type name ‘code’
+
+    14447:     uVar2 = *(undefined8 *)(DAT_140fc7ea0 + 0x80);
+    14448:     *(undefined8 *)(puVar12 + -2) = 0x140790c3d;
+    14449:     ZwClose(uVar2);
+    14450:     *(undefined8 *)(DAT_140fc7ea0 + 0x80) = 0;
+    14451:     if (1 < *(ulonglong *)(PsInitialSystemProcess + 0x348)) {
+    14452:       *(undefined8 *)(puVar12 + -2) = 0x140790c64;
+    14453:       ObfDereferenceObject();
+
+## FUN_140790cd8 */ — reconstrucao/src/decompiled_03.c:14483
+reconstrucao/src/../include/ghidra_function_prototypes.h:14483:20: error: unknown type name ‘code’
+
+    14480:   undefined1 auStack_88 [32];
+    14481:   undefined4 uStack_68;
+    14482:   undefined8 uStack_58;
+    14483:   undefined8 uStack_50;
+    14484:   undefined8 uStack_48;
+    14485:   undefined8 uStack_40;
+    14486:   undefined8 uStack_38;
+
+## FUN_140790cd8 */ — reconstrucao/src/decompiled_03.c:14483
+reconstrucao/src/../include/ghidra_function_prototypes.h:14483:34: error: unknown type name ‘code’
+
+    14480:   undefined1 auStack_88 [32];
+    14481:   undefined4 uStack_68;
+    14482:   undefined8 uStack_58;
+    14483:   undefined8 uStack_50;
+    14484:   undefined8 uStack_48;
+    14485:   undefined8 uStack_40;
+    14486:   undefined8 uStack_38;
+
+## FUN_140790e48 */ — reconstrucao/src/decompiled_03.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:1: error: unknown type name ‘code’
+
+    14581:     } while (iVar1 != 0x102);
+    14582:     lVar4 = lVar4 * 2;
+    14583:     uVar5 = uVar5 + 1;
+    14584:     lStackX_8 = lVar4;
+    14585:   } while (uVar5 < 0xe);
+    14586:   return uVar3 & 0xffffffffffffff00;
+    14587: }
+
+## FUN_140790e48 */ — reconstrucao/src/decompiled_03.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:22: error: unknown type name ‘code’
+
+    14581:     } while (iVar1 != 0x102);
+    14582:     lVar4 = lVar4 * 2;
+    14583:     uVar5 = uVar5 + 1;
+    14584:     lStackX_8 = lVar4;
+    14585:   } while (uVar5 < 0xe);
+    14586:   return uVar3 & 0xffffffffffffff00;
+    14587: }
+
+## FUN_140790e48 */ — reconstrucao/src/decompiled_03.c:14584
+reconstrucao/src/../include/ghidra_function_prototypes.h:14584:36: error: unknown type name ‘code’
+
+    14581:     } while (iVar1 != 0x102);
+    14582:     lVar4 = lVar4 * 2;
+    14583:     uVar5 = uVar5 + 1;
+    14584:     lStackX_8 = lVar4;
+    14585:   } while (uVar5 < 0xe);
+    14586:   return uVar3 & 0xffffffffffffff00;
+    14587: }
+
+## FUN_140790f38 */ — reconstrucao/src/decompiled_03.c:14649
+reconstrucao/src/../include/ghidra_function_prototypes.h:14649:26: error: unknown type name ‘code’
+
+    14646:     if (bVar7) {
+    14647:       *(int *)(lVar5 + 0x53c) = 1;
+    14648:     }
+    14649:     UNLOCK();
+    14650:     if (bVar7) {
+    14651:       strncpy_s((char *)(lVar5 + 0x544),0xf,param_3,0xffffffffffffffff);
+    14652:       *(undefined4 *)(lVar5 + 0x540) = param_5;
+
+## FUN_140790f38 */ — reconstrucao/src/decompiled_03.c:14649
+reconstrucao/src/../include/ghidra_function_prototypes.h:14649:40: error: unknown type name ‘code’
+
+    14646:     if (bVar7) {
+    14647:       *(int *)(lVar5 + 0x53c) = 1;
+    14648:     }
+    14649:     UNLOCK();
+    14650:     if (bVar7) {
+    14651:       strncpy_s((char *)(lVar5 + 0x544),0xf,param_3,0xffffffffffffffff);
+    14652:       *(undefined4 *)(lVar5 + 0x540) = param_5;
+
+## PsRegisterSiloMonitor */ — reconstrucao/src/decompiled_03.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:1: error: unknown type name ‘code’
+
+    14712:   longlong lVar5;
+    14713:   
+    14714:                     /* 0x7911d0  2092  PsRegisterSiloMonitor */
+    14715:   if ((((*param_1 == '\0') || (*(short **)(param_1 + 8) == (short *)0x0)) ||
+    14716:       (**(short **)(param_1 + 8) == 0)) ||
+    14717:      ((*(longlong *)(param_1 + 0x10) == 0 && (*(longlong *)(param_1 + 0x18) == 0)))) {
+    14718:     iVar3 = -0x3ffffff3;
+
+## PsRegisterSiloMonitor */ — reconstrucao/src/decompiled_03.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:22: error: unknown type name ‘code’
+
+    14712:   longlong lVar5;
+    14713:   
+    14714:                     /* 0x7911d0  2092  PsRegisterSiloMonitor */
+    14715:   if ((((*param_1 == '\0') || (*(short **)(param_1 + 8) == (short *)0x0)) ||
+    14716:       (**(short **)(param_1 + 8) == 0)) ||
+    14717:      ((*(longlong *)(param_1 + 0x10) == 0 && (*(longlong *)(param_1 + 0x18) == 0)))) {
+    14718:     iVar3 = -0x3ffffff3;
+
+## PsRegisterSiloMonitor */ — reconstrucao/src/decompiled_03.c:14715
+reconstrucao/src/../include/ghidra_function_prototypes.h:14715:36: error: unknown type name ‘code’
+
+    14712:   longlong lVar5;
+    14713:   
+    14714:                     /* 0x7911d0  2092  PsRegisterSiloMonitor */
+    14715:   if ((((*param_1 == '\0') || (*(short **)(param_1 + 8) == (short *)0x0)) ||
+    14716:       (**(short **)(param_1 + 8) == 0)) ||
+    14717:      ((*(longlong *)(param_1 + 0x10) == 0 && (*(longlong *)(param_1 + 0x18) == 0)))) {
+    14718:     iVar3 = -0x3ffffff3;
+
+## PsUnregisterSiloMonitor */ — reconstrucao/src/decompiled_03.c:14947
+reconstrucao/src/../include/ghidra_function_prototypes.h:14947:20: error: unknown type name ‘code’
+
+    14944:       return;
+    14945:     }
+    14946:     *plVar2 = lVar6;
+    14947:     *(longlong **)(lVar6 + 8) = plVar2;
+    14948:     *param_1 = 0;
+    14949:     param_1[1] = 0;
+    14950:   }
+
+## PsUnregisterSiloMonitor */ — reconstrucao/src/decompiled_03.c:14947
+reconstrucao/src/../include/ghidra_function_prototypes.h:14947:34: error: unknown type name ‘code’
+
+    14944:       return;
+    14945:     }
+    14946:     *plVar2 = lVar6;
+    14947:     *(longlong **)(lVar6 + 8) = plVar2;
+    14948:     *param_1 = 0;
+    14949:     param_1[1] = 0;
+    14950:   }
+
+## FUN_14079169c */ — reconstrucao/src/decompiled_03.c:14980
+reconstrucao/src/../include/ghidra_function_prototypes.h:14980:20: error: unknown type name ‘code’
+
+    14977: 
+    14978: {
+    14979:   undefined8 *puVar1;
+    14980:   
+    14981:   puVar1 = DAT_140fdb068;
+    14982:   if (param_1 != (undefined8 *)0x0) {
+    14983:     puVar1 = (undefined8 *)*param_1;
+
+## FUN_14079169c */ — reconstrucao/src/decompiled_03.c:14980
+reconstrucao/src/../include/ghidra_function_prototypes.h:14980:34: error: unknown type name ‘code’
+
+    14977: 
+    14978: {
+    14979:   undefined8 *puVar1;
+    14980:   
+    14981:   puVar1 = DAT_140fdb068;
+    14982:   if (param_1 != (undefined8 *)0x0) {
+    14983:     puVar1 = (undefined8 *)*param_1;
+
+## FUN_140791728 */ — reconstrucao/src/decompiled_03.c:15014
+reconstrucao/src/../include/ghidra_function_prototypes.h:15014:20: error: unknown type name ‘code’
+
+    15011:   FUN_140658bc8(3,param_1,param_2 + 0x28);
+    15012:   return;
+    15013: }
+    15014: 
+    15015: /* Ghidra label: FUN_140791788 */
+    15016: /* Ghidra address: 140791788 */
+    15017: undefined8 FUN_140791788(undefined8 param_1)
+
+## FUN_140791728 */ — reconstrucao/src/decompiled_03.c:15014
+reconstrucao/src/../include/ghidra_function_prototypes.h:15014:34: error: unknown type name ‘code’
+
+    15011:   FUN_140658bc8(3,param_1,param_2 + 0x28);
+    15012:   return;
+    15013: }
+    15014: 
+    15015: /* Ghidra label: FUN_140791788 */
+    15016: /* Ghidra address: 140791788 */
+    15017: undefined8 FUN_140791788(undefined8 param_1)
+
+## FUN_140791788 */ — reconstrucao/src/decompiled_03.c:15047
+reconstrucao/src/../include/ghidra_function_prototypes.h:15047:20: error: unknown type name ‘code’
+
+    15044:   if (lVar6 != 0) {
+    15045:     do {
+    15046:       if (*(longlong *)(lVar6 + 0x18) != 0) {
+    15047:         *(undefined8 *)(puVar8 + -8) = 0x1407917e7;
+    15048:         iVar4 = FUN_1407916c4(param_1,lVar6);
+    15049:         bVar2 = bVar3;
+    15050:         if (iVar4 < 0) {
+
+## FUN_140791788 */ — reconstrucao/src/decompiled_03.c:15047
+reconstrucao/src/../include/ghidra_function_prototypes.h:15047:34: error: unknown type name ‘code’
+
+    15044:   if (lVar6 != 0) {
+    15045:     do {
+    15046:       if (*(longlong *)(lVar6 + 0x18) != 0) {
+    15047:         *(undefined8 *)(puVar8 + -8) = 0x1407917e7;
+    15048:         iVar4 = FUN_1407916c4(param_1,lVar6);
+    15049:         bVar2 = bVar3;
+    15050:         if (iVar4 < 0) {
+
+## FUN_140791844 */ — reconstrucao/src/decompiled_03.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:1: error: unknown type name ‘code’
+
+    15077: 
+    15078: {
+    15079:   uint *puVar1;
+    15080:   uint uVar2;
+    15081:   int iVar3;
+    15082:   uint uVar4;
+    15083:   uint uVar5;
+
+## FUN_140791844 */ — reconstrucao/src/decompiled_03.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:22: error: unknown type name ‘code’
+
+    15077: 
+    15078: {
+    15079:   uint *puVar1;
+    15080:   uint uVar2;
+    15081:   int iVar3;
+    15082:   uint uVar4;
+    15083:   uint uVar5;
+
+## FUN_140791844 */ — reconstrucao/src/decompiled_03.c:15080
+reconstrucao/src/../include/ghidra_function_prototypes.h:15080:36: error: unknown type name ‘code’
+
+    15077: 
+    15078: {
+    15079:   uint *puVar1;
+    15080:   uint uVar2;
+    15081:   int iVar3;
+    15082:   uint uVar4;
+    15083:   uint uVar5;
+
+## FUN_140791844 */ — reconstrucao/src/decompiled_03.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:1: error: unknown type name ‘code’
+
+    15142:   uStack_4b0 = param_3;
+    15143:   FUN_1406d1200(auStack_498,0,400);
+    15144:   lStack_4d8 = 0;
+    15145:   lStack_4e8 = 0;
+    15146:   FUN_1406d1200(auStack_2b0,0,0x260);
+    15147:   if (param_5 == (undefined1 *)0x0) {
+    15148:     puStack_4c8 = (undefined1 *)FUN_1402f5c40(param_1,0x746c6644);
+
+## FUN_140791844 */ — reconstrucao/src/decompiled_03.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:22: error: unknown type name ‘code’
+
+    15142:   uStack_4b0 = param_3;
+    15143:   FUN_1406d1200(auStack_498,0,400);
+    15144:   lStack_4d8 = 0;
+    15145:   lStack_4e8 = 0;
+    15146:   FUN_1406d1200(auStack_2b0,0,0x260);
+    15147:   if (param_5 == (undefined1 *)0x0) {
+    15148:     puStack_4c8 = (undefined1 *)FUN_1402f5c40(param_1,0x746c6644);
+
+## FUN_140791844 */ — reconstrucao/src/decompiled_03.c:15145
+reconstrucao/src/../include/ghidra_function_prototypes.h:15145:36: error: unknown type name ‘code’
+
+    15142:   uStack_4b0 = param_3;
+    15143:   FUN_1406d1200(auStack_498,0,400);
+    15144:   lStack_4d8 = 0;
+    15145:   lStack_4e8 = 0;
+    15146:   FUN_1406d1200(auStack_2b0,0,0x260);
+    15147:   if (param_5 == (undefined1 *)0x0) {
+    15148:     puStack_4c8 = (undefined1 *)FUN_1402f5c40(param_1,0x746c6644);
+
+## FUN_140791844 */ — reconstrucao/src/decompiled_03.c:15210
+reconstrucao/src/../include/ghidra_function_prototypes.h:15210:20: error: unknown type name ‘code’
+
+    15207:             param_9 = lStack_4d0;
+    15208:           }
+    15209:         }
+    15210:       }
+    15211:       if (lStack_4b8 != 0) {
+    15212:         FUN_1407921a4(lVar6,lStack_4b8);
+    15213:         lVar6 = lStack_4e8;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:216
+reconstrucao/src/../include/ghidra_function_prototypes.h:216:43: error: unknown type name ‘code’
+
+    213:   uStack_1a8 = 0x130;
+    214:   puStack_1d0 = &uStack_2b8;
+    215:   uStack_190 = 0x7000000;
+    216:   pwStack_1a0 = L"CompatibleIds";
+    217:   puStack_198 = &uStack_2a8;
+    218:   uStack_170 = 0x120;
+    219:   uStack_158 = 0x1000000;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:541
+reconstrucao/src/../include/ghidra_function_prototypes.h:541:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    538:       plVar10 = plStack_2e8;
+    539:       lVar11 = lStack_2c0;
+    540:       goto LAB_140ac3790;
+    541:     }
+    542:   }
+    543:   plVar10 = plStack_2e8;
+    544: LAB_140ac3800:
+
+## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:706
+reconstrucao/src/../include/ghidra_function_prototypes.h:706:19: error: unknown type name ‘code’
+
+    703:   return;
+    704: }
+    705: 
+    706: /* Ghidra label: FUN_140ac3ab0 */
+    707: /* Ghidra address: 140ac3ab0 */
+    708: int FUN_140ac3ab0(longlong param_1,undefined4 *param_2)
+    709: 
+
+## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:785
+reconstrucao/src/../include/ghidra_function_prototypes.h:785:75: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    782:         sVar5 = sVar5 + 2;
+    783:       }
+    784:       RtlTimeToTimeFields(param_1 + 0x70,&uStack_28);
+    785:       iVar6 = FUN_140489994(&uStack_38,L",%02d/%02d/%04d,%u.%u.%u.%u",(int)uStack_28._2_2_,
+    786:                             (int)uStack_28._4_2_,CONCAT44(uVar9,(int)(short)uStack_28),
+    787:                             CONCAT44(uVar11,*(uint *)(param_1 + 0x7c) >> 0x10),
+    788:                             *(undefined2 *)(param_1 + 0x7c),*(undefined2 *)(param_1 + 0x7a),
+
+## FUN_140ac3ddc */ — reconstrucao/src/decompiled_04.c:880
+reconstrucao/src/../include/ghidra_function_prototypes.h:880:55: error: unknown type name ‘code’
+
+    877: }
+    878: 
+    879: /* Ghidra label: FUN_140ac3ddc */
+    880: /* Ghidra address: 140ac3ddc */
+    881: void FUN_140ac3ddc(void)
+    882: 
+    883: {
+
+## FUN_140ac3ddc */ — reconstrucao/src/decompiled_04.c:902
+reconstrucao/src/../include/ghidra_function_prototypes.h:902:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    899:       return;
+    900:     }
+    901:     if (((undefined8 **)DAT_140f0f430[1] != &DAT_140f0f430) ||
+    902:        (puVar1 = (undefined8 *)*DAT_140f0f430, (undefined8 *)puVar1[1] != DAT_140f0f430)) {
+    903:       pcVar2 = (code *)swi(0x29);
+    904:       (*pcVar2)(3);
+    905:       puVar4 = auStack_20;
+
+## FUN_140ac3e48 */ — reconstrucao/src/decompiled_04.c:915
+reconstrucao/src/../include/ghidra_function_prototypes.h:915:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    912: }
+    913: 
+    914: /* Ghidra label: FUN_140ac3e48 */
+    915: /* Ghidra address: 140ac3e48 */
+    916: void FUN_140ac3e48(longlong param_1,char param_2)
+    917: 
+    918: {
+
+## FUN_140ac3e48 */ — reconstrucao/src/decompiled_04.c:960
+reconstrucao/src/../include/ghidra_function_prototypes.h:960:1: error: unknown type name ‘code’
+
+    957:       }
+    958:       bVar3 = true;
+    959:     }
+    960:     uVar6 = (uint)*(undefined8 *)(param_1 + 0x3b0) & 1;
+    961:     lVar7 = *(longlong *)(param_1 + 0x5b8 + (ulonglong)uVar6 * 8);
+    962:     if (*(char *)(param_1 + 0x788) == '\0') {
+    963:       *(undefined4 *)(lVar7 + 0x10) = 0;
+
+## FUN_140ac3ff8 */ — reconstrucao/src/decompiled_04.c:1077
+reconstrucao/src/../include/ghidra_function_prototypes.h:1077:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    1074:             uVar11 = uVar11 - 1;
+    1075:           } while (uVar11 != 0);
+    1076:           return iVar6;
+    1077:         }
+    1078:         puVar2 = *(undefined4 **)(lVar1 + 0x38 + uVar11 * 8);
+    1079:         puVar7 = (undefined4 *)FUN_140a5d5e4(4);
+    1080:         if (puVar7 == (undefined4 *)0x0) {
+
+## FUN_140ac45f0 */ — reconstrucao/src/decompiled_04.c:1343
+reconstrucao/src/../include/ghidra_function_prototypes.h:1343:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    1340:   longlong lVar1;
+    1341:   int iVar2;
+    1342:   bool bVar3;
+    1343:   
+    1344:   do {
+    1345:     LOCK();
+    1346:     DAT_140fdac6c = 1;
+
+## FUN_140ac465c */ — reconstrucao/src/decompiled_04.c:1473
+reconstrucao/src/../include/ghidra_function_prototypes.h:1473:37: error: unknown type name ‘code’
+
+    1470:             goto LAB_140ac490f;
+    1471:           }
+    1472:         }
+    1473:         uVar8 = FUN_140a6bc18(param_2,puVar15);
+    1474:         uVar10 = (ulonglong)uVar8;
+    1475:         if (-1 < (int)uVar8) {
+    1476:           if ((*puVar1 & 0x2000000) == 0) {
+
+## FUN_140ac465c */ — reconstrucao/src/decompiled_04.c:1566
+reconstrucao/src/../include/ghidra_function_prototypes.h:1566:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    1563:               if (-1 < (int)uVar8) goto LAB_140ac498b;
+    1564:             }
+    1565:           }
+    1566:         }
+    1567:       }
+    1568:       else {
+    1569:         if ((((uVar8 & 8) != 0) || ((uVar6 & 8) != 0)) || ((uVar8 >> 10 & 1) != 0))
+
+## FUN_140ac465c */ — reconstrucao/src/decompiled_04.c:1602
+reconstrucao/src/../include/ghidra_function_prototypes.h:1602:26: error: unknown type name ‘code’
+
+    1599:     }
+    1600:   }
+    1601:   else {
+    1602: LAB_140ac4afb:
+    1603:     uVar10 = 0xc000000d;
+    1604:   }
+    1605: LAB_140ac4b00:
+
+## FUN_140ac4b3c */ — reconstrucao/src/decompiled_04.c:1617
+reconstrucao/src/../include/ghidra_function_prototypes.h:1617:20: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    1614: /* Ghidra address: 140ac4b3c */
+    1615: undefined8 FUN_140ac4b3c(uint *param_1)
+    1616: 
+    1617: {
+    1618:   ushort *puVar1;
+    1619:   ushort uVar2;
+    1620:   uint uVar3;
+
+## FUN_140ac4b3c */ — reconstrucao/src/decompiled_04.c:1624
+reconstrucao/src/../include/ghidra_function_prototypes.h:1624:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    1621:   undefined8 uVar4;
+    1622:   ushort *puVar5;
+    1623:   ushort uVar6;
+    1624:   ushort uVar7;
+    1625:   
+    1626:   uVar3 = param_1[0x12];
+    1627:   if ((int)uVar3 < 0) {
+
+## FUN_140ac4fc4 */ — reconstrucao/src/decompiled_04.c:1840
+reconstrucao/src/../include/ghidra_function_prototypes.h:1840:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    1837:   short *psVar2;
+    1838:   uint uVar3;
+    1839:   short *psVar4;
+    1840:   undefined *puVar5;
+    1841:   short sVar6;
+    1842:   short *psVar7;
+    1843:   ulonglong uVar8;
+
+## FUN_140ac4fc4 */ — reconstrucao/src/decompiled_04.c:1867
+reconstrucao/src/../include/ghidra_function_prototypes.h:1867:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    1864:       uVar11 = 0xffff;
+    1865:       puVar5 = (&PTR_u_Unknown_140b599d0)[(byte)param_1[2]];
+    1866:       uVar8 = FUN_140456aec(puVar5,0xffff,&lStackX_8);
+    1867:       if ((int)uVar8 < 0) {
+    1868:         return uVar8;
+    1869:       }
+    1870:       puVar1 = (undefined1 *)((longlong)param_1 + 10);
+
+## FUN_140ac4fc4 */ — reconstrucao/src/decompiled_04.c:1920
+reconstrucao/src/../include/ghidra_function_prototypes.h:1920:73: error: unknown type name ‘va_list’
+
+    1917:   *(undefined8 *)(param_2 + 0x308) = 0;
+    1918:   if (psVar4 != (short *)0x0) {
+    1919:     lVar10 = 0x7fff;
+    1920:     psVar7 = psVar4;
+    1921:     do {
+    1922:       if (*psVar7 == 0) break;
+    1923:       psVar7 = psVar7 + 1;
+
+## FUN_140ac51e0 */ — reconstrucao/src/decompiled_04.c:2038
+reconstrucao/src/../include/ghidra_function_prototypes.h:2038:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    2035:   undefined8 uStack_88;
+    2036:   undefined8 uStack_80;
+    2037:   longlong lStack_78;
+    2038:   longlong lStack_70;
+    2039:   ulonglong uStack_68;
+    2040:   
+    2041:   puVar23 = auStack_1f8;
+
+## FUN_140ac51e0 */ — reconstrucao/src/decompiled_04.c:2280
+reconstrucao/src/../include/ghidra_function_prototypes.h:2280:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    2277:             iVar6 = iStack_194;
+    2278:             if (lStack_150 != 0) {
+    2279:               ExFreePool();
+    2280:               uStack_158 = 0;
+    2281:               lStack_150 = 0;
+    2282:             }
+    2283:             param_1 = lStack_120;
+
+## FUN_140ac51e0 */ — reconstrucao/src/decompiled_04.c:2284
+reconstrucao/src/../include/ghidra_function_prototypes.h:2284:36: error: unknown type name ‘code’
+
+    2281:               lStack_150 = 0;
+    2282:             }
+    2283:             param_1 = lStack_120;
+    2284:             if (lStack_120 != 0) {
+    2285:               RtlFreeAnsiString(asStack_140);
+    2286:             }
+    2287:             uVar27 = ExFreePoolWithTag(pppppppuStack_170,0);
+
+## FUN_140ac6490 */ — reconstrucao/src/decompiled_04.c:2977
+reconstrucao/src/../include/ghidra_function_prototypes.h:2977:43: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    2974:     *param_5 = iStack_228;
+    2975:     *(undefined8 *)(param_5 + 2) = uStack_220;
+    2976:   }
+    2977:   else {
+    2978:     if (-1 < iVar1) {
+    2979:       ObCloseHandle(auStack_248[0],param_3);
+    2980:       iVar1 = -0x3fffffdc;
+
+## FUN_140ac6614 */ — reconstrucao/src/decompiled_04.c:3209
+reconstrucao/src/../include/ghidra_function_prototypes.h:3209:19: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    3206:           goto LAB_140ac6b0f;
+    3207:         }
+    3208:         if ((*(uint *)(plVar2 + 7) & 0x20) != 0) goto LAB_140ac6b0f;
+    3209:         uVar8 = 1;
+    3210:       }
+    3211:       FUN_1402c15fc(plVar11,uVar8);
+    3212: LAB_140ac6b0f:
+
+## FUN_140ac73d8 */ — reconstrucao/src/decompiled_04.c:3674
+reconstrucao/src/../include/ghidra_function_prototypes.h:3674:72: error: unknown type name ‘code’
+
+    3671:   undefined4 extraout_XMM0_Da;
+    3672:   undefined4 extraout_XMM0_Da_00;
+    3673:   undefined4 extraout_XMM0_Da_01;
+    3674:   undefined4 uVar10;
+    3675:   undefined1 auStack_198 [32];
+    3676:   undefined **ppuStack_178;
+    3677:   undefined8 *puStack_170;
+
+## FUN_140ac7ca8 */ — reconstrucao/src/decompiled_04.c:4161
+reconstrucao/src/../include/ghidra_function_prototypes.h:4161:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4158:   uint auStackX_8 [2];
+    4159:   undefined8 *puVar10;
+    4160:   undefined8 in_stack_ffffffffffffffa8;
+    4161:   undefined4 uVar11;
+    4162:   longlong lStack_48;
+    4163:   undefined4 *puStack_40;
+    4164:   undefined8 auStack_38 [2];
+
+## FUN_140ac7ca8 */ — reconstrucao/src/decompiled_04.c:4198
+reconstrucao/src/../include/ghidra_function_prototypes.h:4198:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4195:       *(ushort *)((longlong)puVar9 + 2) = *(ushort *)((longlong)puVar9 + 2) | 0x20;
+    4196:     }
+    4197:     if ((*(uint *)(param_1 + 0x1010) & 0x20) == 0) {
+    4198:       puVar10 = (undefined8 *)(CmKeyObjectType + 0x4c);
+    4199:       iVar6 = SeAssignSecurity(0,*(undefined8 *)(param_2 + 0x40),&lStack_48,1,param_2 + 0x20,puVar10
+    4200:                                ,CONCAT44(uVar11,*(undefined4 *)(CmKeyObjectType + 100)));
+    4201:       if (-1 < iVar6) goto LAB_140ac7e2a;
+
+## FUN_140ac7fa8 */ — reconstrucao/src/decompiled_04.c:4296
+reconstrucao/src/../include/ghidra_function_prototypes.h:4296:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4293:   uint *puVar5;
+    4294:   void *_Dst;
+    4295:   longlong lVar6;
+    4296:   undefined8 uVar7;
+    4297:   longlong lVar8;
+    4298:   undefined4 uVar9;
+    4299:   char acStackX_18 [8];
+
+## FUN_140ac8610 */ — reconstrucao/src/decompiled_04.c:4566
+reconstrucao/src/../include/ghidra_function_prototypes.h:4566:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4563:     (*pcVar1)(0x20);
+    4564:   }
+    4565:   return 0;
+    4566: }
+    4567: 
+    4568: /* Ghidra label: FUN_140ac86cc */
+    4569: /* Ghidra address: 140ac86cc */
+
+## FUN_140ac8610 */ — reconstrucao/src/decompiled_04.c:4568
+reconstrucao/src/../include/ghidra_function_prototypes.h:4568:38: error: unknown type name ‘code’
+
+    4565:   return 0;
+    4566: }
+    4567: 
+    4568: /* Ghidra label: FUN_140ac86cc */
+    4569: /* Ghidra address: 140ac86cc */
+    4570: void FUN_140ac86cc(undefined4 *param_1)
+    4571: 
+
+## FUN_140ac8918 */ — reconstrucao/src/decompiled_04.c:4709
+reconstrucao/src/../include/ghidra_function_prototypes.h:4709:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4706:   ulonglong uStack_38;
+    4707:   undefined8 uStack_30;
+    4708:   
+    4709:   auStackX_10[0] = 0;
+    4710:   uStack_38 = 0;
+    4711:   uStack_30 = 0;
+    4712:   psVar8 = (short *)0x0;
+
+## FUN_140ac8918 */ — reconstrucao/src/decompiled_04.c:4711
+reconstrucao/src/../include/ghidra_function_prototypes.h:4711:26: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    4708:   
+    4709:   auStackX_10[0] = 0;
+    4710:   uStack_38 = 0;
+    4711:   uStack_30 = 0;
+    4712:   psVar8 = (short *)0x0;
+    4713:   psVar7 = (short *)0x0;
+    4714:   *(short *)((longlong)SystemReserved1[0xf] + 0x1e4) =
+
+## FUN_140ac922c */ — reconstrucao/src/decompiled_04.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:20: error: unknown type name ‘PSLIST_HEADER’
+
+    5017:     *param_1 = uStack_30._4_4_ >> 4 & 3;
+    5018:     *(byte *)(param_1 + 1) = (byte)((ulonglong)uStack_30 >> 0x28) & 0x3f;
+    5019:     param_1[3] = uStack_28;
+    5020:     param_1[2] = uStack_30._4_4_ >> 0xe & 3;
+    5021:     param_1[5] = uStack_30._4_4_ >> 6 & 1;
+    5022:   }
+    5023:   else if (iVar1 != 0x117) goto LAB_140ac92d3;
+
+## FUN_140ac922c */ — reconstrucao/src/decompiled_04.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:42: error: unknown type name ‘code’
+
+    5017:     *param_1 = uStack_30._4_4_ >> 4 & 3;
+    5018:     *(byte *)(param_1 + 1) = (byte)((ulonglong)uStack_30 >> 0x28) & 0x3f;
+    5019:     param_1[3] = uStack_28;
+    5020:     param_1[2] = uStack_30._4_4_ >> 0xe & 3;
+    5021:     param_1[5] = uStack_30._4_4_ >> 6 & 1;
+    5022:   }
+    5023:   else if (iVar1 != 0x117) goto LAB_140ac92d3;
+
+## FUN_140ac922c */ — reconstrucao/src/decompiled_04.c:5020
+reconstrucao/src/../include/ghidra_function_prototypes.h:5020:56: error: unknown type name ‘code’
+
+    5017:     *param_1 = uStack_30._4_4_ >> 4 & 3;
+    5018:     *(byte *)(param_1 + 1) = (byte)((ulonglong)uStack_30 >> 0x28) & 0x3f;
+    5019:     param_1[3] = uStack_28;
+    5020:     param_1[2] = uStack_30._4_4_ >> 0xe & 3;
+    5021:     param_1[5] = uStack_30._4_4_ >> 6 & 1;
+    5022:   }
+    5023:   else if (iVar1 != 0x117) goto LAB_140ac92d3;
+
+## FUN_140ac922c */ — reconstrucao/src/decompiled_04.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:20: error: unknown type name ‘PSLIST_HEADER’
+
+    5018:     *(byte *)(param_1 + 1) = (byte)((ulonglong)uStack_30 >> 0x28) & 0x3f;
+    5019:     param_1[3] = uStack_28;
+    5020:     param_1[2] = uStack_30._4_4_ >> 0xe & 3;
+    5021:     param_1[5] = uStack_30._4_4_ >> 6 & 1;
+    5022:   }
+    5023:   else if (iVar1 != 0x117) goto LAB_140ac92d3;
+    5024:   uVar2 = 1;
+
+## FUN_140ac922c */ — reconstrucao/src/decompiled_04.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:42: error: unknown type name ‘code’
+
+    5018:     *(byte *)(param_1 + 1) = (byte)((ulonglong)uStack_30 >> 0x28) & 0x3f;
+    5019:     param_1[3] = uStack_28;
+    5020:     param_1[2] = uStack_30._4_4_ >> 0xe & 3;
+    5021:     param_1[5] = uStack_30._4_4_ >> 6 & 1;
+    5022:   }
+    5023:   else if (iVar1 != 0x117) goto LAB_140ac92d3;
+    5024:   uVar2 = 1;
+
+## FUN_140ac922c */ — reconstrucao/src/decompiled_04.c:5021
+reconstrucao/src/../include/ghidra_function_prototypes.h:5021:56: error: unknown type name ‘code’
+
+    5018:     *(byte *)(param_1 + 1) = (byte)((ulonglong)uStack_30 >> 0x28) & 0x3f;
+    5019:     param_1[3] = uStack_28;
+    5020:     param_1[2] = uStack_30._4_4_ >> 0xe & 3;
+    5021:     param_1[5] = uStack_30._4_4_ >> 6 & 1;
+    5022:   }
+    5023:   else if (iVar1 != 0x117) goto LAB_140ac92d3;
+    5024:   uVar2 = 1;
+
+## FUN_140ac9310 */ — reconstrucao/src/decompiled_04.c:5063
+reconstrucao/src/../include/ghidra_function_prototypes.h:5063:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5060:       *param_2 = uStack_10;
+    5061:       uStack_10 = 0;
+    5062:     }
+    5063:     FUN_140aa2418(uStack_10);
+    5064:   }
+    5065:   return iVar1;
+    5066: }
+
+## FUN_140ac9310 */ — reconstrucao/src/decompiled_04.c:5063
+reconstrucao/src/../include/ghidra_function_prototypes.h:5063:28: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5060:       *param_2 = uStack_10;
+    5061:       uStack_10 = 0;
+    5062:     }
+    5063:     FUN_140aa2418(uStack_10);
+    5064:   }
+    5065:   return iVar1;
+    5066: }
+
+## FUN_140ac95d0 */ — reconstrucao/src/decompiled_04.c:5182
+reconstrucao/src/../include/ghidra_function_prototypes.h:5182:1: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
+
+    5179: 
+    5180: {
+    5181:   bool bVar1;
+    5182:   void *pvVar2;
+    5183:   longlong lVar3;
+    5184:   char cVar4;
+    5185:   int iVar5;
 
