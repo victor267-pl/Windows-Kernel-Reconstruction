@@ -104,3 +104,13 @@ A nota anterior sobre ingestão limitada não descreve mais todo o estado do pro
 No commit atual, o workflow mais recente de declarações internas terminou com sucesso como automação, mas o diagnóstico GCC continua falhando nos quatro arquivos decompilados. O relatório atual registra 105 identificadores não declarados distintos; a execução automatizada não significa que o código C esteja compilável nem que exista uma imagem de kernel ligada ou inicializável.
 
 A afirmação de que os arquivos `.exe` e `.pdb` não estão no repositório estava incorreta e foi corrigida em `BOOTABILITY_BLOCKERS.md`. Não é necessário reenviar esses arquivos.
+
+## Atualização técnica — 22/11/2026
+
+- Evidência de `DAT_140e0a740`: endereço file-backed em `.data`, valor inicial bruto `0x00002B992DDFA232` e milhares de usos XOR com endereços locais de stack. Foi registrado como candidato de alta confiança ao cookie de segurança x64, sem alegar que o nome original foi recuperado.
+- Foi adicionada uma definição C inicializada para esse global candidato e um header `ghidra_global_declarations.h`; os quatro arquivos C decompilados agora incluem o header.
+- A execução GitHub Actions `45053605922` concluiu a integração e refez o diagnóstico. A referência a `DAT_140e0a740` deixou de aparecer entre os identificadores não declarados.
+- O novo diagnóstico expôs `undefined3` como tipo ausente. Foi representado como `uint3` (container de 32 bits para valor Ghidra de 24 bits), coerente com os helpers escalares já existentes. A execução `45053684504` confirmou **zero nomes de tipos ausentes**.
+- Diagnóstico atual: **4/4 unidades C ainda falham**; **106 identificadores não declarados distintos**; classes registradas: 152 erros de identificador não declarado, 302 outros erros, 123 erros de sintaxe/estrutura esperada, 22 declarações implícitas e 3 tipos conflitantes. A contagem de erros pode mudar conforme correções permitem ao compilador avançar.
+- A geração conservadora atual examinou 33.823 definições e adicionou 11.811 declarações de encaminhamento sem aridade. Isso não comprova ABI nem linkedição.
+- **Não foi produzido um executável de kernel, não houve linkedição NT e não houve teste de boot em VM.** O objetivo de inicialização permanece não atingido.
