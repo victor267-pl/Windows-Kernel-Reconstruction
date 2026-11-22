@@ -42,3 +42,19 @@ O GitHub recebeu as sete partes em `dados/`. A integracao atual retorna o conteu
 - O agregador é `include/nt_kernel_layouts.h`.
 - Validação executada no GitHub Actions: compilação C11 com GCC, `-Wall -Wextra -Werror -pedantic`, e verificações estáticas de tamanho e offsets-base. Resultado: sucesso no run 45040788277.
 - **Limite explícito:** os membros internos estão representados por armazenamento opaco (`uint8_t`), não por declarações semânticas C. Isso evita inventar layouts de tipos aninhados e uniões. A próxima etapa é reconstruir esses membros usando o inventário completo e validar cada dependência antes de substituir o armazenamento opaco.
+
+
+## Reconstrução de funções C decompiladas
+
+- Os dumps Ghidra foram processados e os corpos C foram gravados em `src/decompiled_01.c` até `src/decompiled_04.c`.
+- Extração mais recente: **33.826 corpos de função**, com **23 blocos rejeitados** por não conterem assinatura/corpo recuperável pelo parser.
+- O parser preserva o rótulo Ghidra, o endereço original e o nome da assinatura quando disponível em `extraidos/function_extraction.json`.
+- A saída é pseudocódigo C decompilado. Não é o fonte original da Microsoft e não está pronta para linkedição como kernel.
+
+## Dependências e diagnóstico de compilação
+
+- `extraidos/SYMBOL_DEPENDENCIES.md` e `symbol_dependencies.json` catalogam rótulos, chamadas, referências FUN_ e símbolos DAT_.
+- Inventário atual: 33.826 marcadores extraídos, 33.818 nomes distintos, 17.339 referências FUN_ correspondentes a rótulos locais, 3 referências FUN_ sem rótulo correspondente e 8.237 símbolos DAT_ distintos.
+- `extraidos/COMPILER_DIAGNOSTICS.md` contém um diagnóstico GCC de sintaxe, não uma validação de build. Os quatro arquivos C falham nesse teste devido a declarações ausentes, tipos Ghidra não resolvidos e incompatibilidades do pseudocódigo.
+- O diagnóstico encontrou 3 nomes de tipos ausentes de forma recorrente e 71 identificadores não declarados distintos nos trechos examinados. As primeiras ocorrências incluem variáveis globais DAT_ e registradores/variáveis especiais do Ghidra.
+- Próxima etapa técnica: correlacionar os símbolos DAT_ e os tipos não resolvidos com o inventário de dados/PDB, reconstruir declarações com evidência e compilar unidades menores. Não adicionar declarações genéricas para mascarar erros sem determinar seus tipos.
