@@ -32,7 +32,7 @@ def main():
  cvs=[]; dbg=dirs[6]; dp=off_rva(dbg["rva"]) if dbg["rva"] else None
  if dp is not None:
   for p in range(dp,dp+dbg["size"]-27,28):
-   typ,sz,_,_,_,rp=struct.unpack_from("<IIHHII",d,p)
+   _,_,_,_,typ,sz,_,rp=struct.unpack_from("<IIHHIIII",d,p)
    if typ==2 and rp and rp+sz<=len(d):
     b=d[rp:rp+sz]
     if b[:4]==b"RSDS" and len(b)>=24:
