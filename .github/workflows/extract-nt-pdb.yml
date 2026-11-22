@@ -6,6 +6,9 @@ on:
       - 'reconstrucao/entrada/ntkrnlmp.pdb'
       - 'reconstrucao/scripts/extract_nt_pdb.py'
       - '.github/workflows/extract-nt-pdb.yml'
+concurrency:
+  group: pdb-extraction-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -43,5 +46,7 @@ jobs:
           path: |
             reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md
             reconstrucao/extraidos/pdb/
+            reconstrucao/extraidos/module_data_symbols.txt
+            reconstrucao/extraidos/modules.txt
           if-no-files-found: warn
           retention-days: 30
