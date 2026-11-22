@@ -1,22 +1,22 @@
 # Requisitos para um kernel inicializável e distribuição open source
 
-## Estado verificado do repositório
+## Estado verificado no commit atual
 
-Na revisão do commit `50b6296e92cf189ab2133c7ae1cd75530febe7f5`:
-
-- Existem quatro unidades C extraídas de pseudocódigo Ghidra, headers de layouts e protótipos e relatórios de dependências.
-- Os quatro arquivos C ainda falham no diagnóstico GCC.
-- Não há arquivos `.exe`, `.sys`, `.dll`, `.pdb`, `.efi` ou imagem de disco no histórico de arquivos do repositório.
-- Não há implementação identificada de bootloader, HAL, inicialização de memória, interrupções, scheduler inicial, drivers de armazenamento/console ou configuração de linkedição para imagem de kernel.
-- O workflow de diagnóstico é uma verificação de compilação de C, não um build de kernel Windows.
+- O repositório contém os binários de entrada: `reconstrucao/entrada/ntoskrnl.exe` (13.172.176 bytes) e `reconstrucao/entrada/ntkrnlmp.pdb` (11.563.008 bytes).
+- A análise PE registra SHA-256 `f6f275f67c7ef44fc2df2d828658fb31eaffd41018ac5a0fd9440e08d9912c30`, arquitetura x64, ImageBase `0x140000000`, Entry RVA `0xb643c0` e identidade CodeView GUID `CE884F70-F5A9-025D-53DB-35D8BE8BFF79` / Age 1.
+- O relatório de extração confirma SymChk: PDB Matched=TRUE, DBG Matched=TRUE, DBI Age=1 e Type Info=TRUE. O PDB tem TPI extraído; o relatório registra também ausência de símbolos globais privados (Global syms=FALSE / NumSyms=0). Não confundir isso com ausência dos arquivos binários.
+- O grafo CodeView registra 12.085 registros TPI, 4.124 UDTs e layouts para `_EPROCESS`, `_ETHREAD`, `_KPROCESS`, `_KTHREAD` e `_CONTEXT`, com tamanhos conferidos entre PDB e manifesto.
+- Existem quatro unidades C de pseudocódigo Ghidra, headers de layouts/protótipos e relatórios de dependências.
+- O diagnóstico GCC mais recente ainda encontra erros nos quatro arquivos C; o workflow de diagnóstico não é um build nem uma linkedição do kernel Windows.
+- Ainda não há implementação integrada de bootloader, HAL, inicialização de memória/interrupções, drivers mínimos ou configuração de linkedição de imagem.
 
 ## O que falta para o objetivo
 
-### 1. Evidência binária e símbolos
-É necessário ter o executável exato do kernel alvo e seu PDB correspondente (ou uma fonte equivalente verificável), incluindo versão, arquitetura, timestamp/identidade de imagem e endereços. Sem isso, não é tecnicamente válido atribuir tipos/valores a milhares de símbolos `DAT_` apenas pelo nome.
+### 1. Resolução de símbolos globais
+O executável e o PDB exatos já estão no repositório. O PDB extraído fornece tipos e símbolos públicos, mas o relatório informa que não fornece símbolos globais privados. A resolução dos `DAT_` precisa combinar endereços/RVAs do PE, seções e bytes reais, referências do pseudocódigo e tipos/estruturas CodeView. Não atribuir tipos arbitrários apenas pelo nome do rótulo.
 
 ### 2. Tradução do pseudocódigo
-Resolver os tipos Ghidra não representáveis diretamente em C, operações vetoriais de 128 bits, variáveis especiais, convenções de chamada, protótipos conflitantes e os 23 blocos rejeitados. Helpers de sincronização como `LOCK`/`UNLOCK` precisam preservar a semântica observada; não podem ser stubs vazios.
+Resolver os tipos Ghidra não representáveis diretamente em C, operações vetoriais de 128 bits, variáveis especiais, convenções de chamada, protótipos conflitantes e os 23 blocos rejeitados. Helpers de sincronização como `LOCK`/`UNLOCK` precisam preservar a semântica observada; não podem ser stubs vazios. O diagnóstico atual registra 105 identificadores não declarados distintos e classes de erro adicionais; consultar sempre `extraidos/COMPILER_DIAGNOSTICS.md` e `COMPILER_ERROR_CONTEXTS.md` do commit atual, não contagens históricas.
 
 ### 3. Ambiente de build do kernel
 Um kernel Windows x64 depende de ABI, headers/import libraries compatíveis, linker, seções, relocations, entry point, configuração de imagem e interfaces de HAL/boot. Uma compilação GCC isolada dos corpos de funções não satisfaz esses requisitos.
@@ -34,8 +34,8 @@ Critérios mínimos antes de chamar o resultado de inicializável:
 
 ## Distribuição open source
 
-Não foi adicionado um arquivo de licença permissiva global. A reconstrução deriva de análise de binário e pseudocódigo associados ao Windows; não há evidência no repositório de que o projeto tenha direitos para relicenciar conteúdo derivado da Microsoft. Uma licença para scripts e código original novo deve delimitar explicitamente seu escopo e não alegar licenciar código proprietário, binários ou símbolos de terceiros. A ausência de licença não deve ser interpretada como autorização para redistribuir esses materiais.
+Não foi adicionado um arquivo de licença permissiva global. A reconstrução deriva de análise de binário e pseudocódigo associados ao Windows; não há evidência no repositório de que o projeto tenha direitos para relicenciar conteúdo derivado da Microsoft. Uma licença para scripts e código original novo deve delimitar explicitamente seu escopo e não alegar licenciar código proprietário, binários ou símbolos de terceiros.
 
 ## Decisão técnica
 
-O estado atual é **reconstrução parcial não compilável e não inicializável**. Não há evidência suficiente para afirmar que o kernel NT alvo pode ser reconstruído integralmente ou inicializado a partir dos artefatos presentes. O trabalho deve avançar por dependências demonstráveis e testes incrementais; não por declarações globais, funções vazias ou símbolos inventados.
+O estado atual é **reconstrução parcial, ainda não compilável como kernel completo e não inicializável**. Os binários de entrada e evidências de símbolos estão presentes; o bloqueio atual não é falta desses arquivos, mas a tradução semântica dos corpos decompilados, a resolução dos dados/globais, as dependências de ABI/ligação e a ausência do caminho completo de boot. O trabalho deve avançar por dependências demonstráveis e testes incrementais, sem funções vazias ou símbolos inventados.
