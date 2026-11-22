@@ -69,6 +69,9 @@ def main():
     # module symbol dump as proof that no data symbols exist.
     modules = run(tool, "-modules", output="modules.txt")
     counts["modules.txt"] = len(modules.splitlines())
+    for option, filename in [("-section-headers", "section_headers.txt"), ("-section-map", "section_map.txt")]:
+        output = run(tool, option, output=filename)
+        counts[filename] = len(output.splitlines())
 
     report = [
         "# Extração do PDB do kernel NT",
@@ -86,7 +89,8 @@ def main():
     report += [
         "",
         "A quantidade de linhas é uma métrica bruta, não uma contagem de tipos/símbolos únicos.",
-        "Foi extraída também a lista de compilands (-modules). O dump -symbols é a saída de símbolos por módulo suportada pelo LLVM 21 instalado.",
+        "Foram extraídos a lista de compilands (-modules), os cabeçalhos de seção da imagem (-section-headers) e o mapa de seções do PDB (-section-map).",
+        "Esses metadados permitem converter endereços públicos segment:offset em RVAs sem supor que o índice de segmento coincide com a ordem das seções PE.",
         "A saída vazia de símbolos não é interpretada como ausência comprovada de variáveis: o PDB está stripped e o SymChk reportou Global syms=FALSE e NumSyms=0.",
         "O PDB foi reportado pelo SymChk com Global syms=FALSE e NumSyms=0; a disponibilidade",
         "de globais e públicos deve ser interpretada conforme o conteúdo efetivo dos dumps.",
