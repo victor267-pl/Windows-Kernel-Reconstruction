@@ -8,6 +8,9 @@ on:
       - 'reconstrucao/include/ghidra_types.h'
       - 'reconstrucao/include/ghidra_function_prototypes.h'
       - '.github/workflows/diagnose-reconstructed-c.yml'
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
