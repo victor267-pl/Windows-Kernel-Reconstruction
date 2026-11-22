@@ -61,8 +61,10 @@ for name,item in prototypes.items():
     else: kept.append(item["line"])
 preamble=[]
 for line in lines:
-    if line.strip().endswith(";"): break
-    preamble.append(line)
+    s=line.strip()
+    is_prototype=s.endswith(";") and re.search(r"^[A-Za-z_][^;]*\b[A-Za-z_]\w*\s*\(.*\);$",s)
+    if not is_prototype and s!="#endif":
+        preamble.append(line)
 new_header="\n".join(preamble+sorted(kept)+["","#endif"])+"\n"
 inc.write_text(new_header,encoding="utf-8")
 report={"source_files":len(files),"prototypes_before":len(prototypes),"prototypes_after":len(kept),
