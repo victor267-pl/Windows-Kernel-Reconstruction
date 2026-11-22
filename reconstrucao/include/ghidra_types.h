@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
+#include "ghidra_scalar_helpers.h"
 typedef uint8_t undefined1;
 typedef uint16_t undefined2;
 typedef uint32_t undefined4;
