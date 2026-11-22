@@ -112,7 +112,8 @@ for path in INPUTS:
         "/* AUTO-GENERATED Ghidra decompilation reconstruction. */\n"
         "/* Not Microsoft's original source; names/types may be unresolved. */\n"
         '#include "../include/ghidra_types.h"\n'
-        '#include "../include/ghidra_function_prototypes.h"\n\n'
+        '#include "../include/ghidra_function_prototypes.h"\n'
+        '#include "../include/ghidra_internal_forward_decls.h"\n\n'
     )
     body = "\n\n".join(
         f"/* Ghidra label: {name} */\n/* Ghidra address: {address or 'unknown'} */\n{code}"
