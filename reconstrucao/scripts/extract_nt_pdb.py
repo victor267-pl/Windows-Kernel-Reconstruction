@@ -63,6 +63,14 @@ def main():
         output = run(tool, option, output=filename)
         counts[filename] = len(output.splitlines())
 
+    # Global symbol hash is stripped in this PDB, but per-compiland module
+    # symbol streams may still retain S_GDATA/S_LDATA and local data records.
+    module_data = run(tool, "-module-syms", "-sym-types=data",
+                      output="module_data_symbols.txt")
+    counts["module_data_symbols.txt"] = len(module_data.splitlines())
+    modules = run(tool, "-modules", output="modules.txt")
+    counts["modules.txt"] = len(modules.splitlines())
+
     report = [
         "# Extração do PDB do kernel NT",
         "",
@@ -79,6 +87,8 @@ def main():
     report += [
         "",
         "A quantidade de linhas é uma métrica bruta, não uma contagem de tipos/símbolos únicos.",
+        "Foram extraídos também os registros de dados por módulo (-module-syms -sym-types=data) e a lista de compilands (-modules).",
+        "O dump de dados por módulo será auditado separadamente do hash global quanto a S_GDATA/S_LDATA e tipos.",
         "O PDB foi reportado pelo SymChk com Global syms=FALSE e NumSyms=0; a disponibilidade",
         "de globais e públicos deve ser interpretada conforme o conteúdo efetivo dos dumps.",
         "Esta extração não reconstrói corpos de funções nem comprova compilação ou boot.",
