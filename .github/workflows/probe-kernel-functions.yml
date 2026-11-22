@@ -1,0 +1,19 @@
+name: Probe kernel pseudocode format
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect pseudocode format
+        run: python3 reconstrucao/scripts/probe_function_format.py
+      - name: Commit probe report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/function_format_probe.json
+          git commit -m "Identificar formato do pseudocodigo do kernel"
+          git push
