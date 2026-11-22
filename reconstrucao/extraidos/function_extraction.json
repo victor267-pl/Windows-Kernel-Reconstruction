@@ -3,326 +3,422 @@
     {
       "file": "AnalisarKernel_parte_01.txt",
       "output": "reconstrucao/src/decompiled_01.c",
-      "functions": 9018,
-      "rejected": 77,
-      "output_bytes": 18910217,
-      "sha256": "4df8003beedb564d0186a2bc564a2e11253fe49c538b05e7f172469b3f875677",
+      "functions": 9087,
+      "rejected": 8,
+      "label_mismatches": 69,
+      "mismatch_examples": [
+        {
+          "label": "HvlInvokeFastExtendedHypercall",
+          "signature_name": "if"
+        },
+        {
+          "label": "MmMapLockedPagesSpecifyCache",
+          "signature_name": "if"
+        },
+        {
+          "label": "PsQueryProcessCommandLine",
+          "signature_name": "if"
+        },
+        {
+          "label": "KeSetCoalescableTimer",
+          "signature_name": "if"
+        },
+        {
+          "label": "IoSetIoCompletionEx3",
+          "signature_name": "if"
+        },
+        {
+          "label": "FsRtlFastUnlockSingle",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlInsertElementGenericTableFull",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlLookupElementGenericTableFull",
+          "signature_name": "if"
+        },
+        {
+          "label": "NtSetInformationFile",
+          "signature_name": "if"
+        },
+        {
+          "label": "ExBlockOnAddressPushLock",
+          "signature_name": "FUN_1406d1200"
+        },
+        {
+          "label": "FsRtlIsNameInUnUpcasedExpression",
+          "signature_name": "if"
+        },
+        {
+          "label": "IoRemoveIoCompletion",
+          "signature_name": "if"
+        },
+        {
+          "label": "KeWaitForMultipleObjects",
+          "signature_name": "if"
+        },
+        {
+          "label": "KeWaitForMutexObject",
+          "signature_name": "if"
+        },
+        {
+          "label": "SeReportSecurityEventWithSubCategory",
+          "signature_name": "if"
+        },
+        {
+          "label": "KeQueryTotalCycleTimeThread",
+          "signature_name": "FUN_1406d1200"
+        },
+        {
+          "label": "KeQueryLogicalProcessorRelationship",
+          "signature_name": "FUN_1406d1200"
+        },
+        {
+          "label": "RtlDecompressBufferEx",
+          "signature_name": "if"
+        },
+        {
+          "label": "MmMapLockedPagesWithReservedMapping",
+          "signature_name": "if"
+        },
+        {
+          "label": "MmAllocatePartitionNodePagesForMdlEx",
+          "signature_name": "if"
+        }
+      ],
+      "output_bytes": 18949946,
+      "sha256": "2eee144d18a8c1f58eeb3ca21461090434afa57473a6a065f2892241f68eeee6",
       "rejection_examples": [
-        {
-          "name": "HvlInvokeFastExtendedHypercall",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "MmMapLockedPagesSpecifyCache",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "PsQueryProcessCommandLine",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "KeSetCoalescableTimer",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "IoSetIoCompletionEx3",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "FsRtlFastUnlockSingle",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "RtlInsertElementGenericTableFull",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "RtlLookupElementGenericTableFull",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "NtSetInformationFile",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "ExBlockOnAddressPushLock",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "FsRtlIsNameInUnUpcasedExpression",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "IoRemoveIoCompletion",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "KeWaitForMultipleObjects",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "KeWaitForMutexObject",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "SeReportSecurityEventWithSubCategory",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "KeQueryTotalCycleTimeThread",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "KeQueryLogicalProcessorRelationship",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "RtlDecompressBufferEx",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "MmMapLockedPagesWithReservedMapping",
-          "reason": "label_signature_mismatch"
-        },
         {
           "name": "MmAllocatePagesForMdl",
           "reason": "opening_brace_not_found"
+        },
+        {
+          "name": "FsRtlLookupLargeMcbEntry",
+          "reason": "opening_brace_not_found"
+        },
+        {
+          "name": "FsRtlGetNextLargeMcbEntry",
+          "reason": "opening_brace_not_found"
+        },
+        {
+          "name": "KeInitializeEnumerationContextFromAffinity",
+          "reason": "signature_not_found"
+        },
+        {
+          "name": "RtlInitializeGenericTableAvl",
+          "reason": "opening_brace_not_found"
+        },
+        {
+          "name": "FsRtlLookupLastLargeMcbEntryAndIndex",
+          "reason": "opening_brace_not_found"
+        },
+        {
+          "name": "RtlInitializeGenericTable",
+          "reason": "signature_not_found"
+        },
+        {
+          "name": "FUN_140531640",
+          "reason": "unbalanced_body"
         }
       ]
     },
     {
       "file": "AnalisarKernel_parte_02.txt",
       "output": "reconstrucao/src/decompiled_02.c",
-      "functions": 11371,
-      "rejected": 66,
-      "output_bytes": 18698877,
-      "sha256": "3e8e8c537308a828c3df4b1f5e13b1ea6f77539791217cf9c5cede07be7815d8",
+      "functions": 11431,
+      "rejected": 6,
+      "label_mismatches": 60,
+      "mismatch_examples": [
+        {
+          "label": "RtlStringVPrintfWorkerA",
+          "signature_name": "if"
+        },
+        {
+          "label": "HalDmaAllocateCrashDumpRegistersEx",
+          "signature_name": "if"
+        },
+        {
+          "label": "FsRtlGetNextMcbEntry",
+          "signature_name": "if"
+        },
+        {
+          "label": "FsRtlOplockBreakToNone",
+          "signature_name": "if"
+        },
+        {
+          "label": "FsRtlOplockBreakToNoneEx",
+          "signature_name": "if"
+        },
+        {
+          "label": "HvlQueryProcessorTopologyEx",
+          "signature_name": "if"
+        },
+        {
+          "label": "VslGetSecurePciDeviceAlternateFunctionNumberForVtl0Dma",
+          "signature_name": "FUN_1406d1200"
+        },
+        {
+          "label": "VslGetSecurePciDeviceBootConfiguration",
+          "signature_name": "FUN_1406d1200"
+        },
+        {
+          "label": "KeInitializeCrashDumpHeader",
+          "signature_name": "if"
+        },
+        {
+          "label": "IoEnumerateKsrPersistentMemoryEx",
+          "signature_name": "if"
+        },
+        {
+          "label": "IoTranslateBusAddress",
+          "signature_name": "if"
+        },
+        {
+          "label": "PoFxIssueComponentPerfStateChangeMultiple",
+          "signature_name": "if"
+        },
+        {
+          "label": "PoFxQueryCurrentComponentPerfState",
+          "signature_name": "if"
+        },
+        {
+          "label": "PoFxRegisterDripsWatchdogCallback",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlGetAppContainerNamedObjectPath",
+          "signature_name": "FUN_1406d1200"
+        },
+        {
+          "label": "RtlQueryAllInternalFeatureConfigurations",
+          "signature_name": "FUN_1404a6548"
+        },
+        {
+          "label": "RtlQueryAllInternalRuntimeFeatureConfigurations",
+          "signature_name": "FUN_1404a6548"
+        },
+        {
+          "label": "RtlQueryInternalFeatureConfiguration",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlIoDecodeMemIoResource",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlCompareExchangePointerMapping",
+          "signature_name": "if"
+        }
+      ],
+      "output_bytes": 18720049,
+      "sha256": "07b69d34e37dd53541834e1bc8a1cf024c78b1d02f605ee884e00042c2593483",
       "rejection_examples": [
-        {
-          "name": "RtlStringVPrintfWorkerA",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "HalDmaAllocateCrashDumpRegistersEx",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "FsRtlGetNextMcbEntry",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "FsRtlOplockBreakToNone",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "FsRtlOplockBreakToNoneEx",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "HvlQueryProcessorTopologyEx",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "VslGetSecurePciDeviceAlternateFunctionNumberForVtl0Dma",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "VslGetSecurePciDeviceBootConfiguration",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "KeInitializeCrashDumpHeader",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "IoEnumerateKsrPersistentMemoryEx",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "IoTranslateBusAddress",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "PoFxIssueComponentPerfStateChangeMultiple",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "PoFxQueryCurrentComponentPerfState",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "PoFxRegisterDripsWatchdogCallback",
-          "reason": "label_signature_mismatch"
-        },
         {
           "name": "DbgPrintReturnControlC",
           "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlGetAppContainerNamedObjectPath",
-          "reason": "label_signature_mismatch"
+          "name": "FsRtlRegisterUncProviderEx",
+          "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlQueryAllInternalFeatureConfigurations",
-          "reason": "label_signature_mismatch"
+          "name": "FsRtlNotifyChangeDirectory",
+          "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlQueryAllInternalRuntimeFeatureConfigurations",
-          "reason": "label_signature_mismatch"
+          "name": "IoAcquireKsrPersistentMemory",
+          "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlQueryInternalFeatureConfiguration",
-          "reason": "label_signature_mismatch"
+          "name": "IoReserveKsrPersistentMemory",
+          "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlIoDecodeMemIoResource",
-          "reason": "label_signature_mismatch"
+          "name": "FUN_14077f250",
+          "reason": "unbalanced_body"
         }
       ]
     },
     {
       "file": "AnalisarKernel_parte_03.txt",
       "output": "reconstrucao/src/decompiled_03.c",
-      "functions": 8539,
-      "rejected": 130,
-      "output_bytes": 18707672,
-      "sha256": "d14dd40c343f766cfbd2abb4849acad25a9aea38d1e850476588eeed44f8adab",
+      "functions": 8662,
+      "rejected": 7,
+      "label_mismatches": 123,
+      "mismatch_examples": [
+        {
+          "label": "TtmNotifyDeviceArrival",
+          "signature_name": "if"
+        },
+        {
+          "label": "PsQuerySyscallProviderInformation",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlDecompressFragment",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlUpcaseUnicodeToCustomCPN",
+          "signature_name": "if"
+        },
+        {
+          "label": "LdrResFindResourceDirectory",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlAddAccessFilterAce",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlAddAuditAccessAceEx",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlAddAuditAccessObjectAce",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlAddMandatoryAccessAllowedAce",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlAddMandatoryAppAccessAllowedAce",
+          "signature_name": "if"
+        },
+        {
+          "label": "RtlAddResourceAttributeAce",
+          "signature_name": "FUN_1406d1200"
+        },
+        {
+          "label": "RtlQueryAllFeatureConfigurations",
+          "signature_name": "FUN_1404a6548"
+        },
+        {
+          "label": "RtlUnicodeStringToInt64",
+          "signature_name": "if"
+        },
+        {
+          "label": "SeRegisterImageVerificationCallback",
+          "signature_name": "if"
+        },
+        {
+          "label": "LsaCallAuthenticationPackage",
+          "signature_name": "if"
+        },
+        {
+          "label": "LsaLookupAuthenticationPackage",
+          "signature_name": "if"
+        },
+        {
+          "label": "LsaRegisterLogonProcess",
+          "signature_name": "if"
+        },
+        {
+          "label": "SeSetSessionIdTokenWithLinked",
+          "signature_name": "if"
+        },
+        {
+          "label": "SeQuerySecureBootPolicyValue",
+          "signature_name": "if"
+        },
+        {
+          "label": "IoWMIQuerySingleInstanceMultiple",
+          "signature_name": "if"
+        }
+      ],
+      "output_bytes": 18793210,
+      "sha256": "5aae555d90f244d445e28772f36551f2ae8a14d2d4344c568b9b64d319754137",
       "rejection_examples": [
-        {
-          "name": "TtmNotifyDeviceArrival",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "PsQuerySyscallProviderInformation",
-          "reason": "label_signature_mismatch"
-        },
         {
           "name": "PsRegisterSystemAvailableCpusChangeNotification",
           "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlDecompressFragment",
-          "reason": "label_signature_mismatch"
+          "name": "ExSubscribeWnfStateChange",
+          "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlUpcaseUnicodeToCustomCPN",
-          "reason": "label_signature_mismatch"
+          "name": "SeSetSecurityAttributesToken",
+          "reason": "opening_brace_not_found"
         },
         {
-          "name": "LdrResFindResourceDirectory",
-          "reason": "label_signature_mismatch"
+          "name": "RtlSetSystemBootStatus",
+          "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlAddAccessFilterAce",
-          "reason": "label_signature_mismatch"
+          "name": "FsRtlInitializeExtraCreateParameter",
+          "reason": "signature_not_found"
         },
         {
-          "name": "RtlAddAuditAccessAceEx",
-          "reason": "label_signature_mismatch"
+          "name": "SeDeleteObjectAuditAlarmWithTransaction",
+          "reason": "opening_brace_not_found"
         },
         {
-          "name": "RtlAddAuditAccessObjectAce",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "RtlAddMandatoryAccessAllowedAce",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "RtlAddMandatoryAppAccessAllowedAce",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "RtlAddResourceAttributeAce",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "RtlQueryAllFeatureConfigurations",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "RtlUnicodeStringToInt64",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "SeRegisterImageVerificationCallback",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "LsaCallAuthenticationPackage",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "LsaLookupAuthenticationPackage",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "LsaRegisterLogonProcess",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "SeSetSessionIdTokenWithLinked",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "SeQuerySecureBootPolicyValue",
-          "reason": "label_signature_mismatch"
+          "name": "FUN_140ac21c0",
+          "reason": "unbalanced_body"
         }
       ]
     },
     {
       "file": "AnalisarKernel_parte_04.txt",
       "output": "reconstrucao/src/decompiled_04.c",
-      "functions": 4638,
-      "rejected": 10,
-      "output_bytes": 7478370,
-      "sha256": "1cabdcd83f2e36e40302ce8c93bdb637c8c26f64b0ab5c164c60c857adeb71d0",
+      "functions": 4646,
+      "rejected": 2,
+      "label_mismatches": 8,
+      "mismatch_examples": [
+        {
+          "label": "DbgkWerCaptureLiveKernelDump2",
+          "signature_name": "if"
+        },
+        {
+          "label": "IoOpenDeviceInterfaceRegistryKey",
+          "signature_name": "if"
+        },
+        {
+          "label": "FsRtlNotifyFilterChangeDirectoryLite",
+          "signature_name": "if"
+        },
+        {
+          "label": "KeAddSystemServiceTable",
+          "signature_name": "if"
+        },
+        {
+          "label": "NtQueryInformationThread",
+          "signature_name": "FUN_1406d1200"
+        },
+        {
+          "label": "NtQueryInformationToken",
+          "signature_name": "if"
+        },
+        {
+          "label": "KeHwPolicyLocateResource",
+          "signature_name": "if"
+        },
+        {
+          "label": "KeFindConfigurationNextEntry",
+          "signature_name": "if"
+        }
+      ],
+      "output_bytes": 7487140,
+      "sha256": "d0da49436e5a017a98daf0ca6908e06c1845699630bb60f023a89c10505ba361",
       "rejection_examples": [
         {
           "name": "IoFastQueryNetworkAttributes",
           "reason": "opening_brace_not_found"
         },
         {
-          "name": "DbgkWerCaptureLiveKernelDump2",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "IoOpenDeviceInterfaceRegistryKey",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "FsRtlNotifyFilterChangeDirectoryLite",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "KeAddSystemServiceTable",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "NtQueryInformationThread",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "NtQueryInformationToken",
-          "reason": "label_signature_mismatch"
-        },
-        {
           "name": "FUN_140bfa610",
           "reason": "signature_not_found"
-        },
-        {
-          "name": "KeHwPolicyLocateResource",
-          "reason": "label_signature_mismatch"
-        },
-        {
-          "name": "KeFindConfigurationNextEntry",
-          "reason": "label_signature_mismatch"
         }
       ]
     }
   ],
-  "total_extracted": 33566,
-  "total_rejected": 283,
+  "total_extracted": 33826,
+  "total_rejected": 23,
   "functions": [
     {
       "name": "FUN_140200008",
@@ -861,6 +957,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "HvlInvokeFastExtendedHypercall",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_140210aa0",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -1034,6 +1134,10 @@
     },
     {
       "name": "FUN_140215900",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "MmMapLockedPagesSpecifyCache",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -2073,6 +2177,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "PsQueryProcessCommandLine",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1402491d8",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -2326,6 +2434,10 @@
     },
     {
       "name": "FUN_140250d48",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "KeSetCoalescableTimer",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -2957,6 +3069,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "IoSetIoCompletionEx3",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_14026fba0",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -3345,6 +3461,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "FsRtlFastUnlockSingle",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_140286be0",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -3414,6 +3534,14 @@
     },
     {
       "name": "RtlInsertElementGenericTable",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "RtlInsertElementGenericTableFull",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "RtlLookupElementGenericTableFull",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -5269,6 +5397,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "NtSetInformationFile",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1402c8dd0",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -5638,6 +5770,10 @@
     },
     {
       "name": "FUN_1402cfc1c",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "ExBlockOnAddressPushLock",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -6205,6 +6341,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "FsRtlIsNameInUnUpcasedExpression",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1402e151c",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -6741,11 +6881,19 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "IoRemoveIoCompletion",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "KeRemoveQueueEx",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
       "name": "FUN_1402f2b70",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "KeWaitForMultipleObjects",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -6762,6 +6910,10 @@
     },
     {
       "name": "ExAcquireFastMutex",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "KeWaitForMutexObject",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -7230,6 +7382,10 @@
     },
     {
       "name": "FUN_14030a4cc",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "SeReportSecurityEventWithSubCategory",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -10297,6 +10453,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "KeQueryTotalCycleTimeThread",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_140370ac0",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -10830,6 +10990,10 @@
     },
     {
       "name": "FUN_14037de0c",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "KeQueryLogicalProcessorRelationship",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -12157,6 +12321,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "RtlDecompressBufferEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1403a4830",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -12273,6 +12441,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "MmMapLockedPagesWithReservedMapping",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1403a7bb4",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -12362,6 +12534,10 @@
     },
     {
       "name": "MmAllocateNodePagesForMdlEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "MmAllocatePartitionNodePagesForMdlEx",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -12477,6 +12653,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "SeQuerySecurityAttributesTokenAccessInformation",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "SeTokenFromAccessInformation",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -12485,11 +12665,23 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "SeAccessCheckFromState",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1403acee0",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "SeAccessCheckFromStateEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "SeAccessCheck",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "SeAccessCheckWithHint",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -13961,6 +14153,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "CcCoherencyFlushAndPurgeCache",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1403cfddc",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -14358,6 +14554,10 @@
     },
     {
       "name": "FUN_1403dce18",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "KasanMarkAddressRedZone",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -15101,11 +15301,19 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "RtlEnumerateGenericTableLikeADirectory",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "RtlEnumerateGenericTableAvl",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
       "name": "FUN_1403ee750",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "RtlLookupFirstMatchingElementGenericTableAvl",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -15377,6 +15585,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "RtlInsertElementGenericTableFullAvl",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1403f44e0",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -15402,6 +15614,10 @@
     },
     {
       "name": "FUN_1403f4a54",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "RtlLookupElementGenericTableFullAvl",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -15897,6 +16113,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "FsRtlFastCheckLockForWrite",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1404015ec",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -15906,6 +16126,10 @@
     },
     {
       "name": "FsRtlCheckLockForReadAccess",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "FsRtlFastCheckLockForRead",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -16202,6 +16426,10 @@
     },
     {
       "name": "FUN_140407520",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "FsRtlLookupBaseMcbEntry",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -16777,6 +17005,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "ExMoveFastResourceOwnershipWithFlags",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_14041336c",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -17050,6 +17282,10 @@
     },
     {
       "name": "FUN_140417284",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "ObReferenceObjectByPointerWithTag",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -18533,6 +18769,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "IoAcquireRemoveLockEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_140430210",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -18726,6 +18966,10 @@
     },
     {
       "name": "FUN_140432a74",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "KeCapturePersistentThreadState",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -19205,6 +19449,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "IoQueueWorkItemToNode",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1404399f0",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -19605,6 +19853,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "IoSetCompletionRoutineEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_14043ef80",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -19822,6 +20074,10 @@
     },
     {
       "name": "FUN_1404440a0",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "PsUpdateDiskCounters",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -20177,7 +20433,19 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "HalQueryEnvironmentVariableInfoEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "HalSetEnvironmentVariableEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_140448298",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "HalGetEnvironmentVariableEx",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -20325,6 +20593,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "KePrepareToDispatchVirtualProcessor",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "KeQueryTimeIncrement",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -20370,6 +20642,10 @@
     },
     {
       "name": "FUN_14044b190",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "HvlReadPerformanceStateCounters",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -20525,6 +20801,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "CcSetLogHandleForFileEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_14044e2ec",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -20650,6 +20930,10 @@
     },
     {
       "name": "AlpcGetMessageAttribute",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "AlpcInitializeMessageAttribute",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -20894,6 +21178,10 @@
     },
     {
       "name": "FUN_1404526c8",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "FsRtlCreateSectionForDataScan",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -21869,6 +22157,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "HalTranslateBusAddress",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1404601ac",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -21901,11 +22193,19 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "HalSetBusDataByOffset",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_140460674",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
       "name": "FUN_14046076c",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "HalGetBusDataByOffset",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -23629,6 +23929,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "IoReportTargetDeviceChangeAsynchronous",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "SeSrpAccessCheck",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -24033,6 +24337,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "PoRegisterDeviceForIdleDetection",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_14047a264",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -24362,6 +24670,10 @@
     },
     {
       "name": "FUN_14047eaec",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "SeConvertStringSecurityDescriptorToSecurityDescriptor",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -24814,6 +25126,10 @@
     },
     {
       "name": "FsRtlLookupLastBaseMcbEntryAndIndex",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "IoCheckRedirectionTrustLevel",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -25373,6 +25689,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "RtlDecompressBufferEx2",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_14048a904",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -25685,6 +26005,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "RtlDecompressFragmentEx",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_14048f510",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -25838,6 +26162,10 @@
     },
     {
       "name": "FUN_14049101c",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "SeAuditingFileEventsWithContextEx",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -27129,6 +27457,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "SeConvertSecurityDescriptorToStringSecurityDescriptor",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1404a0638",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -27310,6 +27642,10 @@
     },
     {
       "name": "FUN_1404a2710",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "HvlLpWriteMultipleMsr",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -28366,6 +28702,10 @@
     },
     {
       "name": "FUN_1404ae324",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "RtlWriteNonVolatileMemory",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -29497,6 +29837,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "RtlNormalizeSecurityDescriptor",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1404b9e90",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -29834,6 +30178,10 @@
     },
     {
       "name": "FUN_1404bcee4",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "RtlQueryFeatureConfiguration",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -30649,6 +30997,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "KeRegisterBugCheckCallback",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1404c7318",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -30694,6 +31046,10 @@
     },
     {
       "name": "FUN_1404c7964",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "IoInitializeRemoveLockEx",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -31257,6 +31613,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "RtlIoEncodeMemIoResource",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_1404d10b0",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -31506,6 +31866,10 @@
     },
     {
       "name": "FUN_1404d4be0",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
+      "name": "RtlRegisterFeatureConfigurationChangeNotification",
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
@@ -34165,6 +34529,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "__C_specific_handler",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "longjmp",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -35641,6 +36009,10 @@
       "source": "AnalisarKernel_parte_01.txt"
     },
     {
+      "name": "FID_conflict:_memicmp",
+      "source": "AnalisarKernel_parte_01.txt"
+    },
+    {
       "name": "FUN_140524328",
       "source": "AnalisarKernel_parte_01.txt"
     },
@@ -37017,6 +37389,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "RtlStringVPrintfWorkerA",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_14053d640",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -37342,6 +37718,10 @@
     },
     {
       "name": "HalAllocateCrashDumpRegisters",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "HalDmaAllocateCrashDumpRegistersEx",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -42109,6 +42489,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "FsRtlGetNextMcbEntry",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FsRtlInitializeBaseMcb",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -42238,6 +42622,14 @@
     },
     {
       "name": "FUN_14058340c",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "FsRtlOplockBreakToNone",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "FsRtlOplockBreakToNoneEx",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -42502,6 +42894,10 @@
     },
     {
       "name": "HvlQueryProcessorTopologyCount",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "HvlQueryProcessorTopologyEx",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -43221,6 +43617,14 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "VslGetSecurePciDeviceAlternateFunctionNumberForVtl0Dma",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "VslGetSecurePciDeviceBootConfiguration",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "VslGetSecurePciEnabled",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -43870,6 +44274,10 @@
     },
     {
       "name": "FUN_140597f34",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "KeInitializeCrashDumpHeader",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -44817,6 +45225,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "IoEnumerateKsrPersistentMemoryEx",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_1405a68b0",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -44870,6 +45282,10 @@
     },
     {
       "name": "FUN_1405a7288",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "IoTranslateBusAddress",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -48241,7 +48657,19 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "PoFxIssueComponentPerfStateChangeMultiple",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "PoFxPowerOnCrashdumpDevice",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "PoFxQueryCurrentComponentPerfState",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "PoFxRegisterDripsWatchdogCallback",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -49977,6 +50405,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "RtlGetAppContainerNamedObjectPath",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_1405e88d4",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -49985,7 +50417,19 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "RtlQueryAllInternalFeatureConfigurations",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "RtlQueryAllInternalRuntimeFeatureConfigurations",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_1405e8b54",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "RtlQueryInternalFeatureConfiguration",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -50018,6 +50462,18 @@
     },
     {
       "name": "RtlFindClosestEncodableLength",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "RtlIoDecodeMemIoResource",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "RtlCompareExchangePointerMapping",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "RtlCompareExchangePropertyStore",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -50190,6 +50646,10 @@
     },
     {
       "name": "RtlFillMemory",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "RtlFillNonVolatileMemory",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -50378,6 +50838,10 @@
     },
     {
       "name": "RtlTraceDatabaseAdd",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "RtlTraceDatabaseCreate",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -51425,6 +51889,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "SeCreateClientSecurityFromSubjectContextEx",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_140611e3c",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -51470,6 +51938,10 @@
     },
     {
       "name": "FUN_1406124b8",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "SeSetSecurityAttributesTokenEx",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -52081,6 +52553,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "DifEnumeratePluginData",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_14061b738",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -52665,6 +53141,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "CarReportDifPluginRuleViolation",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_14062257c",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -52734,6 +53214,10 @@
     },
     {
       "name": "FUN_140622ecc",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "DifObjTrkQeuryInvokeDeleteRange",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -56337,6 +56821,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "WheaAddErrorSourceDeviceDriverV1",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "WheaAddHwErrorReportSectionDeviceDriver",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -56370,6 +56858,14 @@
     },
     {
       "name": "WheaHwErrorReportSubmitDeviceDriver",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "WheaReportFatalHwErrorDeviceDriverEx",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "WheaReportHwErrorDeviceDriverEx",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -61814,6 +62310,10 @@
     },
     {
       "name": "FUN_1406b6964",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "__GSHandlerCheck_SEH",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -68213,6 +68713,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "InterlockedPushListSList",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "RtlCompareMemory",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -74193,6 +74697,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "_ctrlfp$filt$0",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_1406df664",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -75753,6 +76261,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "HalAllocateHardwareCounters",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "HalFreeHardwareCounters",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -76529,6 +77041,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "EmProviderRegisterEntry",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_14071d580",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -76565,6 +77081,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "FsRtlInitExtraCreateParameterLookasideList",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FsRtlRegisterFltMgrCalls",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -76574,6 +77094,10 @@
     },
     {
       "name": "FsRtlMdlWriteComplete",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "FsRtlPrepareMdlWriteDev",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -76609,6 +77133,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "FsRtlRegisterUncProviderEx2",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_14071e35c",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -76621,11 +77149,19 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "FsRtlCheckUpperOplock",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FsRtlCurrentOplockH",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
       "name": "FsRtlOplockBreakH",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "FsRtlUpperOplockFsctrl",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -76689,6 +77225,22 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "FsRtlOpenFileSystemRegistryKeyFromFsGuid",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "FsRtlDedupChangeInit",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "FsRtlDedupChangeLogOverwriteOrFree",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "FsRtlDedupChangeLogWrite",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FsRtlDedupChangeUninit",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -76749,6 +77301,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "FsRtlHeatLogTierMove",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FsRtlHeatUninit",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -76793,6 +77349,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "`scalar_deleting_destructor'",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_140720fe0",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -76834,6 +77394,10 @@
     },
     {
       "name": "IoReadPartitionTableEx",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "IoSetPartitionInformation",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -77285,6 +77849,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "IoRegisterContainerNotification",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "IoUnregisterContainerNotification",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -77381,7 +77949,15 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "NtQueryQuotaInformationFile",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "NtSetQuotaInformationFile",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "NtSetVolumeInformationFile",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -77553,6 +78129,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "IoReserveKsrPersistentMemoryEx",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "IoWriteKsrPersistentMemory",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -77586,6 +78166,10 @@
     },
     {
       "name": "IoAssignResources",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "IoReportDetectedDevice",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -77693,6 +78277,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "IoGetDeviceDirectory",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "FUN_140732774",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -77766,6 +78354,14 @@
     },
     {
       "name": "FUN_140733ec8",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "IoReportResourceForDetection",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "IoReportResourceUsage",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -79169,6 +79765,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "KdSystemDebugControl",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "KeRemoveSystemServiceTable",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -80165,6 +80765,10 @@
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
+      "name": "PoCreateThermalRequest",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
       "name": "PoDeleteThermalRequest",
       "source": "AnalisarKernel_parte_02.txt"
     },
@@ -80282,6 +80886,10 @@
     },
     {
       "name": "PoFxEnableDStateReporting",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "PoFxRegisterComponentPerfStates",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -80418,6 +81026,10 @@
     },
     {
       "name": "FUN_140766380",
+      "source": "AnalisarKernel_parte_02.txt"
+    },
+    {
+      "name": "PoRegisterForEffectivePowerModeNotifications",
       "source": "AnalisarKernel_parte_02.txt"
     },
     {
@@ -81945,6 +82557,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "TtmNotifyDeviceArrival",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "TtmNotifyDeviceDeparture",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -82574,6 +83190,10 @@
     },
     {
       "name": "FUN_140788bf0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "PsQuerySyscallProviderInformation",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -83481,6 +84101,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlDecompressFragment",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140796370",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -83533,6 +84157,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlUpcaseUnicodeToCustomCPN",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140796c24",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -83558,6 +84186,10 @@
     },
     {
       "name": "FUN_140797438",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "LdrResFindResourceDirectory",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -83601,7 +84233,31 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlAddAccessFilterAce",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140797f40",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlAddAuditAccessAceEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlAddAuditAccessObjectAce",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlAddMandatoryAccessAllowedAce",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlAddMandatoryAppAccessAllowedAce",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlAddResourceAttributeAce",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -83681,6 +84337,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlQueryAllFeatureConfigurations",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "RtlRegisterFeatureUsageProvider",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -83698,6 +84358,10 @@
     },
     {
       "name": "FUN_14079a2dc",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlUnicodeStringToInt64",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -84301,6 +84965,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "SeRegisterImageVerificationCallback",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "SeUnregisterImageVerificationCallback",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -84369,11 +85037,23 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "LsaCallAuthenticationPackage",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "LsaDeregisterLogonProcess",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
       "name": "LsaLogonUser",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "LsaLookupAuthenticationPackage",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "LsaRegisterLogonProcess",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -84390,6 +85070,10 @@
     },
     {
       "name": "FUN_1407a7a08",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeSetSessionIdTokenWithLinked",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -84710,6 +85394,10 @@
     },
     {
       "name": "SeQuerySecureBootPlatformManifest",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeQuerySecureBootPolicyValue",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -85593,6 +86281,14 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "IoWMIQuerySingleInstanceMultiple",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoWMISetSingleInstance",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "IoWMISetSingleItem",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -85994,6 +86690,10 @@
     },
     {
       "name": "FUN_1407c43a0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "WmiQueryTraceInformation",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -86433,6 +87133,14 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "ExEnumerateSystemFirmwareTables",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "ExGetSystemFirmwareTable",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1407ceac8",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -86785,6 +87493,14 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtCreateCrossVmEvent",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "ExSetFirmwareEnvironmentVariable",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1407d5fb4",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -86877,6 +87593,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtGetEnvironmentVariableEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1407d8d30",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -86886,6 +87606,10 @@
     },
     {
       "name": "FUN_1407d8d90",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "NtQueryEnvironmentVariableInfoEx",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -87317,6 +88041,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "WheaAttemptPhysicalPageOffline",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "WheaGetErrorSourceInfo",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -87706,6 +88434,10 @@
     },
     {
       "name": "FUN_1407eca50",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "CmRegisterMachineHiveLoadedNotification",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -93585,7 +94317,15 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "ObWaitForSingleObject",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "ObReferenceObjectByHandle",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "ObWaitForMultipleObjects",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -93989,6 +94729,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtQueryVolumeInformationFile",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_14088b31c",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -94013,6 +94757,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtQueryInformationFile",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_14088c920",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -94030,6 +94778,10 @@
     },
     {
       "name": "NtQueryInformationByName",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoQueryInformationByName",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -94229,6 +94981,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlQueryAtomInAtomTable",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1408937f0",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -94305,6 +95061,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "SeSetSecurityDescriptorInfoEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140894e60",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -94314,6 +95074,14 @@
     },
     {
       "name": "FUN_140895140",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeSetSecurityDescriptorInfo",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "ObSetSecurityDescriptorInfo",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -94361,6 +95129,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "ObOpenObjectByPointer",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "ObOpenObjectByName",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -94374,6 +95146,10 @@
     },
     {
       "name": "FUN_14089abc0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "ObOpenObjectByNameEx",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -94446,6 +95222,10 @@
     },
     {
       "name": "FUN_1408a23c8",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlAllocateExtraCreateParameterFromLookasideList",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -94981,6 +95761,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "CmCallbackGetKeyObjectIDEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1408ae8d0",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -95245,6 +96029,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "SeOpenObjectAuditAlarmWithTransaction",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1408b9520",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -95285,6 +96073,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "SePrivilegeObjectAuditAlarm",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "SeSinglePrivilegeCheck",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -95294,6 +96086,10 @@
     },
     {
       "name": "FUN_1408bb8b0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "ObCheckCreateObjectAccess",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -95334,6 +96130,10 @@
     },
     {
       "name": "FUN_1408bc908",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "NtQuerySecurityObject",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -95618,6 +96418,10 @@
     },
     {
       "name": "FUN_1408c44e4",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "ObFindHandleForObject",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -96393,6 +97197,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtQueryDirectoryFile",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1408dd328",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -96602,6 +97410,10 @@
     },
     {
       "name": "FUN_1408e5b98",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoSetDevicePropertyData",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -97385,6 +98197,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "SeCreateAccessStateEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1408f6ac8",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -97733,6 +98549,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "PsChargeProcessWakeCounter",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1408fdd60",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -97845,7 +98665,15 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "SeCreateClientSecurity",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1409033b0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeCreateClientSecurityEx",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -98761,6 +99589,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlUpcaseUnicodeToOemN",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_14091cf40",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -98793,6 +99625,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlUpcaseUnicodeToMultiByteN",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "RtlUnicodeToMultiByteN",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -98809,11 +99645,19 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlCustomCPToUnicodeN",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "RtlUTF8ToUnicodeN",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
       "name": "RtlUpcaseUnicodeStringToCountedOemString",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlUnicodeToCustomCPN",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -98890,6 +99734,10 @@
     },
     {
       "name": "NtRequestWaitReplyPort",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "LpcSendWaitReceivePort",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -99178,6 +100026,10 @@
     },
     {
       "name": "FUN_14092a084",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeCaptureSecurityDescriptor",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -99505,6 +100357,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "ObReferenceObjectByName",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "SeCaptureSubjectContextEx",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -99545,6 +100401,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlAddAccessAllowedAceEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "RtlConvertSidToUnicodeString",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -99574,6 +100434,10 @@
     },
     {
       "name": "RtlValidSid",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlAddProcessTrustLabelAce",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -99686,6 +100550,10 @@
     },
     {
       "name": "FUN_14093dbf8",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlGetPersistedStateLocation",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -100033,6 +100901,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtAllocateVirtualMemory",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140947590",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -100189,6 +101061,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtSetInformationVirtualMemory",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_14094ccd0",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -100210,6 +101086,14 @@
     },
     {
       "name": "FsRtlFindInTunnelCache",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlFindInTunnelCacheEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlAddToTunnelCacheEx",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -100986,6 +101870,10 @@
     },
     {
       "name": "FUN_140961234",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoRegisterDeviceInterface",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -102365,6 +103253,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "IoConvertFileHandleToKernelHandle",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_14098a694",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -102861,11 +103753,19 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlCompareUnicodeStrings",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_14099e688",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
       "name": "FUN_14099e8d4",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "NtQuerySecurityAttributesToken",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -102906,6 +103806,10 @@
     },
     {
       "name": "FUN_14099fb24",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeOpenObjectForDeleteAuditAlarmWithTransaction",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -103218,6 +104122,10 @@
     },
     {
       "name": "FUN_1409a67ac",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "LdrResSearchResource",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -103538,6 +104446,10 @@
     },
     {
       "name": "FUN_1409b020c",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoOpenDeviceRegistryKey",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -103957,6 +104869,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "IoCreateDeviceSecure",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1409b9ddc",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -104001,7 +104917,15 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "IoSetLinkShareAccess",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "IoCheckShareAccess",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoCheckLinkShareAccess",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -104058,6 +104982,10 @@
     },
     {
       "name": "IoCreateStreamFileObjectLite",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoCreateStreamFileObjectEx2",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -104177,6 +105105,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlCopySidAndAttributesArray",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "RtlCopyLuidAndAttributesArray",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -104210,6 +105142,10 @@
     },
     {
       "name": "FUN_1409bf630",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "NtQueryInformationProcess",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -104581,6 +105517,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "SeShouldCheckForAccessRightsFromParent",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "RtlDowncaseUnicodeString",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -104842,6 +105782,10 @@
     },
     {
       "name": "FUN_1409d5b00",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "NtAdjustPrivilegesToken",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -105117,6 +106061,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtOpenProcessTokenEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1409e0388",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -105249,6 +106197,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "FsRtlIssueDeviceIoControl",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1409e3ca0",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -105266,6 +106218,10 @@
     },
     {
       "name": "FUN_1409e3f98",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "ExGetFirmwareEnvironmentVariable",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -105313,11 +106269,23 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "IoGetDeviceObjectPointer",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoGetDeviceInterfaces",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1409e5358",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
       "name": "FUN_1409e54a0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "IoRegisterPlugPlayNotification",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -106205,6 +107173,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "IoCreateSystemThread",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1409f8140",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -106222,6 +107194,10 @@
     },
     {
       "name": "PsCreateSystemThread",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "PsCreateSystemThreadEx",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -106298,6 +107274,10 @@
     },
     {
       "name": "FUN_1409fd218",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlCancellableWaitForMultipleObjects",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -106405,6 +107385,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "FsRtlAllocateExtraCreateParameter",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_1409ffbf0",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -106422,6 +107406,10 @@
     },
     {
       "name": "FUN_1409fffc0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeQuerySecurityAttributesToken",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -106586,6 +107574,10 @@
     },
     {
       "name": "FUN_140a07be8",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlQueryRegistryValueWithFallback",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -106837,6 +107829,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "IoCheckFunctionAccess",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a0ba58",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -106861,7 +107857,15 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "FsRtlQueryKernelEaFile",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FsRtlSetKernelEaFile",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlKernelFsControlFile",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -107593,6 +108597,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "NtNotifyChangeDirectoryFileEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a22304",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -107626,6 +108634,10 @@
     },
     {
       "name": "FsRtlNotifyFullReportChange",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlNotifyFilterReportChange",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -108357,6 +109369,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlQueryImageFileKeyOption",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a31b1c",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -108522,6 +109538,10 @@
     },
     {
       "name": "FUN_140a34ec0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeGetCachedSigningLevel",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -108957,6 +109977,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "MmRotatePhysicalView",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a3d3f4",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -108966,6 +109990,10 @@
     },
     {
       "name": "FUN_140a3d940",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlQueryInformationFile",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -109417,6 +110445,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "FsRtlGetNextExtraCreateParameter",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a45aa0",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -109797,6 +110829,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlGetSetBootStatusData",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a4bb94",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -109818,6 +110854,10 @@
     },
     {
       "name": "MmLockPagableSectionByHandle",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeCreateClientSecurityFromSubjectContext",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -110402,6 +111442,10 @@
     },
     {
       "name": "FUN_140a56fd0",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "NtQuerySystemInformationEx",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -111453,6 +112497,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlWriteRegistryValue",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a711f0",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -111865,6 +112913,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "VslCreateSecureSection",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "EtwUnregister",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -111910,6 +112962,14 @@
     },
     {
       "name": "FUN_140a795c4",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlPrepareMdlWriteEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlPrepareMdlWrite",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -112781,6 +113841,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "PoRegisterPowerSettingCallback",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a88d34",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -113329,6 +114393,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "SeOpenObjectAuditAlarmForNonObObject",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140a92054",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -113405,6 +114473,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "RtlInvertRangeListEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "RtlAddRange",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -113418,6 +114490,10 @@
     },
     {
       "name": "FUN_140a95314",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "RtlSelfRelativeToAbsoluteSD",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -113594,6 +114670,10 @@
     },
     {
       "name": "FUN_140a979a4",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "SeAuditHardLinkCreationWithTransaction",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -114309,6 +115389,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "IoQueryDeviceDescription",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140aa4a18",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -114849,6 +115933,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "EtwRegisterClassicProvider",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140aaca40",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -115094,6 +116182,10 @@
     },
     {
       "name": "FsRtlNotifyFullChangeDirectory",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "FsRtlNotifyFilterChangeDirectory",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -115354,6 +116446,10 @@
     },
     {
       "name": "FUN_140ab6b60",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "CmRegisterCallbackEx",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -115661,6 +116757,10 @@
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
+      "name": "ObCreateObjectTypeEx",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
       "name": "FUN_140abc54c",
       "source": "AnalisarKernel_parte_03.txt"
     },
@@ -115838,6 +116938,10 @@
     },
     {
       "name": "FUN_140abed18",
+      "source": "AnalisarKernel_parte_03.txt"
+    },
+    {
+      "name": "EtwWriteStartScenario",
       "source": "AnalisarKernel_parte_03.txt"
     },
     {
@@ -116413,6 +117517,10 @@
       "source": "AnalisarKernel_parte_04.txt"
     },
     {
+      "name": "DbgkWerCaptureLiveKernelDump2",
+      "source": "AnalisarKernel_parte_04.txt"
+    },
+    {
       "name": "FUN_140acad64",
       "source": "AnalisarKernel_parte_04.txt"
     },
@@ -116650,6 +117758,10 @@
     },
     {
       "name": "RtlInitializeUnicodePrefix",
+      "source": "AnalisarKernel_parte_04.txt"
+    },
+    {
+      "name": "IoOpenDeviceInterfaceRegistryKey",
       "source": "AnalisarKernel_parte_04.txt"
     },
     {
@@ -117721,6 +118833,10 @@
       "source": "AnalisarKernel_parte_04.txt"
     },
     {
+      "name": "FsRtlNotifyFilterChangeDirectoryLite",
+      "source": "AnalisarKernel_parte_04.txt"
+    },
+    {
       "name": "FUN_140ae570c",
       "source": "AnalisarKernel_parte_04.txt"
     },
@@ -117730,6 +118846,10 @@
     },
     {
       "name": "FUN_140ae5c30",
+      "source": "AnalisarKernel_parte_04.txt"
+    },
+    {
+      "name": "KeAddSystemServiceTable",
       "source": "AnalisarKernel_parte_04.txt"
     },
     {
@@ -117825,6 +118945,10 @@
       "source": "AnalisarKernel_parte_04.txt"
     },
     {
+      "name": "NtQueryInformationThread",
+      "source": "AnalisarKernel_parte_04.txt"
+    },
+    {
       "name": "NtSetInformationProcess",
       "source": "AnalisarKernel_parte_04.txt"
     },
@@ -117878,6 +119002,10 @@
     },
     {
       "name": "FUN_140af6050",
+      "source": "AnalisarKernel_parte_04.txt"
+    },
+    {
+      "name": "NtQueryInformationToken",
       "source": "AnalisarKernel_parte_04.txt"
     },
     {
@@ -131825,6 +132953,10 @@
       "source": "AnalisarKernel_parte_04.txt"
     },
     {
+      "name": "KeHwPolicyLocateResource",
+      "source": "AnalisarKernel_parte_04.txt"
+    },
+    {
       "name": "FUN_140c41b98",
       "source": "AnalisarKernel_parte_04.txt"
     },
@@ -131850,6 +132982,10 @@
     },
     {
       "name": "KeFindConfigurationEntry",
+      "source": "AnalisarKernel_parte_04.txt"
+    },
+    {
+      "name": "KeFindConfigurationNextEntry",
       "source": "AnalisarKernel_parte_04.txt"
     },
     {

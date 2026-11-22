@@ -14332,6 +14332,20 @@ uint FUN_14053d578(char *param_1,undefined8 param_2,longlong *param_3)
   return uVar1;
 }
 
+/* Ghidra label: RtlStringVPrintfWorkerA */
+if (-1 < iVar1) {
+    uVar2 = (ulonglong)iVar1;
+    if (uVar2 <= _Count) {
+      if (uVar2 == _Count) {
+        param_1[_Count] = '\0';
+      }
+      else {
+        _Count = uVar2;
+      }
+      goto LAB_14053d610;
+    }
+  }
+
 /* Ghidra label: FUN_14053d640 */
 void FUN_14053d640(undefined8 param_1)
 
@@ -17029,6 +17043,11 @@ undefined8 HalAllocateCrashDumpRegisters(undefined8 param_1,uint *param_2)
   DAT_140fc41a0 = lVar2;
   return *(undefined8 *)(lVar2 + 0xf0);
 }
+
+/* Ghidra label: HalDmaAllocateCrashDumpRegistersEx */
+if (*(int *)(param_1 + 2) != 0x616d4456) {
+    param_1 = (undefined8 *)0x0;
+  }
 
 /* Ghidra label: FUN_1405411d0 */
 undefined4 FUN_1405411d0(longlong param_1)
@@ -69262,6 +69281,17 @@ void FsRtlAddMcbEntry(undefined8 param_1,undefined4 param_2,undefined4 param_3,u
   return;
 }
 
+/* Ghidra label: FsRtlGetNextMcbEntry */
+if (cVar1 != '\0') {
+    *param_3 = (undefined4)uStack_28;
+    iVar2 = (int)uStack_20;
+    if (iVar2 == -1) {
+      iVar2 = 0;
+    }
+    *param_4 = iVar2;
+    *param_5 = (undefined4)auStack_18[0];
+  }
+
 /* Ghidra label: FsRtlInitializeBaseMcb */
 void FsRtlInitializeBaseMcb(undefined8 param_1,undefined8 param_2)
 
@@ -70039,6 +70069,27 @@ undefined4 FUN_14058340c(longlong param_1)
   }
   return *(undefined4 *)(puVar3 + 2);
 }
+
+/* Ghidra label: FsRtlOplockBreakToNone */
+if (*param_1 == 0) {
+    uVar1 = 0;
+  }
+
+/* Ghidra label: FsRtlOplockBreakToNoneEx */
+if ((param_3 & 0x10) == 0) {
+    do {
+      acStack_38[0] = '\0';
+      if (acStackX_8[0] == '\0') {
+        ExAcquireFastMutexUnsafe();
+        acStackX_8[0] = '\x01';
+      }
+      iVar2 = FUN_1404f99d4(lVar1,*(undefined8 *)(param_2 + 0xb8),param_2,param_3 | 8);
+      if (iVar2 == 0) {
+        iVar2 = FUN_1404e3290(lVar1,*(undefined8 *)(param_2 + 0xb8),param_2,param_3 | 8,0,0x7000,0,0
+                              ,param_4,param_5,param_6,0,0,0,acStackX_8,acStack_38);
+      }
+    } while (acStack_38[0] != '\0');
+  }
 
 /* Ghidra label: FsRtlOplockGetAnyBreakOwnerProcess */
 longlong FsRtlOplockGetAnyBreakOwnerProcess(longlong *param_1)
@@ -72217,6 +72268,11 @@ undefined8 HvlQueryProcessorTopologyCount(undefined4 *param_1,undefined4 *param_
   }
   return 0;
 }
+
+/* Ghidra label: HvlQueryProcessorTopologyEx */
+if ((DAT_140fc7a90 & 2) == 0) {
+    uVar2 = 0xc0000022;
+  }
 
 /* Ghidra label: HvlQueryProcessorTopologyHighestId */
 undefined8 HvlQueryProcessorTopologyHighestId(undefined4 *param_1,undefined4 *param_2)
@@ -79946,6 +80002,28 @@ void FUN_14058fab4(byte param_1,undefined8 param_2,undefined4 *param_3,undefined
   return;
 }
 
+/* Ghidra label: VslGetSecurePciDeviceAlternateFunctionNumberForVtl0Dma */
+FUN_1406d1200(auStack_a8,0,0x68);
+  cVar1 = FUN_14045c190(0);
+  if (cVar1 != '\0') {
+    uStack_98 = 2;
+    uStack_a0 = param_1;
+    uStack_9c = param_2;
+    uStack_9b = param_3;
+    uStack_9a = param_4;
+    iVar2 = FUN_140256650(2,0x10c,0,auStack_a8);
+    if (-1 < iVar2) {
+      return (undefined1)uStack_98;
+    }
+  }
+
+/* Ghidra label: VslGetSecurePciDeviceBootConfiguration */
+FUN_1406d1200(auStack_b8,0,0x68);
+  cVar1 = FUN_14045c190(0);
+  if (cVar1 == '\0') {
+    uVar2 = 0xc00000bb;
+  }
+
 /* Ghidra label: VslGetSecurePciEnabled */
 ulonglong VslGetSecurePciEnabled(void)
 
@@ -86245,6 +86323,11 @@ undefined8 FUN_140597f34(ulonglong *param_1)
   }
   return uVar6;
 }
+
+/* Ghidra label: KeInitializeCrashDumpHeader */
+if (param_5 != (undefined4 *)0x0) {
+    *param_5 = 0x2000;
+  }
 
 /* Ghidra label: FUN_14059809c */
 void FUN_14059809c(undefined8 param_1)
@@ -97570,6 +97653,13 @@ LAB_1405a66d9:
   return uVar6;
 }
 
+/* Ghidra label: IoEnumerateKsrPersistentMemoryEx */
+if (in_CR8 != '\0') {
+    uStack_78 = 0;
+                    /* WARNING: Subroutine does not return */
+    KeBugCheckEx(0x121,1,in_CR8);
+  }
+
 /* Ghidra label: FUN_1405a68b0 */
 int FUN_1405a68b0(undefined8 param_1,undefined8 param_2,undefined8 *param_3)
 
@@ -98168,6 +98258,67 @@ undefined4 FUN_1405a7288(longlong param_1)
                     /* WARNING: Subroutine does not return */
   KeBugCheckEx(0xca,2,*(undefined8 *)(param_1 + 0x10),0,0);
 }
+
+/* Ghidra label: IoTranslateBusAddress */
+if ((in_CR8 == '\0') && (DAT_140f8c958 != 0)) {
+    if (*param_4 == 0) {
+      uVar5 = 0;
+      uVar4 = 3;
+    }
+    else {
+      if (*param_4 != 1) {
+        return 0;
+      }
+      uVar4 = 1;
+      uVar5 = 1;
+    }
+    uStack_70 = CONCAT22(uVar5,CONCAT11(3,uVar4));
+    uStack_64 = 1;
+    piStack_78 = param_4;
+    uStack_6c = param_3;
+    FUN_140a19710(0);
+    for (lVar3 = FUN_140ab22f8(param_1,param_2); lVar3 != DAT_140f8c958;
+        lVar3 = *(longlong *)(lVar3 + 0x10)) {
+      cVar1 = FUN_140aa2464(1,lVar3);
+      if (cVar1 == '\0') {
+        iVar2 = FUN_140a89a04(1,*(undefined8 *)(lVar3 + 0x20));
+        if (-1 < iVar2) {
+          lVar7 = lStack_88;
+LAB_1405a760c:
+          puStack_98 = &uStack_58;
+          uStack_a0 = 0;
+          uStack_a8 = 0;
+          iVar2 = FUN_1406c4fb0(*(undefined8 *)(lVar7 + 8),&uStack_70,0,0);
+          if (cVar1 == '\0') {
+            FUN_1406c4fb0(*(undefined8 *)(lVar7 + 8));
+            ExFreePoolWithTag(lVar7,0);
+          }
+          if (iVar2 < 0) {
+            FUN_140a252fc(0);
+            return 0;
+          }
+          uStack_60 = uStack_48;
+          uStack_70 = (uint)uStack_58;
+          uStack_6c = CONCAT44((undefined4)uStack_50,uStack_58._4_4_);
+          uStack_64 = uStack_50._4_4_;
+          if (iVar2 == 0x120) break;
+        }
+      }
+      else if (lStack_80 != 0) {
+        lVar7 = *(longlong *)(lStack_80 + 0x18);
+        goto LAB_1405a760c;
+      }
+    }
+    FUN_140a252fc(0);
+    if (((uStack_70 & 0xff) != 3) && ((uStack_70 & 0xff) != 7)) {
+      if ((uStack_70 & 0xff) != 1) {
+        return 0;
+      }
+      iVar6 = 1;
+    }
+    *piStack_78 = iVar6;
+    *param_5 = uStack_6c;
+  }
 
 /* Ghidra label: FUN_1405a76e4 */
 void FUN_1405a76e4(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
@@ -132886,6 +133037,12 @@ void PoFxIssueComponentPerfStateChange(void)
   return;
 }
 
+/* Ghidra label: PoFxIssueComponentPerfStateChangeMultiple */
+if (((param_2 & 1) != 0) && (1 < in_CR8)) {
+                    /* WARNING: Subroutine does not return */
+    FUN_14029ba3c(0x614,param_1,param_3,1);
+  }
+
 /* Ghidra label: PoFxPowerOnCrashdumpDevice */
 undefined4 PoFxPowerOnCrashdumpDevice(longlong param_1,undefined8 param_2)
 
@@ -132913,6 +133070,20 @@ undefined4 PoFxPowerOnCrashdumpDevice(longlong param_1,undefined8 param_2)
   }
   return uVar2;
 }
+
+/* Ghidra label: PoFxQueryCurrentComponentPerfState */
+if (((param_2 == 0) && (param_3 < *(uint *)(param_1 + 0x364))) &&
+     (lVar1 = *(longlong *)(*(longlong *)(param_1 + 0x368) + (ulonglong)param_3 * 8),
+     *(longlong *)(lVar1 + 0x1a8) != 0)) {
+    FUN_1405d46ec(param_1,lVar1,param_4,0,param_5,0);
+    uVar2 = 0;
+  }
+
+/* Ghidra label: PoFxRegisterDripsWatchdogCallback */
+if (*(longlong *)(param_1 + 0xa8) != 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_14029ba3c(0x622,param_1,0,0);
+  }
 
 /* Ghidra label: PoFxRegisterPluginEx */
 void PoFxRegisterPluginEx(void)
@@ -150226,6 +150397,13 @@ void FUN_1405e868c(void)
   return;
 }
 
+/* Ghidra label: RtlGetAppContainerNamedObjectPath */
+FUN_1406d1200(auStack_e8,0,0x58);
+  FUN_1406d1200(auStack_88,0,0x58);
+  if (param_4 == (undefined8 *)0x0) {
+    return 0xc000000d;
+  }
+
 /* Ghidra label: FUN_1405e88d4 */
 ulonglong FUN_1405e88d4(longlong param_1)
 
@@ -150273,6 +150451,34 @@ ulonglong FUN_1405e894c(longlong param_1)
   }
   return uVar1 & 0xffffffffffffff00;
 }
+
+/* Ghidra label: RtlQueryAllInternalFeatureConfigurations */
+FUN_1404a6548(uVar2,&uStack_10,&uStack_18);
+  iVar1 = FUN_1405f24d8(uStack_18,param_1,param_3,param_4);
+  if (-1 < iVar1) {
+    if (param_2 != (undefined8 *)0x0) {
+      *param_2 = uStack_10;
+    }
+    iVar1 = 0;
+  }
+
+/* Ghidra label: RtlQueryAllInternalRuntimeFeatureConfigurations */
+FUN_1404a6548(uVar4,&uStack_20,&uStack_28);
+  uVar1 = uStack_28;
+  iVar2 = FUN_1405f24d8(uStack_28,1,param_2,param_3);
+  if ((((iVar2 + 0x80000000U & 0x80000000) != 0) || (iVar3 = iVar2, iVar2 == -0x7ffffffb)) &&
+     ((iVar3 = FUN_1407a5540(uVar1,param_4,param_5), (iVar3 + 0x80000000U & 0x80000000) != 0 ||
+      (iVar3 == -0x7ffffffb)))) {
+    if ((iVar2 == -0x7ffffffb) || (iVar3 == -0x7ffffffb)) {
+      iVar3 = -0x7ffffffb;
+    }
+    else {
+      if (param_1 != (undefined8 *)0x0) {
+        *param_1 = uStack_20;
+      }
+      iVar3 = 0;
+    }
+  }
 
 /* Ghidra label: FUN_1405e8b54 */
 int FUN_1405e8b54(longlong *param_1,undefined4 param_2,undefined8 param_3,undefined8 param_4)
@@ -150327,6 +150533,23 @@ int FUN_1405e8b54(longlong *param_1,undefined4 param_2,undefined8 param_3,undefi
   }
   return iVar3;
 }
+
+/* Ghidra label: RtlQueryInternalFeatureConfiguration */
+if ((bVar1 < 2) || (((DAT_140f478f4 & 3) == 0 && (DAT_140f0c1d0 == '\0')))) {
+    uVar3 = FUN_14070fa30();
+    FUN_1404a6548(uVar3,&uStack_18,&uStack_10);
+    iVar2 = FUN_14070d5c4(uStack_10,param_1,param_2,param_4);
+    if (iVar2 < 0) {
+      if ((iVar2 == -0x3ffffddb) || (iVar2 == -0x7fffffde)) {
+        *param_3 = uStack_18;
+      }
+    }
+    else {
+      iVar2 = 0;
+      *param_3 = uStack_18;
+    }
+    FUN_140369c74(uVar3,uStack_10);
+  }
 
 /* Ghidra label: RtlAssert */
 void RtlAssert(undefined8 param_1,undefined8 param_2,undefined4 param_3,undefined1 *param_4)
@@ -150678,6 +150901,23 @@ LAB_1405e94ad:
   *param_2 = param_1;
   return 0;
 }
+
+/* Ghidra label: RtlIoDecodeMemIoResource */
+if ((*(char *)(param_1 + 1) - 1U & 0xfd) == 0) {
+    uVar3 = (ulonglong)*(uint *)(param_1 + 8);
+    uVar2 = (ulonglong)*(uint *)(param_1 + 0xc);
+  }
+
+/* Ghidra label: RtlCompareExchangePointerMapping */
+if (in_CR8 < 3) {
+    lVar2 = ExAllocatePool2(0x40,0x28,0x70725052);
+  }
+
+/* Ghidra label: RtlCompareExchangePropertyStore */
+if (DAT_140f05dd8 != (void *)0x0) {
+      puVar6 = bsearch(param_1,DAT_140f05dd8,(ulonglong)DAT_140f05dd0,0x18,FUN_1405e9ca0);
+      if (puVar6 != (undefined8 *)0x0) goto LAB_1405e9842;
+    }
 
 /* Ghidra label: RtlQueryPointerMapping */
 uint RtlQueryPointerMapping(longlong param_1,undefined8 *param_2)
@@ -153896,6 +154136,11 @@ void RtlFillMemory(undefined8 param_1,undefined8 param_2,undefined1 param_3)
   return;
 }
 
+/* Ghidra label: RtlFillNonVolatileMemory */
+if ((param_1 & 1) == 0) {
+    return 0xc000000d;
+  }
+
 /* Ghidra label: RtlFlushNonVolatileMemoryRanges */
 RtlFlushNonVolatileMemoryRanges(ulonglong param_1,undefined8 *param_2,longlong param_3,uint param_4)
 
@@ -155581,6 +155826,14 @@ RtlTraceDatabaseAdd(undefined8 param_1,undefined4 param_2,undefined8 param_3,und
   FUN_1405f035c(param_1);
   return uVar1;
 }
+
+/* Ghidra label: RtlTraceDatabaseCreate */
+if ((0x100000 < param_1) ||
+     (puVar3 = (undefined4 *)
+               FUN_1405f00b8((ulonglong)param_1 * 8 + 0x1110 & 0xfffffffffffff000,6,param_4),
+     puVar3 == (undefined4 *)0x0)) {
+    return (undefined4 *)0x0;
+  }
 
 /* Ghidra label: RtlTraceDatabaseDestroy */
 undefined1 RtlTraceDatabaseDestroy(longlong param_1)
@@ -181606,6 +181859,11 @@ void SeReportSecurityEvent(void)
   return;
 }
 
+/* Ghidra label: SeCreateClientSecurityFromSubjectContextEx */
+if (lVar2 == 0) {
+    lVar2 = param_1[2];
+  }
+
 /* Ghidra label: FUN_140611e3c */
 ulonglong FUN_140611e3c(void)
 
@@ -181957,6 +182215,11 @@ undefined8 FUN_1406124b8(uint *param_1,uint param_2,undefined4 *param_3)
   }
   return uVar1;
 }
+
+/* Ghidra label: SeSetSecurityAttributesTokenEx */
+if (param_3 != 0) {
+    return -0x3ffffff3;
+  }
 
 /* Ghidra label: FUN_1406126e0 */
 undefined4 FUN_1406126e0(undefined8 param_1,undefined8 param_2,undefined8 param_3)
@@ -189213,6 +189476,12 @@ LAB_14061b5b4:
   return uVar2;
 }
 
+/* Ghidra label: DifEnumeratePluginData */
+FUN_1404a5aac(&uStack_38,0);
+  if ((param_3 == 0) || (param_5 == (uint *)0x0)) {
+    uVar4 = 0xc000000d;
+  }
+
 /* Ghidra label: FUN_14061b738 */
 void FUN_14061b738(longlong param_1,undefined8 param_2)
 
@@ -194738,6 +195007,116 @@ undefined8 CarRegisterRuleOverridesAllContexts(undefined4 param_1,longlong param
   return uVar1;
 }
 
+/* Ghidra label: CarReportDifPluginRuleViolation */
+if (*(int *)(param_4 + 0x4c) < 0x1e8481) {
+    iVar9 = *(int *)(param_4 + 0x50);
+    if (iVar9 == 0) {
+      param_2 = ((int)param_1 + 1) * 0x10000 | param_2;
+      piVar6 = (int *)FUN_1406219dc(param_1,param_1 & 0xffffffff);
+      if (piVar6 == (int *)0x0) {
+        iVar4 = -0x3ffffddb;
+        goto LAB_14062254e;
+      }
+      iVar9 = *piVar6;
+    }
+    if ((byte)in_CR8 < 3) {
+      iVar4 = CarCreateRuleViolationDetails(&puStackX_20);
+      puVar2 = puStackX_20;
+      if ((-1 < iVar4) && (iVar4 = CarCopyRuleViolationDetails(puStackX_20,param_4), -1 < iVar4)) {
+        if ((puVar2 == (undefined8 *)0x0) || (pcVar8 = (char *)puVar2[3], pcVar8 == (char *)0x0)) {
+          if (iVar9 == 0xc4) {
+            pcVar8 = "DRIVER VERIFIER DETECTED VIOLATION";
+          }
+          else if (iVar9 == 0xc9) {
+            pcVar8 = "DRIVER VERIFIER IOMANAGER VIOLATION";
+          }
+          else if (iVar9 == 0xe6) {
+            pcVar8 = "DRIVER VERIFIER DMA VIOLATION";
+          }
+          else {
+            pcVar8 = "UNKNOWN VIOLATION REPORTED VIA DRIVER VERIFIER";
+          }
+        }
+        iVar4 = CarQueryReportActionForTriage(iVar9,param_2,auStack_48);
+        if (-1 < iVar4) {
+          lVar7 = ExAllocatePool2(0x40,0x550,0x4e726143);
+          if (lVar7 == 0) {
+            iVar4 = -0x3fffffe9;
+          }
+          else {
+            iVar4 = FUN_140621c10(lVar7,iVar9,param_2,puVar2,pcVar8);
+            if (iVar4 < 0) {
+              ExFreePoolWithTag(lVar7,0x4e726143);
+              lVar7 = 0;
+            }
+            else {
+              iVar4 = FUN_14062101c(lVar7,param_2,pcVar8,in_CR8,param_1 & 0xffffffff,param_3,uVar1);
+            }
+          }
+          puVar2 = puStackX_20;
+          iVar5 = 0;
+          LOCK();
+          if (DAT_140e68530 == 0) {
+            DAT_140e68530 = 1;
+          }
+          else {
+            iVar5 = DAT_140e68530;
+          }
+          UNLOCK();
+          if (iVar5 != 1) {
+            if (puStackX_20 == (undefined8 *)0x0) {
+              _DAT_140f02690 = 0;
+              _DAT_140f02698 = 0;
+              _DAT_140f026a0 = 0;
+            }
+            else {
+              _DAT_140f02690 = *puStackX_20;
+              _DAT_140f02698 = puStackX_20[1];
+              _DAT_140f026a0 = puStackX_20[2];
+            }
+            _DAT_140f02688 = iVar9;
+            _DAT_140f0268c = param_2;
+            FUN_1404458bc(&DAT_140f026bc,0x20,lVar7 + 4);
+          }
+          iVar5 = (int)auStack_48[0];
+          if (iVar5 == 2) {
+            iVar4 = FUN_140624d84(lVar7,param_2,*puVar2,puVar2[1],puVar2[2]);
+            if (iVar4 != -0x3ffff3f0) {
+              lVar7 = 0;
+            }
+          }
+          else if (iVar5 == 3) {
+            if (param_3 == 0) {
+              iVar4 = -0x3ffffff3;
+            }
+            else {
+              cVar3 = FUN_140b9c3a0(param_3);
+              if ((cVar3 - 8U & 0xfb) != 0) {
+                    /* WARNING: Subroutine does not return */
+                FUN_140624b10(iVar9,param_2,puVar2);
+              }
+            }
+          }
+          else if (iVar5 == 4) {
+                    /* WARNING: Subroutine does not return */
+            FUN_140624b10(iVar9,param_2,puVar2);
+          }
+          LOCK();
+          if (DAT_140e68530 == 1) {
+            DAT_140e68530 = 0;
+          }
+          UNLOCK();
+          if (lVar7 != 0) {
+            ExFreePoolWithTag(lVar7,0x4e726143);
+          }
+        }
+      }
+    }
+    else {
+      iVar4 = -0x3fffff45;
+    }
+  }
+
 /* Ghidra label: FUN_14062257c */
 void FUN_14062257c(char param_1)
 
@@ -195249,6 +195628,11 @@ undefined8 FUN_140622ecc(int param_1,longlong param_2,uint param_3)
   }
   return 1;
 }
+
+/* Ghidra label: DifObjTrkQeuryInvokeDeleteRange */
+if (DAT_140f04068 == 0) {
+    return;
+  }
 
 /* Ghidra label: DifObjTrkRemoveItem */
 char DifObjTrkRemoveItem(ulonglong param_1,ulonglong param_2,uint param_3)
@@ -246283,6 +246667,28 @@ void FUN_140667438(longlong param_1)
   return;
 }
 
+/* Ghidra label: WheaAddErrorSourceDeviceDriverV1 */
+FUN_1406d1200(&uStack_68,0,0x54);
+  if (*param_2 == 1) {
+    uStack_60 = *(undefined8 *)(param_2 + 2);
+    iStack_40 = param_2[10];
+    uStack_58 = *(undefined8 *)(param_2 + 4);
+    uStack_50 = *(undefined8 *)(param_2 + 6);
+    uStack_48 = *(undefined8 *)(param_2 + 8);
+    uStack_34 = _DAT_140024810;
+    uStack_30 = _UNK_140024814;
+    uStack_2c = _UNK_140024818;
+    uStack_28 = _UNK_14002481c;
+    uStack_38 = 1;
+    uStack_24 = (undefined4)DAT_140010c38;
+    uStack_20 = DAT_140010c38._4_4_;
+    uStack_1c = (undefined4)DAT_140010c40;
+    uStack_18 = DAT_140010c40._4_4_;
+    _uStack_68 = CONCAT44((int)((ulonglong)*(undefined8 *)param_2 >> 0x20),2);
+    uStack_3c = param_4;
+    uVar1 = WheaAddErrorSourceDeviceDriver(param_1,&uStack_68,param_3);
+  }
+
 /* Ghidra label: WheaAddHwErrorReportSectionDeviceDriver */
 ulonglong WheaAddHwErrorReportSectionDeviceDriver(longlong param_1,uint param_2,undefined4 *param_3)
 
@@ -246547,6 +246953,16 @@ undefined4 WheaHwErrorReportSubmitDeviceDriver(longlong param_1)
   }
   return uVar3;
 }
+
+/* Ghidra label: WheaReportFatalHwErrorDeviceDriverEx */
+if (lVar5 == 0) {
+    iVar4 = -0x3fffff66;
+  }
+
+/* Ghidra label: WheaReportHwErrorDeviceDriverEx */
+if (lVar5 == 0) {
+    iVar4 = -0x3fffff66;
+  }
 
 /* Ghidra label: FUN_140667c00 */
 undefined8 FUN_140667c00(longlong param_1,uint *param_2)
@@ -308729,6 +309145,12 @@ undefined8 FUN_1406b6964(void)
   FUN_14051df74(0x6d696e6b);
   return 0x800b;
 }
+
+/* Ghidra label: __GSHandlerCheck_SEH */
+__GSHandlerCheckCommon(param_2,param_4,puVar2 + (ulonglong)uVar1 * 4 + 1);
+  if ((puVar2[(ulonglong)uVar1 * 4 + 1] & ((param_1->ExceptionFlags & 0x66) != 0) + 1) != 0) {
+    __C_specific_handler(param_1,param_2,param_3,param_4);
+  }
 
 /* Ghidra label: __security_check_cookie */
 void __cdecl __security_check_cookie(uintptr_t _StackCookie)
@@ -402201,6 +402623,17 @@ ulonglong ExpInterlockedFlushSList(undefined1 (*param_1) [16])
   } while (auVar2 != auVar1);
   return uVar4 & 0xfffffffffffffff0;
 }
+
+/* Ghidra label: InterlockedPushListSList */
+LOCK();
+    auVar1 = *param_1;
+    auVar2._8_8_ = uVar4;
+    auVar2._0_8_ = lVar3;
+    if (auVar2 == auVar1) {
+      *(ulonglong *)*param_1 =
+           CONCAT62((int6)((ulonglong)(lVar3 + 0x20000) >> 0x10),(short)lVar3 + param_4);
+      *(undefined8 *)(*param_1 + 8) = param_2;
+    }
 
 /* Ghidra label: RtlCompareMemory */
 ulonglong RtlCompareMemory(longlong *param_1,longlong *param_2,ulonglong param_3)
@@ -556449,6 +556882,21 @@ void FUN_1406df601(undefined8 param_1,longlong param_2)
   return;
 }
 
+/* Ghidra label: _ctrlfp$filt$0 */
+undefined8 _ctrlfp_filt_0(undefined8 *param_1)
+
+{
+  undefined8 uVar1;
+  
+  if ((*(int *)*param_1 == -0x3ffffffb) || (*(int *)*param_1 == -0x3fffffe3)) {
+    uVar1 = 1;
+  }
+  else {
+    uVar1 = 0;
+  }
+  return uVar1;
+}
+
 /* Ghidra label: FUN_1406df664 */
 void FUN_1406df664(undefined8 param_1,longlong param_2)
 
@@ -581427,6 +581875,13 @@ void FUN_140710ff0(longlong param_1,longlong param_2,undefined1 *param_3)
   return;
 }
 
+/* Ghidra label: HalAllocateHardwareCounters */
+FUN_1406d1200(&uStack_158,0,0x108);
+  aiStack_168[0] = 0;
+  if (param_4 == (undefined8 *)0x0) {
+    iVar1 = -0x3ffffff3;
+  }
+
 /* Ghidra label: HalFreeHardwareCounters */
 int HalFreeHardwareCounters(longlong param_1)
 
@@ -590717,6 +591172,15 @@ undefined8 EmProviderRegister(longlong param_1)
   return uVar1;
 }
 
+/* Ghidra label: EmProviderRegisterEntry */
+LOCK();
+  uVar8 = DAT_140f8f530 & 1;
+  DAT_140f8f530 = DAT_140f8f530 | 1;
+  UNLOCK();
+  if (uVar8 != 0) {
+    FUN_1402f5950(&DAT_140f8f530,lVar5,&DAT_140f8f530);
+  }
+
 /* Ghidra label: FUN_14071d580 */
 FUN_14071d580(undefined8 param_1,undefined8 param_2,undefined8 *param_3,int param_4,int *param_5,
              int param_6)
@@ -590919,6 +591383,11 @@ void FsRtlDeleteExtraCreateParameterLookasideList(undefined8 param_1,byte param_
   return;
 }
 
+/* Ghidra label: FsRtlInitExtraCreateParameterLookasideList */
+if ((param_2 & 2) == 0) {
+    FUN_140467cd0(param_1,0,0,0,param_3 + 0x48,param_4,0,0);
+  }
+
 /* Ghidra label: FsRtlRegisterFltMgrCalls */
 void FsRtlRegisterFltMgrCalls(undefined8 param_1)
 
@@ -591010,6 +591479,11 @@ ulonglong FsRtlMdlWriteComplete(undefined8 param_1,undefined8 param_2,undefined8
   }
   return uVar3;
 }
+
+/* Ghidra label: FsRtlPrepareMdlWriteDev */
+if (((int)*param_2 == -1) && (*(int *)((longlong)param_2 + 4) == -1)) {
+    bVar2 = true;
+  }
 
 /* Ghidra label: FsRtlInitializeMcb */
 void FsRtlInitializeMcb(void)
@@ -591192,6 +591666,12 @@ void FsRtlRegisterUncProvider(undefined8 param_1,undefined8 param_2,char param_3
   return;
 }
 
+/* Ghidra label: FsRtlRegisterUncProviderEx2 */
+if (*(ushort *)(param_3 + 2) < 0x200) {
+    *param_4 = 0xffffffffffffffff;
+    uVar1 = 0xc000000d;
+  }
+
 /* Ghidra label: FUN_14071e35c */
 void FUN_14071e35c(undefined8 *param_1)
 
@@ -591293,6 +591773,13 @@ int FUN_14071e520(short *param_1,longlong param_2,longlong param_3,longlong *par
   return iVar1;
 }
 
+/* Ghidra label: FsRtlCheckUpperOplock */
+FUN_1406d1200(auStack_118,0);
+  iVar5 = 0;
+  if (lVar1 == 0) {
+    return 0;
+  }
+
 /* Ghidra label: FsRtlCurrentOplockH */
 undefined8 FsRtlCurrentOplockH(longlong *param_1)
 
@@ -591320,6 +591807,15 @@ void FsRtlOplockBreakH(void)
   FsRtlOplockBreakH2();
   return;
 }
+
+/* Ghidra label: FsRtlUpperOplockFsctrl */
+if (cVar1 == '\0') {
+    if (((param_4 & 7) >> 2 == 0 && (*(uint *)(pcVar3 + 0x10) >> 0x14 & 1) != 0) ||
+       (((param_4 & 7) >> 1 & 1) == 0 && (*(uint *)(pcVar3 + 0x10) >> 0x10 & 1) != 0)) {
+      return -0x3fffff1e;
+    }
+    goto LAB_14071ece1;
+  }
 
 /* Ghidra label: FUN_14071ed10 */
 void FUN_14071ed10(undefined8 param_1,undefined8 param_2)
@@ -591958,6 +592454,34 @@ void FUN_14071f9b0(undefined8 param_1)
   KeSetEvent(param_1,0,0);
   return;
 }
+
+/* Ghidra label: FsRtlOpenFileSystemRegistryKeyFromFsGuid */
+FUN_1406d1200(auStack_1a8,0,0x70);
+  *param_5 = 0;
+  lVar2 = *param_1 - DAT_140010c38;
+  lStack_138 = 0;
+  lStack_130 = 0;
+  if (lVar2 == 0) {
+    lVar2 = param_1[1] - DAT_140010c40;
+  }
+
+/* Ghidra label: FsRtlDedupChangeInit */
+if ((iVar2 < 0) || (*(int *)(puStack_d0 + *(uint *)(puStack_d0 + 8)) != 0)) {
+    pcStack_e8 = param_1;
+    uVar3 = FUN_14071ffc0(param_2,param_3,param_4,param_5);
+  }
+
+/* Ghidra label: FsRtlDedupChangeLogOverwriteOrFree */
+if ((DAT_140f8f2f8 & 4) == 0) {
+    uVar1 = 0;
+  }
+
+/* Ghidra label: FsRtlDedupChangeLogWrite */
+if (((*param_1 == 0) && (KdDebuggerEnabled != '\0')) && (KdDebuggerNotPresent == '\0')) {
+    pcVar1 = (code *)swi(3);
+    uVar3 = (*pcVar1)();
+    return uVar3;
+  }
 
 /* Ghidra label: FsRtlDedupChangeUninit */
 void FsRtlDedupChangeUninit(undefined8 param_1,longlong *param_2)
@@ -592638,6 +593162,12 @@ FsRtlHeatLogIo(undefined4 *param_1,longlong param_2,undefined8 *param_3,undefine
   return 0;
 }
 
+/* Ghidra label: FsRtlHeatLogTierMove */
+if ((DAT_140f8f278 & 0x10) != 0) {
+    FUN_140584858(param_1,param_2,param_7,*param_2,param_2[1],param_3,param_4,param_5,param_6,
+                  *param_1);
+  }
+
 /* Ghidra label: FsRtlHeatUninit */
 void FsRtlHeatUninit(undefined8 param_1,undefined8 param_2)
 
@@ -592970,6 +593500,12 @@ undefined8 FUN_140720f90(void)
   return 0xc0000148;
 }
 
+/* Ghidra label: `scalar_deleting_destructor' */
+FUN_1406add44();
+  if ((param_1 & 1) != 0) {
+    FUN_1406ada18(this);
+  }
+
 /* Ghidra label: FUN_140720fe0 */
 void FUN_140720fe0(undefined8 param_1,undefined8 param_2,undefined8 param_3,uint param_4)
 
@@ -593277,6 +593813,19 @@ int IoReadPartitionTableEx(undefined8 param_1,undefined8 param_2)
   FUN_1406add44(appuStack_1a8);
   return iVar1;
 }
+
+/* Ghidra label: IoSetPartitionInformation */
+FUN_1406adc5c(appuStack_1b8);
+  uStack_30 = 0;
+  appuStack_1b8[0] = &PTR__scalar_deleting_destructor__140007e98;
+  uStack_234 = 0;
+  FUN_1406d1200(auStack_22f,0,0x6f);
+  uStack_238 = 0;
+  uStack_230 = param_4;
+  iVar1 = FUN_140721118(appuStack_1b8,param_1);
+  if (-1 < iVar1) {
+    iVar1 = FUN_1406ae65c(appuStack_1b8,param_3,&uStack_238);
+  }
 
 /* Ghidra label: IoSetPartitionInformationEx */
 int IoSetPartitionInformationEx(undefined8 param_1,ulonglong param_2,undefined8 param_3)
@@ -598481,6 +599030,11 @@ undefined8 IoGetContainerInformation(int param_1,longlong param_2,int *param_3,u
   return uVar3;
 }
 
+/* Ghidra label: IoRegisterContainerNotification */
+if (0 < param_1) {
+    return -0x3fffff11;
+  }
+
 /* Ghidra label: IoUnregisterContainerNotification */
 void IoUnregisterContainerNotification(longlong param_1)
 
@@ -600096,6 +600650,18 @@ int FUN_14072afb8(longlong param_1,undefined2 *param_2)
   return iVar1;
 }
 
+/* Ghidra label: NtQueryQuotaInformationFile */
+if (cStack_97 == '\0') {
+    if ((param_6 != (undefined1 *)0x0) && (puStack_78 = (undefined1 *)0x0, param_7 != 0)) {
+      puStack_78 = param_6;
+    }
+    puStack_70 = (undefined1 *)0x0;
+    if (param_8 != (undefined1 *)0x0) {
+      puStack_70 = param_8;
+    }
+    _Dst = (undefined1 *)0x0;
+  }
+
 /* Ghidra label: NtSetQuotaInformationFile */
 void NtSetQuotaInformationFile(void)
 
@@ -600104,6 +600670,42 @@ void NtSetQuotaInformationFile(void)
   FUN_140725dc0();
   return;
 }
+
+/* Ghidra label: NtSetVolumeInformationFile */
+if (cStack_c7 != '\0') {
+    if ((0xf < param_5) || ((&DAT_140b546f8)[(int)param_5] == 0)) {
+      return 0xc0000003;
+    }
+    if (param_4 < (byte)(&DAT_140b546f8)[(int)param_5]) {
+      return 0xc0000004;
+    }
+    pcVar8 = &DAT_7fffffff0000;
+    if (param_2 < &DAT_7fffffff0000) {
+      pcVar8 = param_2;
+    }
+    *(undefined4 *)pcVar8 = *(undefined4 *)pcVar8;
+    if (*(longlong *)(*(longlong *)((longlong)pvVar9 + 0xb8) + 0x310) != 0) {
+      sVar2 = *(short *)(*(longlong *)((longlong)pvVar9 + 0xb8) + 0x6ec);
+      if ((sVar2 == 0x14c) || (sVar2 == 0x1c4)) {
+        cStack_c8 = '\x01';
+      }
+      else {
+        cStack_c8 = '\0';
+      }
+      if (cStack_c8 != '\0') {
+        if ((param_4 != 0) && (((ulonglong)param_3 & 3) != 0)) {
+                    /* WARNING: Subroutine does not return */
+          ExRaiseDatatypeMisalignment();
+        }
+        goto LAB_14072b916;
+      }
+    }
+    if ((param_4 != 0) &&
+       (((ulonglong)param_3 & (ulonglong)(byte)(&DAT_140b54be0)[(int)param_5] - 1) != 0)) {
+                    /* WARNING: Subroutine does not return */
+      ExRaiseDatatypeMisalignment();
+    }
+  }
 
 /* Ghidra label: FUN_14072bcf8 */
 int FUN_14072bcf8(undefined4 param_1,undefined8 *param_2,undefined8 *param_3,undefined8 *param_4)
@@ -602031,6 +602633,13 @@ ulonglong IoQueryKsrPersistentMemorySizeEx(undefined8 param_1,longlong param_2)
   KeBugCheckEx(0xca,2,param_2,0,0);
 }
 
+/* Ghidra label: IoReserveKsrPersistentMemoryEx */
+if (in_CR8 != '\0') {
+    uStack_e8 = 0;
+                    /* WARNING: Subroutine does not return */
+    KeBugCheckEx(0x121,1,in_CR8,0);
+  }
+
 /* Ghidra label: IoWriteKsrPersistentMemory */
 undefined8 IoWriteKsrPersistentMemory(int *param_1,void *param_2,size_t param_3)
 
@@ -602685,6 +603294,33 @@ void IoAssignResources(undefined8 param_1,undefined8 param_2,longlong param_3,lo
                     /* WARNING: Subroutine does not return */
   KeBugCheckEx(0xca,2,param_4,param_3,0);
 }
+
+/* Ghidra label: IoReportDetectedDevice */
+if (*param_8 == 0) {
+    if ((*(uint *)(param_1 + 0x10) & 4) == 0) {
+      puVar8 = puVar15;
+    }
+    else {
+      psStack_208 = *(short **)(lVar12 + 0x20) + ((ulonglong)(*puVar15 >> 1) - 1);
+      while( true ) {
+        if (psStack_208 == *(short **)(lVar12 + 0x20)) {
+          return 0xc00000ef;
+        }
+        if (*psStack_208 == 0x5c) break;
+        psStack_208 = psStack_208 + -1;
+      }
+      psStack_208 = psStack_208 + 1;
+      sVar7 = *puVar15 +
+              (short)((longlong)(ulonglong)(uint)((int)psStack_208 - *(int *)(lVar12 + 0x20)) >> 1)
+              * -2;
+      uStack_210 = (ulonglong)CONCAT22(sVar7,sVar7);
+      puVar8 = (ushort *)&uStack_210;
+    }
+    uVar10 = FUN_140730c24(puVar8,&uStack_290);
+    if ((int)uVar10 < 0) {
+      return uVar10;
+    }
+  }
 
 /* Ghidra label: IoReportRootDevice */
 ulonglong IoReportRootDevice(longlong param_1)
@@ -604081,6 +604717,20 @@ LAB_140732301:
   return iVar3;
 }
 
+/* Ghidra label: IoGetDeviceDirectory */
+RtlInitUnicodeString(&uStack_78,0);
+  RtlInitUnicodeString(alStack_68 + 1,0);
+  RtlInitUnicodeString(&uStack_88,0);
+  RtlInitUnicodeString(&uStack_50,0);
+  if (((((param_1 == 0) || (param_3 != 0)) || (param_4 != 0)) ||
+      ((param_5 == (longlong *)0x0 ||
+       (lVar2 = *(longlong *)(*(longlong *)(param_1 + 0x138) + 0x28), lVar2 == 0)))) ||
+     ((*(short *)(lVar2 + 0x28) == 0 || ((*(longlong *)(lVar2 + 0x30) == 0 || (param_2 != 0)))))) {
+LAB_1407326ff:
+    iVar3 = -0x3ffffff3;
+    goto LAB_140732704;
+  }
+
 /* Ghidra label: FUN_140732774 */
 int FUN_140732774(ushort *param_1,ushort *param_2,longlong param_3,undefined1 param_4,
                  longlong *param_5)
@@ -605121,6 +605771,20 @@ ulonglong FUN_140733ec8(undefined *param_1,int param_2,undefined8 param_3,undefi
   }
   return uVar2;
 }
+
+/* Ghidra label: IoReportResourceForDetection */
+if (((param_4 == 0) || (lVar1 = *(longlong *)(*(longlong *)(param_4 + 0x138) + 0x28), lVar1 == 0))
+     || ((*(uint *)(lVar1 + 0x18c) & 0x20000) != 0)) {
+    FUN_1407343e8(3,param_2,param_1,param_2);
+    return;
+  }
+
+/* Ghidra label: IoReportResourceUsage */
+if (((param_5 == 0) || (lVar1 = *(longlong *)(*(longlong *)(param_5 + 0x138) + 0x28), lVar1 == 0))
+     || ((*(uint *)(lVar1 + 0x18c) & 0x20000) != 0)) {
+    FUN_1407343e8(0,param_2,param_2,param_3);
+    return;
+  }
 
 /* Ghidra label: FUN_1407343e8 */
 int FUN_1407343e8(ulonglong param_1,int *param_2,undefined8 param_3,int *param_4,undefined8 param_5,
@@ -625177,6 +625841,12 @@ void FUN_14074e80c(longlong param_1)
   return;
 }
 
+/* Ghidra label: KdSystemDebugControl */
+if ((((DAT_140e0aa5c != '\0') || (DAT_140e0aa2c != '\0')) || (KdDebuggerEnabled == '\0')) &&
+     (DAT_140f55fc4 == '\0')) {
+    return -0x3fffffde;
+  }
+
 /* Ghidra label: KeRemoveSystemServiceTable */
 undefined8 KeRemoveSystemServiceTable(int param_1)
 
@@ -638765,6 +639435,11 @@ int FUN_140760ca4(longlong param_1)
   return iVar1;
 }
 
+/* Ghidra label: PoCreateThermalRequest */
+if (((param_2 == 0) || (param_3 == 0)) || (param_4 == 0)) {
+    iVar2 = -0x3ffffff3;
+  }
+
 /* Ghidra label: PoDeleteThermalRequest */
 void PoDeleteThermalRequest(longlong param_1)
 
@@ -640208,6 +640883,12 @@ int PoFxEnableDStateReporting(longlong param_1,undefined8 *param_2)
   }
   return iVar1;
 }
+
+/* Ghidra label: PoFxRegisterComponentPerfStates */
+if (*(uint *)(param_1 + 0x364) <= param_2) {
+                    /* WARNING: Subroutine does not return */
+    FUN_14029ba3c(0x614,param_1,uVar2,2);
+  }
 
 /* Ghidra label: PoFxRegisterCoreDevice */
 int PoFxRegisterCoreDevice(longlong param_1,int *param_2,undefined8 *param_3)
@@ -642982,6 +643663,39 @@ undefined8 FUN_140766380(longlong *param_1,int *param_2,int param_3)
   FUN_140b81390();
   return uVar2;
 }
+
+/* Ghidra label: PoRegisterForEffectivePowerModeNotifications */
+if (((param_1 - 1U < 2) && (param_2 != 0)) && (param_4 != (longlong *)0x0)) {
+    piVar4 = (int *)ExAllocatePool2(0x100,0x58,0x74655350);
+    if (piVar4 == (int *)0x0) {
+      iVar3 = -0x3fffff66;
+    }
+    else {
+      piVar4[0xc] = 0;
+      piVar4[0xd] = 0;
+      piVar1 = piVar4 + 10;
+      piVar1[0] = 0;
+      piVar1[1] = 0;
+      FUN_14042d154(piVar1);
+      piVar4[4] = -1;
+      *(undefined8 *)(piVar4 + 2) = param_5;
+      *piVar4 = param_1;
+      *(undefined8 *)(piVar4 + 0x14) = param_3;
+      piVar4[8] = -0x112245;
+      *(longlong *)(piVar4 + 0xe) = param_2;
+      iVar3 = ExSubscribeWnfStateChange(alStack_28,&DAT_1400208f0,1,0,FUN_1407665c0,piVar4);
+      lVar2 = alStack_28[0];
+      *(longlong *)(piVar4 + 6) = alStack_28[0];
+      *param_4 = (longlong)piVar4;
+      FUN_14038dd7c(piVar1);
+      if (iVar3 != 0) {
+        if (lVar2 != 0) {
+          ExUnsubscribeWnfStateChange(lVar2);
+        }
+        ExFreePoolWithTag(piVar4,0x74655350);
+      }
+    }
+  }
 
 /* Ghidra label: PoUnregisterFromEffectivePowerModeNotifications */
 undefined8 PoUnregisterFromEffectivePowerModeNotifications(longlong param_1)
