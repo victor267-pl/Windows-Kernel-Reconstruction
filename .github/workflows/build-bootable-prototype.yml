@@ -32,14 +32,16 @@ jobs:
             -Wall -Wextra -Werror -c bootable-prototype/kernel.c -o build/kernel.o
           gcc -m64 -ffreestanding -fno-pie -fno-pic -c \
             bootable-prototype/boot.S -o build/boot.o
+          gcc -m64 -ffreestanding -fno-pie -fno-pic -c \
+            bootable-prototype/isr.S -o build/isr.o
           ld -m elf_x86_64 -nostdlib -z max-page-size=0x1000 \
-            -T bootable-prototype/linker.ld build/boot.o build/kernel.o \
+            -T bootable-prototype/linker.ld build/boot.o build/isr.o build/kernel.o \
             -o build/kernel.elf
           grub-file --is-x86-multiboot2 build/kernel.elf
           cp build/kernel.elf build/iso/boot/kernel.elf
           cp bootable-prototype/grub.cfg build/iso/boot/grub/grub.cfg
           grub-mkrescue -o build/kernel.iso build/iso
-      - name: Boot ISO in QEMU and assert serial marker
+      - name: Boot ISO in QEMU and assert IDT exception dispatch
         run: |
           set +e
           timeout 12s qemu-system-x86_64 -machine pc -cpu qemu64 -m 256M \
@@ -53,6 +55,8 @@ jobs:
           fi
           cat build/serial.log
           grep -q "BOOT_OK: entered 64-bit freestanding kernel" build/serial.log
+          grep -q "IDT_OK: 32 CPU exception gates installed" build/serial.log
+          grep -q "EXCEPTION: vector=0x03" build/serial.log
       - name: Upload boot artifacts
         uses: actions/upload-artifact@v4
         with:
