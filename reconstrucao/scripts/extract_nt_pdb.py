@@ -63,11 +63,10 @@ def main():
         output = run(tool, option, output=filename)
         counts[filename] = len(output.splitlines())
 
-    # Global symbol hash is stripped in this PDB, but per-compiland module
-    # symbol streams may still retain S_GDATA/S_LDATA and local data records.
-    module_data = run(tool, "-module-syms", "-sym-types=data",
-                      output="module_data_symbols.txt")
-    counts["module_data_symbols.txt"] = len(module_data.splitlines())
+    # Preserve the compiland inventory separately. LLVM 21 exposes module
+    # records through -symbols (already captured above); it does not accept the
+    # newer -module-syms/-sym-types switches. Do not silently treat an empty
+    # module symbol dump as proof that no data symbols exist.
     modules = run(tool, "-modules", output="modules.txt")
     counts["modules.txt"] = len(modules.splitlines())
 
@@ -87,8 +86,8 @@ def main():
     report += [
         "",
         "A quantidade de linhas é uma métrica bruta, não uma contagem de tipos/símbolos únicos.",
-        "Foram extraídos também os registros de dados por módulo (-module-syms -sym-types=data) e a lista de compilands (-modules).",
-        "O dump de dados por módulo será auditado separadamente do hash global quanto a S_GDATA/S_LDATA e tipos.",
+        "Foi extraída também a lista de compilands (-modules). O dump -symbols é a saída de símbolos por módulo suportada pelo LLVM 21 instalado.",
+        "A saída vazia de símbolos não é interpretada como ausência comprovada de variáveis: o PDB está stripped e o SymChk reportou Global syms=FALSE e NumSyms=0.",
         "O PDB foi reportado pelo SymChk com Global syms=FALSE e NumSyms=0; a disponibilidade",
         "de globais e públicos deve ser interpretada conforme o conteúdo efetivo dos dumps.",
         "Esta extração não reconstrói corpos de funções nem comprova compilação ou boot.",
