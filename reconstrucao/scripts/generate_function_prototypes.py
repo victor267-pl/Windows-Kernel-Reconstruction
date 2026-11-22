@@ -78,7 +78,7 @@ for path in files:
             elif ch=="{": brace+=1
             elif ch=="}": brace-=1
             elif ch=="," and depth==1 and bracket==0 and brace==0: commas+=1
-            elif not ch.isspace() and depth==1: has_content=True
+            if not ch.isspace() and ch not in ",)": has_content=True
             pos+=1
         if depth==0: arity[name].add(0 if not has_content else commas+1)
 
