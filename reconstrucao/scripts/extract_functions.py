@@ -60,7 +60,7 @@ def extract_file(path):
         m = LABEL.match(line)
         if m: starts.append((idx, pos, m.group(1)))
         pos += len(line)
-    extracted, rejected = [], []
+    extracted, rejected, label_mismatches = [], [], []
     for n, (line_idx, label_pos, label) in enumerate(starts):
         section_end = starts[n+1][1] if n+1 < len(starts) else len(text)
         section = text[label_pos:section_end]
@@ -92,18 +92,18 @@ def extract_file(path):
             rejected.append({"name": label, "reason": "unbalanced_body"})
             continue
         function = candidate[:end_rel].strip()
-        # Guard against a marker whose label and actual signature disagree.
-        if not re.search(r"\b" + re.escape(label) + r"\s*\(", function):
-            rejected.append({"name": label, "reason": "label_signature_mismatch"})
-            continue
+        # Keep valid bodies even when the display label is an alias for the signature.
+        actual = re.search(r"([A-Za-z_]\w*)\s*\(", function)
+        if actual and actual.group(1) != label:
+            label_mismatches.append({"label": label, "signature_name": actual.group(1)})
         extracted.append((label, function))
-    return extracted, rejected
+    return extracted, rejected, label_mismatches
 
 OUT.mkdir(parents=True, exist_ok=True)
 REPORT.parent.mkdir(parents=True, exist_ok=True)
 summary = {"inputs": [], "total_extracted": 0, "total_rejected": 0, "functions": []}
 for path in INPUTS:
-    funcs, rejected = extract_file(path)
+    funcs, rejected, mismatches = extract_file(path)
     shard = re.search(r"parte_(\d+)", path.name).group(1)
     out_path = OUT / f"decompiled_{shard}.c"
     preamble = (
@@ -116,7 +116,7 @@ for path in INPUTS:
     digest = hashlib.sha256(out_path.read_bytes()).hexdigest()
     summary["inputs"].append({
         "file": path.name, "output": str(out_path), "functions": len(funcs),
-        "rejected": len(rejected), "output_bytes": out_path.stat().st_size,
+        "rejected": len(rejected), "label_mismatches": len(mismatches), "mismatch_examples": mismatches[:20], "output_bytes": out_path.stat().st_size,
         "sha256": digest, "rejection_examples": rejected[:20]
     })
     summary["total_extracted"] += len(funcs)
