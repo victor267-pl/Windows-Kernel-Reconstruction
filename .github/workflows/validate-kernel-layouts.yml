@@ -1,0 +1,46 @@
+name: Validate reconstructed kernel layouts
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/gerar_headers.py'
+      - 'reconstrucao/extraidos/*_blocos.txt'
+      - '.github/workflows/validate-kernel-layouts.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate headers from extracted Ghidra evidence
+        run: python3 reconstrucao/scripts/gerar_headers.py
+      - name: Compile ABI size checks
+        run: |
+          cat > /tmp/check_layouts.c <<'EOF'
+          #include "reconstrucao/include/nt_kernel_layouts.h"
+          #include <stddef.h>
+          _Static_assert(sizeof(KPROCESS) == 456, "_KPROCESS");
+          _Static_assert(sizeof(KTHREAD) == 1216, "_KTHREAD");
+          _Static_assert(sizeof(EPROCESS) == 2112, "_EPROCESS");
+          _Static_assert(sizeof(ETHREAD) == 1944, "_ETHREAD");
+          _Static_assert(sizeof(CONTEXT) == 1232, "_CONTEXT");
+          _Static_assert(EPROCESS_OFFSET_PCB == 0, "EPROCESS.Pcb");
+          _Static_assert(ETHREAD_OFFSET_TCB == 0, "ETHREAD.Tcb");
+          int main(void) { return 0; }
+          EOF
+          gcc -std=c11 -Wall -Wextra -Werror -pedantic -I. -fsyntax-only /tmp/check_layouts.c
+      - name: Commit generated artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/include/ reconstrucao/extraidos/layout_manifest.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+          else
+            git commit -m "Gerar headers ABI das estruturas NT e validar compilacao"
+            git push
+          fi
