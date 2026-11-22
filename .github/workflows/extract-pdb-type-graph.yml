@@ -6,6 +6,9 @@ on:
       - 'reconstrucao/scripts/extract_pdb_type_graph.py'
       - 'reconstrucao/extraidos/pdb/types.txt'
       - '.github/workflows/extract-pdb-type-graph.yml'
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
