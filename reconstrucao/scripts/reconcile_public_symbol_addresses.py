@@ -86,7 +86,7 @@ def main():
     source = parse_source_functions()
     source_labels = {x["label"] for values in source.values() for x in values}
     prototype_text = (ROOT/"reconstrucao/include/ghidra_function_prototypes.h").read_text(encoding="utf-8", errors="replace")
-    declared_names = set(re.findall(r"\\b([A-Za-z_]\\w*)\\s*\\(", prototype_text))
+    declared_names = set(re.findall(r"\b([A-Za-z_]\w*)\s*\(", prototype_text))
     section_va_matches = {x["section_number"]: x["matches"] for x in header_checks}
     by_address = defaultdict(list)
     stats = Counter()
