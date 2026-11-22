@@ -1,62 +1,67 @@
 #!/usr/bin/env python3
-"""Inventory function and data dependencies in extracted Ghidra C files."""
+"""Inventory labels, calls, and data references in extracted Ghidra C."""
 from pathlib import Path
 from collections import Counter
 import re, json, hashlib
 
-SRC=Path("reconstrucao/src")
-OUT=Path("reconstrucao/extraidos")
-files=sorted(SRC.glob("decompiled_*.c"))
-def scrub(s):
+src=Path("reconstrucao/src")
+out=Path("reconstrucao/extraidos")
+files=sorted(src.glob("decompiled_*.c"))
+def clean(s):
     s=re.sub(r"/\*.*?\*/"," ",s,flags=re.S)
     s=re.sub(r"//[^\n]*"," ",s)
     s=re.sub(r'"(?:\\.|[^"\\])*"','""',s)
     s=re.sub(r"'(?:\\.|[^'\\])*'","''",s)
     return s
-
-definitions={}
-all_text=[]
+labels=Counter()
+calls=Counter()
+data=Counter()
+funrefs=Counter()
+per_file=[]
 for p in files:
     raw=p.read_text(encoding="utf-8",errors="replace")
-    clean=scrub(raw)
-    all_text.append((p,clean))
-    for m in re.finditer(r"(?m)^\s*(?:[\w:*]+\s+)+([A-Za-z_]\w*)\s*\([^;{}]*\)\s*\{",clean):
-        definitions.setdefault(m.group(1),[]).append(str(p))
-defined=set(definitions)
-calls=Counter(); globals_=Counter(); funrefs=Counter(); datrefs=Counter()
-for p,s in all_text:
-    for name in re.findall(r"\b([A-Za-z_]\w*)\s*\(",s):
-        if name not in {"if","while","switch","for","sizeof","return"}:
-            calls[name]+=1
-    for name in re.findall(r"\b(?:DAT|UNK|LAB|PTR|SUB|in|extraout|stack|uRam|uStack|s|c|b|d|f|u|local)_[A-Za-z0-9_]+\b",s):
-        globals_[name]+=1
-    for name in re.findall(r"\bFUN_[0-9A-Fa-f]+\b",s): funrefs[name]+=1
-    for name in re.findall(r"\bDAT_[0-9A-Fa-f]+\b",s): datrefs[name]+=1
-unresolved={k:v for k,v in calls.items() if k not in defined and not k.startswith(("CONCAT","SUB","ZEXT","SEXT","ROUND","ABS","FABS","NAN","INFINITY"))}
+    found=re.findall(r"/\*\s*Ghidra label:\s*([^*]+?)\s*\*/",raw)
+    labels.update(x.strip() for x in found)
+    s=clean(raw)
+    calls.update(n for n in re.findall(r"\b([A-Za-z_]\w*)\s*\(",s)
+                 if n not in {"if","while","switch","for","sizeof","return"})
+    data.update(re.findall(r"\bDAT_[0-9A-Fa-f]+\b",s))
+    funrefs.update(re.findall(r"\bFUN_[0-9A-Fa-f]+\b",s))
+    per_file.append({"path":str(p),"bytes":p.stat().st_size,
+                     "sha256":hashlib.sha256(p.read_bytes()).hexdigest(),
+                     "function_labels":len(found)})
+local_names=set(labels)
+local_funrefs={n:c for n,c in funrefs.items() if n in local_names}
+unmatched_funrefs={n:c for n,c in funrefs.items() if n not in local_names}
+external_calls={n:c for n,c in calls.items() if n not in local_names and not n.startswith("FUN_")}
+duplicates={n:c for n,c in labels.items() if c>1}
 summary={
- "source_files":[{"path":str(p),"bytes":p.stat().st_size,"sha256":hashlib.sha256(p.read_bytes()).hexdigest()} for p in files],
- "defined_functions":len(defined),"unique_call_names":len(calls),
- "unresolved_call_names":len(unresolved),"unique_global_like_symbols":len(globals_),
- "fun_symbol_references":len(funrefs),"dat_symbol_references":len(datrefs),
- "duplicate_definitions":{k:v for k,v in definitions.items() if len(v)>1},
- "most_referenced_unresolved_calls":sorted(unresolved.items(),key=lambda x:(-x[1],x[0]))[:500],
- "most_referenced_globals":globals_.most_common(500),
- "most_referenced_FUN_symbols":funrefs.most_common(500),
- "most_referenced_DAT_symbols":datrefs.most_common(500)}
-OUT.mkdir(parents=True,exist_ok=True)
-(OUT/"symbol_dependencies.json").write_text(json.dumps(summary,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+ "source_files":per_file,
+ "extracted_function_labels":sum(labels.values()),
+ "unique_function_labels":len(labels),
+ "duplicate_function_labels":duplicates,
+ "unique_call_identifiers":len(calls),
+ "unmatched_FUN_references":len(unmatched_funrefs),
+ "local_FUN_references":len(local_funrefs),
+ "unique_DAT_data_symbols":len(data),
+ "most_referenced_external_or_unmatched_calls":external_calls and sorted(external_calls.items(),key=lambda x:(-x[1],x[0]))[:500] or [],
+ "most_referenced_DAT_symbols":data.most_common(500),
+ "unmatched_FUN_symbol_examples":sorted(unmatched_funrefs.items(),key=lambda x:(-x[1],x[0]))[:300]
+}
+out.mkdir(parents=True,exist_ok=True)
+(out/"symbol_dependencies.json").write_text(json.dumps(summary,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
 md=["# Inventário de símbolos e dependências C","",
  f"- Arquivos C analisados: {len(files)}",
- f"- Definições de funções reconhecidas: {len(defined)}",
- f"- Nomes de chamadas distintos: {len(calls)}",
- f"- Chamadas sem definição local: {len(unresolved)}",
- f"- Símbolos globais semelhantes a dados: {len(globals_)}",
- f"- Referências FUN_: {len(funrefs)}",f"- Referências DAT_: {len(datrefs)}",
- f"- Definições duplicadas: {len(summary['duplicate_definitions'])}","",
- "## Chamadas externas mais frequentes",""]
-md += [f"- {n} — {c}" for n,c in summary["most_referenced_unresolved_calls"][:100]]
-md += ["","## Símbolos globais mais frequentes",""]
-md += [f"- {n} — {c}" for n,c in summary["most_referenced_globals"][:100]]
-(OUT/"SYMBOL_DEPENDENCIES.md").write_text("\n".join(md)+"\n",encoding="utf-8")
-print(json.dumps({k:summary[k] for k in ("defined_functions","unique_call_names","unresolved_call_names","unique_global_like_symbols","fun_symbol_references","dat_symbol_references")},indent=2))
-
+ f"- Blocos de função extraídos (marcadores): {sum(labels.values())}",
+ f"- Nomes de função distintos: {len(labels)}",
+ f"- Marcadores duplicados: {len(duplicates)}",
+ f"- Identificadores chamados: {len(calls)}",
+ f"- Referências FUN_ correspondentes a rótulos extraídos: {len(local_funrefs)}",
+ f"- Referências FUN_ sem rótulo correspondente: {len(unmatched_funrefs)}",
+ f"- Símbolos de dados DAT_ distintos: {len(data)}","",
+ "## Chamadas externas ou nomes sem correspondência local",""]
+md += [f"- {n} — {c}" for n,c in summary["most_referenced_external_or_unmatched_calls"][:100]]
+md += ["","## Símbolos DAT_ mais referenciados",""]
+md += [f"- {n} — {c}" for n,c in summary["most_referenced_DAT_symbols"][:100]]
+(out/"SYMBOL_DEPENDENCIES.md").write_text("\n".join(md)+"\n",encoding="utf-8")
+print(json.dumps({k:summary[k] for k in ("extracted_function_labels","unique_function_labels","unique_call_identifiers","unmatched_FUN_references","local_FUN_references","unique_DAT_data_symbols")},indent=2))
