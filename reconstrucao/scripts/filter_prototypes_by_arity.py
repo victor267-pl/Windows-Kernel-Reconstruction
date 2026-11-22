@@ -79,3 +79,4 @@ Path("reconstrucao/extraidos/PROTOTYPE_ARITY_AUDIT.md").write_text("\n".join(md)
 print(json.dumps({k:v for k,v in report.items() if k!="examples"},indent=2))
 
 
+
