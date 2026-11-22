@@ -3,12 +3,11 @@
 Teste diagnóstico, não equivalente a um build do kernel NT.
 - Arquivos examinados: 4
 - Arquivos com erros: 4
-- Tipos não declarados distintos: 1
+- Tipos não declarados distintos: 0
 - Identificadores não declarados distintos: 106
 
 ## Tipos ausentes
 
-- undefined3: 2
 
 ## Identificadores ausentes
 
@@ -116,8 +115,7 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 ## Classes de erro
 
 - undeclared_identifier: 152
-- other_error: 300
-- syntax_expected: 122
+- other_error: 302
+- syntax_expected: 123
 - implicit_function: 22
 - conflicting_type: 3
-- unknown_type: 2
