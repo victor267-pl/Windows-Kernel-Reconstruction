@@ -129,7 +129,7 @@ for path in INPUTS:
     summary["functions"].extend(
         {"name": name, "address": address, "source": path.name,
          "signature_name": (re.search(r"([A-Za-z_]\w*)\s*\(", code).group(1)
-                            if re.search(r"([A-Za-z_]\\w*)\\s*\\(", code) else None)}
+                            if re.search(r"([A-Za-z_]\w*)\s*\(", code) else None)}
         for name, code, address in funcs
     )
 REPORT.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
