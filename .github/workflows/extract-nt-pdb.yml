@@ -1,0 +1,43 @@
+name: Validate and extract exact NT kernel PDB
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/entrada/ntkrnlmp.pdb'
+      - 'reconstrucao/scripts/extract_nt_pdb.py'
+      - '.github/workflows/extract-nt-pdb.yml'
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install LLVM PDB utilities
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y llvm
+      - name: Validate PDB identity and extract types and symbols
+        run: |
+          TOOL="$(find /usr -type f -name 'llvm-pdbutil*' -executable 2>/dev/null | head -n 1)"
+          test -n "$TOOL"
+          echo "LLVM_PDBUTIL=$TOOL" >> "$GITHUB_ENV"
+          python3 reconstrucao/scripts/extract_nt_pdb.py
+      - name: Commit extraction report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md
+          if git diff --cached --quiet; then
+            echo "No report changes."
+          else
+            git commit -m "Validar identidade e registrar extração do PDB NT"
+            git push
+          fi
+      - name: Publish full PDB dumps
+        uses: actions/upload-artifact@v4
+        with:
+          name: ntkrnlmp-pdb-dumps
+          path: reconstrucao/extraidos/pdb/
+          if-no-files-found: error
+          retention-days: 30
