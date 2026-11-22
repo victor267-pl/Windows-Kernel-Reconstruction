@@ -64,6 +64,8 @@ def extract_file(path):
     for n, (line_idx, label_pos, label) in enumerate(starts):
         section_end = starts[n+1][1] if n+1 < len(starts) else len(text)
         section = text[label_pos:section_end]
+        address_match = re.search(r"ENDEREÇO\s*:\s*([0-9A-Fa-f]+)", section)
+        address = address_match.group(1) if address_match else None
         # Skip metadata/separator lines and find the decompiler's function signature.
         section_lines = section.splitlines(keepends=True)
         sig_line = None
@@ -96,7 +98,7 @@ def extract_file(path):
         actual = re.search(r"([A-Za-z_]\w*)\s*\(", function)
         if actual and actual.group(1) != label:
             label_mismatches.append({"label": label, "signature_name": actual.group(1)})
-        extracted.append((label, function))
+        extracted.append((label, function, address))
     return extracted, rejected, label_mismatches
 
 OUT.mkdir(parents=True, exist_ok=True)
@@ -111,7 +113,10 @@ for path in INPUTS:
         "/* Not Microsoft's original source; names/types may be unresolved. */\n"
         '#include "../include/ghidra_types.h"\n\n'
     )
-    body = "\n\n".join(f"/* Ghidra label: {name} */\n{code}" for name, code in funcs)
+    body = "\n\n".join(
+        f"/* Ghidra label: {name} */\n/* Ghidra address: {address or 'unknown'} */\n{code}"
+        for name, code, address in funcs
+    )
     out_path.write_text(preamble + body + ("\n" if body else ""), encoding="utf-8")
     digest = hashlib.sha256(out_path.read_bytes()).hexdigest()
     summary["inputs"].append({
@@ -121,7 +126,12 @@ for path in INPUTS:
     })
     summary["total_extracted"] += len(funcs)
     summary["total_rejected"] += len(rejected)
-    summary["functions"].extend({"name": name, "source": path.name} for name, _ in funcs)
+    summary["functions"].extend(
+        {"name": name, "address": address, "source": path.name,
+         "signature_name": (re.search(r"([A-Za-z_]\\w*)\\s*\\(", code).group(1)
+                            if re.search(r"([A-Za-z_]\\w*)\\s*\\(", code) else None)}
+        for name, code, address in funcs
+    )
 REPORT.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(json.dumps({k:v for k,v in summary.items() if k != "functions"}, ensure_ascii=False, indent=2))
 
