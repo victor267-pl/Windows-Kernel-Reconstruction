@@ -16,30 +16,32 @@ jobs:
       - name: Install LLVM PDB utilities
         run: |
           sudo apt-get update
-          sudo apt-get install -y llvm
-      - name: Validate PDB identity and extract types and symbols
-        run: |
-          TOOL="$(find /usr -type f -name 'llvm-pdbutil*' -executable 2>/dev/null | head -n 1)"
-          test -n "$TOOL"
+          sudo apt-get install -y llvm-21
+          TOOL="/usr/lib/llvm-21/bin/llvm-pdbutil"
+          test -x "$TOOL"
+          "$TOOL" --version
           echo "LLVM_PDBUTIL=$TOOL" >> "$GITHUB_ENV"
-          python3 reconstrucao/scripts/extract_nt_pdb.py
+      - name: Validate PDB identity and extract types and symbols
+        run: python3 reconstrucao/scripts/extract_nt_pdb.py
       - name: Commit extraction report
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md reconstrucao/extraidos/PDB_IDENTITY_MISMATCH.md
+          git add -A reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md reconstrucao/extraidos/pdb/
           if git diff --cached --quiet; then
             echo "No report changes."
           else
-            git commit -m "Validar identidade e registrar extração do PDB NT"
+            git commit -m "Registrar diagnóstico e extração do PDB NT"
             git push
           fi
-      - name: Publish full PDB dumps
-        if: success()
+      - name: Publish PDB diagnostics and dumps
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ntkrnlmp-pdb-dumps
-          path: reconstrucao/extraidos/pdb/
-          if-no-files-found: error
+          name: ntkrnlmp-pdb-diagnostics
+          path: |
+            reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md
+            reconstrucao/extraidos/pdb/
+          if-no-files-found: warn
           retention-days: 30
