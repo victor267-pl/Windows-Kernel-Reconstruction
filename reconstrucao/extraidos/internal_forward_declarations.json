@@ -1,11 +1,16 @@
 {
   "source_files": 4,
-  "internal_function_definitions_scanned": 0,
-  "existing_prototypes_skipped": 18743,
-  "forward_declarations_added": 0,
+  "internal_function_definitions_scanned": 33823,
+  "existing_prototypes_skipped": 20643,
+  "forward_declarations_added": 11811,
   "conflicting_return_types_omitted": {},
-  "rejections": {},
+  "rejections": {
+    "invalid_return_type": 1093,
+    "label_signature_mismatch": 257,
+    "noncanonical_return_type": 60,
+    "unresolved_return_type": 2
+  },
   "changed_source_files": [],
-  "header_sha256": "fe1342e46f2b4827fc250bdf8df2e24db12e2cf458361c2fe3166e8697cd35db",
+  "header_sha256": "2d8ea581e96fa3ded247aabe508c87372a4efeb8e487419b795095d3e4f8023c",
   "declaration_policy": "return type copied from definition; no parameter prototype asserted"
 }

@@ -4,16 +4,16 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - Arquivos examinados: 4
 - Arquivos com erros: 4
 - Tipos não declarados distintos: 0
-- Identificadores não declarados distintos: 71
+- Identificadores não declarados distintos: 105
 
 ## Tipos ausentes
 
 
 ## Identificadores ausentes
 
-- DAT_140e0a740: 7
-- FiberData: 5
-- DAT_140fc7d20: 4
+- DAT_140e0a740: 13
+- FiberData: 6
+- DAT_140fc7d20: 5
 - DAT_140fc7ad0: 4
 - DAT_140f06d48: 4
 - DAT_140fc62ac: 3
@@ -22,19 +22,22 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - DAT_140f06ba8: 3
 - DAT_140f06bb0: 3
 - SystemReserved1: 3
+- DAT_140fc7c20: 2
+- DAT_140fc6014: 2
 - DAT_140fc7b14: 2
 - _DAT_fffff78000000008: 2
+- DAT_140fc8128: 2
 - DAT_140f06d38: 2
 - DAT_140f06bb8: 2
 - DAT_140f06ba0: 2
 - DAT_140fc4ac0: 2
 - PTR_DAT_1400dd860: 2
 - DAT_140f06b20: 2
+- DAT_140e67b01: 2
+- DAT_140f085e0: 2
 - DAT_140e0a590: 1
 - DAT_140fc7b04: 1
 - DAT_140fc7b10: 1
-- DAT_140fc7c20: 1
-- DAT_140fc6014: 1
 - DAT_140fc7a90: 1
 - DAT_140e67941: 1
 - DAT_140f0bb00: 1
@@ -46,6 +49,29 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - DAT_140f0e990: 1
 - DAT_140f0e9a1: 1
 - DAT_140f0e9a0: 1
+- DAT_140f0e9a8: 1
+- DAT_140f0ce60: 1
+- DAT_140f0c0d8: 1
+- DAT_140f0c0d0: 1
+- DAT_140fc8120: 1
+- DAT_140f23730: 1
+- DAT_140fc7bf8: 1
+- DAT_140fc9320: 1
+- DAT_140fc9720: 1
+- DAT_140fc7e74: 1
+- DAT_140e2edc0: 1
+- DAT_140e2edc8: 1
+- DAT_140e2edd0: 1
+- DAT_140fc601a: 1
+- DAT_140f23250: 1
+- DAT_140f23818: 1
+- DAT_140e27f48: 1
+- DAT_140e27f44: 1
+- DAT_140e27df0: 1
+- DAT_140e27df8: 1
+- DAT_140e27e00: 1
+- DAT_140e27e08: 1
+- DAT_140e27e10: 1
 - DAT_14001bcb8: 1
 - DAT_140f07240: 1
 - DAT_14001a0b8: 1
@@ -55,20 +81,20 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - _uStack_28: 1
 - _uStack_38: 1
 - FUN_140780db0: 1
+- DAT_140e67b50: 1
+- DAT_140e67b51: 1
+- DAT_140e085d0: 1
 - DAT_140f8c958: 1
 - DAT_140f8adc0: 1
 - DAT_140019790: 1
 - DAT_140019778: 1
 - DAT_140e66448: 1
 - DAT_140ef02c4: 1
-- DAT_140e67b01: 1
-- DAT_140f085e0: 1
 - DAT_14001e1b8: 1
 - LAB_140b08590: 1
 - DAT_140f09690: 1
 - _DAT_140e672dc: 1
 - DAT_140e66f70: 1
-- FUN_140ac9cd0: 1
 - DAT_140f0f410: 1
 - DAT_140f0f430: 1
 - DAT_140f02610: 1
@@ -82,11 +108,14 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - KdDebuggerNotPresent: 1
 - DAT_140e0aa2c: 1
 - DAT_140f55fc5: 1
+- DAT_140eff478: 1
+- DAT_140022dd0: 1
+- DAT_140fc7aa8: 1
 
 ## Classes de erro
 
-- undeclared_identifier: 113
-- implicit_function: 127
-- other_error: 241
-- syntax_expected: 91
-- conflicting_type: 1
+- undeclared_identifier: 160
+- other_error: 296
+- syntax_expected: 117
+- implicit_function: 22
+- conflicting_type: 3
