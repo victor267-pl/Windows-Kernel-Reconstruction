@@ -1,7 +1,7 @@
 # Protótipos de funções Ghidra
 
-- Assinaturas limpas examinadas: 32473
-- Protótipos únicos gerados: 32463
+- Assinaturas limpas examinadas: 32309
+- Protótipos únicos gerados: 32299
 - Nomes com assinaturas conflitantes omitidos: 2
 
 Somente assinaturas cujo nome coincide com o rótulo Ghidra foram incluídas. Protótipos reproduzem o pseudocódigo e não certificam a ABI original.
@@ -10,6 +10,7 @@ Somente assinaturas cujo nome coincide com o rótulo Ghidra foram incluídas. Pr
 
 - missing_return_type: 1093
 - label_signature_mismatch: 217
+- unresolved_type: 164
 - body_text_before_first_brace: 43
 
 ## Conflitos omitidos
