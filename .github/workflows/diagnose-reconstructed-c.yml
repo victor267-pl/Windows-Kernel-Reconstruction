@@ -20,6 +20,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reconstrucao/extraidos/compiler_diagnostics.json reconstrucao/extraidos/COMPILER_DIAGNOSTICS.md
+          git add reconstrucao/extraidos/compiler_diagnostics.json reconstrucao/extraidos/COMPILER_DIAGNOSTICS.md reconstrucao/extraidos/COMPILER_ERROR_CONTEXTS.md
           git commit -m "Diagnosticar compilacao do codigo C reconstruido" || exit 0
+          git pull --rebase origin main
           git push
