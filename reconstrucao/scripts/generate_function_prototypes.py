@@ -35,7 +35,7 @@ for path in files:
         prefix=prefix.strip()
         if not prefix:
             rejected["missing_return_type"]+=1; continue
-        if re.search(r"\b(undefined|code|uint3|int7|unkint9|unkuint9)\b",sig):
+        if re.search(r"\b(undefined|code|uint3|int7|unkint9|unkuint9|BADSPACEBASE|_JBTYPE|_locale_t)\b",sig):
             rejected["unresolved_type"]+=1; continue
         sig=re.sub(r"\bulong\b","uint32_t",sig)
         sig=re.sub(r"\bDWORD64\b","uint64_t",sig)
@@ -46,7 +46,7 @@ conflicts={name:sorted(sigs) for name,sigs in by_name.items() if len(sigs)>1}
 out.mkdir(parents=True,exist_ok=True)
 lines=["#ifndef NT_GHIDRA_FUNCTION_PROTOTYPES_H","#define NT_GHIDRA_FUNCTION_PROTOTYPES_H",
 '#include "ghidra_types.h"','#include <stdarg.h>','#include <wchar.h>',"",
-"/* Generated only from clean signatures matching their Ghidra function labels. */","typedef struct _SLIST_HEADER *PSLIST_HEADER;"]
+"/* Generated only from clean signatures matching their Ghidra function labels. */","typedef struct _SLIST_HEADER *PSLIST_HEADER;","typedef int32_t NTSTATUS;","typedef void *HANDLE;","typedef uint64_t ULONGLONG;","typedef int errno_t;","typedef size_t rsize_t;","typedef struct _EXCEPTION_RECORD _EXCEPTION_RECORD;","typedef struct _IMAGE_DOS_HEADER IMAGE_DOS_HEADER;"]
 for name in sorted(unique): lines.append(unique[name])
 lines += ["","#endif"]
 header="\n".join(lines)+"\n"
