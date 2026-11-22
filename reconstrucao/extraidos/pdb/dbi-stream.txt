@@ -1,0 +1,2 @@
+llvm-pdbutil: Unknown command line argument '-dbi-stream'.  Try: '/usr/lib/llvm-21/bin/llvm-pdbutil --help'
+llvm-pdbutil: Did you mean '--streams'?
