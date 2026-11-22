@@ -75,3 +75,4 @@ f"- Protótipos mantidos: {len(kept)}",f"- Excluídos por incompatibilidade: {le
 md += ["","## Exemplos excluídos",""]+[f"- {n}: esperado {v['expected']}; observado {v['observed']}" for n,v in list(mismatches.items())[:100]]
 Path("reconstrucao/extraidos/PROTOTYPE_ARITY_AUDIT.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k!="examples"},indent=2))
+
