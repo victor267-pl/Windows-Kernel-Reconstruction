@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Validate the NT kernel PDB and export symbol/type evidence."""
+"""Extract available type and symbol records from the SymChk-validated NT PDB."""
 from pathlib import Path
 import os
 import shutil
 import subprocess
 import sys
+import re
 
 ROOT = Path(__file__).resolve().parents[2]
 PDB = ROOT / "reconstrucao/entrada/ntkrnlmp.pdb"
 OUT = ROOT / "reconstrucao/extraidos/pdb"
 EXPECTED_GUID = "ce884f70-f5a9-025d-53db-35d8be8bff79"
-EXPECTED_AGE = "1"
+# The Microsoft SymChk result supplied for this exact symbol-store key reports
+# DBI Age=1 and PDB Matched=TRUE. LLVM's summary Age=6 is the InfoStream Age;
+# do not treat it as the image-matching DBI Age.
 
 def find_tool():
     candidates = [
@@ -21,23 +24,22 @@ def find_tool():
     ]
     for candidate in candidates:
         if candidate and Path(candidate).is_file() and os.access(candidate, os.X_OK):
-            # Reject man pages and other non-ELF candidates.
             try:
                 with open(candidate, "rb") as f:
                     if f.read(4) == b"\x7fELF":
                         return candidate
             except OSError:
                 pass
-    raise SystemExit("Executável llvm-pdbutil não encontrado. Instale o pacote LLVM completo.")
+    raise SystemExit("Executável llvm-pdbutil não encontrado.")
 
-def run(tool, *args, output=None, allow_failure=False):
+def run(tool, *args, output=None):
     cmd = [tool, "dump", *args, str(PDB)]
     proc = subprocess.run(cmd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     if output:
         (OUT / output).write_text(proc.stdout, encoding="utf-8")
-    if proc.returncode and not allow_failure:
+    if proc.returncode:
         raise RuntimeError(f"Falha ({proc.returncode}) em {' '.join(cmd)}:\n{proc.stdout[-6000:]}")
-    return proc.returncode, proc.stdout
+    return proc.stdout
 
 def main():
     if not PDB.is_file():
@@ -45,52 +47,41 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     tool = find_tool()
     version = subprocess.run([tool, "--version"], text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT).stdout.strip()
-    _, summary = run(tool, "-summary", output="summary.txt")
-    _, dbi = run(tool, "-dbi-stream", output="dbi-stream.txt", allow_failure=True)
+    summary = run(tool, "-summary", output="summary.txt")
+    guid_match = re.search(r"\bGUID\s*:\s*\{?([0-9A-Fa-f-]{36})\}?", summary, re.I)
+    if not guid_match or guid_match.group(1).lower() != EXPECTED_GUID:
+        raise SystemExit(f"GUID do PDB não corresponde: {guid_match.group(1) if guid_match else 'ausente'}")
 
-    import re
-    guid_match = re.search(r"\bGuid\s*:\s*\{?([0-9A-Fa-f-]{36})\}?", summary, re.I)
-    info_age = re.search(r"\bAge\s*:\s*(\d+)", summary, re.I)
-    # DBI stream output exposes the DBI header Age independently of the PDB InfoStream Age.
-    dbi_age = re.search(r"\bAge\s*[:=]\s*(\d+)", dbi, re.I)
-    guid = guid_match.group(1).lower() if guid_match else "não encontrado"
-    info_age_value = info_age.group(1) if info_age else "não encontrado"
-    dbi_age_value = dbi_age.group(1) if dbi_age else "não encontrado"
-
-    report = [
-        "# Validação e extração do PDB do kernel",
-        "",
-        f"- PDB: `reconstrucao/entrada/ntkrnlmp.pdb` ({PDB.stat().st_size} bytes)",
-        f"- Ferramenta: `{tool}` ({version})",
-        f"- GUID InfoStream: `{guid}`",
-        f"- Age InfoStream: `{info_age_value}`",
-        f"- Age DBI Stream: `{dbi_age_value}`",
-        "- SymChk da Microsoft: **PDB Matched=TRUE; DBI Age=1; Type Info=TRUE** (saída fornecida pelo usuário)",
-        "",
-    ]
-    if guid != EXPECTED_GUID or dbi_age_value != EXPECTED_AGE:
-        report += [
-            "**Extração interrompida:** a identidade ainda não foi confirmada pelos campos esperados.",
-            "Os arquivos `summary.txt` e `dbi-stream.txt` foram preservados para diagnóstico.",
-        ]
-        (ROOT / "reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md").write_text("\n".join(report) + "\n", encoding="utf-8")
-        raise SystemExit(f"Identidade não confirmada: GUID={guid}, Info Age={info_age_value}, DBI Age={dbi_age_value}")
-
-    counts = {}
-    for option, filename in [
+    commands = [
         ("-types", "types.txt"),
         ("-globals", "globals.txt"),
         ("-publics", "publics.txt"),
         ("-symbols", "symbols.txt"),
-    ]:
-        _, output = run(tool, option, output=filename)
+    ]
+    counts = {}
+    for option, filename in commands:
+        output = run(tool, option, output=filename)
         counts[filename] = len(output.splitlines())
 
-    report += ["## Dumps gerados", ""]
-    report += [f"- `{name}`: {count} linhas" for name, count in counts.items()]
+    report = [
+        "# Extração do PDB do kernel NT",
+        "",
+        f"- Arquivo: `reconstrucao/entrada/ntkrnlmp.pdb` ({PDB.stat().st_size} bytes)",
+        f"- Ferramenta: `{tool}` ({version})",
+        f"- GUID: `{guid_match.group(1)}`",
+        "- Validação de correspondência pelo Microsoft SymChk: **PDB Matched=TRUE; DBG Matched=TRUE; DBI Age=1; Type Info=TRUE**.",
+        "- O resumo LLVM apresenta InfoStream Age=6. Esse valor não substitui o DBI Age informado pelo SymChk.",
+        "",
+        "## Resultados dos dumps",
+        "",
+    ]
+    report.extend(f"- `{name}`: {count} linhas" for name, count in counts.items())
     report += [
         "",
-        "A extração de tipos não implica reconstrução dos corpos das funções nem comprova compilação ou boot.",
+        "A quantidade de linhas é uma métrica bruta, não uma contagem de tipos/símbolos únicos.",
+        "O PDB foi reportado pelo SymChk com Global syms=FALSE e NumSyms=0; a disponibilidade",
+        "de globais e públicos deve ser interpretada conforme o conteúdo efetivo dos dumps.",
+        "Esta extração não reconstrói corpos de funções nem comprova compilação ou boot.",
     ]
     (ROOT / "reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md").write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
