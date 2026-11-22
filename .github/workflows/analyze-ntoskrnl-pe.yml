@@ -6,6 +6,9 @@ on:
       - 'reconstrucao/entrada/ntoskrnl.exe'
       - 'reconstrucao/scripts/analyze_ntoskrnl_pe.py'
       - '.github/workflows/analyze-ntoskrnl-pe.yml'
+concurrency:
+  group: pe-analysis-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
