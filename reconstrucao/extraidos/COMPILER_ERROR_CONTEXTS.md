@@ -14,6 +14,17 @@ reconstrucao/src/decompiled_01.c:108:15: error: ‘DAT_140e0a740’ undeclared (
     111:   puStack_58 = auStack_40;
 
 ## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:202
+reconstrucao/src/decompiled_01.c:202:3: error: implicit declaration of function ‘FUN_1403a0f70’; did you mean ‘FUN_140ba0670’? [-Wimplicit-function-declaration]
+
+    199:   uStack_280 = 4;
+    200:   uStack_290 = 4;
+    201:   uStack_2a0 = 8;
+    202:   FUN_1403a0f70(&DAT_140e0a590,param_2,0,0);
+    203:   return;
+    204: }
+    205: 
+
+## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:202
 reconstrucao/src/decompiled_01.c:202:18: error: ‘DAT_140e0a590’ undeclared (first use in this function)
 
     199:   uStack_280 = 4;
@@ -35,6 +46,17 @@ reconstrucao/src/decompiled_01.c:337:7: error: ‘DAT_140fc7d20’ undeclared (f
     339:   }
     340:   FUN_1402007a8(param_1,auStackX_10);
 
+## FUN_140200740 */ — reconstrucao/src/decompiled_01.c:338
+reconstrucao/src/decompiled_01.c:338:5: error: implicit declaration of function ‘FUN_1404f6e6c’; did you mean ‘FUN_1404f6c6c’? [-Wimplicit-function-declaration]
+
+    335:   
+    336:   auStackX_10[0] = 0;
+    337:   if (DAT_140fc7d20 != 0) {
+    338:     FUN_1404f6e6c(in_CR8,2);
+    339:   }
+    340:   FUN_1402007a8(param_1,auStackX_10);
+    341:   FUN_140271070(FiberData,auStackX_10);
+
 ## FUN_140200740 */ — reconstrucao/src/decompiled_01.c:340
 reconstrucao/src/decompiled_01.c:340:25: error: passing argument 2 of ‘FUN_1402007a8’ makes integer from pointer without a cast [-Wint-conversion]
 
@@ -45,6 +67,17 @@ reconstrucao/src/decompiled_01.c:340:25: error: passing argument 2 of ‘FUN_140
     341:   FUN_140271070(FiberData,auStackX_10);
     342:   return;
     343: }
+
+## FUN_140200740 */ — reconstrucao/src/decompiled_01.c:341
+reconstrucao/src/decompiled_01.c:341:3: error: implicit declaration of function ‘FUN_140271070’; did you mean ‘FUN_140471070’? [-Wimplicit-function-declaration]
+
+    338:     FUN_1404f6e6c(in_CR8,2);
+    339:   }
+    340:   FUN_1402007a8(param_1,auStackX_10);
+    341:   FUN_140271070(FiberData,auStackX_10);
+    342:   return;
+    343: }
+    344: 
 
 ## FUN_140200740 */ — reconstrucao/src/decompiled_01.c:341
 reconstrucao/src/decompiled_01.c:341:17: error: ‘FiberData’ undeclared (first use in this function)
@@ -91,7 +124,7 @@ reconstrucao/src/decompiled_01.c:365:14: error: ‘DAT_140fc62ac’ undeclared (
     368:       }
 
 ## FUN_1402007a8 */ — reconstrucao/src/decompiled_01.c:365
-reconstrucao/src/decompiled_01.c:365:48: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘FUN_1402c7ab8’?
+reconstrucao/src/decompiled_01.c:365:48: error: ‘DAT_140fc7ab8’ undeclared (first use in this function)
 
     362:     if ((uVar2 & 1) == 0) break;
     363:     do {
@@ -100,6 +133,72 @@ reconstrucao/src/decompiled_01.c:365:48: error: ‘DAT_140fc7ab8’ undeclared (
     366:          (cVar3 = FUN_14020cb70(), cVar3 != '\0')) {
     367:         FUN_14020cb40(uVar4);
     368:       }
+
+## FUN_1402007a8 */ — reconstrucao/src/decompiled_01.c:366
+reconstrucao/src/decompiled_01.c:366:19: error: implicit declaration of function ‘FUN_14020cb70’; did you mean ‘FUN_14020cbe0’? [-Wimplicit-function-declaration]
+
+    363:     do {
+    364:       uVar4 = uVar4 + 1;
+    365:       if ((((DAT_140fc62ac & uVar4) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
+    366:          (cVar3 = FUN_14020cb70(), cVar3 != '\0')) {
+    367:         FUN_14020cb40(uVar4);
+    368:       }
+    369:     } while (*(longlong *)(param_1 + 0x40) != 0);
+
+## FUN_1402007a8 */ — reconstrucao/src/decompiled_01.c:367
+reconstrucao/src/decompiled_01.c:367:9: error: implicit declaration of function ‘FUN_14020cb40’; did you mean ‘FUN_14020cbe0’? [-Wimplicit-function-declaration]
+
+    364:       uVar4 = uVar4 + 1;
+    365:       if ((((DAT_140fc62ac & uVar4) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&
+    366:          (cVar3 = FUN_14020cb70(), cVar3 != '\0')) {
+    367:         FUN_14020cb40(uVar4);
+    368:       }
+    369:     } while (*(longlong *)(param_1 + 0x40) != 0);
+    370:   }
+
+## FUN_1402007a8 */ — reconstrucao/src/decompiled_01.c:371
+reconstrucao/src/decompiled_01.c:371:3: error: implicit declaration of function ‘FUN_140200820’; did you mean ‘FUN_140200740’? [-Wimplicit-function-declaration]
+
+    368:       }
+    369:     } while (*(longlong *)(param_1 + 0x40) != 0);
+    370:   }
+    371:   FUN_140200820(param_1,param_2);
+    372:   return;
+    373: }
+    374: 
+
+## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:397
+reconstrucao/src/decompiled_01.c:397:5: error: implicit declaration of function ‘FUN_14020bfa0’; did you mean ‘FUN_140a0afa0’? [-Wimplicit-function-declaration]
+
+    394:   uStack_48 = 0;
+    395:   uStack_40 = 0;
+    396:   if ((*(uint *)(param_1 + 0x74) & 8) == 0) {
+    397:     FUN_14020bfa0(0,&uStackX_20,&uStackX_18,auStackX_8,&uStack_48);
+    398:     cVar2 = FUN_14034f180(param_1);
+    399:     iVar3 = *(int *)(param_1 + 0x24c);
+    400:     FUN_14020a0c8(param_1,*(undefined8 *)(param_1 + 0x240));
+
+## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:398
+reconstrucao/src/decompiled_01.c:398:13: error: implicit declaration of function ‘FUN_14034f180’; did you mean ‘FUN_14054f190’? [-Wimplicit-function-declaration]
+
+    395:   uStack_40 = 0;
+    396:   if ((*(uint *)(param_1 + 0x74) & 8) == 0) {
+    397:     FUN_14020bfa0(0,&uStackX_20,&uStackX_18,auStackX_8,&uStack_48);
+    398:     cVar2 = FUN_14034f180(param_1);
+    399:     iVar3 = *(int *)(param_1 + 0x24c);
+    400:     FUN_14020a0c8(param_1,*(undefined8 *)(param_1 + 0x240));
+    401:   }
+
+## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:400
+reconstrucao/src/decompiled_01.c:400:5: error: implicit declaration of function ‘FUN_14020a0c8’; did you mean ‘FUN_14060a0c8’? [-Wimplicit-function-declaration]
+
+    397:     FUN_14020bfa0(0,&uStackX_20,&uStackX_18,auStackX_8,&uStack_48);
+    398:     cVar2 = FUN_14034f180(param_1);
+    399:     iVar3 = *(int *)(param_1 + 0x24c);
+    400:     FUN_14020a0c8(param_1,*(undefined8 *)(param_1 + 0x240));
+    401:   }
+    402:   else {
+    403:     *(undefined8 *)(param_1 + 0x40) = 0;
 
 ## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:406
 reconstrucao/src/decompiled_01.c:406:15: error: ‘DAT_140fc7b04’ undeclared (first use in this function)
@@ -112,6 +211,17 @@ reconstrucao/src/decompiled_01.c:406:15: error: ‘DAT_140fc7b04’ undeclared (
     408:                   CONCAT31((uint3)(*(uint *)(param_1 + 0x74) >> 0xb),
     409:                            (char)(*(uint *)(param_1 + 0x74) >> 3)) & 0xffffff01,0,
 
+## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:407
+reconstrucao/src/decompiled_01.c:407:5: error: implicit declaration of function ‘FUN_1403c0604’; did you mean ‘FUN_140bc0304’? [-Wimplicit-function-declaration]
+
+    404:     iVar3 = iVar1;
+    405:   }
+    406:   if ((((uint)DAT_140fc7b04 & 0x1000) != 0) && (cVar2 != '\0')) {
+    407:     FUN_1403c0604(param_1,*(undefined2 *)(param_1 + 0x248),
+    408:                   CONCAT31((uint3)(*(uint *)(param_1 + 0x74) >> 0xb),
+    409:                            (char)(*(uint *)(param_1 + 0x74) >> 3)) & 0xffffff01,0,
+    410:                   *(undefined8 *)(param_1 + 0x240),0x536);
+
 ## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:412
 reconstrucao/src/decompiled_01.c:412:29: error: ‘DAT_140fc7b10’ undeclared (first use in this function)
 
@@ -122,6 +232,17 @@ reconstrucao/src/decompiled_01.c:412:29: error: ‘DAT_140fc7b10’ undeclared (
     413:     FUN_1403be528(param_1,0x546,iVar1,iVar3);
     414:   }
     415:   return;
+
+## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:413
+reconstrucao/src/decompiled_01.c:413:5: error: implicit declaration of function ‘FUN_1403be528’; did you mean ‘FUN_140abe628’? [-Wimplicit-function-declaration]
+
+    410:                   *(undefined8 *)(param_1 + 0x240),0x536);
+    411:   }
+    412:   if ((iVar1 != iVar3) && ((DAT_140fc7b10 & 0x8000000) != 0)) {
+    413:     FUN_1403be528(param_1,0x546,iVar1,iVar3);
+    414:   }
+    415:   return;
+    416: }
 
 ## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:430
 reconstrucao/src/decompiled_01.c:430:7: error: ‘DAT_140fc7ad0’ undeclared (first use in this function)
@@ -233,6 +354,17 @@ reconstrucao/src/decompiled_01.c:482:3: error: implicit declaration of function 
     484: }
     485: 
 
+## KeSetSelectedCpuSetsThread */ — reconstrucao/src/decompiled_01.c:504
+reconstrucao/src/decompiled_01.c:504:11: error: implicit declaration of function ‘FUN_140201918’; did you mean ‘FUN_140201958’? [-Wimplicit-function-declaration]
+
+    501:   
+    502:                     /* 0x200ab0  1461  KeSetSelectedCpuSetsThread */
+    503:   auStackX_20[0] = 0;
+    504:   uVar5 = FUN_140201918(param_3);
+    505:   if (-1 < (int)uVar5) {
+    506:     auStack_38[0] = 0;
+    507:     plVar7 = (longlong *)(param_1 + 0x690);
+
 ## KeSetSelectedCpuSetsThread */ — reconstrucao/src/decompiled_01.c:514
 reconstrucao/src/decompiled_01.c:514:15: error: ‘DAT_140fc6014’ undeclared (first use in this function)
 
@@ -256,7 +388,7 @@ reconstrucao/src/decompiled_01.c:527:16: error: ‘DAT_140fc62ac’ undeclared (
     530:         }
 
 ## KeSetSelectedCpuSetsThread */ — reconstrucao/src/decompiled_01.c:527
-reconstrucao/src/decompiled_01.c:527:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘FUN_1402c7ab8’?
+reconstrucao/src/decompiled_01.c:527:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function)
 
     524:       if ((uVar2 & 1) == 0) break;
     525:       do {
@@ -342,6 +474,17 @@ reconstrucao/src/decompiled_01.c:572:8: error: ‘DAT_140fc7a90’ undeclared (f
     573:     uStack_108 = 4;
     574:     uVar2 = FUN_1402fd8a0();
     575:     uStack_100 = (void *)CONCAT71(uStack_100._1_7_,uVar2);
+
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:574
+reconstrucao/src/decompiled_01.c:574:13: error: implicit declaration of function ‘FUN_1402fd8a0’; did you mean ‘FUN_140bad8a0’? [-Wimplicit-function-declaration]
+
+    571:   uStack_100 = (void *)0x0;
+    572:   if ((DAT_140fc7a90 & 8) == 0) {
+    573:     uStack_108 = 4;
+    574:     uVar2 = FUN_1402fd8a0();
+    575:     uStack_100 = (void *)CONCAT71(uStack_100._1_7_,uVar2);
+    576:     uStack_100 = (void *)CONCAT44(1,(undefined4)uStack_100);
+    577:     puVar5 = *(undefined4 **)((longlong)FiberData + 0x8c00);
 
 ## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:575
 reconstrucao/src/decompiled_01.c:575:45: error: request for member ‘_1_7_’ in something not a structure or union
@@ -474,6 +617,17 @@ reconstrucao/src/decompiled_01.c:606:19: error: passing argument 1 of ‘FUN_140
     607:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
     608:     iVar4 = FUN_140203fd4(param_1,puVar5 + 2,0xfe8);
     609:     uVar7 = uStack_f0;
+
+## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:607
+reconstrucao/src/decompiled_01.c:607:28: error: implicit declaration of function ‘FUN_14046f5e0’; did you mean ‘FUN_14046f6e0’? [-Wimplicit-function-declaration]
+
+    604:   iVar4 = FUN_140203fd4(param_1,puVar5 + 2,(-(uint)((uVar6 & 2) != 0) & 0xfffff058) + 0xfe8);
+    605:   if (iVar4 == -1) {
+    606:     FUN_140210b60(&uStack_108);
+    607:     puVar5 = (undefined4 *)FUN_14046f5e0(&uStack_108,1,0);
+    608:     iVar4 = FUN_140203fd4(param_1,puVar5 + 2,0xfe8);
+    609:     uVar7 = uStack_f0;
+    610:   }
 
 ## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:608
 reconstrucao/src/decompiled_01.c:608:27: error: passing argument 1 of ‘FUN_140203fd4’ makes pointer from integer without a cast [-Wint-conversion]
@@ -651,6 +805,17 @@ reconstrucao/src/decompiled_01.c:692:13: error: assignment to ‘undefined8’ {
     694:     LOCK();
     695:     *(short *)((longlong)puVar5 + -0x8c) = *(short *)((longlong)puVar5 + -0x8c) + 1;
 
+## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:700
+reconstrucao/src/decompiled_01.c:700:3: error: implicit declaration of function ‘FUN_1402ec370’; did you mean ‘FUN_1402ec3b0’? [-Wimplicit-function-declaration]
+
+    697:     puVar8 = puVar5;
+    698:   }
+    699:   *(undefined8 *)(puVar9 + -2) = 0x140200eba;
+    700:   FUN_1402ec370(&DAT_140f230b0);
+    701:   *(undefined8 *)(puVar9 + 8) = 0;
+    702:   while (puVar8 != (undefined8 *)0x0) {
+    703:     puVar6 = (undefined8 *)*puVar8;
+
 ## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:718
 reconstrucao/src/decompiled_01.c:718:15: error: ‘DAT_140fc62ac’ undeclared (first use in this function)
 
@@ -663,7 +828,7 @@ reconstrucao/src/decompiled_01.c:718:15: error: ‘DAT_140fc62ac’ undeclared (
     721:           if (cVar4 != '\0') {
 
 ## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:718
-reconstrucao/src/decompiled_01.c:718:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘FUN_1402c7ab8’?
+reconstrucao/src/decompiled_01.c:718:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function)
 
     715:       if ((uVar2 & 1) == 0) break;
     716:       do {
@@ -705,6 +870,17 @@ reconstrucao/src/decompiled_01.c:739:17: error: ‘FiberData’ undeclared (firs
     740:   return;
     741: }
     742: 
+
+## FUN_140200fc0 */ — reconstrucao/src/decompiled_01.c:748
+reconstrucao/src/decompiled_01.c:748:3: error: implicit declaration of function ‘FUN_140200fd8’; did you mean ‘FUN_140200fc0’? [-Wimplicit-function-declaration]
+
+    745: void FUN_140200fc0(void)
+    746: 
+    747: {
+    748:   FUN_140200fd8();
+    749:   return;
+    750: }
+    751: 
 
 ## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:792
 reconstrucao/src/decompiled_01.c:792:7: error: implicit declaration of function ‘KeSetActualBasePriorityThread’; did you mean ‘KeSetBasePriorityThread’? [-Wimplicit-function-declaration]
@@ -749,6 +925,17 @@ reconstrucao/src/decompiled_01.c:800:29: error: passing argument 2 of ‘FUN_140
     801:       param_1[0x100] = 0x20;
     802:     }
     803:     uStack_48 = 0;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:814
+reconstrucao/src/decompiled_01.c:814:5: error: implicit declaration of function ‘FUN_1402fd5d0’; did you mean ‘FUN_1404fd570’? [-Wimplicit-function-declaration]
+
+    811:     LOCK();
+    812:     *param_1 = *param_1 & 0xffbfffff;
+    813:     UNLOCK();
+    814:     FUN_1402fd5d0(uVar8,pvStack_60,&uStack_68,uStack_58,&uStack_48);
+    815:     param_1[0x10] = 0;
+    816:     param_1[0x11] = 0;
+    817:     FUN_140271070(FiberData,&uStackX_20,auStackX_18[0]);
 
 ## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:817
 reconstrucao/src/decompiled_01.c:817:19: error: ‘FiberData’ undeclared (first use in this function)
@@ -850,7 +1037,7 @@ reconstrucao/src/decompiled_01.c:852:17: error: passing argument 1 of ‘FUN_140
     855:   if (6 < (int)uVar5) goto LAB_14020115f;
 
 ## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:867
-reconstrucao/src/decompiled_01.c:867:9: error: invalid use of void expression
+reconstrucao/src/decompiled_01.c:867:11: error: implicit declaration of function ‘FUN_14020c440’; did you mean ‘FUN_140200740’? [-Wimplicit-function-declaration]
 
     864:   uStack_38 = 0;
     865:   uStack_30 = 0;
@@ -861,7 +1048,7 @@ reconstrucao/src/decompiled_01.c:867:9: error: invalid use of void expression
     870:     pvStack_50 = pvVar4;
 
 ## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:881
-reconstrucao/src/decompiled_01.c:881:15: error: invalid use of void expression
+reconstrucao/src/decompiled_01.c:881:17: error: implicit declaration of function ‘FUN_14027835c’; did you mean ‘FUN_140578350’? [-Wimplicit-function-declaration]
 
     878:         bVar1 = *(byte *)(*(longlong *)((longlong)*ppvVar6 + 0x38) + 0x40);
     879:         *(byte *)(*(longlong *)((longlong)*ppvVar6 + 0x38) + 0x40) =
@@ -870,6 +1057,17 @@ reconstrucao/src/decompiled_01.c:881:15: error: invalid use of void expression
     882:         ppvVar6 = ppvVar6 + 1;
     883:         uVar7 = uVar7 - 1;
     884:       } while (uVar7 != 0);
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:897
+reconstrucao/src/decompiled_01.c:897:3: error: implicit declaration of function ‘FUN_140295160’; did you mean ‘FUN_140595a60’? [-Wimplicit-function-declaration]
+
+    894: LAB_14020115f:
+    895:   param_1[0x10] = 0;
+    896:   param_1[0x11] = 0;
+    897:   FUN_140295160(pvVar4,param_1);
+    898:   if (DAT_140fc7d20 != 0) {
+    899:     FUN_1404f6e08(in_CR8,auStackX_18[0]);
+    900:   }
 
 ## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:898
 reconstrucao/src/decompiled_01.c:898:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function)
@@ -881,6 +1079,17 @@ reconstrucao/src/decompiled_01.c:898:7: error: ‘DAT_140fc7d20’ undeclared (f
     899:     FUN_1404f6e08(in_CR8,auStackX_18[0]);
     900:   }
     901:   return;
+
+## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:899
+reconstrucao/src/decompiled_01.c:899:5: error: implicit declaration of function ‘FUN_1404f6e08’; did you mean ‘FUN_14094f608’? [-Wimplicit-function-declaration]
+
+    896:   param_1[0x11] = 0;
+    897:   FUN_140295160(pvVar4,param_1);
+    898:   if (DAT_140fc7d20 != 0) {
+    899:     FUN_1404f6e08(in_CR8,auStackX_18[0]);
+    900:   }
+    901:   return;
+    902: }
 
 ## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:947
 reconstrucao/src/decompiled_01.c:947:7: error: implicit declaration of function ‘KeBugCheckEx’ [-Wimplicit-function-declaration]
@@ -894,7 +1103,7 @@ reconstrucao/src/decompiled_01.c:947:7: error: implicit declaration of function 
     950:     *(uint *)(param_1 + 0x358) = *(uint *)(param_1 + 0x358) | 1 << ((int)(char)iVar5 & 0x1fU);
 
 ## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:971
-reconstrucao/src/decompiled_01.c:971:9: error: invalid use of void expression
+reconstrucao/src/decompiled_01.c:971:11: error: implicit declaration of function ‘FUN_1403c1fa4’; did you mean ‘FUN_140bc13a4’? [-Wimplicit-function-declaration]
 
     968:     *(undefined1 *)(param_1 + 0x366) = 0;
     969:     *(ushort *)(param_1 + 0x206) = *(ushort *)(param_1 + 0x206) & 0xf00f;
@@ -926,17 +1135,6 @@ reconstrucao/src/decompiled_01.c:995:16: error: invalid use of void expression
     997:         if (auStackX_20[0] != 0) {
     998:           uVar8 = (ulonglong)auStackX_20[0];
 
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1004
-reconstrucao/src/decompiled_01.c:1004:20: error: invalid use of void expression
-
-    1001:             bVar1 = *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40);
-    1002:             *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40) =
-    1003:                  bVar1 ^ (bVar1 ^ *(byte *)(param_1 + 0x204)) & 7;
-    1004:             uVar11 = FUN_14027835c();
-    1005:             plVar10 = plVar10 + 1;
-    1006:             uVar8 = uVar8 - 1;
-    1007:           } while (uVar8 != 0);
-
 ## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1015
 reconstrucao/src/decompiled_01.c:1015:76: error: passing argument 3 of ‘FUN_1403fce40’ from incompatible pointer type [-Wincompatible-pointer-types]
 
@@ -959,17 +1157,6 @@ reconstrucao/src/decompiled_01.c:1015:14: error: invalid use of void expression
     1017:         uVar8 = (ulonglong)auStackX_8[0];
     1018:         plVar10 = plStack_80;
 
-## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1023
-reconstrucao/src/decompiled_01.c:1023:18: error: invalid use of void expression
-
-    1020:           bVar1 = *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40);
-    1021:           *(byte *)(*(longlong *)(*plVar10 + 0x38) + 0x40) =
-    1022:                bVar1 ^ (bVar1 ^ *(byte *)(param_1 + 0x204)) & 7;
-    1023:           uVar11 = FUN_14027835c();
-    1024:           plVar10 = plVar10 + 1;
-    1025:           uVar8 = uVar8 - 1;
-    1026:         } while (uVar8 != 0);
-
 ## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1036
 reconstrucao/src/decompiled_01.c:1036:29: error: ‘DAT_140fc7b14’ undeclared (first use in this function); did you mean ‘FUN_140ac7b14’?
 
@@ -980,6 +1167,17 @@ reconstrucao/src/decompiled_01.c:1036:29: error: ‘DAT_140fc7b14’ undeclared 
     1037:     FUN_1404d0da8(param_1,iVar9,iVar5,iVar6,&uStack_60);
     1038:   }
     1039:   return;
+
+## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1037
+reconstrucao/src/decompiled_01.c:1037:5: error: implicit declaration of function ‘FUN_1404d0da8’; did you mean ‘FUN_1404ddda8’? [-Wimplicit-function-declaration]
+
+    1034:     UNLOCK();
+    1035:   }
+    1036:   if ((iVar9 != iVar6) && ((DAT_140fc7b14 & 0x20) != 0)) {
+    1037:     FUN_1404d0da8(param_1,iVar9,iVar5,iVar6,&uStack_60);
+    1038:   }
+    1039:   return;
+    1040: }
 
 ## FUN_1402015a0 */ — reconstrucao/src/decompiled_01.c:1053
 reconstrucao/src/decompiled_01.c:1053:40: error: ‘DAT_140f08470’ undeclared (first use in this function)
@@ -1003,6 +1201,17 @@ reconstrucao/src/decompiled_01.c:1054:12: error: ‘DAT_140f08468’ undeclared 
     1056:     uVar3 = *DAT_140f08468;
     1057:     if (((uVar3 & 0x10) != 0) && ((uVar3 & 1) != (uint)param_1)) {
 
+## FUN_1402015a0 */ — reconstrucao/src/decompiled_01.c:1061
+reconstrucao/src/decompiled_01.c:1061:9: error: implicit declaration of function ‘FUN_1402f0180’; did you mean ‘FUN_1402f9180’? [-Wimplicit-function-declaration]
+
+    1058:       uVar3 = (param_1 ^ uVar3) & 1 ^ uVar3;
+    1059:       *DAT_140f08468 = uVar3;
+    1060:       if ((uVar3 & 2) == 0) {
+    1061:         FUN_1402f0180(&lStackX_10);
+    1062:         if (param_1 == 0) {
+    1063:           *(longlong *)(puVar1 + 6) =
+    1064:                *(longlong *)(puVar1 + 6) + (lStackX_10 - *(longlong *)(puVar1 + 2));
+
 ## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1085
 reconstrucao/src/decompiled_01.c:1085:40: error: ‘DAT_140f0cf28’ undeclared (first use in this function)
 
@@ -1024,6 +1233,28 @@ reconstrucao/src/decompiled_01.c:1086:17: error: ‘DAT_140fc7ad0’ undeclared 
     1087:   KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
     1088:   if (param_1 == *DAT_140fc7ad0 - 1U) {
     1089:     if (param_2 == '\0') {
+
+## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1093
+reconstrucao/src/decompiled_01.c:1093:7: error: implicit declaration of function ‘FUN_140293ff4’; did you mean ‘FUN_1402c3f74’? [-Wimplicit-function-declaration]
+
+    1090:       FUN_140201834(1);
+    1091:       FUN_1402015a0(1);
+    1092:       FUN_140201e00(1);
+    1093:       FUN_140293ff4(6);
+    1094:     }
+    1095:     else {
+    1096:       FUN_140201834(0);
+
+## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1099
+reconstrucao/src/decompiled_01.c:1099:7: error: implicit declaration of function ‘FUN_140294550’; did you mean ‘FUN_140494550’? [-Wimplicit-function-declaration]
+
+    1096:       FUN_140201834(0);
+    1097:       FUN_1402015a0(0);
+    1098:       FUN_140201e00(0);
+    1099:       FUN_140294550(6);
+    1100:     }
+    1101:   }
+    1102:   return;
 
 ## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1115
 reconstrucao/src/decompiled_01.c:1115:7: error: ‘DAT_140fc7ad0’ undeclared (first use in this function)
@@ -1090,237 +1321,6 @@ reconstrucao/src/decompiled_01.c:1194:21: error: ‘_DAT_fffff78000000008’ und
     1195:     }
     1196:     else {
     1197:       DAT_140f0e9a8 = _DAT_fffff78000000008;
-
-## FUN_140201834 */ — reconstrucao/src/decompiled_01.c:1197
-reconstrucao/src/decompiled_01.c:1197:7: error: ‘DAT_140f0e9a8’ undeclared (first use in this function)
-
-    1194:       FUN_1404b8ffc(_DAT_fffff78000000008,0);
-    1195:     }
-    1196:     else {
-    1197:       DAT_140f0e9a8 = _DAT_fffff78000000008;
-    1198:     }
-    1199:   }
-    1200:   if (DAT_140f0e9a0 != param_1) {
-
-## FUN_1402018b8 */ — reconstrucao/src/decompiled_01.c:1217
-reconstrucao/src/decompiled_01.c:1217:40: error: ‘DAT_140f0ce60’ undeclared (first use in this function)
-
-    1214:   undefined1 uVar1;
-    1215:   undefined8 uVar2;
-    1216:   
-    1217:   uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0ce60);
-    1218:   if (DAT_140f0c0d8 != '\0') {
-    1219:     uVar2 = KeQueryPerformanceCounter(0);
-    1220:     if (param_1 == '\0') {
-
-## FUN_1402018b8 */ — reconstrucao/src/decompiled_01.c:1218
-reconstrucao/src/decompiled_01.c:1218:7: error: ‘DAT_140f0c0d8’ undeclared (first use in this function)
-
-    1215:   undefined8 uVar2;
-    1216:   
-    1217:   uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0ce60);
-    1218:   if (DAT_140f0c0d8 != '\0') {
-    1219:     uVar2 = KeQueryPerformanceCounter(0);
-    1220:     if (param_1 == '\0') {
-    1221:       FUN_1404bc4ec(uVar2);
-
-## FUN_1402018b8 */ — reconstrucao/src/decompiled_01.c:1219
-reconstrucao/src/decompiled_01.c:1219:13: error: implicit declaration of function ‘KeQueryPerformanceCounter’ [-Wimplicit-function-declaration]
-
-    1216:   
-    1217:   uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0ce60);
-    1218:   if (DAT_140f0c0d8 != '\0') {
-    1219:     uVar2 = KeQueryPerformanceCounter(0);
-    1220:     if (param_1 == '\0') {
-    1221:       FUN_1404bc4ec(uVar2);
-    1222:     }
-
-## FUN_1402018b8 */ — reconstrucao/src/decompiled_01.c:1224
-reconstrucao/src/decompiled_01.c:1224:7: error: ‘DAT_140f0c0d0’ undeclared (first use in this function)
-
-    1221:       FUN_1404bc4ec(uVar2);
-    1222:     }
-    1223:     else {
-    1224:       DAT_140f0c0d0 = uVar2;
-    1225:     }
-    1226:   }
-    1227:   KeReleaseSpinLock(&DAT_140f0ce60,uVar1);
-
-## FUN_140201918 */ — reconstrucao/src/decompiled_01.c:1238
-reconstrucao/src/decompiled_01.c:1238:18: error: ‘DAT_140fc6014’ undeclared (first use in this function)
-
-    1235: {
-    1236:   ulonglong uVar1;
-    1237:   
-    1238:   if (param_2 <= DAT_140fc6014) {
-    1239:     uVar1 = 0;
-    1240:     while( true ) {
-    1241:       if (param_2 <= (uint)uVar1) {
-
-## FUN_140201918 */ — reconstrucao/src/decompiled_01.c:1244
-reconstrucao/src/decompiled_01.c:1244:53: error: ‘DAT_140fc8128’ undeclared (first use in this function)
-
-    1241:       if (param_2 <= (uint)uVar1) {
-    1242:         return 0;
-    1243:       }
-    1244:       if ((*(ulonglong *)(param_1 + uVar1 * 8) & ~(&DAT_140fc8128)[uVar1]) != 0) break;
-    1245:       uVar1 = (ulonglong)((uint)uVar1 + 1);
-    1246:     }
-    1247:   }
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1272
-reconstrucao/src/decompiled_01.c:1272:25: error: passing argument 1 of ‘FUN_140201918’ makes integer from pointer without a cast [-Wint-conversion]
-
-    1269:   ulonglong *puStack_38;
-    1270:   
-    1271:   uVar6 = 0;
-    1272:   uVar3 = FUN_140201918(param_2,param_1);
-    1273:   if (-1 < (int)uVar3) {
-    1274:     if ((param_3 == (ushort *)0x0) ||
-    1275:        (iVar2 = KeIsSubsetAffinityEx(param_3,&DAT_140fc8120), iVar2 != 0)) {
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1275
-reconstrucao/src/decompiled_01.c:1275:17: error: implicit declaration of function ‘KeIsSubsetAffinityEx’; did you mean ‘KeSubtractAffinityEx’? [-Wimplicit-function-declaration]
-
-    1272:   uVar3 = FUN_140201918(param_2,param_1);
-    1273:   if (-1 < (int)uVar3) {
-    1274:     if ((param_3 == (ushort *)0x0) ||
-    1275:        (iVar2 = KeIsSubsetAffinityEx(param_3,&DAT_140fc8120), iVar2 != 0)) {
-    1276:       uVar12 = 0x20;
-    1277:       if (param_1 < 0x20) {
-    1278:         uVar12 = param_1;
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1275
-reconstrucao/src/decompiled_01.c:1275:47: error: ‘DAT_140fc8120’ undeclared (first use in this function)
-
-    1272:   uVar3 = FUN_140201918(param_2,param_1);
-    1273:   if (-1 < (int)uVar3) {
-    1274:     if ((param_3 == (ushort *)0x0) ||
-    1275:        (iVar2 = KeIsSubsetAffinityEx(param_3,&DAT_140fc8120), iVar2 != 0)) {
-    1276:       uVar12 = 0x20;
-    1277:       if (param_1 < 0x20) {
-    1278:         uVar12 = param_1;
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1281
-reconstrucao/src/decompiled_01.c:1281:36: error: ‘DAT_140f23730’ undeclared (first use in this function)
-
-    1278:         uVar12 = param_1;
-    1279:       }
-    1280:       uVar7 = 0;
-    1281:       KeAcquireSpinLockAtDpcLevel(&DAT_140f23730);
-    1282:       uVar4 = DAT_140fc7bf8;
-    1283:       do {
-    1284:         while ((uVar4 & 1) != 0) {
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1282
-reconstrucao/src/decompiled_01.c:1282:15: error: ‘DAT_140fc7bf8’ undeclared (first use in this function)
-
-    1279:       }
-    1280:       uVar7 = 0;
-    1281:       KeAcquireSpinLockAtDpcLevel(&DAT_140f23730);
-    1282:       uVar4 = DAT_140fc7bf8;
-    1283:       do {
-    1284:         while ((uVar4 & 1) != 0) {
-    1285:           uVar4 = DAT_140fc7bf8;
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1299
-reconstrucao/src/decompiled_01.c:1299:21: error: ‘DAT_140fc9320’ undeclared (first use in this function)
-
-    1296:       } while (!bVar13);
-    1297:       uVar4 = 0;
-    1298:       lVar10 = 0;
-    1299:       puStack_38 = &DAT_140fc9320 + param_4;
-    1300:       lVar9 = (longlong)&DAT_140fc8128 - (longlong)param_2;
-    1301:       lVar11 = (longlong)&DAT_140fc9720 - (longlong)param_2;
-    1302:       do {
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1300
-reconstrucao/src/decompiled_01.c:1300:26: error: ‘DAT_140fc8128’ undeclared (first use in this function)
-
-    1297:       uVar4 = 0;
-    1298:       lVar10 = 0;
-    1299:       puStack_38 = &DAT_140fc9320 + param_4;
-    1300:       lVar9 = (longlong)&DAT_140fc8128 - (longlong)param_2;
-    1301:       lVar11 = (longlong)&DAT_140fc9720 - (longlong)param_2;
-    1302:       do {
-    1303:         uVar1 = *(ulonglong *)(lVar9 + (longlong)param_2);
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1301
-reconstrucao/src/decompiled_01.c:1301:27: error: ‘DAT_140fc9720’ undeclared (first use in this function)
-
-    1298:       lVar10 = 0;
-    1299:       puStack_38 = &DAT_140fc9320 + param_4;
-    1300:       lVar9 = (longlong)&DAT_140fc8128 - (longlong)param_2;
-    1301:       lVar11 = (longlong)&DAT_140fc9720 - (longlong)param_2;
-    1302:       do {
-    1303:         uVar1 = *(ulonglong *)(lVar9 + (longlong)param_2);
-    1304:         if (param_3 == (ushort *)0x0) {
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1330
-reconstrucao/src/decompiled_01.c:1330:41: error: ‘DAT_140fc7c20’ undeclared (first use in this function)
-
-    1327:         else if (param_5 == 2) {
-    1328:           uVar6 = ~uVar5 & *puStack_38;
-    1329:         }
-    1330:         if ((ushort)uVar4 < *(ushort *)*DAT_140fc7c20) {
-    1331:           uVar5 = *(ulonglong *)((ushort *)*DAT_140fc7c20 + (uVar4 & 0xffff) * 4 + 4);
-    1332:         }
-    1333:         else {
-
-## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1348
-reconstrucao/src/decompiled_01.c:1348:9: error: ‘DAT_140fc7e74’ undeclared (first use in this function)
-
-    1345:         lVar10 = lVar10 + 2;
-    1346:       } while (uVar8 < 0x20);
-    1347:       if (param_4 == 0) {
-    1348:         DAT_140fc7e74 = uVar7;
-    1349:       }
-    1350:       DAT_140fc7bf8 = DAT_140fc7bf8 + 1;
-    1351:       FUN_140202990(0);
-
-## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1371
-reconstrucao/src/decompiled_01.c:1371:3: error: implicit declaration of function ‘ExAcquireSpinLockSharedAtDpcLevel’ [-Wimplicit-function-declaration]
-
-    1368:   
-    1369:   uVar1 = param_1[1];
-    1370:   bVar2 = false;
-    1371:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
-    1372:   if ((ushort)uVar1 < DAT_140e2edc8) {
-    1373:     bVar2 = (*(ulonglong *)(&DAT_140e2edd0 + (ulonglong)(ushort)uVar1 * 8) & *param_1) != 0;
-    1374:   }
-
-## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1371
-reconstrucao/src/decompiled_01.c:1371:38: error: ‘DAT_140e2edc0’ undeclared (first use in this function)
-
-    1368:   
-    1369:   uVar1 = param_1[1];
-    1370:   bVar2 = false;
-    1371:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
-    1372:   if ((ushort)uVar1 < DAT_140e2edc8) {
-    1373:     bVar2 = (*(ulonglong *)(&DAT_140e2edd0 + (ulonglong)(ushort)uVar1 * 8) & *param_1) != 0;
-    1374:   }
-
-## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1372
-reconstrucao/src/decompiled_01.c:1372:23: error: ‘DAT_140e2edc8’ undeclared (first use in this function)
-
-    1369:   uVar1 = param_1[1];
-    1370:   bVar2 = false;
-    1371:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
-    1372:   if ((ushort)uVar1 < DAT_140e2edc8) {
-    1373:     bVar2 = (*(ulonglong *)(&DAT_140e2edd0 + (ulonglong)(ushort)uVar1 * 8) & *param_1) != 0;
-    1374:   }
-    1375:   ExReleaseSpinLockSharedFromDpcLevel(&DAT_140e2edc0);
-
-## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1373
-reconstrucao/src/decompiled_01.c:1373:30: error: ‘DAT_140e2edd0’ undeclared (first use in this function)
-
-    1370:   bVar2 = false;
-    1371:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
-    1372:   if ((ushort)uVar1 < DAT_140e2edc8) {
-    1373:     bVar2 = (*(ulonglong *)(&DAT_140e2edd0 + (ulonglong)(ushort)uVar1 * 8) & *param_1) != 0;
-    1374:   }
-    1375:   ExReleaseSpinLockSharedFromDpcLevel(&DAT_140e2edc0);
-    1376:   return bVar2;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:156
 reconstrucao/src/decompiled_02.c:156:10: error: request for member ‘_8_8_’ in something not a structure or union
@@ -2752,6 +2752,17 @@ reconstrucao/src/decompiled_03.c:96:36: error: ‘DAT_140f06d38’ undeclared (f
     98: }
     99: 
 
+## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:136
+reconstrucao/src/decompiled_03.c:136:13: error: implicit declaration of function ‘FUN_1403dcb90’; did you mean ‘FUN_1407dcb90’? [-Wimplicit-function-declaration]
+
+    133:     uStack_3c = param_3[1];
+    134:     uStack_38 = param_3[2];
+    135:     uStack_34 = param_3[3];
+    136:     iVar1 = FUN_1403dcb90(uStack_30,&uStack_30,&uStack_40,param_4,0,&lStack_48);
+    137:     lVar3 = lStack_48;
+    138:     if (-1 < iVar1) {
+    139:       iVar1 = FUN_140a329d0(lStack_48,&puStackX_8);
+
 ## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:139
 reconstrucao/src/decompiled_03.c:139:29: error: passing argument 1 of ‘FUN_140a329d0’ makes pointer from integer without a cast [-Wint-conversion]
 
@@ -2784,6 +2795,17 @@ reconstrucao/src/decompiled_03.c:145:19: error: passing argument 1 of ‘FUN_140
     146:   }
     147:   if (puVar2 != (undefined *)0x0) {
     148:     FUN_140485460(puVar2);
+
+## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:148
+reconstrucao/src/decompiled_03.c:148:5: error: implicit declaration of function ‘FUN_140485460’; did you mean ‘FUN_1404c5460’? [-Wimplicit-function-declaration]
+
+    145:     FUN_140a32d80(lVar3);
+    146:   }
+    147:   if (puVar2 != (undefined *)0x0) {
+    148:     FUN_140485460(puVar2);
+    149:   }
+    150:   if (iVar1 != -0x3fffff45) {
+    151:     return iVar1;
 
 ## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:153
 reconstrucao/src/decompiled_03.c:153:17: error: ‘DAT_140f06d48’ undeclared (first use in this function)
@@ -3006,7 +3028,18 @@ reconstrucao/src/decompiled_03.c:312:3: error: implicit declaration of function 
     315: 
 
 ## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:326
-reconstrucao/src/decompiled_03.c:326:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
+reconstrucao/src/decompiled_03.c:326:11: error: implicit declaration of function ‘FUN_1402f5ef0’; did you mean ‘FUN_140255ef0’? [-Wimplicit-function-declaration]
+
+    323:   undefined8 uStack_18;
+    324:   undefined8 uStack_10;
+    325:   
+    326:   lVar2 = FUN_1402f5ef0(&DAT_140f06ba8,0,0);
+    327:   LOCK();
+    328:   uVar1 = DAT_140f06ba8 & 1;
+    329:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
+
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:326
+reconstrucao/src/decompiled_03.c:326:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function)
 
     323:   undefined8 uStack_18;
     324:   undefined8 uStack_10;
@@ -3037,6 +3070,17 @@ reconstrucao/src/decompiled_03.c:330:3: error: implicit declaration of function 
     331:   if (uVar1 != 0) {
     332:     FUN_1402f5950(&DAT_140f06ba8,lVar2,&DAT_140f06ba8);
     333:   }
+
+## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:332
+reconstrucao/src/decompiled_03.c:332:5: error: implicit declaration of function ‘FUN_1402f5950’; did you mean ‘FUN_1409f5970’? [-Wimplicit-function-declaration]
+
+    329:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
+    330:   UNLOCK();
+    331:   if (uVar1 != 0) {
+    332:     FUN_1402f5950(&DAT_140f06ba8,lVar2,&DAT_140f06ba8);
+    333:   }
+    334:   if (lVar2 != 0) {
+    335:     *(undefined1 *)(lVar2 + 10) = 1;
 
 ## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:337
 reconstrucao/src/decompiled_03.c:337:3: error: ‘DAT_140f06bb8’ undeclared (first use in this function)
@@ -3070,6 +3114,17 @@ reconstrucao/src/decompiled_03.c:341:18: error: ‘DAT_140f06bc0’ undeclared (
     342:   }
     343:   FUN_1404935fc(&DAT_140f06ba8);
     344:   return;
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:366
+reconstrucao/src/decompiled_03.c:366:7: error: implicit declaration of function ‘FUN_1406d1200’; did you mean ‘FUN_1406d1b00’? [-Wimplicit-function-declaration]
+
+    363:   if (lVar2 != 0) {
+    364:     lVar3 = ExAllocatePool2(0x100,0x40,0x70687373);
+    365:     if (lVar3 != 0) {
+    366:       FUN_1406d1200(lVar2,0,0xa0);
+    367:       FUN_1406d1200(lVar3,0,0x40);
+    368:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
+    369:       while( true ) {
 
 ## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:368
 reconstrucao/src/decompiled_03.c:368:7: error: implicit declaration of function ‘AlpcInitializeMessageAttribute’; did you mean ‘AlpcGetMessageAttribute’? [-Wimplicit-function-declaration]
@@ -3115,8 +3170,30 @@ reconstrucao/src/decompiled_03.c:373:41: error: passing argument 1 of ‘AlpcGet
     375:         AlpcInitializeMessageAttribute(0x20000000);
     376:         uStack_18 = 0;
 
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:374
+reconstrucao/src/decompiled_03.c:374:9: error: implicit declaration of function ‘FUN_14077fb9c’; did you mean ‘FUN_1407ffb9c’? [-Wimplicit-function-declaration]
+
+    371:         iVar1 = ZwAlpcSendWaitReceivePort(DAT_140f06ba0,0,0,0,lVar3,&uStackX_20,lVar2,&uStack_18);
+    372:         if (iVar1 != 0) break;
+    373:         uVar4 = AlpcGetMessageAttribute(lVar2,0x20000000);
+    374:         FUN_14077fb9c(lVar3,uVar4);
+    375:         AlpcInitializeMessageAttribute(0x20000000);
+    376:         uStack_18 = 0;
+    377:       }
+
+## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:378
+reconstrucao/src/decompiled_03.c:378:7: error: implicit declaration of function ‘FUN_140447c40’; did you mean ‘FUN_140447c80’? [-Wimplicit-function-declaration]
+
+    375:         AlpcInitializeMessageAttribute(0x20000000);
+    376:         uStack_18 = 0;
+    377:       }
+    378:       FUN_140447c40(lVar3,0x70687373);
+    379:     }
+    380:     FUN_140447c40(lVar2,0x70687373);
+    381:   }
+
 ## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:393
-reconstrucao/src/decompiled_03.c:393:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
+reconstrucao/src/decompiled_03.c:393:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function)
 
     390:   ulonglong uVar1;
     391:   longlong lVar2;
@@ -3148,6 +3225,28 @@ reconstrucao/src/decompiled_03.c:405:47: error: ‘DAT_140f06bb8’ undeclared (
     407:     (&DAT_140f06bbc)[lVar2] = 0;
     408:   }
 
+## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:406
+reconstrucao/src/decompiled_03.c:406:5: error: implicit declaration of function ‘FUN_14077ff18’; did you mean ‘FUN_14077f918’? [-Wimplicit-function-declaration]
+
+    403:   }
+    404:   lVar2 = (longlong)param_1 * 0xc0;
+    405:   if (((&DAT_140f06bbc)[lVar2] != '\0') && ((&DAT_140f06bb8)[(longlong)param_1 * 0x30] == 0)) {
+    406:     FUN_14077ff18();
+    407:     (&DAT_140f06bbc)[lVar2] = 0;
+    408:   }
+    409:   FUN_1404935fc(&DAT_140f06ba8);
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:415
+reconstrucao/src/decompiled_03.c:415:12: error: conflicting types for ‘FUN_14077fb9c’; have ‘undefined4(longlong)’ {aka ‘unsigned int(long int)’}
+
+    412: 
+    413: /* Ghidra label: FUN_14077fb9c */
+    414: /* Ghidra address: 14077fb9c */
+    415: undefined4 FUN_14077fb9c(longlong param_1)
+    416: 
+    417: {
+    418:   ulonglong uVar1;
+
 ## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:442
 reconstrucao/src/decompiled_03.c:442:15: error: ‘DAT_140e0a740’ undeclared (first use in this function)
 
@@ -3160,7 +3259,7 @@ reconstrucao/src/decompiled_03.c:442:15: error: ‘DAT_140e0a740’ undeclared (
     445:   uVar5 = *(ushort *)(param_1 + 4) & 0xff;
 
 ## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:449
-reconstrucao/src/decompiled_03.c:449:32: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
+reconstrucao/src/decompiled_03.c:449:32: error: ‘DAT_140f06ba8’ undeclared (first use in this function)
 
     446:   if (uVar5 != 1) {
     447:     if ((uVar5 != 2) && (uVar5 != 3)) {
@@ -3226,6 +3325,17 @@ reconstrucao/src/decompiled_03.c:503:32: error: ‘DAT_140fc4ac0’ undeclared (
     506:           FUN_14053fd44(&PTR_DAT_1400dd860,uStack_b8,3,1);
 
 ## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:506
+reconstrucao/src/decompiled_03.c:506:11: error: implicit declaration of function ‘FUN_14053fd44’; did you mean ‘FUN_14053fdd4’? [-Wimplicit-function-declaration]
+
+    503:         uStack_b8 = (ulonglong)DAT_140fc4ac0;
+    504:         if ((DAT_140fc4ac0 & 0x10) == 0) {
+    505:           uStack_b8 = (ulonglong)(DAT_140fc4ac0 | 1);
+    506:           FUN_14053fd44(&PTR_DAT_1400dd860,uStack_b8,3,1);
+    507:           FUN_14053fdd4(uStack_b8,3,&PTR_DAT_1400dd860);
+    508:         }
+    509:       }
+
+## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:506
 reconstrucao/src/decompiled_03.c:506:26: error: ‘PTR_DAT_1400dd860’ undeclared (first use in this function)
 
     503:         uStack_b8 = (ulonglong)DAT_140fc4ac0;
@@ -3269,6 +3379,17 @@ reconstrucao/src/decompiled_03.c:533:22: error: ‘PTR_DAT_1400dd860’ undeclar
     535:     }
     536:   }
 
+## FUN_14077fdf8 */ — reconstrucao/src/decompiled_03.c:543
+reconstrucao/src/decompiled_03.c:543:13: error: implicit declaration of function ‘FUN_14077eff0’; did you mean ‘FUN_14076eff0’? [-Wimplicit-function-declaration]
+
+    540:       FUN_14053fd44(&PTR_DAT_1400dd860,uVar2,3,1);
+    541:       FUN_14053fdd4(uVar2,3,&PTR_DAT_1400dd860);
+    542:     }
+    543:     uVar1 = FUN_14077eff0(*(undefined8 *)(param_1 + 0x30));
+    544:     *(undefined4 *)(param_1 + 0x30) = uVar1;
+    545:     ZwAlpcSendWaitReceivePort(DAT_140f06bb0,0x10000,param_1,0,0,0,0,0);
+    546:     return 0;
+
 ## FUN_14077fdf8 */ — reconstrucao/src/decompiled_03.c:545
 reconstrucao/src/decompiled_03.c:545:31: error: ‘DAT_140f06bb0’ undeclared (first use in this function)
 
@@ -3279,17 +3400,6 @@ reconstrucao/src/decompiled_03.c:545:31: error: ‘DAT_140f06bb0’ undeclared (
     546:     return 0;
     547:   }
     548:   return 0xc00000bb;
-
-## FUN_14077ff18 */ — reconstrucao/src/decompiled_03.c:553
-reconstrucao/src/decompiled_03.c:553:6: error: conflicting types for ‘FUN_14077ff18’; have ‘void(undefined8,  uint,  uint,  void *, char)’ {aka ‘void(long unsigned int,  unsigned int,  unsigned int,  void *, char)’}
-
-    550: 
-    551: /* Ghidra label: FUN_14077ff18 */
-    552: /* Ghidra address: 14077ff18 */
-    553: void FUN_14077ff18(undefined8 param_1,uint param_2,uint param_3,void *param_4,char param_5)
-    554: 
-    555: {
-    556:   longlong lVar1;
 
 ## FUN_14077ff18 */ — reconstrucao/src/decompiled_03.c:575
 reconstrucao/src/decompiled_03.c:575:11: error: ‘DAT_140f06bb0’ undeclared (first use in this function)
@@ -3345,6 +3455,17 @@ reconstrucao/src/decompiled_03.c:634:19: error: passing argument 1 of ‘FUN_140
     635:   }
     636:   else {
     637:     cVar1 = FUN_140781098(uStackX_18,param_1,param_2,&lStackX_20);
+
+## TtmNotifyDeviceDeparture */ — reconstrucao/src/decompiled_03.c:641
+reconstrucao/src/decompiled_03.c:641:9: error: implicit declaration of function ‘FUN_140781cb4’; did you mean ‘FUN_140a8c1b4’? [-Wimplicit-function-declaration]
+
+    638:     if (cVar1 != '\0') {
+    639:       if ((*(uint *)(lStackX_20 + 600) & 4) == 0) {
+    640:         *(uint *)(lStackX_20 + 600) = *(uint *)(lStackX_20 + 600) | 4;
+    641:         FUN_140781cb4(uStackX_18,1);
+    642:       }
+    643:     }
+    644:     ExReleaseResourceLite(&DAT_140f06b20);
 
 ## TtmNotifyDeviceDeparture */ — reconstrucao/src/decompiled_03.c:644
 reconstrucao/src/decompiled_03.c:644:5: error: implicit declaration of function ‘ExReleaseResourceLite’ [-Wimplicit-function-declaration]
@@ -3412,8 +3533,19 @@ reconstrucao/src/decompiled_03.c:691:46: error: ‘_DAT_fffff78000000008’ unde
     693:         lVar7 = lStack_38;
     694:         iVar3 = FUN_140787534(&uStack_30,lStackX_20);
 
+## TtmNotifyDeviceInput */ — reconstrucao/src/decompiled_03.c:694
+reconstrucao/src/decompiled_03.c:694:17: error: implicit declaration of function ‘FUN_140787534’; did you mean ‘FUN_140787d34’? [-Wimplicit-function-declaration]
+
+    691:         *(undefined8 *)(lStack_38 + 0x260) = _DAT_fffff78000000008;
+    692:         if (*(int *)(lStack_38 + 0x254) == -1) goto LAB_140780444;
+    693:         lVar7 = lStack_38;
+    694:         iVar3 = FUN_140787534(&uStack_30,lStackX_20);
+    695:         if (-1 < iVar3) {
+    696:           if ((param_3 & 1) != 0) {
+    697:             uVar6 = 0;
+
 ## TtmNotifyDeviceInput */ — reconstrucao/src/decompiled_03.c:702
-reconstrucao/src/decompiled_03.c:702:19: error: implicit declaration of function ‘FUN_1407878c0’; did you mean ‘FUN_1407898c0’? [-Wimplicit-function-declaration]
+reconstrucao/src/decompiled_03.c:702:19: error: implicit declaration of function ‘FUN_1407878c0’; did you mean ‘FUN_140787ec0’? [-Wimplicit-function-declaration]
 
     699:               uVar6 = 1;
     700:             }
@@ -3621,6 +3753,17 @@ reconstrucao/src/decompiled_03.c:899:42: error: passing argument 3 of ‘FUN_140
     901:         FUN_140781754(&uStack_38,0);
     902:       }
 
+## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:900
+reconstrucao/src/decompiled_03.c:900:9: error: implicit declaration of function ‘FUN_1406c4fb0’; did you mean ‘FUN_1406c4f60’? [-Wimplicit-function-declaration]
+
+    897:         uStack_28 = 0;
+    898:         uStack_20 = 0;
+    899:         FUN_1407815d4(&uStack_38,param_1,plVar6,2,plVar6[5],0);
+    900:         FUN_1406c4fb0(plVar6[3]);
+    901:         FUN_140781754(&uStack_38,0);
+    902:       }
+    903:       lVar2 = *plVar6;
+
 ## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:901
 reconstrucao/src/decompiled_03.c:901:23: error: passing argument 1 of ‘FUN_140781754’ makes integer from pointer without a cast [-Wint-conversion]
 
@@ -3654,6 +3797,17 @@ reconstrucao/src/decompiled_03.c:915:7: error: implicit declaration of function 
     917:     plVar6 = (longlong *)*plVar5;
     918:   } while( true );
 
+## FUN_1407809b4 */ — reconstrucao/src/decompiled_03.c:942
+reconstrucao/src/decompiled_03.c:942:7: error: implicit declaration of function ‘FUN_140784988’; did you mean ‘FUN_140784b88’? [-Wimplicit-function-declaration]
+
+    939:   }
+    940:   else {
+    941:     if (*(int *)(param_2 + 0x1c) == *(int *)(alStack_18[0] + 0x254)) {
+    942:       FUN_140784988();
+    943:       uVar1 = *(uint *)(lVar2 + 600);
+    944:       *(uint *)(lVar2 + 600) = (param_4 << 7 ^ uVar1) & 0x80 ^ uVar1 | 0x40;
+    945:       FUN_140781cb4(param_1,1);
+
 ## FUN_1407809b4 */ — reconstrucao/src/decompiled_03.c:951
 reconstrucao/src/decompiled_03.c:951:17: error: passing argument 1 of ‘FUN_1409a24bc’ makes integer from pointer without a cast [-Wint-conversion]
 
@@ -3675,17 +3829,6 @@ reconstrucao/src/decompiled_03.c:989:30: error: passing argument 2 of ‘FUN_140
     990:                   *(undefined4 *)(param_2 + 0x254));
     991:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),*(undefined4 *)(param_2 + 0x254));
     992:     FUN_140781754(&uStack_38,iVar1);
-
-## FUN_140780aa0 */ — reconstrucao/src/decompiled_03.c:991
-reconstrucao/src/decompiled_03.c:991:11: error: invalid use of void expression
-
-    988:     uStack_18 = 0;
-    989:     FUN_1407815d4(&uStack_38,param_1,param_2,1,*(longlong *)(param_2 + 0x30),
-    990:                   *(undefined4 *)(param_2 + 0x254));
-    991:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),*(undefined4 *)(param_2 + 0x254));
-    992:     FUN_140781754(&uStack_38,iVar1);
-    993:     if (iVar1 < 0) {
-    994:       FUN_1409a24bc("TtmpCallAssignedToTerminal",0x94c,iVar1,0xffffffff);
 
 ## FUN_140780aa0 */ — reconstrucao/src/decompiled_03.c:992
 reconstrucao/src/decompiled_03.c:992:19: error: passing argument 1 of ‘FUN_140781754’ makes integer from pointer without a cast [-Wint-conversion]
@@ -3742,17 +3885,6 @@ reconstrucao/src/decompiled_03.c:1042:30: error: passing argument 2 of ‘FUN_14
     1044:     FUN_140781754(&uStack_38,iVar1);
     1045:     if (iVar1 < 0) {
 
-## FUN_140780bbc */ — reconstrucao/src/decompiled_03.c:1043
-reconstrucao/src/decompiled_03.c:1043:11: error: invalid use of void expression
-
-    1040:     uStack_20 = 0;
-    1041:     uStack_18 = 0;
-    1042:     FUN_1407815d4(&uStack_38,param_1,param_2,4,*(longlong *)(param_2 + 0x38),param_3);
-    1043:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3,*(undefined4 *)(param_1 + 0x78));
-    1044:     FUN_140781754(&uStack_38,iVar1);
-    1045:     if (iVar1 < 0) {
-    1046:       FUN_1409a24bc("TtmpCallSetDisplayState",0x988,iVar1,0xffffffff);
-
 ## FUN_140780bbc */ — reconstrucao/src/decompiled_03.c:1044
 reconstrucao/src/decompiled_03.c:1044:19: error: passing argument 1 of ‘FUN_140781754’ makes integer from pointer without a cast [-Wint-conversion]
 
@@ -3785,17 +3917,6 @@ reconstrucao/src/decompiled_03.c:1070:30: error: passing argument 2 of ‘FUN_14
     1071:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3);
     1072:     FUN_140781754(&uStack_38,iVar1);
     1073:     if (iVar1 < 0) {
-
-## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1071
-reconstrucao/src/decompiled_03.c:1071:11: error: invalid use of void expression
-
-    1068:     uStack_20 = 0;
-    1069:     uStack_18 = 0;
-    1070:     FUN_1407815d4(&uStack_38,param_1,param_2,3,*(longlong *)(param_2 + 0x40),param_3);
-    1071:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3);
-    1072:     FUN_140781754(&uStack_38,iVar1);
-    1073:     if (iVar1 < 0) {
-    1074:       FUN_1409a24bc("TtmpCallSetInputMode",0x9c7,iVar1,0xffffffff);
 
 ## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1072
 reconstrucao/src/decompiled_03.c:1072:19: error: passing argument 1 of ‘FUN_140781754’ makes integer from pointer without a cast [-Wint-conversion]
@@ -3841,129 +3962,19 @@ reconstrucao/src/decompiled_03.c:1108:18: error: ‘FUN_140780db0’ undeclared 
     1110:     uStack_54 = param_2;
     1111:     uStack_30 = param_4;
 
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1119
-reconstrucao/src/decompiled_03.c:1119:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:25
+reconstrucao/src/decompiled_04.c:25:3: error: implicit declaration of function ‘FUN_14090ef10’; did you mean ‘FUN_14090df10’? [-Wimplicit-function-declaration]
 
-    1116: 
-    1117: /* Ghidra label: FUN_140780db0 */
-    1118: /* Ghidra address: 140780db0 */
-    1119: FUN_140780db0(undefined8 param_1,undefined4 param_2,undefined8 param_3,undefined8 param_4,
-    1120:              undefined8 param_5,undefined8 param_6)
-    1121: 
-    1122: {
-
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1137
-reconstrucao/src/decompiled_03.c:1137:10: error: ‘DAT_140e67b50’ undeclared (first use in this function)
-
-    1134:   }
-    1135:   else {
-    1136:     iVar1 = aiStack_18[0];
-    1137:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
-    1138:                     /* WARNING: Subroutine does not return */
-    1139:       KeBugCheckEx(param_2,param_3,param_4,param_5,param_6);
-    1140:     }
-
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1139
-reconstrucao/src/decompiled_03.c:1139:7: error: implicit declaration of function ‘KeBugCheckEx’ [-Wimplicit-function-declaration]
-
-    1136:     iVar1 = aiStack_18[0];
-    1137:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
-    1138:                     /* WARNING: Subroutine does not return */
-    1139:       KeBugCheckEx(param_2,param_3,param_4,param_5,param_6);
-    1140:     }
-    1141:   }
-    1142:   FUN_140783d80(iVar1,param_2,param_3,param_4,param_5,param_6);
-
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1143
-reconstrucao/src/decompiled_03.c:1143:3: error: implicit declaration of function ‘DbgkWerCaptureLiveKernelDump’ [-Wimplicit-function-declaration]
-
-    1140:     }
-    1141:   }
-    1142:   FUN_140783d80(iVar1,param_2,param_3,param_4,param_5,param_6);
-    1143:   DbgkWerCaptureLiveKernelDump
-    1144:             (L"TTMDCallout",param_2,param_3,param_4,param_5,param_6,0,ExGetFfaInterface,0);
-    1145:   return 0;
-    1146: }
-
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1144
-reconstrucao/src/decompiled_03.c:1144:71: error: ‘ExGetFfaInterface’ undeclared (first use in this function); did you mean ‘ExGetPrmInterface’?
-
-    1141:   }
-    1142:   FUN_140783d80(iVar1,param_2,param_3,param_4,param_5,param_6);
-    1143:   DbgkWerCaptureLiveKernelDump
-    1144:             (L"TTMDCallout",param_2,param_3,param_4,param_5,param_6,0,ExGetFfaInterface,0);
-    1145:   return 0;
-    1146: }
-    1147: 
-
-## FUN_140780ec0 */ — reconstrucao/src/decompiled_03.c:1170
-reconstrucao/src/decompiled_03.c:1170:15: error: ‘DAT_140e0a740’ undeclared (first use in this function)
-
-    1167:   undefined4 uStack_260;
-    1168:   ulonglong uStack_38;
-    1169:   
-    1170:   uStack_38 = DAT_140e0a740 ^ (ulonglong)auStack_2d8;
-    1171:   FUN_1406d1200(auStack_2a8,0,0x268);
-    1172:   alStack_2b8[0] = 0;
-    1173:   plVar7 = (longlong *)(((longlong)param_2 + 8) * 0x10 + param_1);
-
-## FUN_140780ec0 */ — reconstrucao/src/decompiled_03.c:1183
-reconstrucao/src/decompiled_03.c:1183:23: error: passing argument 1 of ‘FUN_1409a24bc’ makes integer from pointer without a cast [-Wint-conversion]
-
-    1180:       cVar5 = FUN_140781064(param_1,(int)plVar6[4],alStack_2b8);
-    1181:       lVar1 = alStack_2b8[0];
-    1182:       if (cVar5 == '\0') {
-    1183:         FUN_1409a24bc("TtmpCommitTerminalDisplayStateUpdateWorker",0xbaa,0xc0000225,0xffffffff);
-    1184:       }
-    1185:       else {
-    1186:         if ((lStack_270 == 0) && (*(longlong *)(alStack_2b8[0] + 0x38) != 0)) {
-
-## FUN_140780ec0 */ — reconstrucao/src/decompiled_03.c:1194
-reconstrucao/src/decompiled_03.c:1194:35: error: passing argument 2 of ‘FUN_140781368’ makes integer from pointer without a cast [-Wint-conversion]
-
-    1191: LAB_140780fa0:
-    1192:           if ((*(longlong *)(alStack_2b8[0] + 0x38) != 0) &&
-    1193:              (*(longlong *)(alStack_2b8[0] + 0x38) != lStack_270)) {
-    1194:             FUN_140781368(param_1,auStack_2a8,param_2);
-    1195:             uStack_298 = *(undefined4 *)(lVar1 + 0x10);
-    1196:             uStack_260 = *(undefined4 *)(lVar1 + 0x48);
-    1197:             lStack_270 = *(longlong *)(lVar1 + 0x38);
-
-## FUN_140780ec0 */ — reconstrucao/src/decompiled_03.c:1218
-reconstrucao/src/decompiled_03.c:1218:29: error: passing argument 2 of ‘FUN_140781368’ makes integer from pointer without a cast [-Wint-conversion]
-
-    1215:       plVar6 = (longlong *)*plVar2;
-    1216:     } while (plVar6 != plVar7);
-    1217:     if (bVar4) {
-    1218:       FUN_140781368(param_1,auStack_2a8,param_2);
-    1219:     }
-    1220:   }
-    1221:   return;
-
-## FUN_140781064 */ — reconstrucao/src/decompiled_03.c:1238
-reconstrucao/src/decompiled_03.c:1238:18: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined8 *’ {aka ‘long unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
-
-    1235:     if (puVar1 == (undefined8 *)(param_1 + 0x60)) {
-    1236: LAB_140781080:
-    1237:       if (param_3 != (undefined8 *)0x0) {
-    1238:         *param_3 = puVar2;
-    1239:       }
-    1240:       return CONCAT71((int7)((ulonglong)puVar1 >> 8),puVar2 != (undefined8 *)0x0);
-    1241:     }
-
-## FUN_140781098 */ — reconstrucao/src/decompiled_03.c:1264
-reconstrucao/src/decompiled_03.c:1264:18: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined8 *’ {aka ‘long unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
-
-    1261:     if (puVar1 == (undefined8 *)(param_1 + 0x60)) {
-    1262: LAB_1407810ba:
-    1263:       if (param_4 != (undefined8 *)0x0) {
-    1264:         *param_4 = puVar2;
-    1265:       }
-    1266:       return CONCAT71((int7)((ulonglong)puVar1 >> 8),puVar2 != (undefined8 *)0x0);
-    1267:     }
+    22:   uStack_40 = 0x500;
+    23:   uStack_38 = *(undefined8 *)(param_1 + 0x30);
+    24:   uStack_28 = (ulonglong)*(uint *)(param_1 + 0x40);
+    25:   FUN_14090ef10(param_1 + 0x48,0,&uStack_40,param_4,0x38);
+    26:   return 0;
+    27: }
+    28: 
 
 ## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:38
-reconstrucao/src/decompiled_04.c:38:9: error: invalid use of void expression
+reconstrucao/src/decompiled_04.c:38:11: error: implicit declaration of function ‘FUN_14041b0bc’; did you mean ‘FUN_14048b0bc’? [-Wimplicit-function-declaration]
 
     35:   longlong lVar2;
     36:   longlong lVar3;
@@ -3995,6 +4006,17 @@ reconstrucao/src/decompiled_04.c:47:11: error: assignment to ‘longlong’ {aka
     49:       FUN_14033e740(lVar1);
     50:       *(longlong *)(lVar2 + 8) = lVar3;
 
+## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:49
+reconstrucao/src/decompiled_04.c:49:7: error: implicit declaration of function ‘FUN_14033e740’; did you mean ‘FUN_140bbe740’? [-Wimplicit-function-declaration]
+
+    46:     }
+    47:     lVar3 = FUN_14031d8f0(0,0);
+    48:     if (lVar3 != 0) {
+    49:       FUN_14033e740(lVar1);
+    50:       *(longlong *)(lVar2 + 8) = lVar3;
+    51:       goto LAB_140ac2dd5;
+    52:     }
+
 ## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:53
 reconstrucao/src/decompiled_04.c:53:5: error: implicit declaration of function ‘KeDelayExecutionThread’ [-Wimplicit-function-declaration]
 
@@ -4017,6 +4039,28 @@ reconstrucao/src/decompiled_04.c:160:15: error: ‘DAT_140e0a740’ undeclared (
     162:   iStack_2d4 = 1;
     163:   lStack_2e0 = 0;
 
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:207
+reconstrucao/src/decompiled_04.c:207:11: error: implicit declaration of function ‘FUN_1408dfac0’; did you mean ‘FUN_140b9fac0’? [-Wimplicit-function-declaration]
+
+    204:   plStack_308 = param_4;
+    205:   lStack_280 = param_3;
+    206:   lStack_218 = param_1;
+    207:   iVar5 = FUN_1408dfac0(param_2,param_3,0,0x20019);
+    208:   if (iVar5 < 0) goto LAB_140ac33b1;
+    209:   FUN_1406d1200(auStack_1e8,0,0x188);
+    210:   uStack_120 = 0x4000000;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:209
+reconstrucao/src/decompiled_04.c:209:3: error: implicit declaration of function ‘FUN_1406d1200’; did you mean ‘FUN_1406d1b00’? [-Wimplicit-function-declaration]
+
+    206:   lStack_218 = param_1;
+    207:   iVar5 = FUN_1408dfac0(param_2,param_3,0,0x20019);
+    208:   if (iVar5 < 0) goto LAB_140ac33b1;
+    209:   FUN_1406d1200(auStack_1e8,0,0x188);
+    210:   uStack_120 = 0x4000000;
+    211:   uStack_1e0 = 0x130;
+    212:   uStack_1c8 = 0x7000000;
+
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:234
 reconstrucao/src/decompiled_04.c:234:48: error: request for member ‘_1_7_’ in something not a structure or union
 
@@ -4027,6 +4071,17 @@ reconstrucao/src/decompiled_04.c:234:48: error: request for member ‘_1_7_’ i
     235:   iVar5 = FUN_14093ded0(0xc0000000,lStack_2e0,auStack_1e8,0);
     236:   if (iVar5 < 0) goto LAB_140ac33b1;
     237:   if ((lStack_2b0 != 0) && ((ushort)uStack_2b8 < 3)) {
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:235
+reconstrucao/src/decompiled_04.c:235:11: error: implicit declaration of function ‘FUN_14093ded0’; did you mean ‘FUN_140a3de90’? [-Wimplicit-function-declaration]
+
+    232:   uStack_c8 = 0x120;
+    233:   uStack_b0 = 0x1000000;
+    234:   pwStack_360 = (wchar_t *)CONCAT71(pwStack_360._1_7_,1);
+    235:   iVar5 = FUN_14093ded0(0xc0000000,lStack_2e0,auStack_1e8,0);
+    236:   if (iVar5 < 0) goto LAB_140ac33b1;
+    237:   if ((lStack_2b0 != 0) && ((ushort)uStack_2b8 < 3)) {
+    238:     RtlFreeAnsiString(&uStack_2b8);
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:238
 reconstrucao/src/decompiled_04.c:238:5: error: implicit declaration of function ‘RtlFreeAnsiString’; did you mean ‘RtlFreeOemString’? [-Wimplicit-function-declaration]
@@ -4094,6 +4149,17 @@ reconstrucao/src/decompiled_04.c:273:15: error: implicit declaration of function
     275:         RtlInitUnicodeString
     276:                   (&uStack_270,*(longlong *)(lVar11 + 0x30) + (auStack_240[0] >> 1 & 0x7fff) * 2);
 
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:282
+reconstrucao/src/decompiled_04.c:282:23: error: implicit declaration of function ‘FUN_140a3034c’; did you mean ‘FUN_140a30a4c’? [-Wimplicit-function-declaration]
+
+    279:         if (cVar4 != '\0') {
+    280:           if (*(short *)(lStack_268 + (auStack_240[0] >> 1 & 0x7fff) * 2) == 0x5c) {
+    281:             if (iVar16 == 0) {
+    282:               iVar5 = FUN_140a3034c(lStack_2b0,plStack_2a0);
+    283:               if (iVar5 < 0) goto LAB_140ac33a4;
+    284:               if ((auStack_2f0[0] & 8) == 0) {
+    285:                 RtlInitUnicodeString(&uStack_270,&DAT_140019790);
+
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:285
 reconstrucao/src/decompiled_04.c:285:51: error: ‘DAT_140019790’ undeclared (first use in this function)
 
@@ -4150,6 +4216,17 @@ reconstrucao/src/decompiled_04.c:303:37: error: implicit declaration of function
     306:               uVar3 = uStack_2d8;
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:317
+reconstrucao/src/decompiled_04.c:317:25: error: implicit declaration of function ‘FUN_1408ddb20’; did you mean ‘FUN_1405ddbf0’? [-Wimplicit-function-declaration]
+
+    314:                 plStack_368 = (longlong *)&iStack_2d4;
+    315:                 auStack_318[0] = uVar3;
+    316:                 pwStack_360 = pwVar7;
+    317:                 iVar5 = FUN_1408ddb20(DAT_140e66448,*(undefined8 *)(lVar11 + 0x30),0,*puStack_288);
+    318:                 if (((iVar5 < 0) || (iStack_2d4 != 7)) || (auStack_318[0] < 2)) {
+    319:                   *pwVar7 = L'\0';
+    320:                   iVar5 = 0;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:317
 reconstrucao/src/decompiled_04.c:317:39: error: ‘DAT_140e66448’ undeclared (first use in this function)
 
     314:                 plStack_368 = (longlong *)&iStack_2d4;
@@ -4159,6 +4236,28 @@ reconstrucao/src/decompiled_04.c:317:39: error: ‘DAT_140e66448’ undeclared (
     318:                 if (((iVar5 < 0) || (iStack_2d4 != 7)) || (auStack_318[0] < 2)) {
     319:                   *pwVar7 = L'\0';
     320:                   iVar5 = 0;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:341
+reconstrucao/src/decompiled_04.c:341:27: error: implicit declaration of function ‘FUN_1407473cc’; did you mean ‘FUN_14075730c’? [-Wimplicit-function-declaration]
+
+    338:                   if (*pwVar7 != L'\0') break;
+    339:                 }
+    340:                 else {
+    341:                   cVar4 = FUN_1407473cc();
+    342:                   if (cVar4 == '\0') break;
+    343:                 }
+    344:                 puStack_288 = puVar14 + 1;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:361
+reconstrucao/src/decompiled_04.c:361:11: error: implicit declaration of function ‘FUN_1409b020c’; did you mean ‘FUN_140bb029c’? [-Wimplicit-function-declaration]
+
+    358:     }
+    359:   }
+    360:   if (iVar5 < 0) goto LAB_140ac33a4;
+    361:   iVar5 = FUN_1409b020c(lStack_2e0,L"Security",0,&lStack_300);
+    362:   lVar11 = lStack_300;
+    363:   param_4 = plStack_308;
+    364:   if (iVar5 < 0) {
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:378
 reconstrucao/src/decompiled_04.c:378:15: error: implicit declaration of function ‘RtlCreateUnicodeString’; did you mean ‘RtlCompareUnicodeString’? [-Wimplicit-function-declaration]
@@ -4182,6 +4281,17 @@ reconstrucao/src/decompiled_04.c:385:56: error: request for member ‘_4_4_’ i
     387:           iVar5 = FUN_1409a9498(lVar11,lStack_2e0,0,0);
     388:           uVar3 = auStack_318[0];
 
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:387
+reconstrucao/src/decompiled_04.c:387:19: error: implicit declaration of function ‘FUN_1409a9498’; did you mean ‘FUN_140a99098’? [-Wimplicit-function-declaration]
+
+    384:           puStack_358 = auStack_318;
+    385:           pwStack_360 = (wchar_t *)CONCAT44(pwStack_360._4_4_,(uint)uVar18);
+    386:           plStack_368 = plVar10;
+    387:           iVar5 = FUN_1409a9498(lVar11,lStack_2e0,0,0);
+    388:           uVar3 = auStack_318[0];
+    389:           if (iVar5 != -0x3fffffdd) {
+    390:             uVar18 = (ulonglong)auStack_318[0];
+
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:408
 reconstrucao/src/decompiled_04.c:408:13: error: implicit declaration of function ‘ExFreePoolWithTag’ [-Wimplicit-function-declaration]
 
@@ -4203,6 +4313,17 @@ reconstrucao/src/decompiled_04.c:433:19: error: request for member ‘_0_4_’ i
     434:         lStack_228 = ExAllocatePool2(0x100,(lVar12 + lVar20) * 2 + 4U & 0xffff,0x67727453);
     435:         if (lStack_228 == 0) {
     436:           iVar5 = -0x3fffff66;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:439
+reconstrucao/src/decompiled_04.c:439:19: error: implicit declaration of function ‘FUN_140489994’; did you mean ‘FUN_140c88994’? [-Wimplicit-function-declaration]
+
+    436:           iVar5 = -0x3fffff66;
+    437:         }
+    438:         else {
+    439:           iVar5 = FUN_140489994(&uStack_230,L"%ws&%ws",lVar9,lVar8);
+    440:           if (-1 < iVar5) goto LAB_140ac35e6;
+    441:         }
+    442:         goto LAB_140ac33a8;
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:449
 reconstrucao/src/decompiled_04.c:449:5: error: implicit declaration of function ‘ExFreePool’; did you mean ‘ExFreePool2’? [-Wimplicit-function-declaration]
@@ -4248,6 +4369,17 @@ reconstrucao/src/decompiled_04.c:489:50: error: request for member ‘_4_4_’ i
     491:     FUN_14039f2ac();
     492:   }
 
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:491
+reconstrucao/src/decompiled_04.c:491:5: error: implicit declaration of function ‘FUN_14039f2ac’; did you mean ‘FUN_140a9d2ac’? [-Wimplicit-function-declaration]
+
+    488:   if ((iVar5 < 0) && ((DAT_140ef02c4 & 4) != 0)) {
+    489:     pwStack_360 = (wchar_t *)CONCAT44(pwStack_360._4_4_,iVar5);
+    490:     plStack_368 = (longlong *)lStack_280;
+    491:     FUN_14039f2ac();
+    492:   }
+    493:   if (-1 < (int)param_4[1]) {
+    494:     *(int *)(param_4 + 1) = iVar5;
+
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:516
 reconstrucao/src/decompiled_04.c:516:49: error: request for member ‘_4_4_’ in something not a structure or union
 
@@ -4259,146 +4391,14 @@ reconstrucao/src/decompiled_04.c:516:49: error: request for member ‘_4_4_’ i
     518:       plStack_368 = plVar15;
     519:       iVar5 = FUN_1408dfe50(lStack_218,lStack_2e0,0,puVar14);
 
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:554
-reconstrucao/src/decompiled_04.c:554:45: error: request for member ‘_4_4_’ in something not a structure or union
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:519
+reconstrucao/src/decompiled_04.c:519:15: error: implicit declaration of function ‘FUN_1408dfe50’; did you mean ‘FUN_1409df550’? [-Wimplicit-function-declaration]
 
-    551:   lStack_340 = lStack_278;
-    552:   lStack_348 = lStack_248;
-    553:   puStack_350 = puStack_258;
-    554:   puStack_358 = (uint *)CONCAT44(puStack_358._4_4_,auStack_2f0[0]);
-    555:   plStack_368 = plStack_2a0;
-    556:   iVar5 = FUN_14074541c(L"DRIVERENUM",*(undefined8 *)(*plStack_308 + 0x30),lStack_228,lStack_2b0);
-    557:   if (lVar11 != 0) {
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:654
-reconstrucao/src/decompiled_04.c:654:7: error: ‘DAT_140e67b01’ undeclared (first use in this function)
-
-    651:   wchar_t *pwVar11;
-    652:   uint auStackX_8 [2];
-    653:   
-    654:   if (DAT_140e67b01 != '\0') {
-    655:     cVar4 = EtwEventEnabled(DAT_140f085e0,&DAT_14001e1b8);
-    656:     puVar3 = DAT_140fc7ad0;
-    657:     if (cVar4 != '\0') {
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:655
-reconstrucao/src/decompiled_04.c:655:13: error: implicit declaration of function ‘EtwEventEnabled’ [-Wimplicit-function-declaration]
-
-    652:   uint auStackX_8 [2];
-    653:   
-    654:   if (DAT_140e67b01 != '\0') {
-    655:     cVar4 = EtwEventEnabled(DAT_140f085e0,&DAT_14001e1b8);
-    656:     puVar3 = DAT_140fc7ad0;
-    657:     if (cVar4 != '\0') {
-    658:       if (DAT_140fc7ad0 == (uint *)0x0) {
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:655
-reconstrucao/src/decompiled_04.c:655:29: error: ‘DAT_140f085e0’ undeclared (first use in this function); did you mean ‘FUN_1407085e0’?
-
-    652:   uint auStackX_8 [2];
-    653:   
-    654:   if (DAT_140e67b01 != '\0') {
-    655:     cVar4 = EtwEventEnabled(DAT_140f085e0,&DAT_14001e1b8);
-    656:     puVar3 = DAT_140fc7ad0;
-    657:     if (cVar4 != '\0') {
-    658:       if (DAT_140fc7ad0 == (uint *)0x0) {
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:655
-reconstrucao/src/decompiled_04.c:655:44: error: ‘DAT_14001e1b8’ undeclared (first use in this function); did you mean ‘FUN_14081e1b8’?
-
-    652:   uint auStackX_8 [2];
-    653:   
-    654:   if (DAT_140e67b01 != '\0') {
-    655:     cVar4 = EtwEventEnabled(DAT_140f085e0,&DAT_14001e1b8);
-    656:     puVar3 = DAT_140fc7ad0;
-    657:     if (cVar4 != '\0') {
-    658:       if (DAT_140fc7ad0 == (uint *)0x0) {
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:656
-reconstrucao/src/decompiled_04.c:656:14: error: ‘DAT_140fc7ad0’ undeclared (first use in this function)
-
-    653:   
-    654:   if (DAT_140e67b01 != '\0') {
-    655:     cVar4 = EtwEventEnabled(DAT_140f085e0,&DAT_14001e1b8);
-    656:     puVar3 = DAT_140fc7ad0;
-    657:     if (cVar4 != '\0') {
-    658:       if (DAT_140fc7ad0 == (uint *)0x0) {
-    659:         auStackX_8[0] = 0;
-
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:699
-reconstrucao/src/decompiled_04.c:699:9: error: implicit declaration of function ‘EtwWrite’ [-Wimplicit-function-declaration]
-
-    696:             *(undefined4 *)((longlong)plVar5 + uVar7 * 0x10 + 0xc) = 0;
-    697:           } while (uVar9 < auStackX_8[0]);
-    698:         }
-    699:         EtwWrite(DAT_140f085e0,&DAT_14001e1b8,0,uVar1,plVar5);
-    700:         ExFreePoolWithTag(plVar5,0x654d5050);
-    701:       }
-    702:     }
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:758
-reconstrucao/src/decompiled_04.c:758:11: error: implicit declaration of function ‘FUN_1404a86a0’; did you mean ‘FUN_1404a8660’? [-Wimplicit-function-declaration]
-
-    755:     lVar4 = uStack_40;
-    756:     goto LAB_140ac3cc3;
-    757:   }
-    758:   iVar6 = FUN_1404a86a0(&uStack_48,&uStack_38,0x800,L"%wZ:%wZ",puVar7,puVar10);
-    759:   uVar9 = (undefined4)((ulonglong)puVar7 >> 0x20);
-    760:   if (iVar6 < 0) {
-    761: LAB_140ac3cbf:
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:775
-reconstrucao/src/decompiled_04.c:775:37: error: request for member ‘_2_2_’ in something not a structure or union
-
-    772:       uVar9 = (undefined4)((ulonglong)psVar8 >> 0x20);
-    773:       if (iVar6 < 0) goto LAB_140ac3cbf;
-    774:       sVar5 = (short)uStack_48 + *psVar1 + 2;
-    775:       uStack_48 = CONCAT22(uStack_48._2_2_,sVar5);
-    776:     }
-    777:     uVar11 = (undefined4)((ulonglong)puVar10 >> 0x20);
-    778:     cVar3 = FUN_140965660(param_1 + 0xbc);
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:781
-reconstrucao/src/decompiled_04.c:781:43: error: ‘LAB_140b08590’ undeclared (first use in this function); did you mean ‘FUN_140b18590’?
-
-    778:     cVar3 = FUN_140965660(param_1 + 0xbc);
-    779:     if (cVar3 == '\0') {
-    780:       if (*(longlong *)(param_1 + 0x60) == 0) {
-    781:         iVar6 = FUN_1405a6570(&uStack_38,&LAB_140b08590,&uStack_38,0x800);
-    782:         if (iVar6 < 0) goto LAB_140ac3cbf;
-    783:         sVar5 = sVar5 + 2;
-    784:       }
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:781
-reconstrucao/src/decompiled_04.c:781:31: error: passing argument 1 of ‘FUN_1405a6570’ from incompatible pointer type [-Wincompatible-pointer-types]
-
-    778:     cVar3 = FUN_140965660(param_1 + 0xbc);
-    779:     if (cVar3 == '\0') {
-    780:       if (*(longlong *)(param_1 + 0x60) == 0) {
-    781:         iVar6 = FUN_1405a6570(&uStack_38,&LAB_140b08590,&uStack_38,0x800);
-    782:         if (iVar6 < 0) goto LAB_140ac3cbf;
-    783:         sVar5 = sVar5 + 2;
-    784:       }
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:781
-reconstrucao/src/decompiled_04.c:781:57: error: passing argument 3 of ‘FUN_1405a6570’ from incompatible pointer type [-Wincompatible-pointer-types]
-
-    778:     cVar3 = FUN_140965660(param_1 + 0xbc);
-    779:     if (cVar3 == '\0') {
-    780:       if (*(longlong *)(param_1 + 0x60) == 0) {
-    781:         iVar6 = FUN_1405a6570(&uStack_38,&LAB_140b08590,&uStack_38,0x800);
-    782:         if (iVar6 < 0) goto LAB_140ac3cbf;
-    783:         sVar5 = sVar5 + 2;
-    784:       }
-
-## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:785
-reconstrucao/src/decompiled_04.c:785:7: error: implicit declaration of function ‘RtlTimeToTimeFields’; did you mean ‘RtlTimeToElapsedTimeFields’? [-Wimplicit-function-declaration]
-
-    782:         if (iVar6 < 0) goto LAB_140ac3cbf;
-    783:         sVar5 = sVar5 + 2;
-    784:       }
-    785:       RtlTimeToTimeFields(param_1 + 0x70,&uStack_28);
-    786:       iVar6 = FUN_140489994(&uStack_38,L",%02d/%02d/%04d,%u.%u.%u.%u",(int)uStack_28._2_2_,
-    787:                             (int)uStack_28._4_2_,CONCAT44(uVar9,(int)(short)uStack_28),
-    788:                             CONCAT44(uVar11,*(uint *)(param_1 + 0x7c) >> 0x10),
+    516:       puStack_358 = (uint *)CONCAT44(puStack_358._4_4_,*(undefined4 *)((longlong)plVar15 + 4));
+    517:       pwStack_360 = (wchar_t *)plVar15[1];
+    518:       plStack_368 = plVar15;
+    519:       iVar5 = FUN_1408dfe50(lStack_218,lStack_2e0,0,puVar14);
+    520:       if (iVar5 != -0x3fffffdd) break;
+    521:       if (auStack_318[0] <= *(uint *)((longlong)plVar15 + 4)) {
+    522:         iVar5 = -0x3fffff1b;
 
