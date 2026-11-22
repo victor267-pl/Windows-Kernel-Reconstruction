@@ -1,0 +1,5309 @@
+{
+  "source_files": [
+    "AnalisarKernel_parte_01.txt",
+    "AnalisarKernel_parte_02.txt",
+    "AnalisarKernel_parte_03.txt",
+    "AnalisarKernel_parte_04.txt",
+    "Kernel_Consulta_20261122_105236_parte_01.txt",
+    "Kernel_Consulta_20261122_105236_parte_02.txt",
+    "Kernel_Consulta_20261122_105236_parte_03.txt"
+  ],
+  "category": "/ntkrnlmp.pdb",
+  "structures": {
+    "_KPROCESS": {
+      "size": 456,
+      "field_count": 53,
+      "source": "Kernel_Consulta_20261122_105236_parte_01.txt",
+      "members": [
+        {
+          "index": 0,
+          "name": "Header",
+          "c_member": "Header",
+          "offset": 0,
+          "size": 24,
+          "ghidra_type": "_DISPATCHER_HEADER",
+          "c_type": "uint8_t[24]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 1,
+          "name": "ProfileListHead",
+          "c_member": "ProfileListHead",
+          "offset": 24,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 2,
+          "name": "DirectoryTableBase",
+          "c_member": "DirectoryTableBase",
+          "offset": 40,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 3,
+          "name": "ThreadListHead",
+          "c_member": "ThreadListHead",
+          "offset": 48,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 4,
+          "name": "ProcessLock",
+          "c_member": "ProcessLock",
+          "offset": 64,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 5,
+          "name": "ProcessTimerDelay",
+          "c_member": "ProcessTimerDelay",
+          "offset": 68,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 6,
+          "name": "DeepFreezeStartTime",
+          "c_member": "DeepFreezeStartTime",
+          "offset": 72,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 7,
+          "name": "Affinity",
+          "c_member": "Affinity",
+          "offset": 80,
+          "size": 8,
+          "ghidra_type": "_KAFFINITY_EX *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 8,
+          "name": "AutoBoostState",
+          "c_member": "AutoBoostState",
+          "offset": 88,
+          "size": 16,
+          "ghidra_type": "_KAB_UM_PROCESS_CONTEXT",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 9,
+          "name": "ReadyListHead",
+          "c_member": "ReadyListHead",
+          "offset": 104,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 10,
+          "name": "SwapListEntry",
+          "c_member": "SwapListEntry",
+          "offset": 120,
+          "size": 8,
+          "ghidra_type": "_SINGLE_LIST_ENTRY",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 11,
+          "name": "ActiveProcessors",
+          "c_member": "ActiveProcessors",
+          "offset": 128,
+          "size": 8,
+          "ghidra_type": "_KAFFINITY_EX *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 12,
+          "name": "null",
+          "c_member": "_ghidra_field_12",
+          "offset": 136,
+          "size": 4,
+          "ghidra_type": "_KPROCESS_u_136",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 13,
+          "name": "Spare0c",
+          "c_member": "Spare0c",
+          "offset": 140,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 14,
+          "name": "BasePriority",
+          "c_member": "BasePriority",
+          "offset": 144,
+          "size": 1,
+          "ghidra_type": "char",
+          "c_type": "int8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 15,
+          "name": "QuantumReset",
+          "c_member": "QuantumReset",
+          "offset": 145,
+          "size": 1,
+          "ghidra_type": "char",
+          "c_type": "int8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 16,
+          "name": "Visited",
+          "c_member": "Visited",
+          "offset": 146,
+          "size": 1,
+          "ghidra_type": "char",
+          "c_type": "int8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 17,
+          "name": "Flags",
+          "c_member": "Flags",
+          "offset": 147,
+          "size": 1,
+          "ghidra_type": "_KEXECUTE_OPTIONS",
+          "c_type": "uint8_t[1]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 18,
+          "name": "ActiveGroupsMask",
+          "c_member": "ActiveGroupsMask",
+          "offset": 152,
+          "size": 16,
+          "ghidra_type": "_KGROUP_MASK",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 19,
+          "name": "ActiveGroupPadding",
+          "c_member": "ActiveGroupPadding",
+          "offset": 168,
+          "size": 16,
+          "ghidra_type": "ulong64[2]",
+          "c_type": "uint64_t[2]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 20,
+          "name": "IdealProcessorAssignmentBlock",
+          "c_member": "IdealProcessorAssignmentBlock",
+          "offset": 184,
+          "size": 8,
+          "ghidra_type": "_KI_IDEAL_PROCESSOR_ASSIGNMENT_BLOCK *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 21,
+          "name": "Padding",
+          "c_member": "Padding",
+          "offset": 192,
+          "size": 48,
+          "ghidra_type": "ulong64[6]",
+          "c_type": "uint64_t[6]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 22,
+          "name": "Padding2",
+          "c_member": "Padding2",
+          "offset": 240,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 23,
+          "name": "SchedulerAssistYieldBoostCount",
+          "c_member": "SchedulerAssistYieldBoostCount",
+          "offset": 244,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 24,
+          "name": "SchedulerAssistYieldBoostAllowedTime",
+          "c_member": "SchedulerAssistYieldBoostAllowedTime",
+          "offset": 248,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 25,
+          "name": "Spare0d",
+          "c_member": "Spare0d",
+          "offset": 256,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 26,
+          "name": "IdealGlobalNode",
+          "c_member": "IdealGlobalNode",
+          "offset": 260,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 27,
+          "name": "Spare1",
+          "c_member": "Spare1",
+          "offset": 262,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 28,
+          "name": "StackCount",
+          "c_member": "StackCount",
+          "offset": 264,
+          "size": 4,
+          "ghidra_type": "_KSTACK_COUNT",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 29,
+          "name": "ProcessListEntry",
+          "c_member": "ProcessListEntry",
+          "offset": 272,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 30,
+          "name": "CycleTime",
+          "c_member": "CycleTime",
+          "offset": 288,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 31,
+          "name": "ContextSwitches",
+          "c_member": "ContextSwitches",
+          "offset": 296,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 32,
+          "name": "SchedulingGroup",
+          "c_member": "SchedulingGroup",
+          "offset": 304,
+          "size": 8,
+          "ghidra_type": "_KSCHEDULING_GROUP *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 33,
+          "name": "KernelTime",
+          "c_member": "KernelTime",
+          "offset": 312,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 34,
+          "name": "UserTime",
+          "c_member": "UserTime",
+          "offset": 320,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 35,
+          "name": "ReadyTime",
+          "c_member": "ReadyTime",
+          "offset": 328,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 36,
+          "name": "FreezeCount",
+          "c_member": "FreezeCount",
+          "offset": 336,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 37,
+          "name": "Spare4",
+          "c_member": "Spare4",
+          "offset": 340,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 38,
+          "name": "UserDirectoryTableBase",
+          "c_member": "UserDirectoryTableBase",
+          "offset": 344,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 39,
+          "name": "AddressPolicy",
+          "c_member": "AddressPolicy",
+          "offset": 352,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 40,
+          "name": "Spare2",
+          "c_member": "Spare2",
+          "offset": 353,
+          "size": 7,
+          "ghidra_type": "uchar[7]",
+          "c_type": "uint8_t[7]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 41,
+          "name": "InstrumentationCallback",
+          "c_member": "InstrumentationCallback",
+          "offset": 360,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 42,
+          "name": "SecureState",
+          "c_member": "SecureState",
+          "offset": 368,
+          "size": 8,
+          "ghidra_type": "<unnamed-tag_00001B45>",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 43,
+          "name": "KernelWaitTime",
+          "c_member": "KernelWaitTime",
+          "offset": 376,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 44,
+          "name": "UserWaitTime",
+          "c_member": "UserWaitTime",
+          "offset": 384,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 45,
+          "name": "LastRebalanceQpc",
+          "c_member": "LastRebalanceQpc",
+          "offset": 392,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 46,
+          "name": "PerProcessorCycleTimes",
+          "c_member": "PerProcessorCycleTimes",
+          "offset": 400,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 47,
+          "name": "ExtendedFeatureDisableMask",
+          "c_member": "ExtendedFeatureDisableMask",
+          "offset": 408,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 48,
+          "name": "PrimaryGroup",
+          "c_member": "PrimaryGroup",
+          "offset": 416,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 49,
+          "name": "Spare3",
+          "c_member": "Spare3",
+          "offset": 418,
+          "size": 6,
+          "ghidra_type": "ushort[3]",
+          "c_type": "uint16_t[3]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 50,
+          "name": "UserCetLogging",
+          "c_member": "UserCetLogging",
+          "offset": 424,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 51,
+          "name": "CpuPartitionList",
+          "c_member": "CpuPartitionList",
+          "offset": 432,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 52,
+          "name": "AvailableCpuState",
+          "c_member": "AvailableCpuState",
+          "offset": 448,
+          "size": 8,
+          "ghidra_type": "_KPROCESS_AVAILABLE_CPU_STATE *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        }
+      ],
+      "typed_fields": 39,
+      "opaque_fields": 14
+    },
+    "_KTHREAD": {
+      "size": 1216,
+      "field_count": 124,
+      "source": "Kernel_Consulta_20261122_105236_parte_01.txt",
+      "members": [
+        {
+          "index": 0,
+          "name": "Header",
+          "c_member": "Header",
+          "offset": 0,
+          "size": 24,
+          "ghidra_type": "_DISPATCHER_HEADER",
+          "c_type": "uint8_t[24]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 1,
+          "name": "SListFaultAddress",
+          "c_member": "SListFaultAddress",
+          "offset": 24,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 2,
+          "name": "QuantumTarget",
+          "c_member": "QuantumTarget",
+          "offset": 32,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 3,
+          "name": "InitialStack",
+          "c_member": "InitialStack",
+          "offset": 40,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 4,
+          "name": "StackLimit",
+          "c_member": "StackLimit",
+          "offset": 48,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 5,
+          "name": "StackBase",
+          "c_member": "StackBase",
+          "offset": 56,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 6,
+          "name": "ThreadLock",
+          "c_member": "ThreadLock",
+          "offset": 64,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 7,
+          "name": "CycleTime",
+          "c_member": "CycleTime",
+          "offset": 72,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 8,
+          "name": "CurrentRunTime",
+          "c_member": "CurrentRunTime",
+          "offset": 80,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 9,
+          "name": "ExpectedRunTime",
+          "c_member": "ExpectedRunTime",
+          "offset": 84,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 10,
+          "name": "KernelStack",
+          "c_member": "KernelStack",
+          "offset": 88,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 11,
+          "name": "StateSaveArea",
+          "c_member": "StateSaveArea",
+          "offset": 96,
+          "size": 8,
+          "ghidra_type": "_XSAVE_FORMAT *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 12,
+          "name": "SchedulingGroup",
+          "c_member": "SchedulingGroup",
+          "offset": 104,
+          "size": 8,
+          "ghidra_type": "_KSCHEDULING_GROUP *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 13,
+          "name": "WaitRegister",
+          "c_member": "WaitRegister",
+          "offset": 112,
+          "size": 1,
+          "ghidra_type": "_KWAIT_STATUS_REGISTER",
+          "c_type": "uint8_t[1]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 14,
+          "name": "Running",
+          "c_member": "Running",
+          "offset": 113,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 15,
+          "name": "Alerted",
+          "c_member": "Alerted",
+          "offset": 114,
+          "size": 2,
+          "ghidra_type": "uchar[2]",
+          "c_type": "uint8_t[2]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 16,
+          "name": "null",
+          "c_member": "_ghidra_field_16",
+          "offset": 116,
+          "size": 4,
+          "ghidra_type": "_KTHREAD_u_116",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 17,
+          "name": "null",
+          "c_member": "_ghidra_field_17",
+          "offset": 120,
+          "size": 4,
+          "ghidra_type": "_KTHREAD_u_120",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 18,
+          "name": "Tag",
+          "c_member": "Tag",
+          "offset": 124,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 19,
+          "name": "null",
+          "c_member": "_ghidra_field_19",
+          "offset": 125,
+          "size": 1,
+          "ghidra_type": "_KTHREAD_u_125",
+          "c_type": "uint8_t[1]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 20,
+          "name": "null",
+          "c_member": "_ghidra_field_20",
+          "offset": 126,
+          "size": 1,
+          "ghidra_type": "_KTHREAD_u_126",
+          "c_type": "uint8_t[1]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 21,
+          "name": "SystemCallNumber",
+          "c_member": "SystemCallNumber",
+          "offset": 128,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 22,
+          "name": "ReadyTime",
+          "c_member": "ReadyTime",
+          "offset": 132,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 23,
+          "name": "FirstArgument",
+          "c_member": "FirstArgument",
+          "offset": 136,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 24,
+          "name": "TrapFrame",
+          "c_member": "TrapFrame",
+          "offset": 144,
+          "size": 8,
+          "ghidra_type": "_KTRAP_FRAME *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 25,
+          "name": "null",
+          "c_member": "_ghidra_field_25",
+          "offset": 152,
+          "size": 48,
+          "ghidra_type": "_KTHREAD_u_152",
+          "c_type": "uint8_t[48]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 26,
+          "name": "WaitStatus",
+          "c_member": "WaitStatus",
+          "offset": 200,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 27,
+          "name": "WaitBlockList",
+          "c_member": "WaitBlockList",
+          "offset": 208,
+          "size": 8,
+          "ghidra_type": "_KWAIT_BLOCK *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 28,
+          "name": "null",
+          "c_member": "_ghidra_field_28",
+          "offset": 216,
+          "size": 16,
+          "ghidra_type": "_KTHREAD_u_216",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 29,
+          "name": "Queue",
+          "c_member": "Queue",
+          "offset": 232,
+          "size": 8,
+          "ghidra_type": "_DISPATCHER_HEADER *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 30,
+          "name": "Teb",
+          "c_member": "Teb",
+          "offset": 240,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 31,
+          "name": "RelativeTimerBias",
+          "c_member": "RelativeTimerBias",
+          "offset": 248,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 32,
+          "name": "Timer",
+          "c_member": "Timer",
+          "offset": 256,
+          "size": 64,
+          "ghidra_type": "_KTIMER",
+          "c_type": "uint8_t[64]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 33,
+          "name": "null",
+          "c_member": "_ghidra_field_33",
+          "offset": 320,
+          "size": 192,
+          "ghidra_type": "_KTHREAD_u_320",
+          "c_type": "uint8_t[192]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 34,
+          "name": "null",
+          "c_member": "_ghidra_field_34",
+          "offset": 512,
+          "size": 4,
+          "ghidra_type": "_KTHREAD_u_512",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 35,
+          "name": "BamQosLevel",
+          "c_member": "BamQosLevel",
+          "offset": 516,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 36,
+          "name": "HardwareFeedbackClass",
+          "c_member": "HardwareFeedbackClass",
+          "offset": 517,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 37,
+          "name": "null",
+          "c_member": "_ghidra_field_37",
+          "offset": 518,
+          "size": 2,
+          "ghidra_type": "_KTHREAD_u_518",
+          "c_type": "uint8_t[2]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 38,
+          "name": "QueueListEntry",
+          "c_member": "QueueListEntry",
+          "offset": 520,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 39,
+          "name": "null",
+          "c_member": "_ghidra_field_39",
+          "offset": 536,
+          "size": 4,
+          "ghidra_type": "_KTHREAD_u_536",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 40,
+          "name": "QueuePriority",
+          "c_member": "QueuePriority",
+          "offset": 540,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 41,
+          "name": "Process",
+          "c_member": "Process",
+          "offset": 544,
+          "size": 8,
+          "ghidra_type": "_KPROCESS *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 42,
+          "name": "UserAffinity",
+          "c_member": "UserAffinity",
+          "offset": 552,
+          "size": 8,
+          "ghidra_type": "_KAFFINITY_EX *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 43,
+          "name": "UserAffinityPrimaryGroup",
+          "c_member": "UserAffinityPrimaryGroup",
+          "offset": 560,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 44,
+          "name": "PreviousMode",
+          "c_member": "PreviousMode",
+          "offset": 562,
+          "size": 1,
+          "ghidra_type": "char",
+          "c_type": "int8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 45,
+          "name": "BasePriority",
+          "c_member": "BasePriority",
+          "offset": 563,
+          "size": 1,
+          "ghidra_type": "char",
+          "c_type": "int8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 46,
+          "name": "Spare24",
+          "c_member": "Spare24",
+          "offset": 564,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 47,
+          "name": "Preempted",
+          "c_member": "Preempted",
+          "offset": 565,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 48,
+          "name": "AdjustReason",
+          "c_member": "AdjustReason",
+          "offset": 566,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 49,
+          "name": "AdjustIncrement",
+          "c_member": "AdjustIncrement",
+          "offset": 567,
+          "size": 1,
+          "ghidra_type": "char",
+          "c_type": "int8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 50,
+          "name": "AffinityVersion",
+          "c_member": "AffinityVersion",
+          "offset": 568,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 51,
+          "name": "Affinity",
+          "c_member": "Affinity",
+          "offset": 576,
+          "size": 8,
+          "ghidra_type": "_KAFFINITY_EX *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 52,
+          "name": "AffinityPrimaryGroup",
+          "c_member": "AffinityPrimaryGroup",
+          "offset": 584,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 53,
+          "name": "ApcStateIndex",
+          "c_member": "ApcStateIndex",
+          "offset": 586,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 54,
+          "name": "WaitBlockCount",
+          "c_member": "WaitBlockCount",
+          "offset": 587,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 55,
+          "name": "IdealProcessor",
+          "c_member": "IdealProcessor",
+          "offset": 588,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 56,
+          "name": "NpxState",
+          "c_member": "NpxState",
+          "offset": 592,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 57,
+          "name": "null",
+          "c_member": "_ghidra_field_57",
+          "offset": 600,
+          "size": 48,
+          "ghidra_type": "_KTHREAD_u_600",
+          "c_type": "uint8_t[48]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 58,
+          "name": "null",
+          "c_member": "_ghidra_field_58",
+          "offset": 648,
+          "size": 88,
+          "ghidra_type": "_KTHREAD_u_648",
+          "c_type": "uint8_t[88]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 59,
+          "name": "SuspendEvent",
+          "c_member": "SuspendEvent",
+          "offset": 736,
+          "size": 24,
+          "ghidra_type": "_KEVENT",
+          "c_type": "uint8_t[24]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 60,
+          "name": "ThreadListEntry",
+          "c_member": "ThreadListEntry",
+          "offset": 760,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 61,
+          "name": "MutantListHead",
+          "c_member": "MutantListHead",
+          "offset": 776,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 62,
+          "name": "null",
+          "c_member": "_ghidra_field_62",
+          "offset": 792,
+          "size": 2,
+          "ghidra_type": "_KTHREAD_u_792",
+          "c_type": "uint8_t[2]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 63,
+          "name": "null",
+          "c_member": "_ghidra_field_63",
+          "offset": 794,
+          "size": 1,
+          "ghidra_type": "_KTHREAD_u_794",
+          "c_type": "uint8_t[1]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 64,
+          "name": "WobPriority",
+          "c_member": "WobPriority",
+          "offset": 795,
+          "size": 1,
+          "ghidra_type": "char",
+          "c_type": "int8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 65,
+          "name": "SecureThreadCookie",
+          "c_member": "SecureThreadCookie",
+          "offset": 796,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 66,
+          "name": "SchedulerSharedSystemSlot",
+          "c_member": "SchedulerSharedSystemSlot",
+          "offset": 800,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 67,
+          "name": "PropagateBoostsEntry",
+          "c_member": "PropagateBoostsEntry",
+          "offset": 808,
+          "size": 8,
+          "ghidra_type": "_SINGLE_LIST_ENTRY",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 68,
+          "name": "IoSelfBoostsEntry",
+          "c_member": "IoSelfBoostsEntry",
+          "offset": 816,
+          "size": 8,
+          "ghidra_type": "_SINGLE_LIST_ENTRY",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 69,
+          "name": "PriorityFloorCounts",
+          "c_member": "PriorityFloorCounts",
+          "offset": 824,
+          "size": 32,
+          "ghidra_type": "uchar[32]",
+          "c_type": "uint8_t[32]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 70,
+          "name": "PriorityFloorSummary",
+          "c_member": "PriorityFloorSummary",
+          "offset": 856,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 71,
+          "name": "AbCompletedIoBoostCount",
+          "c_member": "AbCompletedIoBoostCount",
+          "offset": 860,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 72,
+          "name": "AbCompletedIoQoSBoostCount",
+          "c_member": "AbCompletedIoQoSBoostCount",
+          "offset": 864,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 73,
+          "name": "KeReferenceCount",
+          "c_member": "KeReferenceCount",
+          "offset": 868,
+          "size": 2,
+          "ghidra_type": "short",
+          "c_type": "int16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 74,
+          "name": "DecayBoost",
+          "c_member": "DecayBoost",
+          "offset": 870,
+          "size": 1,
+          "ghidra_type": "char",
+          "c_type": "int8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 75,
+          "name": "Spare6",
+          "c_member": "Spare6",
+          "offset": 871,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 76,
+          "name": "ForegroundLossTime",
+          "c_member": "ForegroundLossTime",
+          "offset": 872,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 77,
+          "name": "null",
+          "c_member": "_ghidra_field_77",
+          "offset": 880,
+          "size": 16,
+          "ghidra_type": "_KTHREAD_u_880",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 78,
+          "name": "ReadOperationCount",
+          "c_member": "ReadOperationCount",
+          "offset": 896,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 79,
+          "name": "WriteOperationCount",
+          "c_member": "WriteOperationCount",
+          "offset": 904,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 80,
+          "name": "OtherOperationCount",
+          "c_member": "OtherOperationCount",
+          "offset": 912,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 81,
+          "name": "ReadTransferCount",
+          "c_member": "ReadTransferCount",
+          "offset": 920,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 82,
+          "name": "WriteTransferCount",
+          "c_member": "WriteTransferCount",
+          "offset": 928,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 83,
+          "name": "OtherTransferCount",
+          "c_member": "OtherTransferCount",
+          "offset": 936,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 84,
+          "name": "QueuedScb",
+          "c_member": "QueuedScb",
+          "offset": 944,
+          "size": 8,
+          "ghidra_type": "_KSCB *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 85,
+          "name": "ThreadTimerDelay",
+          "c_member": "ThreadTimerDelay",
+          "offset": 952,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 86,
+          "name": "Spare26",
+          "c_member": "Spare26",
+          "offset": 956,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 87,
+          "name": "PpmPolicy",
+          "c_member": "PpmPolicy",
+          "offset": 958,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 88,
+          "name": "Spare27",
+          "c_member": "Spare27",
+          "offset": 959,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 89,
+          "name": "TracingPrivate",
+          "c_member": "TracingPrivate",
+          "offset": 960,
+          "size": 8,
+          "ghidra_type": "ulong64[1]",
+          "c_type": "uint64_t[1]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 90,
+          "name": "SchedulerAssist",
+          "c_member": "SchedulerAssist",
+          "offset": 968,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 91,
+          "name": "AbWaitObject",
+          "c_member": "AbWaitObject",
+          "offset": 976,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 92,
+          "name": "ReservedPreviousReadyTimeValue",
+          "c_member": "ReservedPreviousReadyTimeValue",
+          "offset": 984,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 93,
+          "name": "KernelWaitTime",
+          "c_member": "KernelWaitTime",
+          "offset": 992,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 94,
+          "name": "UserWaitTime",
+          "c_member": "UserWaitTime",
+          "offset": 1000,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 95,
+          "name": "null",
+          "c_member": "_ghidra_field_95",
+          "offset": 1008,
+          "size": 16,
+          "ghidra_type": "_KTHREAD_u_1008",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 96,
+          "name": "SchedulerAssistPriorityFloor",
+          "c_member": "SchedulerAssistPriorityFloor",
+          "offset": 1024,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 97,
+          "name": "RealtimePriorityFloor",
+          "c_member": "RealtimePriorityFloor",
+          "offset": 1028,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 98,
+          "name": "KernelShadowStack",
+          "c_member": "KernelShadowStack",
+          "offset": 1032,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 99,
+          "name": "KernelShadowStackInitial",
+          "c_member": "KernelShadowStackInitial",
+          "offset": 1040,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 100,
+          "name": "KernelShadowStackBase",
+          "c_member": "KernelShadowStackBase",
+          "offset": 1048,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 101,
+          "name": "KernelShadowStackLimit",
+          "c_member": "KernelShadowStackLimit",
+          "offset": 1056,
+          "size": 8,
+          "ghidra_type": "_KERNEL_SHADOW_STACK_LIMIT",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 102,
+          "name": "ExtendedFeatureDisableMask",
+          "c_member": "ExtendedFeatureDisableMask",
+          "offset": 1064,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 103,
+          "name": "HgsFeedbackStartTime",
+          "c_member": "HgsFeedbackStartTime",
+          "offset": 1072,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 104,
+          "name": "HgsFeedbackCycles",
+          "c_member": "HgsFeedbackCycles",
+          "offset": 1080,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 105,
+          "name": "HgsInvalidFeedbackCount",
+          "c_member": "HgsInvalidFeedbackCount",
+          "offset": 1088,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 106,
+          "name": "HgsLowerPerfClassFeedbackCount",
+          "c_member": "HgsLowerPerfClassFeedbackCount",
+          "offset": 1092,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 107,
+          "name": "HgsHigherPerfClassFeedbackCount",
+          "c_member": "HgsHigherPerfClassFeedbackCount",
+          "offset": 1096,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 108,
+          "name": "ModeHistory",
+          "c_member": "ModeHistory",
+          "offset": 1100,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 109,
+          "name": "SystemAffinityTokenListHead",
+          "c_member": "SystemAffinityTokenListHead",
+          "offset": 1104,
+          "size": 8,
+          "ghidra_type": "_SINGLE_LIST_ENTRY",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 110,
+          "name": "IptSaveArea",
+          "c_member": "IptSaveArea",
+          "offset": 1112,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 111,
+          "name": "ResourceIndex",
+          "c_member": "ResourceIndex",
+          "offset": 1120,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 112,
+          "name": "CoreIsolationReasons",
+          "c_member": "CoreIsolationReasons",
+          "offset": 1121,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 113,
+          "name": "BamQosLevelFromAssistPage",
+          "c_member": "BamQosLevelFromAssistPage",
+          "offset": 1122,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 114,
+          "name": "SecureCallCoreIsolationCount",
+          "c_member": "SecureCallCoreIsolationCount",
+          "offset": 1123,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 115,
+          "name": "SchedulerSharedOffset",
+          "c_member": "SchedulerSharedOffset",
+          "offset": 1124,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 116,
+          "name": "SchedulerSharedSwappablePage",
+          "c_member": "SchedulerSharedSwappablePage",
+          "offset": 1128,
+          "size": 8,
+          "ghidra_type": "_KSWAPPABLE_PAGE *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 117,
+          "name": "KernelAbEntries",
+          "c_member": "KernelAbEntries",
+          "offset": 1136,
+          "size": 8,
+          "ghidra_type": "_KLOCK_ENTRIES *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 118,
+          "name": "UserAbEntries",
+          "c_member": "UserAbEntries",
+          "offset": 1144,
+          "size": 8,
+          "ghidra_type": "_KLOCK_ENTRIES *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 119,
+          "name": "KcsanThread",
+          "c_member": "KcsanThread",
+          "offset": 1152,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 120,
+          "name": "SchedulerAssistYieldCounter",
+          "c_member": "SchedulerAssistYieldCounter",
+          "offset": 1160,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 121,
+          "name": "SchedulerAssistYieldBoostCount",
+          "c_member": "SchedulerAssistYieldBoostCount",
+          "offset": 1164,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 122,
+          "name": "SchedulerAssistLastYieldBoostTime",
+          "c_member": "SchedulerAssistLastYieldBoostTime",
+          "offset": 1168,
+          "size": 8,
+          "ghidra_type": "long64",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 123,
+          "name": "Padding",
+          "c_member": "Padding",
+          "offset": 1176,
+          "size": 40,
+          "ghidra_type": "ulong64[5]",
+          "c_type": "uint64_t[5]",
+          "resolution": "primitive_array"
+        }
+      ],
+      "typed_fields": 89,
+      "opaque_fields": 35
+    },
+    "_CONTEXT": {
+      "size": 1232,
+      "field_count": 46,
+      "source": "Kernel_Consulta_20261122_105236_parte_01.txt",
+      "members": [
+        {
+          "index": 0,
+          "name": "P1Home",
+          "c_member": "P1Home",
+          "offset": 0,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 1,
+          "name": "P2Home",
+          "c_member": "P2Home",
+          "offset": 8,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 2,
+          "name": "P3Home",
+          "c_member": "P3Home",
+          "offset": 16,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 3,
+          "name": "P4Home",
+          "c_member": "P4Home",
+          "offset": 24,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 4,
+          "name": "P5Home",
+          "c_member": "P5Home",
+          "offset": 32,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 5,
+          "name": "P6Home",
+          "c_member": "P6Home",
+          "offset": 40,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 6,
+          "name": "ContextFlags",
+          "c_member": "ContextFlags",
+          "offset": 48,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 7,
+          "name": "MxCsr",
+          "c_member": "MxCsr",
+          "offset": 52,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 8,
+          "name": "SegCs",
+          "c_member": "SegCs",
+          "offset": 56,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 9,
+          "name": "SegDs",
+          "c_member": "SegDs",
+          "offset": 58,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 10,
+          "name": "SegEs",
+          "c_member": "SegEs",
+          "offset": 60,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 11,
+          "name": "SegFs",
+          "c_member": "SegFs",
+          "offset": 62,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 12,
+          "name": "SegGs",
+          "c_member": "SegGs",
+          "offset": 64,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 13,
+          "name": "SegSs",
+          "c_member": "SegSs",
+          "offset": 66,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 14,
+          "name": "EFlags",
+          "c_member": "EFlags",
+          "offset": 68,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 15,
+          "name": "Dr0",
+          "c_member": "Dr0",
+          "offset": 72,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 16,
+          "name": "Dr1",
+          "c_member": "Dr1",
+          "offset": 80,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 17,
+          "name": "Dr2",
+          "c_member": "Dr2",
+          "offset": 88,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 18,
+          "name": "Dr3",
+          "c_member": "Dr3",
+          "offset": 96,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 19,
+          "name": "Dr6",
+          "c_member": "Dr6",
+          "offset": 104,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 20,
+          "name": "Dr7",
+          "c_member": "Dr7",
+          "offset": 112,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 21,
+          "name": "Rax",
+          "c_member": "Rax",
+          "offset": 120,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 22,
+          "name": "Rcx",
+          "c_member": "Rcx",
+          "offset": 128,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 23,
+          "name": "Rdx",
+          "c_member": "Rdx",
+          "offset": 136,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 24,
+          "name": "Rbx",
+          "c_member": "Rbx",
+          "offset": 144,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 25,
+          "name": "Rsp",
+          "c_member": "Rsp",
+          "offset": 152,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 26,
+          "name": "Rbp",
+          "c_member": "Rbp",
+          "offset": 160,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 27,
+          "name": "Rsi",
+          "c_member": "Rsi",
+          "offset": 168,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 28,
+          "name": "Rdi",
+          "c_member": "Rdi",
+          "offset": 176,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 29,
+          "name": "R8",
+          "c_member": "R8",
+          "offset": 184,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 30,
+          "name": "R9",
+          "c_member": "R9",
+          "offset": 192,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 31,
+          "name": "R10",
+          "c_member": "R10",
+          "offset": 200,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 32,
+          "name": "R11",
+          "c_member": "R11",
+          "offset": 208,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 33,
+          "name": "R12",
+          "c_member": "R12",
+          "offset": 216,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 34,
+          "name": "R13",
+          "c_member": "R13",
+          "offset": 224,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 35,
+          "name": "R14",
+          "c_member": "R14",
+          "offset": 232,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 36,
+          "name": "R15",
+          "c_member": "R15",
+          "offset": 240,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 37,
+          "name": "Rip",
+          "c_member": "Rip",
+          "offset": 248,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 38,
+          "name": "null",
+          "c_member": "_ghidra_field_38",
+          "offset": 256,
+          "size": 512,
+          "ghidra_type": "_CONTEXT_u_256",
+          "c_type": "uint8_t[512]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 39,
+          "name": "VectorRegister",
+          "c_member": "VectorRegister",
+          "offset": 768,
+          "size": 416,
+          "ghidra_type": "_M128A[26]",
+          "c_type": "uint8_t[416]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 40,
+          "name": "VectorControl",
+          "c_member": "VectorControl",
+          "offset": 1184,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 41,
+          "name": "DebugControl",
+          "c_member": "DebugControl",
+          "offset": 1192,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 42,
+          "name": "LastBranchToRip",
+          "c_member": "LastBranchToRip",
+          "offset": 1200,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 43,
+          "name": "LastBranchFromRip",
+          "c_member": "LastBranchFromRip",
+          "offset": 1208,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 44,
+          "name": "LastExceptionToRip",
+          "c_member": "LastExceptionToRip",
+          "offset": 1216,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 45,
+          "name": "LastExceptionFromRip",
+          "c_member": "LastExceptionFromRip",
+          "offset": 1224,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        }
+      ],
+      "typed_fields": 44,
+      "opaque_fields": 2
+    },
+    "_EPROCESS": {
+      "size": 2112,
+      "field_count": 226,
+      "source": "Kernel_Consulta_20261122_105236_parte_01.txt",
+      "members": [
+        {
+          "index": 0,
+          "name": "Pcb",
+          "c_member": "Pcb",
+          "offset": 0,
+          "size": 456,
+          "ghidra_type": "_KPROCESS",
+          "c_type": "KPROCESS",
+          "resolution": "validated_embedded_priority_type"
+        },
+        {
+          "index": 1,
+          "name": "ProcessLock",
+          "c_member": "ProcessLock",
+          "offset": 456,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 2,
+          "name": "UniqueProcessId",
+          "c_member": "UniqueProcessId",
+          "offset": 464,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 3,
+          "name": "ActiveProcessLinks",
+          "c_member": "ActiveProcessLinks",
+          "offset": 472,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 4,
+          "name": "RundownProtect",
+          "c_member": "RundownProtect",
+          "offset": 488,
+          "size": 8,
+          "ghidra_type": "_EX_RUNDOWN_REF",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 5,
+          "name": "null",
+          "c_member": "_ghidra_field_5",
+          "offset": 496,
+          "size": 4,
+          "ghidra_type": "_EPROCESS_u_496",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 6,
+          "name": "null",
+          "c_member": "_ghidra_field_6",
+          "offset": 500,
+          "size": 4,
+          "ghidra_type": "_EPROCESS_u_500",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 7,
+          "name": "CreateTime",
+          "c_member": "CreateTime",
+          "offset": 504,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 8,
+          "name": "ProcessQuotaUsage",
+          "c_member": "ProcessQuotaUsage",
+          "offset": 512,
+          "size": 16,
+          "ghidra_type": "ulong64[2]",
+          "c_type": "uint64_t[2]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 9,
+          "name": "ProcessQuotaPeak",
+          "c_member": "ProcessQuotaPeak",
+          "offset": 528,
+          "size": 16,
+          "ghidra_type": "ulong64[2]",
+          "c_type": "uint64_t[2]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 10,
+          "name": "PeakVirtualSize",
+          "c_member": "PeakVirtualSize",
+          "offset": 544,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 11,
+          "name": "VirtualSize",
+          "c_member": "VirtualSize",
+          "offset": 552,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 12,
+          "name": "SessionProcessLinks",
+          "c_member": "SessionProcessLinks",
+          "offset": 560,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 13,
+          "name": "null",
+          "c_member": "_ghidra_field_13",
+          "offset": 576,
+          "size": 8,
+          "ghidra_type": "_EPROCESS_u_576",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 14,
+          "name": "Token",
+          "c_member": "Token",
+          "offset": 584,
+          "size": 8,
+          "ghidra_type": "_EX_FAST_REF",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 15,
+          "name": "MmReserved",
+          "c_member": "MmReserved",
+          "offset": 592,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 16,
+          "name": "AddressCreationLock",
+          "c_member": "AddressCreationLock",
+          "offset": 600,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 17,
+          "name": "PageTableCommitmentLock",
+          "c_member": "PageTableCommitmentLock",
+          "offset": 608,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 18,
+          "name": "RotateInProgress",
+          "c_member": "RotateInProgress",
+          "offset": 616,
+          "size": 8,
+          "ghidra_type": "_ETHREAD *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 19,
+          "name": "ForkInProgress",
+          "c_member": "ForkInProgress",
+          "offset": 624,
+          "size": 8,
+          "ghidra_type": "_ETHREAD *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 20,
+          "name": "CommitChargeJob",
+          "c_member": "CommitChargeJob",
+          "offset": 632,
+          "size": 8,
+          "ghidra_type": "_EJOB *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 21,
+          "name": "CloneRoot",
+          "c_member": "CloneRoot",
+          "offset": 640,
+          "size": 8,
+          "ghidra_type": "_RTL_AVL_TREE",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 22,
+          "name": "NumberOfPrivatePages",
+          "c_member": "NumberOfPrivatePages",
+          "offset": 648,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 23,
+          "name": "MmReserved2",
+          "c_member": "MmReserved2",
+          "offset": 656,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 24,
+          "name": "Win32Process",
+          "c_member": "Win32Process",
+          "offset": 664,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 25,
+          "name": "Job",
+          "c_member": "Job",
+          "offset": 672,
+          "size": 8,
+          "ghidra_type": "_EJOB *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 26,
+          "name": "SectionObject",
+          "c_member": "SectionObject",
+          "offset": 680,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 27,
+          "name": "SectionBaseAddress",
+          "c_member": "SectionBaseAddress",
+          "offset": 688,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 28,
+          "name": "Cookie",
+          "c_member": "Cookie",
+          "offset": 696,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 29,
+          "name": "null",
+          "c_member": "_ghidra_field_29",
+          "offset": 700,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 30,
+          "name": "null",
+          "c_member": "_ghidra_field_30",
+          "offset": 701,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 31,
+          "name": "null",
+          "c_member": "_ghidra_field_31",
+          "offset": 702,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 32,
+          "name": "null",
+          "c_member": "_ghidra_field_32",
+          "offset": 703,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 33,
+          "name": "WorkingSetWatch",
+          "c_member": "WorkingSetWatch",
+          "offset": 704,
+          "size": 8,
+          "ghidra_type": "_PAGEFAULT_HISTORY *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 34,
+          "name": "Win32WindowStation",
+          "c_member": "Win32WindowStation",
+          "offset": 712,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 35,
+          "name": "InheritedFromUniqueProcessId",
+          "c_member": "InheritedFromUniqueProcessId",
+          "offset": 720,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 36,
+          "name": "OwnerProcessId",
+          "c_member": "OwnerProcessId",
+          "offset": 728,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 37,
+          "name": "Peb",
+          "c_member": "Peb",
+          "offset": 736,
+          "size": 8,
+          "ghidra_type": "_PEB *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 38,
+          "name": "Session",
+          "c_member": "Session",
+          "offset": 744,
+          "size": 8,
+          "ghidra_type": "_PSP_SESSION_SPACE *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 39,
+          "name": "Spare1",
+          "c_member": "Spare1",
+          "offset": 752,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 40,
+          "name": "QuotaBlock",
+          "c_member": "QuotaBlock",
+          "offset": 760,
+          "size": 8,
+          "ghidra_type": "_EPROCESS_QUOTA_BLOCK *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 41,
+          "name": "ObjectTable",
+          "c_member": "ObjectTable",
+          "offset": 768,
+          "size": 8,
+          "ghidra_type": "_HANDLE_TABLE *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 42,
+          "name": "DebugPort",
+          "c_member": "DebugPort",
+          "offset": 776,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 43,
+          "name": "WoW64Process",
+          "c_member": "WoW64Process",
+          "offset": 784,
+          "size": 8,
+          "ghidra_type": "_EWOW64PROCESS *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 44,
+          "name": "DeviceMap",
+          "c_member": "DeviceMap",
+          "offset": 792,
+          "size": 8,
+          "ghidra_type": "_EX_FAST_REF",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 45,
+          "name": "EtwDataSource",
+          "c_member": "EtwDataSource",
+          "offset": 800,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 46,
+          "name": "PageDirectoryPte",
+          "c_member": "PageDirectoryPte",
+          "offset": 808,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 47,
+          "name": "ImageFilePointer",
+          "c_member": "ImageFilePointer",
+          "offset": 816,
+          "size": 8,
+          "ghidra_type": "_FILE_OBJECT *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 48,
+          "name": "ImageFileName",
+          "c_member": "ImageFileName",
+          "offset": 824,
+          "size": 15,
+          "ghidra_type": "uchar[15]",
+          "c_type": "uint8_t[15]",
+          "resolution": "primitive_array"
+        },
+        {
+          "index": 49,
+          "name": "PriorityClass",
+          "c_member": "PriorityClass",
+          "offset": 839,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 50,
+          "name": "SecurityPort",
+          "c_member": "SecurityPort",
+          "offset": 840,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 51,
+          "name": "SeAuditProcessCreationInfo",
+          "c_member": "SeAuditProcessCreationInfo",
+          "offset": 848,
+          "size": 8,
+          "ghidra_type": "_SE_AUDIT_PROCESS_CREATION_INFO",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 52,
+          "name": "JobLinks",
+          "c_member": "JobLinks",
+          "offset": 856,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 53,
+          "name": "HighestUserAddress",
+          "c_member": "HighestUserAddress",
+          "offset": 872,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 54,
+          "name": "ThreadListHead",
+          "c_member": "ThreadListHead",
+          "offset": 880,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 55,
+          "name": "ActiveThreads",
+          "c_member": "ActiveThreads",
+          "offset": 896,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 56,
+          "name": "ImagePathHash",
+          "c_member": "ImagePathHash",
+          "offset": 900,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 57,
+          "name": "DefaultHardErrorProcessing",
+          "c_member": "DefaultHardErrorProcessing",
+          "offset": 904,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 58,
+          "name": "LastThreadExitStatus",
+          "c_member": "LastThreadExitStatus",
+          "offset": 908,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 59,
+          "name": "PrefetchTrace",
+          "c_member": "PrefetchTrace",
+          "offset": 912,
+          "size": 8,
+          "ghidra_type": "_EX_FAST_REF",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 60,
+          "name": "LockedPagesList",
+          "c_member": "LockedPagesList",
+          "offset": 920,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 61,
+          "name": "ReadOperationCount",
+          "c_member": "ReadOperationCount",
+          "offset": 928,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 62,
+          "name": "WriteOperationCount",
+          "c_member": "WriteOperationCount",
+          "offset": 936,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 63,
+          "name": "OtherOperationCount",
+          "c_member": "OtherOperationCount",
+          "offset": 944,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 64,
+          "name": "ReadTransferCount",
+          "c_member": "ReadTransferCount",
+          "offset": 952,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 65,
+          "name": "WriteTransferCount",
+          "c_member": "WriteTransferCount",
+          "offset": 960,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 66,
+          "name": "OtherTransferCount",
+          "c_member": "OtherTransferCount",
+          "offset": 968,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 67,
+          "name": "CommitChargeLimit",
+          "c_member": "CommitChargeLimit",
+          "offset": 976,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 68,
+          "name": "CommitCharge",
+          "c_member": "CommitCharge",
+          "offset": 984,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 69,
+          "name": "CommitChargePeak",
+          "c_member": "CommitChargePeak",
+          "offset": 992,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 70,
+          "name": "null",
+          "c_member": "_ghidra_field_70",
+          "offset": 1000,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 71,
+          "name": "null",
+          "c_member": "_ghidra_field_71",
+          "offset": 1001,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 72,
+          "name": "null",
+          "c_member": "_ghidra_field_72",
+          "offset": 1002,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 73,
+          "name": "null",
+          "c_member": "_ghidra_field_73",
+          "offset": 1003,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 74,
+          "name": "null",
+          "c_member": "_ghidra_field_74",
+          "offset": 1004,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 75,
+          "name": "null",
+          "c_member": "_ghidra_field_75",
+          "offset": 1005,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 76,
+          "name": "null",
+          "c_member": "_ghidra_field_76",
+          "offset": 1006,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 77,
+          "name": "null",
+          "c_member": "_ghidra_field_77",
+          "offset": 1007,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 78,
+          "name": "null",
+          "c_member": "_ghidra_field_78",
+          "offset": 1008,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 79,
+          "name": "null",
+          "c_member": "_ghidra_field_79",
+          "offset": 1009,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 80,
+          "name": "null",
+          "c_member": "_ghidra_field_80",
+          "offset": 1010,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 81,
+          "name": "null",
+          "c_member": "_ghidra_field_81",
+          "offset": 1011,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 82,
+          "name": "null",
+          "c_member": "_ghidra_field_82",
+          "offset": 1012,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 83,
+          "name": "null",
+          "c_member": "_ghidra_field_83",
+          "offset": 1013,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 84,
+          "name": "null",
+          "c_member": "_ghidra_field_84",
+          "offset": 1014,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 85,
+          "name": "null",
+          "c_member": "_ghidra_field_85",
+          "offset": 1015,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 86,
+          "name": "null",
+          "c_member": "_ghidra_field_86",
+          "offset": 1016,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 87,
+          "name": "null",
+          "c_member": "_ghidra_field_87",
+          "offset": 1017,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 88,
+          "name": "null",
+          "c_member": "_ghidra_field_88",
+          "offset": 1018,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 89,
+          "name": "null",
+          "c_member": "_ghidra_field_89",
+          "offset": 1019,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 90,
+          "name": "null",
+          "c_member": "_ghidra_field_90",
+          "offset": 1020,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 91,
+          "name": "null",
+          "c_member": "_ghidra_field_91",
+          "offset": 1021,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 92,
+          "name": "null",
+          "c_member": "_ghidra_field_92",
+          "offset": 1022,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 93,
+          "name": "null",
+          "c_member": "_ghidra_field_93",
+          "offset": 1023,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 94,
+          "name": "Vm",
+          "c_member": "Vm",
+          "offset": 1024,
+          "size": 320,
+          "ghidra_type": "_MMSUPPORT_FULL",
+          "c_type": "uint8_t[320]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 95,
+          "name": "MmProcessLinks",
+          "c_member": "MmProcessLinks",
+          "offset": 1344,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 96,
+          "name": "ModifiedPageCount",
+          "c_member": "ModifiedPageCount",
+          "offset": 1360,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 97,
+          "name": "ExitStatus",
+          "c_member": "ExitStatus",
+          "offset": 1364,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 98,
+          "name": "VadRoot",
+          "c_member": "VadRoot",
+          "offset": 1368,
+          "size": 8,
+          "ghidra_type": "_RTL_AVL_TREE",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 99,
+          "name": "VadHint",
+          "c_member": "VadHint",
+          "offset": 1376,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 100,
+          "name": "VadCount",
+          "c_member": "VadCount",
+          "offset": 1384,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 101,
+          "name": "VadPhysicalPages",
+          "c_member": "VadPhysicalPages",
+          "offset": 1392,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 102,
+          "name": "VadPhysicalPagesLimit",
+          "c_member": "VadPhysicalPagesLimit",
+          "offset": 1400,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 103,
+          "name": "AlpcContext",
+          "c_member": "AlpcContext",
+          "offset": 1408,
+          "size": 32,
+          "ghidra_type": "_ALPC_PROCESS_CONTEXT",
+          "c_type": "uint8_t[32]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 104,
+          "name": "TimerResolutionLink",
+          "c_member": "TimerResolutionLink",
+          "offset": 1440,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 105,
+          "name": "TimerResolutionStackRecord",
+          "c_member": "TimerResolutionStackRecord",
+          "offset": 1456,
+          "size": 8,
+          "ghidra_type": "_PO_DIAG_STACK_RECORD *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 106,
+          "name": "RequestedTimerResolution",
+          "c_member": "RequestedTimerResolution",
+          "offset": 1464,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 107,
+          "name": "SmallestTimerResolution",
+          "c_member": "SmallestTimerResolution",
+          "offset": 1468,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 108,
+          "name": "ExitTime",
+          "c_member": "ExitTime",
+          "offset": 1472,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 109,
+          "name": "InvertedFunctionTable",
+          "c_member": "InvertedFunctionTable",
+          "offset": 1480,
+          "size": 8,
+          "ghidra_type": "_INVERTED_FUNCTION_TABLE_KERNEL_MODE *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 110,
+          "name": "InvertedFunctionTableLock",
+          "c_member": "InvertedFunctionTableLock",
+          "offset": 1488,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 111,
+          "name": "ActiveThreadsHighWatermark",
+          "c_member": "ActiveThreadsHighWatermark",
+          "offset": 1496,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 112,
+          "name": "LargePrivateVadCount",
+          "c_member": "LargePrivateVadCount",
+          "offset": 1500,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 113,
+          "name": "ThreadListLock",
+          "c_member": "ThreadListLock",
+          "offset": 1504,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 114,
+          "name": "WnfContext",
+          "c_member": "WnfContext",
+          "offset": 1512,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 115,
+          "name": "ServerSilo",
+          "c_member": "ServerSilo",
+          "offset": 1520,
+          "size": 8,
+          "ghidra_type": "_EJOB *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 116,
+          "name": "SignatureLevel",
+          "c_member": "SignatureLevel",
+          "offset": 1528,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 117,
+          "name": "SectionSignatureLevel",
+          "c_member": "SectionSignatureLevel",
+          "offset": 1529,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 118,
+          "name": "Protection",
+          "c_member": "Protection",
+          "offset": 1530,
+          "size": 1,
+          "ghidra_type": "_PS_PROTECTION",
+          "c_type": "uint8_t[1]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 119,
+          "name": "HangCount",
+          "c_member": "_overlay_05FB.HangCount_view.HangCount",
+          "offset": 1531,
+          "size": 1,
+          "ghidra_type": "uchar:3",
+          "c_type": "uint8_t[1]",
+          "resolution": "overlapping_storage_raw"
+        },
+        {
+          "index": 120,
+          "name": "GhostCount",
+          "c_member": "_overlay_05FB.GhostCount_view.GhostCount",
+          "offset": 1531,
+          "size": 1,
+          "ghidra_type": "uchar:3",
+          "c_type": "uint8_t[1]",
+          "resolution": "overlapping_storage_raw"
+        },
+        {
+          "index": 121,
+          "name": "PrefilterException",
+          "c_member": "_overlay_05FB.PrefilterException_view.PrefilterException",
+          "offset": 1531,
+          "size": 1,
+          "ghidra_type": "uchar:1",
+          "c_type": "uint8_t[1]",
+          "resolution": "overlapping_storage_raw"
+        },
+        {
+          "index": 122,
+          "name": "null",
+          "c_member": "_ghidra_field_122",
+          "offset": 1532,
+          "size": 4,
+          "ghidra_type": "_EPROCESS_u_1532",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 123,
+          "name": "DeviceAsid",
+          "c_member": "DeviceAsid",
+          "offset": 1536,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 124,
+          "name": "null",
+          "c_member": "_ghidra_field_124",
+          "offset": 1540,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 125,
+          "name": "null",
+          "c_member": "_ghidra_field_125",
+          "offset": 1541,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 126,
+          "name": "null",
+          "c_member": "_ghidra_field_126",
+          "offset": 1542,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 127,
+          "name": "null",
+          "c_member": "_ghidra_field_127",
+          "offset": 1543,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 128,
+          "name": "SvmData",
+          "c_member": "SvmData",
+          "offset": 1544,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 129,
+          "name": "SvmProcessLock",
+          "c_member": "SvmProcessLock",
+          "offset": 1552,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 130,
+          "name": "SvmLock",
+          "c_member": "SvmLock",
+          "offset": 1560,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 131,
+          "name": "SvmProcessDeviceListHead",
+          "c_member": "SvmProcessDeviceListHead",
+          "offset": 1568,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 132,
+          "name": "LastFreezeInterruptTime",
+          "c_member": "LastFreezeInterruptTime",
+          "offset": 1584,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 133,
+          "name": "DiskCounters",
+          "c_member": "DiskCounters",
+          "offset": 1592,
+          "size": 8,
+          "ghidra_type": "_PROCESS_DISK_COUNTERS *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 134,
+          "name": "PicoContext",
+          "c_member": "PicoContext",
+          "offset": 1600,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 135,
+          "name": "EnclaveTable",
+          "c_member": "EnclaveTable",
+          "offset": 1608,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 136,
+          "name": "EnclaveNumber",
+          "c_member": "EnclaveNumber",
+          "offset": 1616,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 137,
+          "name": "EnclaveLock",
+          "c_member": "EnclaveLock",
+          "offset": 1624,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 138,
+          "name": "HighPriorityFaultsAllowed",
+          "c_member": "HighPriorityFaultsAllowed",
+          "offset": 1632,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 139,
+          "name": "null",
+          "c_member": "_ghidra_field_139",
+          "offset": 1636,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 140,
+          "name": "null",
+          "c_member": "_ghidra_field_140",
+          "offset": 1637,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 141,
+          "name": "null",
+          "c_member": "_ghidra_field_141",
+          "offset": 1638,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 142,
+          "name": "null",
+          "c_member": "_ghidra_field_142",
+          "offset": 1639,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 143,
+          "name": "EnergyContext",
+          "c_member": "EnergyContext",
+          "offset": 1640,
+          "size": 8,
+          "ghidra_type": "_PO_PROCESS_ENERGY_CONTEXT *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 144,
+          "name": "VmContext",
+          "c_member": "VmContext",
+          "offset": 1648,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 145,
+          "name": "SequenceNumber",
+          "c_member": "SequenceNumber",
+          "offset": 1656,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 146,
+          "name": "CreateInterruptTime",
+          "c_member": "CreateInterruptTime",
+          "offset": 1664,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 147,
+          "name": "CreateUnbiasedInterruptTime",
+          "c_member": "CreateUnbiasedInterruptTime",
+          "offset": 1672,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 148,
+          "name": "TotalUnbiasedFrozenTime",
+          "c_member": "TotalUnbiasedFrozenTime",
+          "offset": 1680,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 149,
+          "name": "LastAppStateUpdateTime",
+          "c_member": "LastAppStateUpdateTime",
+          "offset": 1688,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 150,
+          "name": "LastAppStateUptime",
+          "c_member": "_overlay_06A0.LastAppStateUptime_view.LastAppStateUptime",
+          "offset": 1696,
+          "size": 8,
+          "ghidra_type": "ulong64:61",
+          "c_type": "uint8_t[8]",
+          "resolution": "overlapping_storage_raw"
+        },
+        {
+          "index": 151,
+          "name": "LastAppState",
+          "c_member": "_overlay_06A0.LastAppState_view.LastAppState",
+          "offset": 1703,
+          "size": 1,
+          "ghidra_type": "ulong64:3",
+          "c_type": "uint8_t[1]",
+          "resolution": "overlapping_storage_raw"
+        },
+        {
+          "index": 152,
+          "name": "SharedCommitCharge",
+          "c_member": "SharedCommitCharge",
+          "offset": 1704,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 153,
+          "name": "SharedCommitLock",
+          "c_member": "SharedCommitLock",
+          "offset": 1712,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 154,
+          "name": "SharedCommitLinks",
+          "c_member": "SharedCommitLinks",
+          "offset": 1720,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 155,
+          "name": "null",
+          "c_member": "_ghidra_field_155",
+          "offset": 1736,
+          "size": 16,
+          "ghidra_type": "_EPROCESS_u_1736",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 156,
+          "name": "DiskIoAttribution",
+          "c_member": "DiskIoAttribution",
+          "offset": 1752,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 157,
+          "name": "DxgProcess",
+          "c_member": "DxgProcess",
+          "offset": 1760,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 158,
+          "name": "Win32KFilterSet",
+          "c_member": "Win32KFilterSet",
+          "offset": 1768,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 159,
+          "name": "Machine",
+          "c_member": "Machine",
+          "offset": 1772,
+          "size": 2,
+          "ghidra_type": "ushort",
+          "c_type": "uint16_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 160,
+          "name": "MmSlabIdentity",
+          "c_member": "MmSlabIdentity",
+          "offset": 1774,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 161,
+          "name": "Spare0",
+          "c_member": "Spare0",
+          "offset": 1775,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 162,
+          "name": "ProcessTimerDelay",
+          "c_member": "ProcessTimerDelay",
+          "offset": 1776,
+          "size": 8,
+          "ghidra_type": "_PS_INTERLOCKED_TIMER_DELAY_VALUES",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 163,
+          "name": "KTimerSets",
+          "c_member": "KTimerSets",
+          "offset": 1784,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 164,
+          "name": "KTimer2Sets",
+          "c_member": "KTimer2Sets",
+          "offset": 1788,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 165,
+          "name": "ThreadTimerSets",
+          "c_member": "ThreadTimerSets",
+          "offset": 1792,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 166,
+          "name": "null",
+          "c_member": "_ghidra_field_166",
+          "offset": 1796,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 167,
+          "name": "null",
+          "c_member": "_ghidra_field_167",
+          "offset": 1797,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 168,
+          "name": "null",
+          "c_member": "_ghidra_field_168",
+          "offset": 1798,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 169,
+          "name": "null",
+          "c_member": "_ghidra_field_169",
+          "offset": 1799,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 170,
+          "name": "VirtualTimerListLock",
+          "c_member": "VirtualTimerListLock",
+          "offset": 1800,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 171,
+          "name": "VirtualTimerListHead",
+          "c_member": "VirtualTimerListHead",
+          "offset": 1808,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 172,
+          "name": "null",
+          "c_member": "_ghidra_field_172",
+          "offset": 1824,
+          "size": 48,
+          "ghidra_type": "_EPROCESS_u_1824",
+          "c_type": "uint8_t[48]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 173,
+          "name": "null",
+          "c_member": "_ghidra_field_173",
+          "offset": 1872,
+          "size": 4,
+          "ghidra_type": "_EPROCESS_u_1872",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 174,
+          "name": "null",
+          "c_member": "_ghidra_field_174",
+          "offset": 1876,
+          "size": 4,
+          "ghidra_type": "_EPROCESS_u_1876",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 175,
+          "name": "PartitionObject",
+          "c_member": "PartitionObject",
+          "offset": 1880,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 176,
+          "name": "SecurityDomain",
+          "c_member": "SecurityDomain",
+          "offset": 1888,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 177,
+          "name": "ParentSecurityDomain",
+          "c_member": "ParentSecurityDomain",
+          "offset": 1896,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 178,
+          "name": "CoverageSamplerContext",
+          "c_member": "CoverageSamplerContext",
+          "offset": 1904,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 179,
+          "name": "MmHotPatchContext",
+          "c_member": "MmHotPatchContext",
+          "offset": 1912,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 180,
+          "name": "DynamicEHContinuationTargetsTree",
+          "c_member": "DynamicEHContinuationTargetsTree",
+          "offset": 1920,
+          "size": 8,
+          "ghidra_type": "_RTL_AVL_TREE",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 181,
+          "name": "DynamicEHContinuationTargetsLock",
+          "c_member": "DynamicEHContinuationTargetsLock",
+          "offset": 1928,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 182,
+          "name": "DynamicEnforcedCetCompatibleRanges",
+          "c_member": "DynamicEnforcedCetCompatibleRanges",
+          "offset": 1936,
+          "size": 16,
+          "ghidra_type": "_PS_DYNAMIC_ENFORCED_ADDRESS_RANGES",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 183,
+          "name": "DisabledComponentFlags",
+          "c_member": "DisabledComponentFlags",
+          "offset": 1952,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 184,
+          "name": "PageCombineSequence",
+          "c_member": "PageCombineSequence",
+          "offset": 1956,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 185,
+          "name": "EnableOptionalXStateFeaturesLock",
+          "c_member": "EnableOptionalXStateFeaturesLock",
+          "offset": 1960,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 186,
+          "name": "PathRedirectionHashes",
+          "c_member": "PathRedirectionHashes",
+          "offset": 1968,
+          "size": 8,
+          "ghidra_type": "ulong *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 187,
+          "name": "SyscallProvider",
+          "c_member": "SyscallProvider",
+          "offset": 1976,
+          "size": 8,
+          "ghidra_type": "_PS_SYSCALL_PROVIDER *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 188,
+          "name": "SyscallProviderProcessLinks",
+          "c_member": "SyscallProviderProcessLinks",
+          "offset": 1984,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 189,
+          "name": "SyscallProviderDispatchContext",
+          "c_member": "SyscallProviderDispatchContext",
+          "offset": 2000,
+          "size": 8,
+          "ghidra_type": "_PSP_SYSCALL_PROVIDER_DISPATCH_CONTEXT",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 190,
+          "name": "null",
+          "c_member": "_ghidra_field_190",
+          "offset": 2008,
+          "size": 4,
+          "ghidra_type": "_EPROCESS_u_2008",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 191,
+          "name": "null",
+          "c_member": "_ghidra_field_191",
+          "offset": 2012,
+          "size": 4,
+          "ghidra_type": "_EPROCESS_u_2012",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 192,
+          "name": "null",
+          "c_member": "_ghidra_field_192",
+          "offset": 2016,
+          "size": 4,
+          "ghidra_type": "_EPROCESS_u_2016",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 193,
+          "name": "SupervisorDeviceAsid",
+          "c_member": "SupervisorDeviceAsid",
+          "offset": 2020,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 194,
+          "name": "SupervisorSvmData",
+          "c_member": "SupervisorSvmData",
+          "offset": 2024,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 195,
+          "name": "NetworkCounters",
+          "c_member": "NetworkCounters",
+          "offset": 2032,
+          "size": 8,
+          "ghidra_type": "_PROCESS_NETWORK_COUNTERS *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 196,
+          "name": "Execution",
+          "c_member": "Execution",
+          "offset": 2040,
+          "size": 4,
+          "ghidra_type": "_PROCESS_EXECUTION",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 197,
+          "name": "null",
+          "c_member": "_ghidra_field_197",
+          "offset": 2044,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 198,
+          "name": "null",
+          "c_member": "_ghidra_field_198",
+          "offset": 2045,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 199,
+          "name": "null",
+          "c_member": "_ghidra_field_199",
+          "offset": 2046,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 200,
+          "name": "null",
+          "c_member": "_ghidra_field_200",
+          "offset": 2047,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 201,
+          "name": "ThreadIndexTable",
+          "c_member": "ThreadIndexTable",
+          "offset": 2048,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 202,
+          "name": "FreezeWorkLinks",
+          "c_member": "FreezeWorkLinks",
+          "offset": 2056,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 203,
+          "name": "PpmPolicyLock",
+          "c_member": "PpmPolicyLock",
+          "offset": 2072,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 204,
+          "name": "BamPpmPolicy",
+          "c_member": "BamPpmPolicy",
+          "offset": 2080,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 205,
+          "name": "null",
+          "c_member": "_ghidra_field_205",
+          "offset": 2084,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 206,
+          "name": "null",
+          "c_member": "_ghidra_field_206",
+          "offset": 2085,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 207,
+          "name": "null",
+          "c_member": "_ghidra_field_207",
+          "offset": 2086,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 208,
+          "name": "null",
+          "c_member": "_ghidra_field_208",
+          "offset": 2087,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 209,
+          "name": "ProcessQosCallbackListEntry",
+          "c_member": "ProcessQosCallbackListEntry",
+          "offset": 2088,
+          "size": 8,
+          "ghidra_type": "_SINGLE_LIST_ENTRY",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 210,
+          "name": "null",
+          "c_member": "_ghidra_field_210",
+          "offset": 2096,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 211,
+          "name": "null",
+          "c_member": "_ghidra_field_211",
+          "offset": 2097,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 212,
+          "name": "null",
+          "c_member": "_ghidra_field_212",
+          "offset": 2098,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 213,
+          "name": "null",
+          "c_member": "_ghidra_field_213",
+          "offset": 2099,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 214,
+          "name": "null",
+          "c_member": "_ghidra_field_214",
+          "offset": 2100,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 215,
+          "name": "null",
+          "c_member": "_ghidra_field_215",
+          "offset": 2101,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 216,
+          "name": "null",
+          "c_member": "_ghidra_field_216",
+          "offset": 2102,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 217,
+          "name": "null",
+          "c_member": "_ghidra_field_217",
+          "offset": 2103,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 218,
+          "name": "null",
+          "c_member": "_ghidra_field_218",
+          "offset": 2104,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 219,
+          "name": "null",
+          "c_member": "_ghidra_field_219",
+          "offset": 2105,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 220,
+          "name": "null",
+          "c_member": "_ghidra_field_220",
+          "offset": 2106,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 221,
+          "name": "null",
+          "c_member": "_ghidra_field_221",
+          "offset": 2107,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 222,
+          "name": "null",
+          "c_member": "_ghidra_field_222",
+          "offset": 2108,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 223,
+          "name": "null",
+          "c_member": "_ghidra_field_223",
+          "offset": 2109,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 224,
+          "name": "null",
+          "c_member": "_ghidra_field_224",
+          "offset": 2110,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 225,
+          "name": "null",
+          "c_member": "_ghidra_field_225",
+          "offset": 2111,
+          "size": 1,
+          "ghidra_type": "undefined",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        }
+      ],
+      "typed_fields": 169,
+      "opaque_fields": 57
+    },
+    "_ETHREAD": {
+      "size": 1944,
+      "field_count": 76,
+      "source": "Kernel_Consulta_20261122_105236_parte_01.txt",
+      "members": [
+        {
+          "index": 0,
+          "name": "Tcb",
+          "c_member": "Tcb",
+          "offset": 0,
+          "size": 1216,
+          "ghidra_type": "_KTHREAD",
+          "c_type": "KTHREAD",
+          "resolution": "validated_embedded_priority_type"
+        },
+        {
+          "index": 1,
+          "name": "CreateTime",
+          "c_member": "CreateTime",
+          "offset": 1216,
+          "size": 8,
+          "ghidra_type": "_LARGE_INTEGER",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 2,
+          "name": "null",
+          "c_member": "_ghidra_field_2",
+          "offset": 1224,
+          "size": 16,
+          "ghidra_type": "_ETHREAD_u_1224",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 3,
+          "name": "null",
+          "c_member": "_ghidra_field_3",
+          "offset": 1240,
+          "size": 16,
+          "ghidra_type": "_ETHREAD_u_1240",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 4,
+          "name": "null",
+          "c_member": "_ghidra_field_4",
+          "offset": 1256,
+          "size": 8,
+          "ghidra_type": "_ETHREAD_u_1256",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 5,
+          "name": "ActiveTimerListLock",
+          "c_member": "ActiveTimerListLock",
+          "offset": 1264,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 6,
+          "name": "ActiveTimerListHead",
+          "c_member": "ActiveTimerListHead",
+          "offset": 1272,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 7,
+          "name": "Cid",
+          "c_member": "Cid",
+          "offset": 1288,
+          "size": 16,
+          "ghidra_type": "_CLIENT_ID",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 8,
+          "name": "null",
+          "c_member": "_ghidra_field_8",
+          "offset": 1304,
+          "size": 32,
+          "ghidra_type": "_ETHREAD_u_1304",
+          "c_type": "uint8_t[32]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 9,
+          "name": "ClientSecurity",
+          "c_member": "ClientSecurity",
+          "offset": 1336,
+          "size": 8,
+          "ghidra_type": "_PS_CLIENT_SECURITY_CONTEXT",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 10,
+          "name": "IrpList",
+          "c_member": "IrpList",
+          "offset": 1344,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 11,
+          "name": "TopLevelIrp",
+          "c_member": "TopLevelIrp",
+          "offset": 1360,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 12,
+          "name": "DeviceToVerify",
+          "c_member": "DeviceToVerify",
+          "offset": 1368,
+          "size": 8,
+          "ghidra_type": "_DEVICE_OBJECT *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 13,
+          "name": "Win32StartAddress",
+          "c_member": "Win32StartAddress",
+          "offset": 1376,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 14,
+          "name": "ChargeOnlySession",
+          "c_member": "ChargeOnlySession",
+          "offset": 1384,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 15,
+          "name": "LegacyPowerObject",
+          "c_member": "LegacyPowerObject",
+          "offset": 1392,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 16,
+          "name": "ThreadListEntry",
+          "c_member": "ThreadListEntry",
+          "offset": 1400,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 17,
+          "name": "RundownProtect",
+          "c_member": "RundownProtect",
+          "offset": 1416,
+          "size": 8,
+          "ghidra_type": "_EX_RUNDOWN_REF",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 18,
+          "name": "ThreadLock",
+          "c_member": "ThreadLock",
+          "offset": 1424,
+          "size": 8,
+          "ghidra_type": "_EX_PUSH_LOCK",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 19,
+          "name": "ReadClusterSize",
+          "c_member": "ReadClusterSize",
+          "offset": 1432,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 20,
+          "name": "MmLockOrdering",
+          "c_member": "MmLockOrdering",
+          "offset": 1436,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 21,
+          "name": "null",
+          "c_member": "_ghidra_field_21",
+          "offset": 1440,
+          "size": 4,
+          "ghidra_type": "_ETHREAD_u_1440",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 22,
+          "name": "null",
+          "c_member": "_ghidra_field_22",
+          "offset": 1444,
+          "size": 4,
+          "ghidra_type": "_ETHREAD_u_1444",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 23,
+          "name": "null",
+          "c_member": "_ghidra_field_23",
+          "offset": 1448,
+          "size": 4,
+          "ghidra_type": "_ETHREAD_u_1448",
+          "c_type": "uint8_t[4]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 24,
+          "name": "CacheManagerActive",
+          "c_member": "CacheManagerActive",
+          "offset": 1452,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 25,
+          "name": "DisablePageFaultClustering",
+          "c_member": "DisablePageFaultClustering",
+          "offset": 1453,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 26,
+          "name": "ActiveFaultCount",
+          "c_member": "ActiveFaultCount",
+          "offset": 1454,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 27,
+          "name": "LockOrderState",
+          "c_member": "LockOrderState",
+          "offset": 1455,
+          "size": 1,
+          "ghidra_type": "uchar",
+          "c_type": "uint8_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 28,
+          "name": "SharedPsModuleLockAcquires",
+          "c_member": "SharedPsModuleLockAcquires",
+          "offset": 1456,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 29,
+          "name": "MmReserved",
+          "c_member": "MmReserved",
+          "offset": 1460,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 30,
+          "name": "AlpcMessageId",
+          "c_member": "AlpcMessageId",
+          "offset": 1464,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 31,
+          "name": "null",
+          "c_member": "_ghidra_field_31",
+          "offset": 1472,
+          "size": 8,
+          "ghidra_type": "_ETHREAD_u_1472",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 32,
+          "name": "AlpcWaitListEntry",
+          "c_member": "AlpcWaitListEntry",
+          "offset": 1480,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 33,
+          "name": "ExitStatus",
+          "c_member": "ExitStatus",
+          "offset": 1496,
+          "size": 4,
+          "ghidra_type": "long",
+          "c_type": "int32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 34,
+          "name": "CacheManagerCount",
+          "c_member": "CacheManagerCount",
+          "offset": 1500,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 35,
+          "name": "IoBoostCount",
+          "c_member": "IoBoostCount",
+          "offset": 1504,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 36,
+          "name": "IoQoSBoostCount",
+          "c_member": "IoQoSBoostCount",
+          "offset": 1508,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 37,
+          "name": "IoQoSThrottleCount",
+          "c_member": "IoQoSThrottleCount",
+          "offset": 1512,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 38,
+          "name": "KernelStackReference",
+          "c_member": "KernelStackReference",
+          "offset": 1516,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 39,
+          "name": "BoostList",
+          "c_member": "BoostList",
+          "offset": 1520,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 40,
+          "name": "DeboostList",
+          "c_member": "DeboostList",
+          "offset": 1536,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 41,
+          "name": "BoostListLock",
+          "c_member": "BoostListLock",
+          "offset": 1552,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 42,
+          "name": "IrpListLock",
+          "c_member": "IrpListLock",
+          "offset": 1560,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 43,
+          "name": "ReservedForSynchTracking",
+          "c_member": "ReservedForSynchTracking",
+          "offset": 1568,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 44,
+          "name": "CmCallbackListHead",
+          "c_member": "CmCallbackListHead",
+          "offset": 1576,
+          "size": 8,
+          "ghidra_type": "_SINGLE_LIST_ENTRY",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 45,
+          "name": "ActivityId",
+          "c_member": "ActivityId",
+          "offset": 1584,
+          "size": 8,
+          "ghidra_type": "_GUID *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 46,
+          "name": "SeLearningModeListHead",
+          "c_member": "SeLearningModeListHead",
+          "offset": 1592,
+          "size": 8,
+          "ghidra_type": "_SINGLE_LIST_ENTRY",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 47,
+          "name": "VerifierContext",
+          "c_member": "VerifierContext",
+          "offset": 1600,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 48,
+          "name": "AdjustedClientToken",
+          "c_member": "AdjustedClientToken",
+          "offset": 1608,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 49,
+          "name": "WorkOnBehalfThread",
+          "c_member": "WorkOnBehalfThread",
+          "offset": 1616,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 50,
+          "name": "PropertySet",
+          "c_member": "PropertySet",
+          "offset": 1624,
+          "size": 24,
+          "ghidra_type": "_PS_PROPERTY_SET",
+          "c_type": "uint8_t[24]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 51,
+          "name": "PicoContext",
+          "c_member": "PicoContext",
+          "offset": 1648,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 52,
+          "name": "UserFsBase",
+          "c_member": "UserFsBase",
+          "offset": 1656,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 53,
+          "name": "UserGsBase",
+          "c_member": "UserGsBase",
+          "offset": 1664,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 54,
+          "name": "EnergyValues",
+          "c_member": "EnergyValues",
+          "offset": 1672,
+          "size": 8,
+          "ghidra_type": "_THREAD_ENERGY_VALUES *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 55,
+          "name": "null",
+          "c_member": "_ghidra_field_55",
+          "offset": 1680,
+          "size": 8,
+          "ghidra_type": "_ETHREAD_u_1680",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 56,
+          "name": "Silo",
+          "c_member": "Silo",
+          "offset": 1688,
+          "size": 8,
+          "ghidra_type": "_EJOB *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 57,
+          "name": "ThreadName",
+          "c_member": "ThreadName",
+          "offset": 1696,
+          "size": 8,
+          "ghidra_type": "_UNICODE_STRING *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 58,
+          "name": "SetContextState",
+          "c_member": "SetContextState",
+          "offset": 1704,
+          "size": 8,
+          "ghidra_type": "_CONTEXT *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 59,
+          "name": "EtwSupport",
+          "c_member": "EtwSupport",
+          "offset": 1712,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 60,
+          "name": "OwnerEntryListHead",
+          "c_member": "OwnerEntryListHead",
+          "offset": 1720,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 61,
+          "name": "DisownedOwnerEntryListLock",
+          "c_member": "DisownedOwnerEntryListLock",
+          "offset": 1736,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 62,
+          "name": "DisownedOwnerEntryListHead",
+          "c_member": "DisownedOwnerEntryListHead",
+          "offset": 1744,
+          "size": 16,
+          "ghidra_type": "_LIST_ENTRY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 63,
+          "name": "SchedulerSharedDataObject",
+          "c_member": "SchedulerSharedDataObject",
+          "offset": 1760,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 64,
+          "name": "CmThreadInfo",
+          "c_member": "CmThreadInfo",
+          "offset": 1768,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 65,
+          "name": "FlsData",
+          "c_member": "FlsData",
+          "offset": 1776,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 66,
+          "name": "LastExpectedRunTime",
+          "c_member": "LastExpectedRunTime",
+          "offset": 1784,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 67,
+          "name": "LastSoftParkElectionRunTime",
+          "c_member": "LastSoftParkElectionRunTime",
+          "offset": 1788,
+          "size": 4,
+          "ghidra_type": "ulong",
+          "c_type": "uint32_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 68,
+          "name": "LastSoftParkElectionGeneration",
+          "c_member": "LastSoftParkElectionGeneration",
+          "offset": 1792,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 69,
+          "name": "LastSoftParkElectionGroupAffinity",
+          "c_member": "LastSoftParkElectionGroupAffinity",
+          "offset": 1800,
+          "size": 16,
+          "ghidra_type": "_GROUP_AFFINITY",
+          "c_type": "uint8_t[16]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 70,
+          "name": "UserIsolationDomain",
+          "c_member": "UserIsolationDomain",
+          "offset": 1816,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 71,
+          "name": "null",
+          "c_member": "_ghidra_field_71",
+          "offset": 1824,
+          "size": 88,
+          "ghidra_type": "_ETHREAD_u_1824",
+          "c_type": "uint8_t[88]",
+          "resolution": "opaque_unresolved_type"
+        },
+        {
+          "index": 72,
+          "name": "Win32kThreadLock",
+          "c_member": "Win32kThreadLock",
+          "offset": 1912,
+          "size": 8,
+          "ghidra_type": "ulong64",
+          "c_type": "uint64_t",
+          "resolution": "primitive"
+        },
+        {
+          "index": 73,
+          "name": "ThreadIndex",
+          "c_member": "ThreadIndex",
+          "offset": 1920,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 74,
+          "name": "MmFaultClusterContext",
+          "c_member": "MmFaultClusterContext",
+          "offset": 1928,
+          "size": 8,
+          "ghidra_type": "void *",
+          "c_type": "uintptr_t",
+          "resolution": "pointer_as_64bit_address"
+        },
+        {
+          "index": 75,
+          "name": "ProcessFastRef",
+          "c_member": "ProcessFastRef",
+          "offset": 1936,
+          "size": 8,
+          "ghidra_type": "_EX_FAST_REF",
+          "c_type": "uint8_t[8]",
+          "resolution": "opaque_unresolved_type"
+        }
+      ],
+      "typed_fields": 48,
+      "opaque_fields": 28
+    }
+  }
+}
