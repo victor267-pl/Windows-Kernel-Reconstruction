@@ -95,8 +95,7 @@
 
 ## Comparação com o manifesto de layouts existente
 
-- _EPROCESS: tamanho PDB 2112 / manifesto 2112 bytes; tamanhos iguais=True; campos com nome+offset coincidentes=150; conflitos de offset=1
-  - Conflito LastAppState: manifesto offset 1703; PDB offset(s) [1696]
+- _EPROCESS: tamanho PDB 2112 / manifesto 2112 bytes; tamanhos iguais=True; campos com nome+offset coincidentes=151; conflitos de offset=0
 - _ETHREAD: tamanho PDB 1944 / manifesto 1944 bytes; tamanhos iguais=True; campos com nome+offset coincidentes=66; conflitos de offset=0
 - _KPROCESS: tamanho PDB 456 / manifesto 456 bytes; tamanhos iguais=True; campos com nome+offset coincidentes=52; conflitos de offset=0
 - _KTHREAD: tamanho PDB 1216 / manifesto 1216 bytes; tamanhos iguais=True; campos com nome+offset coincidentes=108; conflitos de offset=0
