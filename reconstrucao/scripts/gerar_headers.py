@@ -99,3 +99,5 @@ Path("reconstrucao/extraidos/layout_manifest.json").write_text(
 print("Gerados 5 headers, um agregador e um manifesto JSON.")
 for name,item in manifest.items():
     print(f"{name}: {item['size']} bytes; {item['field_count']} campos.")
+
+# Disparador de validacao CI: geracao e compilacao dos layouts x64.
