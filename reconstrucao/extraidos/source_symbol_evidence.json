@@ -1,0 +1,772 @@
+{
+  "files_scanned": [
+    {
+      "file": "AnalisarKernel_parte_01.txt",
+      "hits": {
+        "undefined": 60587,
+        "DAT_140e0a740": 980,
+        "DAT_140fc7d20": 1487,
+        "DAT_140fc7ab8": 741,
+        "DAT_140fc7b04": 659,
+        "DAT_140fc9c40": 252,
+        "DAT_140fc7a88": 339,
+        "DAT_140e07748": 45,
+        "unkint9": 29,
+        "unkuint9": 1228
+      }
+    },
+    {
+      "file": "AnalisarKernel_parte_02.txt",
+      "hits": {
+        "unkuint9": 2784,
+        "unkint9": 57,
+        "undefined": 103004,
+        "DAT_140e0a740": 1111,
+        "DAT_140fc9c40": 238,
+        "DAT_140fc7d20": 757,
+        "DAT_140fc7b04": 157,
+        "DAT_140fc7ab8": 111,
+        "DAT_140e07748": 203,
+        "DAT_140fc7a88": 67
+      }
+    },
+    {
+      "file": "AnalisarKernel_parte_03.txt",
+      "hits": {
+        "undefined": 77597,
+        "FUN_140a94cf0": 3,
+        "FUN_140aa9060": 3,
+        "DAT_140e0a740": 1648,
+        "DAT_140fc9c40": 26,
+        "DAT_140fc7b04": 25,
+        "DAT_140fc7d20": 50,
+        "DAT_140fc7a88": 52,
+        "DAT_140e07748": 79,
+        "DAT_140fc7ab8": 7
+      }
+    },
+    {
+      "file": "AnalisarKernel_parte_04.txt",
+      "hits": {
+        "undefined": 31896,
+        "DAT_140e0a740": 462,
+        "DAT_140e07748": 62,
+        "DAT_140fc9c40": 77,
+        "DAT_140fc7b04": 46,
+        "DAT_140fc7a88": 102,
+        "DAT_140fc7ab8": 10,
+        "DAT_140fc7d20": 53
+      }
+    },
+    {
+      "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+      "hits": {
+        "undefined": 121298
+      }
+    },
+    {
+      "file": "Kernel_Consulta_20261122_105236_parte_02.txt",
+      "hits": {
+        "DAT_140e07748": 1
+      }
+    },
+    {
+      "file": "Kernel_Consulta_20261122_105236_parte_03.txt",
+      "hits": {
+        "DAT_140fc7b04": 3
+      }
+    }
+  ],
+  "queries": {
+    "undefined": {
+      "total_hits": 394382,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 13,
+          "text": "void FUN_140200008(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 14,
+          "text": "                  undefined8 param_5,undefined8 param_6,undefined8 param_7,undefined8 param_8,"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 15,
+          "text": "                  undefined8 *param_9,undefined8 *param_10,undefined8 param_11,undefined8 param_12,"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 16,
+          "text": "                  undefined8 *param_13,undefined8 param_14,undefined8 param_15,undefined8 *param_16,"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 17,
+          "text": "                  undefined8 param_17,undefined8 param_18,undefined8 *param_19,undefined8 param_20,"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 18,
+          "text": "                  undefined8 param_21,undefined8 *param_22,undefined8 param_23,undefined8 param_24,"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 19,
+          "text": "                  undefined8 *param_25,undefined8 param_26,undefined8 param_27,undefined8 *param_28,"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 20,
+          "text": "                  undefined8 param_29,undefined8 param_30,undefined8 *param_31,undefined8 param_32,"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 21,
+          "text": "                  undefined8 param_33,undefined8 *param_34,undefined8 param_35,undefined8 param_36)"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 24,
+          "text": "  undefined1 auStack_2f8 [32];"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 25,
+          "text": "  undefined4 uStack_2d8;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 26,
+          "text": "  undefined1 *puStack_2d0;"
+        }
+      ]
+    },
+    "DAT_140e0a740": {
+      "total_hits": 4201,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 112,
+          "text": "  uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_2f8;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 643,
+          "text": "  uStack_30 = DAT_140e0a740 ^ (ulonglong)auStack_128;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 722,
+          "text": "  uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_68;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 1766,
+          "text": "  uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_158;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 1972,
+          "text": "  uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_78;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2183,
+          "text": "  uStack_10 = DAT_140e0a740 ^ (ulonglong)auStack_58;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2240,
+          "text": "  uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_c8;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2453,
+          "text": "  uStack_38 = DAT_140e0a740 ^ (ulonglong)auStack_188;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2729,
+          "text": "  uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_118;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 3359,
+          "text": "  uStack_38 = DAT_140e0a740 ^ (ulonglong)auStack_2d8;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 3552,
+          "text": "  uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_c8;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 3680,
+          "text": "  uStack_28 = DAT_140e0a740 ^ (ulonglong)auStack_d8;"
+        }
+      ]
+    },
+    "DAT_140fc7d20": {
+      "total_hits": 2347,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 362,
+          "text": "  if (DAT_140fc7d20 != 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 539,
+          "text": "  if (DAT_140fc7d20 != 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 668,
+          "text": "      if (((byte)in_CR8 < 2) && (DAT_140fc7d20 != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 1005,
+          "text": "  if (DAT_140fc7d20 != 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 1596,
+          "text": "  if (DAT_140fc7d20 != 0) goto LAB_140201cd7;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 1618,
+          "text": "      if (DAT_140fc7d20 != 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2109,
+          "text": "  if (DAT_140fc7d20 != 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2126,
+          "text": "  if (DAT_140fc7d20 != 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2803,
+          "text": "    if (DAT_140fc7d20 != 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2869,
+          "text": "    if (DAT_140fc7d20 != 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 3392,
+          "text": "      if (((byte)in_CR8 < 2) && (uVar15 = 2, DAT_140fc7d20 != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 3492,
+          "text": "      if (((byte)in_CR8 < 2) && (DAT_140fc7d20 != 0)) {"
+        }
+      ]
+    },
+    "DAT_140fc7ab8": {
+      "total_hits": 869,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 397,
+          "text": "      if ((((DAT_140fc62ac & uVar4) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 595,
+          "text": "        if ((((DAT_140fc62ac & uVar8) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 811,
+          "text": "        if (((DAT_140fc62ac & uVar10) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2185,
+          "text": "    if (((DAT_140fc7a90 >> 8 & 0xf) + 4 < 0xf) && ((char)DAT_140fc7ab8 < '\\0')) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2735,
+          "text": "  if (((char)DAT_140fc7ab8 < '\\0') && ((DAT_140fc7a90 >> 8 & 0xf) + 3 < 0xe)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2943,
+          "text": "            if ((((DAT_140fc62ac & uVar17) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 3791,
+          "text": "  uVar1 = (ulonglong)DAT_140fc7ab8;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 3793,
+          "text": "  if (((char)DAT_140fc7ab8 < '\\0') &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 5776,
+          "text": "    if ((DAT_140fc7ab8 & 0x4000000) == 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 5813,
+          "text": "  uVar5 = (ulonglong)DAT_140fc7ab8;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 5815,
+          "text": "  if ((DAT_140fc7ab8 & 4) == 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 5820,
+          "text": "  if ((DAT_140fc7ab8 & 2) == 0) {"
+        }
+      ]
+    },
+    "DAT_140fc7b04": {
+      "total_hits": 890,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 445,
+          "text": "  if ((((uint)DAT_140fc7b04 & 0x1000) != 0) && (cVar2 != '\\0')) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2965,
+          "text": "        bVar10 = bVar10 & (byte)((uint)DAT_140fc7b04 >> 0xc) & 1;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 8568,
+          "text": "  if ((((uint)DAT_140fc7b04 & 0x40000) != 0) && ((uVar16 & 3) != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 12883,
+          "text": "  if ((DAT_140fc7b04._4_4_ & 0x400000) == 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 17079,
+          "text": "  if (((DAT_140fc7b04._2_1_ & 0x21) == 0) || (DAT_140f0e27c != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 17186,
+          "text": "    if (((DAT_140fc7b04._2_1_ & 1) == 0) || (DAT_140f0e27c != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 25470,
+          "text": "    if (((DAT_140fc7b04._2_1_ & 0x21) == 0) || (DAT_140f0e27c != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 25498,
+          "text": "    if (((DAT_140fc7b04._2_1_ & 0x21) == 0) || (DAT_140f0e27c != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 25540,
+          "text": "      if (((DAT_140fc7b04._2_1_ & 1) == 0) || (DAT_140f0e27c != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 25551,
+          "text": "    if (((DAT_140fc7b04._2_1_ & 1) == 0) || (DAT_140f0e27c != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 25615,
+          "text": "    if (((DAT_140fc7b04._2_1_ & 0x21) == 0) || (DAT_140f0e27c != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 25728,
+          "text": "  if (((DAT_140fc7b04._2_1_ & 1) == 0) || (in_RAX = 0, DAT_140f0e27c != 0)) {"
+        }
+      ]
+    },
+    "DAT_140fc9c40": {
+      "total_hits": 593,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 2917,
+          "text": "      lVar4 = (&DAT_140fc9c40)[uVar18];"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 8317,
+          "text": "    lVar2 = (&DAT_140fc9c40)"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 8330,
+          "text": "     ((&DAT_140fc9c40)"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 10752,
+          "text": "      puVar15 = (ulonglong *)(&DAT_140fc9c40)[uVar4];"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 10806,
+          "text": "      puVar15 = (ulonglong *)(&DAT_140fc9c40)[uVar4];"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 10865,
+          "text": "    puVar15 = (ulonglong *)(&DAT_140fc9c40)[unaff_RBX];"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 10872,
+          "text": "  puVar14 = *(ulonglong **)((&DAT_140fc9c40)[uVar4 & 0x7fffffff] + 0x8e48);"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 11154,
+          "text": "          puVar17 = (ulonglong *)(&DAT_140fc9c40)[uVar13];"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 11194,
+          "text": "        puVar17 = (ulonglong *)(&DAT_140fc9c40)[uVar13];"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 11201,
+          "text": "      puVar19 = *(ulonglong **)((&DAT_140fc9c40)[uVar13 & 0x7fffffff] + 0x8e48);"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 11269,
+          "text": "  puVar17 = (ulonglong *)(&DAT_140fc9c40)[uVar13];"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 11461,
+          "text": "      if ((*(byte *)((&DAT_140fc9c40)[uVar2] + 0x23) & 1) != 0) {"
+        }
+      ]
+    },
+    "DAT_140fc7a88": {
+      "total_hits": 560,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 15135,
+          "text": "    if ((((DAT_140fc7a88 >> 0x24 & 1) != 0) && ((uVar7 & 0x20) == 0)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 18416,
+          "text": "  if ((DAT_140fc7a88 & 0x8000) == 0) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 18457,
+          "text": "      if (((((uVar8 & 0x20) == 0 || (uVar8 & 0x42) == 0) && ((DAT_140fc7a88 & 0x600000) != 0)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 18482,
+          "text": "    if ((((DAT_140fc7a88 >> 0x24 & 1) != 0) && (((byte)uVar8 & 0x21) == 1)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 19374,
+          "text": "              (((DAT_140e30208 != (void *)0x0 && ((DAT_140fc7a88 >> 0x28 & 1) != 0)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 19412,
+          "text": "      if ((((DAT_140fc7a88 >> 0x24 & 1) != 0) && ((uVar9 & 0x20) == 0)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 21765,
+          "text": "    if ((((puVar8[-4] & 0x3e0) == 0) && ((char)DAT_140fc7a88 < '\\0')) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 22497,
+          "text": "            if ((((DAT_140fc7a88 >> 0x24 & 1) != 0) && ((uVar13 & 0x20) == 0)) &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 23745,
+          "text": "        ((((DAT_140fc7a88 & 0x600000) != 0 &&"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 24553,
+          "text": "                (((DAT_140fc7a88 & 0x400) == 0 ||"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 24557,
+          "text": "          else if (((DAT_140fc7a88 & 0x8000) != 0) && ((*(byte *)(lVar14 + 0x10) & 0x40) != 0)) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 24669,
+          "text": "     ((((DAT_140fc7a88 & 0x8000) == 0 || (uVar4 < 0xffff800000000000)) || ((uVar10 & 2) == 0)))) {"
+        }
+      ]
+    },
+    "DAT_140e07748": {
+      "total_hits": 390,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 114209,
+          "text": "  if (5 < DAT_140e07748) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 115018,
+          "text": "    if ((DAT_140e07748 < 6) || (cVar2 = FUN_14042b0b0(&DAT_140e07748,0x400000000000), cVar2 == '\\0')"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 115037,
+          "text": "    if (((iVar3 == 0) || (DAT_140e07748 < 6)) ||"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 115038,
+          "text": "       (cVar2 = FUN_14042b0b0(&DAT_140e07748,0x400000000000), cVar2 == '\\0')) goto LAB_140294154;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 115049,
+          "text": "  FUN_1404a9b40(&DAT_140e07748,puVar4);"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 117413,
+          "text": "    if ((5 < DAT_140e07748) && (cVar4 = FUN_14042b0b0(&DAT_140e07748,0x400000000000), cVar4 != '\\0')"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 117442,
+          "text": "      FUN_1403a0f70(&DAT_140e07748,&DAT_14004bf6d,0,0);"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 119882,
+          "text": "    if (5 < DAT_140e07748) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 119934,
+          "text": "      FUN_1404a9b40(&DAT_140e07748,&DAT_140050982);"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 257554,
+          "text": "    if (5 < DAT_140e07748) {"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 257589,
+          "text": "      FUN_1404a9b40(&DAT_140e07748,&DAT_140050ad3);"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 460937,
+          "text": "          if (DAT_140e07748 < 6) goto LAB_14042c7ea;"
+        }
+      ]
+    },
+    "unkint9": {
+      "total_hits": 86,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714322,
+          "text": "  unkint9 Var2;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714323,
+          "text": "  unkint9 Var3;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714324,
+          "text": "  unkint9 Var4;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714325,
+          "text": "  unkint9 Var5;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714326,
+          "text": "  unkint9 Var6;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714327,
+          "text": "  unkint9 Var7;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714328,
+          "text": "  unkint9 Var8;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714329,
+          "text": "  unkint9 Var9;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714330,
+          "text": "  unkint9 Var10;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 715075,
+          "text": "  unkint9 Var2;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 715076,
+          "text": "  unkint9 Var3;"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 715077,
+          "text": "  unkint9 Var4;"
+        }
+      ]
+    },
+    "unkuint9": {
+      "total_hits": 4012,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714504,
+          "text": "      Var2 = (unkuint9)(ulonglong)((unkuint9)uVar139 + (unkuint9)*puVar142) +"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714505,
+          "text": "             (unkuint9)SUB168(auVar11 * auVar75,0);"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714506,
+          "text": "      Var4 = (unkuint9)uVar143 + (unkuint9)SUB168(auVar11 * auVar75,8) +"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714507,
+          "text": "             (unkuint9)((char)((unkuint9)uVar139 + (unkuint9)*puVar142 >> 0x40) != '\\0');"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714513,
+          "text": "      Var2 = (unkuint9)(ulonglong)Var4 + (unkuint9)SUB168(auVar12 * auVar76,0) +"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714514,
+          "text": "             (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\\0');"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714515,
+          "text": "      Var5 = (unkuint9)uVar141 + (unkuint9)SUB168(auVar12 * auVar76,8) +"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714516,
+          "text": "             (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\\0');"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714521,
+          "text": "      Var4 = (unkuint9)(ulonglong)Var5 + (unkuint9)SUB168(auVar13 * auVar77,0) +"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714522,
+          "text": "             (unkuint9)((char)((unkuint9)Var2 >> 0x40) != '\\0');"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714523,
+          "text": "      Var6 = (unkuint9)uVar140 + (unkuint9)SUB168(auVar13 * auVar77,8) +"
+        },
+        {
+          "file": "AnalisarKernel_parte_01.txt",
+          "line": 714524,
+          "text": "             (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\\0');"
+        }
+      ]
+    },
+    "FUN_140a94cf0": {
+      "total_hits": 3,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_03.txt",
+          "line": 128,
+          "text": "  EtwRegister(&DAT_14001bcb8,FUN_140a94cf0,0,&DAT_140f07240);"
+        },
+        {
+          "file": "AnalisarKernel_parte_03.txt",
+          "line": 691783,
+          "text": "FUNÇÃO: FUN_140a94cf0"
+        },
+        {
+          "file": "AnalisarKernel_parte_03.txt",
+          "line": 691787,
+          "text": "void FUN_140a94cf0(undefined8 param_1,int param_2)"
+        }
+      ]
+    },
+    "FUN_140aa9060": {
+      "total_hits": 3,
+      "examples": [
+        {
+          "file": "AnalisarKernel_parte_03.txt",
+          "line": 144,
+          "text": "  PoRegisterPowerSettingCallback(0,&DAT_14001a0b8,FUN_140aa9060,0,&DAT_140f06d38);"
+        },
+        {
+          "file": "AnalisarKernel_parte_03.txt",
+          "line": 711658,
+          "text": "FUNÇÃO: FUN_140aa9060"
+        },
+        {
+          "file": "AnalisarKernel_parte_03.txt",
+          "line": 711662,
+          "text": "undefined8 FUN_140aa9060(longlong *param_1,int *param_2)"
+        }
+      ]
+    }
+  }
+}
