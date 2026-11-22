@@ -1,28 +1,27 @@
 # Inventário de símbolos e dependências C
 
 - Arquivos C analisados: 4
-- Blocos de função extraídos (marcadores): 33566
-- Nomes de função distintos: 33558
+- Blocos de função extraídos (marcadores): 33826
+- Nomes de função distintos: 33818
 - Marcadores duplicados: 6
-- Identificadores chamados: 18510
-- Referências FUN_ correspondentes a rótulos extraídos: 17331
+- Identificadores chamados: 18518
+- Referências FUN_ correspondentes a rótulos extraídos: 17339
 - Referências FUN_ sem rótulo correspondente: 3
-- Símbolos de dados DAT_ distintos: 8234
+- Símbolos de dados DAT_ distintos: 8237
 
 ## Chamadas externas ou nomes sem correspondência local
 
-- LOCK — 5140
-- UNLOCK — 5140
+- LOCK — 5144
+- UNLOCK — 5143
 - CONCAT44 — 2438
 - SUB168 — 2279
-- swi — 871
+- swi — 875
 - CONCAT71 — 660
 - ZEXT816 — 316
 - wrmsr — 304
 - CARRY8 — 274
 - CONCAT22 — 259
 - rdtsc — 248
-- KeWaitForMutexObject — 227
 - rdmsr — 213
 - CONCAT14 — 196
 - CONCAT62 — 144
@@ -49,23 +48,14 @@
 - CONCAT42 — 27
 - POPCOUNT — 27
 - CONCAT26 — 25
-- MmMapLockedPagesSpecifyCache — 25
-- RtlWriteRegistryValue — 24
 - vperm2i128_avx2 — 24
 - cpuid_Version_info — 23
 - cpuid_Extended_Feature_Enumeration_info — 22
-- RtlCompareUnicodeStrings — 21
-- ExSubscribeWnfStateChange — 20
+- ExSubscribeWnfStateChange — 21
 - SEXT816 — 20
 - InterruptDescriptorTableRegister — 19
-- PoRegisterPowerSettingCallback — 19
-- RtlGetPersistedStateLocation — 19
-- ObOpenObjectByPointer — 17
 - p — 17
 - CONCAT17 — 16
-- KeSetCoalescableTimer — 16
-- KeWaitForMultipleObjects — 14
-- IoRegisterPlugPlayNotification — 13
 - cpuid_Architectural_Performance_Monitoring_info — 12
 - vpand_avx2 — 12
 - vpunpckhdq_avx2 — 12
@@ -73,17 +63,11 @@
 - vpunpckldq_avx2 — 12
 - vpunpcklqdq_avx2 — 12
 - CONCAT53 — 11
-- IoGetDeviceObjectPointer — 11
-- RtlAddAccessAllowedAceEx — 11
 - CONCAT16 — 10
 - CONCAT35 — 10
-- ExBlockOnAddressPushLock — 10
 - CONCAT21 — 9
-- PsCreateSystemThreadEx — 9
 - cpuid_Deterministic_Cache_Parameters_info — 9
 - cpuid_Thermal_Power_Management_info — 9
-- HvlInvokeFastExtendedHypercall — 8
-- RtlQueryImageFileKeyOption — 8
 - ZEXT416 — 8
 - cpuid_Extended_Topology_info — 8
 - cpuid_cache_tlb_info — 8
@@ -101,16 +85,32 @@
 - cpuid_serial_info — 7
 - AccelQueryResourceInformation — 6
 - ClfsTerminateReadLog — 6
-- LdrResSearchResource — 6
-- NtQueryInformationToken — 6
-- ObOpenObjectByNameEx — 6
 - SUB84 — 6
 - shim — 6
 - CONCAT15 — 5
 - ClfsCloseLogFileObject — 5
-- HalGetBusDataByOffset — 5
 - KdInitialize — 5
-- MmMapLockedPagesWithReservedMapping — 5
+- SUB86 — 5
+- disk — 5
+- invlpg — 5
+- multi — 5
+- rdisk — 5
+- rdpmc — 5
+- ClfsGetLogFileInformation — 4
+- ClfsReadNextLogRecord — 4
+- KdReceivePacket — 4
+- KsrGetFirmwareInformation — 4
+- SUB81 — 4
+- invpcid — 4
+- CONCAT51 — 3
+- ClfsCreateLogFile — 3
+- ClfsMgmtDeregisterManagedClient — 3
+- ClfsReadLogRecord — 3
+- LocalDescriptorTableRegister — 3
+- PshedIsSystemWheaEnabled — 3
+- PshedTranslateDimmAddress — 3
+- SUB83 — 3
+- do — 3
 
 ## Símbolos DAT_ mais referenciados
 
@@ -124,7 +124,7 @@
 - DAT_140e2dd00 — 287
 - DAT_140fc62ac — 278
 - DAT_140f0e27c — 273
-- DAT_7fffffff0000 — 258
+- DAT_7fffffff0000 — 264
 - DAT_140e30108 — 239
 - DAT_140e66448 — 239
 - DAT_140e38d80 — 231
@@ -159,10 +159,10 @@
 - DAT_140e082e8 — 73
 - DAT_140fc2528 — 71
 - DAT_140f105a0 — 71
+- DAT_140fc82b0 — 71
 - DAT_140eff478 — 70
 - DAT_140ef05f0 — 70
 - DAT_140f085e0 — 69
-- DAT_140fc82b0 — 68
 - DAT_140011f40 — 67
 - DAT_140eff398 — 67
 - DAT_140fc1a30 — 66
@@ -201,10 +201,11 @@
 - DAT_140e37670 — 45
 - DAT_140f08708 — 45
 - DAT_140f8f538 — 45
+- DAT_140fc7b14 — 44
 - DAT_140f23818 — 44
 - DAT_140fc1a60 — 44
 - DAT_140f0d0c8 — 44
-- DAT_140fc7b14 — 43
+- DAT_140fc82a0 — 44
 - DAT_140efaf20 — 43
 - DAT_140fc7aa0 — 42
 - DAT_140fc6010 — 42
@@ -213,4 +214,3 @@
 - DAT_140f10348 — 42
 - DAT_140f47980 — 42
 - DAT_140fc7b40 — 41
-- DAT_140f8fdf8 — 41

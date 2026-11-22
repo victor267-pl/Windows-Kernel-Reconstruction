@@ -2,31 +2,31 @@
   "source_files": [
     {
       "path": "reconstrucao/src/decompiled_01.c",
-      "bytes": 18910217,
-      "sha256": "4df8003beedb564d0186a2bc564a2e11253fe49c538b05e7f172469b3f875677",
-      "function_labels": 9018
+      "bytes": 18949946,
+      "sha256": "2eee144d18a8c1f58eeb3ca21461090434afa57473a6a065f2892241f68eeee6",
+      "function_labels": 9087
     },
     {
       "path": "reconstrucao/src/decompiled_02.c",
-      "bytes": 18698877,
-      "sha256": "3e8e8c537308a828c3df4b1f5e13b1ea6f77539791217cf9c5cede07be7815d8",
-      "function_labels": 11371
+      "bytes": 18720049,
+      "sha256": "07b69d34e37dd53541834e1bc8a1cf024c78b1d02f605ee884e00042c2593483",
+      "function_labels": 11431
     },
     {
       "path": "reconstrucao/src/decompiled_03.c",
-      "bytes": 18707672,
-      "sha256": "d14dd40c343f766cfbd2abb4849acad25a9aea38d1e850476588eeed44f8adab",
-      "function_labels": 8539
+      "bytes": 18793210,
+      "sha256": "5aae555d90f244d445e28772f36551f2ae8a14d2d4344c568b9b64d319754137",
+      "function_labels": 8662
     },
     {
       "path": "reconstrucao/src/decompiled_04.c",
-      "bytes": 7478370,
-      "sha256": "1cabdcd83f2e36e40302ce8c93bdb637c8c26f64b0ab5c164c60c857adeb71d0",
-      "function_labels": 4638
+      "bytes": 7487140,
+      "sha256": "d0da49436e5a017a98daf0ca6908e06c1845699630bb60f023a89c10505ba361",
+      "function_labels": 4646
     }
   ],
-  "extracted_function_labels": 33566,
-  "unique_function_labels": 33558,
+  "extracted_function_labels": 33826,
+  "unique_function_labels": 33818,
   "duplicate_function_labels": {
     "write_char": 2,
     "write_multi_char": 2,
@@ -35,18 +35,18 @@
     "_setjmp": 2,
     "RtlCopyMemory": 3
   },
-  "unique_call_identifiers": 18510,
+  "unique_call_identifiers": 18518,
   "unmatched_FUN_references": 3,
-  "local_FUN_references": 17331,
-  "unique_DAT_data_symbols": 8234,
+  "local_FUN_references": 17339,
+  "unique_DAT_data_symbols": 8237,
   "most_referenced_external_or_unmatched_calls": [
     [
       "LOCK",
-      5140
+      5144
     ],
     [
       "UNLOCK",
-      5140
+      5143
     ],
     [
       "CONCAT44",
@@ -58,7 +58,7 @@
     ],
     [
       "swi",
-      871
+      875
     ],
     [
       "CONCAT71",
@@ -83,10 +83,6 @@
     [
       "rdtsc",
       248
-    ],
-    [
-      "KeWaitForMutexObject",
-      227
     ],
     [
       "rdmsr",
@@ -193,14 +189,6 @@
       25
     ],
     [
-      "MmMapLockedPagesSpecifyCache",
-      25
-    ],
-    [
-      "RtlWriteRegistryValue",
-      24
-    ],
-    [
       "vperm2i128_avx2",
       24
     ],
@@ -213,12 +201,8 @@
       22
     ],
     [
-      "RtlCompareUnicodeStrings",
-      21
-    ],
-    [
       "ExSubscribeWnfStateChange",
-      20
+      21
     ],
     [
       "SEXT816",
@@ -229,36 +213,12 @@
       19
     ],
     [
-      "PoRegisterPowerSettingCallback",
-      19
-    ],
-    [
-      "RtlGetPersistedStateLocation",
-      19
-    ],
-    [
-      "ObOpenObjectByPointer",
-      17
-    ],
-    [
       "p",
       17
     ],
     [
       "CONCAT17",
       16
-    ],
-    [
-      "KeSetCoalescableTimer",
-      16
-    ],
-    [
-      "KeWaitForMultipleObjects",
-      14
-    ],
-    [
-      "IoRegisterPlugPlayNotification",
-      13
     ],
     [
       "cpuid_Architectural_Performance_Monitoring_info",
@@ -289,14 +249,6 @@
       11
     ],
     [
-      "IoGetDeviceObjectPointer",
-      11
-    ],
-    [
-      "RtlAddAccessAllowedAceEx",
-      11
-    ],
-    [
       "CONCAT16",
       10
     ],
@@ -305,15 +257,7 @@
       10
     ],
     [
-      "ExBlockOnAddressPushLock",
-      10
-    ],
-    [
       "CONCAT21",
-      9
-    ],
-    [
-      "PsCreateSystemThreadEx",
       9
     ],
     [
@@ -323,14 +267,6 @@
     [
       "cpuid_Thermal_Power_Management_info",
       9
-    ],
-    [
-      "HvlInvokeFastExtendedHypercall",
-      8
-    ],
-    [
-      "RtlQueryImageFileKeyOption",
-      8
     ],
     [
       "ZEXT416",
@@ -401,18 +337,6 @@
       6
     ],
     [
-      "LdrResSearchResource",
-      6
-    ],
-    [
-      "NtQueryInformationToken",
-      6
-    ],
-    [
-      "ObOpenObjectByNameEx",
-      6
-    ],
-    [
       "SUB84",
       6
     ],
@@ -429,27 +353,11 @@
       5
     ],
     [
-      "HalGetBusDataByOffset",
-      5
-    ],
-    [
       "KdInitialize",
       5
     ],
     [
-      "MmMapLockedPagesWithReservedMapping",
-      5
-    ],
-    [
-      "ObCreateObjectTypeEx",
-      5
-    ],
-    [
       "SUB86",
-      5
-    ],
-    [
-      "WheaAttemptPhysicalPageOffline",
       5
     ],
     [
@@ -481,14 +389,6 @@
       4
     ],
     [
-      "HalSetEnvironmentVariableEx",
-      4
-    ],
-    [
-      "IoConvertFileHandleToKernelHandle",
-      4
-    ],
-    [
       "KdReceivePacket",
       4
     ],
@@ -503,10 +403,6 @@
     [
       "invpcid",
       4
-    ],
-    [
-      "AlpcInitializeMessageAttribute",
-      3
     ],
     [
       "CONCAT51",
@@ -525,30 +421,6 @@
       3
     ],
     [
-      "EtwWriteStartScenario",
-      3
-    ],
-    [
-      "ExSetFirmwareEnvironmentVariable",
-      3
-    ],
-    [
-      "HalGetEnvironmentVariableEx",
-      3
-    ],
-    [
-      "HalSetBusDataByOffset",
-      3
-    ],
-    [
-      "IoAcquireRemoveLockEx",
-      3
-    ],
-    [
-      "KeHwPolicyLocateResource",
-      3
-    ],
-    [
       "LocalDescriptorTableRegister",
       3
     ],
@@ -561,23 +433,7 @@
       3
     ],
     [
-      "RtlQueryFeatureConfiguration",
-      3
-    ],
-    [
       "SUB83",
-      3
-    ],
-    [
-      "SeCaptureSecurityDescriptor",
-      3
-    ],
-    [
-      "SeConvertStringSecurityDescriptorToSecurityDescriptor",
-      3
-    ],
-    [
-      "SeCreateClientSecurity",
       3
     ],
     [
@@ -621,10 +477,6 @@
       2
     ],
     [
-      "DifObjTrkQeuryInvokeDeleteRange",
-      2
-    ],
-    [
       "ExpMicrocodeInitialization",
       2
     ],
@@ -633,23 +485,11 @@
       2
     ],
     [
+      "FID_conflict__memicmp",
+      2
+    ],
+    [
       "GlobalDescriptorTableRegister",
-      2
-    ],
-    [
-      "HalTranslateBusAddress",
-      2
-    ],
-    [
-      "IoInitializeRemoveLockEx",
-      2
-    ],
-    [
-      "IoSetIoCompletionEx3",
-      2
-    ],
-    [
-      "KeFindConfigurationNextEntry",
       2
     ],
     [
@@ -665,10 +505,6 @@
       2
     ],
     [
-      "LpcSendWaitReceivePort",
-      2
-    ],
-    [
       "MesDecodeBufferHandleCreate",
       2
     ],
@@ -677,23 +513,11 @@
       2
     ],
     [
-      "MmAllocatePartitionNodePagesForMdlEx",
-      2
-    ],
-    [
       "NT_SUCCESS",
       2
     ],
     [
       "NdrMesTypeDecode3",
-      2
-    ],
-    [
-      "NtQueryInformationFile",
-      2
-    ],
-    [
-      "NtQuerySecurityObject",
       2
     ],
     [
@@ -717,10 +541,6 @@
       2
     ],
     [
-      "RtlStringVPrintfWorkerA",
-      2
-    ],
-    [
       "SBORROW8",
       2
     ],
@@ -730,10 +550,6 @@
     ],
     [
       "SUB87",
-      2
-    ],
-    [
-      "SeAccessCheckWithHint",
       2
     ],
     [
@@ -813,10 +629,6 @@
       1
     ],
     [
-      "CarReportDifPluginRuleViolation",
-      1
-    ],
-    [
       "CcAcquireByteRange",
       1
     ],
@@ -869,27 +681,11 @@
       1
     ],
     [
-      "CmRegisterMachineHiveLoadedNotification",
-      1
-    ],
-    [
       "CmSetInitMachineConfig",
       1
     ],
     [
       "CompositefsSetBootInformation",
-      1
-    ],
-    [
-      "DbgkWerCaptureLiveKernelDump2",
-      1
-    ],
-    [
-      "EtwRegisterClassicProvider",
-      1
-    ],
-    [
-      "ExGetFirmwareEnvironmentVariable",
       1
     ],
     [
@@ -913,47 +709,7 @@
       1
     ],
     [
-      "FID_conflict__memicmp",
-      1
-    ],
-    [
-      "FsRtlAllocateExtraCreateParameter",
-      1
-    ],
-    [
-      "FsRtlInitExtraCreateParameterLookasideList",
-      1
-    ],
-    [
-      "FsRtlNotifyFilterChangeDirectory",
-      1
-    ],
-    [
-      "InterlockedPushListSList",
-      1
-    ],
-    [
-      "IoGetDeviceInterfaces",
-      1
-    ],
-    [
-      "IoOpenDeviceInterfaceRegistryKey",
-      1
-    ],
-    [
-      "IoReportTargetDeviceChangeAsynchronous",
-      1
-    ],
-    [
-      "IoSetDevicePropertyData",
-      1
-    ],
-    [
       "KdSetHiberRange",
-      1
-    ],
-    [
-      "KeQueryLogicalProcessorRelationship",
       1
     ],
     [
@@ -982,22 +738,6 @@
     ],
     [
       "MmAllocatePagesForMdl",
-      1
-    ],
-    [
-      "NtAdjustPrivilegesToken",
-      1
-    ],
-    [
-      "NtOpenProcessTokenEx",
-      1
-    ],
-    [
-      "NtQueryEnvironmentVariableInfoEx",
-      1
-    ],
-    [
-      "PsChargeProcessWakeCounter",
       1
     ],
     [
@@ -1053,63 +793,7 @@
       1
     ],
     [
-      "RtlAddAuditAccessAceEx",
-      1
-    ],
-    [
-      "RtlAddAuditAccessObjectAce",
-      1
-    ],
-    [
-      "RtlAddMandatoryAccessAllowedAce",
-      1
-    ],
-    [
-      "RtlAddMandatoryAppAccessAllowedAce",
-      1
-    ],
-    [
-      "RtlAddProcessTrustLabelAce",
-      1
-    ],
-    [
-      "RtlDecompressBufferEx",
-      1
-    ],
-    [
-      "RtlGetSetBootStatusData",
-      1
-    ],
-    [
-      "RtlInvertRangeListEx",
-      1
-    ],
-    [
-      "RtlIoDecodeMemIoResource",
-      1
-    ],
-    [
-      "RtlQueryAtomInAtomTable",
-      1
-    ],
-    [
-      "RtlRegisterFeatureConfigurationChangeNotification",
-      1
-    ],
-    [
       "RtlSetSystemBootStatus",
-      1
-    ],
-    [
-      "RtlUnicodeStringToInt64",
-      1
-    ],
-    [
-      "RtlUpcaseUnicodeToMultiByteN",
-      1
-    ],
-    [
-      "RtlUpcaseUnicodeToOemN",
       1
     ],
     [
@@ -1134,30 +818,6 @@
     ],
     [
       "SUB82",
-      1
-    ],
-    [
-      "SeAuditHardLinkCreationWithTransaction",
-      1
-    ],
-    [
-      "SeAuditingFileEventsWithContextEx",
-      1
-    ],
-    [
-      "SeConvertSecurityDescriptorToStringSecurityDescriptor",
-      1
-    ],
-    [
-      "SeCreateAccessStateEx",
-      1
-    ],
-    [
-      "SePrivilegeObjectAuditAlarm",
-      1
-    ],
-    [
-      "SeReportSecurityEventWithSubCategory",
       1
     ],
     [
@@ -1189,10 +849,6 @@
       1
     ],
     [
-      "WheaReportHwErrorDeviceDriverEx",
-      1
-    ],
-    [
       "Win32kAsyncProcessFreezeThawSupportIsActive",
       1
     ],
@@ -1202,10 +858,6 @@
     ],
     [
       "Win32kSystemTableAdd",
-      1
-    ],
-    [
-      "WmiQueryTraceInformation",
       1
     ],
     [
@@ -1304,7 +956,7 @@
     ],
     [
       "DAT_7fffffff0000",
-      258
+      264
     ],
     [
       "DAT_140e30108",
@@ -1443,6 +1095,10 @@
       71
     ],
     [
+      "DAT_140fc82b0",
+      71
+    ],
+    [
       "DAT_140eff478",
       70
     ],
@@ -1453,10 +1109,6 @@
     [
       "DAT_140f085e0",
       69
-    ],
-    [
-      "DAT_140fc82b0",
-      68
     ],
     [
       "DAT_140011f40",
@@ -1611,6 +1263,10 @@
       45
     ],
     [
+      "DAT_140fc7b14",
+      44
+    ],
+    [
       "DAT_140f23818",
       44
     ],
@@ -1623,8 +1279,8 @@
       44
     ],
     [
-      "DAT_140fc7b14",
-      43
+      "DAT_140fc82a0",
+      44
     ],
     [
       "DAT_140efaf20",
@@ -1696,10 +1352,6 @@
     ],
     [
       "DAT_140fd90b8",
-      38
-    ],
-    [
-      "DAT_140fc82a0",
       38
     ],
     [
@@ -1851,7 +1503,15 @@
       31
     ],
     [
+      "DAT_140eff2d0",
+      30
+    ],
+    [
       "DAT_140f0f580",
+      30
+    ],
+    [
+      "DAT_140efad80",
       30
     ],
     [
@@ -1935,10 +1595,6 @@
       27
     ],
     [
-      "DAT_140eff2d0",
-      27
-    ],
-    [
       "DAT_140ef74e0",
       27
     ],
@@ -1972,10 +1628,6 @@
     ],
     [
       "DAT_140fc6020",
-      26
-    ],
-    [
-      "DAT_140efad80",
       26
     ],
     [
@@ -2275,6 +1927,10 @@
       20
     ],
     [
+      "DAT_140ef7568",
+      20
+    ],
+    [
       "DAT_140e2d918",
       20
     ],
@@ -2348,10 +2004,6 @@
     ],
     [
       "DAT_140fdaab0",
-      19
-    ],
-    [
-      "DAT_140ef7568",
       19
     ],
     [
@@ -2603,6 +2255,10 @@
       16
     ],
     [
+      "DAT_140e67ec0",
+      16
+    ],
+    [
       "DAT_140fd90e0",
       16
     ],
@@ -2740,10 +2396,6 @@
     ],
     [
       "DAT_140fdaaf0",
-      15
-    ],
-    [
-      "DAT_140e67ec0",
       15
     ],
     [
