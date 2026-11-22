@@ -89,3 +89,18 @@ O GitHub recebeu as sete partes em `dados/`. A integracao atual retorna o conteu
 - 4 falharam em localizar a assinatura (`signature_not_found`).
 - 3 apresentam corpo sem balanceamento de chaves (`unbalanced_body`), exigindo inspeção manual do trecho original.
 - A extração foi reexecutada com sucesso e manteve o include do cabeçalho de protótipos auditados nos quatro arquivos C.
+
+
+## Correção de estado — commit 2026-11-22
+
+A nota anterior sobre ingestão limitada não descreve mais todo o estado do projeto. A árvore atual contém os dois binários de entrada e os artefatos extraídos deles:
+
+- `entrada/ntoskrnl.exe`: 13.172.176 bytes; x64; SHA-256 registrado em `extraidos/NTOSKRNL_PE_ANALYSIS.md`.
+- `entrada/ntkrnlmp.pdb`: 11.563.008 bytes; SymChk confirmou correspondência com o executável (GUID `CE884F70-F5A9-025D-53DB-35D8BE8BFF79`, DBI Age 1).
+- Extração PDB: TPI, publics, globals, symbols, modules e mapas de seção em `extraidos/pdb/`.
+- Grafo CodeView: 12.085 registros TPI, 4.124 UDTs; layouts principais comparados com o manifesto.
+- Análise PE: 12.428 endereços DAT_ distintos e 99.277 referências; a classificação de endereços não equivale, por si só, à recuperação dos tipos C.
+
+No commit atual, o workflow mais recente de declarações internas terminou com sucesso como automação, mas o diagnóstico GCC continua falhando nos quatro arquivos decompilados. O relatório atual registra 105 identificadores não declarados distintos; a execução automatizada não significa que o código C esteja compilável nem que exista uma imagem de kernel ligada ou inicializável.
+
+A afirmação de que os arquivos `.exe` e `.pdb` não estão no repositório estava incorreta e foi corrigida em `BOOTABILITY_BLOCKERS.md`. Não é necessário reenviar esses arquivos.
