@@ -5,6 +5,9 @@ on:
     paths:
       - 'reconstrucao/scripts/extract_functions.py'
       - '.github/workflows/extract-reconstructed-functions.yml'
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
