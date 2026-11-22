@@ -77,14 +77,11 @@ def main():
   matches=[x for x in found.get(n,[]) if x["size"]==size]
   if len(matches)!=1: raise RuntimeError(f"{n}: esperava 1 definicao StructureDB de {size} bytes em {CATEGORY}, achei {len(matches)}")
   selected[n]=matches[0]
- # Verify every field is in bounds and non-overlapping before emitting members.
+ # Validate bounds. Overlaps are legal evidence for bitfields/unions in Ghidra.
  for n,obj in selected.items():
-  fs=sorted(obj["fields"],key=lambda x:(x["offset"],x["index"]))
-  end=0
-  for f in fs:
-   if f["size"]<=0 or f["offset"]<end or f["offset"]+f["size"]>obj["size"]:
-    raise RuntimeError(f"{n}: campo sobreposto/fora dos limites: {f}")
-   end=f["offset"]+f["size"]
+  for f in obj["fields"]:
+   if f["size"]<=0 or f["offset"]<0 or f["offset"]+f["size"]>obj["size"]:
+    raise RuntimeError(f"{n}: campo fora dos limites: {f}")
  # Definitions ordered so embedded priority structures precede their containers.
  order=["_KPROCESS","_KTHREAD","_CONTEXT","_EPROCESS","_ETHREAD"]
  lines=["#ifndef NT_SEMANTIC_LAYOUTS_H","#define NT_SEMANTIC_LAYOUTS_H","","#include <stddef.h>","#include <stdint.h>","","/* Gerado exclusivamente do inventario Ghidra /ntkrnlmp.pdb.",
@@ -96,22 +93,46 @@ def main():
  for n in order:
   obj=selected[n]; typedef=ident(n.strip("_")); cursor=0; members=[]; used={}
   lines.append(f"typedef struct {typedef} {{")
-  for f in sorted(obj["fields"],key=lambda x:(x["offset"],x["index"])):
-   if f["offset"]>cursor:
-    gap=f["offset"]-cursor
-    lines.append(f"    uint8_t _padding_{cursor:04X}[{gap}];")
-   raw=f["name"]
-   nm=ident(raw) if raw and raw.lower()!="null" else f"_ghidra_field_{f['index']}"
-   used[nm]=used.get(nm,0)+1
-   if used[nm]>1: nm=f"{nm}_{used[nm]}"
-   ctype,status=resolve(f["type"],f["size"],selected)
-   if ctype.endswith("]"):
-    base,count=ctype[:-1].split("[")
-    decl=f"{base} {nm}[{count}];"
-   else: decl=f"{ctype} {nm};"
-   lines.append(f"    {decl} /* +0x{f['offset']:04X}; Ghidra={f['type']}; {status} */")
-   members.append({"index":f["index"],"name":raw,"c_member":nm,"offset":f["offset"],"size":f["size"],"ghidra_type":f["type"],"c_type":ctype,"resolution":status})
-   cursor=f["offset"]+f["size"]
+  # Collapse overlapping ranges into anonymous storage unions. This preserves ABI
+  # without inventing bit positions or treating bitfields as independent bytes.
+  fs=sorted(obj["fields"],key=lambda x:(x["offset"],x["index"]))
+  groups=[]
+  for f in fs:
+   if groups and f["offset"] < max(x["offset"]+x["size"] for x in groups[-1]):
+    groups[-1].append(f)
+   else:
+    groups.append([f])
+  for group in groups:
+   start=min(f["offset"] for f in group)
+   finish=max(f["offset"]+f["size"] for f in group)
+   if start>cursor:
+    lines.append(f"    uint8_t _padding_{cursor:04X}[{start-cursor}];")
+   if len(group)>1:
+    uname=f"_overlay_{start:04X}"
+    lines.append(f"    union {{")
+    for f in group:
+     raw=f["name"]
+     nm=ident(raw) if raw and raw.lower()!="null" else f"_ghidra_field_{f['index']}"
+     used[nm]=used.get(nm,0)+1
+     if used[nm]>1: nm=f"{nm}_{used[nm]}"
+     lines.append(f"        uint8_t {nm}[{f['size']}]; /* +0x{f['offset']:04X}; Ghidra={f['type']}; sobreposicao preservada */")
+     members.append({"index":f["index"],"name":raw,"c_member":f"{uname}.{nm}","offset":f["offset"],"size":f["size"],"ghidra_type":f["type"],"c_type":f"uint8_t[{f['size']}]","resolution":"overlapping_storage_raw"})
+    lines.append(f"        uint8_t _storage[{finish-start}];")
+    lines.append(f"    }} {uname}; /* +0x{start:04X}; intervalo sobreposto */")
+   else:
+    f=group[0]
+    raw=f["name"]
+    nm=ident(raw) if raw and raw.lower()!="null" else f"_ghidra_field_{f['index']}"
+    used[nm]=used.get(nm,0)+1
+    if used[nm]>1: nm=f"{nm}_{used[nm]}"
+    ctype,status=resolve(f["type"],f["size"],selected)
+    if ctype.endswith("]"):
+     base,count=ctype[:-1].split("[")
+     decl=f"{base} {nm}[{count}];"
+    else: decl=f"{ctype} {nm};"
+    lines.append(f"    {decl} /* +0x{f['offset']:04X}; Ghidra={f['type']}; {status} */")
+    members.append({"index":f["index"],"name":raw,"c_member":nm,"offset":f["offset"],"size":f["size"],"ghidra_type":f["type"],"c_type":ctype,"resolution":status})
+   cursor=finish
   if cursor<obj["size"]: lines.append(f"    uint8_t _padding_{cursor:04X}[{obj['size']-cursor}];")
   lines += [f"}} {typedef};",f'_Static_assert(sizeof({typedef}) == {obj["size"]}, "{typedef} size");']
   for m in members:
