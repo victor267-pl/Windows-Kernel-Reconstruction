@@ -1,0 +1,25 @@
+name: Audit Ghidra prototype arity
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/filter_prototypes_by_arity.py'
+      - 'reconstrucao/include/ghidra_function_prototypes.h'
+      - '.github/workflows/audit-prototype-arity.yml'
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare prototypes with call sites
+        run: python3 reconstrucao/scripts/filter_prototypes_by_arity.py
+      - name: Commit audited header
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/include/ghidra_function_prototypes.h reconstrucao/extraidos/prototype_arity_report.json reconstrucao/extraidos/PROTOTYPE_ARITY_AUDIT.md
+          git commit -m "Auditar aridade dos prototipos Ghidra" || exit 0
+          git pull --rebase origin main
+          git push
