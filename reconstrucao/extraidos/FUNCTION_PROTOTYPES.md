@@ -2,9 +2,9 @@
 
 - Assinaturas limpas examinadas: 32290
 - Protótipos únicos antes da checagem de chamadas: 32281
-- Protótipos mantidos após checagem de aridade: 20629
+- Protótipos mantidos após checagem de aridade: 20642
 - Nomes com assinaturas conflitantes: 2
-- Funções excluídas por incompatibilidade no número de argumentos: 11652
+- Funções excluídas por incompatibilidade no número de argumentos: 11639
 
 Protótipos derivados do Ghidra. A aridade foi comparada com chamadas observadas nos quatro arquivos; tipos ainda precisam de validação semântica.
 
@@ -14,7 +14,7 @@ Protótipos derivados do Ghidra. A aridade foi comparada com chamadas observadas
 - label_signature_mismatch: 217
 - unresolved_type: 183
 - body_text_before_first_brace: 43
-- call_arity_mismatch: 11652
+- call_arity_mismatch: 11639
 
 ## Exemplos de incompatibilidade de argumentos
 

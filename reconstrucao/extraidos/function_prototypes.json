@@ -2,14 +2,14 @@
   "source_files": 4,
   "clean_definitions_seen": 32290,
   "unique_prototypes_before_arity_check": 32281,
-  "unique_prototypes": 20629,
+  "unique_prototypes": 20642,
   "conflicting_names_omitted": 2,
   "rejected_signatures": {
     "missing_return_type": 1093,
     "label_signature_mismatch": 217,
     "unresolved_type": 183,
     "body_text_before_first_brace": 43,
-    "call_arity_mismatch": 11652
+    "call_arity_mismatch": 11639
   },
   "arity_mismatch_examples": {
     "FUN_140200008": {
@@ -862,7 +862,7 @@
     "FUN_1402242c4": {
       "expected": 2,
       "observed": [
-        0,
+        1,
         2
       ]
     },
@@ -1167,7 +1167,6 @@
     "KeReleaseInStackQueuedSpinLock": {
       "expected": 1,
       "observed": [
-        0,
         1,
         2
       ]
@@ -1234,13 +1233,6 @@
         1,
         3,
         5
-      ]
-    },
-    "FUN_140244a70": {
-      "expected": 1,
-      "observed": [
-        0,
-        1
       ]
     },
     "FUN_140244b10": {
@@ -1440,7 +1432,14 @@
         1,
         2
       ]
+    },
+    "FUN_14024de64": {
+      "expected": 5,
+      "observed": [
+        4,
+        5
+      ]
     }
   },
-  "header_sha256": "8f13ad7a89d71b6377f33d422fdb5126d3e9eda19eeccb030765b2ff06c10f9b"
+  "header_sha256": "f57c7a7e65d9edbfa36ef7df7a3c60cd1ffffbb6648ad43fb1b9b1d31f6ddb49"
 }
