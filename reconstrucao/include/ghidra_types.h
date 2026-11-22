@@ -11,6 +11,7 @@
  */
 typedef uint8_t undefined;
 typedef uint32_t uint3;
+typedef uint3 undefined3; /* 24-bit Ghidra scalar stored in a 32-bit container. */
 typedef uint64_t int7;
 typedef uint64_t uint7;
 typedef uint64_t undefined7;
