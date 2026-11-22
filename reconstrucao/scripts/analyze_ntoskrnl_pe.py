@@ -43,7 +43,7 @@ def main():
   for line_no,line in enumerate(t.splitlines(),1):
       for m in re.finditer(r"\bDAT_([0-9A-Fa-f]{8,16})\b",line):
        v=int(m.group(1),16); counts[v]+=1; first.setdefault(v,{"file":f.name,"line":line_no})
-       if re.search(re.escape(m.group(0))+r"\\s*\\^\\s*\\(ulonglong\\)\\s*auStack_",line):
+       if re.search(re.escape(m.group(0))+r"\s*\^\s*\(ulonglong\)\s*auStack_",line):
         xor_stack_uses[v]+=1
  mapped=[]; sec_counts=Counter(); storage_counts=Counter()
  for v,n in counts.items():
