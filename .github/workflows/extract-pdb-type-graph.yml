@@ -1,0 +1,25 @@
+name: Extract CodeView type graph from NT PDB
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/extract_pdb_type_graph.py'
+      - 'reconstrucao/extraidos/pdb/types.txt'
+      - '.github/workflows/extract-pdb-type-graph.yml'
+permissions:
+  contents: write
+jobs:
+  type-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse CodeView TPI records and UDT layouts
+        run: python3 reconstrucao/scripts/extract_pdb_type_graph.py
+      - name: Commit type graph and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/pdb_type_graph.json reconstrucao/extraidos/PDB_TYPE_GRAPH.md
+          git commit -m "Extrair grafo de tipos CodeView do PDB" || exit 0
+          git pull --rebase origin main
+          git push
