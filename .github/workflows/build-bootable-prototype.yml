@@ -1,0 +1,63 @@
+name: Build and boot research prototype
+
+on:
+  push:
+    branches: [bootable-research-prototype]
+    paths:
+      - "bootable-prototype/**"
+      - ".github/workflows/build-bootable-prototype.yml"
+  pull_request:
+    paths:
+      - "bootable-prototype/**"
+      - ".github/workflows/build-bootable-prototype.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-qemu-boot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install toolchain and emulator
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc binutils grub-common grub-pc-bin xorriso qemu-system-x86
+      - name: Compile freestanding x86-64 kernel
+        run: |
+          mkdir -p build/iso/boot/grub
+          gcc -m64 -ffreestanding -fno-pie -fno-pic -fno-stack-protector \
+            -fno-asynchronous-unwind-tables -mno-red-zone -mcmodel=small \
+            -Wall -Wextra -Werror -c bootable-prototype/kernel.c -o build/kernel.o
+          gcc -m64 -ffreestanding -fno-pie -fno-pic -c \
+            bootable-prototype/boot.S -o build/boot.o
+          ld -m elf_x86_64 -nostdlib -z max-page-size=0x1000 \
+            -T bootable-prototype/linker.ld build/boot.o build/kernel.o \
+            -o build/kernel.elf
+          grub-file --is-x86-multiboot2 build/kernel.elf
+          cp build/kernel.elf build/iso/boot/kernel.elf
+          cp bootable-prototype/grub.cfg build/iso/boot/grub/grub.cfg
+          grub-mkrescue -o build/kernel.iso build/iso
+      - name: Boot ISO in QEMU and assert serial marker
+        run: |
+          set +e
+          timeout 12s qemu-system-x86_64 -machine pc -cpu qemu64 -m 256M \
+            -cdrom build/kernel.iso -boot d -display none \
+            -serial file:build/serial.log -no-reboot -no-shutdown
+          rc=$?
+          set -e
+          if [ "$rc" -ne 124 ] && [ "$rc" -ne 0 ]; then
+            cat build/serial.log || true
+            exit "$rc"
+          fi
+          cat build/serial.log
+          grep -q "BOOT_OK: entered 64-bit freestanding kernel" build/serial.log
+      - name: Upload boot artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: nt-reconstruction-bootable-prototype
+          path: |
+            build/kernel.elf
+            build/kernel.iso
+            build/serial.log
