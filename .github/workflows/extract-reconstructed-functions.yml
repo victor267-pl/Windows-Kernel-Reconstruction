@@ -19,6 +19,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reconstrucao/src reconstrucao/extraidos/function_extraction.json
+          git add reconstrucao/src reconstrucao/extraidos/function_extraction.json reconstrucao/extraidos/REJECTED_FUNCTIONS.md
           git commit -m "Extrair corpos C decompilados do kernel NT" || exit 0
+          git pull --rebase origin main
           git push
