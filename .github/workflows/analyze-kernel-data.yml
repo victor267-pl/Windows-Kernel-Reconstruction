@@ -8,6 +8,9 @@ on:
       - 'reconstrucao/scripts/analisar_dados.py'
       - '.github/workflows/analyze-kernel-data.yml'
 
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 
