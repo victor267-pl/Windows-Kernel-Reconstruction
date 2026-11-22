@@ -124,3 +124,5 @@ for path in INPUTS:
     summary["functions"].extend({"name": name, "source": path.name} for name, _ in funcs)
 REPORT.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(json.dumps({k:v for k,v in summary.items() if k != "functions"}, ensure_ascii=False, indent=2))
+
+# Trigger extraction workflow after workflow registration.
