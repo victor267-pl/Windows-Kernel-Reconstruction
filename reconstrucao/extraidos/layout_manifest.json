@@ -1,0 +1,4237 @@
+{
+  "_EPROCESS": {
+    "size": 2112,
+    "field_count": 226,
+    "category": "/ntkrnlmp.pdb",
+    "fields": [
+      {
+        "index": 0,
+        "name": "Pcb",
+        "offset": 0,
+        "size": 456,
+        "type": "_KPROCESS",
+        "comment": "null"
+      },
+      {
+        "index": 1,
+        "name": "ProcessLock",
+        "offset": 456,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 2,
+        "name": "UniqueProcessId",
+        "offset": 464,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 3,
+        "name": "ActiveProcessLinks",
+        "offset": 472,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 4,
+        "name": "RundownProtect",
+        "offset": 488,
+        "size": 8,
+        "type": "_EX_RUNDOWN_REF",
+        "comment": "null"
+      },
+      {
+        "index": 5,
+        "name": "null",
+        "offset": 496,
+        "size": 4,
+        "type": "_EPROCESS_u_496",
+        "comment": "null"
+      },
+      {
+        "index": 6,
+        "name": "null",
+        "offset": 500,
+        "size": 4,
+        "type": "_EPROCESS_u_500",
+        "comment": "null"
+      },
+      {
+        "index": 7,
+        "name": "CreateTime",
+        "offset": 504,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 8,
+        "name": "ProcessQuotaUsage",
+        "offset": 512,
+        "size": 16,
+        "type": "ulong64[2]",
+        "comment": "null"
+      },
+      {
+        "index": 9,
+        "name": "ProcessQuotaPeak",
+        "offset": 528,
+        "size": 16,
+        "type": "ulong64[2]",
+        "comment": "null"
+      },
+      {
+        "index": 10,
+        "name": "PeakVirtualSize",
+        "offset": 544,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 11,
+        "name": "VirtualSize",
+        "offset": 552,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 12,
+        "name": "SessionProcessLinks",
+        "offset": 560,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 13,
+        "name": "null",
+        "offset": 576,
+        "size": 8,
+        "type": "_EPROCESS_u_576",
+        "comment": "null"
+      },
+      {
+        "index": 14,
+        "name": "Token",
+        "offset": 584,
+        "size": 8,
+        "type": "_EX_FAST_REF",
+        "comment": "null"
+      },
+      {
+        "index": 15,
+        "name": "MmReserved",
+        "offset": 592,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 16,
+        "name": "AddressCreationLock",
+        "offset": 600,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 17,
+        "name": "PageTableCommitmentLock",
+        "offset": 608,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 18,
+        "name": "RotateInProgress",
+        "offset": 616,
+        "size": 8,
+        "type": "_ETHREAD *",
+        "comment": "null"
+      },
+      {
+        "index": 19,
+        "name": "ForkInProgress",
+        "offset": 624,
+        "size": 8,
+        "type": "_ETHREAD *",
+        "comment": "null"
+      },
+      {
+        "index": 20,
+        "name": "CommitChargeJob",
+        "offset": 632,
+        "size": 8,
+        "type": "_EJOB *",
+        "comment": "null"
+      },
+      {
+        "index": 21,
+        "name": "CloneRoot",
+        "offset": 640,
+        "size": 8,
+        "type": "_RTL_AVL_TREE",
+        "comment": "null"
+      },
+      {
+        "index": 22,
+        "name": "NumberOfPrivatePages",
+        "offset": 648,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 23,
+        "name": "MmReserved2",
+        "offset": 656,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 24,
+        "name": "Win32Process",
+        "offset": 664,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 25,
+        "name": "Job",
+        "offset": 672,
+        "size": 8,
+        "type": "_EJOB *",
+        "comment": "null"
+      },
+      {
+        "index": 26,
+        "name": "SectionObject",
+        "offset": 680,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 27,
+        "name": "SectionBaseAddress",
+        "offset": 688,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 28,
+        "name": "Cookie",
+        "offset": 696,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 29,
+        "name": "null",
+        "offset": 700,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 30,
+        "name": "null",
+        "offset": 701,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 31,
+        "name": "null",
+        "offset": 702,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 32,
+        "name": "null",
+        "offset": 703,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 33,
+        "name": "WorkingSetWatch",
+        "offset": 704,
+        "size": 8,
+        "type": "_PAGEFAULT_HISTORY *",
+        "comment": "null"
+      },
+      {
+        "index": 34,
+        "name": "Win32WindowStation",
+        "offset": 712,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 35,
+        "name": "InheritedFromUniqueProcessId",
+        "offset": 720,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 36,
+        "name": "OwnerProcessId",
+        "offset": 728,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 37,
+        "name": "Peb",
+        "offset": 736,
+        "size": 8,
+        "type": "_PEB *",
+        "comment": "null"
+      },
+      {
+        "index": 38,
+        "name": "Session",
+        "offset": 744,
+        "size": 8,
+        "type": "_PSP_SESSION_SPACE *",
+        "comment": "null"
+      },
+      {
+        "index": 39,
+        "name": "Spare1",
+        "offset": 752,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 40,
+        "name": "QuotaBlock",
+        "offset": 760,
+        "size": 8,
+        "type": "_EPROCESS_QUOTA_BLOCK *",
+        "comment": "null"
+      },
+      {
+        "index": 41,
+        "name": "ObjectTable",
+        "offset": 768,
+        "size": 8,
+        "type": "_HANDLE_TABLE *",
+        "comment": "null"
+      },
+      {
+        "index": 42,
+        "name": "DebugPort",
+        "offset": 776,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 43,
+        "name": "WoW64Process",
+        "offset": 784,
+        "size": 8,
+        "type": "_EWOW64PROCESS *",
+        "comment": "null"
+      },
+      {
+        "index": 44,
+        "name": "DeviceMap",
+        "offset": 792,
+        "size": 8,
+        "type": "_EX_FAST_REF",
+        "comment": "null"
+      },
+      {
+        "index": 45,
+        "name": "EtwDataSource",
+        "offset": 800,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 46,
+        "name": "PageDirectoryPte",
+        "offset": 808,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 47,
+        "name": "ImageFilePointer",
+        "offset": 816,
+        "size": 8,
+        "type": "_FILE_OBJECT *",
+        "comment": "null"
+      },
+      {
+        "index": 48,
+        "name": "ImageFileName",
+        "offset": 824,
+        "size": 15,
+        "type": "uchar[15]",
+        "comment": "null"
+      },
+      {
+        "index": 49,
+        "name": "PriorityClass",
+        "offset": 839,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 50,
+        "name": "SecurityPort",
+        "offset": 840,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 51,
+        "name": "SeAuditProcessCreationInfo",
+        "offset": 848,
+        "size": 8,
+        "type": "_SE_AUDIT_PROCESS_CREATION_INFO",
+        "comment": "null"
+      },
+      {
+        "index": 52,
+        "name": "JobLinks",
+        "offset": 856,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 53,
+        "name": "HighestUserAddress",
+        "offset": 872,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 54,
+        "name": "ThreadListHead",
+        "offset": 880,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 55,
+        "name": "ActiveThreads",
+        "offset": 896,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 56,
+        "name": "ImagePathHash",
+        "offset": 900,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 57,
+        "name": "DefaultHardErrorProcessing",
+        "offset": 904,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 58,
+        "name": "LastThreadExitStatus",
+        "offset": 908,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 59,
+        "name": "PrefetchTrace",
+        "offset": 912,
+        "size": 8,
+        "type": "_EX_FAST_REF",
+        "comment": "null"
+      },
+      {
+        "index": 60,
+        "name": "LockedPagesList",
+        "offset": 920,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 61,
+        "name": "ReadOperationCount",
+        "offset": 928,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 62,
+        "name": "WriteOperationCount",
+        "offset": 936,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 63,
+        "name": "OtherOperationCount",
+        "offset": 944,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 64,
+        "name": "ReadTransferCount",
+        "offset": 952,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 65,
+        "name": "WriteTransferCount",
+        "offset": 960,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 66,
+        "name": "OtherTransferCount",
+        "offset": 968,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 67,
+        "name": "CommitChargeLimit",
+        "offset": 976,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 68,
+        "name": "CommitCharge",
+        "offset": 984,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 69,
+        "name": "CommitChargePeak",
+        "offset": 992,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 70,
+        "name": "null",
+        "offset": 1000,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 71,
+        "name": "null",
+        "offset": 1001,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 72,
+        "name": "null",
+        "offset": 1002,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 73,
+        "name": "null",
+        "offset": 1003,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 74,
+        "name": "null",
+        "offset": 1004,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 75,
+        "name": "null",
+        "offset": 1005,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 76,
+        "name": "null",
+        "offset": 1006,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 77,
+        "name": "null",
+        "offset": 1007,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 78,
+        "name": "null",
+        "offset": 1008,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 79,
+        "name": "null",
+        "offset": 1009,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 80,
+        "name": "null",
+        "offset": 1010,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 81,
+        "name": "null",
+        "offset": 1011,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 82,
+        "name": "null",
+        "offset": 1012,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 83,
+        "name": "null",
+        "offset": 1013,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 84,
+        "name": "null",
+        "offset": 1014,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 85,
+        "name": "null",
+        "offset": 1015,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 86,
+        "name": "null",
+        "offset": 1016,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 87,
+        "name": "null",
+        "offset": 1017,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 88,
+        "name": "null",
+        "offset": 1018,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 89,
+        "name": "null",
+        "offset": 1019,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 90,
+        "name": "null",
+        "offset": 1020,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 91,
+        "name": "null",
+        "offset": 1021,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 92,
+        "name": "null",
+        "offset": 1022,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 93,
+        "name": "null",
+        "offset": 1023,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 94,
+        "name": "Vm",
+        "offset": 1024,
+        "size": 320,
+        "type": "_MMSUPPORT_FULL",
+        "comment": "null"
+      },
+      {
+        "index": 95,
+        "name": "MmProcessLinks",
+        "offset": 1344,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 96,
+        "name": "ModifiedPageCount",
+        "offset": 1360,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 97,
+        "name": "ExitStatus",
+        "offset": 1364,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 98,
+        "name": "VadRoot",
+        "offset": 1368,
+        "size": 8,
+        "type": "_RTL_AVL_TREE",
+        "comment": "null"
+      },
+      {
+        "index": 99,
+        "name": "VadHint",
+        "offset": 1376,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 100,
+        "name": "VadCount",
+        "offset": 1384,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 101,
+        "name": "VadPhysicalPages",
+        "offset": 1392,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 102,
+        "name": "VadPhysicalPagesLimit",
+        "offset": 1400,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 103,
+        "name": "AlpcContext",
+        "offset": 1408,
+        "size": 32,
+        "type": "_ALPC_PROCESS_CONTEXT",
+        "comment": "null"
+      },
+      {
+        "index": 104,
+        "name": "TimerResolutionLink",
+        "offset": 1440,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 105,
+        "name": "TimerResolutionStackRecord",
+        "offset": 1456,
+        "size": 8,
+        "type": "_PO_DIAG_STACK_RECORD *",
+        "comment": "null"
+      },
+      {
+        "index": 106,
+        "name": "RequestedTimerResolution",
+        "offset": 1464,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 107,
+        "name": "SmallestTimerResolution",
+        "offset": 1468,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 108,
+        "name": "ExitTime",
+        "offset": 1472,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 109,
+        "name": "InvertedFunctionTable",
+        "offset": 1480,
+        "size": 8,
+        "type": "_INVERTED_FUNCTION_TABLE_KERNEL_MODE *",
+        "comment": "null"
+      },
+      {
+        "index": 110,
+        "name": "InvertedFunctionTableLock",
+        "offset": 1488,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 111,
+        "name": "ActiveThreadsHighWatermark",
+        "offset": 1496,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 112,
+        "name": "LargePrivateVadCount",
+        "offset": 1500,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 113,
+        "name": "ThreadListLock",
+        "offset": 1504,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 114,
+        "name": "WnfContext",
+        "offset": 1512,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 115,
+        "name": "ServerSilo",
+        "offset": 1520,
+        "size": 8,
+        "type": "_EJOB *",
+        "comment": "null"
+      },
+      {
+        "index": 116,
+        "name": "SignatureLevel",
+        "offset": 1528,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 117,
+        "name": "SectionSignatureLevel",
+        "offset": 1529,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 118,
+        "name": "Protection",
+        "offset": 1530,
+        "size": 1,
+        "type": "_PS_PROTECTION",
+        "comment": "null"
+      },
+      {
+        "index": 119,
+        "name": "HangCount",
+        "offset": 1531,
+        "size": 1,
+        "type": "uchar:3",
+        "comment": "null"
+      },
+      {
+        "index": 120,
+        "name": "GhostCount",
+        "offset": 1531,
+        "size": 1,
+        "type": "uchar:3",
+        "comment": "null"
+      },
+      {
+        "index": 121,
+        "name": "PrefilterException",
+        "offset": 1531,
+        "size": 1,
+        "type": "uchar:1",
+        "comment": "null"
+      },
+      {
+        "index": 122,
+        "name": "null",
+        "offset": 1532,
+        "size": 4,
+        "type": "_EPROCESS_u_1532",
+        "comment": "null"
+      },
+      {
+        "index": 123,
+        "name": "DeviceAsid",
+        "offset": 1536,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 124,
+        "name": "null",
+        "offset": 1540,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 125,
+        "name": "null",
+        "offset": 1541,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 126,
+        "name": "null",
+        "offset": 1542,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 127,
+        "name": "null",
+        "offset": 1543,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 128,
+        "name": "SvmData",
+        "offset": 1544,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 129,
+        "name": "SvmProcessLock",
+        "offset": 1552,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 130,
+        "name": "SvmLock",
+        "offset": 1560,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 131,
+        "name": "SvmProcessDeviceListHead",
+        "offset": 1568,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 132,
+        "name": "LastFreezeInterruptTime",
+        "offset": 1584,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 133,
+        "name": "DiskCounters",
+        "offset": 1592,
+        "size": 8,
+        "type": "_PROCESS_DISK_COUNTERS *",
+        "comment": "null"
+      },
+      {
+        "index": 134,
+        "name": "PicoContext",
+        "offset": 1600,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 135,
+        "name": "EnclaveTable",
+        "offset": 1608,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 136,
+        "name": "EnclaveNumber",
+        "offset": 1616,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 137,
+        "name": "EnclaveLock",
+        "offset": 1624,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 138,
+        "name": "HighPriorityFaultsAllowed",
+        "offset": 1632,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 139,
+        "name": "null",
+        "offset": 1636,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 140,
+        "name": "null",
+        "offset": 1637,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 141,
+        "name": "null",
+        "offset": 1638,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 142,
+        "name": "null",
+        "offset": 1639,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 143,
+        "name": "EnergyContext",
+        "offset": 1640,
+        "size": 8,
+        "type": "_PO_PROCESS_ENERGY_CONTEXT *",
+        "comment": "null"
+      },
+      {
+        "index": 144,
+        "name": "VmContext",
+        "offset": 1648,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 145,
+        "name": "SequenceNumber",
+        "offset": 1656,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 146,
+        "name": "CreateInterruptTime",
+        "offset": 1664,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 147,
+        "name": "CreateUnbiasedInterruptTime",
+        "offset": 1672,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 148,
+        "name": "TotalUnbiasedFrozenTime",
+        "offset": 1680,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 149,
+        "name": "LastAppStateUpdateTime",
+        "offset": 1688,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 150,
+        "name": "LastAppStateUptime",
+        "offset": 1696,
+        "size": 8,
+        "type": "ulong64:61",
+        "comment": "null"
+      },
+      {
+        "index": 151,
+        "name": "LastAppState",
+        "offset": 1703,
+        "size": 1,
+        "type": "ulong64:3",
+        "comment": "null"
+      },
+      {
+        "index": 152,
+        "name": "SharedCommitCharge",
+        "offset": 1704,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 153,
+        "name": "SharedCommitLock",
+        "offset": 1712,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 154,
+        "name": "SharedCommitLinks",
+        "offset": 1720,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 155,
+        "name": "null",
+        "offset": 1736,
+        "size": 16,
+        "type": "_EPROCESS_u_1736",
+        "comment": "null"
+      },
+      {
+        "index": 156,
+        "name": "DiskIoAttribution",
+        "offset": 1752,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 157,
+        "name": "DxgProcess",
+        "offset": 1760,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 158,
+        "name": "Win32KFilterSet",
+        "offset": 1768,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 159,
+        "name": "Machine",
+        "offset": 1772,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 160,
+        "name": "MmSlabIdentity",
+        "offset": 1774,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 161,
+        "name": "Spare0",
+        "offset": 1775,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 162,
+        "name": "ProcessTimerDelay",
+        "offset": 1776,
+        "size": 8,
+        "type": "_PS_INTERLOCKED_TIMER_DELAY_VALUES",
+        "comment": "null"
+      },
+      {
+        "index": 163,
+        "name": "KTimerSets",
+        "offset": 1784,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 164,
+        "name": "KTimer2Sets",
+        "offset": 1788,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 165,
+        "name": "ThreadTimerSets",
+        "offset": 1792,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 166,
+        "name": "null",
+        "offset": 1796,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 167,
+        "name": "null",
+        "offset": 1797,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 168,
+        "name": "null",
+        "offset": 1798,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 169,
+        "name": "null",
+        "offset": 1799,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 170,
+        "name": "VirtualTimerListLock",
+        "offset": 1800,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 171,
+        "name": "VirtualTimerListHead",
+        "offset": 1808,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 172,
+        "name": "null",
+        "offset": 1824,
+        "size": 48,
+        "type": "_EPROCESS_u_1824",
+        "comment": "null"
+      },
+      {
+        "index": 173,
+        "name": "null",
+        "offset": 1872,
+        "size": 4,
+        "type": "_EPROCESS_u_1872",
+        "comment": "null"
+      },
+      {
+        "index": 174,
+        "name": "null",
+        "offset": 1876,
+        "size": 4,
+        "type": "_EPROCESS_u_1876",
+        "comment": "null"
+      },
+      {
+        "index": 175,
+        "name": "PartitionObject",
+        "offset": 1880,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 176,
+        "name": "SecurityDomain",
+        "offset": 1888,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 177,
+        "name": "ParentSecurityDomain",
+        "offset": 1896,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 178,
+        "name": "CoverageSamplerContext",
+        "offset": 1904,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 179,
+        "name": "MmHotPatchContext",
+        "offset": 1912,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 180,
+        "name": "DynamicEHContinuationTargetsTree",
+        "offset": 1920,
+        "size": 8,
+        "type": "_RTL_AVL_TREE",
+        "comment": "null"
+      },
+      {
+        "index": 181,
+        "name": "DynamicEHContinuationTargetsLock",
+        "offset": 1928,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 182,
+        "name": "DynamicEnforcedCetCompatibleRanges",
+        "offset": 1936,
+        "size": 16,
+        "type": "_PS_DYNAMIC_ENFORCED_ADDRESS_RANGES",
+        "comment": "null"
+      },
+      {
+        "index": 183,
+        "name": "DisabledComponentFlags",
+        "offset": 1952,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 184,
+        "name": "PageCombineSequence",
+        "offset": 1956,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 185,
+        "name": "EnableOptionalXStateFeaturesLock",
+        "offset": 1960,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 186,
+        "name": "PathRedirectionHashes",
+        "offset": 1968,
+        "size": 8,
+        "type": "ulong *",
+        "comment": "null"
+      },
+      {
+        "index": 187,
+        "name": "SyscallProvider",
+        "offset": 1976,
+        "size": 8,
+        "type": "_PS_SYSCALL_PROVIDER *",
+        "comment": "null"
+      },
+      {
+        "index": 188,
+        "name": "SyscallProviderProcessLinks",
+        "offset": 1984,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 189,
+        "name": "SyscallProviderDispatchContext",
+        "offset": 2000,
+        "size": 8,
+        "type": "_PSP_SYSCALL_PROVIDER_DISPATCH_CONTEXT",
+        "comment": "null"
+      },
+      {
+        "index": 190,
+        "name": "null",
+        "offset": 2008,
+        "size": 4,
+        "type": "_EPROCESS_u_2008",
+        "comment": "null"
+      },
+      {
+        "index": 191,
+        "name": "null",
+        "offset": 2012,
+        "size": 4,
+        "type": "_EPROCESS_u_2012",
+        "comment": "null"
+      },
+      {
+        "index": 192,
+        "name": "null",
+        "offset": 2016,
+        "size": 4,
+        "type": "_EPROCESS_u_2016",
+        "comment": "null"
+      },
+      {
+        "index": 193,
+        "name": "SupervisorDeviceAsid",
+        "offset": 2020,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 194,
+        "name": "SupervisorSvmData",
+        "offset": 2024,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 195,
+        "name": "NetworkCounters",
+        "offset": 2032,
+        "size": 8,
+        "type": "_PROCESS_NETWORK_COUNTERS *",
+        "comment": "null"
+      },
+      {
+        "index": 196,
+        "name": "Execution",
+        "offset": 2040,
+        "size": 4,
+        "type": "_PROCESS_EXECUTION",
+        "comment": "null"
+      },
+      {
+        "index": 197,
+        "name": "null",
+        "offset": 2044,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 198,
+        "name": "null",
+        "offset": 2045,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 199,
+        "name": "null",
+        "offset": 2046,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 200,
+        "name": "null",
+        "offset": 2047,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 201,
+        "name": "ThreadIndexTable",
+        "offset": 2048,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 202,
+        "name": "FreezeWorkLinks",
+        "offset": 2056,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 203,
+        "name": "PpmPolicyLock",
+        "offset": 2072,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 204,
+        "name": "BamPpmPolicy",
+        "offset": 2080,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 205,
+        "name": "null",
+        "offset": 2084,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 206,
+        "name": "null",
+        "offset": 2085,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 207,
+        "name": "null",
+        "offset": 2086,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 208,
+        "name": "null",
+        "offset": 2087,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 209,
+        "name": "ProcessQosCallbackListEntry",
+        "offset": 2088,
+        "size": 8,
+        "type": "_SINGLE_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 210,
+        "name": "null",
+        "offset": 2096,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 211,
+        "name": "null",
+        "offset": 2097,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 212,
+        "name": "null",
+        "offset": 2098,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 213,
+        "name": "null",
+        "offset": 2099,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 214,
+        "name": "null",
+        "offset": 2100,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 215,
+        "name": "null",
+        "offset": 2101,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 216,
+        "name": "null",
+        "offset": 2102,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 217,
+        "name": "null",
+        "offset": 2103,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 218,
+        "name": "null",
+        "offset": 2104,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 219,
+        "name": "null",
+        "offset": 2105,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 220,
+        "name": "null",
+        "offset": 2106,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 221,
+        "name": "null",
+        "offset": 2107,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 222,
+        "name": "null",
+        "offset": 2108,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 223,
+        "name": "null",
+        "offset": 2109,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 224,
+        "name": "null",
+        "offset": 2110,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      },
+      {
+        "index": 225,
+        "name": "null",
+        "offset": 2111,
+        "size": 1,
+        "type": "undefined",
+        "comment": "null"
+      }
+    ]
+  },
+  "_ETHREAD": {
+    "size": 1944,
+    "field_count": 76,
+    "category": "/ntkrnlmp.pdb",
+    "fields": [
+      {
+        "index": 0,
+        "name": "Tcb",
+        "offset": 0,
+        "size": 1216,
+        "type": "_KTHREAD",
+        "comment": "null"
+      },
+      {
+        "index": 1,
+        "name": "CreateTime",
+        "offset": 1216,
+        "size": 8,
+        "type": "_LARGE_INTEGER",
+        "comment": "null"
+      },
+      {
+        "index": 2,
+        "name": "null",
+        "offset": 1224,
+        "size": 16,
+        "type": "_ETHREAD_u_1224",
+        "comment": "null"
+      },
+      {
+        "index": 3,
+        "name": "null",
+        "offset": 1240,
+        "size": 16,
+        "type": "_ETHREAD_u_1240",
+        "comment": "null"
+      },
+      {
+        "index": 4,
+        "name": "null",
+        "offset": 1256,
+        "size": 8,
+        "type": "_ETHREAD_u_1256",
+        "comment": "null"
+      },
+      {
+        "index": 5,
+        "name": "ActiveTimerListLock",
+        "offset": 1264,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 6,
+        "name": "ActiveTimerListHead",
+        "offset": 1272,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 7,
+        "name": "Cid",
+        "offset": 1288,
+        "size": 16,
+        "type": "_CLIENT_ID",
+        "comment": "null"
+      },
+      {
+        "index": 8,
+        "name": "null",
+        "offset": 1304,
+        "size": 32,
+        "type": "_ETHREAD_u_1304",
+        "comment": "null"
+      },
+      {
+        "index": 9,
+        "name": "ClientSecurity",
+        "offset": 1336,
+        "size": 8,
+        "type": "_PS_CLIENT_SECURITY_CONTEXT",
+        "comment": "null"
+      },
+      {
+        "index": 10,
+        "name": "IrpList",
+        "offset": 1344,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 11,
+        "name": "TopLevelIrp",
+        "offset": 1360,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 12,
+        "name": "DeviceToVerify",
+        "offset": 1368,
+        "size": 8,
+        "type": "_DEVICE_OBJECT *",
+        "comment": "null"
+      },
+      {
+        "index": 13,
+        "name": "Win32StartAddress",
+        "offset": 1376,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 14,
+        "name": "ChargeOnlySession",
+        "offset": 1384,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 15,
+        "name": "LegacyPowerObject",
+        "offset": 1392,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 16,
+        "name": "ThreadListEntry",
+        "offset": 1400,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 17,
+        "name": "RundownProtect",
+        "offset": 1416,
+        "size": 8,
+        "type": "_EX_RUNDOWN_REF",
+        "comment": "null"
+      },
+      {
+        "index": 18,
+        "name": "ThreadLock",
+        "offset": 1424,
+        "size": 8,
+        "type": "_EX_PUSH_LOCK",
+        "comment": "null"
+      },
+      {
+        "index": 19,
+        "name": "ReadClusterSize",
+        "offset": 1432,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 20,
+        "name": "MmLockOrdering",
+        "offset": 1436,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 21,
+        "name": "null",
+        "offset": 1440,
+        "size": 4,
+        "type": "_ETHREAD_u_1440",
+        "comment": "null"
+      },
+      {
+        "index": 22,
+        "name": "null",
+        "offset": 1444,
+        "size": 4,
+        "type": "_ETHREAD_u_1444",
+        "comment": "null"
+      },
+      {
+        "index": 23,
+        "name": "null",
+        "offset": 1448,
+        "size": 4,
+        "type": "_ETHREAD_u_1448",
+        "comment": "null"
+      },
+      {
+        "index": 24,
+        "name": "CacheManagerActive",
+        "offset": 1452,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 25,
+        "name": "DisablePageFaultClustering",
+        "offset": 1453,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 26,
+        "name": "ActiveFaultCount",
+        "offset": 1454,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 27,
+        "name": "LockOrderState",
+        "offset": 1455,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 28,
+        "name": "SharedPsModuleLockAcquires",
+        "offset": 1456,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 29,
+        "name": "MmReserved",
+        "offset": 1460,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 30,
+        "name": "AlpcMessageId",
+        "offset": 1464,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 31,
+        "name": "null",
+        "offset": 1472,
+        "size": 8,
+        "type": "_ETHREAD_u_1472",
+        "comment": "null"
+      },
+      {
+        "index": 32,
+        "name": "AlpcWaitListEntry",
+        "offset": 1480,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 33,
+        "name": "ExitStatus",
+        "offset": 1496,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 34,
+        "name": "CacheManagerCount",
+        "offset": 1500,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 35,
+        "name": "IoBoostCount",
+        "offset": 1504,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 36,
+        "name": "IoQoSBoostCount",
+        "offset": 1508,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 37,
+        "name": "IoQoSThrottleCount",
+        "offset": 1512,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 38,
+        "name": "KernelStackReference",
+        "offset": 1516,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 39,
+        "name": "BoostList",
+        "offset": 1520,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 40,
+        "name": "DeboostList",
+        "offset": 1536,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 41,
+        "name": "BoostListLock",
+        "offset": 1552,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 42,
+        "name": "IrpListLock",
+        "offset": 1560,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 43,
+        "name": "ReservedForSynchTracking",
+        "offset": 1568,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 44,
+        "name": "CmCallbackListHead",
+        "offset": 1576,
+        "size": 8,
+        "type": "_SINGLE_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 45,
+        "name": "ActivityId",
+        "offset": 1584,
+        "size": 8,
+        "type": "_GUID *",
+        "comment": "null"
+      },
+      {
+        "index": 46,
+        "name": "SeLearningModeListHead",
+        "offset": 1592,
+        "size": 8,
+        "type": "_SINGLE_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 47,
+        "name": "VerifierContext",
+        "offset": 1600,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 48,
+        "name": "AdjustedClientToken",
+        "offset": 1608,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 49,
+        "name": "WorkOnBehalfThread",
+        "offset": 1616,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 50,
+        "name": "PropertySet",
+        "offset": 1624,
+        "size": 24,
+        "type": "_PS_PROPERTY_SET",
+        "comment": "null"
+      },
+      {
+        "index": 51,
+        "name": "PicoContext",
+        "offset": 1648,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 52,
+        "name": "UserFsBase",
+        "offset": 1656,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 53,
+        "name": "UserGsBase",
+        "offset": 1664,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 54,
+        "name": "EnergyValues",
+        "offset": 1672,
+        "size": 8,
+        "type": "_THREAD_ENERGY_VALUES *",
+        "comment": "null"
+      },
+      {
+        "index": 55,
+        "name": "null",
+        "offset": 1680,
+        "size": 8,
+        "type": "_ETHREAD_u_1680",
+        "comment": "null"
+      },
+      {
+        "index": 56,
+        "name": "Silo",
+        "offset": 1688,
+        "size": 8,
+        "type": "_EJOB *",
+        "comment": "null"
+      },
+      {
+        "index": 57,
+        "name": "ThreadName",
+        "offset": 1696,
+        "size": 8,
+        "type": "_UNICODE_STRING *",
+        "comment": "null"
+      },
+      {
+        "index": 58,
+        "name": "SetContextState",
+        "offset": 1704,
+        "size": 8,
+        "type": "_CONTEXT *",
+        "comment": "null"
+      },
+      {
+        "index": 59,
+        "name": "EtwSupport",
+        "offset": 1712,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 60,
+        "name": "OwnerEntryListHead",
+        "offset": 1720,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 61,
+        "name": "DisownedOwnerEntryListLock",
+        "offset": 1736,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 62,
+        "name": "DisownedOwnerEntryListHead",
+        "offset": 1744,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 63,
+        "name": "SchedulerSharedDataObject",
+        "offset": 1760,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 64,
+        "name": "CmThreadInfo",
+        "offset": 1768,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 65,
+        "name": "FlsData",
+        "offset": 1776,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 66,
+        "name": "LastExpectedRunTime",
+        "offset": 1784,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 67,
+        "name": "LastSoftParkElectionRunTime",
+        "offset": 1788,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 68,
+        "name": "LastSoftParkElectionGeneration",
+        "offset": 1792,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 69,
+        "name": "LastSoftParkElectionGroupAffinity",
+        "offset": 1800,
+        "size": 16,
+        "type": "_GROUP_AFFINITY",
+        "comment": "null"
+      },
+      {
+        "index": 70,
+        "name": "UserIsolationDomain",
+        "offset": 1816,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 71,
+        "name": "null",
+        "offset": 1824,
+        "size": 88,
+        "type": "_ETHREAD_u_1824",
+        "comment": "null"
+      },
+      {
+        "index": 72,
+        "name": "Win32kThreadLock",
+        "offset": 1912,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 73,
+        "name": "ThreadIndex",
+        "offset": 1920,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 74,
+        "name": "MmFaultClusterContext",
+        "offset": 1928,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 75,
+        "name": "ProcessFastRef",
+        "offset": 1936,
+        "size": 8,
+        "type": "_EX_FAST_REF",
+        "comment": "null"
+      }
+    ]
+  },
+  "_KPROCESS": {
+    "size": 456,
+    "field_count": 53,
+    "category": "/ntkrnlmp.pdb",
+    "fields": [
+      {
+        "index": 0,
+        "name": "Header",
+        "offset": 0,
+        "size": 24,
+        "type": "_DISPATCHER_HEADER",
+        "comment": "null"
+      },
+      {
+        "index": 1,
+        "name": "ProfileListHead",
+        "offset": 24,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 2,
+        "name": "DirectoryTableBase",
+        "offset": 40,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 3,
+        "name": "ThreadListHead",
+        "offset": 48,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 4,
+        "name": "ProcessLock",
+        "offset": 64,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 5,
+        "name": "ProcessTimerDelay",
+        "offset": 68,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 6,
+        "name": "DeepFreezeStartTime",
+        "offset": 72,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 7,
+        "name": "Affinity",
+        "offset": 80,
+        "size": 8,
+        "type": "_KAFFINITY_EX *",
+        "comment": "null"
+      },
+      {
+        "index": 8,
+        "name": "AutoBoostState",
+        "offset": 88,
+        "size": 16,
+        "type": "_KAB_UM_PROCESS_CONTEXT",
+        "comment": "null"
+      },
+      {
+        "index": 9,
+        "name": "ReadyListHead",
+        "offset": 104,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 10,
+        "name": "SwapListEntry",
+        "offset": 120,
+        "size": 8,
+        "type": "_SINGLE_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 11,
+        "name": "ActiveProcessors",
+        "offset": 128,
+        "size": 8,
+        "type": "_KAFFINITY_EX *",
+        "comment": "null"
+      },
+      {
+        "index": 12,
+        "name": "null",
+        "offset": 136,
+        "size": 4,
+        "type": "_KPROCESS_u_136",
+        "comment": "null"
+      },
+      {
+        "index": 13,
+        "name": "Spare0c",
+        "offset": 140,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 14,
+        "name": "BasePriority",
+        "offset": 144,
+        "size": 1,
+        "type": "char",
+        "comment": "null"
+      },
+      {
+        "index": 15,
+        "name": "QuantumReset",
+        "offset": 145,
+        "size": 1,
+        "type": "char",
+        "comment": "null"
+      },
+      {
+        "index": 16,
+        "name": "Visited",
+        "offset": 146,
+        "size": 1,
+        "type": "char",
+        "comment": "null"
+      },
+      {
+        "index": 17,
+        "name": "Flags",
+        "offset": 147,
+        "size": 1,
+        "type": "_KEXECUTE_OPTIONS",
+        "comment": "null"
+      },
+      {
+        "index": 18,
+        "name": "ActiveGroupsMask",
+        "offset": 152,
+        "size": 16,
+        "type": "_KGROUP_MASK",
+        "comment": "null"
+      },
+      {
+        "index": 19,
+        "name": "ActiveGroupPadding",
+        "offset": 168,
+        "size": 16,
+        "type": "ulong64[2]",
+        "comment": "null"
+      },
+      {
+        "index": 20,
+        "name": "IdealProcessorAssignmentBlock",
+        "offset": 184,
+        "size": 8,
+        "type": "_KI_IDEAL_PROCESSOR_ASSIGNMENT_BLOCK *",
+        "comment": "null"
+      },
+      {
+        "index": 21,
+        "name": "Padding",
+        "offset": 192,
+        "size": 48,
+        "type": "ulong64[6]",
+        "comment": "null"
+      },
+      {
+        "index": 22,
+        "name": "Padding2",
+        "offset": 240,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 23,
+        "name": "SchedulerAssistYieldBoostCount",
+        "offset": 244,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 24,
+        "name": "SchedulerAssistYieldBoostAllowedTime",
+        "offset": 248,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 25,
+        "name": "Spare0d",
+        "offset": 256,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 26,
+        "name": "IdealGlobalNode",
+        "offset": 260,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 27,
+        "name": "Spare1",
+        "offset": 262,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 28,
+        "name": "StackCount",
+        "offset": 264,
+        "size": 4,
+        "type": "_KSTACK_COUNT",
+        "comment": "null"
+      },
+      {
+        "index": 29,
+        "name": "ProcessListEntry",
+        "offset": 272,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 30,
+        "name": "CycleTime",
+        "offset": 288,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 31,
+        "name": "ContextSwitches",
+        "offset": 296,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 32,
+        "name": "SchedulingGroup",
+        "offset": 304,
+        "size": 8,
+        "type": "_KSCHEDULING_GROUP *",
+        "comment": "null"
+      },
+      {
+        "index": 33,
+        "name": "KernelTime",
+        "offset": 312,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 34,
+        "name": "UserTime",
+        "offset": 320,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 35,
+        "name": "ReadyTime",
+        "offset": 328,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 36,
+        "name": "FreezeCount",
+        "offset": 336,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 37,
+        "name": "Spare4",
+        "offset": 340,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 38,
+        "name": "UserDirectoryTableBase",
+        "offset": 344,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 39,
+        "name": "AddressPolicy",
+        "offset": 352,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 40,
+        "name": "Spare2",
+        "offset": 353,
+        "size": 7,
+        "type": "uchar[7]",
+        "comment": "null"
+      },
+      {
+        "index": 41,
+        "name": "InstrumentationCallback",
+        "offset": 360,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 42,
+        "name": "SecureState",
+        "offset": 368,
+        "size": 8,
+        "type": "<unnamed-tag_00001B45>",
+        "comment": "null"
+      },
+      {
+        "index": 43,
+        "name": "KernelWaitTime",
+        "offset": 376,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 44,
+        "name": "UserWaitTime",
+        "offset": 384,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 45,
+        "name": "LastRebalanceQpc",
+        "offset": 392,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 46,
+        "name": "PerProcessorCycleTimes",
+        "offset": 400,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 47,
+        "name": "ExtendedFeatureDisableMask",
+        "offset": 408,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 48,
+        "name": "PrimaryGroup",
+        "offset": 416,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 49,
+        "name": "Spare3",
+        "offset": 418,
+        "size": 6,
+        "type": "ushort[3]",
+        "comment": "null"
+      },
+      {
+        "index": 50,
+        "name": "UserCetLogging",
+        "offset": 424,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 51,
+        "name": "CpuPartitionList",
+        "offset": 432,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 52,
+        "name": "AvailableCpuState",
+        "offset": 448,
+        "size": 8,
+        "type": "_KPROCESS_AVAILABLE_CPU_STATE *",
+        "comment": "null"
+      }
+    ]
+  },
+  "_KTHREAD": {
+    "size": 1216,
+    "field_count": 124,
+    "category": "/ntkrnlmp.pdb",
+    "fields": [
+      {
+        "index": 0,
+        "name": "Header",
+        "offset": 0,
+        "size": 24,
+        "type": "_DISPATCHER_HEADER",
+        "comment": "null"
+      },
+      {
+        "index": 1,
+        "name": "SListFaultAddress",
+        "offset": 24,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 2,
+        "name": "QuantumTarget",
+        "offset": 32,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 3,
+        "name": "InitialStack",
+        "offset": 40,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 4,
+        "name": "StackLimit",
+        "offset": 48,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 5,
+        "name": "StackBase",
+        "offset": 56,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 6,
+        "name": "ThreadLock",
+        "offset": 64,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 7,
+        "name": "CycleTime",
+        "offset": 72,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 8,
+        "name": "CurrentRunTime",
+        "offset": 80,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 9,
+        "name": "ExpectedRunTime",
+        "offset": 84,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 10,
+        "name": "KernelStack",
+        "offset": 88,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 11,
+        "name": "StateSaveArea",
+        "offset": 96,
+        "size": 8,
+        "type": "_XSAVE_FORMAT *",
+        "comment": "null"
+      },
+      {
+        "index": 12,
+        "name": "SchedulingGroup",
+        "offset": 104,
+        "size": 8,
+        "type": "_KSCHEDULING_GROUP *",
+        "comment": "null"
+      },
+      {
+        "index": 13,
+        "name": "WaitRegister",
+        "offset": 112,
+        "size": 1,
+        "type": "_KWAIT_STATUS_REGISTER",
+        "comment": "null"
+      },
+      {
+        "index": 14,
+        "name": "Running",
+        "offset": 113,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 15,
+        "name": "Alerted",
+        "offset": 114,
+        "size": 2,
+        "type": "uchar[2]",
+        "comment": "null"
+      },
+      {
+        "index": 16,
+        "name": "null",
+        "offset": 116,
+        "size": 4,
+        "type": "_KTHREAD_u_116",
+        "comment": "null"
+      },
+      {
+        "index": 17,
+        "name": "null",
+        "offset": 120,
+        "size": 4,
+        "type": "_KTHREAD_u_120",
+        "comment": "null"
+      },
+      {
+        "index": 18,
+        "name": "Tag",
+        "offset": 124,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 19,
+        "name": "null",
+        "offset": 125,
+        "size": 1,
+        "type": "_KTHREAD_u_125",
+        "comment": "null"
+      },
+      {
+        "index": 20,
+        "name": "null",
+        "offset": 126,
+        "size": 1,
+        "type": "_KTHREAD_u_126",
+        "comment": "null"
+      },
+      {
+        "index": 21,
+        "name": "SystemCallNumber",
+        "offset": 128,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 22,
+        "name": "ReadyTime",
+        "offset": 132,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 23,
+        "name": "FirstArgument",
+        "offset": 136,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 24,
+        "name": "TrapFrame",
+        "offset": 144,
+        "size": 8,
+        "type": "_KTRAP_FRAME *",
+        "comment": "null"
+      },
+      {
+        "index": 25,
+        "name": "null",
+        "offset": 152,
+        "size": 48,
+        "type": "_KTHREAD_u_152",
+        "comment": "null"
+      },
+      {
+        "index": 26,
+        "name": "WaitStatus",
+        "offset": 200,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 27,
+        "name": "WaitBlockList",
+        "offset": 208,
+        "size": 8,
+        "type": "_KWAIT_BLOCK *",
+        "comment": "null"
+      },
+      {
+        "index": 28,
+        "name": "null",
+        "offset": 216,
+        "size": 16,
+        "type": "_KTHREAD_u_216",
+        "comment": "null"
+      },
+      {
+        "index": 29,
+        "name": "Queue",
+        "offset": 232,
+        "size": 8,
+        "type": "_DISPATCHER_HEADER *",
+        "comment": "null"
+      },
+      {
+        "index": 30,
+        "name": "Teb",
+        "offset": 240,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 31,
+        "name": "RelativeTimerBias",
+        "offset": 248,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 32,
+        "name": "Timer",
+        "offset": 256,
+        "size": 64,
+        "type": "_KTIMER",
+        "comment": "null"
+      },
+      {
+        "index": 33,
+        "name": "null",
+        "offset": 320,
+        "size": 192,
+        "type": "_KTHREAD_u_320",
+        "comment": "null"
+      },
+      {
+        "index": 34,
+        "name": "null",
+        "offset": 512,
+        "size": 4,
+        "type": "_KTHREAD_u_512",
+        "comment": "null"
+      },
+      {
+        "index": 35,
+        "name": "BamQosLevel",
+        "offset": 516,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 36,
+        "name": "HardwareFeedbackClass",
+        "offset": 517,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 37,
+        "name": "null",
+        "offset": 518,
+        "size": 2,
+        "type": "_KTHREAD_u_518",
+        "comment": "null"
+      },
+      {
+        "index": 38,
+        "name": "QueueListEntry",
+        "offset": 520,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 39,
+        "name": "null",
+        "offset": 536,
+        "size": 4,
+        "type": "_KTHREAD_u_536",
+        "comment": "null"
+      },
+      {
+        "index": 40,
+        "name": "QueuePriority",
+        "offset": 540,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 41,
+        "name": "Process",
+        "offset": 544,
+        "size": 8,
+        "type": "_KPROCESS *",
+        "comment": "null"
+      },
+      {
+        "index": 42,
+        "name": "UserAffinity",
+        "offset": 552,
+        "size": 8,
+        "type": "_KAFFINITY_EX *",
+        "comment": "null"
+      },
+      {
+        "index": 43,
+        "name": "UserAffinityPrimaryGroup",
+        "offset": 560,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 44,
+        "name": "PreviousMode",
+        "offset": 562,
+        "size": 1,
+        "type": "char",
+        "comment": "null"
+      },
+      {
+        "index": 45,
+        "name": "BasePriority",
+        "offset": 563,
+        "size": 1,
+        "type": "char",
+        "comment": "null"
+      },
+      {
+        "index": 46,
+        "name": "Spare24",
+        "offset": 564,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 47,
+        "name": "Preempted",
+        "offset": 565,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 48,
+        "name": "AdjustReason",
+        "offset": 566,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 49,
+        "name": "AdjustIncrement",
+        "offset": 567,
+        "size": 1,
+        "type": "char",
+        "comment": "null"
+      },
+      {
+        "index": 50,
+        "name": "AffinityVersion",
+        "offset": 568,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 51,
+        "name": "Affinity",
+        "offset": 576,
+        "size": 8,
+        "type": "_KAFFINITY_EX *",
+        "comment": "null"
+      },
+      {
+        "index": 52,
+        "name": "AffinityPrimaryGroup",
+        "offset": 584,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 53,
+        "name": "ApcStateIndex",
+        "offset": 586,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 54,
+        "name": "WaitBlockCount",
+        "offset": 587,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 55,
+        "name": "IdealProcessor",
+        "offset": 588,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 56,
+        "name": "NpxState",
+        "offset": 592,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 57,
+        "name": "null",
+        "offset": 600,
+        "size": 48,
+        "type": "_KTHREAD_u_600",
+        "comment": "null"
+      },
+      {
+        "index": 58,
+        "name": "null",
+        "offset": 648,
+        "size": 88,
+        "type": "_KTHREAD_u_648",
+        "comment": "null"
+      },
+      {
+        "index": 59,
+        "name": "SuspendEvent",
+        "offset": 736,
+        "size": 24,
+        "type": "_KEVENT",
+        "comment": "null"
+      },
+      {
+        "index": 60,
+        "name": "ThreadListEntry",
+        "offset": 760,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 61,
+        "name": "MutantListHead",
+        "offset": 776,
+        "size": 16,
+        "type": "_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 62,
+        "name": "null",
+        "offset": 792,
+        "size": 2,
+        "type": "_KTHREAD_u_792",
+        "comment": "null"
+      },
+      {
+        "index": 63,
+        "name": "null",
+        "offset": 794,
+        "size": 1,
+        "type": "_KTHREAD_u_794",
+        "comment": "null"
+      },
+      {
+        "index": 64,
+        "name": "WobPriority",
+        "offset": 795,
+        "size": 1,
+        "type": "char",
+        "comment": "null"
+      },
+      {
+        "index": 65,
+        "name": "SecureThreadCookie",
+        "offset": 796,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 66,
+        "name": "SchedulerSharedSystemSlot",
+        "offset": 800,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 67,
+        "name": "PropagateBoostsEntry",
+        "offset": 808,
+        "size": 8,
+        "type": "_SINGLE_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 68,
+        "name": "IoSelfBoostsEntry",
+        "offset": 816,
+        "size": 8,
+        "type": "_SINGLE_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 69,
+        "name": "PriorityFloorCounts",
+        "offset": 824,
+        "size": 32,
+        "type": "uchar[32]",
+        "comment": "null"
+      },
+      {
+        "index": 70,
+        "name": "PriorityFloorSummary",
+        "offset": 856,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 71,
+        "name": "AbCompletedIoBoostCount",
+        "offset": 860,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 72,
+        "name": "AbCompletedIoQoSBoostCount",
+        "offset": 864,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 73,
+        "name": "KeReferenceCount",
+        "offset": 868,
+        "size": 2,
+        "type": "short",
+        "comment": "null"
+      },
+      {
+        "index": 74,
+        "name": "DecayBoost",
+        "offset": 870,
+        "size": 1,
+        "type": "char",
+        "comment": "null"
+      },
+      {
+        "index": 75,
+        "name": "Spare6",
+        "offset": 871,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 76,
+        "name": "ForegroundLossTime",
+        "offset": 872,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 77,
+        "name": "null",
+        "offset": 880,
+        "size": 16,
+        "type": "_KTHREAD_u_880",
+        "comment": "null"
+      },
+      {
+        "index": 78,
+        "name": "ReadOperationCount",
+        "offset": 896,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 79,
+        "name": "WriteOperationCount",
+        "offset": 904,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 80,
+        "name": "OtherOperationCount",
+        "offset": 912,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 81,
+        "name": "ReadTransferCount",
+        "offset": 920,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 82,
+        "name": "WriteTransferCount",
+        "offset": 928,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 83,
+        "name": "OtherTransferCount",
+        "offset": 936,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 84,
+        "name": "QueuedScb",
+        "offset": 944,
+        "size": 8,
+        "type": "_KSCB *",
+        "comment": "null"
+      },
+      {
+        "index": 85,
+        "name": "ThreadTimerDelay",
+        "offset": 952,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 86,
+        "name": "Spare26",
+        "offset": 956,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 87,
+        "name": "PpmPolicy",
+        "offset": 958,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 88,
+        "name": "Spare27",
+        "offset": 959,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 89,
+        "name": "TracingPrivate",
+        "offset": 960,
+        "size": 8,
+        "type": "ulong64[1]",
+        "comment": "null"
+      },
+      {
+        "index": 90,
+        "name": "SchedulerAssist",
+        "offset": 968,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 91,
+        "name": "AbWaitObject",
+        "offset": 976,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 92,
+        "name": "ReservedPreviousReadyTimeValue",
+        "offset": 984,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 93,
+        "name": "KernelWaitTime",
+        "offset": 992,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 94,
+        "name": "UserWaitTime",
+        "offset": 1000,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 95,
+        "name": "null",
+        "offset": 1008,
+        "size": 16,
+        "type": "_KTHREAD_u_1008",
+        "comment": "null"
+      },
+      {
+        "index": 96,
+        "name": "SchedulerAssistPriorityFloor",
+        "offset": 1024,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 97,
+        "name": "RealtimePriorityFloor",
+        "offset": 1028,
+        "size": 4,
+        "type": "long",
+        "comment": "null"
+      },
+      {
+        "index": 98,
+        "name": "KernelShadowStack",
+        "offset": 1032,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 99,
+        "name": "KernelShadowStackInitial",
+        "offset": 1040,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 100,
+        "name": "KernelShadowStackBase",
+        "offset": 1048,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 101,
+        "name": "KernelShadowStackLimit",
+        "offset": 1056,
+        "size": 8,
+        "type": "_KERNEL_SHADOW_STACK_LIMIT",
+        "comment": "null"
+      },
+      {
+        "index": 102,
+        "name": "ExtendedFeatureDisableMask",
+        "offset": 1064,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 103,
+        "name": "HgsFeedbackStartTime",
+        "offset": 1072,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 104,
+        "name": "HgsFeedbackCycles",
+        "offset": 1080,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 105,
+        "name": "HgsInvalidFeedbackCount",
+        "offset": 1088,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 106,
+        "name": "HgsLowerPerfClassFeedbackCount",
+        "offset": 1092,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 107,
+        "name": "HgsHigherPerfClassFeedbackCount",
+        "offset": 1096,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 108,
+        "name": "ModeHistory",
+        "offset": 1100,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 109,
+        "name": "SystemAffinityTokenListHead",
+        "offset": 1104,
+        "size": 8,
+        "type": "_SINGLE_LIST_ENTRY",
+        "comment": "null"
+      },
+      {
+        "index": 110,
+        "name": "IptSaveArea",
+        "offset": 1112,
+        "size": 8,
+        "type": "void *",
+        "comment": "null"
+      },
+      {
+        "index": 111,
+        "name": "ResourceIndex",
+        "offset": 1120,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 112,
+        "name": "CoreIsolationReasons",
+        "offset": 1121,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 113,
+        "name": "BamQosLevelFromAssistPage",
+        "offset": 1122,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 114,
+        "name": "SecureCallCoreIsolationCount",
+        "offset": 1123,
+        "size": 1,
+        "type": "uchar",
+        "comment": "null"
+      },
+      {
+        "index": 115,
+        "name": "SchedulerSharedOffset",
+        "offset": 1124,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 116,
+        "name": "SchedulerSharedSwappablePage",
+        "offset": 1128,
+        "size": 8,
+        "type": "_KSWAPPABLE_PAGE *",
+        "comment": "null"
+      },
+      {
+        "index": 117,
+        "name": "KernelAbEntries",
+        "offset": 1136,
+        "size": 8,
+        "type": "_KLOCK_ENTRIES *",
+        "comment": "null"
+      },
+      {
+        "index": 118,
+        "name": "UserAbEntries",
+        "offset": 1144,
+        "size": 8,
+        "type": "_KLOCK_ENTRIES *",
+        "comment": "null"
+      },
+      {
+        "index": 119,
+        "name": "KcsanThread",
+        "offset": 1152,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 120,
+        "name": "SchedulerAssistYieldCounter",
+        "offset": 1160,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 121,
+        "name": "SchedulerAssistYieldBoostCount",
+        "offset": 1164,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 122,
+        "name": "SchedulerAssistLastYieldBoostTime",
+        "offset": 1168,
+        "size": 8,
+        "type": "long64",
+        "comment": "null"
+      },
+      {
+        "index": 123,
+        "name": "Padding",
+        "offset": 1176,
+        "size": 40,
+        "type": "ulong64[5]",
+        "comment": "null"
+      }
+    ]
+  },
+  "_CONTEXT": {
+    "size": 1232,
+    "field_count": 46,
+    "category": "/ntkrnlmp.pdb",
+    "fields": [
+      {
+        "index": 0,
+        "name": "P1Home",
+        "offset": 0,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 1,
+        "name": "P2Home",
+        "offset": 8,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 2,
+        "name": "P3Home",
+        "offset": 16,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 3,
+        "name": "P4Home",
+        "offset": 24,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 4,
+        "name": "P5Home",
+        "offset": 32,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 5,
+        "name": "P6Home",
+        "offset": 40,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 6,
+        "name": "ContextFlags",
+        "offset": 48,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 7,
+        "name": "MxCsr",
+        "offset": 52,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 8,
+        "name": "SegCs",
+        "offset": 56,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 9,
+        "name": "SegDs",
+        "offset": 58,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 10,
+        "name": "SegEs",
+        "offset": 60,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 11,
+        "name": "SegFs",
+        "offset": 62,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 12,
+        "name": "SegGs",
+        "offset": 64,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 13,
+        "name": "SegSs",
+        "offset": 66,
+        "size": 2,
+        "type": "ushort",
+        "comment": "null"
+      },
+      {
+        "index": 14,
+        "name": "EFlags",
+        "offset": 68,
+        "size": 4,
+        "type": "ulong",
+        "comment": "null"
+      },
+      {
+        "index": 15,
+        "name": "Dr0",
+        "offset": 72,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 16,
+        "name": "Dr1",
+        "offset": 80,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 17,
+        "name": "Dr2",
+        "offset": 88,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 18,
+        "name": "Dr3",
+        "offset": 96,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 19,
+        "name": "Dr6",
+        "offset": 104,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 20,
+        "name": "Dr7",
+        "offset": 112,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 21,
+        "name": "Rax",
+        "offset": 120,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 22,
+        "name": "Rcx",
+        "offset": 128,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 23,
+        "name": "Rdx",
+        "offset": 136,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 24,
+        "name": "Rbx",
+        "offset": 144,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 25,
+        "name": "Rsp",
+        "offset": 152,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 26,
+        "name": "Rbp",
+        "offset": 160,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 27,
+        "name": "Rsi",
+        "offset": 168,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 28,
+        "name": "Rdi",
+        "offset": 176,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 29,
+        "name": "R8",
+        "offset": 184,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 30,
+        "name": "R9",
+        "offset": 192,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 31,
+        "name": "R10",
+        "offset": 200,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 32,
+        "name": "R11",
+        "offset": 208,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 33,
+        "name": "R12",
+        "offset": 216,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 34,
+        "name": "R13",
+        "offset": 224,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 35,
+        "name": "R14",
+        "offset": 232,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 36,
+        "name": "R15",
+        "offset": 240,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 37,
+        "name": "Rip",
+        "offset": 248,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 38,
+        "name": "null",
+        "offset": 256,
+        "size": 512,
+        "type": "_CONTEXT_u_256",
+        "comment": "null"
+      },
+      {
+        "index": 39,
+        "name": "VectorRegister",
+        "offset": 768,
+        "size": 416,
+        "type": "_M128A[26]",
+        "comment": "null"
+      },
+      {
+        "index": 40,
+        "name": "VectorControl",
+        "offset": 1184,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 41,
+        "name": "DebugControl",
+        "offset": 1192,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 42,
+        "name": "LastBranchToRip",
+        "offset": 1200,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 43,
+        "name": "LastBranchFromRip",
+        "offset": 1208,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 44,
+        "name": "LastExceptionToRip",
+        "offset": 1216,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      },
+      {
+        "index": 45,
+        "name": "LastExceptionFromRip",
+        "offset": 1224,
+        "size": 8,
+        "type": "ulong64",
+        "comment": "null"
+      }
+    ]
+  }
+}
