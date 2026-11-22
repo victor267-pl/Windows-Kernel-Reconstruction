@@ -46,3 +46,9 @@ O estado atual é **reconstrução parcial, ainda não compilável como kernel c
 - O tipo Ghidra `undefined3` foi mapeado para o container `uint3` de 32 bits, com a largura lógica de 24 bits preservada pelos helpers escalares.
 - O CI confirmou que não restam nomes de tipos ausentes no diagnóstico, mas as quatro unidades C ainda falham: 106 identificadores não declarados distintos e erros adicionais de sintaxe, tipos conflitantes e funções implícitas.
 - Nenhuma destas alterações constitui build ou link de kernel. Continuam ausentes o ambiente/ABI de linkedição NT, a resolução semântica dos demais globais e helpers, o caminho de boot e a validação em VM.
+
+## Evidência adicional de globais — 22/11/2026
+
+- `DAT_140fc7ad0` foi declarado como ponteiro para `uint32_t`, apoiado pelo uso explícito como `(uint *)`, desreferência e aritmética de ponteiro; o endereço está no zero-fill de `.data`.
+- `DAT_140f0cf28` foi declarado como armazenamento de largura `uintptr_t`, apoiado pelo uso de seu endereço como argumento de `KeAcquireSpinLockRaiseToDpc` (spin lock x64); também está no zero-fill de `.data`.
+- O arquivo `src/reconstructed_globals.c` passou na verificação isolada GCC com `-Wall -Wextra -Werror`. Os corpos decompilados continuam sem compilar como unidades completas e o kernel continua sem link ou boot testado.
