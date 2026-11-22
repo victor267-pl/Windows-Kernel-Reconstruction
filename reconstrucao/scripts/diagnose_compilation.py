@@ -68,3 +68,4 @@ print(json.dumps({"files":len(files),"files_failed":report["files_failed"],
  "missing_type_names":len(type_counts),"undeclared_identifiers":len(ident_counts),
  "error_contexts":len(report["error_contexts"]),"error_classes":dict(classes)},indent=2))
 
+
