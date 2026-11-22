@@ -223,17 +223,6 @@ reconstrucao/src/decompiled_01.c:406:5: error: implicit declaration of function 
     409:                   *(undefined8 *)(param_1 + 0x240),0x536);
 
 ## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:407
-reconstrucao/src/decompiled_01.c:407:19: error: implicit declaration of function ‘CONCAT31’ [-Wimplicit-function-declaration]
-
-    404:   }
-    405:   if ((((uint)DAT_140fc7b04 & 0x1000) != 0) && (cVar2 != '\0')) {
-    406:     FUN_1403c0604(param_1,*(undefined2 *)(param_1 + 0x248),
-    407:                   CONCAT31((uint3)(*(uint *)(param_1 + 0x74) >> 0xb),
-    408:                            (char)(*(uint *)(param_1 + 0x74) >> 3)) & 0xffffff01,0,
-    409:                   *(undefined8 *)(param_1 + 0x240),0x536);
-    410:   }
-
-## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:407
 reconstrucao/src/decompiled_01.c:407:29: error: ‘uint3’ undeclared (first use in this function); did you mean ‘uint32’?
 
     404:   }
@@ -298,17 +287,6 @@ reconstrucao/src/decompiled_01.c:430:42: error: ‘DAT_140f0cf28’ undeclared (
     431:     uVar6 = 0;
     432:     if (*DAT_140fc7ad0 != 0) {
     433:       do {
-
-## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:445
-reconstrucao/src/decompiled_01.c:445:52: error: implicit declaration of function ‘CONCAT71’ [-Wimplicit-function-declaration]
-
-    442:             uVar5 = uVar4;
-    443:           } while (uVar3 < puVar1[uVar6 * 0x70 + 0x1b]);
-    444:         }
-    445:         FUN_140201790(puVar1 + uVar6 * 0x70 + 0x14,CONCAT71((int7)(uVar4 >> 8),4),1);
-    446:         uVar3 = (int)uVar6 + 1;
-    447:         uVar6 = (ulonglong)uVar3;
-    448:       } while (uVar3 < *DAT_140fc7ad0);
 
 ## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:445
 reconstrucao/src/decompiled_01.c:445:62: error: ‘int7’ undeclared (first use in this function); did you mean ‘int’?
@@ -540,17 +518,6 @@ reconstrucao/src/decompiled_01.c:574:45: error: request for member ‘_1_7_’ i
     575:     uStack_100 = (void *)CONCAT44(1,(undefined4)uStack_100);
     576:     puVar5 = *(undefined4 **)((longlong)FiberData + 0x8c00);
     577:     uStack_f0 = *(ulonglong *)(puVar5 + 4);
-
-## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:575
-reconstrucao/src/decompiled_01.c:575:26: error: implicit declaration of function ‘CONCAT44’ [-Wimplicit-function-declaration]
-
-    572:     uStack_108 = 4;
-    573:     uVar2 = FUN_1402fd8a0();
-    574:     uStack_100 = (void *)CONCAT71(uStack_100._1_7_,uVar2);
-    575:     uStack_100 = (void *)CONCAT44(1,(undefined4)uStack_100);
-    576:     puVar5 = *(undefined4 **)((longlong)FiberData + 0x8c00);
-    577:     uStack_f0 = *(ulonglong *)(puVar5 + 4);
-    578:     uVar6 = (uint)uStack_108;
 
 ## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:575
 reconstrucao/src/decompiled_01.c:575:16: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
@@ -1321,6 +1288,39 @@ reconstrucao/src/decompiled_01.c:1085:17: error: ‘DAT_140fc7ad0’ undeclared 
     1086:   KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
     1087:   if (param_1 == *DAT_140fc7ad0 - 1U) {
     1088:     if (param_2 == '\0') {
+
+## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1092
+reconstrucao/src/decompiled_01.c:1092:7: error: implicit declaration of function ‘FUN_140293ff4’; did you mean ‘FUN_1402c3f74’? [-Wimplicit-function-declaration]
+
+    1089:       FUN_140201834(1);
+    1090:       FUN_1402015a0(1);
+    1091:       FUN_140201e00(1);
+    1092:       FUN_140293ff4(6);
+    1093:     }
+    1094:     else {
+    1095:       FUN_140201834(0);
+
+## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1098
+reconstrucao/src/decompiled_01.c:1098:7: error: implicit declaration of function ‘FUN_140294550’; did you mean ‘FUN_140494550’? [-Wimplicit-function-declaration]
+
+    1095:       FUN_140201834(0);
+    1096:       FUN_1402015a0(0);
+    1097:       FUN_140201e00(0);
+    1098:       FUN_140294550(6);
+    1099:     }
+    1100:   }
+    1101:   return;
+
+## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1114
+reconstrucao/src/decompiled_01.c:1114:7: error: ‘DAT_140fc7ad0’ undeclared (first use in this function)
+
+    1111:   ulonglong uVar3;
+    1112:   
+    1113:   uVar3 = 0;
+    1114:   if (DAT_140fc7ad0 != (uint *)0x0) {
+    1115:     uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
+    1116:     if (*DAT_140fc7ad0 != 0) {
+    1117:       do {
 
 ## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:14
 reconstrucao/src/decompiled_02.c:14:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
@@ -3863,17 +3863,6 @@ reconstrucao/src/decompiled_03.c:773:9: error: ‘_uStack_30’ undeclared (firs
     775:         _uStack_28 = CONCAT44(*(uint *)(puVar2 + 0x4b),*(undefined4 *)(puVar2 + 9));
     776:         _uStack_38 = CONCAT44(*(undefined4 *)((longlong)puVar2 + 0x254),uVar1);
 
-## FUN_14078062c */ — reconstrucao/src/decompiled_03.c:773
-reconstrucao/src/decompiled_03.c:773:22: error: implicit declaration of function ‘CONCAT44’ [-Wimplicit-function-declaration]
-
-    770:         puVar2 = (undefined8 *)*puVar2) {
-    771:       if ((*(uint *)(puVar2 + 0x4b) & 8) == 0) {
-    772:         uStack_20 = puVar2[3];
-    773:         _uStack_30 = CONCAT44(*(undefined4 *)(puVar2 + 4),*(undefined4 *)(puVar2 + 2));
-    774:         uStack_18 = puVar2[0x4c];
-    775:         _uStack_28 = CONCAT44(*(uint *)(puVar2 + 0x4b),*(undefined4 *)(puVar2 + 9));
-    776:         _uStack_38 = CONCAT44(*(undefined4 *)((longlong)puVar2 + 0x254),uVar1);
-
 ## FUN_14078062c */ — reconstrucao/src/decompiled_03.c:775
 reconstrucao/src/decompiled_03.c:775:9: error: ‘_uStack_28’ undeclared (first use in this function); did you mean ‘uStack_28’?
 
@@ -3953,6 +3942,17 @@ reconstrucao/src/decompiled_03.c:860:17: error: invalid use of void expression
 
 ## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:867
 reconstrucao/src/decompiled_03.c:867:39: error: passing argument 2 of ‘FUN_140780a78’ makes integer from pointer without a cast [-Wint-conversion]
+
+    864:       }
+    865:       else {
+    866:         *(uint *)(plVar6 + 0x4b) = uVar1 & 0xfffffffe | 2;
+    867:         uVar8 = FUN_140780a78(param_1,plVar6);
+    868:         uVar7 = 3;
+    869: LAB_140780846:
+    870:         FUN_140781248(uVar8,0,plVar6,uVar7);
+
+## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:867
+reconstrucao/src/decompiled_03.c:867:15: error: invalid use of void expression
 
     864:       }
     865:       else {
@@ -4060,17 +4060,6 @@ reconstrucao/src/decompiled_04.c:208:3: error: implicit declaration of function 
     209:   uStack_120 = 0x4000000;
     210:   uStack_1e0 = 0x130;
     211:   uStack_1c8 = 0x7000000;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:233
-reconstrucao/src/decompiled_04.c:233:28: error: implicit declaration of function ‘CONCAT71’ [-Wimplicit-function-declaration]
-
-    230:   uStack_e8 = 0x1000000;
-    231:   uStack_c8 = 0x120;
-    232:   uStack_b0 = 0x1000000;
-    233:   pwStack_360 = (wchar_t *)CONCAT71(pwStack_360._1_7_,1);
-    234:   iVar5 = FUN_14093ded0(0xc0000000,lStack_2e0,auStack_1e8,0);
-    235:   if (iVar5 < 0) goto LAB_140ac33b1;
-    236:   if ((lStack_2b0 != 0) && ((ushort)uStack_2b8 < 3)) {
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:233
 reconstrucao/src/decompiled_04.c:233:48: error: request for member ‘_1_7_’ in something not a structure or union
@@ -4282,17 +4271,6 @@ reconstrucao/src/decompiled_04.c:377:15: error: implicit declaration of function
     380:         lVar11 = lStack_218;
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:384
-reconstrucao/src/decompiled_04.c:384:36: error: implicit declaration of function ‘CONCAT44’ [-Wimplicit-function-declaration]
-
-    381:         uVar18 = (ulonglong)uStack_2c8;
-    382:         do {
-    383:           puStack_358 = auStack_318;
-    384:           pwStack_360 = (wchar_t *)CONCAT44(pwStack_360._4_4_,(uint)uVar18);
-    385:           plStack_368 = plVar10;
-    386:           iVar5 = FUN_1409a9498(lVar11,lStack_2e0,0,0);
-    387:           uVar3 = auStack_318[0];
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:384
 reconstrucao/src/decompiled_04.c:384:56: error: request for member ‘_4_4_’ in something not a structure or union
 
     381:         uVar18 = (ulonglong)uStack_2c8;
@@ -4327,17 +4305,6 @@ reconstrucao/src/decompiled_04.c:407:13: error: implicit declaration of function
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:432
 reconstrucao/src/decompiled_04.c:432:19: error: request for member ‘_0_4_’ in something not a structure or union
-
-    429:         do {
-    430:           lVar20 = lVar20 + 1;
-    431:         } while (*(short *)(lStack_310 + lVar20 * 2) != 0);
-    432:         uStack_230._0_4_ = CONCAT22(((short)lVar13 + 3 + (short)lVar20) * 2,(undefined2)uStack_230);
-    433:         lStack_228 = ExAllocatePool2(0x100,(lVar12 + lVar20) * 2 + 4U & 0xffff,0x67727453);
-    434:         if (lStack_228 == 0) {
-    435:           iVar5 = -0x3fffff66;
-
-## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:432
-reconstrucao/src/decompiled_04.c:432:28: error: implicit declaration of function ‘CONCAT22’ [-Wimplicit-function-declaration]
 
     429:         do {
     430:           lVar20 = lVar20 + 1;
@@ -4401,4 +4368,37 @@ reconstrucao/src/decompiled_04.c:488:50: error: request for member ‘_4_4_’ i
     489:     plStack_368 = (longlong *)lStack_280;
     490:     FUN_14039f2ac();
     491:   }
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:490
+reconstrucao/src/decompiled_04.c:490:5: error: implicit declaration of function ‘FUN_14039f2ac’; did you mean ‘FUN_140a9d2ac’? [-Wimplicit-function-declaration]
+
+    487:   if ((iVar5 < 0) && ((DAT_140ef02c4 & 4) != 0)) {
+    488:     pwStack_360 = (wchar_t *)CONCAT44(pwStack_360._4_4_,iVar5);
+    489:     plStack_368 = (longlong *)lStack_280;
+    490:     FUN_14039f2ac();
+    491:   }
+    492:   if (-1 < (int)param_4[1]) {
+    493:     *(int *)(param_4 + 1) = iVar5;
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:515
+reconstrucao/src/decompiled_04.c:515:49: error: request for member ‘_4_4_’ in something not a structure or union
+
+    512:     puVar14 = (undefined4 *)((longlong)plStack_2e8 + uVar19 * 0x14);
+    513:     while( true ) {
+    514:       puStack_350 = auStack_318;
+    515:       puStack_358 = (uint *)CONCAT44(puStack_358._4_4_,*(undefined4 *)((longlong)plVar15 + 4));
+    516:       pwStack_360 = (wchar_t *)plVar15[1];
+    517:       plStack_368 = plVar15;
+    518:       iVar5 = FUN_1408dfe50(lStack_218,lStack_2e0,0,puVar14);
+
+## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:518
+reconstrucao/src/decompiled_04.c:518:15: error: implicit declaration of function ‘FUN_1408dfe50’; did you mean ‘FUN_1409df550’? [-Wimplicit-function-declaration]
+
+    515:       puStack_358 = (uint *)CONCAT44(puStack_358._4_4_,*(undefined4 *)((longlong)plVar15 + 4));
+    516:       pwStack_360 = (wchar_t *)plVar15[1];
+    517:       plStack_368 = plVar15;
+    518:       iVar5 = FUN_1408dfe50(lStack_218,lStack_2e0,0,puVar14);
+    519:       if (iVar5 != -0x3fffffdd) break;
+    520:       if (auStack_318[0] <= *(uint *)((longlong)plVar15 + 4)) {
+    521:         iVar5 = -0x3fffff1b;
 
