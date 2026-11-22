@@ -69,3 +69,14 @@ O GitHub recebeu as sete partes em `dados/`. A integracao atual retorna o conteu
 - `FUNCTION_PROTOTYPES.md` documenta critérios e exclusões.
 - `COMPILER_ERROR_CONTEXTS.md` associa os primeiros erros do GCC às funções e linhas específicas, permitindo corrigir dependências sem declarar símbolos arbitrariamente.
 - Limitação: protótipos reproduzem assinaturas do Ghidra, não são validação ABI nem headers WDK. Variáveis globais `DAT_`, símbolos de registradores, tipos desconhecidos e helpers decompilador ainda exigem resolução específica.
+
+
+## Auditoria de protótipos e nova validação
+
+- O cabeçalho final contém **20.642 protótipos** mantidos após comparar a aridade das assinaturas Ghidra com os pontos de chamada encontrados nos quatro arquivos C.
+- Outros **11.639 nomes** foram excluídos da geração automática porque as chamadas observadas não concordam com o número de parâmetros da assinatura recuperada. Isso evita esconder incompatibilidades com protótipos incorretos.
+- A auditoria independente de `prototype_arity_report.json` confirmou que os 20.642 protótipos mantidos não apresentam incompatibilidade de aridade nos pontos de chamada examinados.
+- Os aliases WDK/CRT usados pelo cabeçalho foram preservados: `NTSTATUS`, `HANDLE`, `ULONGLONG`, `PCONTEXT`, `errno_t`, `rsize_t` e declarações opacas para tipos referenciados por ponteiro. Tipos sem largura/semântica conhecida foram excluídos em vez de receber aliases arbitrários.
+- A validação GCC posterior não acusa mais erros dentro do cabeçalho de protótipos. Os quatro arquivos decompilados ainda falham na análise de sintaxe/semântica: permanecem globais `DAT_` sem declaração, variáveis especiais Ghidra (`FiberData`, `SystemReserved1`), tipos sem largura conhecida (`undefined`, `unkint9`, `code`), helpers Ghidra (`CONCAT71`, `LOCK`, `UNLOCK`) e funções WDK/importadas ou chamadas com assinaturas ainda não recuperadas.
+- O diagnóstico limita-se aos primeiros 120 erros por arquivo; não representa a contagem completa de erros. Não há ainda um build de kernel.
+- Arquivos de referência: `extraidos/prototype_arity_report.json`, `extraidos/PROTOTYPE_ARITY_AUDIT.md`, `extraidos/compiler_diagnostics.json` e `extraidos/COMPILER_ERROR_CONTEXTS.md`.
