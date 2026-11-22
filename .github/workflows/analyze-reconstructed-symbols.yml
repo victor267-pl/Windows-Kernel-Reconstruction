@@ -1,0 +1,24 @@
+name: Analyze reconstructed NT symbols
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/analyze_dependencies.py'
+      - 'reconstrucao/src/decompiled_*.c'
+      - '.github/workflows/analyze-reconstructed-symbols.yml'
+permissions:
+  contents: write
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inventory function and data dependencies
+        run: python3 reconstrucao/scripts/analyze_dependencies.py
+      - name: Commit dependency reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/symbol_dependencies.json reconstrucao/extraidos/SYMBOL_DEPENDENCIES.md
+          git commit -m "Mapear dependencias e simbolos do codigo NT reconstruido" || exit 0
+          git push
