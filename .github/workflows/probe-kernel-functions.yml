@@ -1,6 +1,10 @@
 name: Probe kernel pseudocode format
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/probe_function_format.py'
+      - '.github/workflows/probe-kernel-functions.yml'
 permissions:
   contents: write
 jobs:
@@ -15,5 +19,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reconstrucao/extraidos/function_format_probe.json
-          git commit -m "Identificar formato do pseudocodigo do kernel"
+          git commit -m "Identificar formato do pseudocodigo do kernel" || exit 0
           git push
