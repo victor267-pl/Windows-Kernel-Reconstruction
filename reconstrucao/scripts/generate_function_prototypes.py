@@ -30,7 +30,9 @@ for path in files:
         if name!=label:
             rejected["label_signature_mismatch"]+=1; continue
         prefix=sig[:match.start()].strip()
-        prefix=re.sub(r"\\b(__fastcall|__cdecl|__stdcall|__thiscall|__usercall|__spoils|__noreturn|const|volatile|static|extern)\\b"," ",prefix).strip()
+        for cc in ("__fastcall","__cdecl","__stdcall","__thiscall","__usercall","__spoils","__noreturn","const","volatile","static","extern"):
+            prefix=prefix.replace(cc," ")
+        prefix=prefix.strip()
         if not prefix:
             rejected["missing_return_type"]+=1; continue
         if re.search(r"\b(undefined|code|uint3|int7|unkint9|unkuint9)\b",sig):
