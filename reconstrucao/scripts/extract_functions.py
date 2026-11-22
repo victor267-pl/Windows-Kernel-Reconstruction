@@ -122,7 +122,7 @@ for path in INPUTS:
     summary["inputs"].append({
         "file": path.name, "output": str(out_path), "functions": len(funcs),
         "rejected": len(rejected), "label_mismatches": len(mismatches), "mismatch_examples": mismatches[:20], "output_bytes": out_path.stat().st_size,
-        "sha256": digest, "rejection_examples": rejected[:20]
+        "sha256": digest, "rejected_functions": rejected
     })
     summary["total_extracted"] += len(funcs)
     summary["total_rejected"] += len(rejected)
@@ -133,6 +133,17 @@ for path in INPUTS:
         for name, code, address in funcs
     )
 REPORT.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+rejected_rows=[]
+for item in summary["inputs"]:
+    for entry in item["rejected_functions"]:
+        rejected_rows.append({"source":item["file"],"name":entry["name"],"reason":entry["reason"]})
+md=["# Funções não extraídas automaticamente","",
+    f"- Total de blocos sem corpo recuperável: {len(rejected_rows)}",
+    "",
+    "Estes blocos não foram convertidos em implementações C porque o parser não encontrou um corpo de função balanceado. Em particular, ausência de chave pode indicar apenas uma declaração externa, não uma implementação omitida.",
+    ""]
+md += [f"- {row['name']} — {row['reason']} — {row['source']}" for row in rejected_rows]
+Path("reconstrucao/extraidos/REJECTED_FUNCTIONS.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({k:v for k,v in summary.items() if k != "functions"}, ensure_ascii=False, indent=2))
 
 # Trigger extraction workflow after workflow registration.
