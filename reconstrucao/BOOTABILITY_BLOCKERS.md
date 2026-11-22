@@ -39,3 +39,10 @@ Não foi adicionado um arquivo de licença permissiva global. A reconstrução d
 ## Decisão técnica
 
 O estado atual é **reconstrução parcial, ainda não compilável como kernel completo e não inicializável**. Os binários de entrada e evidências de símbolos estão presentes; o bloqueio atual não é falta desses arquivos, mas a tradução semântica dos corpos decompilados, a resolução dos dados/globais, as dependências de ABI/ligação e a ausência do caminho completo de boot. O trabalho deve avançar por dependências demonstráveis e testes incrementais, sem funções vazias ou símbolos inventados.
+
+## Atualização após integração de evidências — 22/11/2026
+
+- A integração atual declara e define `DAT_140e0a740` como global de 64 bits inicializado com `0x00002B992DDFA232`, com identificação de alta confiança como candidato ao cookie de segurança x64. O endereço, valor PE e padrões XOR sustentam a hipótese; não é um símbolo PDB privado recuperado.
+- O tipo Ghidra `undefined3` foi mapeado para o container `uint3` de 32 bits, com a largura lógica de 24 bits preservada pelos helpers escalares.
+- O CI confirmou que não restam nomes de tipos ausentes no diagnóstico, mas as quatro unidades C ainda falham: 106 identificadores não declarados distintos e erros adicionais de sintaxe, tipos conflitantes e funções implícitas.
+- Nenhuma destas alterações constitui build ou link de kernel. Continuam ausentes o ambiente/ABI de linkedição NT, a resolução semântica dos demais globais e helpers, o caminho de boot e a validação em VM.
