@@ -163,6 +163,8 @@ def main():
                 md.append(f"- {name}: sem comparação completa")
             else:
                 md.append(f"- {name}: tamanho PDB {comparison['pdb_size_bytes']} / manifesto {comparison['manifest_size_bytes']} bytes; tamanhos iguais={comparison['size_matches']}; campos com nome+offset coincidentes={comparison['exact_name_and_offset_matches']}; conflitos de offset={comparison['same_name_offset_conflict_count']}")
+                for conflict in comparison.get("same_name_offset_conflicts", []):
+                    md.append(f"  - Conflito {conflict['field']}: manifesto offset {conflict['manifest_offset']}; PDB offset(s) {conflict['pdb_offsets']}")
         md.append("")
     md += ["## Limites","",
            "- Os registros preservam índices CodeView e offsets fornecidos pelo PDB.",
