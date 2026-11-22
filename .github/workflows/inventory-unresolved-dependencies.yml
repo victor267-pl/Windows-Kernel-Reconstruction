@@ -1,0 +1,25 @@
+name: Inventory unresolved reconstruction dependencies
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/inventory_unresolved_dependencies.py'
+      - 'reconstrucao/src/decompiled_*.c'
+      - '.github/workflows/inventory-unresolved-dependencies.yml'
+permissions:
+  contents: write
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inventory globals, Ghidra helpers and unresolved types
+        run: python3 reconstrucao/scripts/inventory_unresolved_dependencies.py
+      - name: Commit evidence reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/unresolved_dependency_evidence.json reconstrucao/extraidos/UNRESOLVED_DEPENDENCY_EVIDENCE.md
+          git commit -m "Inventariar dependencias nao resolvidas com evidencias" || exit 0
+          git pull --rebase origin main
+          git push
