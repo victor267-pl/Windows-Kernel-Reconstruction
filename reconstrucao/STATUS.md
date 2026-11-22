@@ -34,3 +34,11 @@ Os layouts dessas estruturas so serao adicionados quando os campos, offsets e ta
 ## Limitacao atual de ingestao
 
 O GitHub recebeu as sete partes em `dados/`. A integracao atual retorna o conteudo do arquivo pequeno, mas nao devolve o texto das partes grandes de 20 MiB. Por isso, esta primeira estrutura usa apenas a evidencia ja legivel e o layout semantico conhecido de CLIENT_ID. A analise das demais estruturas depende de tornar os arquivos grandes acessiveis em fragmentos menores.
+## Headers ABI gerados e compilados
+
+- Foram gerados headers para `_EPROCESS`, `_ETHREAD`, `_KPROCESS`, `_KTHREAD` e `_CONTEXT`.
+- Cada tipo reserva exatamente o tamanho registrado no inventário Ghidra e publica macros de offset/tamanho para os campos nomeados.
+- Os nomes, tipos Ghidra, offsets e tamanhos completos dos campos foram preservados em `extraidos/layout_manifest.json`.
+- O agregador é `include/nt_kernel_layouts.h`.
+- Validação executada no GitHub Actions: compilação C11 com GCC, `-Wall -Wextra -Werror -pedantic`, e verificações estáticas de tamanho e offsets-base. Resultado: sucesso no run 45040788277.
+- **Limite explícito:** os membros internos estão representados por armazenamento opaco (`uint8_t`), não por declarações semânticas C. Isso evita inventar layouts de tipos aninhados e uniões. A próxima etapa é reconstruir esses membros usando o inventário completo e validar cada dependência antes de substituir o armazenamento opaco.
