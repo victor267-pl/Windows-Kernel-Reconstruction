@@ -148,3 +148,4 @@ Path("reconstrucao/extraidos/REJECTED_FUNCTIONS.md").write_text("\n".join(md)+"\
 print(json.dumps({k:v for k,v in summary.items() if k != "functions"}, ensure_ascii=False, indent=2))
 
 # Trigger extraction workflow after workflow registration.
+
