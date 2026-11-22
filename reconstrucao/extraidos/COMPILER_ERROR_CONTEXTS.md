@@ -112,17 +112,6 @@ reconstrucao/src/decompiled_01.c:406:15: error: ‘DAT_140fc7b04’ undeclared (
     408:                   CONCAT31((uint3)(*(uint *)(param_1 + 0x74) >> 0xb),
     409:                            (char)(*(uint *)(param_1 + 0x74) >> 3)) & 0xffffff01,0,
 
-## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:408
-reconstrucao/src/decompiled_01.c:408:29: error: ‘uint3’ undeclared (first use in this function); did you mean ‘uint32’?
-
-    405:   }
-    406:   if ((((uint)DAT_140fc7b04 & 0x1000) != 0) && (cVar2 != '\0')) {
-    407:     FUN_1403c0604(param_1,*(undefined2 *)(param_1 + 0x248),
-    408:                   CONCAT31((uint3)(*(uint *)(param_1 + 0x74) >> 0xb),
-    409:                            (char)(*(uint *)(param_1 + 0x74) >> 3)) & 0xffffff01,0,
-    410:                   *(undefined8 *)(param_1 + 0x240),0x536);
-    411:   }
-
 ## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:412
 reconstrucao/src/decompiled_01.c:412:29: error: ‘DAT_140fc7b10’ undeclared (first use in this function)
 
@@ -166,17 +155,6 @@ reconstrucao/src/decompiled_01.c:431:42: error: ‘DAT_140f0cf28’ undeclared (
     432:     uVar6 = 0;
     433:     if (*DAT_140fc7ad0 != 0) {
     434:       do {
-
-## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:446
-reconstrucao/src/decompiled_01.c:446:62: error: ‘int7’ undeclared (first use in this function); did you mean ‘int’?
-
-    443:             uVar5 = uVar4;
-    444:           } while (uVar3 < puVar1[uVar6 * 0x70 + 0x1b]);
-    445:         }
-    446:         FUN_140201790(puVar1 + uVar6 * 0x70 + 0x14,CONCAT71((int7)(uVar4 >> 8),4),1);
-    447:         uVar3 = (int)uVar6 + 1;
-    448:         uVar6 = (ulonglong)uVar3;
-    449:       } while (uVar3 < *DAT_140fc7ad0);
 
 ## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:446
 reconstrucao/src/decompiled_01.c:446:45: error: passing argument 1 of ‘FUN_140201790’ makes integer from pointer without a cast [-Wint-conversion]
@@ -607,17 +585,6 @@ reconstrucao/src/decompiled_01.c:648:7: error: implicit declaration of function 
     650:   }
     651:   return;
 
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:661
-reconstrucao/src/decompiled_01.c:661:3: error: unknown type name ‘code’
-
-    658: {
-    659:   ulonglong *puVar1;
-    660:   ulonglong uVar2;
-    661:   code *pcVar3;
-    662:   char cVar4;
-    663:   undefined8 *puVar5;
-    664:   undefined8 *puVar6;
-
 ## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:675
 reconstrucao/src/decompiled_01.c:675:32: error: ‘DAT_140f230b0’ undeclared (first use in this function)
 
@@ -641,7 +608,7 @@ reconstrucao/src/decompiled_01.c:677:14: error: ‘DAT_140f230a0’ undeclared (
     680:   while (puVar5 = puVar6, puVar5 != puVar12) {
 
 ## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:686
-reconstrucao/src/decompiled_01.c:686:17: error: ‘code’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:686:24: error: implicit declaration of function ‘swi’ [-Wimplicit-function-declaration]
 
     683:     if (((undefined8 *)puVar11[1] != puVar5) || (puVar6 = puVar11, (undefined8 *)*puVar7 != puVar5))
     684:     {
@@ -650,28 +617,6 @@ reconstrucao/src/decompiled_01.c:686:17: error: ‘code’ undeclared (first use
     687:       puVar5 = (undefined8 *)(*pcVar3)();
     688:       puVar9 = puVar9 + 2;
     689:     }
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:686
-reconstrucao/src/decompiled_01.c:686:23: error: expected expression before ‘)’ token
-
-    683:     if (((undefined8 *)puVar11[1] != puVar5) || (puVar6 = puVar11, (undefined8 *)*puVar7 != puVar5))
-    684:     {
-    685:       puVar6 = (undefined8 *)0x3;
-    686:       pcVar3 = (code *)swi(0x29);
-    687:       puVar5 = (undefined8 *)(*pcVar3)();
-    688:       puVar9 = puVar9 + 2;
-    689:     }
-
-## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:687
-reconstrucao/src/decompiled_01.c:687:31: error: called object is not a function or function pointer
-
-    684:     {
-    685:       puVar6 = (undefined8 *)0x3;
-    686:       pcVar3 = (code *)swi(0x29);
-    687:       puVar5 = (undefined8 *)(*pcVar3)();
-    688:       puVar9 = puVar9 + 2;
-    689:     }
-    690:     *puVar7 = puVar11;
 
 ## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:690
 reconstrucao/src/decompiled_01.c:690:13: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined8 *’ {aka ‘long unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
@@ -1102,17 +1047,6 @@ reconstrucao/src/decompiled_01.c:1116:42: error: ‘DAT_140f0cf28’ undeclared 
     1118:       do {
     1119:         FUN_140201790(DAT_140fc7ad0 + uVar3 * 0x70 + 0x14,CONCAT71((int7)(uVar3 >> 8),2),
 
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1119
-reconstrucao/src/decompiled_01.c:1119:69: error: ‘int7’ undeclared (first use in this function); did you mean ‘int’?
-
-    1116:     uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
-    1117:     if (*DAT_140fc7ad0 != 0) {
-    1118:       do {
-    1119:         FUN_140201790(DAT_140fc7ad0 + uVar3 * 0x70 + 0x14,CONCAT71((int7)(uVar3 >> 8),2),
-    1120:                       CONCAT71((int7)(uVar3 * 0x1c0 >> 8),param_1));
-    1121:         uVar2 = (int)uVar3 + 1;
-    1122:         uVar3 = (ulonglong)uVar2;
-
 ## FUN_140201834 */ — reconstrucao/src/decompiled_01.c:1190
 reconstrucao/src/decompiled_01.c:1190:40: error: ‘DAT_140f0e990’ undeclared (first use in this function)
 
@@ -1322,203 +1256,71 @@ reconstrucao/src/decompiled_01.c:1301:27: error: ‘DAT_140fc9720’ undeclared 
     1303:         uVar1 = *(ulonglong *)(lVar9 + (longlong)param_2);
     1304:         if (param_3 == (ushort *)0x0) {
 
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:15
-reconstrucao/src/decompiled_02.c:15:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
+## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1330
+reconstrucao/src/decompiled_01.c:1330:41: error: ‘DAT_140fc7c20’ undeclared (first use in this function)
 
-    12:   ulonglong uVar1;
-    13:   ulonglong uVar2;
-    14:   ulonglong uVar3;
-    15:   unkint9 Var4;
-    16:   unkint9 Var5;
-    17:   ulonglong uVar6;
-    18:   ulonglong uVar7;
+    1327:         else if (param_5 == 2) {
+    1328:           uVar6 = ~uVar5 & *puStack_38;
+    1329:         }
+    1330:         if ((ushort)uVar4 < *(ushort *)*DAT_140fc7c20) {
+    1331:           uVar5 = *(ulonglong *)((ushort *)*DAT_140fc7c20 + (uVar4 & 0xffff) * 4 + 4);
+    1332:         }
+    1333:         else {
 
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:16
-reconstrucao/src/decompiled_02.c:16:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
+## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1348
+reconstrucao/src/decompiled_01.c:1348:9: error: ‘DAT_140fc7e74’ undeclared (first use in this function)
 
-    13:   ulonglong uVar2;
-    14:   ulonglong uVar3;
-    15:   unkint9 Var4;
-    16:   unkint9 Var5;
-    17:   ulonglong uVar6;
-    18:   ulonglong uVar7;
-    19:   ulonglong uVar8;
+    1345:         lVar10 = lVar10 + 2;
+    1346:       } while (uVar8 < 0x20);
+    1347:       if (param_4 == 0) {
+    1348:         DAT_140fc7e74 = uVar7;
+    1349:       }
+    1350:       DAT_140fc7bf8 = DAT_140fc7bf8 + 1;
+    1351:       FUN_140202990(0);
 
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:23
-reconstrucao/src/decompiled_02.c:23:24: error: ‘unkuint9’ undeclared (first use in this function)
+## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1371
+reconstrucao/src/decompiled_01.c:1371:3: error: implicit declaration of function ‘ExAcquireSpinLockSharedAtDpcLevel’ [-Wimplicit-function-declaration]
 
-    20:   ulonglong uVar9;
-    21:   ulonglong uVar10;
-    22:   
-    23:   uVar1 = (ulonglong)((unkuint9)*param_2 + (unkuint9)*param_3);
-    24:   Var4 = (unkuint9)param_2[1] + (unkuint9)param_3[1] +
-    25:          (unkuint9)((char)((unkuint9)*param_2 + (unkuint9)*param_3 >> 0x40) != '\0');
-    26:   uVar2 = (ulonglong)Var4;
+    1368:   
+    1369:   uVar1 = param_1[1];
+    1370:   bVar2 = false;
+    1371:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
+    1372:   if ((ushort)uVar1 < DAT_140e2edc8) {
+    1373:     bVar2 = (*(ulonglong *)(&DAT_140e2edd0 + (ulonglong)(ushort)uVar1 * 8) & *param_1) != 0;
+    1374:   }
 
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:24
-reconstrucao/src/decompiled_02.c:24:20: error: expected ‘;’ before ‘param_2’
+## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1371
+reconstrucao/src/decompiled_01.c:1371:38: error: ‘DAT_140e2edc0’ undeclared (first use in this function)
 
-    21:   ulonglong uVar10;
-    22:   
-    23:   uVar1 = (ulonglong)((unkuint9)*param_2 + (unkuint9)*param_3);
-    24:   Var4 = (unkuint9)param_2[1] + (unkuint9)param_3[1] +
-    25:          (unkuint9)((char)((unkuint9)*param_2 + (unkuint9)*param_3 >> 0x40) != '\0');
-    26:   uVar2 = (ulonglong)Var4;
-    27:   Var4 = (unkuint9)param_2[2] + (unkuint9)param_3[2] +
+    1368:   
+    1369:   uVar1 = param_1[1];
+    1370:   bVar2 = false;
+    1371:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
+    1372:   if ((ushort)uVar1 < DAT_140e2edc8) {
+    1373:     bVar2 = (*(ulonglong *)(&DAT_140e2edd0 + (ulonglong)(ushort)uVar1 * 8) & *param_1) != 0;
+    1374:   }
 
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:27
-reconstrucao/src/decompiled_02.c:27:20: error: expected ‘;’ before ‘param_2’
+## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1372
+reconstrucao/src/decompiled_01.c:1372:23: error: ‘DAT_140e2edc8’ undeclared (first use in this function)
 
-    24:   Var4 = (unkuint9)param_2[1] + (unkuint9)param_3[1] +
-    25:          (unkuint9)((char)((unkuint9)*param_2 + (unkuint9)*param_3 >> 0x40) != '\0');
-    26:   uVar2 = (ulonglong)Var4;
-    27:   Var4 = (unkuint9)param_2[2] + (unkuint9)param_3[2] +
-    28:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
-    29:   uVar3 = (ulonglong)Var4;
-    30:   Var4 = (unkuint9)param_2[3] + (unkuint9)param_3[3] +
+    1369:   uVar1 = param_1[1];
+    1370:   bVar2 = false;
+    1371:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
+    1372:   if ((ushort)uVar1 < DAT_140e2edc8) {
+    1373:     bVar2 = (*(ulonglong *)(&DAT_140e2edd0 + (ulonglong)(ushort)uVar1 * 8) & *param_1) != 0;
+    1374:   }
+    1375:   ExReleaseSpinLockSharedFromDpcLevel(&DAT_140e2edc0);
 
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:30
-reconstrucao/src/decompiled_02.c:30:20: error: expected ‘;’ before ‘param_2’
+## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1373
+reconstrucao/src/decompiled_01.c:1373:30: error: ‘DAT_140e2edd0’ undeclared (first use in this function)
 
-    27:   Var4 = (unkuint9)param_2[2] + (unkuint9)param_3[2] +
-    28:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
-    29:   uVar3 = (ulonglong)Var4;
-    30:   Var4 = (unkuint9)param_2[3] + (unkuint9)param_3[3] +
-    31:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
-    32:   uVar10 = (ulonglong)Var4;
-    33:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x100) + (unkuint9)uVar1;
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:33
-reconstrucao/src/decompiled_02.c:33:64: error: expected ‘;’ before ‘uVar1’
-
-    30:   Var4 = (unkuint9)param_2[3] + (unkuint9)param_3[3] +
-    31:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
-    32:   uVar10 = (ulonglong)Var4;
-    33:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x100) + (unkuint9)uVar1;
-    34:   uVar6 = (ulonglong)Var5;
-    35:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x108) + (unkuint9)uVar2 +
-    36:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:35
-reconstrucao/src/decompiled_02.c:35:64: error: expected ‘;’ before ‘uVar2’
-
-    32:   uVar10 = (ulonglong)Var4;
-    33:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x100) + (unkuint9)uVar1;
-    34:   uVar6 = (ulonglong)Var5;
-    35:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x108) + (unkuint9)uVar2 +
-    36:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
-    37:   uVar7 = (ulonglong)Var5;
-    38:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x110) + (unkuint9)uVar3 +
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:38
-reconstrucao/src/decompiled_02.c:38:64: error: expected ‘;’ before ‘uVar3’
-
-    35:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x108) + (unkuint9)uVar2 +
-    36:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
-    37:   uVar7 = (ulonglong)Var5;
-    38:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x110) + (unkuint9)uVar3 +
-    39:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
-    40:   uVar8 = (ulonglong)Var5;
-    41:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x118) + (unkuint9)uVar10 +
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:41
-reconstrucao/src/decompiled_02.c:41:64: error: expected ‘;’ before ‘uVar10’
-
-    38:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x110) + (unkuint9)uVar3 +
-    39:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
-    40:   uVar8 = (ulonglong)Var5;
-    41:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x118) + (unkuint9)uVar10 +
-    42:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
-    43:   uVar9 = (ulonglong)Var5;
-    44:   if ((char)((unkuint9)Var4 >> 0x40) != '\0') {
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:44
-reconstrucao/src/decompiled_02.c:44:24: error: expected ‘)’ before ‘Var4’
-
-    41:   Var5 = (unkuint9)*(ulonglong *)(param_1 + 0x118) + (unkuint9)uVar10 +
-    42:          (unkuint9)((char)((unkuint9)Var5 >> 0x40) != '\0');
-    43:   uVar9 = (ulonglong)Var5;
-    44:   if ((char)((unkuint9)Var4 >> 0x40) != '\0') {
-    45:     uVar10 = uVar9;
-    46:     uVar3 = uVar8;
-    47:     uVar2 = uVar7;
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:50
-reconstrucao/src/decompiled_02.c:50:24: error: expected ‘)’ before ‘Var5’
-
-    47:     uVar2 = uVar7;
-    48:     uVar1 = uVar6;
-    49:   }
-    50:   if ((char)((unkuint9)Var5 >> 0x40) != '\0') {
-    51:     uVar10 = uVar9;
-    52:     uVar3 = uVar8;
-    53:     uVar2 = uVar7;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:73
-reconstrucao/src/decompiled_02.c:73:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
-
-    70:   ulonglong uVar3;
-    71:   ulonglong uVar4;
-    72:   ulonglong uVar5;
-    73:   unkint9 Var6;
-    74:   ulonglong uVar7;
-    75:   ulonglong uVar8;
-    76:   ulonglong uVar9;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:77
-reconstrucao/src/decompiled_02.c:77:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
-
-    74:   ulonglong uVar7;
-    75:   ulonglong uVar8;
-    76:   ulonglong uVar9;
-    77:   unkint9 Var10;
-    78:   ulonglong uVar11;
-    79:   unkint9 Var12;
-    80:   unkint9 Var13;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:79
-reconstrucao/src/decompiled_02.c:79:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
-
-    76:   ulonglong uVar9;
-    77:   unkint9 Var10;
-    78:   ulonglong uVar11;
-    79:   unkint9 Var12;
-    80:   unkint9 Var13;
-    81:   unkint9 Var14;
-    82:   unkint9 Var15;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:80
-reconstrucao/src/decompiled_02.c:80:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
-
-    77:   unkint9 Var10;
-    78:   ulonglong uVar11;
-    79:   unkint9 Var12;
-    80:   unkint9 Var13;
-    81:   unkint9 Var14;
-    82:   unkint9 Var15;
-    83:   undefined1 auVar16 [16];
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:81
-reconstrucao/src/decompiled_02.c:81:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
-
-    78:   ulonglong uVar11;
-    79:   unkint9 Var12;
-    80:   unkint9 Var13;
-    81:   unkint9 Var14;
-    82:   unkint9 Var15;
-    83:   undefined1 auVar16 [16];
-    84:   undefined1 auVar17 [16];
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:82
-reconstrucao/src/decompiled_02.c:82:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
-
-    79:   unkint9 Var12;
-    80:   unkint9 Var13;
-    81:   unkint9 Var14;
-    82:   unkint9 Var15;
-    83:   undefined1 auVar16 [16];
-    84:   undefined1 auVar17 [16];
-    85:   undefined1 auVar18 [16];
+    1370:   bVar2 = false;
+    1371:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
+    1372:   if ((ushort)uVar1 < DAT_140e2edc8) {
+    1373:     bVar2 = (*(ulonglong *)(&DAT_140e2edd0 + (ulonglong)(ushort)uVar1 * 8) & *param_1) != 0;
+    1374:   }
+    1375:   ExReleaseSpinLockSharedFromDpcLevel(&DAT_140e2edc0);
+    1376:   return bVar2;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:156
 reconstrucao/src/decompiled_02.c:156:10: error: request for member ‘_8_8_’ in something not a structure or union
@@ -1840,18 +1642,7 @@ reconstrucao/src/decompiled_02.c:189:10: error: request for member ‘_0_8_’ i
     192:   auVar21._8_8_ = 0;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:190
-reconstrucao/src/decompiled_02.c:190:12: error: ‘unkuint9’ undeclared (first use in this function)
-
-    187:   auVar20._0_8_ = uVar1;
-    188:   auVar52._8_8_ = 0;
-    189:   auVar52._0_8_ = *param_3;
-    190:   Var10 = (unkuint9)(uVar83 + uVar7) + (unkuint9)SUB168(auVar20 * auVar52,0);
-    191:   Var6 = (unkuint9)(uVar3 + uVar86) + (unkuint9)SUB168(auVar20 * auVar52,8);
-    192:   auVar21._8_8_ = 0;
-    193:   auVar21._0_8_ = uVar1;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:190
-reconstrucao/src/decompiled_02.c:190:50: error: expected ‘;’ before ‘SUB168’
+reconstrucao/src/decompiled_02.c:190:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     187:   auVar20._0_8_ = uVar1;
     188:   auVar52._8_8_ = 0;
@@ -1862,7 +1653,7 @@ reconstrucao/src/decompiled_02.c:190:50: error: expected ‘;’ before ‘SUB16
     193:   auVar21._0_8_ = uVar1;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:191
-reconstrucao/src/decompiled_02.c:191:49: error: expected ‘;’ before ‘SUB168’
+reconstrucao/src/decompiled_02.c:191:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     188:   auVar52._8_8_ = 0;
     189:   auVar52._0_8_ = *param_3;
@@ -1917,18 +1708,7 @@ reconstrucao/src/decompiled_02.c:195:10: error: request for member ‘_0_8_’ i
     198:   Var6 = (unkuint9)(uVar82 + uVar2) + (unkuint9)SUB168(auVar21 * auVar53,8) +
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:196
-reconstrucao/src/decompiled_02.c:196:22: error: expected expression before ‘ulonglong’
-
-    193:   auVar21._0_8_ = uVar1;
-    194:   auVar53._8_8_ = 0;
-    195:   auVar53._0_8_ = param_3[1];
-    196:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar21 * auVar53,0) +
-    197:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    198:   Var6 = (unkuint9)(uVar82 + uVar2) + (unkuint9)SUB168(auVar21 * auVar53,8) +
-    199:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:196
-reconstrucao/src/decompiled_02.c:196:32: error: expected ‘;’ before ‘Var6’
+reconstrucao/src/decompiled_02.c:196:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     193:   auVar21._0_8_ = uVar1;
     194:   auVar53._8_8_ = 0;
@@ -1939,7 +1719,7 @@ reconstrucao/src/decompiled_02.c:196:32: error: expected ‘;’ before ‘Var6�
     199:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:198
-reconstrucao/src/decompiled_02.c:198:49: error: expected ‘;’ before ‘SUB168’
+reconstrucao/src/decompiled_02.c:198:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     195:   auVar53._0_8_ = param_3[1];
     196:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar21 * auVar53,0) +
@@ -1994,18 +1774,7 @@ reconstrucao/src/decompiled_02.c:203:10: error: request for member ‘_0_8_’ i
     206:   Var6 = (unkuint9)
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:204
-reconstrucao/src/decompiled_02.c:204:22: error: expected expression before ‘ulonglong’
-
-    201:   auVar22._0_8_ = uVar1;
-    202:   auVar54._8_8_ = 0;
-    203:   auVar54._0_8_ = param_3[2];
-    204:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar22 * auVar54,0) +
-    205:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    206:   Var6 = (unkuint9)
-    207:          (SUB168(auVar19 * auVar51,8) + (ulonglong)(CARRY8(uVar81,uVar5) || CARRY8(uVar82,uVar2))) +
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:204
-reconstrucao/src/decompiled_02.c:204:32: error: expected ‘;’ before ‘Var6’
+reconstrucao/src/decompiled_02.c:204:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     201:   auVar22._0_8_ = uVar1;
     202:   auVar54._8_8_ = 0;
@@ -2027,7 +1796,7 @@ reconstrucao/src/decompiled_02.c:207:26: error: invalid operands to binary * (ha
     210:   auVar23._0_8_ = uVar1;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:208
-reconstrucao/src/decompiled_02.c:208:20: error: expected ‘;’ before ‘SUB168’
+reconstrucao/src/decompiled_02.c:208:35: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     205:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
     206:   Var6 = (unkuint9)
@@ -2082,18 +1851,7 @@ reconstrucao/src/decompiled_02.c:212:10: error: request for member ‘_0_8_’ i
     215:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:213
-reconstrucao/src/decompiled_02.c:213:22: error: expected expression before ‘ulonglong’
-
-    210:   auVar23._0_8_ = uVar1;
-    211:   auVar55._8_8_ = 0;
-    212:   auVar55._0_8_ = param_3[3];
-    213:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
-    214:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    215:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    216:   auVar24._8_8_ = 0;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:213
-reconstrucao/src/decompiled_02.c:213:32: error: expected ‘;’ before ‘Var6’
+reconstrucao/src/decompiled_02.c:213:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     210:   auVar23._0_8_ = uVar1;
     211:   auVar55._8_8_ = 0;
@@ -2105,17 +1863,6 @@ reconstrucao/src/decompiled_02.c:213:32: error: expected ‘;’ before ‘Var6�
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:215
 reconstrucao/src/decompiled_02.c:215:26: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
-
-    212:   auVar55._0_8_ = param_3[3];
-    213:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
-    214:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    215:   uVar3 = SUB168(auVar23 * auVar55,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    216:   auVar24._8_8_ = 0;
-    217:   auVar24._0_8_ = uVar85;
-    218:   auVar56._8_8_ = 0;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:215
-reconstrucao/src/decompiled_02.c:215:70: error: expected ‘)’ before ‘Var6’
 
     212:   auVar55._0_8_ = param_3[3];
     213:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar23 * auVar55,0) +
@@ -2170,7 +1917,7 @@ reconstrucao/src/decompiled_02.c:219:10: error: request for member ‘_0_8_’ i
     222:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:220
-reconstrucao/src/decompiled_02.c:220:20: error: expected ‘;’ before ‘uVar4’
+reconstrucao/src/decompiled_02.c:220:53: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     217:   auVar24._0_8_ = uVar85;
     218:   auVar56._8_8_ = 0;
@@ -2181,18 +1928,7 @@ reconstrucao/src/decompiled_02.c:220:20: error: expected ‘;’ before ‘uVar4
     223:   auVar25._8_8_ = 0;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:222
-reconstrucao/src/decompiled_02.c:222:22: error: expected expression before ‘ulonglong’
-
-    219:   auVar56._0_8_ = *puVar80;
-    220:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
-    221:   uVar82 = (ulonglong)Var6;
-    222:   Var10 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar24 * auVar56,8);
-    223:   auVar25._8_8_ = 0;
-    224:   auVar25._0_8_ = uVar85;
-    225:   auVar57._8_8_ = 0;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:222
-reconstrucao/src/decompiled_02.c:222:32: error: expected ‘;’ before ‘Var10’
+reconstrucao/src/decompiled_02.c:222:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     219:   auVar56._0_8_ = *puVar80;
     220:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar24 * auVar56,0);
@@ -2247,18 +1983,7 @@ reconstrucao/src/decompiled_02.c:226:10: error: request for member ‘_0_8_’ i
     229:   uVar4 = (ulonglong)Var6;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:227
-reconstrucao/src/decompiled_02.c:227:21: error: expected expression before ‘ulonglong’
-
-    224:   auVar25._0_8_ = uVar85;
-    225:   auVar57._8_8_ = 0;
-    226:   auVar57._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    227:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
-    228:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    229:   uVar4 = (ulonglong)Var6;
-    230:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:227
-reconstrucao/src/decompiled_02.c:227:31: error: expected ‘;’ before ‘Var10’
+reconstrucao/src/decompiled_02.c:227:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     224:   auVar25._0_8_ = uVar85;
     225:   auVar57._8_8_ = 0;
@@ -2269,18 +1994,7 @@ reconstrucao/src/decompiled_02.c:227:31: error: expected ‘;’ before ‘Var10
     230:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:230
-reconstrucao/src/decompiled_02.c:230:22: error: expected expression before ‘ulonglong’
-
-    227:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
-    228:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    229:   uVar4 = (ulonglong)Var6;
-    230:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar25 * auVar57,8) +
-    231:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    232:   auVar26._8_8_ = 0;
-    233:   auVar26._0_8_ = uVar85;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:230
-reconstrucao/src/decompiled_02.c:230:32: error: expected ‘;’ before ‘Var12’
+reconstrucao/src/decompiled_02.c:230:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     227:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar25 * auVar57,0) +
     228:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
@@ -2335,18 +2049,7 @@ reconstrucao/src/decompiled_02.c:235:10: error: request for member ‘_0_8_’ i
     238:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:236
-reconstrucao/src/decompiled_02.c:236:21: error: expected expression before ‘ulonglong’
-
-    233:   auVar26._0_8_ = uVar85;
-    234:   auVar58._8_8_ = 0;
-    235:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
-    236:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
-    237:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    238:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
-    239:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:236
-reconstrucao/src/decompiled_02.c:236:31: error: expected ‘;’ before ‘Var10’
+reconstrucao/src/decompiled_02.c:236:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     233:   auVar26._0_8_ = uVar85;
     234:   auVar58._8_8_ = 0;
@@ -2357,18 +2060,7 @@ reconstrucao/src/decompiled_02.c:236:31: error: expected ‘;’ before ‘Var10
     239:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:238
-reconstrucao/src/decompiled_02.c:238:22: error: expected expression before ‘ulonglong’
-
-    235:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
-    236:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
-    237:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    238:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar26 * auVar58,8) +
-    239:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    240:   auVar27._8_8_ = 0;
-    241:   auVar27._0_8_ = uVar85;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:238
-reconstrucao/src/decompiled_02.c:238:32: error: expected ‘;’ before ‘Var13’
+reconstrucao/src/decompiled_02.c:238:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     235:   auVar58._0_8_ = *(ulonglong *)(param_1 + 0x90);
     236:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar26 * auVar58,0) +
@@ -2423,18 +2115,7 @@ reconstrucao/src/decompiled_02.c:243:10: error: request for member ‘_0_8_’ i
     246:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar27 * auVar59,8) +
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:244
-reconstrucao/src/decompiled_02.c:244:22: error: expected expression before ‘ulonglong’
-
-    241:   auVar27._0_8_ = uVar85;
-    242:   auVar59._8_8_ = 0;
-    243:   auVar59._0_8_ = *(ulonglong *)(param_1 + 0x98);
-    244:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar27 * auVar59,0) +
-    245:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    246:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar27 * auVar59,8) +
-    247:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:244
-reconstrucao/src/decompiled_02.c:244:32: error: expected ‘;’ before ‘Var12’
+reconstrucao/src/decompiled_02.c:244:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     241:   auVar27._0_8_ = uVar85;
     242:   auVar59._8_8_ = 0;
@@ -2445,7 +2126,7 @@ reconstrucao/src/decompiled_02.c:244:32: error: expected ‘;’ before ‘Var12
     247:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:246
-reconstrucao/src/decompiled_02.c:246:22: error: expected expression before ‘ulonglong’
+reconstrucao/src/decompiled_02.c:246:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     243:   auVar59._0_8_ = *(ulonglong *)(param_1 + 0x98);
     244:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar27 * auVar59,0) +
@@ -2454,72 +2135,6 @@ reconstrucao/src/decompiled_02.c:246:22: error: expected expression before ‘ul
     247:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
     248:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar82 +
     249:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:246
-reconstrucao/src/decompiled_02.c:246:32: error: expected ‘;’ before ‘Var14’
-
-    243:   auVar59._0_8_ = *(ulonglong *)(param_1 + 0x98);
-    244:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar27 * auVar59,0) +
-    245:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    246:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar27 * auVar59,8) +
-    247:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    248:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar82 +
-    249:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:248
-reconstrucao/src/decompiled_02.c:248:22: error: expected expression before ‘ulonglong’
-
-    245:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    246:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar27 * auVar59,8) +
-    247:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    248:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar82 +
-    249:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    250:   uVar81 = ((char)((unkuint9)Var14 >> 0x40) != '\0') + uVar82 +
-    251:            (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0');
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:248
-reconstrucao/src/decompiled_02.c:248:32: error: expected ‘;’ before ‘Var13’
-
-    245:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
-    246:   Var13 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar27 * auVar59,8) +
-    247:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    248:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar82 +
-    249:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    250:   uVar81 = ((char)((unkuint9)Var14 >> 0x40) != '\0') + uVar82 +
-    251:            (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0');
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:250
-reconstrucao/src/decompiled_02.c:250:30: error: expected ‘)’ before ‘Var14’
-
-    247:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    248:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar82 +
-    249:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    250:   uVar81 = ((char)((unkuint9)Var14 >> 0x40) != '\0') + uVar82 +
-    251:            (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    252:   uVar86 = (ulonglong)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    253:   uVar2 = uVar81 + uVar3;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:251
-reconstrucao/src/decompiled_02.c:251:41: error: expected ‘)’ before ‘Var13’
-
-    248:   Var12 = (unkuint9)(ulonglong)Var13 + (unkuint9)uVar82 +
-    249:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    250:   uVar81 = ((char)((unkuint9)Var14 >> 0x40) != '\0') + uVar82 +
-    251:            (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    252:   uVar86 = (ulonglong)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    253:   uVar2 = uVar81 + uVar3;
-    254:   uVar83 = uVar4 * *(longlong *)(param_1 + 0x18);
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:252
-reconstrucao/src/decompiled_02.c:252:41: error: expected ‘)’ before ‘Var12’
-
-    249:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    250:   uVar81 = ((char)((unkuint9)Var14 >> 0x40) != '\0') + uVar82 +
-    251:            (ulonglong)((char)((unkuint9)Var13 >> 0x40) != '\0');
-    252:   uVar86 = (ulonglong)((char)((unkuint9)Var12 >> 0x40) != '\0');
-    253:   uVar2 = uVar81 + uVar3;
-    254:   uVar83 = uVar4 * *(longlong *)(param_1 + 0x18);
-    255:   uVar1 = param_2[2];
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:256
 reconstrucao/src/decompiled_02.c:256:10: error: request for member ‘_8_8_’ in something not a structure or union
@@ -2566,18 +2181,7 @@ reconstrucao/src/decompiled_02.c:259:10: error: request for member ‘_0_8_’ i
     262:   auVar29._8_8_ = 0;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:260
-reconstrucao/src/decompiled_02.c:260:22: error: expected expression before ‘ulonglong’
-
-    257:   auVar28._0_8_ = uVar1;
-    258:   auVar60._8_8_ = 0;
-    259:   auVar60._0_8_ = *param_3;
-    260:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar28 * auVar60,0);
-    261:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar28 * auVar60,8);
-    262:   auVar29._8_8_ = 0;
-    263:   auVar29._0_8_ = uVar1;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:260
-reconstrucao/src/decompiled_02.c:260:32: error: expected ‘;’ before ‘Var6’
+reconstrucao/src/decompiled_02.c:260:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     257:   auVar28._0_8_ = uVar1;
     258:   auVar60._8_8_ = 0;
@@ -2588,18 +2192,7 @@ reconstrucao/src/decompiled_02.c:260:32: error: expected ‘;’ before ‘Var6�
     263:   auVar29._0_8_ = uVar1;
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:261
-reconstrucao/src/decompiled_02.c:261:21: error: expected expression before ‘ulonglong’
-
-    258:   auVar60._8_8_ = 0;
-    259:   auVar60._0_8_ = *param_3;
-    260:   Var13 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar28 * auVar60,0);
-    261:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar28 * auVar60,8);
-    262:   auVar29._8_8_ = 0;
-    263:   auVar29._0_8_ = uVar1;
-    264:   auVar61._8_8_ = 0;
-
-## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:261
-reconstrucao/src/decompiled_02.c:261:31: error: expected ‘;’ before ‘Var10’
+reconstrucao/src/decompiled_02.c:261:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
 
     258:   auVar60._8_8_ = 0;
     259:   auVar60._0_8_ = *param_3;
@@ -2641,6 +2234,413 @@ reconstrucao/src/decompiled_02.c:264:10: error: request for member ‘_8_8_’ i
     265:   auVar61._0_8_ = param_3[1];
     266:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar29 * auVar61,0) +
     267:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:265
+reconstrucao/src/decompiled_02.c:265:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    262:   auVar29._8_8_ = 0;
+    263:   auVar29._0_8_ = uVar1;
+    264:   auVar61._8_8_ = 0;
+    265:   auVar61._0_8_ = param_3[1];
+    266:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar29 * auVar61,0) +
+    267:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    268:   Var6 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar29 * auVar61,8) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:266
+reconstrucao/src/decompiled_02.c:266:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    263:   auVar29._0_8_ = uVar1;
+    264:   auVar61._8_8_ = 0;
+    265:   auVar61._0_8_ = param_3[1];
+    266:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar29 * auVar61,0) +
+    267:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    268:   Var6 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar29 * auVar61,8) +
+    269:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:268
+reconstrucao/src/decompiled_02.c:268:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    265:   auVar61._0_8_ = param_3[1];
+    266:   Var14 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar29 * auVar61,0) +
+    267:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    268:   Var6 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar29 * auVar61,8) +
+    269:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    270:   auVar30._8_8_ = 0;
+    271:   auVar30._0_8_ = uVar1;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:270
+reconstrucao/src/decompiled_02.c:270:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    267:           (unkuint9)((char)((unkuint9)Var13 >> 0x40) != '\0');
+    268:   Var6 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar29 * auVar61,8) +
+    269:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    270:   auVar30._8_8_ = 0;
+    271:   auVar30._0_8_ = uVar1;
+    272:   auVar62._8_8_ = 0;
+    273:   auVar62._0_8_ = param_3[2];
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:271
+reconstrucao/src/decompiled_02.c:271:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    268:   Var6 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar29 * auVar61,8) +
+    269:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    270:   auVar30._8_8_ = 0;
+    271:   auVar30._0_8_ = uVar1;
+    272:   auVar62._8_8_ = 0;
+    273:   auVar62._0_8_ = param_3[2];
+    274:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar30 * auVar62,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:272
+reconstrucao/src/decompiled_02.c:272:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    269:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    270:   auVar30._8_8_ = 0;
+    271:   auVar30._0_8_ = uVar1;
+    272:   auVar62._8_8_ = 0;
+    273:   auVar62._0_8_ = param_3[2];
+    274:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar30 * auVar62,0) +
+    275:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:273
+reconstrucao/src/decompiled_02.c:273:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    270:   auVar30._8_8_ = 0;
+    271:   auVar30._0_8_ = uVar1;
+    272:   auVar62._8_8_ = 0;
+    273:   auVar62._0_8_ = param_3[2];
+    274:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar30 * auVar62,0) +
+    275:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
+    276:   Var6 = (unkuint9)(uVar2 + uVar86) + (unkuint9)SUB168(auVar30 * auVar62,8) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:274
+reconstrucao/src/decompiled_02.c:274:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    271:   auVar30._0_8_ = uVar1;
+    272:   auVar62._8_8_ = 0;
+    273:   auVar62._0_8_ = param_3[2];
+    274:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar30 * auVar62,0) +
+    275:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
+    276:   Var6 = (unkuint9)(uVar2 + uVar86) + (unkuint9)SUB168(auVar30 * auVar62,8) +
+    277:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:276
+reconstrucao/src/decompiled_02.c:276:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    273:   auVar62._0_8_ = param_3[2];
+    274:   Var12 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar30 * auVar62,0) +
+    275:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
+    276:   Var6 = (unkuint9)(uVar2 + uVar86) + (unkuint9)SUB168(auVar30 * auVar62,8) +
+    277:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    278:   auVar31._8_8_ = 0;
+    279:   auVar31._0_8_ = uVar1;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:278
+reconstrucao/src/decompiled_02.c:278:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    275:           (unkuint9)((char)((unkuint9)Var14 >> 0x40) != '\0');
+    276:   Var6 = (unkuint9)(uVar2 + uVar86) + (unkuint9)SUB168(auVar30 * auVar62,8) +
+    277:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    278:   auVar31._8_8_ = 0;
+    279:   auVar31._0_8_ = uVar1;
+    280:   auVar63._8_8_ = 0;
+    281:   auVar63._0_8_ = param_3[3];
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:279
+reconstrucao/src/decompiled_02.c:279:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    276:   Var6 = (unkuint9)(uVar2 + uVar86) + (unkuint9)SUB168(auVar30 * auVar62,8) +
+    277:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    278:   auVar31._8_8_ = 0;
+    279:   auVar31._0_8_ = uVar1;
+    280:   auVar63._8_8_ = 0;
+    281:   auVar63._0_8_ = param_3[3];
+    282:   Var15 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar31 * auVar63,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:280
+reconstrucao/src/decompiled_02.c:280:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    277:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    278:   auVar31._8_8_ = 0;
+    279:   auVar31._0_8_ = uVar1;
+    280:   auVar63._8_8_ = 0;
+    281:   auVar63._0_8_ = param_3[3];
+    282:   Var15 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar31 * auVar63,0) +
+    283:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:281
+reconstrucao/src/decompiled_02.c:281:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    278:   auVar31._8_8_ = 0;
+    279:   auVar31._0_8_ = uVar1;
+    280:   auVar63._8_8_ = 0;
+    281:   auVar63._0_8_ = param_3[3];
+    282:   Var15 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar31 * auVar63,0) +
+    283:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    284:   uVar7 = SUB168(auVar31 * auVar63,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:282
+reconstrucao/src/decompiled_02.c:282:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    279:   auVar31._0_8_ = uVar1;
+    280:   auVar63._8_8_ = 0;
+    281:   auVar63._0_8_ = param_3[3];
+    282:   Var15 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar31 * auVar63,0) +
+    283:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    284:   uVar7 = SUB168(auVar31 * auVar63,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    285:   auVar32._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:284
+reconstrucao/src/decompiled_02.c:284:26: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    281:   auVar63._0_8_ = param_3[3];
+    282:   Var15 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar31 * auVar63,0) +
+    283:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    284:   uVar7 = SUB168(auVar31 * auVar63,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    285:   auVar32._8_8_ = 0;
+    286:   auVar32._0_8_ = uVar83;
+    287:   auVar64._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:285
+reconstrucao/src/decompiled_02.c:285:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    282:   Var15 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar31 * auVar63,0) +
+    283:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    284:   uVar7 = SUB168(auVar31 * auVar63,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    285:   auVar32._8_8_ = 0;
+    286:   auVar32._0_8_ = uVar83;
+    287:   auVar64._8_8_ = 0;
+    288:   auVar64._0_8_ = *puVar80;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:286
+reconstrucao/src/decompiled_02.c:286:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    283:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+    284:   uVar7 = SUB168(auVar31 * auVar63,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    285:   auVar32._8_8_ = 0;
+    286:   auVar32._0_8_ = uVar83;
+    287:   auVar64._8_8_ = 0;
+    288:   auVar64._0_8_ = *puVar80;
+    289:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar32 * auVar64,0);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:287
+reconstrucao/src/decompiled_02.c:287:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    284:   uVar7 = SUB168(auVar31 * auVar63,8) + (ulonglong)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    285:   auVar32._8_8_ = 0;
+    286:   auVar32._0_8_ = uVar83;
+    287:   auVar64._8_8_ = 0;
+    288:   auVar64._0_8_ = *puVar80;
+    289:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar32 * auVar64,0);
+    290:   uVar4 = (ulonglong)Var6;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:288
+reconstrucao/src/decompiled_02.c:288:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    285:   auVar32._8_8_ = 0;
+    286:   auVar32._0_8_ = uVar83;
+    287:   auVar64._8_8_ = 0;
+    288:   auVar64._0_8_ = *puVar80;
+    289:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar32 * auVar64,0);
+    290:   uVar4 = (ulonglong)Var6;
+    291:   Var10 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar32 * auVar64,8);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:289
+reconstrucao/src/decompiled_02.c:289:53: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    286:   auVar32._0_8_ = uVar83;
+    287:   auVar64._8_8_ = 0;
+    288:   auVar64._0_8_ = *puVar80;
+    289:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar32 * auVar64,0);
+    290:   uVar4 = (ulonglong)Var6;
+    291:   Var10 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar32 * auVar64,8);
+    292:   auVar33._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:291
+reconstrucao/src/decompiled_02.c:291:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    288:   auVar64._0_8_ = *puVar80;
+    289:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar32 * auVar64,0);
+    290:   uVar4 = (ulonglong)Var6;
+    291:   Var10 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar32 * auVar64,8);
+    292:   auVar33._8_8_ = 0;
+    293:   auVar33._0_8_ = uVar83;
+    294:   auVar65._8_8_ = 0;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:292
+reconstrucao/src/decompiled_02.c:292:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    289:   Var6 = (unkuint9)uVar4 + (unkuint9)SUB168(auVar32 * auVar64,0);
+    290:   uVar4 = (ulonglong)Var6;
+    291:   Var10 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar32 * auVar64,8);
+    292:   auVar33._8_8_ = 0;
+    293:   auVar33._0_8_ = uVar83;
+    294:   auVar65._8_8_ = 0;
+    295:   auVar65._0_8_ = *(ulonglong *)(param_1 + 0x88);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:293
+reconstrucao/src/decompiled_02.c:293:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    290:   uVar4 = (ulonglong)Var6;
+    291:   Var10 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar32 * auVar64,8);
+    292:   auVar33._8_8_ = 0;
+    293:   auVar33._0_8_ = uVar83;
+    294:   auVar65._8_8_ = 0;
+    295:   auVar65._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    296:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar33 * auVar65,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:294
+reconstrucao/src/decompiled_02.c:294:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    291:   Var10 = (unkuint9)(ulonglong)Var13 + (unkuint9)SUB168(auVar32 * auVar64,8);
+    292:   auVar33._8_8_ = 0;
+    293:   auVar33._0_8_ = uVar83;
+    294:   auVar65._8_8_ = 0;
+    295:   auVar65._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    296:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar33 * auVar65,0) +
+    297:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:295
+reconstrucao/src/decompiled_02.c:295:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    292:   auVar33._8_8_ = 0;
+    293:   auVar33._0_8_ = uVar83;
+    294:   auVar65._8_8_ = 0;
+    295:   auVar65._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    296:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar33 * auVar65,0) +
+    297:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    298:   uVar5 = (ulonglong)Var6;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:296
+reconstrucao/src/decompiled_02.c:296:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    293:   auVar33._0_8_ = uVar83;
+    294:   auVar65._8_8_ = 0;
+    295:   auVar65._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    296:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar33 * auVar65,0) +
+    297:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    298:   uVar5 = (ulonglong)Var6;
+    299:   Var10 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar33 * auVar65,8) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:299
+reconstrucao/src/decompiled_02.c:299:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    296:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar33 * auVar65,0) +
+    297:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    298:   uVar5 = (ulonglong)Var6;
+    299:   Var10 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar33 * auVar65,8) +
+    300:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    301:   auVar34._8_8_ = 0;
+    302:   auVar34._0_8_ = uVar83;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:301
+reconstrucao/src/decompiled_02.c:301:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    298:   uVar5 = (ulonglong)Var6;
+    299:   Var10 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar33 * auVar65,8) +
+    300:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    301:   auVar34._8_8_ = 0;
+    302:   auVar34._0_8_ = uVar83;
+    303:   auVar66._8_8_ = 0;
+    304:   auVar66._0_8_ = *(ulonglong *)(param_1 + 0x90);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:302
+reconstrucao/src/decompiled_02.c:302:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    299:   Var10 = (unkuint9)(ulonglong)Var14 + (unkuint9)SUB168(auVar33 * auVar65,8) +
+    300:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    301:   auVar34._8_8_ = 0;
+    302:   auVar34._0_8_ = uVar83;
+    303:   auVar66._8_8_ = 0;
+    304:   auVar66._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    305:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar34 * auVar66,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:303
+reconstrucao/src/decompiled_02.c:303:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    300:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    301:   auVar34._8_8_ = 0;
+    302:   auVar34._0_8_ = uVar83;
+    303:   auVar66._8_8_ = 0;
+    304:   auVar66._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    305:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar34 * auVar66,0) +
+    306:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:304
+reconstrucao/src/decompiled_02.c:304:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    301:   auVar34._8_8_ = 0;
+    302:   auVar34._0_8_ = uVar83;
+    303:   auVar66._8_8_ = 0;
+    304:   auVar66._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    305:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar34 * auVar66,0) +
+    306:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    307:   Var12 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar34 * auVar66,8) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:305
+reconstrucao/src/decompiled_02.c:305:64: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    302:   auVar34._0_8_ = uVar83;
+    303:   auVar66._8_8_ = 0;
+    304:   auVar66._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    305:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar34 * auVar66,0) +
+    306:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    307:   Var12 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar34 * auVar66,8) +
+    308:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:307
+reconstrucao/src/decompiled_02.c:307:65: error: invalid operands to binary * (have ‘undefined1 *’ {aka ‘unsigned char *’} and ‘undefined1 *’ {aka ‘unsigned char *’})
+
+    304:   auVar66._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    305:   Var6 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar34 * auVar66,0) +
+    306:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    307:   Var12 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar34 * auVar66,8) +
+    308:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    309:   auVar35._8_8_ = 0;
+    310:   auVar35._0_8_ = uVar83;
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:309
+reconstrucao/src/decompiled_02.c:309:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    306:          (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    307:   Var12 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar34 * auVar66,8) +
+    308:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    309:   auVar35._8_8_ = 0;
+    310:   auVar35._0_8_ = uVar83;
+    311:   auVar67._8_8_ = 0;
+    312:   auVar67._0_8_ = *(ulonglong *)(param_1 + 0x98);
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:310
+reconstrucao/src/decompiled_02.c:310:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    307:   Var12 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar34 * auVar66,8) +
+    308:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    309:   auVar35._8_8_ = 0;
+    310:   auVar35._0_8_ = uVar83;
+    311:   auVar67._8_8_ = 0;
+    312:   auVar67._0_8_ = *(ulonglong *)(param_1 + 0x98);
+    313:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar35 * auVar67,0) +
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:311
+reconstrucao/src/decompiled_02.c:311:10: error: request for member ‘_8_8_’ in something not a structure or union
+
+    308:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    309:   auVar35._8_8_ = 0;
+    310:   auVar35._0_8_ = uVar83;
+    311:   auVar67._8_8_ = 0;
+    312:   auVar67._0_8_ = *(ulonglong *)(param_1 + 0x98);
+    313:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar35 * auVar67,0) +
+    314:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+
+## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:312
+reconstrucao/src/decompiled_02.c:312:10: error: request for member ‘_0_8_’ in something not a structure or union
+
+    309:   auVar35._8_8_ = 0;
+    310:   auVar35._0_8_ = uVar83;
+    311:   auVar67._8_8_ = 0;
+    312:   auVar67._0_8_ = *(ulonglong *)(param_1 + 0x98);
+    313:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar35 * auVar67,0) +
+    314:           (unkuint9)((char)((unkuint9)Var6 >> 0x40) != '\0');
+    315:   Var13 = (unkuint9)(ulonglong)Var15 + (unkuint9)SUB168(auVar35 * auVar67,8) +
 
 ## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:27
 reconstrucao/src/decompiled_03.c:27:26: error: implicit declaration of function ‘ExAllocatePool2’; did you mean ‘ExAllocatePool’? [-Wimplicit-function-declaration]
@@ -2752,61 +2752,6 @@ reconstrucao/src/decompiled_03.c:96:36: error: ‘DAT_140f06d38’ undeclared (f
     98: }
     99: 
 
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:107
-reconstrucao/src/decompiled_03.c:107:3: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    104: 
-    105: {
-    106:   int iVar1;
-    107:   undefined *puVar2;
-    108:   longlong lVar3;
-    109:   undefined *puStackX_8;
-    110:   longlong lStack_48;
-
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:109
-reconstrucao/src/decompiled_03.c:109:3: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    106:   int iVar1;
-    107:   undefined *puVar2;
-    108:   longlong lVar3;
-    109:   undefined *puStackX_8;
-    110:   longlong lStack_48;
-    111:   undefined4 uStack_40;
-    112:   undefined4 uStack_3c;
-
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:120
-reconstrucao/src/decompiled_03.c:120:13: error: ‘undefined’ undeclared (first use in this function); did you mean ‘undefined8’?
-
-    117:   undefined4 uStack_28;
-    118:   undefined4 uStack_24;
-    119:   
-    120:   puVar2 = (undefined *)0x0;
-    121:   lVar3 = 0;
-    122:   puStackX_8 = (undefined *)0x0;
-    123:   lStack_48 = 0;
-
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:120
-reconstrucao/src/decompiled_03.c:120:24: error: expected expression before ‘)’ token
-
-    117:   undefined4 uStack_28;
-    118:   undefined4 uStack_24;
-    119:   
-    120:   puVar2 = (undefined *)0x0;
-    121:   lVar3 = 0;
-    122:   puStackX_8 = (undefined *)0x0;
-    123:   lStack_48 = 0;
-
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:122
-reconstrucao/src/decompiled_03.c:122:28: error: expected expression before ‘)’ token
-
-    119:   
-    120:   puVar2 = (undefined *)0x0;
-    121:   lVar3 = 0;
-    122:   puStackX_8 = (undefined *)0x0;
-    123:   lStack_48 = 0;
-    124:   if (((param_1 == 0) || (param_4 == 0)) || (param_5 == (undefined8 *)0x0)) {
-    125:     iVar1 = -0x3ffffff3;
-
 ## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:139
 reconstrucao/src/decompiled_03.c:139:29: error: passing argument 1 of ‘FUN_140a329d0’ makes pointer from integer without a cast [-Wint-conversion]
 
@@ -2840,17 +2785,6 @@ reconstrucao/src/decompiled_03.c:145:19: error: passing argument 1 of ‘FUN_140
     147:   if (puVar2 != (undefined *)0x0) {
     148:     FUN_140485460(puVar2);
 
-## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:147
-reconstrucao/src/decompiled_03.c:147:29: error: expected expression before ‘)’ token
-
-    144:   if (lVar3 != 0) {
-    145:     FUN_140a32d80(lVar3);
-    146:   }
-    147:   if (puVar2 != (undefined *)0x0) {
-    148:     FUN_140485460(puVar2);
-    149:   }
-    150:   if (iVar1 != -0x3fffff45) {
-
 ## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:153
 reconstrucao/src/decompiled_03.c:153:17: error: ‘DAT_140f06d48’ undeclared (first use in this function)
 
@@ -2863,7 +2797,7 @@ reconstrucao/src/decompiled_03.c:153:17: error: ‘DAT_140f06d48’ undeclared (
     156:   *param_5 = puStackX_8;
 
 ## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:156
-reconstrucao/src/decompiled_03.c:156:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+reconstrucao/src/decompiled_03.c:156:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined *’ {aka ‘unsigned char *’} makes integer from pointer without a cast [-Wint-conversion]
 
     153:   puStackX_8 = &DAT_140f06d48;
     154:   iVar1 = 0;
@@ -2872,61 +2806,6 @@ reconstrucao/src/decompiled_03.c:156:12: error: assignment to ‘undefined8’ {
     157:   return iVar1;
     158: }
     159: 
-
-## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:166
-reconstrucao/src/decompiled_03.c:166:3: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    163: 
-    164: {
-    165:   int iVar1;
-    166:   undefined *puVar2;
-    167:   longlong lVar3;
-    168:   undefined *puStackX_8;
-    169:   longlong lStack_28;
-
-## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:168
-reconstrucao/src/decompiled_03.c:168:3: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    165:   int iVar1;
-    166:   undefined *puVar2;
-    167:   longlong lVar3;
-    168:   undefined *puStackX_8;
-    169:   longlong lStack_28;
-    170:   undefined4 uStack_20;
-    171:   undefined4 uStack_1c;
-
-## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:175
-reconstrucao/src/decompiled_03.c:175:13: error: ‘undefined’ undeclared (first use in this function); did you mean ‘undefined8’?
-
-    172:   undefined4 uStack_18;
-    173:   undefined4 uStack_14;
-    174:   
-    175:   puVar2 = (undefined *)0x0;
-    176:   lVar3 = 0;
-    177:   puStackX_8 = (undefined *)0x0;
-    178:   lStack_28 = 0;
-
-## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:175
-reconstrucao/src/decompiled_03.c:175:24: error: expected expression before ‘)’ token
-
-    172:   undefined4 uStack_18;
-    173:   undefined4 uStack_14;
-    174:   
-    175:   puVar2 = (undefined *)0x0;
-    176:   lVar3 = 0;
-    177:   puStackX_8 = (undefined *)0x0;
-    178:   lStack_28 = 0;
-
-## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:177
-reconstrucao/src/decompiled_03.c:177:28: error: expected expression before ‘)’ token
-
-    174:   
-    175:   puVar2 = (undefined *)0x0;
-    176:   lVar3 = 0;
-    177:   puStackX_8 = (undefined *)0x0;
-    178:   lStack_28 = 0;
-    179:   if (((param_1 == 0) || (param_3 == 0)) || (param_4 == (undefined8 *)0x0)) {
-    180:     iVar1 = -0x3ffffff3;
 
 ## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:190
 reconstrucao/src/decompiled_03.c:190:29: error: passing argument 1 of ‘FUN_140a329d0’ makes pointer from integer without a cast [-Wint-conversion]
@@ -2961,17 +2840,6 @@ reconstrucao/src/decompiled_03.c:196:19: error: passing argument 1 of ‘FUN_140
     198:   if (puVar2 != (undefined *)0x0) {
     199:     FUN_140485460(puVar2);
 
-## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:198
-reconstrucao/src/decompiled_03.c:198:29: error: expected expression before ‘)’ token
-
-    195:   if (lVar3 != 0) {
-    196:     FUN_140a32d80(lVar3);
-    197:   }
-    198:   if (puVar2 != (undefined *)0x0) {
-    199:     FUN_140485460(puVar2);
-    200:   }
-    201:   if (iVar1 != -0x3fffff45) {
-
 ## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:204
 reconstrucao/src/decompiled_03.c:204:17: error: ‘DAT_140f06d48’ undeclared (first use in this function)
 
@@ -2984,7 +2852,7 @@ reconstrucao/src/decompiled_03.c:204:17: error: ‘DAT_140f06d48’ undeclared (
     207:   *param_4 = puStackX_8;
 
 ## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:207
-reconstrucao/src/decompiled_03.c:207:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+reconstrucao/src/decompiled_03.c:207:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined *’ {aka ‘unsigned char *’} makes integer from pointer without a cast [-Wint-conversion]
 
     204:   puStackX_8 = &DAT_140f06d48;
     205:   iVar1 = 0;
@@ -2993,61 +2861,6 @@ reconstrucao/src/decompiled_03.c:207:12: error: assignment to ‘undefined8’ {
     208:   return iVar1;
     209: }
     210: 
-
-## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:217
-reconstrucao/src/decompiled_03.c:217:3: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    214: 
-    215: {
-    216:   int iVar1;
-    217:   undefined *puVar2;
-    218:   longlong lVar3;
-    219:   undefined *puStackX_8;
-    220:   longlong alStack_38 [4];
-
-## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:219
-reconstrucao/src/decompiled_03.c:219:3: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    216:   int iVar1;
-    217:   undefined *puVar2;
-    218:   longlong lVar3;
-    219:   undefined *puStackX_8;
-    220:   longlong alStack_38 [4];
-    221:   
-    222:   puVar2 = (undefined *)0x0;
-
-## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:222
-reconstrucao/src/decompiled_03.c:222:13: error: ‘undefined’ undeclared (first use in this function); did you mean ‘undefined8’?
-
-    219:   undefined *puStackX_8;
-    220:   longlong alStack_38 [4];
-    221:   
-    222:   puVar2 = (undefined *)0x0;
-    223:   lVar3 = 0;
-    224:   puStackX_8 = (undefined *)0x0;
-    225:   alStack_38[0] = 0;
-
-## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:222
-reconstrucao/src/decompiled_03.c:222:24: error: expected expression before ‘)’ token
-
-    219:   undefined *puStackX_8;
-    220:   longlong alStack_38 [4];
-    221:   
-    222:   puVar2 = (undefined *)0x0;
-    223:   lVar3 = 0;
-    224:   puStackX_8 = (undefined *)0x0;
-    225:   alStack_38[0] = 0;
-
-## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:224
-reconstrucao/src/decompiled_03.c:224:28: error: expected expression before ‘)’ token
-
-    221:   
-    222:   puVar2 = (undefined *)0x0;
-    223:   lVar3 = 0;
-    224:   puStackX_8 = (undefined *)0x0;
-    225:   alStack_38[0] = 0;
-    226:   alStack_38[1] = 0;
-    227:   alStack_38[2] = 0;
 
 ## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:232
 reconstrucao/src/decompiled_03.c:232:21: error: passing argument 1 of ‘FUN_140a32d80’ makes pointer from integer without a cast [-Wint-conversion]
@@ -3059,17 +2872,6 @@ reconstrucao/src/decompiled_03.c:232:21: error: passing argument 1 of ‘FUN_140
     233:     }
     234:     if (puVar2 != (undefined *)0x0) {
     235:       FUN_140485460(puVar2);
-
-## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:234
-reconstrucao/src/decompiled_03.c:234:31: error: expected expression before ‘)’ token
-
-    231:     if (lVar3 != 0) {
-    232:       FUN_140a32d80(lVar3);
-    233:     }
-    234:     if (puVar2 != (undefined *)0x0) {
-    235:       FUN_140485460(puVar2);
-    236:     }
-    237:   }
 
 ## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:241
 reconstrucao/src/decompiled_03.c:241:48: error: passing argument 2 of ‘FUN_140a324f0’ from incompatible pointer type [-Wincompatible-pointer-types]
@@ -3116,7 +2918,7 @@ reconstrucao/src/decompiled_03.c:254:17: error: ‘DAT_140f06d48’ undeclared (
     257:   *param_4 = puStackX_8;
 
 ## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:257
-reconstrucao/src/decompiled_03.c:257:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+reconstrucao/src/decompiled_03.c:257:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined *’ {aka ‘unsigned char *’} makes integer from pointer without a cast [-Wint-conversion]
 
     254:   puStackX_8 = &DAT_140f06d48;
     255:   iVar1 = 0;
@@ -3125,61 +2927,6 @@ reconstrucao/src/decompiled_03.c:257:12: error: assignment to ‘undefined8’ {
     258:   return iVar1;
     259: }
     260: 
-
-## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:267
-reconstrucao/src/decompiled_03.c:267:3: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    264: 
-    265: {
-    266:   int iVar1;
-    267:   undefined *puVar2;
-    268:   longlong lVar3;
-    269:   undefined *puStackX_8;
-    270:   longlong lStack_28;
-
-## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:269
-reconstrucao/src/decompiled_03.c:269:3: error: unknown type name ‘undefined’; did you mean ‘undefined8’?
-
-    266:   int iVar1;
-    267:   undefined *puVar2;
-    268:   longlong lVar3;
-    269:   undefined *puStackX_8;
-    270:   longlong lStack_28;
-    271:   longlong alStack_20 [3];
-    272:   
-
-## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:273
-reconstrucao/src/decompiled_03.c:273:13: error: ‘undefined’ undeclared (first use in this function); did you mean ‘undefined8’?
-
-    270:   longlong lStack_28;
-    271:   longlong alStack_20 [3];
-    272:   
-    273:   puVar2 = (undefined *)0x0;
-    274:   lVar3 = 0;
-    275:   puStackX_8 = (undefined *)0x0;
-    276:   lStack_28 = 0;
-
-## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:273
-reconstrucao/src/decompiled_03.c:273:24: error: expected expression before ‘)’ token
-
-    270:   longlong lStack_28;
-    271:   longlong alStack_20 [3];
-    272:   
-    273:   puVar2 = (undefined *)0x0;
-    274:   lVar3 = 0;
-    275:   puStackX_8 = (undefined *)0x0;
-    276:   lStack_28 = 0;
-
-## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:275
-reconstrucao/src/decompiled_03.c:275:28: error: expected expression before ‘)’ token
-
-    272:   
-    273:   puVar2 = (undefined *)0x0;
-    274:   lVar3 = 0;
-    275:   puStackX_8 = (undefined *)0x0;
-    276:   lStack_28 = 0;
-    277:   if ((((param_1 == 0) || (param_2 == 0)) || (param_3 == 0)) || (param_4 == (undefined8 *)0x0)) {
-    278:     iVar1 = -0x3ffffff3;
 
 ## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:283
 reconstrucao/src/decompiled_03.c:283:35: error: passing argument 2 of ‘FUN_140a324f0’ from incompatible pointer type [-Wincompatible-pointer-types]
@@ -3225,17 +2972,6 @@ reconstrucao/src/decompiled_03.c:292:19: error: passing argument 1 of ‘FUN_140
     294:   if (puVar2 != (undefined *)0x0) {
     295:     FUN_140485460(puVar2);
 
-## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:294
-reconstrucao/src/decompiled_03.c:294:29: error: expected expression before ‘)’ token
-
-    291:   if (lVar3 != 0) {
-    292:     FUN_140a32d80(lVar3);
-    293:   }
-    294:   if (puVar2 != (undefined *)0x0) {
-    295:     FUN_140485460(puVar2);
-    296:   }
-    297:   if (iVar1 != -0x3fffff45) {
-
 ## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:300
 reconstrucao/src/decompiled_03.c:300:17: error: ‘DAT_140f06d48’ undeclared (first use in this function)
 
@@ -3248,7 +2984,7 @@ reconstrucao/src/decompiled_03.c:300:17: error: ‘DAT_140f06d48’ undeclared (
     303:   *param_4 = puStackX_8;
 
 ## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:303
-reconstrucao/src/decompiled_03.c:303:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+reconstrucao/src/decompiled_03.c:303:12: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined *’ {aka ‘unsigned char *’} makes integer from pointer without a cast [-Wint-conversion]
 
     300:   puStackX_8 = &DAT_140f06d48;
     301:   iVar1 = 0;
@@ -3775,17 +3511,6 @@ reconstrucao/src/decompiled_03.c:824:17: error: passing argument 1 of ‘FUN_140
     826: }
     827: 
 
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:835
-reconstrucao/src/decompiled_03.c:835:3: error: unknown type name ‘code’
-
-    832: {
-    833:   uint uVar1;
-    834:   longlong lVar2;
-    835:   code *pcVar3;
-    836:   char cVar4;
-    837:   longlong *plVar5;
-    838:   longlong *plVar6;
-
 ## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:861
 reconstrucao/src/decompiled_03.c:861:41: error: passing argument 2 of ‘FUN_140780a78’ makes integer from pointer without a cast [-Wint-conversion]
 
@@ -3908,7 +3633,7 @@ reconstrucao/src/decompiled_03.c:901:23: error: passing argument 1 of ‘FUN_140
     904:       plVar5 = (longlong *)plVar6[1];
 
 ## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:906
-reconstrucao/src/decompiled_03.c:906:19: error: ‘code’ undeclared (first use in this function)
+reconstrucao/src/decompiled_03.c:906:26: error: implicit declaration of function ‘swi’ [-Wimplicit-function-declaration]
 
     903:       lVar2 = *plVar6;
     904:       plVar5 = (longlong *)plVar6[1];
@@ -3918,49 +3643,324 @@ reconstrucao/src/decompiled_03.c:906:19: error: ‘code’ undeclared (first use
     908:         pcVar3 = (code *)swi(3);
     909:         (*pcVar3)();
 
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:906
-reconstrucao/src/decompiled_03.c:906:25: error: expected expression before ‘)’ token
+## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:915
+reconstrucao/src/decompiled_03.c:915:7: error: implicit declaration of function ‘ExFreePoolWithTag’ [-Wimplicit-function-declaration]
 
-    903:       lVar2 = *plVar6;
-    904:       plVar5 = (longlong *)plVar6[1];
-    905:       if ((*(longlong **)(lVar2 + 8) != plVar6) || ((longlong *)*plVar5 != plVar6)) {
-    906:         pcVar3 = (code *)swi(0x29);
-    907:         (*pcVar3)(3);
-    908:         pcVar3 = (code *)swi(3);
-    909:         (*pcVar3)();
-
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:907
-reconstrucao/src/decompiled_03.c:907:10: error: called object is not a function or function pointer
-
-    904:       plVar5 = (longlong *)plVar6[1];
-    905:       if ((*(longlong **)(lVar2 + 8) != plVar6) || ((longlong *)*plVar5 != plVar6)) {
-    906:         pcVar3 = (code *)swi(0x29);
-    907:         (*pcVar3)(3);
-    908:         pcVar3 = (code *)swi(3);
-    909:         (*pcVar3)();
-    910:         return;
-
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:908
-reconstrucao/src/decompiled_03.c:908:25: error: expected expression before ‘)’ token
-
-    905:       if ((*(longlong **)(lVar2 + 8) != plVar6) || ((longlong *)*plVar5 != plVar6)) {
-    906:         pcVar3 = (code *)swi(0x29);
-    907:         (*pcVar3)(3);
-    908:         pcVar3 = (code *)swi(3);
-    909:         (*pcVar3)();
-    910:         return;
-    911:       }
-
-## FUN_1407807d0 */ — reconstrucao/src/decompiled_03.c:909
-reconstrucao/src/decompiled_03.c:909:10: error: called object is not a function or function pointer
-
-    906:         pcVar3 = (code *)swi(0x29);
-    907:         (*pcVar3)(3);
-    908:         pcVar3 = (code *)swi(3);
-    909:         (*pcVar3)();
-    910:         return;
-    911:       }
     912:       *plVar5 = lVar2;
+    913:       *(longlong **)(lVar2 + 8) = plVar5;
+    914:       *(int *)(param_1 + 0x74) = *(int *)(param_1 + 0x74) + -1;
+    915:       ExFreePoolWithTag(plVar6);
+    916:     }
+    917:     plVar6 = (longlong *)*plVar5;
+    918:   } while( true );
+
+## FUN_1407809b4 */ — reconstrucao/src/decompiled_03.c:951
+reconstrucao/src/decompiled_03.c:951:17: error: passing argument 1 of ‘FUN_1409a24bc’ makes integer from pointer without a cast [-Wint-conversion]
+
+    948:     uVar5 = 0xc000000d;
+    949:     uVar4 = 0x53b;
+    950:   }
+    951:   FUN_1409a24bc("TtmiSetInputWakeCapability",uVar4,0xffffffff,uVar5);
+    952:   return uVar5;
+    953: }
+    954: 
+
+## FUN_140780aa0 */ — reconstrucao/src/decompiled_03.c:989
+reconstrucao/src/decompiled_03.c:989:30: error: passing argument 2 of ‘FUN_1407815d4’ makes pointer from integer without a cast [-Wint-conversion]
+
+    986:     uStack_28 = 0;
+    987:     uStack_20 = 0;
+    988:     uStack_18 = 0;
+    989:     FUN_1407815d4(&uStack_38,param_1,param_2,1,*(longlong *)(param_2 + 0x30),
+    990:                   *(undefined4 *)(param_2 + 0x254));
+    991:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),*(undefined4 *)(param_2 + 0x254));
+    992:     FUN_140781754(&uStack_38,iVar1);
+
+## FUN_140780aa0 */ — reconstrucao/src/decompiled_03.c:991
+reconstrucao/src/decompiled_03.c:991:11: error: invalid use of void expression
+
+    988:     uStack_18 = 0;
+    989:     FUN_1407815d4(&uStack_38,param_1,param_2,1,*(longlong *)(param_2 + 0x30),
+    990:                   *(undefined4 *)(param_2 + 0x254));
+    991:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),*(undefined4 *)(param_2 + 0x254));
+    992:     FUN_140781754(&uStack_38,iVar1);
+    993:     if (iVar1 < 0) {
+    994:       FUN_1409a24bc("TtmpCallAssignedToTerminal",0x94c,iVar1,0xffffffff);
+
+## FUN_140780aa0 */ — reconstrucao/src/decompiled_03.c:992
+reconstrucao/src/decompiled_03.c:992:19: error: passing argument 1 of ‘FUN_140781754’ makes integer from pointer without a cast [-Wint-conversion]
+
+    989:     FUN_1407815d4(&uStack_38,param_1,param_2,1,*(longlong *)(param_2 + 0x30),
+    990:                   *(undefined4 *)(param_2 + 0x254));
+    991:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),*(undefined4 *)(param_2 + 0x254));
+    992:     FUN_140781754(&uStack_38,iVar1);
+    993:     if (iVar1 < 0) {
+    994:       FUN_1409a24bc("TtmpCallAssignedToTerminal",0x94c,iVar1,0xffffffff);
+    995:     }
+
+## FUN_140780aa0 */ — reconstrucao/src/decompiled_03.c:994
+reconstrucao/src/decompiled_03.c:994:21: error: passing argument 1 of ‘FUN_1409a24bc’ makes integer from pointer without a cast [-Wint-conversion]
+
+    991:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),*(undefined4 *)(param_2 + 0x254));
+    992:     FUN_140781754(&uStack_38,iVar1);
+    993:     if (iVar1 < 0) {
+    994:       FUN_1409a24bc("TtmpCallAssignedToTerminal",0x94c,iVar1,0xffffffff);
+    995:     }
+    996:   }
+    997:   return;
+
+## FUN_140780b3c */ — reconstrucao/src/decompiled_03.c:1017
+reconstrucao/src/decompiled_03.c:1017:48: error: passing argument 5 of ‘FUN_1407815d4’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1014:     uStack_28 = 0;
+    1015:     uStack_20 = 0;
+    1016:     uStack_18 = 0;
+    1017:     FUN_1407815d4(&uStack_38,param_1,param_2,5,FUN_1405dda80,param_3);
+    1018:     FUN_1405dda80(param_3,*param_1);
+    1019:     FUN_140781754(&uStack_38,0);
+    1020:   }
+
+## FUN_140780b3c */ — reconstrucao/src/decompiled_03.c:1019
+reconstrucao/src/decompiled_03.c:1019:19: error: passing argument 1 of ‘FUN_140781754’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1016:     uStack_18 = 0;
+    1017:     FUN_1407815d4(&uStack_38,param_1,param_2,5,FUN_1405dda80,param_3);
+    1018:     FUN_1405dda80(param_3,*param_1);
+    1019:     FUN_140781754(&uStack_38,0);
+    1020:   }
+    1021:   return;
+    1022: }
+
+## FUN_140780bbc */ — reconstrucao/src/decompiled_03.c:1042
+reconstrucao/src/decompiled_03.c:1042:30: error: passing argument 2 of ‘FUN_1407815d4’ makes pointer from integer without a cast [-Wint-conversion]
+
+    1039:     uStack_28 = 0;
+    1040:     uStack_20 = 0;
+    1041:     uStack_18 = 0;
+    1042:     FUN_1407815d4(&uStack_38,param_1,param_2,4,*(longlong *)(param_2 + 0x38),param_3);
+    1043:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3,*(undefined4 *)(param_1 + 0x78));
+    1044:     FUN_140781754(&uStack_38,iVar1);
+    1045:     if (iVar1 < 0) {
+
+## FUN_140780bbc */ — reconstrucao/src/decompiled_03.c:1043
+reconstrucao/src/decompiled_03.c:1043:11: error: invalid use of void expression
+
+    1040:     uStack_20 = 0;
+    1041:     uStack_18 = 0;
+    1042:     FUN_1407815d4(&uStack_38,param_1,param_2,4,*(longlong *)(param_2 + 0x38),param_3);
+    1043:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3,*(undefined4 *)(param_1 + 0x78));
+    1044:     FUN_140781754(&uStack_38,iVar1);
+    1045:     if (iVar1 < 0) {
+    1046:       FUN_1409a24bc("TtmpCallSetDisplayState",0x988,iVar1,0xffffffff);
+
+## FUN_140780bbc */ — reconstrucao/src/decompiled_03.c:1044
+reconstrucao/src/decompiled_03.c:1044:19: error: passing argument 1 of ‘FUN_140781754’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1041:     uStack_18 = 0;
+    1042:     FUN_1407815d4(&uStack_38,param_1,param_2,4,*(longlong *)(param_2 + 0x38),param_3);
+    1043:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3,*(undefined4 *)(param_1 + 0x78));
+    1044:     FUN_140781754(&uStack_38,iVar1);
+    1045:     if (iVar1 < 0) {
+    1046:       FUN_1409a24bc("TtmpCallSetDisplayState",0x988,iVar1,0xffffffff);
+    1047:     }
+
+## FUN_140780bbc */ — reconstrucao/src/decompiled_03.c:1046
+reconstrucao/src/decompiled_03.c:1046:21: error: passing argument 1 of ‘FUN_1409a24bc’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1043:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3,*(undefined4 *)(param_1 + 0x78));
+    1044:     FUN_140781754(&uStack_38,iVar1);
+    1045:     if (iVar1 < 0) {
+    1046:       FUN_1409a24bc("TtmpCallSetDisplayState",0x988,iVar1,0xffffffff);
+    1047:     }
+    1048:   }
+    1049:   return;
+
+## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1070
+reconstrucao/src/decompiled_03.c:1070:30: error: passing argument 2 of ‘FUN_1407815d4’ makes pointer from integer without a cast [-Wint-conversion]
+
+    1067:     uStack_28 = 0;
+    1068:     uStack_20 = 0;
+    1069:     uStack_18 = 0;
+    1070:     FUN_1407815d4(&uStack_38,param_1,param_2,3,*(longlong *)(param_2 + 0x40),param_3);
+    1071:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3);
+    1072:     FUN_140781754(&uStack_38,iVar1);
+    1073:     if (iVar1 < 0) {
+
+## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1071
+reconstrucao/src/decompiled_03.c:1071:11: error: invalid use of void expression
+
+    1068:     uStack_20 = 0;
+    1069:     uStack_18 = 0;
+    1070:     FUN_1407815d4(&uStack_38,param_1,param_2,3,*(longlong *)(param_2 + 0x40),param_3);
+    1071:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3);
+    1072:     FUN_140781754(&uStack_38,iVar1);
+    1073:     if (iVar1 < 0) {
+    1074:       FUN_1409a24bc("TtmpCallSetInputMode",0x9c7,iVar1,0xffffffff);
+
+## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1072
+reconstrucao/src/decompiled_03.c:1072:19: error: passing argument 1 of ‘FUN_140781754’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1069:     uStack_18 = 0;
+    1070:     FUN_1407815d4(&uStack_38,param_1,param_2,3,*(longlong *)(param_2 + 0x40),param_3);
+    1071:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3);
+    1072:     FUN_140781754(&uStack_38,iVar1);
+    1073:     if (iVar1 < 0) {
+    1074:       FUN_1409a24bc("TtmpCallSetInputMode",0x9c7,iVar1,0xffffffff);
+    1075:     }
+
+## FUN_140780c6c */ — reconstrucao/src/decompiled_03.c:1074
+reconstrucao/src/decompiled_03.c:1074:21: error: passing argument 1 of ‘FUN_1409a24bc’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1071:     iVar1 = FUN_1406c4fb0(*(undefined8 *)(param_2 + 0x18),param_3);
+    1072:     FUN_140781754(&uStack_38,iVar1);
+    1073:     if (iVar1 < 0) {
+    1074:       FUN_1409a24bc("TtmpCallSetInputMode",0x9c7,iVar1,0xffffffff);
+    1075:     }
+    1076:   }
+    1077:   return;
+
+## FUN_140780d0c */ — reconstrucao/src/decompiled_03.c:1106
+reconstrucao/src/decompiled_03.c:1106:18: error: ‘SystemReserved1’ undeclared (first use in this function)
+
+    1103:     uStack_50 = 0x1a0;
+    1104:     uStack_28 = 0;
+    1105:     uStack_10 = 0;
+    1106:     pvStack_38 = SystemReserved1[0xf];
+    1107:     puStack_18 = &uStack_68;
+    1108:     pcStack_20 = FUN_140780db0;
+    1109:     uStack_58 = param_3;
+
+## FUN_140780d0c */ — reconstrucao/src/decompiled_03.c:1108
+reconstrucao/src/decompiled_03.c:1108:18: error: ‘FUN_140780db0’ undeclared (first use in this function); did you mean ‘FUN_140787db0’?
+
+    1105:     uStack_10 = 0;
+    1106:     pvStack_38 = SystemReserved1[0xf];
+    1107:     puStack_18 = &uStack_68;
+    1108:     pcStack_20 = FUN_140780db0;
+    1109:     uStack_58 = param_3;
+    1110:     uStack_54 = param_2;
+    1111:     uStack_30 = param_4;
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1119
+reconstrucao/src/decompiled_03.c:1119:1: error: return type defaults to ‘int’ [-Wimplicit-int]
+
+    1116: 
+    1117: /* Ghidra label: FUN_140780db0 */
+    1118: /* Ghidra address: 140780db0 */
+    1119: FUN_140780db0(undefined8 param_1,undefined4 param_2,undefined8 param_3,undefined8 param_4,
+    1120:              undefined8 param_5,undefined8 param_6)
+    1121: 
+    1122: {
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1137
+reconstrucao/src/decompiled_03.c:1137:10: error: ‘DAT_140e67b50’ undeclared (first use in this function)
+
+    1134:   }
+    1135:   else {
+    1136:     iVar1 = aiStack_18[0];
+    1137:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
+    1138:                     /* WARNING: Subroutine does not return */
+    1139:       KeBugCheckEx(param_2,param_3,param_4,param_5,param_6);
+    1140:     }
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1139
+reconstrucao/src/decompiled_03.c:1139:7: error: implicit declaration of function ‘KeBugCheckEx’ [-Wimplicit-function-declaration]
+
+    1136:     iVar1 = aiStack_18[0];
+    1137:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
+    1138:                     /* WARNING: Subroutine does not return */
+    1139:       KeBugCheckEx(param_2,param_3,param_4,param_5,param_6);
+    1140:     }
+    1141:   }
+    1142:   FUN_140783d80(iVar1,param_2,param_3,param_4,param_5,param_6);
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1143
+reconstrucao/src/decompiled_03.c:1143:3: error: implicit declaration of function ‘DbgkWerCaptureLiveKernelDump’ [-Wimplicit-function-declaration]
+
+    1140:     }
+    1141:   }
+    1142:   FUN_140783d80(iVar1,param_2,param_3,param_4,param_5,param_6);
+    1143:   DbgkWerCaptureLiveKernelDump
+    1144:             (L"TTMDCallout",param_2,param_3,param_4,param_5,param_6,0,ExGetFfaInterface,0);
+    1145:   return 0;
+    1146: }
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1144
+reconstrucao/src/decompiled_03.c:1144:71: error: ‘ExGetFfaInterface’ undeclared (first use in this function); did you mean ‘ExGetPrmInterface’?
+
+    1141:   }
+    1142:   FUN_140783d80(iVar1,param_2,param_3,param_4,param_5,param_6);
+    1143:   DbgkWerCaptureLiveKernelDump
+    1144:             (L"TTMDCallout",param_2,param_3,param_4,param_5,param_6,0,ExGetFfaInterface,0);
+    1145:   return 0;
+    1146: }
+    1147: 
+
+## FUN_140780ec0 */ — reconstrucao/src/decompiled_03.c:1170
+reconstrucao/src/decompiled_03.c:1170:15: error: ‘DAT_140e0a740’ undeclared (first use in this function)
+
+    1167:   undefined4 uStack_260;
+    1168:   ulonglong uStack_38;
+    1169:   
+    1170:   uStack_38 = DAT_140e0a740 ^ (ulonglong)auStack_2d8;
+    1171:   FUN_1406d1200(auStack_2a8,0,0x268);
+    1172:   alStack_2b8[0] = 0;
+    1173:   plVar7 = (longlong *)(((longlong)param_2 + 8) * 0x10 + param_1);
+
+## FUN_140780ec0 */ — reconstrucao/src/decompiled_03.c:1183
+reconstrucao/src/decompiled_03.c:1183:23: error: passing argument 1 of ‘FUN_1409a24bc’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1180:       cVar5 = FUN_140781064(param_1,(int)plVar6[4],alStack_2b8);
+    1181:       lVar1 = alStack_2b8[0];
+    1182:       if (cVar5 == '\0') {
+    1183:         FUN_1409a24bc("TtmpCommitTerminalDisplayStateUpdateWorker",0xbaa,0xc0000225,0xffffffff);
+    1184:       }
+    1185:       else {
+    1186:         if ((lStack_270 == 0) && (*(longlong *)(alStack_2b8[0] + 0x38) != 0)) {
+
+## FUN_140780ec0 */ — reconstrucao/src/decompiled_03.c:1194
+reconstrucao/src/decompiled_03.c:1194:35: error: passing argument 2 of ‘FUN_140781368’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1191: LAB_140780fa0:
+    1192:           if ((*(longlong *)(alStack_2b8[0] + 0x38) != 0) &&
+    1193:              (*(longlong *)(alStack_2b8[0] + 0x38) != lStack_270)) {
+    1194:             FUN_140781368(param_1,auStack_2a8,param_2);
+    1195:             uStack_298 = *(undefined4 *)(lVar1 + 0x10);
+    1196:             uStack_260 = *(undefined4 *)(lVar1 + 0x48);
+    1197:             lStack_270 = *(longlong *)(lVar1 + 0x38);
+
+## FUN_140780ec0 */ — reconstrucao/src/decompiled_03.c:1218
+reconstrucao/src/decompiled_03.c:1218:29: error: passing argument 2 of ‘FUN_140781368’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1215:       plVar6 = (longlong *)*plVar2;
+    1216:     } while (plVar6 != plVar7);
+    1217:     if (bVar4) {
+    1218:       FUN_140781368(param_1,auStack_2a8,param_2);
+    1219:     }
+    1220:   }
+    1221:   return;
+
+## FUN_140781064 */ — reconstrucao/src/decompiled_03.c:1238
+reconstrucao/src/decompiled_03.c:1238:18: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined8 *’ {aka ‘long unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
+
+    1235:     if (puVar1 == (undefined8 *)(param_1 + 0x60)) {
+    1236: LAB_140781080:
+    1237:       if (param_3 != (undefined8 *)0x0) {
+    1238:         *param_3 = puVar2;
+    1239:       }
+    1240:       return CONCAT71((int7)((ulonglong)puVar1 >> 8),puVar2 != (undefined8 *)0x0);
+    1241:     }
+
+## FUN_140781098 */ — reconstrucao/src/decompiled_03.c:1264
+reconstrucao/src/decompiled_03.c:1264:18: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘undefined8 *’ {aka ‘long unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
+
+    1261:     if (puVar1 == (undefined8 *)(param_1 + 0x60)) {
+    1262: LAB_1407810ba:
+    1263:       if (param_4 != (undefined8 *)0x0) {
+    1264:         *param_4 = puVar2;
+    1265:       }
+    1266:       return CONCAT71((int7)((ulonglong)puVar1 >> 8),puVar2 != (undefined8 *)0x0);
+    1267:     }
 
 ## FUN_140ac2d78 */ — reconstrucao/src/decompiled_04.c:38
 reconstrucao/src/decompiled_04.c:38:9: error: invalid use of void expression

@@ -3,47 +3,39 @@
 Teste diagnóstico, não equivalente a um build do kernel NT.
 - Arquivos examinados: 4
 - Arquivos com erros: 4
-- Tipos não declarados distintos: 3
-- Identificadores não declarados distintos: 86
+- Tipos não declarados distintos: 0
+- Identificadores não declarados distintos: 90
 
 ## Tipos ausentes
 
-- undefined: 10
-- unkint9: 8
-- code: 3
 
 ## Identificadores ausentes
 
-- DAT_140e0a740: 8
+- DAT_140e0a740: 9
 - FiberData: 5
 - DAT_140fc7d20: 4
 - DAT_140fc7ad0: 4
-- undefined: 4
 - DAT_140f06d48: 4
 - DAT_140fc62ac: 3
 - DAT_140fc7ab8: 3
 - DAT_140f0cf28: 3
-- code: 3
 - DAT_140f06ba8: 3
 - DAT_140f06bb0: 3
-- int7: 2
+- SystemReserved1: 3
+- DAT_140fc7c20: 2
 - DAT_140fc6014: 2
 - DAT_140fc7b14: 2
 - _DAT_fffff78000000008: 2
 - DAT_140fc8128: 2
-- unkuint9: 2
 - DAT_140f06d38: 2
 - DAT_140f06bb8: 2
 - DAT_140f06ba0: 2
 - DAT_140fc4ac0: 2
 - PTR_DAT_1400dd860: 2
 - DAT_140f06b20: 2
-- SystemReserved1: 2
 - DAT_140e0a590: 1
 - DAT_140fc7b04: 1
-- uint3: 1
 - DAT_140fc7b10: 1
-- DAT_140fc7c20: 1
 - DAT_140fc7a90: 1
 - DAT_140e67941: 1
 - DAT_140f0bb00: 1
@@ -64,6 +56,10 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - DAT_140fc7bf8: 1
 - DAT_140fc9320: 1
 - DAT_140fc9720: 1
+- DAT_140fc7e74: 1
+- DAT_140e2edc0: 1
+- DAT_140e2edc8: 1
+- DAT_140e2edd0: 1
 - DAT_14001bcb8: 1
 - DAT_140f07240: 1
 - DAT_14001a0b8: 1
@@ -72,6 +68,9 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - _uStack_30: 1
 - _uStack_28: 1
 - _uStack_38: 1
+- FUN_140780db0: 1
+- DAT_140e67b50: 1
+- ExGetFfaInterface: 1
 - DAT_140f8c958: 1
 - DAT_140f8adc0: 1
 - DAT_140019790: 1
@@ -83,6 +82,8 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - DAT_14001e1b8: 1
 - LAB_140b08590: 1
 - DAT_140f09690: 1
+- _DAT_140e672dc: 1
+- DAT_140e66f70: 1
 - DAT_140f0f410: 1
 - DAT_140f0f430: 1
 - DAT_140f02610: 1
@@ -103,9 +104,8 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 
 ## Classes de erro
 
-- undeclared_identifier: 138
-- other_error: 202
-- syntax_expected: 149
-- implicit_function: 59
-- unknown_type: 21
+- undeclared_identifier: 137
+- other_error: 276
+- syntax_expected: 105
+- implicit_function: 66
 - conflicting_type: 2
