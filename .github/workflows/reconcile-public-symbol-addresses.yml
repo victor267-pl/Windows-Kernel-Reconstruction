@@ -1,0 +1,36 @@
+name: Reconcile PDB public addresses with Ghidra functions
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/reconcile_public_symbol_addresses.py'
+      - 'reconstrucao/extraidos/pdb/publics.txt'
+      - 'reconstrucao/extraidos/pdb/section_map.txt'
+      - 'reconstrucao/extraidos/pdb/section_headers.txt'
+      - 'reconstrucao/extraidos/ntoskrnl_pe_analysis.json'
+      - 'reconstrucao/src/decompiled_*.c'
+      - '.github/workflows/reconcile-public-symbol-addresses.yml'
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Match public PDB symbols to exact Ghidra addresses
+        run: python3 reconstrucao/scripts/reconcile_public_symbol_addresses.py
+      - name: Commit address reconciliation reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/pdb_public_address_reconciliation.json reconstrucao/extraidos/PDB_PUBLIC_ADDRESS_RECONCILIATION.md
+          if git diff --cached --quiet; then
+            echo "No report changes."
+            exit 0
+          fi
+          git commit -m "Reconciliar símbolos públicos PDB por endereço"
+          git pull --rebase origin main
+          git push
