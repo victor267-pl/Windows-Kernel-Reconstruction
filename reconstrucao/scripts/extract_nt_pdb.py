@@ -34,7 +34,7 @@ def find_tool():
 
 def run(tool, *args, output=None):
     cmd = [tool, "dump", *args, str(PDB)]
-    proc = subprocess.run(cmd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    proc = subprocess.run(cmd, text=True, errors="replace", stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     if output:
         (OUT / output).write_text(proc.stdout, encoding="utf-8")
     if proc.returncode:
