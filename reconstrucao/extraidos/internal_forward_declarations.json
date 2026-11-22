@@ -9,12 +9,7 @@
     "unresolved_return_type": 59,
     "noncanonical_return_type": 14
   },
-  "changed_source_files": [
-    "decompiled_01.c",
-    "decompiled_02.c",
-    "decompiled_03.c",
-    "decompiled_04.c"
-  ],
+  "changed_source_files": [],
   "header_sha256": "787ee9d6caf9960f9698408be5792a354e50690d2a38b2333452e06ef9b9bc7c",
   "declaration_policy": "return type copied from definition; no parameter prototype asserted"
 }
