@@ -1,12 +1,12 @@
 {
   "source_files": 4,
-  "clean_definitions_seen": 32309,
-  "unique_prototypes": 32299,
+  "clean_definitions_seen": 32303,
+  "unique_prototypes": 32294,
   "conflicting_names_omitted": 2,
   "rejected_signatures": {
     "missing_return_type": 1093,
     "label_signature_mismatch": 217,
-    "unresolved_type": 164,
+    "unresolved_type": 170,
     "body_text_before_first_brace": 43
   },
   "conflicts": {
@@ -19,5 +19,5 @@
       "void write_multi_char(undefined2 param_1,int param_2,undefined8 param_3,int *param_4);"
     ]
   },
-  "header_sha256": "15a1122dedce7d88f39d5a8ad097adda53b18e1572e7d6d3ff0e35c0809341a5"
+  "header_sha256": "ee1315d97bd9a4ef33240b4860a0edfacf6384edb22f0ff1e0485944e022a392"
 }
