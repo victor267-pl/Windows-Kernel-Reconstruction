@@ -59,3 +59,4 @@ md += ["","## Símbolos globais mais frequentes",""]
 md += [f"- {n} — {c}" for n,c in summary["most_referenced_globals"][:100]]
 (OUT/"SYMBOL_DEPENDENCIES.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({k:summary[k] for k in ("defined_functions","unique_call_names","unresolved_call_names","unique_global_like_symbols","fun_symbol_references","dat_symbol_references")},indent=2))
+
