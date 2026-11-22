@@ -1,6 +1,7 @@
 /* AUTO-GENERATED Ghidra decompilation reconstruction. */
 /* Not Microsoft's original source; names/types may be unresolved. */
 #include "../include/ghidra_types.h"
+#include "../include/ghidra_function_prototypes.h"
 
 /* Ghidra label: FUN_14077f3e0 */
 /* Ghidra address: 14077f3e0 */
