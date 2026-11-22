@@ -1,8 +1,8 @@
 #ifndef NT_GHIDRA_FUNCTION_PROTOTYPES_H
 #define NT_GHIDRA_FUNCTION_PROTOTYPES_H
 #include "ghidra_types.h"
+#include "context.h"
 #include <stdarg.h>
-#include <wchar.h>
 
 /* Generated only from clean signatures matching their Ghidra function labels. */
 typedef struct _SLIST_HEADER *PSLIST_HEADER;
@@ -7567,7 +7567,6 @@ int FUN_1405096f0(longlong param_1,byte *param_2,undefined8 *param_3);
 undefined8 FUN_140509f98(longlong param_1,ulonglong param_2,longlong param_3,undefined8 param_4);
 void FUN_14050a258(uint param_1,longlong *param_2,undefined8 param_3,undefined8 param_4, undefined8 param_5,undefined4 param_6,undefined8 param_7,undefined8 param_8, undefined8 param_9);
 undefined8 FUN_14050a404(longlong param_1,ulonglong param_2,longlong param_3,undefined8 param_4);
-int FUN_14050a4d8(longlong param_1,wint_t *param_2,undefined8 *param_3);
 uint FUN_14050ae84(uint param_1,longlong *param_2);
 ulonglong FUN_14050af14(undefined8 *param_1);
 short FUN_14050af60(short param_1,ulonglong *param_2);
@@ -18963,7 +18962,6 @@ int FUN_1407d6ddc(int param_1,undefined1 *param_2,uint *param_3);
 int FUN_1407d74d4(int param_1,undefined1 *param_2,uint *param_3);
 ulonglong FUN_1407d7a58(undefined8 param_1,undefined8 param_2,undefined8 param_3,int param_4, undefined4 param_5,undefined1 param_6);
 undefined8 FUN_1407d7b1c(longlong param_1,undefined4 param_2,undefined8 param_3,undefined8 param_4);
-undefined8 FUN_1407d7bf0(wint_t *param_1,int *param_2);
 undefined8 FUN_1407d7ce4(longlong param_1,undefined8 *param_2);
 undefined8 FUN_1407d7e64(longlong param_1,int *param_2);
 undefined8 FUN_1407d7f00(longlong param_1,longlong *param_2);
@@ -23024,7 +23022,6 @@ int FUN_1409e26a0(void *param_1,int param_2,void *param_3,uint *param_4);
 ulonglong FUN_1409e2990(ulonglong param_1,uint *param_2);
 longlong FUN_1409e2fe8(short *param_1,short *param_2);
 bool FUN_1409e3020(longlong *param_1,undefined8 param_2);
-undefined8 FUN_1409e3068(wint_t *param_1,int *param_2);
 undefined8 FUN_1409e3140(byte *param_1,byte *param_2);
 undefined8 FUN_1409e327c(undefined4 param_1,undefined4 *param_2,uint param_3,undefined4 *param_4);
 ulonglong FUN_1409e32e0(longlong param_1,uint *param_2);
@@ -23397,7 +23394,6 @@ ulonglong FUN_140a10274(longlong param_1,int param_2,char param_3,undefined8 *pa
 undefined4 FUN_140a1032a(void);
 uint FUN_140a10450(char param_1);
 undefined4 FUN_140a10478(longlong *param_1);
-undefined8 FUN_140a104c4(wint_t *param_1,longlong *param_2,longlong *param_3,uint *param_4);
 undefined1 FUN_140a10cd4(short *param_1,undefined4 *param_2);
 ulonglong FUN_140a10d64(wchar_t *param_1,char param_2,undefined8 param_3,longlong *param_4, uint *param_5,undefined1 param_6,undefined1 param_7,undefined1 param_8, undefined1 param_9);
 void FUN_140a10ed0(char *param_1);
@@ -32164,7 +32160,6 @@ longlong __cdecl _atoi64(char *_String);
 uint _clrfp(void);
 void _fclrf(void);
 int __cdecl _finite(double _X);
-wint_t __cdecl _fputwc_nolock(wchar_t _Ch,FILE *_File);
 undefined4 _get_fpsr(void);
 void _guard_check_icall(void);
 void _guard_dispatch_icall(void);
@@ -32214,7 +32209,6 @@ errno_t __cdecl _wcsnset_s(wchar_t *_Dst,size_t _SizeInWords,wchar_t _Val,size_t
 wchar_t * __cdecl _wcsrev(wchar_t *_Str);
 errno_t __cdecl _wcsset_s(wchar_t *_Dst,size_t _SizeInWords,wchar_t _Value);
 wchar_t * __cdecl _wcsupr(wchar_t *_Str);
-wint_t _whiteout(int *param_1,undefined8 param_2);
 int __cdecl _wtoi(wchar_t *_Str);
 long __cdecl _wtol(wchar_t *_Str);
 int __cdecl atoi(char *_Str);
@@ -32225,11 +32219,6 @@ int __cdecl islower(int _C);
 int __cdecl isprint(int _C);
 int __cdecl isspace(int _C);
 int __cdecl isupper(int _C);
-int __cdecl iswalnum(wint_t _C);
-int __cdecl iswalpha(wint_t _C);
-int __cdecl iswctype(wint_t _C,wctype_t _Type);
-int __cdecl iswdigit(wint_t _C);
-int __cdecl iswspace(wint_t _C);
 int __cdecl isxdigit(int _C);
 size_t __cdecl mbstowcs(wchar_t *_Dest,char *_Source,size_t _MaxCount);
 int __cdecl mbtowc(wchar_t *_DstCh,char *_SrcCh,size_t _SrcSizeInBytes);
@@ -32274,8 +32263,6 @@ longlong thunk_FUN_14077c924(longlong param_1);
 void thunk_FUN_140a9f7e8(longlong param_1,longlong *param_2);
 int __cdecl tolower(int _C);
 int __cdecl toupper(int _C);
-wint_t __cdecl towlower(wint_t _C);
-wint_t __cdecl towupper(wint_t _C);
 void vDbgPrintEx(undefined4 param_1,undefined4 param_2,undefined8 param_3,undefined8 param_4);
 void vDbgPrintExWithPrefix(void);
 int __cdecl vsprintf(char *_Dest,char *_Format,va_list _Args);
