@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - 'reconstrucao/scripts/extract_functions.py'
-      - 'reconstrucao/include/ghidra_types.h'
       - '.github/workflows/extract-reconstructed-functions.yml'
 permissions:
   contents: write
