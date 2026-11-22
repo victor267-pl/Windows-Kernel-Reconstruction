@@ -1,12 +1,20 @@
-# Validação e extração do PDB do kernel
+# Extração do PDB do kernel NT
 
-- PDB: `reconstrucao/entrada/ntkrnlmp.pdb` (11563008 bytes)
+- Arquivo: `reconstrucao/entrada/ntkrnlmp.pdb` (11563008 bytes)
 - Ferramenta: `/usr/lib/llvm-21/bin/llvm-pdbutil` (Ubuntu LLVM version 21.1.8
   Optimized build.)
-- GUID InfoStream: `ce884f70-f5a9-025d-53db-35d8be8bff79`
-- Age InfoStream: `6`
-- Age DBI Stream: `não encontrado`
-- SymChk da Microsoft: **PDB Matched=TRUE; DBI Age=1; Type Info=TRUE** (saída fornecida pelo usuário)
+- GUID: `CE884F70-F5A9-025D-53DB-35D8BE8BFF79`
+- Validação de correspondência pelo Microsoft SymChk: **PDB Matched=TRUE; DBG Matched=TRUE; DBI Age=1; Type Info=TRUE**.
+- O resumo LLVM apresenta InfoStream Age=6. Esse valor não substitui o DBI Age informado pelo SymChk.
 
-**Extração interrompida:** a identidade ainda não foi confirmada pelos campos esperados.
-Os arquivos `summary.txt` e `dbi-stream.txt` foram preservados para diagnóstico.
+## Resultados dos dumps
+
+- `types.txt`: 54559 linhas
+- `globals.txt`: 7105 linhas
+- `publics.txt`: 99181 linhas
+- `symbols.txt`: 22913 linhas
+
+A quantidade de linhas é uma métrica bruta, não uma contagem de tipos/símbolos únicos.
+O PDB foi reportado pelo SymChk com Global syms=FALSE e NumSyms=0; a disponibilidade
+de globais e públicos deve ser interpretada conforme o conteúdo efetivo dos dumps.
+Esta extração não reconstrói corpos de funções nem comprova compilação ou boot.
