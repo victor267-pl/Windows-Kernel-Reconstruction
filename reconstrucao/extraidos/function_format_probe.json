@@ -1,0 +1,1136 @@
+{
+  "files": [
+    {
+      "name": "AnalisarKernel_parte_01.txt",
+      "bytes": 20971498
+    },
+    {
+      "name": "AnalisarKernel_parte_02.txt",
+      "bytes": 20971514
+    },
+    {
+      "name": "AnalisarKernel_parte_03.txt",
+      "bytes": 20971514
+    },
+    {
+      "name": "AnalisarKernel_parte_04.txt",
+      "bytes": 8460937
+    },
+    {
+      "name": "Kernel_Consulta_20261122_105236_parte_01.txt",
+      "bytes": 20971496
+    },
+    {
+      "name": "Kernel_Consulta_20261122_105236_parte_02.txt",
+      "bytes": 20971497
+    },
+    {
+      "name": "Kernel_Consulta_20261122_105236_parte_03.txt",
+      "bytes": 362867
+    }
+  ],
+  "counts": {
+    "function_label": 33849,
+    "address_label": 17,
+    "c_function_signature": 270327,
+    "decompiler_header": 7478,
+    "ghidra_type_metadata": 130939
+  },
+  "samples": {
+    "function_label": [
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 7,
+        "text": "FUNÇÃO: FUN_140200008"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 215,
+        "text": "FUNÇÃO: FUN_140200444"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 327,
+        "text": "FUNÇÃO: FUN_1402006f8"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 351,
+        "text": "FUNÇÃO: FUN_140200740"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 375,
+        "text": "FUNÇÃO: FUN_1402007a8"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 412,
+        "text": "FUNÇÃO: FUN_140200820"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 462,
+        "text": "FUNÇÃO: FUN_140200950"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 507,
+        "text": "FUNÇÃO: FUN_1402009ec"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 530,
+        "text": "FUNÇÃO: FUN_140200a58"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 552,
+        "text": "FUNÇÃO: KeSetSelectedCpuSetsThread"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 615,
+        "text": "FUNÇÃO: FUN_140200bc0"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 701,
+        "text": "FUNÇÃO: FUN_140200dcc"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 745,
+        "text": "FUNÇÃO: FUN_140200e70"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 841,
+        "text": "FUNÇÃO: FUN_140200fc0"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 857,
+        "text": "FUNÇÃO: FUN_140200fd8"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1016,
+        "text": "FUNÇÃO: FUN_140201280"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1161,
+        "text": "FUNÇÃO: FUN_1402015a0"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1204,
+        "text": "FUNÇÃO: FUN_14020164c"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1238,
+        "text": "FUNÇÃO: FUN_140201708"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1270,
+        "text": "FUNÇÃO: FUN_140201790"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1330,
+        "text": "FUNÇÃO: FUN_140201834"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1365,
+        "text": "FUNÇÃO: FUN_1402018b8"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1394,
+        "text": "FUNÇÃO: FUN_140201918"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1421,
+        "text": "FUNÇÃO: FUN_140201958"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1538,
+        "text": "FUNÇÃO: FUN_140201b84"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1563,
+        "text": "FUNÇÃO: FUN_140201bf0"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1709,
+        "text": "FUNÇÃO: FUN_140201e00"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1744,
+        "text": "FUNÇÃO: FUN_140201ec0"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1817,
+        "text": "FUNÇÃO: FUN_140202010"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1946,
+        "text": "FUNÇÃO: FUN_1402021f4"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2003,
+        "text": "FUNÇÃO: FUN_1402022c4"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2093,
+        "text": "FUNÇÃO: FUN_1402023e8"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2137,
+        "text": "FUNÇÃO: KeRemoveProcessorAffinityEx"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2162,
+        "text": "FUNÇÃO: FUN_140202530"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2222,
+        "text": "FUNÇÃO: FUN_140202658"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2254,
+        "text": "FUNÇÃO: FUN_140202700"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2272,
+        "text": "FUNÇÃO: FUN_140202738"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2327,
+        "text": "FUNÇÃO: KeCheckProcessorAffinityEx"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2351,
+        "text": "FUNÇÃO: FUN_140202870"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2382,
+        "text": "FUNÇÃO: KeIsEqualAffinityEx"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2420,
+        "text": "FUNÇÃO: FUN_140202990"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2608,
+        "text": "FUNÇÃO: FUN_140202ce0"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2709,
+        "text": "FUNÇÃO: FUN_140202e04"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2762,
+        "text": "FUNÇÃO: FUN_140202ef0"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2882,
+        "text": "FUNÇÃO: FUN_140203198"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 3094,
+        "text": "FUNÇÃO: FUN_1402035b0"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 3173,
+        "text": "FUNÇÃO: FUN_140203720"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 3283,
+        "text": "FUNÇÃO: FUN_140203934"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 3312,
+        "text": "FUNÇÃO: FUN_140203980"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 3532,
+        "text": "FUNÇÃO: FUN_140203c94"
+      }
+    ],
+    "address_label": [
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 136115,
+        "text": "          0xfff0000000000e7f | uVar4 & 0xffffffffff000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 136127,
+        "text": "              0x7ff0000000000e7f | uVar4 & 0xffffffffff000 | 0x21;"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 241194,
+        "text": "                0x7ff0000000000e7f | uVar3 | 0x21;"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 242470,
+        "text": "                0x7ff0000000000e7f | uVar4 | 0x21;"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 618249,
+        "text": "              0xffffffbdffffffff | 0x10000000000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_02.txt",
+        "line": 72521,
+        "text": "         0xffffff3f | ~-(uint)(uVar3 != 0) & 0x40 | uVar4 << 7;"
+      },
+      {
+        "file": "AnalisarKernel_parte_02.txt",
+        "line": 72623,
+        "text": "         0xffffff3f | ~-(uint)(uVar2 != 0) & 0x40 | uVar4 << 7;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 189308,
+        "text": "                  0xfffffffffff7ffff | 0x40000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 189933,
+        "text": "                       0xffffffffffd7ffff | 0x140000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 224013,
+        "text": "                      0xfffffffffff7ffff | 0x40000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 278045,
+        "text": "                        0xfffffffffff7ffff | 0x40000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 285652,
+        "text": "                  0xfffffffffff7ffff | 0x40000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 285667,
+        "text": "                    0xfffffffffff7ffff | 0x40000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 386167,
+        "text": "                      0xfffffffffff7ffff | 0x40000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 386183,
+        "text": "                      0xffffffffffdfffff | 0x100000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 442864,
+        "text": "                          0xfffffffffff7ffff | 0x40000;"
+      },
+      {
+        "file": "AnalisarKernel_parte_03.txt",
+        "line": 443046,
+        "text": "                          0xfffffffffff7ffff | 0x40000;"
+      }
+    ],
+    "c_function_signature": [
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 219,
+        "text": "void FUN_140200444(longlong param_1)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 230,
+        "text": "  if (*(ulonglong *)(param_1 + 0x4e8) <= *(ulonglong *)(param_1 + 0x18)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 241,
+        "text": "  if (*(ulonglong *)(param_1 + 0x518) <= *(ulonglong *)(param_1 + 0x48)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 248,
+        "text": "  if (*(ulonglong *)(param_1 + 0x530) <= *(ulonglong *)(param_1 + 0x60)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 259,
+        "text": "  if (*(ulonglong *)(param_1 + 0x5a8) <= *(ulonglong *)(param_1 + 0xd8)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 267,
+        "text": "  if (*(ulonglong *)(param_1 + 0x5b0) <= *(ulonglong *)(param_1 + 0xe0)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 274,
+        "text": "  if (uVar3 == 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 275,
+        "text": "    if (uVar2 <= uVar1) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 287,
+        "text": "  if (*(ulonglong *)(param_1 + 0x750) <= *(ulonglong *)(param_1 + 0x280)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 294,
+        "text": "  if (*(ulonglong *)(param_1 + 0x758) <= *(ulonglong *)(param_1 + 0x288)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 300,
+        "text": "  if (*(ulonglong *)(param_1 + 0x8e8) <= *(ulonglong *)(param_1 + 0x418)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 331,
+        "text": "undefined8 FUN_1402006f8(longlong param_1)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 355,
+        "text": "void FUN_140200740(undefined8 param_1)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 362,
+        "text": "  if (DAT_140fc7d20 != 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 379,
+        "text": "void FUN_1402007a8(longlong param_1,undefined8 param_2)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 388,
+        "text": "  while( true ) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 416,
+        "text": "void FUN_140200820(longlong param_1)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 435,
+        "text": "  if ((*(uint *)(param_1 + 0x74) & 8) == 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 445,
+        "text": "  if ((((uint)DAT_140fc7b04 & 0x1000) != 0) && (cVar2 != '\\0')) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 451,
+        "text": "  if ((iVar1 != iVar3) && ((DAT_140fc7b10 & 0x8000000) != 0)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 466,
+        "text": "void FUN_140200950(void)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 476,
+        "text": "  if (DAT_140fc7ad0 != (uint *)0x0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 479,
+        "text": "    if (*DAT_140fc7ad0 != 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 484,
+        "text": "        if (DAT_140fc7ad0[uVar6 * 0x70 + 0x1b] != 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 534,
+        "text": "void FUN_140200a58(longlong param_1,undefined1 *param_2)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 539,
+        "text": "  if (DAT_140fc7d20 != 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 556,
+        "text": "undefined8 KeSetSelectedCpuSetsThread(longlong param_1,undefined4 param_2,undefined8 param_3)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 573,
+        "text": "  if (-1 < (int)uVar5) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 577,
+        "text": "    if ((*(uint *)(param_1 + 0x5a0) & 0x20000) == 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 586,
+        "text": "    while( true ) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 621,
+        "text": "uint FUN_140200bc0(undefined8 param_1,undefined4 param_2)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 649,
+        "text": "  if ((DAT_140fc7a90 & 8) == 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 660,
+        "text": "    if (puVar5 == (undefined4 *)0x0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 664,
+        "text": "      if ((((ulonglong)auStack_89 ^ (ulonglong)auStack_e0) & 0xfffffffffffff000) == 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 668,
+        "text": "      if (((byte)in_CR8 < 2) && (DAT_140fc7d20 != 0)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 682,
+        "text": "  if (iVar4 == -1) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 707,
+        "text": "void FUN_140200dcc(undefined4 param_1)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 723,
+        "text": "  if (DAT_140e67941 != '\\0') {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 726,
+        "text": "    if (cVar1 != '\\0') {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 749,
+        "text": "void FUN_140200e70(void)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 773,
+        "text": "  while (puVar5 = puVar6, puVar5 != puVar12) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 776,
+        "text": "    if (((undefined8 *)puVar11[1] != puVar5) || (puVar6 = puVar11, (undefined8 *)*puVar7 != puVar5))"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 795,
+        "text": "  while (puVar8 != (undefined8 *)0x0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 802,
+        "text": "    while( true ) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 811,
+        "text": "        if (((DAT_140fc62ac & uVar10) == 0) && ((DAT_140fc7ab8 & 0x40) != 0)) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 814,
+        "text": "          if (cVar4 != '\\0') {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 821,
+        "text": "    if ((*(uint *)(puVar8 + -0x6f) & 0x400000) != 0) {"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 845,
+        "text": "void FUN_140200fc0(void)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 861,
+        "text": "void FUN_140200fd8(uint *param_1,longlong param_2,int param_3)"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 889,
+        "text": "  if (param_3 == 0) {"
+      }
+    ],
+    "decompiler_header": [
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 11,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 619,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 705,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1334,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1748,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 1950,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2166,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2226,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2276,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2424,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2612,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 2713,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 3316,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 3536,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 3664,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 4327,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 4547,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 5009,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 5188,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 5373,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 5617,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 5761,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 6589,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 7312,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 7768,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 7993,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 9293,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 9822,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 11074,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 12813,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 13179,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 13457,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 14020,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 14296,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 14591,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 14656,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 14714,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 15646,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 15804,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 15993,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 18329,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 18517,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 20163,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 20480,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 20968,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 21526,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 21914,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 22027,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 22356,
+        "text": "/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */"
+      },
+      {
+        "file": "AnalisarKernel_parte_01.txt",
+        "line": 22545,
+        "text": "/* WARNING: Function: __security_check_cookie replaced with injection: security_check_cookie */"
+      }
+    ],
+    "ghidra_type_metadata": [
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 12,
+        "text": "Nome: <NoType>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 13,
+        "text": "Categoria: /"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 14,
+        "text": "Classe: TypedefDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 19,
+        "text": "Nome: <unnamed-enum-KTMOH_CommitTransaction_Result>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 20,
+        "text": "Categoria: /ntkrnlmp.pdb"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 21,
+        "text": "Classe: EnumDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 29,
+        "text": "Nome: <unnamed-tag_000010AB>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 30,
+        "text": "Categoria: /ntkrnlmp.pdb"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 31,
+        "text": "Classe: StructureDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 35,
+        "text": "  Campo 0 | Nome: LowPart | Offset: 0 | Tamanho: 4 | Tipo: ulong | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 36,
+        "text": "  Campo 1 | Nome: HighPart | Offset: 4 | Tamanho: 4 | Tipo: long | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 39,
+        "text": "Nome: <unnamed-tag_000010B0>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 40,
+        "text": "Categoria: /ntkrnlmp.pdb"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 41,
+        "text": "Classe: StructureDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 45,
+        "text": "  Campo 0 | Nome: LowPart | Offset: 0 | Tamanho: 4 | Tipo: ulong | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 46,
+        "text": "  Campo 1 | Nome: HighPart | Offset: 4 | Tamanho: 4 | Tipo: ulong | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 49,
+        "text": "Nome: <unnamed-tag_0000110A>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 50,
+        "text": "Categoria: /ntkrnlmp.pdb"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 51,
+        "text": "Classe: UnionDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 55,
+        "text": "  Campo 0 | Nome: MasterIrp | Offset: 0 | Tamanho: 8 | Tipo: _IRP * | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 56,
+        "text": "  Campo 1 | Nome: IrpCount | Offset: 0 | Tamanho: 4 | Tipo: long | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 57,
+        "text": "  Campo 2 | Nome: SystemBuffer | Offset: 0 | Tamanho: 8 | Tipo: void * | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 60,
+        "text": "Nome: <unnamed-tag_00001113>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 61,
+        "text": "Categoria: /ntkrnlmp.pdb"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 62,
+        "text": "Classe: StructureDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 66,
+        "text": "  Campo 0 | Nome: null | Offset: 0 | Tamanho: 8 | Tipo: <unnamed-tag_00001113>_u_0 | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 67,
+        "text": "  Campo 1 | Nome: null | Offset: 8 | Tamanho: 8 | Tipo: <unnamed-tag_00001113>_u_8 | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 70,
+        "text": "Nome: <unnamed-tag_00001113>_u_0"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 71,
+        "text": "Categoria: /ntkrnlmp.pdb/<unnamed-tag_00001113>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 72,
+        "text": "Classe: UnionDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 76,
+        "text": "  Campo 0 | Nome: UserApcRoutine | Offset: 0 | Tamanho: 8 | Tipo: _func___cdecl_void_void_ptr__IO_STATUS_BLOCK_ptr_ulong * | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 77,
+        "text": "  Campo 1 | Nome: IssuingProcess | Offset: 0 | Tamanho: 8 | Tipo: void * | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 80,
+        "text": "Nome: <unnamed-tag_00001113>_u_8"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 81,
+        "text": "Categoria: /ntkrnlmp.pdb/<unnamed-tag_00001113>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 82,
+        "text": "Classe: UnionDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 86,
+        "text": "  Campo 0 | Nome: UserApcContext | Offset: 0 | Tamanho: 8 | Tipo: void * | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 87,
+        "text": "  Campo 1 | Nome: IoRing | Offset: 0 | Tamanho: 8 | Tipo: _IORING_OBJECT * | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 90,
+        "text": "Nome: <unnamed-tag_00001115>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 91,
+        "text": "Categoria: /ntkrnlmp.pdb"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 92,
+        "text": "Classe: UnionDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 96,
+        "text": "  Campo 0 | Nome: AsynchronousParameters | Offset: 0 | Tamanho: 16 | Tipo: <unnamed-tag_00001113> | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 97,
+        "text": "  Campo 1 | Nome: AllocationSize | Offset: 0 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 100,
+        "text": "Nome: <unnamed-tag_00001122>"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 101,
+        "text": "Categoria: /ntkrnlmp.pdb"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 102,
+        "text": "Classe: StructureDB"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 106,
+        "text": "  Campo 0 | Nome: null | Offset: 0 | Tamanho: 32 | Tipo: <unnamed-tag_00001122>_u_0 | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 107,
+        "text": "  Campo 1 | Nome: Thread | Offset: 32 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 108,
+        "text": "  Campo 2 | Nome: AuxiliaryBuffer | Offset: 40 | Tamanho: 8 | Tipo: char * | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 109,
+        "text": "  Campo 3 | Nome: ListEntry | Offset: 48 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null"
+      },
+      {
+        "file": "Kernel_Consulta_20261122_105236_parte_01.txt",
+        "line": 110,
+        "text": "  Campo 4 | Nome: null | Offset: 64 | Tamanho: 8 | Tipo: <unnamed-tag_00001122>_u_64 | Comentário: null"
+      }
+    ]
+  }
+}
