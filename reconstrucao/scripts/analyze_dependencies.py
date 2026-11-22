@@ -65,3 +65,4 @@ md += ["","## Símbolos DAT_ mais referenciados",""]
 md += [f"- {n} — {c}" for n,c in summary["most_referenced_DAT_symbols"][:100]]
 (out/"SYMBOL_DEPENDENCIES.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({k:summary[k] for k in ("extracted_function_labels","unique_function_labels","unique_call_identifiers","unmatched_FUN_references","local_FUN_references","unique_DAT_data_symbols")},indent=2))
+
