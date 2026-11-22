@@ -1,6 +1,7 @@
 /* AUTO-GENERATED Ghidra decompilation reconstruction. */
 /* Not Microsoft's original source; names/types may be unresolved. */
 #include "../include/ghidra_types.h"
+#include "../include/ghidra_global_declarations.h"
 #include "../include/ghidra_function_prototypes.h"
 #include "../include/ghidra_internal_forward_decls.h"
 
