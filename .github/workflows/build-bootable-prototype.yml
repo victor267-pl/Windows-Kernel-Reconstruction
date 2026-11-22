@@ -23,7 +23,7 @@ jobs:
       - name: Install toolchain and emulator
         run: |
           sudo apt-get update
-          sudo apt-get install -y gcc binutils grub-common grub-pc-bin xorriso qemu-system-x86
+          sudo apt-get install -y gcc binutils grub-common grub-pc-bin xorriso mtools qemu-system-x86
       - name: Compile freestanding x86-64 kernel
         run: |
           mkdir -p build/iso/boot/grub
