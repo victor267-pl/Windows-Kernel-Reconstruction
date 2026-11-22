@@ -2,6 +2,7 @@
 /* Not Microsoft's original source; names/types may be unresolved. */
 #include "../include/ghidra_types.h"
 #include "../include/ghidra_function_prototypes.h"
+#include "../include/ghidra_internal_forward_decls.h"
 
 /* Ghidra label: FUN_140200008 */
 /* Ghidra address: 140200008 */
