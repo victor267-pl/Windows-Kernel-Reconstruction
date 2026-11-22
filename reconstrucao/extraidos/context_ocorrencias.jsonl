@@ -1,0 +1,954 @@
+{"file": "AnalisarKernel_parte_01.txt", "line": 166207, "text": "                                             *(PKNONVOLATILE_CONTEXT_POINTERS *)"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 166641, "text": "                                         *(PKNONVOLATILE_CONTEXT_POINTERS *)(puVar13 + lVar2 + 0x38)"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 541934, "text": "                PDWORD64 EstablisherFrame,PKNONVOLATILE_CONTEXT_POINTERS ContextPointers)"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 673627, "text": "          (_EXCEPTION_RECORD *ExceptionRecord,void *EstablisherFrame,_CONTEXT *ContextRecord,"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 673628, "text": "          _DISPATCHER_CONTEXT *DispatcherContext)"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 673642, "text": "  _CONTEXT *p_Stack_30;"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 675935, "text": "  _CONTEXT *p_Var8;"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 675936, "text": "  _CONTEXT *p_Var9;"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 675938, "text": "  _CONTEXT _Stack_568;"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 675947, "text": "  p_Var8 = (_CONTEXT *)auStack_48;"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 675955, "text": "        p_Var9 = (_CONTEXT *)((longlong)p_Var9 + 8);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 678250, "text": "         _PtFuncCompare *_PtFuncCompare,void *_Context)"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 678273, "text": "        iVar1 = (*_PtFuncCompare)(_Context,_Key);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 678284, "text": "      iVar1 = (*_PtFuncCompare)(_Context,_Key);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 678975, "text": "       void *_Context)"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679014, "text": "      iVar3 = (*_PtFuncCompare)(_Context,_Base);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679028, "text": "      iVar3 = (*_PtFuncCompare)(_Context,_Base);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679040, "text": "      iVar3 = (*_PtFuncCompare)(_Context,puVar4);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679058, "text": "            iVar3 = (*_PtFuncCompare)(_Context,_Base);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679066, "text": "            iVar3 = (*_PtFuncCompare)(_Context,_Base);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679073, "text": "          iVar3 = (*_PtFuncCompare)(_Context,puVar7);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679102, "text": "          iVar3 = FUN_1406c4fb0(_Context,puVar4,puVar6);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679134, "text": "      iVar3 = (*_PtFuncCompare)(_Context,puVar6);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 679143, "text": "      iVar3 = (*_PtFuncCompare)(_Context,puVar6);"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 685222, "text": "char * __cdecl strtok_s(char *_Str,char *_Delim,char **_Context)"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 685237, "text": "  if (((_Context == (char **)0x0) || (_Delim == (char *)0x0)) ||"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 685238, "text": "     ((_Str == (char *)0x0 && (*_Context == (char *)0x0)))) {"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 685261, "text": "      _Str = *_Context;"}
+{"file": "AnalisarKernel_parte_01.txt", "line": 685286, "text": "    *_Context = (char *)pbVar4;"}
+{"file": "AnalisarKernel_parte_02.txt", "line": 179762, "text": "                     *(PKNONVOLATILE_CONTEXT_POINTERS *)((longlong)alStack_58 + lVar2 + 0x18));"}
+{"file": "AnalisarKernel_parte_02.txt", "line": 357482, "text": "  void *_Context;"}
+{"file": "AnalisarKernel_parte_02.txt", "line": 357510, "text": "      _Context = (void *)(ulonglong)param_3;"}
+{"file": "AnalisarKernel_parte_02.txt", "line": 357513, "text": "                         (ulonglong)(param_3 + 0xc),FUN_140842450,_Context);"}
+{"file": "AnalisarKernel_parte_02.txt", "line": 357515, "text": "        uVar1 = *(uint *)((longlong)_Context + 8 + (longlong)pvVar3);"}
+{"file": "AnalisarKernel_parte_02.txt", "line": 357517, "text": "          *param_4 = *(undefined8 *)((longlong)_Context + (longlong)pvVar3);"}
+{"file": "AnalisarKernel_parte_02.txt", "line": 364524, "text": "               (_EXCEPTION_RECORD *param_1,void *param_2,_CONTEXT *param_3,"}
+{"file": "AnalisarKernel_parte_02.txt", "line": 364525, "text": "               _DISPATCHER_CONTEXT *param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 151, "text": "  Campo 0 | Nome: SecurityContext | Offset: 0 | Tamanho: 8 | Tipo: _IO_SECURITY_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 166, "text": "  Campo 0 | Nome: SecurityContext | Offset: 0 | Tamanho: 8 | Tipo: _IO_SECURITY_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 180, "text": "  Campo 0 | Nome: SecurityContext | Offset: 0 | Tamanho: 8 | Tipo: _IO_SECURITY_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 617, "text": "  Campo 1 | Nome: SystemPowerStateContext | Offset: 0 | Tamanho: 4 | Tipo: _SYSTEM_POWER_STATE_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 708, "text": "  Campo 1 | Nome: Wcb | Offset: 0 | Tamanho: 72 | Tipo: _WAIT_CONTEXT_BLOCK | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2296, "text": "  Campo 2 | Nome: GetContext | Offset: 0 | Tamanho: 4 | Tipo: _DBGKD_GET_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2297, "text": "  Campo 3 | Nome: SetContext | Offset: 0 | Tamanho: 4 | Tipo: _DBGKD_SET_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2316, "text": "  Campo 22 | Nome: GetContextEx | Offset: 0 | Tamanho: 12 | Tipo: _DBGKD_CONTEXT_EX | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2317, "text": "  Campo 23 | Nome: SetContextEx | Offset: 0 | Tamanho: 12 | Tipo: _DBGKD_CONTEXT_EX | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2331, "text": "  Campo 4 | Nome: GetContext | Offset: 0 | Tamanho: 4 | Tipo: _DBGKD_GET_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2332, "text": "  Campo 5 | Nome: SetContext | Offset: 0 | Tamanho: 4 | Tipo: _DBGKD_SET_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2347, "text": "  Campo 20 | Nome: GetContextEx | Offset: 0 | Tamanho: 12 | Tipo: _DBGKD_CONTEXT_EX | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2348, "text": "  Campo 21 | Nome: SetContextEx | Offset: 0 | Tamanho: 12 | Tipo: _DBGKD_CONTEXT_EX | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2425, "text": "  Campo 8 | Nome: CallbackContext | Offset: 64 | Tamanho: 8 | Tipo: _CC_ASYNC_READ_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4410, "text": "  Campo 9 | Nome: SubjectSecurityContext | Offset: 32 | Tamanho: 32 | Tipo: _SECURITY_SUBJECT_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4529, "text": "Nome: _ACTIVATION_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4537, "text": "Nome: _ACTIVATION_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4541, "text": "Descrição: pointer to _ACTIVATION_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4544, "text": "Nome: _ACTIVATION_CONTEXT * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4548, "text": "Descrição: pointer to pointer to _ACTIVATION_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4551, "text": "Nome: _ACTIVATION_CONTEXT_DATA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4559, "text": "Nome: _ACTIVATION_CONTEXT_DATA *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4563, "text": "Descrição: pointer to _ACTIVATION_CONTEXT_DATA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4566, "text": "Nome: _ACTIVATION_CONTEXT_STACK"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4572, "text": "  Campo 0 | Nome: ActiveFrame | Offset: 0 | Tamanho: 8 | Tipo: _RTL_ACTIVATION_CONTEXT_STACK_FRAME * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4579, "text": "Nome: _ACTIVATION_CONTEXT_STACK *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4583, "text": "Descrição: pointer to _ACTIVATION_CONTEXT_STACK"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4586, "text": "Nome: _ACTIVATION_CONTEXT_STACK32"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4599, "text": "Nome: _ACTIVATION_CONTEXT_STACK64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4640, "text": "  Campo 22 | Nome: CurrentWcb | Offset: 352 | Tamanho: 8 | Tipo: _WAIT_CONTEXT_BLOCK * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4641, "text": "  Campo 23 | Nome: CurrentTransferContext | Offset: 360 | Tamanho: 8 | Tipo: _DMA_TRANSFER_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 5292, "text": "Nome: _ALPC_DISPATCH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 5312, "text": "Nome: _ALPC_DISPATCH_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 5316, "text": "Descrição: pointer to _ALPC_DISPATCH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 5384, "text": "  Campo 7 | Nome: StaticSecurity | Offset: 64 | Tamanho: 72 | Tipo: _SECURITY_CLIENT_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 5460, "text": "Nome: _ALPC_PROCESS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 6462, "text": "  BLOB_TYPE_SECURITY_CONTEXT = 3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 6646, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 6887, "text": "Nome: _CC_ASYNC_READ_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 6900, "text": "Nome: _CC_ASYNC_READ_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 6904, "text": "Descrição: pointer to _CC_ASYNC_READ_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 7856, "text": "  Campo 1 | Nome: DiscardReplaceContext | Offset: 0 | Tamanho: 8 | Tipo: _CMP_DISCARD_AND_REPLACE_KCB_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8337, "text": "  Campo 7 | Nome: SubjectContext | Offset: 56 | Tamanho: 32 | Tipo: _SECURITY_SUBJECT_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8693, "text": "  Campo 65 | Nome: VolumeContext | Offset: 4792 | Tamanho: 8 | Tipo: _CMP_VOLUME_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8755, "text": "Nome: _CMP_DISCARD_AND_REPLACE_KCB_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8766, "text": "Nome: _CMP_DISCARD_AND_REPLACE_KCB_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8770, "text": "Descrição: pointer to _CMP_DISCARD_AND_REPLACE_KCB_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8813, "text": "Nome: _CMP_VOLUME_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8828, "text": "Nome: _CMP_VOLUME_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8832, "text": "Descrição: pointer to _CMP_VOLUME_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9064, "text": "Nome: _CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9118, "text": "Nome: _CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9162, "text": "  Campo 38 | Nome: null | Offset: 256 | Tamanho: 512 | Tipo: _CONTEXT_u_256 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9172, "text": "Nome: _CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9176, "text": "Descrição: pointer to _CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9179, "text": "Nome: _CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9183, "text": "Descrição: pointer to _CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9186, "text": "Nome: _CONTEXT_u_256"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9187, "text": "Categoria: /ntkrnlmp.pdb/_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9193, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 416 | Tipo: _CONTEXT_u_256_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9196, "text": "Nome: _CONTEXT_u_256_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9197, "text": "Categoria: /ntkrnlmp.pdb/_CONTEXT/_CONTEXT_u_256"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9486, "text": "Nome: _DBGKD_CONTEXT_EX"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9552, "text": "Nome: _DBGKD_GET_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9997, "text": "Nome: _DBGKD_SET_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 10701, "text": "  Campo 66 | Nome: RebalanceContext | Offset: 712 | Tamanho: 8 | Tipo: _PNP_REBALANCE_TRACE_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11163, "text": "Nome: _DIAGNOSTIC_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11170, "text": "  Campo 1 | Nome: null | Offset: 8 | Tamanho: 40 | Tipo: _DIAGNOSTIC_CONTEXT_u_8 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11174, "text": "Nome: _DIAGNOSTIC_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11178, "text": "Descrição: pointer to _DIAGNOSTIC_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11181, "text": "Nome: _DIAGNOSTIC_CONTEXT_u_8"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11182, "text": "Categoria: /ntkrnlmp.pdb/_DIAGNOSTIC_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11187, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 40 | Tipo: _DIAGNOSTIC_CONTEXT_u_8_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11191, "text": "Nome: _DIAGNOSTIC_CONTEXT_u_8_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11192, "text": "Categoria: /ntkrnlmp.pdb/_DIAGNOSTIC_CONTEXT/_DIAGNOSTIC_CONTEXT_u_8"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11267, "text": "Nome: _DISPATCHER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11275, "text": "Nome: _DISPATCHER_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11279, "text": "Descrição: pointer to _DISPATCHER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11991, "text": "Nome: _DMA_TRANSFER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11998, "text": "  Campo 1 | Nome: V1 | Offset: 8 | Tamanho: 88 | Tipo: _DMA_TRANSFER_CONTEXT_V1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12001, "text": "Nome: _DMA_TRANSFER_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12005, "text": "Descrição: pointer to _DMA_TRANSFER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12008, "text": "Nome: _DMA_TRANSFER_CONTEXT_V1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12016, "text": "  Campo 2 | Nome: Wcb | Offset: 8 | Tamanho: 72 | Tipo: _WAIT_CONTEXT_BLOCK | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12302, "text": "Nome: _DUMP_INITIALIZATION_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12338, "text": "Nome: _DUMP_STACK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12344, "text": "  Campo 0 | Nome: Init | Offset: 0 | Tamanho: 264 | Tipo: _DUMP_INITIALIZATION_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12346, "text": "  Campo 2 | Nome: null | Offset: 272 | Tamanho: 8 | Tipo: _DUMP_STACK_CONTEXT_u_272 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12358, "text": "Nome: _DUMP_STACK_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12362, "text": "Descrição: pointer to _DUMP_STACK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12365, "text": "Nome: _DUMP_STACK_CONTEXT_u_272"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12366, "text": "Categoria: /ntkrnlmp.pdb/_DUMP_STACK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12933, "text": "  Campo 103 | Nome: AlpcContext | Offset: 1408 | Tamanho: 32 | Tipo: _ALPC_PROCESS_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12973, "text": "  Campo 143 | Nome: EnergyContext | Offset: 1640 | Tamanho: 8 | Tipo: _PO_PROCESS_ENERGY_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13019, "text": "  Campo 189 | Nome: SyscallProviderDispatchContext | Offset: 2000 | Tamanho: 8 | Tipo: _PSP_SYSCALL_PROVIDER_DISPATCH_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13496, "text": "  Campo 9 | Nome: ClientSecurity | Offset: 1336 | Tamanho: 8 | Tipo: _PS_CLIENT_SECURITY_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13545, "text": "  Campo 58 | Nome: SetContextState | Offset: 1704 | Tamanho: 8 | Tipo: _CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13838, "text": "  Campo 9 | Nome: WakeReason | Offset: 248 | Tamanho: 8 | Tipo: _DIAGNOSTIC_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13874, "text": "  Campo 0 | Nome: LoggerContext | Offset: 0 | Tamanho: 8 | Tipo: _WMI_LOGGER_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13918, "text": "Nome: _ETW_BUFFER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13924, "text": "  Campo 0 | Nome: null | Offset: 0 | Tamanho: 2 | Tipo: _ETW_BUFFER_CONTEXT_u_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13928, "text": "Nome: _ETW_BUFFER_CONTEXT_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13929, "text": "Categoria: /ntkrnlmp.pdb/_ETW_BUFFER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13934, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 2 | Tipo: _ETW_BUFFER_CONTEXT_u_0_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13938, "text": "Nome: _ETW_BUFFER_CONTEXT_u_0_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13939, "text": "Categoria: /ntkrnlmp.pdb/_ETW_BUFFER_CONTEXT/_ETW_BUFFER_CONTEXT_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14024, "text": "Nome: _ETW_EVENT_CALLBACK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14032, "text": "Nome: _ETW_EVENT_CALLBACK_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14036, "text": "Descrição: pointer to _ETW_EVENT_CALLBACK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14326, "text": "Nome: _ETW_PARTITION_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14761, "text": "  Campo 5 | Nome: EtwpLoggerContext | Offset: 712 | Tamanho: 8 | Tipo: _WMI_LOGGER_CONTEXT * * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14793, "text": "Nome: _ETW_SOFT_RESTART_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14801, "text": "Nome: _ETW_SOFT_RESTART_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14805, "text": "Descrição: pointer to _ETW_SOFT_RESTART_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 15375, "text": "  Campo 1 | Nome: BufferContext | Offset: 80 | Tamanho: 4 | Tipo: _ETW_BUFFER_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 15996, "text": "  Campo 1 | Nome: ContextRecord | Offset: 8 | Tamanho: 8 | Tipo: _CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16112, "text": "  Campo 1 | Nome: Handler | Offset: 8 | Tamanho: 8 | Tipo: _func___cdecl__EXCEPTION_DISPOSITION__EXCEPTION_RECORD_ptr_void_ptr__CONTEXT_ptr_void_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16167, "text": "Nome: _EXP_POOL_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16173, "text": "  Campo 0 | Nome: Header | Offset: 0 | Tamanho: 8 | Tipo: _EXP_POOL_CONTEXT_HEADER | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16183, "text": "Nome: _EXP_POOL_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16187, "text": "Descrição: pointer to _EXP_POOL_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16190, "text": "Nome: _EXP_POOL_CONTEXT_HEADER"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16197, "text": "  Campo 1 | Nome: ContextType | Offset: 4 | Tamanho: 4 | Tipo: _EXP_POOL_CONTEXT_TYPE | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16200, "text": "Nome: _EXP_POOL_CONTEXT_HEADER *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16204, "text": "Descrição: pointer to _EXP_POOL_CONTEXT_HEADER"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16207, "text": "Nome: _EXP_POOL_CONTEXT_TYPE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16218, "text": "Nome: _EXP_POOL_CONTEXT_TYPE *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16222, "text": "Descrição: pointer to _EXP_POOL_CONTEXT_TYPE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16236, "text": "Nome: _EXP_SECURE_POOL_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16242, "text": "  Campo 0 | Nome: Header | Offset: 0 | Tamanho: 8 | Tipo: _EXP_POOL_CONTEXT_HEADER | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16246, "text": "Nome: _EXP_SECURE_POOL_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16250, "text": "Descrição: pointer to _EXP_SECURE_POOL_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16569, "text": "Nome: _EXT_IOMMU_FLUSH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16575, "text": "  Campo 0 | Nome: null | Offset: 0 | Tamanho: 16 | Tipo: _EXT_IOMMU_FLUSH_CONTEXT_u_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16578, "text": "Nome: _EXT_IOMMU_FLUSH_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16582, "text": "Descrição: pointer to _EXT_IOMMU_FLUSH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16585, "text": "Nome: _EXT_IOMMU_FLUSH_CONTEXT_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16586, "text": "Categoria: /ntkrnlmp.pdb/_EXT_IOMMU_FLUSH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16611, "text": "  Campo 10 | Nome: FlushDomainTb | Offset: 80 | Tamanho: 8 | Tipo: _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_DOMAIN_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr_uint__KTB_FLUSH_VA_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16612, "text": "  Campo 11 | Nome: SyncFlush | Offset: 88 | Tamanho: 8 | Tipo: _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16613, "text": "  Campo 12 | Nome: CompleteFlush | Offset: 96 | Tamanho: 8 | Tipo: _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17336, "text": "  Campo 26 | Nome: CompletionContext | Offset: 176 | Tamanho: 8 | Tipo: _IO_COMPLETION_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17608, "text": "  Campo 19 | Nome: ReservedContext | Offset: 112 | Tamanho: 8 | Tipo: _FSRTL_PER_STREAM_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17655, "text": "Nome: _FSRTL_PER_STREAM_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17667, "text": "Nome: _FSRTL_PER_STREAM_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17671, "text": "Descrição: pointer to _FSRTL_PER_STREAM_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17674, "text": "Nome: _FSRTL_PER_STREAM_CONTEXT * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17678, "text": "Descrição: pointer to pointer to _FSRTL_PER_STREAM_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17681, "text": "Nome: _FSRTL_PER_STREAM_CONTEXT * * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17685, "text": "Descrição: pointer to pointer to pointer to _FSRTL_PER_STREAM_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17870, "text": "Nome: _func___cdecl__CELL_DATA_ptr__HHIVE_ptr_ulong__HV_GET_CELL_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17877, "text": "Nome: _func___cdecl__CELL_DATA_ptr__HHIVE_ptr_ulong__HV_GET_CELL_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17881, "text": "Descrição: pointer to _func___cdecl__CELL_DATA_ptr__HHIVE_ptr_ulong__HV_GET_CELL_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18024, "text": "Nome: _func___cdecl__EXCEPTION_DISPOSITION__EXCEPTION_RECORD_ptr_void_ptr__CONTEXT_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18031, "text": "Nome: _func___cdecl__EXCEPTION_DISPOSITION__EXCEPTION_RECORD_ptr_void_ptr__CONTEXT_ptr_void_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18035, "text": "Descrição: pointer to _func___cdecl__EXCEPTION_DISPOSITION__EXCEPTION_RECORD_ptr_void_ptr__CONTEXT_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18038, "text": "Nome: _func___cdecl__EXP_POOL_CONTEXT_HEADER_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18045, "text": "Nome: _func___cdecl__EXP_POOL_CONTEXT_HEADER_ptr_void_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18049, "text": "Descrição: pointer to _func___cdecl__EXP_POOL_CONTEXT_HEADER_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18066, "text": "Nome: _func___cdecl__FSRTL_PER_STREAM_CONTEXT_ptr__FSRTL_ADVANCED_FCB_HEADER_ptr_void_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18073, "text": "Nome: _func___cdecl__FSRTL_PER_STREAM_CONTEXT_ptr__FSRTL_ADVANCED_FCB_HEADER_ptr_void_ptr_void_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18077, "text": "Descrição: pointer to _func___cdecl__FSRTL_PER_STREAM_CONTEXT_ptr__FSRTL_ADVANCED_FCB_HEADER_ptr_void_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18178, "text": "Nome: _func___cdecl__HEAP_LFH_BUCKET_ptr__HEAP_LFH_SUBSEGMENT_ptr__HEAP_LFH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18185, "text": "Nome: _func___cdecl__HEAP_LFH_BUCKET_ptr__HEAP_LFH_SUBSEGMENT_ptr__HEAP_LFH_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18189, "text": "Descrição: pointer to _func___cdecl__HEAP_LFH_BUCKET_ptr__HEAP_LFH_SUBSEGMENT_ptr__HEAP_LFH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18220, "text": "Nome: _func___cdecl__HEAP_LFH_THREAD_DATA__HEAP_LFH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18227, "text": "Nome: _func___cdecl__HEAP_LFH_THREAD_DATA__HEAP_LFH_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18231, "text": "Descrição: pointer to _func___cdecl__HEAP_LFH_THREAD_DATA__HEAP_LFH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18262, "text": "Nome: _func___cdecl__HEAP_PAGE_SEGMENT_ptr__HEAP_SEG_CONTEXT_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18269, "text": "Nome: _func___cdecl__HEAP_PAGE_SEGMENT_ptr__HEAP_SEG_CONTEXT_ptr_void_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18273, "text": "Descrição: pointer to _func___cdecl__HEAP_PAGE_SEGMENT_ptr__HEAP_SEG_CONTEXT_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20194, "text": "Nome: _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20201, "text": "Nome: _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20205, "text": "Descrição: pointer to _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20208, "text": "Nome: _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr__PORT_MESSAGE_ptr__ALPC_MESSAGE_ATTRIBUTES_ptr_char"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20215, "text": "Nome: _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr__PORT_MESSAGE_ptr__ALPC_MESSAGE_ATTRIBUTES_ptr_char *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20219, "text": "Descrição: pointer to _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr__PORT_MESSAGE_ptr__ALPC_MESSAGE_ATTRIBUTES_ptr_char"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20222, "text": "Nome: _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr__PORT_MESSAGE_ptr_char"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20229, "text": "Nome: _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr__PORT_MESSAGE_ptr_char *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20233, "text": "Descrição: pointer to _func___cdecl_long__ALPC_DISPATCH_CONTEXT_ptr__PORT_MESSAGE_ptr_char"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 21202, "text": "Nome: _func___cdecl_long__FSRTL_ADVANCED_FCB_HEADER_ptr__FSRTL_PER_STREAM_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 21209, "text": "Nome: _func___cdecl_long__FSRTL_ADVANCED_FCB_HEADER_ptr__FSRTL_PER_STREAM_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 21213, "text": "Descrição: pointer to _func___cdecl_long__FSRTL_ADVANCED_FCB_HEADER_ptr__FSRTL_PER_STREAM_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 21531, "text": "Nome: _func___cdecl_long__HEAP_LFH_CONTEXT_ptr__HEAP_LFH_THREAD_DATA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 21538, "text": "Nome: _func___cdecl_long__HEAP_LFH_CONTEXT_ptr__HEAP_LFH_THREAD_DATA *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 21542, "text": "Descrição: pointer to _func___cdecl_long__HEAP_LFH_CONTEXT_ptr__HEAP_LFH_THREAD_DATA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22301, "text": "Nome: _func___cdecl_long__MI_PARTITION_ptr_ulong64_ulong64_ulong64_ulong64_ulong64__MI_PFN_CACHE_ATTRIBUTE_ulong_uchar_ulong_ulong__MDL_ptr__MI_BEST_LARGE_PAGE_CANDIDATES_CONTEXT_ptr_ulong64_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22308, "text": "Nome: _func___cdecl_long__MI_PARTITION_ptr_ulong64_ulong64_ulong64_ulong64_ulong64__MI_PFN_CACHE_ATTRIBUTE_ulong_uchar_ulong_ulong__MDL_ptr__MI_BEST_LARGE_PAGE_CANDIDATES_CONTEXT_ptr_ulong64_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22312, "text": "Descrição: pointer to _func___cdecl_long__MI_PARTITION_ptr_ulong64_ulong64_ulong64_ulong64_ulong64__MI_PFN_CACHE_ATTRIBUTE_ulong_uchar_ulong_ulong__MDL_ptr__MI_BEST_LARGE_PAGE_CANDIDATES_CONTEXT_ptr_ulong64_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22714, "text": "Nome: _func___cdecl_long__WHEA_RECOVERY_CONTEXT_ptr_uchar"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22721, "text": "Nome: _func___cdecl_long__WHEA_RECOVERY_CONTEXT_ptr_uchar *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22725, "text": "Descrição: pointer to _func___cdecl_long__WHEA_RECOVERY_CONTEXT_ptr_uchar"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26263, "text": "Nome: _func___cdecl_uchar__MCGEN_TRACE_CONTEXT_ptr_uchar_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26270, "text": "Nome: _func___cdecl_uchar__MCGEN_TRACE_CONTEXT_ptr_uchar_ulong64 *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26274, "text": "Descrição: pointer to _func___cdecl_uchar__MCGEN_TRACE_CONTEXT_ptr_uchar_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26347, "text": "Nome: _func___cdecl_uchar_char__SECURITY_SUBJECT_CONTEXT_ptr_ulong_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26354, "text": "Nome: _func___cdecl_uchar_char__SECURITY_SUBJECT_CONTEXT_ptr_ulong_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26358, "text": "Descrição: pointer to _func___cdecl_uchar_char__SECURITY_SUBJECT_CONTEXT_ptr_ulong_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26907, "text": "Nome: _func___cdecl_ulong64__HEAP_SEG_CONTEXT_ptr__HEAP_PAGE_SEGMENT_ptr_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26914, "text": "Nome: _func___cdecl_ulong64__HEAP_SEG_CONTEXT_ptr__HEAP_PAGE_SEGMENT_ptr_ulong64 *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26918, "text": "Descrição: pointer to _func___cdecl_ulong64__HEAP_SEG_CONTEXT_ptr__HEAP_PAGE_SEGMENT_ptr_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26921, "text": "Nome: _func___cdecl_ulong64__HEAP_SEG_CONTEXT_ptr_ulong64_ptr_ulong64_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26928, "text": "Nome: _func___cdecl_ulong64__HEAP_SEG_CONTEXT_ptr_ulong64_ptr_ulong64_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26932, "text": "Descrição: pointer to _func___cdecl_ulong64__HEAP_SEG_CONTEXT_ptr_ulong64_ptr_ulong64_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27537, "text": "Nome: _func___cdecl_ulong__HEAP_LFH_CONTEXT_ptr_ulong"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27544, "text": "Nome: _func___cdecl_ulong__HEAP_LFH_CONTEXT_ptr_ulong *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27548, "text": "Descrição: pointer to _func___cdecl_ulong__HEAP_LFH_CONTEXT_ptr_ulong"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27635, "text": "Nome: _func___cdecl_ulong__HEAP_VS_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27642, "text": "Nome: _func___cdecl_ulong__HEAP_VS_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27646, "text": "Descrição: pointer to _func___cdecl_ulong__HEAP_VS_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27649, "text": "Nome: _func___cdecl_ulong__HEAP_VS_CONTEXT_ptr__HEAP_VS_CHUNK_HEADER_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27656, "text": "Nome: _func___cdecl_ulong__HEAP_VS_CONTEXT_ptr__HEAP_VS_CHUNK_HEADER_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27660, "text": "Descrição: pointer to _func___cdecl_ulong__HEAP_VS_CONTEXT_ptr__HEAP_VS_CHUNK_HEADER_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27719, "text": "Nome: _func___cdecl_ulong__MCGEN_TRACE_CONTEXT_ptr__EVENT_DESCRIPTOR_ptr__GUID_ptr_ulong__EVENT_DATA_DESCRIPTOR_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27726, "text": "Nome: _func___cdecl_ulong__MCGEN_TRACE_CONTEXT_ptr__EVENT_DESCRIPTOR_ptr__GUID_ptr_ulong__EVENT_DATA_DESCRIPTOR_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27730, "text": "Descrição: pointer to _func___cdecl_ulong__MCGEN_TRACE_CONTEXT_ptr__EVENT_DESCRIPTOR_ptr__GUID_ptr_ulong__EVENT_DATA_DESCRIPTOR_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 28433, "text": "Nome: _func___cdecl_void__ALPC_DISPATCH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 28440, "text": "Nome: _func___cdecl_void__ALPC_DISPATCH_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 28444, "text": "Descrição: pointer to _func___cdecl_void__ALPC_DISPATCH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29266, "text": "Nome: _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_DOMAIN_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr_uint__KTB_FLUSH_VA_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29273, "text": "Nome: _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_DOMAIN_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr_uint__KTB_FLUSH_VA_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29277, "text": "Descrição: pointer to _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_DOMAIN_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr_uint__KTB_FLUSH_VA_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29294, "text": "Nome: _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29301, "text": "Nome: _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29305, "text": "Descrição: pointer to _func___cdecl_void__EXT_IOMMU_ptr__EXT_IOMMU_FLUSH_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29525, "text": "Nome: _func___cdecl_void__HAL_LOG_REGISTER_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29532, "text": "Nome: _func___cdecl_void__HAL_LOG_REGISTER_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29536, "text": "Descrição: pointer to _func___cdecl_void__HAL_LOG_REGISTER_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29567, "text": "Nome: _func___cdecl_void__HALP_ALLOC_CONTEXT_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29574, "text": "Nome: _func___cdecl_void__HALP_ALLOC_CONTEXT_ptr_void_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29578, "text": "Descrição: pointer to _func___cdecl_void__HALP_ALLOC_CONTEXT_ptr_void_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29721, "text": "Nome: _func___cdecl_void__HHIVE_ptr__HV_GET_CELL_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29728, "text": "Nome: _func___cdecl_void__HHIVE_ptr__HV_GET_CELL_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29732, "text": "Descrição: pointer to _func___cdecl_void__HHIVE_ptr__HV_GET_CELL_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 30421, "text": "Nome: _func___cdecl_void__OBP_LOOKUP_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 30428, "text": "Nome: _func___cdecl_void__OBP_LOOKUP_CONTEXT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 30432, "text": "Descrição: pointer to _func___cdecl_void__OBP_LOOKUP_CONTEXT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31296, "text": "Nome: _func___cdecl_void_ptr__HALP_ALLOC_CONTEXT_ptr_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31303, "text": "Nome: _func___cdecl_void_ptr__HALP_ALLOC_CONTEXT_ptr_ulong64 *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31307, "text": "Descrição: pointer to _func___cdecl_void_ptr__HALP_ALLOC_CONTEXT_ptr_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31324, "text": "Nome: _func___cdecl_void_ptr__HEAP_SEG_CONTEXT_ptr__HEAP_PAGE_SEGMENT_ptr__HEAP_PAGE_RANGE_DESCRIPTOR_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31331, "text": "Nome: _func___cdecl_void_ptr__HEAP_SEG_CONTEXT_ptr__HEAP_PAGE_SEGMENT_ptr__HEAP_PAGE_RANGE_DESCRIPTOR_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31335, "text": "Descrição: pointer to _func___cdecl_void_ptr__HEAP_SEG_CONTEXT_ptr__HEAP_PAGE_SEGMENT_ptr__HEAP_PAGE_RANGE_DESCRIPTOR_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 34119, "text": "  Campo 25 | Nome: WheaErrorNotification | Offset: 184 | Tamanho: 8 | Tipo: _func___cdecl_long__WHEA_RECOVERY_CONTEXT_ptr_uchar * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 34241, "text": "Nome: _HAL_LOG_REGISTER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 34251, "text": "Nome: _HAL_LOG_REGISTER_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 34255, "text": "Descrição: pointer to _HAL_LOG_REGISTER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 34380, "text": "Nome: _HALP_ALLOC_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 34390, "text": "Nome: _HALP_ALLOC_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 34394, "text": "Descrição: pointer to _HALP_ALLOC_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 35449, "text": "  Campo 16 | Nome: ContextRecord | Offset: 512 | Tamanho: 1232 | Tipo: _CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 35838, "text": "Nome: _HEAP_LFH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 35868, "text": "Nome: _HEAP_LFH_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 35872, "text": "Descrição: pointer to _HEAP_LFH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 36597, "text": "Nome: _HEAP_SEG_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 36683, "text": "Nome: _HEAP_SEG_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 36687, "text": "Descrição: pointer to _HEAP_SEG_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 36690, "text": "Nome: _HEAP_SEG_CONTEXT[2]"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37182, "text": "  Campo 20 | Nome: DelayFreeContext | Offset: 64 | Tamanho: 16 | Tipo: _HEAP_VS_DELAY_FREE_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37346, "text": "Nome: _HEAP_VS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37365, "text": "Nome: _HEAP_VS_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37369, "text": "Descrição: pointer to _HEAP_VS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37372, "text": "Nome: _HEAP_VS_DELAY_FREE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37465, "text": "  Campo 1 | Nome: GetCellRoutine | Offset: 8 | Tamanho: 8 | Tipo: _func___cdecl__CELL_DATA_ptr__HHIVE_ptr_ulong__HV_GET_CELL_CONTEXT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37466, "text": "  Campo 2 | Nome: ReleaseCellRoutine | Offset: 16 | Tamanho: 8 | Tipo: _func___cdecl_void__HHIVE_ptr__HV_GET_CELL_CONTEXT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37692, "text": "Nome: _HV_GET_BIN_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37701, "text": "Nome: _HV_GET_CELL_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37708, "text": "  Campo 1 | Nome: BinContext | Offset: 4 | Tamanho: 2 | Tipo: _HV_GET_BIN_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37711, "text": "Nome: _HV_GET_CELL_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37715, "text": "Descrição: pointer to _HV_GET_CELL_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38106, "text": "Nome: _IMAGE_SECURITY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38112, "text": "  Campo 0 | Nome: null | Offset: 0 | Tamanho: 8 | Tipo: _IMAGE_SECURITY_CONTEXT_u_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38115, "text": "Nome: _IMAGE_SECURITY_CONTEXT_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38116, "text": "Categoria: /ntkrnlmp.pdb/_IMAGE_SECURITY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38123, "text": "  Campo 2 | Nome: _s_2 | Offset: 0 | Tamanho: 8 | Tipo: _IMAGE_SECURITY_CONTEXT_u_0_s_2 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38126, "text": "Nome: _IMAGE_SECURITY_CONTEXT_u_0_s_2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38127, "text": "Categoria: /ntkrnlmp.pdb/_IMAGE_SECURITY_CONTEXT/_IMAGE_SECURITY_CONTEXT_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38137, "text": "Nome: _INBV_DISPLAY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38151, "text": "Nome: _INBV_DISPLAY_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38155, "text": "Descrição: pointer to _INBV_DISPLAY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38918, "text": "Nome: _IO_COMPLETION_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38929, "text": "Nome: _IO_COMPLETION_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38933, "text": "Descrição: pointer to _IO_COMPLETION_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38936, "text": "Nome: _IO_DRIVER_CREATE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38949, "text": "Nome: _IO_DRIVER_CREATE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 38953, "text": "Descrição: pointer to _IO_DRIVER_CREATE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 39182, "text": "Nome: _IO_SECURITY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 39194, "text": "Nome: _IO_SECURITY_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 39198, "text": "Descrição: pointer to _IO_SECURITY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 40762, "text": "Nome: _KAB_UM_PROCESS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 41043, "text": "  Campo 4 | Nome: DynamicSecurity | Offset: 32 | Tamanho: 72 | Tipo: _SECURITY_CLIENT_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42301, "text": "Nome: _KI_COOPERATIVE_IDLE_SEARCH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42321, "text": "Nome: _KI_COOPERATIVE_IDLE_SEARCH_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42325, "text": "Descrição: pointer to _KI_COOPERATIVE_IDLE_SEARCH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42328, "text": "Nome: _KI_COOPERATIVE_IDLE_SEARCH_CONTEXT *[2]"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42332, "text": "Descrição: Array of pointer to _KI_COOPERATIVE_IDLE_SEARCH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42444, "text": "Nome: _KI_IDEAL_PROCESSOR_REBALANCER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42511, "text": "Nome: _KI_RESCHEDULE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42521, "text": "  Campo 4 | Nome: ProcessorEntries | Offset: 16 | Tamanho: 160 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY[4] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42525, "text": "Nome: _KI_RESCHEDULE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42529, "text": "Descrição: pointer to _KI_RESCHEDULE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42532, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42542, "text": "  Campo 4 | Nome: null | Offset: 32 | Tamanho: 1 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY_u_32 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42543, "text": "  Campo 5 | Nome: null | Offset: 33 | Tamanho: 1 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY_u_33 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42544, "text": "  Campo 6 | Nome: null | Offset: 34 | Tamanho: 1 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY_u_34 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42545, "text": "  Campo 7 | Nome: null | Offset: 35 | Tamanho: 1 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY_u_35 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42550, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42554, "text": "Descrição: pointer to _KI_RESCHEDULE_CONTEXT_ENTRY"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42557, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY[4]"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42564, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY_u_32"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42565, "text": "Categoria: /ntkrnlmp.pdb/_KI_RESCHEDULE_CONTEXT_ENTRY"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42570, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 1 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY_u_32_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42574, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY_u_32_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42575, "text": "Categoria: /ntkrnlmp.pdb/_KI_RESCHEDULE_CONTEXT_ENTRY/_KI_RESCHEDULE_CONTEXT_ENTRY_u_32"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42589, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY_u_33"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42590, "text": "Categoria: /ntkrnlmp.pdb/_KI_RESCHEDULE_CONTEXT_ENTRY"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42595, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 1 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY_u_33_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42599, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY_u_33_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42600, "text": "Categoria: /ntkrnlmp.pdb/_KI_RESCHEDULE_CONTEXT_ENTRY/_KI_RESCHEDULE_CONTEXT_ENTRY_u_33"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42609, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY_u_34"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42610, "text": "Categoria: /ntkrnlmp.pdb/_KI_RESCHEDULE_CONTEXT_ENTRY"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42615, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 1 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY_u_34_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42619, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY_u_34_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42620, "text": "Categoria: /ntkrnlmp.pdb/_KI_RESCHEDULE_CONTEXT_ENTRY/_KI_RESCHEDULE_CONTEXT_ENTRY_u_34"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42630, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY_u_35"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42631, "text": "Categoria: /ntkrnlmp.pdb/_KI_RESCHEDULE_CONTEXT_ENTRY"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42636, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 1 | Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY_u_35_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42640, "text": "Nome: _KI_RESCHEDULE_CONTEXT_ENTRY_u_35_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42641, "text": "Categoria: /ntkrnlmp.pdb/_KI_RESCHEDULE_CONTEXT_ENTRY/_KI_RESCHEDULE_CONTEXT_ENTRY_u_35"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 43168, "text": "Nome: _KMCE_RECOVERY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 43176, "text": "  Campo 2 | Nome: null | Offset: 8 | Tamanho: 8 | Tipo: _KMCE_RECOVERY_CONTEXT_u_8 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 43179, "text": "Nome: _KMCE_RECOVERY_CONTEXT_u_8"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 43180, "text": "Categoria: /ntkrnlmp.pdb/_KMCE_RECOVERY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 43292, "text": "Nome: _KNONVOLATILE_CONTEXT_POINTERS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 43302, "text": "Nome: _KNONVOLATILE_CONTEXT_POINTERS *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 43306, "text": "Descrição: pointer to _KNONVOLATILE_CONTEXT_POINTERS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94862, "text": "  Campo 98 | Nome: StaticRescheduleContext | Offset: 14312 | Tamanho: 8 | Tipo: _KI_RESCHEDULE_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94947, "text": "  Campo 183 | Nome: MceRecoveryContext | Offset: 34528 | Tamanho: 16 | Tipo: _KMCE_RECOVERY_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95053, "text": "  Campo 289 | Nome: Context | Offset: 36800 | Tamanho: 8 | Tipo: _CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95068, "text": "  Campo 304 | Nome: LocalSearchContexts | Offset: 37896 | Tamanho: 16 | Tipo: _KI_COOPERATIVE_IDLE_SEARCH_CONTEXT *[2] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95069, "text": "  Campo 305 | Nome: SearchContexts | Offset: 37912 | Tamanho: 16 | Tipo: _KI_COOPERATIVE_IDLE_SEARCH_CONTEXT *[2] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95081, "text": "  Campo 317 | Nome: McheckContext | Offset: 39680 | Tamanho: 160 | Tipo: _MACHINE_CHECK_CONTEXT[2] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95497, "text": "  Campo 8 | Nome: AutoBoostState | Offset: 88 | Tamanho: 16 | Tipo: _KAB_UM_PROCESS_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95678, "text": "  Campo 1 | Nome: ContextFrame | Offset: 240 | Tamanho: 1232 | Tipo: _CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96479, "text": "  Campo 10 | Nome: DisplayContext | Offset: 176 | Tamanho: 8 | Tipo: _INBV_DISPLAY_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 98555, "text": "  Campo 13 | Nome: EntryPointActivationContext | Offset: 136 | Tamanho: 8 | Tipo: _ACTIVATION_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 98559, "text": "  Campo 17 | Nome: LoadContext | Offset: 176 | Tamanho: 8 | Tipo: _LDRP_LOAD_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 98734, "text": "Nome: _LDRP_LOAD_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 98742, "text": "Nome: _LDRP_LOAD_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 98746, "text": "Descrição: pointer to _LDRP_LOAD_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99420, "text": "Nome: _LOG_HANDLE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99440, "text": "Nome: _LOG_HANDLE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99444, "text": "Descrição: pointer to _LOG_HANDLE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99463, "text": "  Campo 0 | Nome: LogHandleContext | Offset: 0 | Tamanho: 8 | Tipo: _LOG_HANDLE_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99627, "text": "Nome: _MACHINE_CHECK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99641, "text": "Nome: _MACHINE_CHECK_CONTEXT[2]"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99853, "text": "Nome: _MCGEN_TRACE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99873, "text": "Nome: _MCGEN_TRACE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99877, "text": "Descrição: pointer to _MCGEN_TRACE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 100581, "text": "Nome: _MI_BEST_LARGE_PAGE_CANDIDATES_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 100595, "text": "Nome: _MI_BEST_LARGE_PAGE_CANDIDATES_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 100599, "text": "Descrição: pointer to _MI_BEST_LARGE_PAGE_CANDIDATES_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 101708, "text": "  Campo 2 | Nome: SecurityContext | Offset: 40 | Tamanho: 8 | Tipo: _IMAGE_SECURITY_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 101937, "text": "Nome: _MI_LARGE_PAGE_COALESCE_WORKER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 101951, "text": "Nome: _MI_LARGE_PAGE_COALESCE_WORKER_CONTEXT[3]"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 101980, "text": "Nome: _MI_LDW_WORK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 102298, "text": "  Campo 126 | Nome: SlabContexts | Offset: 15696 | Tamanho: 2088 | Tipo: _MI_SLAB_ALLOCATOR_CONTEXT[9] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 103314, "text": "  Campo 273 | Nome: LastChanceLdwContext | Offset: 13232 | Tamanho: 56 | Tipo: _MI_LDW_WORK_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 103388, "text": "  Campo 347 | Nome: LargePageCoalesceWorkerContexts | Offset: 13600 | Tamanho: 144 | Tipo: _MI_LARGE_PAGE_COALESCE_WORKER_CONTEXT[3] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 104467, "text": "Nome: _MI_SLAB_ALLOCATOR_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 104501, "text": "Nome: _MI_SLAB_ALLOCATOR_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 104505, "text": "Descrição: pointer to _MI_SLAB_ALLOCATOR_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 104508, "text": "Nome: _MI_SLAB_ALLOCATOR_CONTEXT[9]"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 105137, "text": "  Campo 16 | Nome: UltraSpaceContext | Offset: 608 | Tamanho: 64 | Tipo: _MI_ULTRA_VA_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 105369, "text": "Nome: _MI_ULTRA_VA_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 108042, "text": "Categoria: /Demangler/NP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 108050, "text": "Categoria: /Demangler/NP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 109342, "text": "Nome: _OBP_LOOKUP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 109357, "text": "Nome: _OBP_LOOKUP_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 109361, "text": "Descrição: pointer to _OBP_LOOKUP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 109460, "text": "  Campo 28 | Nome: DriverCreateContext | Offset: 160 | Tamanho: 40 | Tipo: _IO_DRIVER_CREATE_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 110065, "text": "  Campo 66 | Nome: ActivationContextData | Offset: 760 | Tamanho: 8 | Tipo: _ACTIVATION_CONTEXT_DATA * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 110067, "text": "  Campo 68 | Nome: SystemDefaultActivationContextData | Offset: 776 | Tamanho: 8 | Tipo: _ACTIVATION_CONTEXT_DATA * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111536, "text": "Nome: _PNP_ASSIGN_RESOURCES_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111547, "text": "Nome: _PNP_ASSIGN_RESOURCES_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111551, "text": "Descrição: pointer to _PNP_ASSIGN_RESOURCES_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111554, "text": "Nome: _PNP_ASSIGN_RESOURCES_CONTEXT * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111558, "text": "Descrição: pointer to pointer to _PNP_ASSIGN_RESOURCES_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111868, "text": "Nome: _PNP_REBALANCE_TRACE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111885, "text": "  Campo 11 | Nome: ConflictContext | Offset: 104 | Tamanho: 24 | Tipo: _PNP_RESOURCE_CONFLICT_TRACE_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111888, "text": "Nome: _PNP_REBALANCE_TRACE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111892, "text": "Descrição: pointer to _PNP_REBALANCE_TRACE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 111915, "text": "Nome: _PNP_RESOURCE_CONFLICT_TRACE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112426, "text": "Nome: _PO_PROCESS_ENERGY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112434, "text": "Nome: _PO_PROCESS_ENERGY_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112438, "text": "Descrição: pointer to _PO_PROCESS_ENERGY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112441, "text": "Nome: _PO_PROCESS_ENERGY_CONTEXT * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112445, "text": "Descrição: pointer to pointer to _PO_PROCESS_ENERGY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112691, "text": "  Campo 3 | Nome: DiagnosticContext | Offset: 16 | Tamanho: 8 | Tipo: _DIAGNOSTIC_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112777, "text": "  Campo 1 | Nome: SystemContext | Offset: 4 | Tamanho: 4 | Tipo: _SYSTEM_POWER_STATE_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113083, "text": "  Campo 42 | Nome: DripsWatchdogContext | Offset: 912 | Tamanho: 40 | Tipo: _POP_FX_DRIPS_WATCHDOG_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113178, "text": "Nome: _POP_FX_DRIPS_WATCHDOG_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113484, "text": "Nome: _POP_HIBER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113501, "text": "  Campo 11 | Nome: null | Offset: 48 | Tamanho: 16 | Tipo: _POP_HIBER_CONTEXT_u_48 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113515, "text": "  Campo 25 | Nome: DumpStack | Offset: 184 | Tamanho: 8 | Tipo: _DUMP_STACK_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113531, "text": "  Campo 41 | Nome: ProcessorContext | Offset: 296 | Tamanho: 8 | Tipo: _POP_PER_PROCESSOR_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113553, "text": "Nome: _POP_HIBER_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113557, "text": "Descrição: pointer to _POP_HIBER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113560, "text": "Nome: _POP_HIBER_CONTEXT_u_48"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113561, "text": "Categoria: /ntkrnlmp.pdb/_POP_HIBER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113684, "text": "Nome: _POP_PER_PROCESSOR_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113708, "text": "Nome: _POP_PER_PROCESSOR_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113712, "text": "Descrição: pointer to _POP_PER_PROCESSOR_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113753, "text": "  Campo 18 | Nome: HiberContext | Offset: 80 | Tamanho: 8 | Tipo: _POP_HIBER_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 115855, "text": "Nome: _PROC_PERF_CHECK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 115877, "text": "Nome: _PROC_PERF_CHECK_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 115881, "text": "Descrição: pointer to _PROC_PERF_CHECK_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 115925, "text": "  Campo 0 | Nome: CheckContext | Offset: 0 | Tamanho: 8 | Tipo: _PROC_PERF_CHECK_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 115967, "text": "  Campo 1 | Nome: Master | Offset: 16 | Tamanho: 8 | Tipo: _PROC_PERF_CHECK_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 116545, "text": "  Campo 23 | Nome: CheckContext | Offset: 368 | Tamanho: 72 | Tipo: _PROC_PERF_CHECK_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 116762, "text": "Nome: _PS_CLIENT_SECURITY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 116770, "text": "  Campo 2 | Nome: _s_2 | Offset: 0 | Tamanho: 8 | Tipo: _PS_CLIENT_SECURITY_CONTEXT_s_2 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 116773, "text": "Nome: _PS_CLIENT_SECURITY_CONTEXT_s_2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 116774, "text": "Categoria: /ntkrnlmp.pdb/_PS_CLIENT_SECURITY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 116920, "text": "  PS_MITIGATION_OPTION_RESTRICT_SET_THREAD_CONTEXT = 19"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 116933, "text": "  PS_MITIGATION_OPTION_USER_CET_SET_CONTEXT_IP_VALIDATION = 32"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117328, "text": "Nome: _PSP_SYSCALL_PROVIDER_DISPATCH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117696, "text": "Nome: _RH_OP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117752, "text": "Nome: _RTL_ACTIVATION_CONTEXT_STACK_FRAME"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117758, "text": "  Campo 0 | Nome: Previous | Offset: 0 | Tamanho: 8 | Tipo: _RTL_ACTIVATION_CONTEXT_STACK_FRAME * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117759, "text": "  Campo 1 | Nome: ActivationContext | Offset: 8 | Tamanho: 8 | Tipo: _ACTIVATION_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117763, "text": "Nome: _RTL_ACTIVATION_CONTEXT_STACK_FRAME *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117767, "text": "Descrição: pointer to _RTL_ACTIVATION_CONTEXT_STACK_FRAME"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 118199, "text": "Nome: _RTL_DYNAMIC_HASH_TABLE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 118210, "text": "Nome: _RTL_DYNAMIC_HASH_TABLE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 118214, "text": "Descrição: pointer to _RTL_DYNAMIC_HASH_TABLE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 118381, "text": "Nome: _RTL_FEATURE_USAGE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 119004, "text": "Nome: _RTL_STACKDB_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 119019, "text": "Nome: _RTL_STACKDB_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 119023, "text": "Descrição: pointer to _RTL_STACKDB_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 120106, "text": "Nome: _SECURITY_CLIENT_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 120254, "text": "Nome: _SECURITY_SUBJECT_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 120266, "text": "Nome: _SECURITY_SUBJECT_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 120270, "text": "Descrição: pointer to _SECURITY_SUBJECT_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 120387, "text": "  Campo 26 | Nome: SegContexts | Offset: 320 | Tamanho: 384 | Tipo: _HEAP_SEG_CONTEXT[2] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 120388, "text": "  Campo 27 | Nome: VsContext | Offset: 704 | Tamanho: 96 | Tipo: _HEAP_VS_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 120393, "text": "  Campo 32 | Nome: LfhContext | Offset: 832 | Tamanho: 1728 | Tipo: _HEAP_LFH_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121226, "text": "  SECURESERVICE_GET_CONTEXT = 14"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121227, "text": "  SECURESERVICE_SET_CONTEXT = 15"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121517, "text": "Nome: _SM_COMPRESS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121525, "text": "Nome: _SM_COMPRESS_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121529, "text": "Descrição: pointer to _SM_COMPRESS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121615, "text": "Nome: _SM_IO_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121623, "text": "Nome: _SM_IO_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121627, "text": "Descrição: pointer to _SM_IO_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121690, "text": "Nome: _SM_STORE_DECOMPRESS_BUFFER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121698, "text": "Nome: _SM_STORE_DECOMPRESS_BUFFER_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121702, "text": "Descrição: pointer to _SM_STORE_DECOMPRESS_BUFFER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121783, "text": "Nome: _SMKM_ADD_PAGE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121791, "text": "Nome: _SMKM_ADD_PAGE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121795, "text": "Descrição: pointer to _SMKM_ADD_PAGE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121927, "text": "Nome: _SMKM_WRITE_QUEUE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121935, "text": "Nome: _SMKM_WRITE_QUEUE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 121939, "text": "Descrição: pointer to _SMKM_WRITE_QUEUE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 122072, "text": "Nome: _ST_ETA_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 122080, "text": "Nome: _ST_ETA_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 122084, "text": "Descrição: pointer to _ST_ETA_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 122404, "text": "Nome: _STDM_READ_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 122412, "text": "Nome: _STDM_READ_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 122416, "text": "Descrição: pointer to _STDM_READ_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123395, "text": "Nome: _SYSTEM_POWER_STATE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123401, "text": "  Campo 0 | Nome: null | Offset: 0 | Tamanho: 4 | Tipo: _SYSTEM_POWER_STATE_CONTEXT_u_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123404, "text": "Nome: _SYSTEM_POWER_STATE_CONTEXT_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123405, "text": "Categoria: /ntkrnlmp.pdb/_SYSTEM_POWER_STATE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123410, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 4 | Tipo: _SYSTEM_POWER_STATE_CONTEXT_u_0_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123414, "text": "Nome: _SYSTEM_POWER_STATE_CONTEXT_u_0_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123415, "text": "Categoria: /ntkrnlmp.pdb/_SYSTEM_POWER_STATE_CONTEXT/_SYSTEM_POWER_STATE_CONTEXT_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123474, "text": "  Campo 23 | Nome: _ActivationStack | Offset: 656 | Tamanho: 40 | Tipo: _ACTIVATION_CONTEXT_STACK | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123478, "text": "  Campo 27 | Nome: ActivationContextStackPointer | Offset: 712 | Tamanho: 8 | Tipo: _ACTIVATION_CONTEXT_STACK * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123604, "text": "  Campo 23 | Nome: _ActivationStack | Offset: 388 | Tamanho: 24 | Tipo: _ACTIVATION_CONTEXT_STACK32 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123790, "text": "  Campo 23 | Nome: _ActivationStack | Offset: 656 | Tamanho: 40 | Tipo: _ACTIVATION_CONTEXT_STACK64 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123966, "text": "  Campo 2 | Nome: Context | Offset: 16 | Tamanho: 8 | Tipo: _TEB_ACTIVE_FRAME_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123976, "text": "Nome: _TEB_ACTIVE_FRAME_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123986, "text": "Nome: _TEB_ACTIVE_FRAME_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 123990, "text": "Descrição: pointer to _TEB_ACTIVE_FRAME_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 124647, "text": "  Campo 5 | Nome: ActivationContext | Offset: 40 | Tamanho: 8 | Tipo: _ACTIVATION_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126030, "text": "  Campo 6 | Nome: LogHandleContext | Offset: 48 | Tamanho: 152 | Tipo: _LOG_HANDLE_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126151, "text": "Nome: _VRF_TRIAGE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126157, "text": "  VRF_TRIAGE_CONTEXT_NONE = 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126158, "text": "  VRF_TRIAGE_CONTEXT_DEFAULT = 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126159, "text": "  VRF_TRIAGE_CONTEXT_DEVELOPMENT = 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126160, "text": "  VRF_TRIAGE_CONTEXT_CERTIFICATION = 2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126161, "text": "  VRF_TRIAGE_CONTEXT_CERTIFICATION_STRICT = 3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126162, "text": "  VRF_TRIAGE_CONTEXT_FLIGHT_TARGETED = 4"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126163, "text": "  VRF_TRIAGE_CONTEXT_FLIGHT_DIAGNOSTICS = 5"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126164, "text": "  VRF_TRIAGE_CONTEXT_FLIGHT_MONITORING = 6"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126165, "text": "  NUM_VRF_TRIAGE_CONTEXTS = 7"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126177, "text": "Nome: _WAIT_CONTEXT_BLOCK"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126183, "text": "  Campo 0 | Nome: null | Offset: 0 | Tamanho: 24 | Tipo: _WAIT_CONTEXT_BLOCK_u_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126192, "text": "Nome: _WAIT_CONTEXT_BLOCK *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126196, "text": "Descrição: pointer to _WAIT_CONTEXT_BLOCK"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126199, "text": "Nome: _WAIT_CONTEXT_BLOCK_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126200, "text": "Categoria: /ntkrnlmp.pdb/_WAIT_CONTEXT_BLOCK"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126206, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 24 | Tipo: _WAIT_CONTEXT_BLOCK_u_0_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126209, "text": "Nome: _WAIT_CONTEXT_BLOCK_u_0_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 126210, "text": "Categoria: /ntkrnlmp.pdb/_WAIT_CONTEXT_BLOCK/_WAIT_CONTEXT_BLOCK_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127301, "text": "Nome: _WHEA_RECOVERY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127307, "text": "  Campo 0 | Nome: null | Offset: 0 | Tamanho: 16 | Tipo: _WHEA_RECOVERY_CONTEXT_u_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127310, "text": "  Campo 3 | Nome: ErrorType | Offset: 28 | Tamanho: 4 | Tipo: _WHEA_RECOVERY_CONTEXT_ERROR_TYPE | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127312, "text": "  Campo 5 | Nome: PageInfo | Offset: 36 | Tamanho: 6144 | Tipo: _WHEA_RECOVERY_CONTEXT_PAGE_INFO[256] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127319, "text": "Nome: _WHEA_RECOVERY_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127323, "text": "Descrição: pointer to _WHEA_RECOVERY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127326, "text": "Nome: _WHEA_RECOVERY_CONTEXT_ACTION_TAKEN"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127339, "text": "Nome: _WHEA_RECOVERY_CONTEXT_ACTION_TAKEN_ADDITIONAL_INFO"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127349, "text": "Nome: _WHEA_RECOVERY_CONTEXT_ERROR_TYPE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127360, "text": "Nome: _WHEA_RECOVERY_CONTEXT_PAGE_INFO"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127368, "text": "  Campo 2 | Nome: ActionTaken | Offset: 8 | Tamanho: 4 | Tipo: _WHEA_RECOVERY_CONTEXT_ACTION_TAKEN | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127372, "text": "  Campo 6 | Nome: ActionTakenAdditionalInfo | Offset: 16 | Tamanho: 8 | Tipo: _WHEA_RECOVERY_CONTEXT_ACTION_TAKEN_ADDITIONAL_INFO | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127375, "text": "Nome: _WHEA_RECOVERY_CONTEXT_PAGE_INFO[256]"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127382, "text": "Nome: _WHEA_RECOVERY_CONTEXT_u_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127383, "text": "Categoria: /ntkrnlmp.pdb/_WHEA_RECOVERY_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127725, "text": "  Campo 7 | Nome: ClientContext | Offset: 40 | Tamanho: 4 | Tipo: _ETW_BUFFER_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127790, "text": "Nome: _WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127819, "text": "  Campo 23 | Nome: null | Offset: 128 | Tamanho: 8 | Tipo: _WMI_LOGGER_CONTEXT_u_128 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127879, "text": "  Campo 83 | Nome: null | Offset: 696 | Tamanho: 8 | Tipo: _WMI_LOGGER_CONTEXT_u_696 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127880, "text": "  Campo 84 | Nome: ClientSecurityContext | Offset: 704 | Tamanho: 72 | Tipo: _SECURITY_CLIENT_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127886, "text": "  Campo 90 | Nome: null | Offset: 816 | Tamanho: 4 | Tipo: _WMI_LOGGER_CONTEXT_u_816 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127887, "text": "  Campo 91 | Nome: null | Offset: 820 | Tamanho: 4 | Tipo: _WMI_LOGGER_CONTEXT_u_820 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127888, "text": "  Campo 92 | Nome: null | Offset: 824 | Tamanho: 4 | Tipo: _WMI_LOGGER_CONTEXT_u_824 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127906, "text": "  Campo 110 | Nome: PeriodicCaptureStateContext | Offset: 1344 | Tamanho: 8 | Tipo: PERIODIC_CAPTURE_STATE_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127907, "text": "  Campo 111 | Nome: SoftRestartContext | Offset: 1352 | Tamanho: 8 | Tipo: _ETW_SOFT_RESTART_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127929, "text": "  Campo 133 | Nome: CallbackContext | Offset: 1568 | Tamanho: 8 | Tipo: _ETW_EVENT_CALLBACK_CONTEXT * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127933, "text": "  Campo 137 | Nome: PartitionContext | Offset: 1600 | Tamanho: 8 | Tipo: _ETW_PARTITION_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127946, "text": "Nome: _WMI_LOGGER_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127950, "text": "Descrição: pointer to _WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127953, "text": "Nome: _WMI_LOGGER_CONTEXT * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127957, "text": "Descrição: pointer to pointer to _WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127960, "text": "Nome: _WMI_LOGGER_CONTEXT * * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127964, "text": "Descrição: pointer to pointer to pointer to _WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127967, "text": "Nome: _WMI_LOGGER_CONTEXT_u_128"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127968, "text": "Categoria: /ntkrnlmp.pdb/_WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127977, "text": "Nome: _WMI_LOGGER_CONTEXT_u_696"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127978, "text": "Categoria: /ntkrnlmp.pdb/_WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127987, "text": "Nome: _WMI_LOGGER_CONTEXT_u_816"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127988, "text": "Categoria: /ntkrnlmp.pdb/_WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127994, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _WMI_LOGGER_CONTEXT_u_816_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127997, "text": "Nome: _WMI_LOGGER_CONTEXT_u_816_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127998, "text": "Categoria: /ntkrnlmp.pdb/_WMI_LOGGER_CONTEXT/_WMI_LOGGER_CONTEXT_u_816"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128030, "text": "Nome: _WMI_LOGGER_CONTEXT_u_820"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128031, "text": "Categoria: /ntkrnlmp.pdb/_WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128040, "text": "Nome: _WMI_LOGGER_CONTEXT_u_824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128041, "text": "Categoria: /ntkrnlmp.pdb/_WMI_LOGGER_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128047, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _WMI_LOGGER_CONTEXT_u_824_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128050, "text": "Nome: _WMI_LOGGER_CONTEXT_u_824_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128051, "text": "Categoria: /ntkrnlmp.pdb/_WMI_LOGGER_CONTEXT/_WMI_LOGGER_CONTEXT_u_824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128196, "text": "Nome: _WNF_PROCESS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128215, "text": "Nome: _WNF_PROCESS_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128219, "text": "Descrição: pointer to _WNF_PROCESS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128222, "text": "Nome: _WNF_PROCESS_CONTEXT * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128226, "text": "Descrição: pointer to pointer to _WNF_PROCESS_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128910, "text": "Nome: _XSTATE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128950, "text": "  Campo 3 | Nome: XStateContext | Offset: 24 | Tamanho: 32 | Tipo: _XSTATE_CONTEXT | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128982, "text": "Nome: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128990, "text": "Nome: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128994, "text": "Descrição: pointer to B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128997, "text": "Nome: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 129005, "text": "Nome: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 129009, "text": "Descrição: pointer to B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 129012, "text": "Nome: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 129020, "text": "Nome: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 129024, "text": "Descrição: pointer to B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 130128, "text": "  Campo 55 | Nome: HalRegisterLogRoutine | Offset: 440 | Tamanho: 8 | Tipo: _func___cdecl_void__HAL_LOG_REGISTER_CONTEXT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 130891, "text": "Categoria: /Demangler/B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 130899, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 130907, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 130922, "text": "Categoria: /Demangler/B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 130929, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 130936, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131526, "text": "Nome: NP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131534, "text": "Nome: NP_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131538, "text": "Descrição: pointer to NP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131542, "text": "Categoria: /Demangler/NP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131550, "text": "Categoria: /Demangler/NP_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131572, "text": "Categoria: /Demangler/B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131580, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131588, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131596, "text": "Categoria: /Demangler/B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131603, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131610, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131627, "text": "Descrição: pointer to _CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131848, "text": "Nome: PERIODIC_CAPTURE_STATE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131861, "text": "Nome: PERIODIC_CAPTURE_STATE_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131865, "text": "Descrição: pointer to PERIODIC_CAPTURE_STATE_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131896, "text": "Nome: PKNONVOLATILE_CONTEXT_POINTERS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 131900, "text": "Descrição: pointer to _KNONVOLATILE_CONTEXT_POINTERS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 132632, "text": "Categoria: /Demangler/B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 132640, "text": "Categoria: /Demangler/B_TREE<unsigned_long,ST_STORE<SM_TRAITS>::_ST_REGION_ENTRY,4096,NP_CONTEXT,ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 132648, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 132656, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 132678, "text": "Categoria: /Demangler/B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 132685, "text": "Categoria: /Demangler/B_TREE<unsigned_long,ST_STORE<SM_TRAITS>::_ST_REGION_ENTRY,4096,NP_CONTEXT,ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 132692, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 132699, "text": "Categoria: /Demangler/B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR>"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 133102, "text": "Nome: tagSWITCH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 133108, "text": "  Campo 0 | Nome: Attribute | Offset: 0 | Tamanho: 24 | Tipo: tagSWITCH_CONTEXT_ATTRIBUTE | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 133109, "text": "  Campo 1 | Nome: Data | Offset: 24 | Tamanho: 832 | Tipo: tagSWITCH_CONTEXT_DATA | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 133112, "text": "Nome: tagSWITCH_CONTEXT *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 133116, "text": "Descrição: pointer to tagSWITCH_CONTEXT"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 133119, "text": "Nome: tagSWITCH_CONTEXT_ATTRIBUTE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 133131, "text": "Nome: tagSWITCH_CONTEXT_DATA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 135938, "text": "  Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 135942, "text": "Assinatura: void __cdecl KiStartRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KPRCB * param_2, _KISOLATION_UNIT_LOCK_HANDLE * param_3, _KTHREAD * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 136401, "text": "  Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 136405, "text": "Assinatura: uchar __cdecl KiCommitRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KPRCB * param_2, ulong param_3, _SINGLE_LIST_ENTRY * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 136838, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_7 | Posicao: 6"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 136839, "text": "Assinatura: long __cdecl StDmSinglePageTransfer(_ST_DATA_MGR * param_1, void * param_2, char * param_3, void * param_4, void * param_5, _ST_PAGE_LOCATION * param_6, _STDM_READ_CONTEXT * param_7)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 136851, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_6 | Posicao: 5"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 136852, "text": "Assinatura: long __cdecl StDmSinglePageCopy(_ST_DATA_MGR * param_1, void * param_2, char * param_3, char * param_4, _ST_PAGE_LOCATION * param_5, _STDM_READ_CONTEXT * param_6)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 138726, "text": "  Tipo: _SMKM_WRITE_QUEUE_CONTEXT * | Nome: param_7 | Posicao: 6"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 138727, "text": "Assinatura: long __cdecl SmPageWrite(SMKM_STORE_MGR<struct_SM_TRAITS> * param_1, _SM_PAGE_KEY * param_2, _SM_PAGE_ADD_PARAM param_3, _MDL * param_4, void * param_5, _IO_STATUS_BLOCK * param_6, _SMKM_WRITE_QUEUE_CONTEXT * param_7)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140582, "text": "  Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140587, "text": "Assinatura: uchar __cdecl KiCanLocalReadyThreadBeScheduledToRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KTHREAD * param_2, _KPRCB * param_3, _KSHARED_READY_QUEUE * param_4, _KSCB * param_5)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140615, "text": "  Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140619, "text": "Assinatura: uchar __cdecl KiDoesThreadDominateRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KTHREAD * param_2, ulong param_3, _KSCB * * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 141165, "text": "  Tipo: _SM_IO_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 141169, "text": "Assinatura: long __cdecl SmIoCtxQueueWork(_SM_IO_CONTEXT * param_1, SMKM_STORE_MGR<struct_SM_TRAITS> * param_2, ulong param_3, _SM_WORK_ITEM * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 141185, "text": "  Tipo: _SM_IO_CONTEXT * | Nome: param_3 | Posicao: 2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 141186, "text": "Assinatura: void __cdecl SmWorkItemFreeResource(SMKM_STORE_MGR<struct_SM_TRAITS> * param_1, _SM_WORK_ITEM * param_2, _SM_IO_CONTEXT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 141250, "text": "  Tipo: _SMKM_ADD_PAGE_CONTEXT * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 141252, "text": "Assinatura: long __cdecl SmFeAddInitiate(SMKM_STORE_MGR<struct_SM_TRAITS> * param_1, _SMKM_ADD_PAGE_CONTEXT * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 141522, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_3 | Posicao: 2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 141525, "text": "Assinatura: long __cdecl StDmFinishPageRetrieve(_ST_DATA_MGR * param_1, _ST_PAGE_LOCATION * param_2, _STDM_READ_CONTEXT * param_3, _ST_WORK_ITEM * param_4, long param_5)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148192, "text": "  Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148196, "text": "Assinatura: void __cdecl KiAdjustRescheduleContextEntryForThreadRemoval(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KTHREAD * param_2, uchar param_3, uchar param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148284, "text": "Retorno: _KI_RESCHEDULE_CONTEXT_ENTRY *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148286, "text": "  Tipo: _KI_RESCHEDULE_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148288, "text": "Assinatura: _KI_RESCHEDULE_CONTEXT_ENTRY * __cdecl KiFindRescheduleContextEntryForPrcb(_KI_RESCHEDULE_CONTEXT * param_1, _KPRCB * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148486, "text": "  Tipo: _KI_RESCHEDULE_CONTEXT_ENTRY * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148490, "text": "Assinatura: void __cdecl KiCompleteRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KPRCB * param_2, _KTHREAD * param_3, _KTHREAD_SCHEDULE_REASON_DATA * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149316, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149318, "text": "Assinatura: void __cdecl BTreeNodeFree(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, NODE * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149334, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149336, "text": "Assinatura: _ST_REGION_ENTRY * __cdecl BTreeFindPreviousEntry(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149343, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149346, "text": "Assinatura: NODE * __cdecl BTreeFindLeafSiblingEx(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149363, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149366, "text": "Assinatura: ulong __cdecl BTreeChangeKey(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149393, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149396, "text": "Assinatura: void __cdecl BTreeMergeNodes(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2, NODE * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149404, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149407, "text": "Assinatura: long __cdecl StDmpSinglePageLookup(_ST_DATA_MGR * param_1, _STDM_READ_CONTEXT * param_2, _ST_IO_PARAMS * param_3, _ST_PAGE_RECORD * * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149414, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149417, "text": "Assinatura: long __cdecl BTreeSearchKey(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, _SM_PAGE_KEY param_2, SEARCH_RESULT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149424, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149426, "text": "Assinatura: void __cdecl BTreeSearchResultDeref(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149433, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149436, "text": "Assinatura: NODE * __cdecl BTreeFindLeafSiblingEx(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, SEARCH_RESULT * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149473, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149475, "text": "Assinatura: void __cdecl BTreeDeleteNode(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, NODE * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149492, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149494, "text": "Assinatura: NODE * __cdecl BTreeSplitChild(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149501, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149504, "text": "Assinatura: NODE * __cdecl BTreeNewNode(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, ulong param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149511, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149514, "text": "Assinatura: void __cdecl BTreeMergeNodes(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, SEARCH_RESULT * param_2, NODE * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149521, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149523, "text": "Assinatura: NODE * __cdecl BTreeSplitChild(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149530, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149532, "text": "Assinatura: long __cdecl BTreeDeleteEx(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149539, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149541, "text": "Assinatura: NODE * __cdecl BTreeRedistribute(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149549, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149552, "text": "Assinatura: long __cdecl BTreeSearchResultIterStart(SEARCH_RESULT * param_1, B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_2, ulong param_3, _BTREE_ITERATOR_DISPOSITION param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149559, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149562, "text": "Assinatura: long __cdecl BTreeInsertEx(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, SEARCH_RESULT * param_2, _SM_PAGE_KEY * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149569, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149572, "text": "Assinatura: long __cdecl BTreeInsertEx(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2, ulong * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149596, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149599, "text": "Assinatura: long __cdecl BTreeDelete(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, ulong param_2, SEARCH_RESULT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149606, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149609, "text": "Assinatura: void __cdecl BTreeSearchResultCleanup(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149616, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149619, "text": "Assinatura: long __cdecl BTreeInsert(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, _ST_REGION_ENTRY * param_2, SEARCH_RESULT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149626, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149629, "text": "Assinatura: long __cdecl BTreeSearchKey(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, ulong param_2, SEARCH_RESULT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149636, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149638, "text": "Assinatura: void __cdecl BTreeSearchResultDeref(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149655, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149657, "text": "Assinatura: long __cdecl BTreeDeleteEx(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149664, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149667, "text": "Assinatura: long __cdecl BTreeSearchKey(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, ulong param_2, SEARCH_RESULT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149674, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149676, "text": "Assinatura: void __cdecl BTreeSearchResultDeref(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149683, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149685, "text": "Assinatura: long __cdecl BTreeDeleteEx(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149692, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149695, "text": "Assinatura: long __cdecl BTreeInsertEx(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2, ulong * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149702, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149704, "text": "Assinatura: NODE * __cdecl BTreeRedistribute(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149711, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149713, "text": "Assinatura: NODE * __cdecl BTreeRedistribute(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149757, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149760, "text": "Assinatura: void __cdecl BTreeMergeNodes(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2, NODE * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149767, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149769, "text": "Assinatura: NODE * __cdecl BTreeSplitChild(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149794, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149797, "text": "Assinatura: void __cdecl BTreeSearchResultCleanup(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, SEARCH_RESULT * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149804, "text": "  Tipo: NP_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149806, "text": "Assinatura: void __cdecl NpCleanup(NP_CONTEXT * param_1, ulong param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149974, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 149977, "text": "Assinatura: void __cdecl SmCompressCtxProcessReadyQueue(_SM_COMPRESS_CONTEXT * param_1, SMKM_STORE_MGR<struct_SM_TRAITS> * param_2, uchar param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 162842, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 162843, "text": "Assinatura: ulong __cdecl SmCompressCtxNewThreadNeeded(_SM_COMPRESS_CONTEXT * param_1)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 163000, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 163002, "text": "Assinatura: void __cdecl SmCompressCtxUpdateThreadTopology(_SM_COMPRESS_CONTEXT * param_1, _ETHREAD * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 163019, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 163023, "text": "Assinatura: long __cdecl SmCompressCtxCreateThread(_SM_COMPRESS_CONTEXT * param_1, SMKM_STORE_MGR<struct_SM_TRAITS> * param_2, ulong * param_3, _func_void_void_ptr * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 163030, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 163032, "text": "Assinatura: _SM_COMPRESS_THREAD_PARAMS * __cdecl SmCompressCtxCreateThreadParams(_SM_COMPRESS_CONTEXT * param_1, ulong param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 164834, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 164837, "text": "Assinatura: NODE * __cdecl BTreeFindLeafSibling(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, NODE * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 164845, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 164846, "text": "Assinatura: void __cdecl BTreeIteratorCleanup(ITERATOR * param_1, B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 164854, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 164855, "text": "Assinatura: NODE * __cdecl BTreeIteratorAttachEx(ITERATOR * param_1, B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 168442, "text": "  Tipo: B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 168445, "text": "Assinatura: void __cdecl BTreeIteratorFromSearchResult(B_TREE<union__SM_PAGE_KEY,struct_ST_STORE<struct_SM_TRAITS>::_ST_PAGE_ENTRY,4096,struct_NP_CONTEXT,struct_B_TREE_KEY_COMPARATOR<union__SM_PAGE_KEY>_> * param_1, ITERATOR * param_2, SEARCH_RESULT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 169362, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 169365, "text": "Assinatura: void __cdecl BTreeIteratorFromSearchResult(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, ITERATOR * param_2, SEARCH_RESULT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 170055, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 170058, "text": "Assinatura: NODE * __cdecl BTreeFindLeafSibling(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, NODE * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 170759, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 170760, "text": "Assinatura: void __cdecl BTreeIteratorCleanup(ITERATOR * param_1, B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 171141, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 171144, "text": "Assinatura: void __cdecl BTreeIteratorFromSearchResult(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, ITERATOR * param_2, SEARCH_RESULT * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 172299, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 172302, "text": "Assinatura: NODE * __cdecl BTreeFindLeafSibling(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, NODE * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 178394, "text": "  Tipo: PKNONVOLATILE_CONTEXT_POINTERS | Nome: ContextPointers | Posicao: 7"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 178395, "text": "Assinatura: PEXCEPTION_ROUTINE __stdcall RtlVirtualUnwind(DWORD HandlerType, DWORD64 ImageBase, DWORD64 ControlPc, PRUNTIME_FUNCTION FunctionEntry, PCONTEXT ContextRecord, PVOID * HandlerData, PDWORD64 EstablisherFrame, PKNONVOLATILE_CONTEXT_POINTERS ContextPointers)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 179467, "text": "  Tipo: _SM_STORE_DECOMPRESS_BUFFER_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 179468, "text": "Assinatura: void __cdecl SmStoreDecompressBufferContextCleanup(_SM_STORE_DECOMPRESS_BUFFER_CONTEXT * param_1)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 182425, "text": "  Tipo: NP_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 182427, "text": "Assinatura: long __cdecl NpStart(NP_CONTEXT * param_1, _NP_PARAMETERS * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 183489, "text": "  Tipo: _ST_ETA_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 183491, "text": "Assinatura: long __cdecl StartHelper(_ST_ETA_CONTEXT * param_1, ulong param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 183617, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 183619, "text": "Assinatura: void __cdecl SmCompressCtxQueueEntries(_SM_COMPRESS_CONTEXT * param_1, _PF_QUEUE * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 185210, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 185212, "text": "Assinatura: void __cdecl BTreeNodeFree(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, NODE * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 188326, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 188328, "text": "Assinatura: void __cdecl SmCompressCtxUpdatePriority(_SM_COMPRESS_CONTEXT * param_1, long param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 193364, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 193366, "text": "Assinatura: long __cdecl StDmPageRetrieve(_ST_DATA_MGR * param_1, _STDM_READ_CONTEXT * param_2, _ST_WORK_ITEM * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 193384, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 193387, "text": "Assinatura: long __cdecl StDmpSinglePageRetrieve(_ST_DATA_MGR * param_1, _STDM_READ_CONTEXT * param_2, void * param_3, _ST_PAGE_LOCATION * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 196207, "text": "  Tipo: _CONTEXT * | Nome: ContextRecord | Posicao: 2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 196208, "text": "  Tipo: _DISPATCHER_CONTEXT * | Nome: DispatcherContext | Posicao: 3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 196209, "text": "Assinatura: EXCEPTION_DISPOSITION __fastcall __C_specific_handler(_EXCEPTION_RECORD * ExceptionRecord, void * EstablisherFrame, _CONTEXT * ContextRecord, _DISPATCHER_CONTEXT * DispatcherContext)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 197365, "text": "  Tipo: void * | Nome: _Context | Posicao: 5"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 197366, "text": "Assinatura: void * __cdecl bsearch_s(void * _Key, void * _Base, rsize_t _NumOfElements, rsize_t _SizeOfElements, _PtFuncCompare * _PtFuncCompare, void * _Context)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 197505, "text": "  Tipo: void * | Nome: _Context | Posicao: 4"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 197506, "text": "Assinatura: void __cdecl qsort_s(void * _Base, rsize_t _NumOfElements, rsize_t _SizeOfElements, _PtFuncCompare * _PtFuncCompare, void * _Context)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 198481, "text": "  Tipo: char * * | Nome: _Context | Posicao: 2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 198482, "text": "Assinatura: char * __cdecl strtok_s(char * _Str, char * _Delim, char * * _Context)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227274, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227277, "text": "Assinatura: NODE * __cdecl BTreeFindLeafSiblingEx(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_HASH_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_HASH_ENTRY_COMPARATOR> * param_1, SEARCH_RESULT * param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227293, "text": "  Tipo: B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227299, "text": "Assinatura: long __cdecl BTreeWalkPostOrderInternal(B_TREE<unsigned_long,struct_ST_STORE<struct_SM_TRAITS>::_ST_REGION_ENTRY,4096,struct_NP_CONTEXT,struct_ST_STORE<struct_SM_TRAITS>::ST_REGION_ENTRY_COMPARATOR> * param_1, NODE * param_2, _SINGLE_LIST_ENTRY * param_3, _func_long_void_ptr_void_ptr___uint64_ptr * param_4, void * param_5, NODE * * param_6)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227332, "text": "  Tipo: NP_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227334, "text": "Assinatura: void * __cdecl NpiGetReservedBuffer(NP_CONTEXT * param_1, NP_CTX * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227341, "text": "  Tipo: NP_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227344, "text": "Assinatura: void __cdecl NpiLeafPageIn(NP_CONTEXT * param_1, NP_CTX * param_2, _NP_LEAF_PTR * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227351, "text": "  Tipo: NP_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227353, "text": "Assinatura: long __cdecl NpiPerformPageOut(NP_CONTEXT * param_1, NP_CTX * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227388, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227390, "text": "Assinatura: long __cdecl SmCompressCtxStart(_SM_COMPRESS_CONTEXT * param_1, _ST_COMPRESSION_FORMAT param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227397, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227399, "text": "Assinatura: void __cdecl SmCompressCtxThreadParamsCleanup(_SM_COMPRESS_CONTEXT * param_1, _SM_COMPRESS_THREAD_PARAMS * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227406, "text": "  Tipo: _SM_COMPRESS_CONTEXT * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227409, "text": "Assinatura: long __cdecl SmCompressCtxThreadParamsStart(_SM_COMPRESS_CONTEXT * param_1, _SM_COMPRESS_THREAD_PARAMS * param_2, __uint64 param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227527, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227528, "text": "Assinatura: void __cdecl StDeleteReadContext(ST_STORE<struct_SM_TRAITS> * param_1, _STDM_READ_CONTEXT * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227617, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_5 | Posicao: 4"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227618, "text": "Assinatura: long __cdecl StDmHandleDecompressionFailure(_ST_DATA_MGR * param_1, char * param_2, char * param_3, _ST_PAGE_LOCATION * param_4, _STDM_READ_CONTEXT * param_5)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227629, "text": "  Tipo: _STDM_READ_CONTEXT * | Nome: param_5 | Posicao: 4"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 227631, "text": "Assinatura: long __cdecl StDmPageError(_ST_DATA_MGR * param_1, char * param_2, char * param_3, _ST_PAGE_LOCATION * param_4, _STDM_READ_CONTEXT * param_5, long param_6)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 375703, "text": "POP_ETW_EVENT_SYSTEM_IDLE_CONTEXT_UPDATE | Endereco: 140010d98 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 376711, "text": "GUID_ECP_NETWORK_OPEN_CONTEXT | Endereco: 14001a3d8 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 377114, "text": "s_No_return_context_was_supplied_ | Endereco: 14001c490 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 378856, "text": "LIVEDUMP_EVENT_SIZING_WORKFLOW_SYSTEM_QUIESCED_CAPTURE_PROCESSOR_CONTEXT | Endereco: 140020c18 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 378924, "text": "MITIGATION_AUDIT_USER_CET_SET_CONTEXT_IP_VALIDATION_FAILURE | Endereco: 140021060 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 379021, "text": "WDI_SEM_EVENT_INIT_SCENARIO_CONTEXT_PROVIDER_MAX | Endereco: 1400216c0 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 379236, "text": "MITIGATION_ENFORCE_USER_CET_SET_CONTEXT_IP_VALIDATION_FAILURE | Endereco: 1400224b8 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 379448, "text": "LIVEDUMP_EVENT_CAPTURE_PAGES_WORKFLOW_SYSTEM_QUIESCED_CAPTURE_PROCESSOR_CONTEXT | Endereco: 140023298 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 382468, "text": "s_No_return_context_was_supplied_ | Endereco: 14003e4f8 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 408431, "text": "?KiStartRescheduleContextEntry@@YAXPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KPRCB@@PEAT_KISOLATION_UNIT_LOCK_HANDLE@@PEAU_KTHREAD@@@Z | Endereco: 1402035b0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 409396, "text": "?KiCommitRescheduleContextEntry@@YAEPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KPRCB@@KPEAU_SINGLE_LIST_ENTRY@@@Z | Endereco: 14020a6b0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 410784, "text": "?StDmSinglePageTransfer@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAXPEAD11PEAU_ST_PAGE_LOCATION@1@PEAU_STDM_READ_CONTEXT@1@@Z | Endereco: 140214e80 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 410792, "text": "?StDmSinglePageCopy@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAXPEAD2PEAU_ST_PAGE_LOCATION@1@PEAU_STDM_READ_CONTEXT@1@@Z | Endereco: 140214f74 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 417379, "text": "?SmPageWrite@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAJPEAU1@PEAT_SM_PAGE_KEY@@T_SM_PAGE_ADD_PARAM@@PEAU_MDL@@PEAXPEAU_IO_STATUS_BLOCK@@PEAU_SMKM_WRITE_QUEUE_CONTEXT@@@Z | Endereco: 140248bb4 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 423742, "text": "?KiCanLocalReadyThreadBeScheduledToRescheduleContextEntry@@YAEPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KTHREAD@@PEAU_KPRCB@@PEAU_KSHARED_READY_QUEUE@@PEAU_KSCB@@@Z | Endereco: 140278580 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 423792, "text": "?KiDoesThreadDominateRescheduleContextEntry@@YAEPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KTHREAD@@KPEAPEAU_KSCB@@@Z | Endereco: 140278a40 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 426228, "text": "?SmIoCtxQueueWork@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAJPEAU_SM_IO_CONTEXT@1@PEAU1@KPEAU_SM_WORK_ITEM@1@@Z | Endereco: 140288ee0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 426276, "text": "?SmWorkItemFreeResource@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAXPEAU1@PEAU_SM_WORK_ITEM@1@PEAU_SM_IO_CONTEXT@1@@Z | Endereco: 14028948c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 426370, "text": "?SmFeAddInitiate@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAJPEAU1@PEAU_SMKM_ADD_PAGE_CONTEXT@1@K@Z | Endereco: 140289d90 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 426743, "text": "?StDmFinishPageRetrieve@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAU_ST_PAGE_LOCATION@1@PEAU_STDM_READ_CONTEXT@1@PEAU_ST_WORK_ITEM@1@J@Z | Endereco: 14028c480 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 444300, "text": "?KiAdjustRescheduleContextEntryForThreadRemoval@@YAXPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KTHREAD@@EE@Z | Endereco: 14030d730 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 444429, "text": "?KiFindRescheduleContextEntryForPrcb@@YAPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KI_RESCHEDULE_CONTEXT@@PEAU_KPRCB@@@Z | Endereco: 14030e450 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 444872, "text": "?KiCompleteRescheduleContextEntry@@YAXPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KPRCB@@PEAU_KTHREAD@@PEAU_KTHREAD_SCHEDULE_REASON_DATA@@@Z | Endereco: 140311720 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 1971, "text": "?BTreeNodeFree@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 140324258 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 1976, "text": "?NpLeafDerefInternal@NP_CONTEXT@@SAXPEAUNP_CTX@1@PEAPEAX@Z | Endereco: 1403242ec | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 1979, "text": "?BTreeFindPreviousEntry@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAPEAU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@PEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 1403243c0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 1989, "text": "?BTreeFindLeafSiblingEx@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@K@Z | Endereco: 140324458 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 1997, "text": "?BTreeFindSeperatorIndexEntry@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAKPEAUSEARCH_RESULT@1@KPEAUPATH_ENTRY@1@@Z | Endereco: 140324584 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2004, "text": "?BTreeChangeKey@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAKPEAU1@PEAUSEARCH_RESULT@1@K@Z | Endereco: 140324600 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2034, "text": "?BTreeDescendToSibling@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAPEAPEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAUPATH_ENTRY@1@KPEAUSEARCH_RESULT@1@@Z | Endereco: 140324a44 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2048, "text": "?BTreeMergeNodes@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUSEARCH_RESULT@1@PEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 140324bc0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2059, "text": "?StDmpSinglePageLookup@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAU_STDM_READ_CONTEXT@1@PEAU_ST_IO_PARAMS@1@PEAPEAU_ST_PAGE_RECORD@1@@Z | Endereco: 140324d60 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2096, "text": "?BTreeSearchKey@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAJPEAU1@T_SM_PAGE_KEY@@PEAUSEARCH_RESULT@1@@Z | Endereco: 140325130 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2124, "text": "?BTreeSearchResultDeref@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140325340 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2133, "text": "?BTreeFindLeafSiblingEx@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@K@Z | Endereco: 140325438 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2144, "text": "?BTreeFindSeperatorIndexEntry@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAKPEAUSEARCH_RESULT@1@KPEAUPATH_ENTRY@1@@Z | Endereco: 140325578 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2152, "text": "?BTreeDescendToSibling@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAUPATH_ENTRY@1@KPEAUSEARCH_RESULT@1@@Z | Endereco: 1403255ec | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2159, "text": "?NpLeafRefInternal@NP_CONTEXT@@SAPEAXPEAUNP_CTX@1@PEAPEAXK@Z | Endereco: 140325648 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2166, "text": "?BTreeDeleteNode@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 14032570c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2167, "text": "?BTreeDeleteNode@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 14032570c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2168, "text": "?BTreeDeleteNode@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 14032570c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2170, "text": "?NpNodeFree@NP_CONTEXT@@SAXPEAUNP_CTX@1@PEAXK@Z | Endereco: 140325734 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2175, "text": "?BTreeSplitChild@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140325780 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2194, "text": "?BTreeNewNode@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@KK@Z | Endereco: 140325a3c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2195, "text": "?BTreeNewNode@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@KK@Z | Endereco: 140325a3c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2196, "text": "?BTreeNewNode@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@KK@Z | Endereco: 140325a3c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2199, "text": "?BTreeMergeNodes@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAU1@PEAUSEARCH_RESULT@1@PEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 140325aa0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2210, "text": "?BTreeSplitChild@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140325c2c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2229, "text": "?BTreeDeleteEx@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAJPEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140325ef0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2257, "text": "?BTreeRedistribute@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140326198 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2280, "text": "?BTreeSearchResultIterStart@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAJPEAUSEARCH_RESULT@1@PEAU1@KW4_BTREE_ITERATOR_DISPOSITION@1@@Z | Endereco: 140326474 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2288, "text": "?BTreeInsertEx@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAJPEAU1@PEAUSEARCH_RESULT@1@PEAT_SM_PAGE_KEY@@@Z | Endereco: 1403264f0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2320, "text": "?BTreeInsertEx@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAJPEAU1@PEAUSEARCH_RESULT@1@PEAK@Z | Endereco: 140326850 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2354, "text": "?NpNodeAllocate@NP_CONTEXT@@SAPEAXPEAUNP_CTX@1@KK@Z | Endereco: 140326bcc | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2370, "text": "?BTreeDelete@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAJPEAU1@KPEAUSEARCH_RESULT@1@@Z | Endereco: 140326d44 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2373, "text": "?BTreeSearchResultCleanup@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUSEARCH_RESULT@1@K@Z | Endereco: 140326d7c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2376, "text": "?BTreeInsert@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAJPEAU1@PEAU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@PEAUSEARCH_RESULT@1@@Z | Endereco: 140326dc0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2408, "text": "?BTreeSearchKey@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAJPEAU1@KPEAUSEARCH_RESULT@1@@Z | Endereco: 1403272c0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2442, "text": "?BTreeSearchResultDeref@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140327800 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2454, "text": "?StDmPageRecordRemove@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAU_ST_PAGE_RECORD@1@PEAUSEARCH_RESULT@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@@Z | Endereco: 1403279a0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2508, "text": "?BTreeDeleteEx@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAJPEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140328090 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2538, "text": "?BTreeSearchKey@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAJPEAU1@KPEAUSEARCH_RESULT@1@@Z | Endereco: 140328350 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2576, "text": "?BTreeSearchResultDeref@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 1403288b0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2588, "text": "?BTreeDeleteEx@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAJPEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 1403289b0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2616, "text": "?BTreeInsertEx@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAJPEAU1@PEAUSEARCH_RESULT@1@PEAK@Z | Endereco: 140328c70 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2650, "text": "?BTreeRedistribute@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140328fbc | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2674, "text": "?BTreeRedistribute@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 14032929c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2735, "text": "?BTreeMergeNodes@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUSEARCH_RESULT@1@PEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 140329a24 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2746, "text": "?BTreeSplitChild@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140329bb8 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2808, "text": "?BTreeSearchResultCleanup@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAU1@PEAUSEARCH_RESULT@1@K@Z | Endereco: 14032a218 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 2812, "text": "?NpCleanup@NP_CONTEXT@@SAXPEAU1@K@Z | Endereco: 14032a25c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 3063, "text": "?SmCompressCtxProcessReadyQueue@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAXPEAU_SM_COMPRESS_CONTEXT@1@PEAU1@E@Z | Endereco: 14032c560 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 29496, "text": "?SmCompressCtxNewThreadNeeded@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAKPEAU_SM_COMPRESS_CONTEXT@1@@Z | Endereco: 1403f5f9c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 29655, "text": "?SmCompressCtxUpdateThreadTopology@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAXPEAU_SM_COMPRESS_CONTEXT@1@PEAU_ETHREAD@@@Z | Endereco: 1403f76fc | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 29667, "text": "?SmCompressCtxCreateThread@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAJPEAU_SM_COMPRESS_CONTEXT@1@PEAU1@PEAKP6AXPEAX@Z@Z | Endereco: 1403f7850 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 29676, "text": "?SmCompressCtxCreateThreadParams@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAPEAU_SM_COMPRESS_THREAD_PARAMS@1@PEAU_SM_COMPRESS_CONTEXT@1@K@Z | Endereco: 1403f79a8 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 32903, "text": "?BTreeFindLeafSibling@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAU23@K@Z | Endereco: 14040e790 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 32909, "text": "?BTreeIteratorCleanup@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAUITERATOR@1@PEAU1@@Z | Endereco: 14040e8b0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 32914, "text": "?BTreeIteratorAttachEx@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAPEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAUITERATOR@1@PEAU1@@Z | Endereco: 14040e940 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 37569, "text": "?BTreeIteratorFromSearchResult@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAU1@PEAUITERATOR@1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140430f50 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 38484, "text": "?BTreeIteratorFromSearchResult@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUITERATOR@1@PEAUSEARCH_RESULT@1@@Z | Endereco: 1404386b0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 39229, "text": "?BTreeFindLeafSibling@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAU23@K@Z | Endereco: 14043df48 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 40090, "text": "?BTreeIteratorCleanup@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAUITERATOR@1@PEAU1@@Z | Endereco: 140444dd0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 40171, "text": "?BTreeFindSeperatorIndexEntry@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAKPEAUSEARCH_RESULT@1@KPEAUPATH_ENTRY@1@@Z | Endereco: 140445790 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 40481, "text": "?BTreeIteratorFromSearchResult@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUITERATOR@1@PEAUSEARCH_RESULT@1@@Z | Endereco: 140447630 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 41759, "text": "?BTreeFindLeafSibling@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAU23@K@Z | Endereco: 1404504d8 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 48915, "text": "?SmStoreDecompressBufferContextCleanup@@YAXPEAU_SM_STORE_DECOMPRESS_BUFFER_CONTEXT@@@Z | Endereco: 140483e18 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 51533, "text": "?NpStart@NP_CONTEXT@@SAJPEAU1@PEAU_NP_PARAMETERS@1@@Z | Endereco: 1404977d0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 52684, "text": "?StartHelper@StEtaHelper@@SAJPEAU_ST_ETA_CONTEXT@@K@Z | Endereco: 14049f154 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 52811, "text": "?SmCompressCtxQueueEntries@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAXPEAU_SM_COMPRESS_CONTEXT@1@PEAU_PF_QUEUE@@@Z | Endereco: 14049fe8c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 54079, "text": "?BTreeNodeFree@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 1404a9638 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 54080, "text": "?BTreeNodeFree@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAXPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@@Z | Endereco: 1404a9638 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 56588, "text": "?SmCompressCtxUpdatePriority@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAXPEAU_SM_COMPRESS_CONTEXT@1@J@Z | Endereco: 1404bc534 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 61707, "text": "?StDmCombinePageRecords@?$ST_STORE@USM_TRAITS@@@@SAXPEAU_ST_DATA_MGR@1@PEAU_ST_PAGE_RECORD@1@PEAUSEARCH_RESULT@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@1@Z | Endereco: 1404eb3a0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 61715, "text": "?StDmPageRetrieve@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAU_STDM_READ_CONTEXT@1@PEAU_ST_WORK_ITEM@1@@Z | Endereco: 1404eb510 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 61807, "text": "?StDmpSinglePageRetrieve@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAU_STDM_READ_CONTEXT@1@PEAXPEAU_ST_PAGE_LOCATION@1@@Z | Endereco: 1404ec010 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92867, "text": "?BTreeDescendToSibling@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAPEAPEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAUPATH_ENTRY@1@KPEAUSEARCH_RESULT@1@@Z | Endereco: 140614474 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92874, "text": "?BTreeFindLeafSiblingEx@?$B_TREE@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_HASH_ENTRY_COMPARATOR@2@@@SAPEAUNODE@?$B_TREE_HEADER@KU_ST_HASH_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU1@PEAUSEARCH_RESULT@1@K@Z | Endereco: 1406144d0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92886, "text": "?BTreeWalkPostOrderInternal@?$B_TREE@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@U?$B_TREE_KEY_COMPARATOR@T_SM_PAGE_KEY@@@@@@SAJPEAU1@PEAUNODE@?$B_TREE_HEADER@T_SM_PAGE_KEY@@U_ST_PAGE_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU_SINGLE_LIST_ENTRY@@P6AJPEAX3PEA_K@Z3PEAPEAU23@@Z | Endereco: 140614674 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92887, "text": "?BTreeWalkPostOrderInternal@?$B_TREE@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@$0BAAA@UNP_CONTEXT@@UST_REGION_ENTRY_COMPARATOR@2@@@SAJPEAU1@PEAUNODE@?$B_TREE_HEADER@KU_ST_REGION_ENTRY@?$ST_STORE@USM_TRAITS@@@@@@PEAU_SINGLE_LIST_ENTRY@@P6AJPEAX3PEA_K@Z3PEAPEAU23@@Z | Endereco: 140614674 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92898, "text": "?NpGetResidentLeaf@NP_CONTEXT@@SAPEAUB_TREE_NODE_HDR@@PEAUNP_CTX@1@PEAT_NP_LEAF_PTR@@@Z | Endereco: 140614810 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92902, "text": "?NpLeafRemoveInternal@NP_CONTEXT@@SAPEAXPEAUNP_CTX@1@PEAPEAX@Z | Endereco: 140614844 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92906, "text": "?NpNodesPageOut@NP_CONTEXT@@SAJPEAUNP_CTX@1@@Z | Endereco: 1406148b8 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92910, "text": "?NpiGetReservedBuffer@NP_CONTEXT@@SAPEAXPEAU1@PEAUNP_CTX@1@@Z | Endereco: 1406148e0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92918, "text": "?NpiLeafPageIn@NP_CONTEXT@@SAXPEAU1@PEAUNP_CTX@1@PEAT_NP_LEAF_PTR@@@Z | Endereco: 14061495c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92923, "text": "?NpiPerformPageOut@NP_CONTEXT@@SAJPEAU1@PEAUNP_CTX@1@@Z | Endereco: 1406149fc | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92930, "text": "?NpiRebaseCallback@NP_CONTEXT@@SAJPEAX0PEA_K@Z | Endereco: 140614ad0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92935, "text": "?NpiTreeWalkCallback@NP_CONTEXT@@SAJPEAX0PEA_K@Z | Endereco: 140614b20 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92942, "text": "?SmCompressCtxStart@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAJPEAU_SM_COMPRESS_CONTEXT@1@W4_ST_COMPRESSION_FORMAT@@@Z | Endereco: 140614bd0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92945, "text": "?SmCompressCtxThreadParamsCleanup@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAXPEAU_SM_COMPRESS_CONTEXT@1@PEAU_SM_COMPRESS_THREAD_PARAMS@1@@Z | Endereco: 140614c48 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 92948, "text": "?SmCompressCtxThreadParamsStart@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAJPEAU_SM_COMPRESS_CONTEXT@1@PEAU_SM_COMPRESS_THREAD_PARAMS@1@_K@Z | Endereco: 140614c78 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 93027, "text": "?StDeleteReadContext@?$ST_STORE@USM_TRAITS@@@@SAXPEAU1@PEAU_STDM_READ_CONTEXT@1@@Z | Endereco: 140615a60 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 93107, "text": "?StDmHandleDecompressionFailure@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAD1PEAU_ST_PAGE_LOCATION@1@PEAU_STDM_READ_CONTEXT@1@@Z | Endereco: 1406165cc | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 93125, "text": "?StDmPageError@?$ST_STORE@USM_TRAITS@@@@SAJPEAU_ST_DATA_MGR@1@PEAD1PEAU_ST_PAGE_LOCATION@1@PEAU_STDM_READ_CONTEXT@1@J@Z | Endereco: 140616944 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 93183, "text": "?StNpEnumBTreeNodes@?$ST_STORE@USM_TRAITS@@@@SAJPEAUNP_CTX@NP_CONTEXT@@P6AJPEAX1PEA_K@Z1@Z | Endereco: 140617120 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 93187, "text": "?StNpLeafDelete@?$ST_STORE@USM_TRAITS@@@@SAXPEAUNP_CTX@NP_CONTEXT@@_K@Z | Endereco: 1406171a0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 93189, "text": "?StNpLeafPageIn@?$ST_STORE@USM_TRAITS@@@@SAJPEAUNP_CTX@NP_CONTEXT@@PEAX_K@Z | Endereco: 1406171f0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 93194, "text": "?StNpLeafPageOut@?$ST_STORE@USM_TRAITS@@@@SA_KPEAUNP_CTX@NP_CONTEXT@@PEAX@Z | Endereco: 1406172a0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 118209, "text": "s_IoRetryAsMiniDump()_-_ContextSa | Endereco: 1406d41b0 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 243817, "text": "u_ContextProvider | Endereco: 140b106b0 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 256836, "text": "s_Checksum_for_resume_context_pag | Endereco: 140b88d40 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 256838, "text": "s_Checksum_for_context_page_chang | Endereco: 140b88d80 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 256840, "text": "s_Checksum_for_partial_context_pa | Endereco: 140b88dc0 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 284753, "text": "MS_KernelCc_Provider_Context | Endereco: 140e06bd0 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 284758, "text": "MS_Dedup_Change_Provider_Context | Endereco: 140e06c90 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 284759, "text": "MS_StorageTiering_Provider_Context | Endereco: 140e06ce0 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 284768, "text": "MS_KernelPnP_Provider_Context | Endereco: 140e06da0 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 284770, "text": "IoMgrProvider_Context | Endereco: 140e06e20 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 284976, "text": "PDC_EVENT_PROVIDER_Context | Endereco: 140e08880 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 285028, "text": "EtwProvider_Context | Endereco: 140e09090 | Tipo: Label | Primario: true"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 286400, "text": "?KiIdealProcessorRebalancerContext@@3U_KI_IDEAL_PROCESSOR_REBALANCER_CONTEXT@@A | Endereco: 140e17080 | Tipo: Label | Primario: false"}

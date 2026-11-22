@@ -1,0 +1,104 @@
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _ETHREAD
+Categoria: /ntkrnlmp.pdb
+Classe: StructureDB
+Tamanho: 1944
+Descrição:
+Quantidade de campos: 76
+  Campo 0 | Nome: Tcb | Offset: 0 | Tamanho: 1216 | Tipo: _KTHREAD | Comentário: null
+  Campo 1 | Nome: CreateTime | Offset: 1216 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 2 | Nome: null | Offset: 1224 | Tamanho: 16 | Tipo: _ETHREAD_u_1224 | Comentário: null
+  Campo 3 | Nome: null | Offset: 1240 | Tamanho: 16 | Tipo: _ETHREAD_u_1240 | Comentário: null
+  Campo 4 | Nome: null | Offset: 1256 | Tamanho: 8 | Tipo: _ETHREAD_u_1256 | Comentário: null
+  Campo 5 | Nome: ActiveTimerListLock | Offset: 1264 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 6 | Nome: ActiveTimerListHead | Offset: 1272 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 7 | Nome: Cid | Offset: 1288 | Tamanho: 16 | Tipo: _CLIENT_ID | Comentário: null
+  Campo 8 | Nome: null | Offset: 1304 | Tamanho: 32 | Tipo: _ETHREAD_u_1304 | Comentário: null
+  Campo 9 | Nome: ClientSecurity | Offset: 1336 | Tamanho: 8 | Tipo: _PS_CLIENT_SECURITY_CONTEXT | Comentário: null
+  Campo 10 | Nome: IrpList | Offset: 1344 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 11 | Nome: TopLevelIrp | Offset: 1360 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 12 | Nome: DeviceToVerify | Offset: 1368 | Tamanho: 8 | Tipo: _DEVICE_OBJECT * | Comentário: null
+  Campo 13 | Nome: Win32StartAddress | Offset: 1376 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 14 | Nome: ChargeOnlySession | Offset: 1384 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 15 | Nome: LegacyPowerObject | Offset: 1392 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 16 | Nome: ThreadListEntry | Offset: 1400 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 17 | Nome: RundownProtect | Offset: 1416 | Tamanho: 8 | Tipo: _EX_RUNDOWN_REF | Comentário: null
+  Campo 18 | Nome: ThreadLock | Offset: 1424 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 19 | Nome: ReadClusterSize | Offset: 1432 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 20 | Nome: MmLockOrdering | Offset: 1436 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 21 | Nome: null | Offset: 1440 | Tamanho: 4 | Tipo: _ETHREAD_u_1440 | Comentário: null
+  Campo 22 | Nome: null | Offset: 1444 | Tamanho: 4 | Tipo: _ETHREAD_u_1444 | Comentário: null
+  Campo 23 | Nome: null | Offset: 1448 | Tamanho: 4 | Tipo: _ETHREAD_u_1448 | Comentário: null
+  Campo 24 | Nome: CacheManagerActive | Offset: 1452 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 25 | Nome: DisablePageFaultClustering | Offset: 1453 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 26 | Nome: ActiveFaultCount | Offset: 1454 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 27 | Nome: LockOrderState | Offset: 1455 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 28 | Nome: SharedPsModuleLockAcquires | Offset: 1456 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 29 | Nome: MmReserved | Offset: 1460 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 30 | Nome: AlpcMessageId | Offset: 1464 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 31 | Nome: null | Offset: 1472 | Tamanho: 8 | Tipo: _ETHREAD_u_1472 | Comentário: null
+  Campo 32 | Nome: AlpcWaitListEntry | Offset: 1480 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 33 | Nome: ExitStatus | Offset: 1496 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 34 | Nome: CacheManagerCount | Offset: 1500 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 35 | Nome: IoBoostCount | Offset: 1504 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 36 | Nome: IoQoSBoostCount | Offset: 1508 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 37 | Nome: IoQoSThrottleCount | Offset: 1512 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 38 | Nome: KernelStackReference | Offset: 1516 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 39 | Nome: BoostList | Offset: 1520 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 40 | Nome: DeboostList | Offset: 1536 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 41 | Nome: BoostListLock | Offset: 1552 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 42 | Nome: IrpListLock | Offset: 1560 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 43 | Nome: ReservedForSynchTracking | Offset: 1568 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 44 | Nome: CmCallbackListHead | Offset: 1576 | Tamanho: 8 | Tipo: _SINGLE_LIST_ENTRY | Comentário: null
+  Campo 45 | Nome: ActivityId | Offset: 1584 | Tamanho: 8 | Tipo: _GUID * | Comentário: null
+  Campo 46 | Nome: SeLearningModeListHead | Offset: 1592 | Tamanho: 8 | Tipo: _SINGLE_LIST_ENTRY | Comentário: null
+  Campo 47 | Nome: VerifierContext | Offset: 1600 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 48 | Nome: AdjustedClientToken | Offset: 1608 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 49 | Nome: WorkOnBehalfThread | Offset: 1616 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 50 | Nome: PropertySet | Offset: 1624 | Tamanho: 24 | Tipo: _PS_PROPERTY_SET | Comentário: null
+  Campo 51 | Nome: PicoContext | Offset: 1648 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 52 | Nome: UserFsBase | Offset: 1656 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 53 | Nome: UserGsBase | Offset: 1664 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 54 | Nome: EnergyValues | Offset: 1672 | Tamanho: 8 | Tipo: _THREAD_ENERGY_VALUES * | Comentário: null
+  Campo 55 | Nome: null | Offset: 1680 | Tamanho: 8 | Tipo: _ETHREAD_u_1680 | Comentário: null
+  Campo 56 | Nome: Silo | Offset: 1688 | Tamanho: 8 | Tipo: _EJOB * | Comentário: null
+  Campo 57 | Nome: ThreadName | Offset: 1696 | Tamanho: 8 | Tipo: _UNICODE_STRING * | Comentário: null
+  Campo 58 | Nome: SetContextState | Offset: 1704 | Tamanho: 8 | Tipo: _CONTEXT * | Comentário: null
+  Campo 59 | Nome: EtwSupport | Offset: 1712 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 60 | Nome: OwnerEntryListHead | Offset: 1720 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 61 | Nome: DisownedOwnerEntryListLock | Offset: 1736 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 62 | Nome: DisownedOwnerEntryListHead | Offset: 1744 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 63 | Nome: SchedulerSharedDataObject | Offset: 1760 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 64 | Nome: CmThreadInfo | Offset: 1768 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 65 | Nome: FlsData | Offset: 1776 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 66 | Nome: LastExpectedRunTime | Offset: 1784 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 67 | Nome: LastSoftParkElectionRunTime | Offset: 1788 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 68 | Nome: LastSoftParkElectionGeneration | Offset: 1792 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 69 | Nome: LastSoftParkElectionGroupAffinity | Offset: 1800 | Tamanho: 16 | Tipo: _GROUP_AFFINITY | Comentário: null
+  Campo 70 | Nome: UserIsolationDomain | Offset: 1816 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 71 | Nome: null | Offset: 1824 | Tamanho: 88 | Tipo: _ETHREAD_u_1824 | Comentário: null
+  Campo 72 | Nome: Win32kThreadLock | Offset: 1912 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 73 | Nome: ThreadIndex | Offset: 1920 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 74 | Nome: MmFaultClusterContext | Offset: 1928 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 75 | Nome: ProcessFastRef | Offset: 1936 | Tamanho: 8 | Tipo: _EX_FAST_REF | Comentário: null
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _ETHREAD *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to _ETHREAD
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _ETHREAD * *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to pointer to _ETHREAD
+
+----------------------------------------
+

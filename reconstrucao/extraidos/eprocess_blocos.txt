@@ -1,0 +1,254 @@
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _EPROCESS
+Categoria: /ntkrnlmp.pdb
+Classe: StructureDB
+Tamanho: 2112
+Descrição:
+Quantidade de campos: 226
+  Campo 0 | Nome: Pcb | Offset: 0 | Tamanho: 456 | Tipo: _KPROCESS | Comentário: null
+  Campo 1 | Nome: ProcessLock | Offset: 456 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 2 | Nome: UniqueProcessId | Offset: 464 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 3 | Nome: ActiveProcessLinks | Offset: 472 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 4 | Nome: RundownProtect | Offset: 488 | Tamanho: 8 | Tipo: _EX_RUNDOWN_REF | Comentário: null
+  Campo 5 | Nome: null | Offset: 496 | Tamanho: 4 | Tipo: _EPROCESS_u_496 | Comentário: null
+  Campo 6 | Nome: null | Offset: 500 | Tamanho: 4 | Tipo: _EPROCESS_u_500 | Comentário: null
+  Campo 7 | Nome: CreateTime | Offset: 504 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 8 | Nome: ProcessQuotaUsage | Offset: 512 | Tamanho: 16 | Tipo: ulong64[2] | Comentário: null
+  Campo 9 | Nome: ProcessQuotaPeak | Offset: 528 | Tamanho: 16 | Tipo: ulong64[2] | Comentário: null
+  Campo 10 | Nome: PeakVirtualSize | Offset: 544 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 11 | Nome: VirtualSize | Offset: 552 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 12 | Nome: SessionProcessLinks | Offset: 560 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 13 | Nome: null | Offset: 576 | Tamanho: 8 | Tipo: _EPROCESS_u_576 | Comentário: null
+  Campo 14 | Nome: Token | Offset: 584 | Tamanho: 8 | Tipo: _EX_FAST_REF | Comentário: null
+  Campo 15 | Nome: MmReserved | Offset: 592 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 16 | Nome: AddressCreationLock | Offset: 600 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 17 | Nome: PageTableCommitmentLock | Offset: 608 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 18 | Nome: RotateInProgress | Offset: 616 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null
+  Campo 19 | Nome: ForkInProgress | Offset: 624 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null
+  Campo 20 | Nome: CommitChargeJob | Offset: 632 | Tamanho: 8 | Tipo: _EJOB * | Comentário: null
+  Campo 21 | Nome: CloneRoot | Offset: 640 | Tamanho: 8 | Tipo: _RTL_AVL_TREE | Comentário: null
+  Campo 22 | Nome: NumberOfPrivatePages | Offset: 648 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 23 | Nome: MmReserved2 | Offset: 656 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 24 | Nome: Win32Process | Offset: 664 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 25 | Nome: Job | Offset: 672 | Tamanho: 8 | Tipo: _EJOB * | Comentário: null
+  Campo 26 | Nome: SectionObject | Offset: 680 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 27 | Nome: SectionBaseAddress | Offset: 688 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 28 | Nome: Cookie | Offset: 696 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 29 | Nome: null | Offset: 700 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 30 | Nome: null | Offset: 701 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 31 | Nome: null | Offset: 702 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 32 | Nome: null | Offset: 703 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 33 | Nome: WorkingSetWatch | Offset: 704 | Tamanho: 8 | Tipo: _PAGEFAULT_HISTORY * | Comentário: null
+  Campo 34 | Nome: Win32WindowStation | Offset: 712 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 35 | Nome: InheritedFromUniqueProcessId | Offset: 720 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 36 | Nome: OwnerProcessId | Offset: 728 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 37 | Nome: Peb | Offset: 736 | Tamanho: 8 | Tipo: _PEB * | Comentário: null
+  Campo 38 | Nome: Session | Offset: 744 | Tamanho: 8 | Tipo: _PSP_SESSION_SPACE * | Comentário: null
+  Campo 39 | Nome: Spare1 | Offset: 752 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 40 | Nome: QuotaBlock | Offset: 760 | Tamanho: 8 | Tipo: _EPROCESS_QUOTA_BLOCK * | Comentário: null
+  Campo 41 | Nome: ObjectTable | Offset: 768 | Tamanho: 8 | Tipo: _HANDLE_TABLE * | Comentário: null
+  Campo 42 | Nome: DebugPort | Offset: 776 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 43 | Nome: WoW64Process | Offset: 784 | Tamanho: 8 | Tipo: _EWOW64PROCESS * | Comentário: null
+  Campo 44 | Nome: DeviceMap | Offset: 792 | Tamanho: 8 | Tipo: _EX_FAST_REF | Comentário: null
+  Campo 45 | Nome: EtwDataSource | Offset: 800 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 46 | Nome: PageDirectoryPte | Offset: 808 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 47 | Nome: ImageFilePointer | Offset: 816 | Tamanho: 8 | Tipo: _FILE_OBJECT * | Comentário: null
+  Campo 48 | Nome: ImageFileName | Offset: 824 | Tamanho: 15 | Tipo: uchar[15] | Comentário: null
+  Campo 49 | Nome: PriorityClass | Offset: 839 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 50 | Nome: SecurityPort | Offset: 840 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 51 | Nome: SeAuditProcessCreationInfo | Offset: 848 | Tamanho: 8 | Tipo: _SE_AUDIT_PROCESS_CREATION_INFO | Comentário: null
+  Campo 52 | Nome: JobLinks | Offset: 856 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 53 | Nome: HighestUserAddress | Offset: 872 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 54 | Nome: ThreadListHead | Offset: 880 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 55 | Nome: ActiveThreads | Offset: 896 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 56 | Nome: ImagePathHash | Offset: 900 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 57 | Nome: DefaultHardErrorProcessing | Offset: 904 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 58 | Nome: LastThreadExitStatus | Offset: 908 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 59 | Nome: PrefetchTrace | Offset: 912 | Tamanho: 8 | Tipo: _EX_FAST_REF | Comentário: null
+  Campo 60 | Nome: LockedPagesList | Offset: 920 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 61 | Nome: ReadOperationCount | Offset: 928 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 62 | Nome: WriteOperationCount | Offset: 936 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 63 | Nome: OtherOperationCount | Offset: 944 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 64 | Nome: ReadTransferCount | Offset: 952 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 65 | Nome: WriteTransferCount | Offset: 960 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 66 | Nome: OtherTransferCount | Offset: 968 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 67 | Nome: CommitChargeLimit | Offset: 976 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 68 | Nome: CommitCharge | Offset: 984 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 69 | Nome: CommitChargePeak | Offset: 992 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 70 | Nome: null | Offset: 1000 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 71 | Nome: null | Offset: 1001 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 72 | Nome: null | Offset: 1002 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 73 | Nome: null | Offset: 1003 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 74 | Nome: null | Offset: 1004 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 75 | Nome: null | Offset: 1005 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 76 | Nome: null | Offset: 1006 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 77 | Nome: null | Offset: 1007 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 78 | Nome: null | Offset: 1008 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 79 | Nome: null | Offset: 1009 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 80 | Nome: null | Offset: 1010 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 81 | Nome: null | Offset: 1011 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 82 | Nome: null | Offset: 1012 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 83 | Nome: null | Offset: 1013 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 84 | Nome: null | Offset: 1014 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 85 | Nome: null | Offset: 1015 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 86 | Nome: null | Offset: 1016 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 87 | Nome: null | Offset: 1017 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 88 | Nome: null | Offset: 1018 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 89 | Nome: null | Offset: 1019 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 90 | Nome: null | Offset: 1020 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 91 | Nome: null | Offset: 1021 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 92 | Nome: null | Offset: 1022 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 93 | Nome: null | Offset: 1023 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 94 | Nome: Vm | Offset: 1024 | Tamanho: 320 | Tipo: _MMSUPPORT_FULL | Comentário: null
+  Campo 95 | Nome: MmProcessLinks | Offset: 1344 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 96 | Nome: ModifiedPageCount | Offset: 1360 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 97 | Nome: ExitStatus | Offset: 1364 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 98 | Nome: VadRoot | Offset: 1368 | Tamanho: 8 | Tipo: _RTL_AVL_TREE | Comentário: null
+  Campo 99 | Nome: VadHint | Offset: 1376 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 100 | Nome: VadCount | Offset: 1384 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 101 | Nome: VadPhysicalPages | Offset: 1392 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 102 | Nome: VadPhysicalPagesLimit | Offset: 1400 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 103 | Nome: AlpcContext | Offset: 1408 | Tamanho: 32 | Tipo: _ALPC_PROCESS_CONTEXT | Comentário: null
+  Campo 104 | Nome: TimerResolutionLink | Offset: 1440 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 105 | Nome: TimerResolutionStackRecord | Offset: 1456 | Tamanho: 8 | Tipo: _PO_DIAG_STACK_RECORD * | Comentário: null
+  Campo 106 | Nome: RequestedTimerResolution | Offset: 1464 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 107 | Nome: SmallestTimerResolution | Offset: 1468 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 108 | Nome: ExitTime | Offset: 1472 | Tamanho: 8 | Tipo: _LARGE_INTEGER | Comentário: null
+  Campo 109 | Nome: InvertedFunctionTable | Offset: 1480 | Tamanho: 8 | Tipo: _INVERTED_FUNCTION_TABLE_KERNEL_MODE * | Comentário: null
+  Campo 110 | Nome: InvertedFunctionTableLock | Offset: 1488 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 111 | Nome: ActiveThreadsHighWatermark | Offset: 1496 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 112 | Nome: LargePrivateVadCount | Offset: 1500 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 113 | Nome: ThreadListLock | Offset: 1504 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 114 | Nome: WnfContext | Offset: 1512 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 115 | Nome: ServerSilo | Offset: 1520 | Tamanho: 8 | Tipo: _EJOB * | Comentário: null
+  Campo 116 | Nome: SignatureLevel | Offset: 1528 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 117 | Nome: SectionSignatureLevel | Offset: 1529 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 118 | Nome: Protection | Offset: 1530 | Tamanho: 1 | Tipo: _PS_PROTECTION | Comentário: null
+  Campo 119 | Nome: HangCount | Offset: 1531 | Tamanho: 1 | Tipo: uchar:3 | Comentário: null
+  Campo 120 | Nome: GhostCount | Offset: 1531 | Tamanho: 1 | Tipo: uchar:3 | Comentário: null
+  Campo 121 | Nome: PrefilterException | Offset: 1531 | Tamanho: 1 | Tipo: uchar:1 | Comentário: null
+  Campo 122 | Nome: null | Offset: 1532 | Tamanho: 4 | Tipo: _EPROCESS_u_1532 | Comentário: null
+  Campo 123 | Nome: DeviceAsid | Offset: 1536 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 124 | Nome: null | Offset: 1540 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 125 | Nome: null | Offset: 1541 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 126 | Nome: null | Offset: 1542 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 127 | Nome: null | Offset: 1543 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 128 | Nome: SvmData | Offset: 1544 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 129 | Nome: SvmProcessLock | Offset: 1552 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 130 | Nome: SvmLock | Offset: 1560 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 131 | Nome: SvmProcessDeviceListHead | Offset: 1568 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 132 | Nome: LastFreezeInterruptTime | Offset: 1584 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 133 | Nome: DiskCounters | Offset: 1592 | Tamanho: 8 | Tipo: _PROCESS_DISK_COUNTERS * | Comentário: null
+  Campo 134 | Nome: PicoContext | Offset: 1600 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 135 | Nome: EnclaveTable | Offset: 1608 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 136 | Nome: EnclaveNumber | Offset: 1616 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 137 | Nome: EnclaveLock | Offset: 1624 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 138 | Nome: HighPriorityFaultsAllowed | Offset: 1632 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 139 | Nome: null | Offset: 1636 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 140 | Nome: null | Offset: 1637 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 141 | Nome: null | Offset: 1638 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 142 | Nome: null | Offset: 1639 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 143 | Nome: EnergyContext | Offset: 1640 | Tamanho: 8 | Tipo: _PO_PROCESS_ENERGY_CONTEXT * | Comentário: null
+  Campo 144 | Nome: VmContext | Offset: 1648 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 145 | Nome: SequenceNumber | Offset: 1656 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 146 | Nome: CreateInterruptTime | Offset: 1664 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 147 | Nome: CreateUnbiasedInterruptTime | Offset: 1672 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 148 | Nome: TotalUnbiasedFrozenTime | Offset: 1680 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 149 | Nome: LastAppStateUpdateTime | Offset: 1688 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 150 | Nome: LastAppStateUptime | Offset: 1696 | Tamanho: 8 | Tipo: ulong64:61 | Comentário: null
+  Campo 151 | Nome: LastAppState | Offset: 1703 | Tamanho: 1 | Tipo: ulong64:3 | Comentário: null
+  Campo 152 | Nome: SharedCommitCharge | Offset: 1704 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 153 | Nome: SharedCommitLock | Offset: 1712 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 154 | Nome: SharedCommitLinks | Offset: 1720 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 155 | Nome: null | Offset: 1736 | Tamanho: 16 | Tipo: _EPROCESS_u_1736 | Comentário: null
+  Campo 156 | Nome: DiskIoAttribution | Offset: 1752 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 157 | Nome: DxgProcess | Offset: 1760 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 158 | Nome: Win32KFilterSet | Offset: 1768 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 159 | Nome: Machine | Offset: 1772 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 160 | Nome: MmSlabIdentity | Offset: 1774 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 161 | Nome: Spare0 | Offset: 1775 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 162 | Nome: ProcessTimerDelay | Offset: 1776 | Tamanho: 8 | Tipo: _PS_INTERLOCKED_TIMER_DELAY_VALUES | Comentário: null
+  Campo 163 | Nome: KTimerSets | Offset: 1784 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 164 | Nome: KTimer2Sets | Offset: 1788 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 165 | Nome: ThreadTimerSets | Offset: 1792 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 166 | Nome: null | Offset: 1796 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 167 | Nome: null | Offset: 1797 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 168 | Nome: null | Offset: 1798 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 169 | Nome: null | Offset: 1799 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 170 | Nome: VirtualTimerListLock | Offset: 1800 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 171 | Nome: VirtualTimerListHead | Offset: 1808 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 172 | Nome: null | Offset: 1824 | Tamanho: 48 | Tipo: _EPROCESS_u_1824 | Comentário: null
+  Campo 173 | Nome: null | Offset: 1872 | Tamanho: 4 | Tipo: _EPROCESS_u_1872 | Comentário: null
+  Campo 174 | Nome: null | Offset: 1876 | Tamanho: 4 | Tipo: _EPROCESS_u_1876 | Comentário: null
+  Campo 175 | Nome: PartitionObject | Offset: 1880 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 176 | Nome: SecurityDomain | Offset: 1888 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 177 | Nome: ParentSecurityDomain | Offset: 1896 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 178 | Nome: CoverageSamplerContext | Offset: 1904 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 179 | Nome: MmHotPatchContext | Offset: 1912 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 180 | Nome: DynamicEHContinuationTargetsTree | Offset: 1920 | Tamanho: 8 | Tipo: _RTL_AVL_TREE | Comentário: null
+  Campo 181 | Nome: DynamicEHContinuationTargetsLock | Offset: 1928 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 182 | Nome: DynamicEnforcedCetCompatibleRanges | Offset: 1936 | Tamanho: 16 | Tipo: _PS_DYNAMIC_ENFORCED_ADDRESS_RANGES | Comentário: null
+  Campo 183 | Nome: DisabledComponentFlags | Offset: 1952 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 184 | Nome: PageCombineSequence | Offset: 1956 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 185 | Nome: EnableOptionalXStateFeaturesLock | Offset: 1960 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 186 | Nome: PathRedirectionHashes | Offset: 1968 | Tamanho: 8 | Tipo: ulong * | Comentário: null
+  Campo 187 | Nome: SyscallProvider | Offset: 1976 | Tamanho: 8 | Tipo: _PS_SYSCALL_PROVIDER * | Comentário: null
+  Campo 188 | Nome: SyscallProviderProcessLinks | Offset: 1984 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 189 | Nome: SyscallProviderDispatchContext | Offset: 2000 | Tamanho: 8 | Tipo: _PSP_SYSCALL_PROVIDER_DISPATCH_CONTEXT | Comentário: null
+  Campo 190 | Nome: null | Offset: 2008 | Tamanho: 4 | Tipo: _EPROCESS_u_2008 | Comentário: null
+  Campo 191 | Nome: null | Offset: 2012 | Tamanho: 4 | Tipo: _EPROCESS_u_2012 | Comentário: null
+  Campo 192 | Nome: null | Offset: 2016 | Tamanho: 4 | Tipo: _EPROCESS_u_2016 | Comentário: null
+  Campo 193 | Nome: SupervisorDeviceAsid | Offset: 2020 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 194 | Nome: SupervisorSvmData | Offset: 2024 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 195 | Nome: NetworkCounters | Offset: 2032 | Tamanho: 8 | Tipo: _PROCESS_NETWORK_COUNTERS * | Comentário: null
+  Campo 196 | Nome: Execution | Offset: 2040 | Tamanho: 4 | Tipo: _PROCESS_EXECUTION | Comentário: null
+  Campo 197 | Nome: null | Offset: 2044 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 198 | Nome: null | Offset: 2045 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 199 | Nome: null | Offset: 2046 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 200 | Nome: null | Offset: 2047 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 201 | Nome: ThreadIndexTable | Offset: 2048 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 202 | Nome: FreezeWorkLinks | Offset: 2056 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 203 | Nome: PpmPolicyLock | Offset: 2072 | Tamanho: 8 | Tipo: _EX_PUSH_LOCK | Comentário: null
+  Campo 204 | Nome: BamPpmPolicy | Offset: 2080 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 205 | Nome: null | Offset: 2084 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 206 | Nome: null | Offset: 2085 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 207 | Nome: null | Offset: 2086 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 208 | Nome: null | Offset: 2087 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 209 | Nome: ProcessQosCallbackListEntry | Offset: 2088 | Tamanho: 8 | Tipo: _SINGLE_LIST_ENTRY | Comentário: null
+  Campo 210 | Nome: null | Offset: 2096 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 211 | Nome: null | Offset: 2097 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 212 | Nome: null | Offset: 2098 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 213 | Nome: null | Offset: 2099 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 214 | Nome: null | Offset: 2100 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 215 | Nome: null | Offset: 2101 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 216 | Nome: null | Offset: 2102 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 217 | Nome: null | Offset: 2103 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 218 | Nome: null | Offset: 2104 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 219 | Nome: null | Offset: 2105 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 220 | Nome: null | Offset: 2106 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 221 | Nome: null | Offset: 2107 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 222 | Nome: null | Offset: 2108 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 223 | Nome: null | Offset: 2109 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 224 | Nome: null | Offset: 2110 | Tamanho: 1 | Tipo: undefined | Comentário: null
+  Campo 225 | Nome: null | Offset: 2111 | Tamanho: 1 | Tipo: undefined | Comentário: null
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _EPROCESS *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to _EPROCESS
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _EPROCESS * *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to pointer to _EPROCESS
+
+----------------------------------------
+

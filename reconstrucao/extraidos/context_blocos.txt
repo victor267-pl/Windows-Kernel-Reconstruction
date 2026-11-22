@@ -1,0 +1,130 @@
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _CONTEXT
+Categoria: /excpt.h
+Classe: StructureDB
+Tamanho: 1232
+Descrição:
+Quantidade de campos: 46
+  Campo 0 | Nome: P1Home | Offset: 0 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 1 | Nome: P2Home | Offset: 8 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 2 | Nome: P3Home | Offset: 16 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 3 | Nome: P4Home | Offset: 24 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 4 | Nome: P5Home | Offset: 32 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 5 | Nome: P6Home | Offset: 40 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 6 | Nome: ContextFlags | Offset: 48 | Tamanho: 4 | Tipo: DWORD | Comentário: null
+  Campo 7 | Nome: MxCsr | Offset: 52 | Tamanho: 4 | Tipo: DWORD | Comentário: null
+  Campo 8 | Nome: SegCs | Offset: 56 | Tamanho: 2 | Tipo: WORD | Comentário: null
+  Campo 9 | Nome: SegDs | Offset: 58 | Tamanho: 2 | Tipo: WORD | Comentário: null
+  Campo 10 | Nome: SegEs | Offset: 60 | Tamanho: 2 | Tipo: WORD | Comentário: null
+  Campo 11 | Nome: SegFs | Offset: 62 | Tamanho: 2 | Tipo: WORD | Comentário: null
+  Campo 12 | Nome: SegGs | Offset: 64 | Tamanho: 2 | Tipo: WORD | Comentário: null
+  Campo 13 | Nome: SegSs | Offset: 66 | Tamanho: 2 | Tipo: WORD | Comentário: null
+  Campo 14 | Nome: EFlags | Offset: 68 | Tamanho: 4 | Tipo: DWORD | Comentário: null
+  Campo 15 | Nome: Dr0 | Offset: 72 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 16 | Nome: Dr1 | Offset: 80 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 17 | Nome: Dr2 | Offset: 88 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 18 | Nome: Dr3 | Offset: 96 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 19 | Nome: Dr6 | Offset: 104 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 20 | Nome: Dr7 | Offset: 112 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 21 | Nome: Rax | Offset: 120 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 22 | Nome: Rcx | Offset: 128 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 23 | Nome: Rdx | Offset: 136 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 24 | Nome: Rbx | Offset: 144 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 25 | Nome: Rsp | Offset: 152 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 26 | Nome: Rbp | Offset: 160 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 27 | Nome: Rsi | Offset: 168 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 28 | Nome: Rdi | Offset: 176 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 29 | Nome: R8 | Offset: 184 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 30 | Nome: R9 | Offset: 192 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 31 | Nome: R10 | Offset: 200 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 32 | Nome: R11 | Offset: 208 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 33 | Nome: R12 | Offset: 216 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 34 | Nome: R13 | Offset: 224 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 35 | Nome: R14 | Offset: 232 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 36 | Nome: R15 | Offset: 240 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 37 | Nome: Rip | Offset: 248 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 38 | Nome: u | Offset: 256 | Tamanho: 512 | Tipo: _union_54 | Comentário: null
+  Campo 39 | Nome: VectorRegister | Offset: 768 | Tamanho: 416 | Tipo: M128A[26] | Comentário: null
+  Campo 40 | Nome: VectorControl | Offset: 1184 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 41 | Nome: DebugControl | Offset: 1192 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 42 | Nome: LastBranchToRip | Offset: 1200 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 43 | Nome: LastBranchFromRip | Offset: 1208 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 44 | Nome: LastExceptionToRip | Offset: 1216 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+  Campo 45 | Nome: LastExceptionFromRip | Offset: 1224 | Tamanho: 8 | Tipo: DWORD64 | Comentário: null
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _CONTEXT
+Categoria: /ntkrnlmp.pdb
+Classe: StructureDB
+Tamanho: 1232
+Descrição:
+Quantidade de campos: 46
+  Campo 0 | Nome: P1Home | Offset: 0 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 1 | Nome: P2Home | Offset: 8 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 2 | Nome: P3Home | Offset: 16 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 3 | Nome: P4Home | Offset: 24 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 4 | Nome: P5Home | Offset: 32 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 5 | Nome: P6Home | Offset: 40 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 6 | Nome: ContextFlags | Offset: 48 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 7 | Nome: MxCsr | Offset: 52 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 8 | Nome: SegCs | Offset: 56 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 9 | Nome: SegDs | Offset: 58 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 10 | Nome: SegEs | Offset: 60 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 11 | Nome: SegFs | Offset: 62 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 12 | Nome: SegGs | Offset: 64 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 13 | Nome: SegSs | Offset: 66 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 14 | Nome: EFlags | Offset: 68 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 15 | Nome: Dr0 | Offset: 72 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 16 | Nome: Dr1 | Offset: 80 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 17 | Nome: Dr2 | Offset: 88 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 18 | Nome: Dr3 | Offset: 96 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 19 | Nome: Dr6 | Offset: 104 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 20 | Nome: Dr7 | Offset: 112 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 21 | Nome: Rax | Offset: 120 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 22 | Nome: Rcx | Offset: 128 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 23 | Nome: Rdx | Offset: 136 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 24 | Nome: Rbx | Offset: 144 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 25 | Nome: Rsp | Offset: 152 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 26 | Nome: Rbp | Offset: 160 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 27 | Nome: Rsi | Offset: 168 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 28 | Nome: Rdi | Offset: 176 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 29 | Nome: R8 | Offset: 184 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 30 | Nome: R9 | Offset: 192 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 31 | Nome: R10 | Offset: 200 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 32 | Nome: R11 | Offset: 208 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 33 | Nome: R12 | Offset: 216 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 34 | Nome: R13 | Offset: 224 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 35 | Nome: R14 | Offset: 232 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 36 | Nome: R15 | Offset: 240 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 37 | Nome: Rip | Offset: 248 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 38 | Nome: null | Offset: 256 | Tamanho: 512 | Tipo: _CONTEXT_u_256 | Comentário: null
+  Campo 39 | Nome: VectorRegister | Offset: 768 | Tamanho: 416 | Tipo: _M128A[26] | Comentário: null
+  Campo 40 | Nome: VectorControl | Offset: 1184 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 41 | Nome: DebugControl | Offset: 1192 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 42 | Nome: LastBranchToRip | Offset: 1200 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 43 | Nome: LastBranchFromRip | Offset: 1208 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 44 | Nome: LastExceptionToRip | Offset: 1216 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 45 | Nome: LastExceptionFromRip | Offset: 1224 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _CONTEXT *
+Categoria: /excpt.h
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to _CONTEXT
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _CONTEXT *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to _CONTEXT
+
+----------------------------------------
+

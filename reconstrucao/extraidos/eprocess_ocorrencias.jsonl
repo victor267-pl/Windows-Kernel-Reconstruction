@@ -1,0 +1,165 @@
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2426, "text": "  Campo 9 | Nome: OriginatingProcess | Offset: 72 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 4875, "text": "  Campo 1 | Nome: OwnerProcess | Offset: 16 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 5379, "text": "  Campo 2 | Nome: OwnerProcess | Offset: 24 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 9440, "text": "  Campo 2 | Nome: ErrorProcess | Offset: 16 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 11197, "text": "  Campo 0 | Nome: Process | Offset: 0 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12537, "text": "  Campo 87 | Nome: Accounting | Offset: 1352 | Tamanho: 104 | Tipo: _EPROCESS_VALUES | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12795, "text": "  Campo 11 | Nome: SystemProcess | Offset: 120 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12824, "text": "Nome: _EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12835, "text": "  Campo 5 | Nome: null | Offset: 496 | Tamanho: 4 | Tipo: _EPROCESS_u_496 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12836, "text": "  Campo 6 | Nome: null | Offset: 500 | Tamanho: 4 | Tipo: _EPROCESS_u_500 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12843, "text": "  Campo 13 | Nome: null | Offset: 576 | Tamanho: 8 | Tipo: _EPROCESS_u_576 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12870, "text": "  Campo 40 | Nome: QuotaBlock | Offset: 760 | Tamanho: 8 | Tipo: _EPROCESS_QUOTA_BLOCK * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12952, "text": "  Campo 122 | Nome: null | Offset: 1532 | Tamanho: 4 | Tipo: _EPROCESS_u_1532 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12985, "text": "  Campo 155 | Nome: null | Offset: 1736 | Tamanho: 16 | Tipo: _EPROCESS_u_1736 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13002, "text": "  Campo 172 | Nome: null | Offset: 1824 | Tamanho: 48 | Tipo: _EPROCESS_u_1824 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13003, "text": "  Campo 173 | Nome: null | Offset: 1872 | Tamanho: 4 | Tipo: _EPROCESS_u_1872 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13004, "text": "  Campo 174 | Nome: null | Offset: 1876 | Tamanho: 4 | Tipo: _EPROCESS_u_1876 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13020, "text": "  Campo 190 | Nome: null | Offset: 2008 | Tamanho: 4 | Tipo: _EPROCESS_u_2008 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13021, "text": "  Campo 191 | Nome: null | Offset: 2012 | Tamanho: 4 | Tipo: _EPROCESS_u_2012 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13022, "text": "  Campo 192 | Nome: null | Offset: 2016 | Tamanho: 4 | Tipo: _EPROCESS_u_2016 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13058, "text": "Nome: _EPROCESS *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13062, "text": "Descrição: pointer to _EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13065, "text": "Nome: _EPROCESS * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13069, "text": "Descrição: pointer to pointer to _EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13072, "text": "Nome: _EPROCESS_QUOTA_BLOCK"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13080, "text": "Nome: _EPROCESS_QUOTA_BLOCK *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13084, "text": "Descrição: pointer to _EPROCESS_QUOTA_BLOCK"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13087, "text": "Nome: _EPROCESS_u_1532"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13088, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13094, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _EPROCESS_u_1532_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13097, "text": "Nome: _EPROCESS_u_1532_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13098, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS/_EPROCESS_u_1532"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13137, "text": "Nome: _EPROCESS_u_1736"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13138, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13143, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 16 | Tipo: _EPROCESS_u_1736_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13144, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 16 | Tipo: _EPROCESS_u_1736_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13147, "text": "Nome: _EPROCESS_u_1736_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13148, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS/_EPROCESS_u_1736"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13157, "text": "Nome: _EPROCESS_u_1736_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13158, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS/_EPROCESS_u_1736"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13167, "text": "Nome: _EPROCESS_u_1824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13168, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13177, "text": "Nome: _EPROCESS_u_1872"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13178, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13187, "text": "Nome: _EPROCESS_u_1876"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13188, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13197, "text": "Nome: _EPROCESS_u_2008"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13198, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13207, "text": "Nome: _EPROCESS_u_2012"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13208, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13214, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _EPROCESS_u_2012_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13217, "text": "Nome: _EPROCESS_u_2012_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13218, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS/_EPROCESS_u_2012"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13229, "text": "Nome: _EPROCESS_u_2016"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13230, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13239, "text": "Nome: _EPROCESS_u_496"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13240, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13246, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _EPROCESS_u_496_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13249, "text": "Nome: _EPROCESS_u_496_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13250, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS/_EPROCESS_u_496"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13284, "text": "Nome: _EPROCESS_u_500"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13285, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13291, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _EPROCESS_u_500_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13294, "text": "Nome: _EPROCESS_u_500_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13295, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS/_EPROCESS_u_500"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13331, "text": "Nome: _EPROCESS_u_576"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13332, "text": "Categoria: /ntkrnlmp.pdb/_EPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13342, "text": "Nome: _EPROCESS_VALUES"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13441, "text": "  Campo 4 | Nome: PspSessionLeaderProcess | Offset: 840 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13442, "text": "  Campo 5 | Nome: ExpDefaultErrorPortProcess | Offset: 848 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14492, "text": "  Campo 2 | Nome: ProcessObject | Offset: 24 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14609, "text": "  Campo 0 | Nome: Process | Offset: 0 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16968, "text": "  Campo 6 | Nome: FastIoLock | Offset: 48 | Tamanho: 8 | Tipo: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__EPROCESS_ptr_ulong_uchar_uchar__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16969, "text": "  Campo 7 | Nome: FastIoUnlockSingle | Offset: 56 | Tamanho: 8 | Tipo: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__EPROCESS_ptr_ulong__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16970, "text": "  Campo 8 | Nome: FastIoUnlockAll | Offset: 64 | Tamanho: 8 | Tipo: _func___cdecl_uchar__FILE_OBJECT_ptr__EPROCESS_ptr__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17954, "text": "Nome: _func___cdecl__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17961, "text": "Nome: _func___cdecl__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17965, "text": "Descrição: pointer to _func___cdecl__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17968, "text": "Nome: _func___cdecl__EPROCESS_ptr__IRP_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17975, "text": "Nome: _func___cdecl__EPROCESS_ptr__IRP_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 17979, "text": "Descrição: pointer to _func___cdecl__EPROCESS_ptr__IRP_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18542, "text": "Nome: _func___cdecl__KPROCESS_ptr__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18549, "text": "Nome: _func___cdecl__KPROCESS_ptr__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18553, "text": "Descrição: pointer to _func___cdecl__KPROCESS_ptr__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20936, "text": "Nome: _func___cdecl_long__EPROCESS_ptr_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20943, "text": "Nome: _func___cdecl_long__EPROCESS_ptr_ulong64 *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 20947, "text": "Descrição: pointer to _func___cdecl_long__EPROCESS_ptr_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22315, "text": "Nome: _func___cdecl_long__OB_OPEN_REASON_char__EPROCESS_ptr_void_ptr_ulong_ptr_ulong"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22322, "text": "Nome: _func___cdecl_long__OB_OPEN_REASON_char__EPROCESS_ptr_void_ptr_ulong_ptr_ulong *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 22326, "text": "Descrição: pointer to _func___cdecl_long__OB_OPEN_REASON_char__EPROCESS_ptr_void_ptr_ulong_ptr_ulong"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25535, "text": "Nome: _func___cdecl_uchar__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25542, "text": "Nome: _func___cdecl_uchar__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25546, "text": "Descrição: pointer to _func___cdecl_uchar__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25549, "text": "Nome: _func___cdecl_uchar__EPROCESS_ptr_void_ptr_void_ptr_char"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25556, "text": "Nome: _func___cdecl_uchar__EPROCESS_ptr_void_ptr_void_ptr_char *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25560, "text": "Descrição: pointer to _func___cdecl_uchar__EPROCESS_ptr_void_ptr_void_ptr_char"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25717, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__EPROCESS_ptr__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25724, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__EPROCESS_ptr__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25728, "text": "Descrição: pointer to _func___cdecl_uchar__FILE_OBJECT_ptr__EPROCESS_ptr__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25745, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__EPROCESS_ptr_ulong__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25752, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__EPROCESS_ptr_ulong__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25756, "text": "Descrição: pointer to _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__EPROCESS_ptr_ulong__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25759, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__EPROCESS_ptr_ulong_uchar_uchar__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25766, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__EPROCESS_ptr_ulong_uchar_uchar__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25770, "text": "Descrição: pointer to _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__EPROCESS_ptr_ulong_uchar_uchar__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26865, "text": "Nome: _func___cdecl_ulong64__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26872, "text": "Nome: _func___cdecl_ulong64__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26876, "text": "Descrição: pointer to _func___cdecl_ulong64__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27439, "text": "Nome: _func___cdecl_ulong__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27446, "text": "Nome: _func___cdecl_ulong__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27450, "text": "Descrição: pointer to _func___cdecl_ulong__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27453, "text": "Nome: _func___cdecl_ulong__EPROCESS_ptr_ulong_ulong64_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27460, "text": "Nome: _func___cdecl_ulong__EPROCESS_ptr_ulong_ulong64_ulong64 *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 27464, "text": "Descrição: pointer to _func___cdecl_ulong__EPROCESS_ptr_ulong_ulong64_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 28251, "text": "Nome: _func___cdecl_ushort__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 28258, "text": "Nome: _func___cdecl_ushort__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 28262, "text": "Descrição: pointer to _func___cdecl_ushort__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29014, "text": "Nome: _func___cdecl_void__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29021, "text": "Nome: _func___cdecl_void__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29025, "text": "Descrição: pointer to _func___cdecl_void__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29028, "text": "Nome: _func___cdecl_void__EPROCESS_ptr_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29035, "text": "Nome: _func___cdecl_void__EPROCESS_ptr_ulong64 *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29039, "text": "Descrição: pointer to _func___cdecl_void__EPROCESS_ptr_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29042, "text": "Nome: _func___cdecl_void__EPROCESS_ptr_ulong_ulong_ulong"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29049, "text": "Nome: _func___cdecl_void__EPROCESS_ptr_ulong_ulong_ulong *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29053, "text": "Descrição: pointer to _func___cdecl_void__EPROCESS_ptr_ulong_ulong_ulong"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29056, "text": "Nome: _func___cdecl_void__EPROCESS_ptr_void_ptr_ulong64_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29063, "text": "Nome: _func___cdecl_void__EPROCESS_ptr_void_ptr_ulong64_ulong64 *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29067, "text": "Descrição: pointer to _func___cdecl_void__EPROCESS_ptr_void_ptr_ulong64_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31240, "text": "Nome: _func___cdecl_void_ptr__EPROCESS_ptr_ulong64_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31247, "text": "Nome: _func___cdecl_void_ptr__EPROCESS_ptr_ulong64_ulong64 *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 31251, "text": "Descrição: pointer to _func___cdecl_void_ptr__EPROCESS_ptr_ulong64_ulong64"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 32192, "text": "Nome: _func___cdecl_void_ulong__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 32199, "text": "Nome: _func___cdecl_void_ulong__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 32203, "text": "Descrição: pointer to _func___cdecl_void_ulong__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 34689, "text": "  Campo 3 | Nome: QuotaProcess | Offset: 16 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 40945, "text": "  Campo 0 | Nome: QuotaProcess | Offset: 0 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 41019, "text": "  Campo 4 | Nome: OwnerProcess | Offset: 32 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 41041, "text": "  Campo 2 | Nome: OwningProcess | Offset: 16 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 41070, "text": "  Campo 3 | Nome: OwnerProcess | Offset: 32 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95845, "text": "  Campo 3 | Nome: BindingProcess | Offset: 32 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99417, "text": "  Campo 10 | Nome: Process | Offset: 184 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 99989, "text": "  Campo 3 | Nome: Process | Offset: 16 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 100021, "text": "  Campo 5 | Nome: Process | Offset: 16 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 103785, "text": "  Campo 20 | Nome: StoreProcess | Offset: 496 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 104230, "text": "  Campo 1 | Nome: VadsProcess | Offset: 0 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 106372, "text": "  Campo 3 | Nome: Process | Offset: 24 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 107681, "text": "  Campo 6 | Nome: VadsProcess | Offset: 112 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 108002, "text": "  Campo 2 | Nome: ExclusiveOplockOwner | Offset: 16 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 108584, "text": "  Campo 0 | Nome: SourceProcess | Offset: 0 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 108838, "text": "  Campo 0 | Nome: Process | Offset: 0 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 109007, "text": "  Campo 0 | Nome: ExclusiveProcess | Offset: 0 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 109291, "text": "  Campo 11 | Nome: OpenProcedure | Offset: 56 | Tamanho: 8 | Tipo: _func___cdecl_long__OB_OPEN_REASON_char__EPROCESS_ptr_void_ptr_ulong_ptr_ulong * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 109292, "text": "  Campo 12 | Nome: CloseProcedure | Offset: 64 | Tamanho: 8 | Tipo: _func___cdecl_void__EPROCESS_ptr_void_ptr_ulong64_ulong64 * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 109297, "text": "  Campo 17 | Nome: OkayToCloseProcedure | Offset: 104 | Tamanho: 8 | Tipo: _func___cdecl_uchar__EPROCESS_ptr_void_ptr_void_ptr_char * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112520, "text": "  Campo 0 | Nome: ProcessBilled | Offset: 0 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112624, "text": "  Campo 6 | Nome: ProcessBilled | Offset: 24 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113942, "text": "  Campo 1 | Nome: InitiatingProcess | Offset: 8 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117705, "text": "  Campo 3 | Nome: OplockRequestProcess | Offset: 32 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128146, "text": "  Campo 13 | Nome: CreatorProcess | Offset: 152 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128203, "text": "  Campo 1 | Nome: Process | Offset: 8 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128394, "text": "  Campo 4 | Nome: Process | Offset: 40 | Tamanho: 8 | Tipo: _EPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 138574, "text": "  Tipo: _EPROCESS * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 138576, "text": "Assinatura: long __cdecl SmpProcessQueryStoreStats(_EPROCESS * param_1, _ST_STATS * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 417139, "text": "?SmpProcessQueryStoreStats@@YAJPEAU_EPROCESS@@PEAU_ST_STATS@@@Z | Endereco: 140246ecc | Tipo: Label | Primario: false"}

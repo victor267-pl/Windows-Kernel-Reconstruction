@@ -1,0 +1,117 @@
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 107, "text": "  Campo 1 | Nome: Thread | Offset: 32 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 1935, "text": "  Campo 1 | Nome: Thread | Offset: 32 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 2427, "text": "  Campo 10 | Nome: IoIssuerThread | Offset: 80 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 5301, "text": "  Campo 3 | Nome: TargetThread | Offset: 24 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 7280, "text": "  Campo 181 | Nome: LowPriWorkerThread | Offset: 1256 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 7637, "text": "  Campo 0 | Nome: Thread | Offset: 0 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12848, "text": "  Campo 18 | Nome: RotateInProgress | Offset: 616 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12849, "text": "  Campo 19 | Nome: ForkInProgress | Offset: 624 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13481, "text": "Nome: _ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13489, "text": "  Campo 2 | Nome: null | Offset: 1224 | Tamanho: 16 | Tipo: _ETHREAD_u_1224 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13490, "text": "  Campo 3 | Nome: null | Offset: 1240 | Tamanho: 16 | Tipo: _ETHREAD_u_1240 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13491, "text": "  Campo 4 | Nome: null | Offset: 1256 | Tamanho: 8 | Tipo: _ETHREAD_u_1256 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13495, "text": "  Campo 8 | Nome: null | Offset: 1304 | Tamanho: 32 | Tipo: _ETHREAD_u_1304 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13508, "text": "  Campo 21 | Nome: null | Offset: 1440 | Tamanho: 4 | Tipo: _ETHREAD_u_1440 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13509, "text": "  Campo 22 | Nome: null | Offset: 1444 | Tamanho: 4 | Tipo: _ETHREAD_u_1444 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13510, "text": "  Campo 23 | Nome: null | Offset: 1448 | Tamanho: 4 | Tipo: _ETHREAD_u_1448 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13518, "text": "  Campo 31 | Nome: null | Offset: 1472 | Tamanho: 8 | Tipo: _ETHREAD_u_1472 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13542, "text": "  Campo 55 | Nome: null | Offset: 1680 | Tamanho: 8 | Tipo: _ETHREAD_u_1680 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13558, "text": "  Campo 71 | Nome: null | Offset: 1824 | Tamanho: 88 | Tipo: _ETHREAD_u_1824 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13565, "text": "Nome: _ETHREAD *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13569, "text": "Descrição: pointer to _ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13572, "text": "Nome: _ETHREAD * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13576, "text": "Descrição: pointer to pointer to _ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13579, "text": "Nome: _ETHREAD_u_1224"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13580, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13589, "text": "Nome: _ETHREAD_u_1240"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13590, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13596, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 16 | Tipo: _ETHREAD_u_1240_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13599, "text": "Nome: _ETHREAD_u_1240_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13600, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1240"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13609, "text": "Nome: _ETHREAD_u_1256"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13610, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13616, "text": "  Campo 1 | Nome: ReaperLink | Offset: 0 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13620, "text": "Nome: _ETHREAD_u_1304"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13621, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13630, "text": "Nome: _ETHREAD_u_1440"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13631, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13637, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _ETHREAD_u_1440_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13640, "text": "Nome: _ETHREAD_u_1440_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13641, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1440"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13670, "text": "Nome: _ETHREAD_u_1444"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13671, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13677, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _ETHREAD_u_1444_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13680, "text": "Nome: _ETHREAD_u_1444_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13681, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1444"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13702, "text": "Nome: _ETHREAD_u_1448"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13703, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13709, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 3 | Tipo: _ETHREAD_u_1448_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13712, "text": "Nome: _ETHREAD_u_1448_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13713, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1448"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13735, "text": "Nome: _ETHREAD_u_1472"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13736, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13745, "text": "Nome: _ETHREAD_u_1680"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13746, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13755, "text": "Nome: _ETHREAD_u_1824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13756, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13762, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _ETHREAD_u_1824_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13763, "text": "  Campo 2 | Nome: _s_2 | Offset: 0 | Tamanho: 8 | Tipo: _ETHREAD_u_1824_s_2 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13764, "text": "  Campo 3 | Nome: _s_3 | Offset: 0 | Tamanho: 80 | Tipo: _ETHREAD_u_1824_s_3 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13765, "text": "  Campo 4 | Nome: _s_4 | Offset: 0 | Tamanho: 80 | Tipo: _ETHREAD_u_1824_s_4 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13766, "text": "  Campo 5 | Nome: _s_5 | Offset: 0 | Tamanho: 88 | Tipo: _ETHREAD_u_1824_s_5 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13769, "text": "Nome: _ETHREAD_u_1824_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13770, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13779, "text": "Nome: _ETHREAD_u_1824_s_2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13780, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13792, "text": "Nome: _ETHREAD_u_1824_s_3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13793, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13802, "text": "Nome: _ETHREAD_u_1824_s_4"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13803, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13812, "text": "Nome: _ETHREAD_u_1824_s_5"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13813, "text": "Categoria: /ntkrnlmp.pdb/_ETHREAD/_ETHREAD_u_1824"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13883, "text": "  Campo 9 | Nome: DpcThread | Offset: 88 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 14157, "text": "  Campo 13 | Nome: LockOwner | Offset: 672 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18010, "text": "Nome: _func___cdecl__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18017, "text": "Nome: _func___cdecl__ETHREAD_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18021, "text": "Descrição: pointer to _func___cdecl__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18416, "text": "Nome: _func___cdecl__IO_PRIORITY_HINT__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18423, "text": "Nome: _func___cdecl__IO_PRIORITY_HINT__ETHREAD_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18427, "text": "Descrição: pointer to _func___cdecl__IO_PRIORITY_HINT__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18570, "text": "Nome: _func___cdecl__KTHREAD_ptr__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18577, "text": "Nome: _func___cdecl__KTHREAD_ptr__ETHREAD_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18581, "text": "Descrição: pointer to _func___cdecl__KTHREAD_ptr__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 23260, "text": "Nome: _func___cdecl_long_ulong64__ETHREAD_ptr_ulong64_ulong64__PF_FILE_ACCESS_TYPE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 23267, "text": "Nome: _func___cdecl_long_ulong64__ETHREAD_ptr_ulong64_ulong64__PF_FILE_ACCESS_TYPE *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 23271, "text": "Descrição: pointer to _func___cdecl_long_ulong64__ETHREAD_ptr_ulong64_ulong64__PF_FILE_ACCESS_TYPE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25577, "text": "Nome: _func___cdecl_uchar__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25584, "text": "Nome: _func___cdecl_uchar__ETHREAD_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25588, "text": "Descrição: pointer to _func___cdecl_uchar__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29084, "text": "Nome: _func___cdecl_void__ETHREAD_ptr_ulong"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29091, "text": "Nome: _func___cdecl_void__ETHREAD_ptr_ulong *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29095, "text": "Descrição: pointer to _func___cdecl_void__ETHREAD_ptr_ulong"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 37620, "text": "  Campo 0 | Nome: ActiveThread | Offset: 0 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 39297, "text": "  Campo 4 | Nome: WorkOnBehalfThread | Offset: 56 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 40354, "text": "  Campo 1 | Nome: Thread | Offset: 8 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 40880, "text": "  Campo 3 | Nome: WaitingThread | Offset: 32 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 40893, "text": "  Campo 16 | Nome: ServerThread | Offset: 200 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 103017, "text": "  Campo 28 | Nome: ModifiedPageWriterThread | Offset: 512 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 103777, "text": "  Campo 12 | Nome: EvictionThread | Offset: 120 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 104460, "text": "  Campo 8 | Nome: MirrorHoldsPfn | Offset: 72 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 104867, "text": "  Campo 1 | Nome: LoadLockOwner | Offset: 16 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 105207, "text": "  Campo 5 | Nome: EmptyAllThread | Offset: 80 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 105468, "text": "  Campo 6 | Nome: CreatingThread | Offset: 0 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 106698, "text": "  Campo 7 | Nome: Thread | Offset: 152 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 108003, "text": "  Campo 3 | Nome: ExclusiveOplockOwnerThread | Offset: 24 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113666, "text": "  Campo 1 | Nome: Thread | Offset: 16 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113941, "text": "  Campo 0 | Nome: InitiatingThread | Offset: 0 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 117706, "text": "  Campo 4 | Nome: OplockOwnerThread | Offset: 40 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 125552, "text": "  Campo 0 | Nome: Thread | Offset: 0 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 125564, "text": "  Campo 2 | Nome: Thread | Offset: 16 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 125901, "text": "  Campo 0 | Nome: Thread | Offset: 0 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 127806, "text": "  Campo 10 | Nome: LoggerThread | Offset: 32 | Tamanho: 8 | Tipo: _ETHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 162985, "text": "  Tipo: _ETHREAD * * | Nome: param_4 | Posicao: 3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 162986, "text": "Assinatura: long __cdecl SmStWorkerThreadStartThread(SMKM_STORE<struct_SM_TRAITS> * param_1, void * param_2, _func_void_void_ptr * param_3, _ETHREAD * * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 163001, "text": "  Tipo: _ETHREAD * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 163002, "text": "Assinatura: void __cdecl SmCompressCtxUpdateThreadTopology(_SM_COMPRESS_CONTEXT * param_1, _ETHREAD * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 29647, "text": "?SmStWorkerThreadStartThread@?$SMKM_STORE@USM_TRAITS@@@@SAJPEAU1@PEAXP6AX1@ZPEAPEAU_ETHREAD@@@Z | Endereco: 1403f759c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 29655, "text": "?SmCompressCtxUpdateThreadTopology@?$SMKM_STORE_MGR@USM_TRAITS@@@@SAXPEAU_SM_COMPRESS_CONTEXT@1@PEAU_ETHREAD@@@Z | Endereco: 1403f76fc | Tipo: Label | Primario: false"}

@@ -1,0 +1,161 @@
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _KTHREAD
+Categoria: /ntkrnlmp.pdb
+Classe: StructureDB
+Tamanho: 1216
+Descrição:
+Quantidade de campos: 124
+  Campo 0 | Nome: Header | Offset: 0 | Tamanho: 24 | Tipo: _DISPATCHER_HEADER | Comentário: null
+  Campo 1 | Nome: SListFaultAddress | Offset: 24 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 2 | Nome: QuantumTarget | Offset: 32 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 3 | Nome: InitialStack | Offset: 40 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 4 | Nome: StackLimit | Offset: 48 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 5 | Nome: StackBase | Offset: 56 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 6 | Nome: ThreadLock | Offset: 64 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 7 | Nome: CycleTime | Offset: 72 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 8 | Nome: CurrentRunTime | Offset: 80 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 9 | Nome: ExpectedRunTime | Offset: 84 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 10 | Nome: KernelStack | Offset: 88 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 11 | Nome: StateSaveArea | Offset: 96 | Tamanho: 8 | Tipo: _XSAVE_FORMAT * | Comentário: null
+  Campo 12 | Nome: SchedulingGroup | Offset: 104 | Tamanho: 8 | Tipo: _KSCHEDULING_GROUP * | Comentário: null
+  Campo 13 | Nome: WaitRegister | Offset: 112 | Tamanho: 1 | Tipo: _KWAIT_STATUS_REGISTER | Comentário: null
+  Campo 14 | Nome: Running | Offset: 113 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 15 | Nome: Alerted | Offset: 114 | Tamanho: 2 | Tipo: uchar[2] | Comentário: null
+  Campo 16 | Nome: null | Offset: 116 | Tamanho: 4 | Tipo: _KTHREAD_u_116 | Comentário: null
+  Campo 17 | Nome: null | Offset: 120 | Tamanho: 4 | Tipo: _KTHREAD_u_120 | Comentário: null
+  Campo 18 | Nome: Tag | Offset: 124 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 19 | Nome: null | Offset: 125 | Tamanho: 1 | Tipo: _KTHREAD_u_125 | Comentário: null
+  Campo 20 | Nome: null | Offset: 126 | Tamanho: 1 | Tipo: _KTHREAD_u_126 | Comentário: null
+  Campo 21 | Nome: SystemCallNumber | Offset: 128 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 22 | Nome: ReadyTime | Offset: 132 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 23 | Nome: FirstArgument | Offset: 136 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 24 | Nome: TrapFrame | Offset: 144 | Tamanho: 8 | Tipo: _KTRAP_FRAME * | Comentário: null
+  Campo 25 | Nome: null | Offset: 152 | Tamanho: 48 | Tipo: _KTHREAD_u_152 | Comentário: null
+  Campo 26 | Nome: WaitStatus | Offset: 200 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 27 | Nome: WaitBlockList | Offset: 208 | Tamanho: 8 | Tipo: _KWAIT_BLOCK * | Comentário: null
+  Campo 28 | Nome: null | Offset: 216 | Tamanho: 16 | Tipo: _KTHREAD_u_216 | Comentário: null
+  Campo 29 | Nome: Queue | Offset: 232 | Tamanho: 8 | Tipo: _DISPATCHER_HEADER * | Comentário: null
+  Campo 30 | Nome: Teb | Offset: 240 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 31 | Nome: RelativeTimerBias | Offset: 248 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 32 | Nome: Timer | Offset: 256 | Tamanho: 64 | Tipo: _KTIMER | Comentário: null
+  Campo 33 | Nome: null | Offset: 320 | Tamanho: 192 | Tipo: _KTHREAD_u_320 | Comentário: null
+  Campo 34 | Nome: null | Offset: 512 | Tamanho: 4 | Tipo: _KTHREAD_u_512 | Comentário: null
+  Campo 35 | Nome: BamQosLevel | Offset: 516 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 36 | Nome: HardwareFeedbackClass | Offset: 517 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 37 | Nome: null | Offset: 518 | Tamanho: 2 | Tipo: _KTHREAD_u_518 | Comentário: null
+  Campo 38 | Nome: QueueListEntry | Offset: 520 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 39 | Nome: null | Offset: 536 | Tamanho: 4 | Tipo: _KTHREAD_u_536 | Comentário: null
+  Campo 40 | Nome: QueuePriority | Offset: 540 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 41 | Nome: Process | Offset: 544 | Tamanho: 8 | Tipo: _KPROCESS * | Comentário: null
+  Campo 42 | Nome: UserAffinity | Offset: 552 | Tamanho: 8 | Tipo: _KAFFINITY_EX * | Comentário: null
+  Campo 43 | Nome: UserAffinityPrimaryGroup | Offset: 560 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 44 | Nome: PreviousMode | Offset: 562 | Tamanho: 1 | Tipo: char | Comentário: null
+  Campo 45 | Nome: BasePriority | Offset: 563 | Tamanho: 1 | Tipo: char | Comentário: null
+  Campo 46 | Nome: Spare24 | Offset: 564 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 47 | Nome: Preempted | Offset: 565 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 48 | Nome: AdjustReason | Offset: 566 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 49 | Nome: AdjustIncrement | Offset: 567 | Tamanho: 1 | Tipo: char | Comentário: null
+  Campo 50 | Nome: AffinityVersion | Offset: 568 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 51 | Nome: Affinity | Offset: 576 | Tamanho: 8 | Tipo: _KAFFINITY_EX * | Comentário: null
+  Campo 52 | Nome: AffinityPrimaryGroup | Offset: 584 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 53 | Nome: ApcStateIndex | Offset: 586 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 54 | Nome: WaitBlockCount | Offset: 587 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 55 | Nome: IdealProcessor | Offset: 588 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 56 | Nome: NpxState | Offset: 592 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 57 | Nome: null | Offset: 600 | Tamanho: 48 | Tipo: _KTHREAD_u_600 | Comentário: null
+  Campo 58 | Nome: null | Offset: 648 | Tamanho: 88 | Tipo: _KTHREAD_u_648 | Comentário: null
+  Campo 59 | Nome: SuspendEvent | Offset: 736 | Tamanho: 24 | Tipo: _KEVENT | Comentário: null
+  Campo 60 | Nome: ThreadListEntry | Offset: 760 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 61 | Nome: MutantListHead | Offset: 776 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 62 | Nome: null | Offset: 792 | Tamanho: 2 | Tipo: _KTHREAD_u_792 | Comentário: null
+  Campo 63 | Nome: null | Offset: 794 | Tamanho: 1 | Tipo: _KTHREAD_u_794 | Comentário: null
+  Campo 64 | Nome: WobPriority | Offset: 795 | Tamanho: 1 | Tipo: char | Comentário: null
+  Campo 65 | Nome: SecureThreadCookie | Offset: 796 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 66 | Nome: SchedulerSharedSystemSlot | Offset: 800 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 67 | Nome: PropagateBoostsEntry | Offset: 808 | Tamanho: 8 | Tipo: _SINGLE_LIST_ENTRY | Comentário: null
+  Campo 68 | Nome: IoSelfBoostsEntry | Offset: 816 | Tamanho: 8 | Tipo: _SINGLE_LIST_ENTRY | Comentário: null
+  Campo 69 | Nome: PriorityFloorCounts | Offset: 824 | Tamanho: 32 | Tipo: uchar[32] | Comentário: null
+  Campo 70 | Nome: PriorityFloorSummary | Offset: 856 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 71 | Nome: AbCompletedIoBoostCount | Offset: 860 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 72 | Nome: AbCompletedIoQoSBoostCount | Offset: 864 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 73 | Nome: KeReferenceCount | Offset: 868 | Tamanho: 2 | Tipo: short | Comentário: null
+  Campo 74 | Nome: DecayBoost | Offset: 870 | Tamanho: 1 | Tipo: char | Comentário: null
+  Campo 75 | Nome: Spare6 | Offset: 871 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 76 | Nome: ForegroundLossTime | Offset: 872 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 77 | Nome: null | Offset: 880 | Tamanho: 16 | Tipo: _KTHREAD_u_880 | Comentário: null
+  Campo 78 | Nome: ReadOperationCount | Offset: 896 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 79 | Nome: WriteOperationCount | Offset: 904 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 80 | Nome: OtherOperationCount | Offset: 912 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 81 | Nome: ReadTransferCount | Offset: 920 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 82 | Nome: WriteTransferCount | Offset: 928 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 83 | Nome: OtherTransferCount | Offset: 936 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 84 | Nome: QueuedScb | Offset: 944 | Tamanho: 8 | Tipo: _KSCB * | Comentário: null
+  Campo 85 | Nome: ThreadTimerDelay | Offset: 952 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 86 | Nome: Spare26 | Offset: 956 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 87 | Nome: PpmPolicy | Offset: 958 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 88 | Nome: Spare27 | Offset: 959 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 89 | Nome: TracingPrivate | Offset: 960 | Tamanho: 8 | Tipo: ulong64[1] | Comentário: null
+  Campo 90 | Nome: SchedulerAssist | Offset: 968 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 91 | Nome: AbWaitObject | Offset: 976 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 92 | Nome: ReservedPreviousReadyTimeValue | Offset: 984 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 93 | Nome: KernelWaitTime | Offset: 992 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 94 | Nome: UserWaitTime | Offset: 1000 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 95 | Nome: null | Offset: 1008 | Tamanho: 16 | Tipo: _KTHREAD_u_1008 | Comentário: null
+  Campo 96 | Nome: SchedulerAssistPriorityFloor | Offset: 1024 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 97 | Nome: RealtimePriorityFloor | Offset: 1028 | Tamanho: 4 | Tipo: long | Comentário: null
+  Campo 98 | Nome: KernelShadowStack | Offset: 1032 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 99 | Nome: KernelShadowStackInitial | Offset: 1040 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 100 | Nome: KernelShadowStackBase | Offset: 1048 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 101 | Nome: KernelShadowStackLimit | Offset: 1056 | Tamanho: 8 | Tipo: _KERNEL_SHADOW_STACK_LIMIT | Comentário: null
+  Campo 102 | Nome: ExtendedFeatureDisableMask | Offset: 1064 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 103 | Nome: HgsFeedbackStartTime | Offset: 1072 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 104 | Nome: HgsFeedbackCycles | Offset: 1080 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 105 | Nome: HgsInvalidFeedbackCount | Offset: 1088 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 106 | Nome: HgsLowerPerfClassFeedbackCount | Offset: 1092 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 107 | Nome: HgsHigherPerfClassFeedbackCount | Offset: 1096 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 108 | Nome: ModeHistory | Offset: 1100 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 109 | Nome: SystemAffinityTokenListHead | Offset: 1104 | Tamanho: 8 | Tipo: _SINGLE_LIST_ENTRY | Comentário: null
+  Campo 110 | Nome: IptSaveArea | Offset: 1112 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 111 | Nome: ResourceIndex | Offset: 1120 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 112 | Nome: CoreIsolationReasons | Offset: 1121 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 113 | Nome: BamQosLevelFromAssistPage | Offset: 1122 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 114 | Nome: SecureCallCoreIsolationCount | Offset: 1123 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 115 | Nome: SchedulerSharedOffset | Offset: 1124 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 116 | Nome: SchedulerSharedSwappablePage | Offset: 1128 | Tamanho: 8 | Tipo: _KSWAPPABLE_PAGE * | Comentário: null
+  Campo 117 | Nome: KernelAbEntries | Offset: 1136 | Tamanho: 8 | Tipo: _KLOCK_ENTRIES * | Comentário: null
+  Campo 118 | Nome: UserAbEntries | Offset: 1144 | Tamanho: 8 | Tipo: _KLOCK_ENTRIES * | Comentário: null
+  Campo 119 | Nome: KcsanThread | Offset: 1152 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 120 | Nome: SchedulerAssistYieldCounter | Offset: 1160 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 121 | Nome: SchedulerAssistYieldBoostCount | Offset: 1164 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 122 | Nome: SchedulerAssistLastYieldBoostTime | Offset: 1168 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 123 | Nome: Padding | Offset: 1176 | Tamanho: 40 | Tipo: ulong64[5] | Comentário: null
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _KTHREAD *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to _KTHREAD
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _KTHREAD * *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to pointer to _KTHREAD
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _KTHREAD *[5]
+Categoria: /ntkrnlmp.pdb
+Classe: ArrayDB
+Tamanho: 40
+Descrição: Array of pointer to _KTHREAD
+
+----------------------------------------
+

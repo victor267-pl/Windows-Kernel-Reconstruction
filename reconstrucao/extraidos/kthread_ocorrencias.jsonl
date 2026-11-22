@@ -1,0 +1,240 @@
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 1640, "text": "  Campo 6 | Nome: Thread | Offset: 48 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8066, "text": "  Campo 0 | Nome: Owner | Offset: 0 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8096, "text": "  Campo 1 | Nome: Owner | Offset: 8 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8676, "text": "  Campo 48 | Nome: CreatorOwner | Offset: 4168 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 8677, "text": "  Campo 49 | Nome: RundownThread | Offset: 4176 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13487, "text": "  Campo 0 | Nome: Tcb | Offset: 0 | Tamanho: 1216 | Tipo: _KTHREAD | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13881, "text": "  Campo 7 | Nome: DpcNormalRoutine | Offset: 72 | Tamanho: 8 | Tipo: _func___cdecl_void__ETW_APC_POOL_ptr__KTHREAD_ptr_void_ptr_ptr_void_ptr_ptr_void_ptr_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 13882, "text": "  Campo 8 | Nome: DpcCancelRoutine | Offset: 80 | Tamanho: 8 | Tipo: _func___cdecl_void__ETW_APC_POOL_ptr__KTHREAD_ptr_void_ptr_ptr_void_ptr_ptr_void_ptr_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18556, "text": "Nome: _func___cdecl__KTHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18563, "text": "Nome: _func___cdecl__KTHREAD_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18567, "text": "Descrição: pointer to _func___cdecl__KTHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18570, "text": "Nome: _func___cdecl__KTHREAD_ptr__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18577, "text": "Nome: _func___cdecl__KTHREAD_ptr__ETHREAD_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18581, "text": "Descrição: pointer to _func___cdecl__KTHREAD_ptr__ETHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26193, "text": "Nome: _func___cdecl_uchar__KTHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26200, "text": "Nome: _func___cdecl_uchar__KTHREAD_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26204, "text": "Descrição: pointer to _func___cdecl_uchar__KTHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29098, "text": "Nome: _func___cdecl_void__ETW_APC_POOL_ptr__KTHREAD_ptr_void_ptr_ptr_void_ptr_ptr_void_ptr_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29105, "text": "Nome: _func___cdecl_void__ETW_APC_POOL_ptr__KTHREAD_ptr_void_ptr_ptr_void_ptr_ptr_void_ptr_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 29109, "text": "Descrição: pointer to _func___cdecl_void__ETW_APC_POOL_ptr__KTHREAD_ptr_void_ptr_ptr_void_ptr_ptr_void_ptr_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 30099, "text": "Nome: _func___cdecl_void__KTHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 30106, "text": "Nome: _func___cdecl_void__KTHREAD_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 30110, "text": "Descrição: pointer to _func___cdecl_void__KTHREAD_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 40365, "text": "  Campo 1 | Nome: Thread | Offset: 8 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 41114, "text": "  Campo 5 | Nome: Thread | Offset: 8 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 41143, "text": "  Campo 5 | Nome: Thread | Offset: 8 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42540, "text": "  Campo 2 | Nome: CompareThread | Offset: 16 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42541, "text": "  Campo 3 | Nome: NewThread | Offset: 24 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42746, "text": "  Campo 28 | Nome: ServiceThread | Offset: 152 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 42951, "text": "  Campo 0 | Nome: Thread | Offset: 0 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 43197, "text": "  Campo 2 | Nome: OwnerThread | Offset: 40 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94671, "text": "  Campo 5 | Nome: CurrentThread | Offset: 8 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94672, "text": "  Campo 6 | Nome: NextThread | Offset: 16 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94673, "text": "  Campo 7 | Nome: IdleThread | Offset: 24 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94769, "text": "  Campo 5 | Nome: CurrentThread | Offset: 8 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94770, "text": "  Campo 6 | Nome: NextThread | Offset: 16 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94771, "text": "  Campo 7 | Nome: IdleThread | Offset: 24 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94871, "text": "  Campo 107 | Nome: DpcDelegateThread | Offset: 14392 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95036, "text": "  Campo 272 | Nome: SmtIsolationThread | Offset: 36480 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96686, "text": "Nome: _KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96708, "text": "  Campo 16 | Nome: null | Offset: 116 | Tamanho: 4 | Tipo: _KTHREAD_u_116 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96709, "text": "  Campo 17 | Nome: null | Offset: 120 | Tamanho: 4 | Tipo: _KTHREAD_u_120 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96711, "text": "  Campo 19 | Nome: null | Offset: 125 | Tamanho: 1 | Tipo: _KTHREAD_u_125 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96712, "text": "  Campo 20 | Nome: null | Offset: 126 | Tamanho: 1 | Tipo: _KTHREAD_u_126 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96717, "text": "  Campo 25 | Nome: null | Offset: 152 | Tamanho: 48 | Tipo: _KTHREAD_u_152 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96720, "text": "  Campo 28 | Nome: null | Offset: 216 | Tamanho: 16 | Tipo: _KTHREAD_u_216 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96725, "text": "  Campo 33 | Nome: null | Offset: 320 | Tamanho: 192 | Tipo: _KTHREAD_u_320 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96726, "text": "  Campo 34 | Nome: null | Offset: 512 | Tamanho: 4 | Tipo: _KTHREAD_u_512 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96729, "text": "  Campo 37 | Nome: null | Offset: 518 | Tamanho: 2 | Tipo: _KTHREAD_u_518 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96731, "text": "  Campo 39 | Nome: null | Offset: 536 | Tamanho: 4 | Tipo: _KTHREAD_u_536 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96749, "text": "  Campo 57 | Nome: null | Offset: 600 | Tamanho: 48 | Tipo: _KTHREAD_u_600 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96750, "text": "  Campo 58 | Nome: null | Offset: 648 | Tamanho: 88 | Tipo: _KTHREAD_u_648 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96754, "text": "  Campo 62 | Nome: null | Offset: 792 | Tamanho: 2 | Tipo: _KTHREAD_u_792 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96755, "text": "  Campo 63 | Nome: null | Offset: 794 | Tamanho: 1 | Tipo: _KTHREAD_u_794 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96769, "text": "  Campo 77 | Nome: null | Offset: 880 | Tamanho: 16 | Tipo: _KTHREAD_u_880 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96787, "text": "  Campo 95 | Nome: null | Offset: 1008 | Tamanho: 16 | Tipo: _KTHREAD_u_1008 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96818, "text": "Nome: _KTHREAD *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96822, "text": "Descrição: pointer to _KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96825, "text": "Nome: _KTHREAD * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96829, "text": "Descrição: pointer to pointer to _KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96832, "text": "Nome: _KTHREAD *[5]"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96836, "text": "Descrição: Array of pointer to _KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96839, "text": "Nome: _KTHREAD_CORE_ISOLATION_REASON"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96851, "text": "Nome: _KTHREAD_COUNTERS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96866, "text": "Nome: _KTHREAD_COUNTERS *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96870, "text": "Descrição: pointer to _KTHREAD_COUNTERS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96873, "text": "Nome: _KTHREAD_PPM_POLICY"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96887, "text": "Nome: _KTHREAD_SCHEDULE_REASON_DATA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96895, "text": "Nome: _KTHREAD_SCHEDULE_REASON_DATA *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96899, "text": "Descrição: pointer to _KTHREAD_SCHEDULE_REASON_DATA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96902, "text": "Nome: _KTHREAD_STATE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96920, "text": "Nome: _KTHREAD_TAG"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96933, "text": "Nome: _KTHREAD_u_1008"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96934, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96940, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 16 | Tipo: _KTHREAD_u_1008_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96943, "text": "Nome: _KTHREAD_u_1008_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96944, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_1008"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96953, "text": "Nome: _KTHREAD_u_116"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96954, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96959, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 4 | Tipo: _KTHREAD_u_116_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96963, "text": "Nome: _KTHREAD_u_116_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96964, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_116"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96996, "text": "Nome: _KTHREAD_u_120"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96997, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97002, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 4 | Tipo: _KTHREAD_u_120_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97006, "text": "Nome: _KTHREAD_u_120_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97007, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_120"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97038, "text": "Nome: _KTHREAD_u_125"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97039, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97044, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 1 | Tipo: _KTHREAD_u_125_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97048, "text": "Nome: _KTHREAD_u_125_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97049, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_125"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97060, "text": "Nome: _KTHREAD_u_126"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97061, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97066, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 1 | Tipo: _KTHREAD_u_126_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97070, "text": "Nome: _KTHREAD_u_126_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97071, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_126"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97080, "text": "Nome: _KTHREAD_u_152"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97081, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97087, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 48 | Tipo: _KTHREAD_u_152_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97090, "text": "Nome: _KTHREAD_u_152_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97091, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_152"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97101, "text": "Nome: _KTHREAD_u_216"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97102, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97111, "text": "Nome: _KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97112, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97118, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 24 | Tipo: _KTHREAD_u_320_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97119, "text": "  Campo 2 | Nome: _s_2 | Offset: 0 | Tamanho: 72 | Tipo: _KTHREAD_u_320_s_2 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97120, "text": "  Campo 3 | Nome: _s_3 | Offset: 0 | Tamanho: 120 | Tipo: _KTHREAD_u_320_s_3 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97121, "text": "  Campo 4 | Nome: _s_4 | Offset: 0 | Tamanho: 168 | Tipo: _KTHREAD_u_320_s_4 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97122, "text": "  Campo 5 | Nome: _s_5 | Offset: 0 | Tamanho: 48 | Tipo: _KTHREAD_u_320_s_5 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97123, "text": "  Campo 6 | Nome: _s_6 | Offset: 0 | Tamanho: 96 | Tipo: _KTHREAD_u_320_s_6 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97124, "text": "  Campo 7 | Nome: _s_7 | Offset: 0 | Tamanho: 144 | Tipo: _KTHREAD_u_320_s_7 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97125, "text": "  Campo 8 | Nome: _s_8 | Offset: 0 | Tamanho: 192 | Tipo: _KTHREAD_u_320_s_8 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97128, "text": "Nome: _KTHREAD_u_320_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97129, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97138, "text": "Nome: _KTHREAD_u_320_s_2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97139, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97151, "text": "Nome: _KTHREAD_u_320_s_3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97152, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97161, "text": "Nome: _KTHREAD_u_320_s_4"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97162, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97168, "text": "  Campo 1 | Nome: null | Offset: 164 | Tamanho: 4 | Tipo: _KTHREAD_u_320_s_4_u_164 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97171, "text": "Nome: _KTHREAD_u_320_s_4_u_164"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97172, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320/_KTHREAD_u_320_s_4"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97177, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 4 | Tipo: _KTHREAD_u_320_s_4_u_164_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97181, "text": "Nome: _KTHREAD_u_320_s_4_u_164_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97182, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320/_KTHREAD_u_320_s_4/_KTHREAD_u_320_s_4_u_164"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97191, "text": "Nome: _KTHREAD_u_320_s_5"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97192, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97198, "text": "  Campo 1 | Nome: ThreadCounters | Offset: 40 | Tamanho: 8 | Tipo: _KTHREAD_COUNTERS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97201, "text": "Nome: _KTHREAD_u_320_s_6"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97202, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97211, "text": "Nome: _KTHREAD_u_320_s_7"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97212, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97221, "text": "Nome: _KTHREAD_u_320_s_8"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97222, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_320"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97232, "text": "Nome: _KTHREAD_u_512"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97233, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97239, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _KTHREAD_u_512_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97242, "text": "Nome: _KTHREAD_u_512_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97243, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_512"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97253, "text": "Nome: _KTHREAD_u_518"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97254, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97260, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 2 | Tipo: _KTHREAD_u_518_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97263, "text": "Nome: _KTHREAD_u_518_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97264, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_518"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97273, "text": "Nome: _KTHREAD_u_536"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97274, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97280, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _KTHREAD_u_536_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97283, "text": "Nome: _KTHREAD_u_536_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97284, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_536"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97293, "text": "Nome: _KTHREAD_u_600"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97294, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97300, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 48 | Tipo: _KTHREAD_u_600_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97303, "text": "Nome: _KTHREAD_u_600_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97304, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_600"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97316, "text": "Nome: _KTHREAD_u_648"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97317, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97323, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 4 | Tipo: _KTHREAD_u_648_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97324, "text": "  Campo 2 | Nome: _s_2 | Offset: 0 | Tamanho: 8 | Tipo: _KTHREAD_u_648_s_2 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97325, "text": "  Campo 3 | Nome: _s_3 | Offset: 0 | Tamanho: 72 | Tipo: _KTHREAD_u_648_s_3 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97326, "text": "  Campo 4 | Nome: _s_4 | Offset: 0 | Tamanho: 80 | Tipo: _KTHREAD_u_648_s_4 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97327, "text": "  Campo 5 | Nome: _s_5 | Offset: 0 | Tamanho: 88 | Tipo: _KTHREAD_u_648_s_5 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97330, "text": "Nome: _KTHREAD_u_648_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97331, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_648"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97340, "text": "Nome: _KTHREAD_u_648_s_2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97341, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_648"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97350, "text": "Nome: _KTHREAD_u_648_s_3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97351, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_648"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97360, "text": "Nome: _KTHREAD_u_648_s_4"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97361, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_648"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97370, "text": "Nome: _KTHREAD_u_648_s_5"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97371, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_648"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97381, "text": "Nome: _KTHREAD_u_792"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97382, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97387, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 2 | Tipo: _KTHREAD_u_792_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97391, "text": "Nome: _KTHREAD_u_792_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97392, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_792"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97401, "text": "Nome: _KTHREAD_u_794"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97402, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97408, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 1 | Tipo: _KTHREAD_u_794_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97411, "text": "Nome: _KTHREAD_u_794_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97412, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_794"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97422, "text": "Nome: _KTHREAD_u_880"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97423, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97429, "text": "  Campo 1 | Nome: _s_1 | Offset: 0 | Tamanho: 16 | Tipo: _KTHREAD_u_880_s_1 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97432, "text": "Nome: _KTHREAD_u_880_s_1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97433, "text": "Categoria: /ntkrnlmp.pdb/_KTHREAD/_KTHREAD_u_880"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 97780, "text": "  Campo 25 | Nome: RollbackThread | Offset: 320 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 98339, "text": "  Campo 0 | Nome: Thread | Offset: 0 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 98360, "text": "  Campo 1 | Nome: Thread | Offset: 16 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 112850, "text": "  Campo 3 | Nome: Thread | Offset: 16 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113424, "text": "  Campo 6 | Nome: WorkerThread | Offset: 168 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113446, "text": "  Campo 6 | Nome: PoolWorkerThreads | Offset: 264 | Tamanho: 40 | Tipo: _KTHREAD *[5] | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113770, "text": "  Campo 35 | Nome: ActionWorkerThread | Offset: 456 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113771, "text": "  Campo 36 | Nome: PromoteActionWorkerThread | Offset: 464 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113772, "text": "  Campo 37 | Nome: UnlockAfterSleepWorkerThread | Offset: 472 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113925, "text": "  Campo 1 | Nome: Thread | Offset: 8 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 124906, "text": "  Campo 8 | Nome: WatchdogStartThread | Offset: 56 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 125438, "text": "  Campo 16 | Nome: ExclusiveOwnerThread | Offset: 136 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 125869, "text": "  Campo 0 | Nome: Thread | Offset: 0 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 128948, "text": "  Campo 1 | Nome: Thread | Offset: 8 | Tamanho: 8 | Tipo: _KTHREAD * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 135941, "text": "  Tipo: _KTHREAD * | Nome: param_4 | Posicao: 3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 135942, "text": "Assinatura: void __cdecl KiStartRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KPRCB * param_2, _KISOLATION_UNIT_LOCK_HANDLE * param_3, _KTHREAD * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140583, "text": "  Tipo: _KTHREAD * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140587, "text": "Assinatura: uchar __cdecl KiCanLocalReadyThreadBeScheduledToRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KTHREAD * param_2, _KPRCB * param_3, _KSHARED_READY_QUEUE * param_4, _KSCB * param_5)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140616, "text": "  Tipo: _KTHREAD * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140619, "text": "Assinatura: uchar __cdecl KiDoesThreadDominateRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KTHREAD * param_2, ulong param_3, _KSCB * * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 142653, "text": "  Tipo: _KTHREAD * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 142655, "text": "Assinatura: void __cdecl KiClearSystemPriority(_KTHREAD * param_1, long * param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148193, "text": "  Tipo: _KTHREAD * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148196, "text": "Assinatura: void __cdecl KiAdjustRescheduleContextEntryForThreadRemoval(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KTHREAD * param_2, uchar param_3, uchar param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148488, "text": "  Tipo: _KTHREAD * | Nome: param_3 | Posicao: 2"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148489, "text": "  Tipo: _KTHREAD_SCHEDULE_REASON_DATA * | Nome: param_4 | Posicao: 3"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 148490, "text": "Assinatura: void __cdecl KiCompleteRescheduleContextEntry(_KI_RESCHEDULE_CONTEXT_ENTRY * param_1, _KPRCB * param_2, _KTHREAD * param_3, _KTHREAD_SCHEDULE_REASON_DATA * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 155337, "text": "  Tipo: _KTHREAD * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 155340, "text": "Assinatura: void __cdecl KiSetSystemPriorityThread(_KTHREAD * param_1, long param_2, ulong param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 155564, "text": "  Tipo: _KTHREAD * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 155569, "text": "Assinatura: long __cdecl KiSetIdealProcessorThread(_KTHREAD * param_1, ulong param_2, uchar param_3, ulong * param_4, uchar param_5)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 185927, "text": "  Tipo: _KTHREAD * | Nome: param_2 | Posicao: 1"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 185933, "text": "Assinatura: void __cdecl KiAdaptThreadIdealProcessorForProcessIdealSetChange(_KPROCESS * param_1, _KTHREAD * param_2, _KAFFINITY_EX * param_3, _KAFFINITY_EX * param_4, uchar * param_5, uchar * param_6, ulong * param_7)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 193654, "text": "  Tipo: _KTHREAD * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 193657, "text": "Assinatura: long __cdecl KiComputeThreadPriorityStacking(_KTHREAD * param_1, ulong param_2, char param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 220059, "text": "  Tipo: _KTHREAD * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 220062, "text": "Assinatura: long __cdecl KiComputeNewPriorityNonStacking(_KTHREAD * param_1, char param_2, uchar param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 220069, "text": "  Tipo: _KTHREAD * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 220071, "text": "Assinatura: long __cdecl KiComputeThreadPriorityNonStacking(_KTHREAD * param_1, ulong param_2)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 408431, "text": "?KiStartRescheduleContextEntry@@YAXPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KPRCB@@PEAT_KISOLATION_UNIT_LOCK_HANDLE@@PEAU_KTHREAD@@@Z | Endereco: 1402035b0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 423742, "text": "?KiCanLocalReadyThreadBeScheduledToRescheduleContextEntry@@YAEPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KTHREAD@@PEAU_KPRCB@@PEAU_KSHARED_READY_QUEUE@@PEAU_KSCB@@@Z | Endereco: 140278580 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 423792, "text": "?KiDoesThreadDominateRescheduleContextEntry@@YAEPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KTHREAD@@KPEAPEAU_KSCB@@@Z | Endereco: 140278a40 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 428508, "text": "?KiClearSystemPriority@@YAXPEAU_KTHREAD@@PEAJ@Z | Endereco: 14029a0a8 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 444300, "text": "?KiAdjustRescheduleContextEntryForThreadRemoval@@YAXPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KTHREAD@@EE@Z | Endereco: 14030d730 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 444872, "text": "?KiCompleteRescheduleContextEntry@@YAXPEAU_KI_RESCHEDULE_CONTEXT_ENTRY@@PEAU_KPRCB@@PEAU_KTHREAD@@PEAU_KTHREAD_SCHEDULE_REASON_DATA@@@Z | Endereco: 140311720 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 15178, "text": "?KiSetSystemPriorityThread@@YAXPEAU_KTHREAD@@JK@Z | Endereco: 1403881b8 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 15553, "text": "?KiSetIdealProcessorThread@@YAJPEAU_KTHREAD@@KEPEAKE@Z | Endereco: 14038b1a0 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 54699, "text": "?KiAdaptThreadIdealProcessorForProcessIdealSetChange@@YAXPEAU_KPROCESS@@PEAU_KTHREAD@@PEAU_KAFFINITY_EX@@2PEAE3PEAK@Z | Endereco: 1404ae824 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 62340, "text": "?KiComputeThreadPriorityStacking@@YAJPEAU_KTHREAD@@KC@Z | Endereco: 1404f1028 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 84850, "text": "?KiComputeNewPriorityNonStacking@@YAJPEAU_KTHREAD@@CE@Z | Endereco: 1405cbd3c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 84856, "text": "?KiComputeThreadPriorityNonStacking@@YAJPEAU_KTHREAD@@K@Z | Endereco: 1405cbdfc | Tipo: Label | Primario: false"}

@@ -1,0 +1,81 @@
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _KPROCESS
+Categoria: /ntkrnlmp.pdb
+Classe: StructureDB
+Tamanho: 456
+Descrição:
+Quantidade de campos: 53
+  Campo 0 | Nome: Header | Offset: 0 | Tamanho: 24 | Tipo: _DISPATCHER_HEADER | Comentário: null
+  Campo 1 | Nome: ProfileListHead | Offset: 24 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 2 | Nome: DirectoryTableBase | Offset: 40 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 3 | Nome: ThreadListHead | Offset: 48 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 4 | Nome: ProcessLock | Offset: 64 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 5 | Nome: ProcessTimerDelay | Offset: 68 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 6 | Nome: DeepFreezeStartTime | Offset: 72 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 7 | Nome: Affinity | Offset: 80 | Tamanho: 8 | Tipo: _KAFFINITY_EX * | Comentário: null
+  Campo 8 | Nome: AutoBoostState | Offset: 88 | Tamanho: 16 | Tipo: _KAB_UM_PROCESS_CONTEXT | Comentário: null
+  Campo 9 | Nome: ReadyListHead | Offset: 104 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 10 | Nome: SwapListEntry | Offset: 120 | Tamanho: 8 | Tipo: _SINGLE_LIST_ENTRY | Comentário: null
+  Campo 11 | Nome: ActiveProcessors | Offset: 128 | Tamanho: 8 | Tipo: _KAFFINITY_EX * | Comentário: null
+  Campo 12 | Nome: null | Offset: 136 | Tamanho: 4 | Tipo: _KPROCESS_u_136 | Comentário: null
+  Campo 13 | Nome: Spare0c | Offset: 140 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 14 | Nome: BasePriority | Offset: 144 | Tamanho: 1 | Tipo: char | Comentário: null
+  Campo 15 | Nome: QuantumReset | Offset: 145 | Tamanho: 1 | Tipo: char | Comentário: null
+  Campo 16 | Nome: Visited | Offset: 146 | Tamanho: 1 | Tipo: char | Comentário: null
+  Campo 17 | Nome: Flags | Offset: 147 | Tamanho: 1 | Tipo: _KEXECUTE_OPTIONS | Comentário: null
+  Campo 18 | Nome: ActiveGroupsMask | Offset: 152 | Tamanho: 16 | Tipo: _KGROUP_MASK | Comentário: null
+  Campo 19 | Nome: ActiveGroupPadding | Offset: 168 | Tamanho: 16 | Tipo: ulong64[2] | Comentário: null
+  Campo 20 | Nome: IdealProcessorAssignmentBlock | Offset: 184 | Tamanho: 8 | Tipo: _KI_IDEAL_PROCESSOR_ASSIGNMENT_BLOCK * | Comentário: null
+  Campo 21 | Nome: Padding | Offset: 192 | Tamanho: 48 | Tipo: ulong64[6] | Comentário: null
+  Campo 22 | Nome: Padding2 | Offset: 240 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 23 | Nome: SchedulerAssistYieldBoostCount | Offset: 244 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 24 | Nome: SchedulerAssistYieldBoostAllowedTime | Offset: 248 | Tamanho: 8 | Tipo: long64 | Comentário: null
+  Campo 25 | Nome: Spare0d | Offset: 256 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 26 | Nome: IdealGlobalNode | Offset: 260 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 27 | Nome: Spare1 | Offset: 262 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 28 | Nome: StackCount | Offset: 264 | Tamanho: 4 | Tipo: _KSTACK_COUNT | Comentário: null
+  Campo 29 | Nome: ProcessListEntry | Offset: 272 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 30 | Nome: CycleTime | Offset: 288 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 31 | Nome: ContextSwitches | Offset: 296 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 32 | Nome: SchedulingGroup | Offset: 304 | Tamanho: 8 | Tipo: _KSCHEDULING_GROUP * | Comentário: null
+  Campo 33 | Nome: KernelTime | Offset: 312 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 34 | Nome: UserTime | Offset: 320 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 35 | Nome: ReadyTime | Offset: 328 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 36 | Nome: FreezeCount | Offset: 336 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 37 | Nome: Spare4 | Offset: 340 | Tamanho: 4 | Tipo: ulong | Comentário: null
+  Campo 38 | Nome: UserDirectoryTableBase | Offset: 344 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 39 | Nome: AddressPolicy | Offset: 352 | Tamanho: 1 | Tipo: uchar | Comentário: null
+  Campo 40 | Nome: Spare2 | Offset: 353 | Tamanho: 7 | Tipo: uchar[7] | Comentário: null
+  Campo 41 | Nome: InstrumentationCallback | Offset: 360 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 42 | Nome: SecureState | Offset: 368 | Tamanho: 8 | Tipo: <unnamed-tag_00001B45> | Comentário: null
+  Campo 43 | Nome: KernelWaitTime | Offset: 376 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 44 | Nome: UserWaitTime | Offset: 384 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 45 | Nome: LastRebalanceQpc | Offset: 392 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 46 | Nome: PerProcessorCycleTimes | Offset: 400 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 47 | Nome: ExtendedFeatureDisableMask | Offset: 408 | Tamanho: 8 | Tipo: ulong64 | Comentário: null
+  Campo 48 | Nome: PrimaryGroup | Offset: 416 | Tamanho: 2 | Tipo: ushort | Comentário: null
+  Campo 49 | Nome: Spare3 | Offset: 418 | Tamanho: 6 | Tipo: ushort[3] | Comentário: null
+  Campo 50 | Nome: UserCetLogging | Offset: 424 | Tamanho: 8 | Tipo: void * | Comentário: null
+  Campo 51 | Nome: CpuPartitionList | Offset: 432 | Tamanho: 16 | Tipo: _LIST_ENTRY | Comentário: null
+  Campo 52 | Nome: AvailableCpuState | Offset: 448 | Tamanho: 8 | Tipo: _KPROCESS_AVAILABLE_CPU_STATE * | Comentário: null
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _KPROCESS *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to _KPROCESS
+
+----------------------------------------
+
+===== Kernel_Consulta_20261122_105236_parte_01.txt =====
+Nome: _KPROCESS * *
+Categoria: /ntkrnlmp.pdb
+Classe: PointerDB
+Tamanho: 8
+Descrição: pointer to pointer to _KPROCESS
+
+----------------------------------------
+

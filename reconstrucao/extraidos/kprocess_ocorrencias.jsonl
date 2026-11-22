@@ -1,0 +1,59 @@
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 12830, "text": "  Campo 0 | Nome: Pcb | Offset: 0 | Tamanho: 456 | Tipo: _KPROCESS | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16925, "text": "  Campo 6 | Nome: FastIoLock | Offset: 48 | Tamanho: 8 | Tipo: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__KPROCESS_ptr_ulong_uchar_uchar__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16926, "text": "  Campo 7 | Nome: FastIoUnlockSingle | Offset: 56 | Tamanho: 8 | Tipo: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__KPROCESS_ptr_ulong__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 16927, "text": "  Campo 8 | Nome: FastIoUnlockAll | Offset: 64 | Tamanho: 8 | Tipo: _func___cdecl_uchar__FILE_OBJECT_ptr__KPROCESS_ptr__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18542, "text": "Nome: _func___cdecl__KPROCESS_ptr__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18549, "text": "Nome: _func___cdecl__KPROCESS_ptr__EPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 18553, "text": "Descrição: pointer to _func___cdecl__KPROCESS_ptr__EPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25731, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__KPROCESS_ptr__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25738, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__KPROCESS_ptr__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25742, "text": "Descrição: pointer to _func___cdecl_uchar__FILE_OBJECT_ptr__KPROCESS_ptr__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25773, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__KPROCESS_ptr_ulong__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25780, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__KPROCESS_ptr_ulong__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25784, "text": "Descrição: pointer to _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__KPROCESS_ptr_ulong__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25787, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__KPROCESS_ptr_ulong_uchar_uchar__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25794, "text": "Nome: _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__KPROCESS_ptr_ulong_uchar_uchar__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 25798, "text": "Descrição: pointer to _func___cdecl_uchar__FILE_OBJECT_ptr__LARGE_INTEGER_ptr__LARGE_INTEGER_ptr__KPROCESS_ptr_ulong_uchar_uchar__IO_STATUS_BLOCK_ptr__DEVICE_OBJECT_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26179, "text": "Nome: _func___cdecl_uchar__KPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26186, "text": "Nome: _func___cdecl_uchar__KPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26190, "text": "Descrição: pointer to _func___cdecl_uchar__KPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26949, "text": "Nome: _func___cdecl_ulong64__KPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26956, "text": "Nome: _func___cdecl_ulong64__KPROCESS_ptr *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 26960, "text": "Descrição: pointer to _func___cdecl_ulong64__KPROCESS_ptr"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 41161, "text": "  Campo 1 | Nome: Process | Offset: 32 | Tamanho: 8 | Tipo: _KPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94714, "text": "  Campo 48 | Nome: ProcessorState | Offset: 256 | Tamanho: 1472 | Tipo: _KPROCESSOR_STATE | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 94812, "text": "  Campo 48 | Nome: ProcessorState | Offset: 256 | Tamanho: 1472 | Tipo: _KPROCESSOR_STATE | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95483, "text": "Nome: _KPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95501, "text": "  Campo 12 | Nome: null | Offset: 136 | Tamanho: 4 | Tipo: _KPROCESS_u_136 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95541, "text": "  Campo 52 | Nome: AvailableCpuState | Offset: 448 | Tamanho: 8 | Tipo: _KPROCESS_AVAILABLE_CPU_STATE * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95544, "text": "Nome: _KPROCESS *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95548, "text": "Descrição: pointer to _KPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95551, "text": "Nome: _KPROCESS * *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95555, "text": "Descrição: pointer to pointer to _KPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95558, "text": "Nome: _KPROCESS_AVAILABLE_CPU_STATE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95573, "text": "Nome: _KPROCESS_AVAILABLE_CPU_STATE *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95577, "text": "Descrição: pointer to _KPROCESS_AVAILABLE_CPU_STATE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95580, "text": "Nome: _KPROCESS_PPM_POLICY"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95599, "text": "Nome: _KPROCESS_STATE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95615, "text": "Nome: _KPROCESS_u_136"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95616, "text": "Categoria: /ntkrnlmp.pdb/_KPROCESS"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95621, "text": "  Campo 0 | Nome: _s_0 | Offset: 0 | Tamanho: 4 | Tipo: _KPROCESS_u_136_s_0 | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95625, "text": "Nome: _KPROCESS_u_136_s_0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95626, "text": "Categoria: /ntkrnlmp.pdb/_KPROCESS/_KPROCESS_u_136"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95645, "text": "Nome: _KPROCESSOR_DESCRIPTOR_AREA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95664, "text": "Nome: _KPROCESSOR_DESCRIPTOR_AREA *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95668, "text": "Descrição: pointer to _KPROCESSOR_DESCRIPTOR_AREA"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95671, "text": "Nome: _KPROCESSOR_STATE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95681, "text": "Nome: _KPROCESSOR_STATE *"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 95685, "text": "Descrição: pointer to _KPROCESSOR_STATE"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 96733, "text": "  Campo 41 | Nome: Process | Offset: 544 | Tamanho: 8 | Tipo: _KPROCESS * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 113516, "text": "  Campo 26 | Nome: WakeState | Offset: 192 | Tamanho: 8 | Tipo: _KPROCESSOR_STATE * | Comentário: null"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140106, "text": "  Tipo: _KPROCESS * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 140109, "text": "Assinatura: void __cdecl KiSetProcessConcurrencyCount(_KPROCESS * param_1, _KI_PROCESS_CONCURRENCY_COUNT param_2, uchar * param_3)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 158846, "text": "  Tipo: _KPROCESS * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 158850, "text": "Assinatura: void __cdecl KiSelectIdealProcessorSetsForProcess(_KPROCESS * param_1, _KI_PROCESS_CONCURRENCY_COUNT * param_2, _KAFFINITY_EX * param_3, _KI_IDEAL_PROCESSOR_SET_BREAKPOINTS * param_4)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 185926, "text": "  Tipo: _KPROCESS * | Nome: param_1 | Posicao: 0"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 185933, "text": "Assinatura: void __cdecl KiAdaptThreadIdealProcessorForProcessIdealSetChange(_KPROCESS * param_1, _KTHREAD * param_2, _KAFFINITY_EX * param_3, _KAFFINITY_EX * param_4, uchar * param_5, uchar * param_6, ulong * param_7)"}
+{"file": "Kernel_Consulta_20261122_105236_parte_01.txt", "line": 421762, "text": "?KiSetProcessConcurrencyCount@@YAXPEAU_KPROCESS@@T_KI_PROCESS_CONCURRENCY_COUNT@@PEAE@Z | Endereco: 14026a72c | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 21755, "text": "?KiSelectIdealProcessorSetsForProcess@@YAXPEAU_KPROCESS@@PEAT_KI_PROCESS_CONCURRENCY_COUNT@@PEAU_KAFFINITY_EX@@PEAU_KI_IDEAL_PROCESSOR_SET_BREAKPOINTS@@@Z | Endereco: 1403bea60 | Tipo: Label | Primario: false"}
+{"file": "Kernel_Consulta_20261122_105236_parte_02.txt", "line": 54699, "text": "?KiAdaptThreadIdealProcessorForProcessIdealSetChange@@YAXPEAU_KPROCESS@@PEAU_KTHREAD@@PEAU_KAFFINITY_EX@@2PEAE3PEAK@Z | Endereco: 1404ae824 | Tipo: Label | Primario: false"}
