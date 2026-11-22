@@ -182,7 +182,7 @@ Contagem por referências, não por símbolos. `loader_zero_fill` significa que 
 |0x140fc8250|0xfc8250|92|ALMOSTRO|virtual_only|loader_zero_fill|00000000000000000000000000000000|
 
 ## Candidatos semânticos apoiados por evidência
-- Nenhum candidato passou pelos critérios.
+- 0x140e0a740: provável `__security_cookie` (confiança alta, ainda não confirmado por símbolo PDB); valor bruto 0x2b992ddfa232; usos XOR com variável local de stack: 4090.
 
 ## Interpretação e limites
 - `file_backed`: há bytes correspondentes no executável; o preview é evidência bruta, não um tipo C.

@@ -332,7 +332,19 @@
     "file_backed": 35339,
     "loader_zero_fill": 60700
   },
-  "semantic_candidates": [],
+  "semantic_candidates": [
+    {
+      "va": "0x140e0a740",
+      "candidate": "__security_cookie",
+      "confidence": "high_candidate_not_PDB_symbol",
+      "raw_qword": "0x2b992ddfa232",
+      "xor_with_stack_local_uses": 4090,
+      "evidence": [
+        "The initial 64-bit value equals the documented default x64 MSVC security-cookie constant.",
+        "The decompiled source repeatedly XORs this global with stack-local addresses, matching stack-cookie prologue/epilogue behavior."
+      ]
+    }
+  ],
   "dat_map": [
     {
       "va": "0x140e0a740",
