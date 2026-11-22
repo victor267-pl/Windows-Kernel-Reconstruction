@@ -33,13 +33,18 @@ for path in files:
         prefix=re.sub(r"\\b(__fastcall|__cdecl|__stdcall|__thiscall|__usercall|__spoils|__noreturn|const|volatile|static|extern)\\b"," ",prefix).strip()
         if not prefix:
             rejected["missing_return_type"]+=1; continue
+        if re.search(r"\b(undefined|code|uint3|int7|unkint9|unkuint9)\b",sig):
+            rejected["unresolved_type"]+=1; continue
+        sig=re.sub(r"\bulong\b","uint32_t",sig)
+        sig=re.sub(r"\bDWORD64\b","uint64_t",sig)
+        sig=re.sub(r"\bPVOID\b","void *",sig)
         by_name[name].add(sig+";"); seen+=1
 unique={name:next(iter(sigs)) for name,sigs in by_name.items() if len(sigs)==1}
 conflicts={name:sorted(sigs) for name,sigs in by_name.items() if len(sigs)>1}
 out.mkdir(parents=True,exist_ok=True)
 lines=["#ifndef NT_GHIDRA_FUNCTION_PROTOTYPES_H","#define NT_GHIDRA_FUNCTION_PROTOTYPES_H",
-'#include "ghidra_types.h"',"",
-"/* Generated only from clean signatures matching their Ghidra function labels. */"]
+'#include "ghidra_types.h"','#include <stdarg.h>','#include <wchar.h>',"",
+"/* Generated only from clean signatures matching their Ghidra function labels. */","typedef struct _SLIST_HEADER *PSLIST_HEADER;"]
 for name in sorted(unique): lines.append(unique[name])
 lines += ["","#endif"]
 header="\n".join(lines)+"\n"
