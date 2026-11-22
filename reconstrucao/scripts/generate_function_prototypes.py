@@ -58,3 +58,4 @@ f"- Nomes com assinaturas conflitantes omitidos: {len(conflicts)}",
 md += ["","## Conflitos omitidos",""]+[f"- {n}: "+ " | ".join(v) for n,v in sorted(conflicts.items())]
 Path("reconstrucao/extraidos/FUNCTION_PROTOTYPES.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k!="conflicts"},indent=2))
+
