@@ -1,0 +1,559 @@
+# Reconciliação de endereços públicos do PDB com funções Ghidra
+
+- ImageBase: \`0x140000000\`
+- Registros públicos lidos: 49588
+- Entradas do mapa de seções: 37
+- Símbolos públicos de função mapeados: 30376
+- Funções públicas em seções executáveis: 30375
+- Funções Ghidra com endereço público idêntico: 29396
+- Candidatos de renomeação sem ambiguidade: 25537
+- Segmentos sem mapeamento: 477
+- Offsets fora da seção virtual: 0
+
+## Validação dos cabeçalhos de seção
+
+- Seção PE #1 \`.rdata\`: RVA PE \`0x1000\`, PDB \`0x1000\`, correspondência=True.
+- Seção PE #2 \`.pdata\`: RVA PE \`0xe2000\`, PDB \`0xe2000\`, correspondência=True.
+- Seção PE #3 \`.idata\`: RVA PE \`0x152000\`, PDB \`0x152000\`, correspondência=True.
+- Seção PE #4 \`.edata\`: RVA PE \`0x155000\`, PDB \`0x155000\`, correspondência=True.
+- Seção PE #5 \`PROTDATA\`: RVA PE \`0x171000\`, PDB \`0x171000\`, correspondência=True.
+- Seção PE #6 \`GFIDS\`: RVA PE \`0x172000\`, PDB \`0x172000\`, correspondência=True.
+- Seção PE #7 \`Pad1\`: RVA PE \`0x17d000\`, PDB \`0x17d000\`, correspondência=True.
+- Seção PE #8 \`.text\`: RVA PE \`0x200000\`, PDB \`0x200000\`, correspondência=True.
+- Seção PE #9 \`PAGE\`: RVA PE \`0x707000\`, PDB \`0x707000\`, correspondência=True.
+- Seção PE #10 \`PAGELK\`: RVA PE \`0xb64000\`, PDB \`0xb64000\`, correspondência=True.
+- Seção PE #11 \`POOLCODE\`: RVA PE \`0xb8b000\`, PDB \`0xb8b000\`, correspondência=True.
+- Seção PE #12 \`PAGEKD\`: RVA PE \`0xb8e000\`, PDB \`0xb8e000\`, correspondência=True.
+- Seção PE #13 \`PAGEVRFY\`: RVA PE \`0xb94000\`, PDB \`0xb94000\`, correspondência=True.
+- Seção PE #14 \`PAGEHDLS\`: RVA PE \`0xbc6000\`, PDB \`0xbc6000\`, correspondência=True.
+- Seção PE #15 \`PAGEBGFX\`: RVA PE \`0xbc9000\`, PDB \`0xbc9000\`, correspondência=True.
+- Seção PE #16 \`TRACESUP\`: RVA PE \`0xbd0000\`, PDB \`0xbd0000\`, correspondência=True.
+- Seção PE #17 \`PAGECMRC\`: RVA PE \`0xbd2000\`, PDB \`0xbd2000\`, correspondência=True.
+- Seção PE #18 \`KVASCODE\`: RVA PE \`0xbd4000\`, PDB \`0xbd4000\`, correspondência=True.
+- Seção PE #19 \`KSCP\`: RVA PE \`0xbd7000\`, PDB \`0xbd7000\`, correspondência=True.
+- Seção PE #20 \`DRVPRX\`: RVA PE \`0xbd8000\`, PDB \`0xbd8000\`, correspondência=True.
+- Seção PE #21 \`fothk\`: RVA PE \`0xbd9000\`, PDB \`0xbd9000\`, correspondência=True.
+- Seção PE #22 \`INITKDBG\`: RVA PE \`0xbda000\`, PDB \`0xbda000\`, correspondência=True.
+- Seção PE #23 \`MINIEX\`: RVA PE \`0xbf4000\`, PDB \`0xbf4000\`, correspondência=True.
+- Seção PE #24 \`INIT\`: RVA PE \`0xbf7000\`, PDB \`0xbf7000\`, correspondência=True.
+- Seção PE #25 \`Pad2\`: RVA PE \`0xc9b000\`, PDB \`0xc9b000\`, correspondência=True.
+- Seção PE #26 \`.data\`: RVA PE \`0xe00000\`, PDB \`0xe00000\`, correspondência=True.
+- Seção PE #27 \`ALMOSTRO\`: RVA PE \`0xfc6000\`, PDB \`0xfc6000\`, correspondência=True.
+- Seção PE #28 \`CACHEALI\`: RVA PE \`0xfd0000\`, PDB \`0xfd0000\`, correspondência=True.
+- Seção PE #29 \`PAGEDATA\`: RVA PE \`0xfd9000\`, PDB \`0xfd9000\`, correspondência=True.
+- Seção PE #30 \`PAGEVRFD\`: RVA PE \`0xff5000\`, PDB \`0xff5000\`, correspondência=True.
+- Seção PE #31 \`INITDATA\`: RVA PE \`0x1009000\`, PDB \`0x1009000\`, correspondência=True.
+- Seção PE #32 \`Pad3\`: RVA PE \`0x102b000\`, PDB \`0x102b000\`, correspondência=True.
+- Seção PE #33 \`CFGRO\`: RVA PE \`0x1200000\`, PDB \`0x1200000\`, correspondência=True.
+- Seção PE #34 \`Pad4\`: RVA PE \`0x1203000\`, PDB \`0x1203000\`, correspondência=True.
+- Seção PE #35 \`.rsrc\`: RVA PE \`0x1400000\`, PDB \`0x1400000\`, correspondência=True.
+- Seção PE #36 \`.reloc\`: RVA PE \`0x1439000\`, PDB \`0x1434000\`, correspondência=False.
+
+## Candidatos de renomeação por endereço exato
+
+- \`FUN_140200444\` → \`CcAggregateCumulativeVolumeTelemetry\` em \`decompiled_01.c:206\`; VA \`0x140200444\`.
+- \`FUN_1402006f8\` → \`CcHasVolumeCumulativeTelemetryChanged\` em \`decompiled_01.c:311\`; VA \`0x1402006f8\`.
+- \`FUN_140200740\` → \`KeUpdateThreadCpuSets\` em \`decompiled_01.c:328\`; VA \`0x140200740\`.
+- \`FUN_1402007a8\` → \`KiUpdateThreadCpuSetAffinitiesFromDpcLevel\` em \`decompiled_01.c:345\`; VA \`0x1402007a8\`.
+- \`FUN_140200820\` → \`KiUpdateThreadCpuSets\` em \`decompiled_01.c:375\`; VA \`0x140200820\`.
+- \`FUN_140200950\` → \`PpmIdleStartCsVetoAccounting\` em \`decompiled_01.c:418\`; VA \`0x140200950\`.
+- \`FUN_1402009ec\` → \`KeModifySystemAllowedCpuSets\` em \`decompiled_01.c:456\`; VA \`0x1402009ec\`.
+- \`FUN_140200a58\` → \`KiAcquireCpuPartitionLock\` em \`decompiled_01.c:471\`; VA \`0x140200a58\`.
+- \`FUN_140200bc0\` → \`HvlpSlowSendSyntheticClusterIpiEx\` em \`decompiled_01.c:542\`; VA \`0x140200bc0\`.
+- \`FUN_140200dcc\` → \`PopDiagTraceNonAttributedCpuReferences\` em \`decompiled_01.c:619\`; VA \`0x140200dcc\`.
+- \`FUN_140200e70\` → \`KiUpdateVpBackingThreadPriorityDpcRoutine\` em \`decompiled_01.c:654\`; VA \`0x140200e70\`.
+- \`FUN_140200fc0\` → \`VmSetThreadSchedulerAssist\` em \`decompiled_01.c:743\`; VA \`0x140200fc0\`.
+- \`FUN_140200fd8\` → \`KeSetThreadSchedulerAssist\` em \`decompiled_01.c:752\`; VA \`0x140200fd8\`.
+- \`FUN_140201280\` → \`KiUpdateVpBackingThreadPriorityFromTopLevel\` em \`decompiled_01.c:904\`; VA \`0x140201280\`.
+- \`FUN_1402015a0\` → \`PopIdleWakeNotifyDevicesActive\` em \`decompiled_01.c:1042\`; VA \`0x1402015a0\`.
+- \`FUN_14020164c\` → \`PopFxPlatformStateAvailable\` em \`decompiled_01.c:1078\`; VA \`0x14020164c\`.
+- \`FUN_140201708\` → \`PpmIdleCsVetoAccountingResiliencyUpdate\` em \`decompiled_01.c:1105\`; VA \`0x140201708\`.
+- \`FUN_140201790\` → \`PpmIdleCsVetoAccountingUpdateBlock\` em \`decompiled_01.c:1130\`; VA \`0x140201790\`.
+- \`FUN_140201834\` → \`PopFxSetDripsBlockedByDeviceActivity\` em \`decompiled_01.c:1183\`; VA \`0x140201834\`.
+- \`FUN_1402018b8\` → \`PopFxUpdateDeviceIRPhaseAccounting\` em \`decompiled_01.c:1209\`; VA \`0x1402018b8\`.
+- \`FUN_140201918\` → \`KiValidateCpuSetMasks\` em \`decompiled_01.c:1231\`; VA \`0x140201918\`.
+- \`FUN_140201958\` → \`KiModifySystemAllowedCpuSetsWithLock\` em \`decompiled_01.c:1251\`; VA \`0x140201958\`.
+- \`FUN_140201b84\` → \`MiProcessorParked\` em \`decompiled_01.c:1361\`; VA \`0x140201b84\`.
+- \`FUN_140201bf0\` → \`KiStopProfileTarget\` em \`decompiled_01.c:1379\`; VA \`0x140201bf0\`.
+- \`FUN_140201e00\` → \`PopUpdateNonAttributedCpuTimeReference\` em \`decompiled_01.c:1518\`; VA \`0x140201e00\`.
+- \`FUN_140201ec0\` → \`PpmUpdatePlatformIdleVeto\` em \`decompiled_01.c:1546\`; VA \`0x140201ec0\`.
+- \`FUN_140202010\` → \`PpmUpdateIdleVeto\` em \`decompiled_01.c:1610\`; VA \`0x140202010\`.
+- \`FUN_1402021f4\` → \`PpmEventPlatformVetoRequest\` em \`decompiled_01.c:1732\`; VA \`0x1402021f4\`.
+- \`FUN_1402022c4\` → \`KiReadGuestSchedulerAssistPriority\` em \`decompiled_01.c:1780\`; VA \`0x1402022c4\`.
+- \`FUN_1402023e8\` → \`KeChangeMemoryAttributes\` em \`decompiled_01.c:1863\`; VA \`0x1402023e8\`.
+- \`FUN_140202530\` → \`HvlSendSyntheticClusterIpi\` em \`decompiled_01.c:1918\`; VA \`0x140202530\`.
+- \`FUN_140202658\` → \`HvlpFastSendSyntheticClusterIpiEx\` em \`decompiled_01.c:1969\`; VA \`0x140202658\`.
+- \`FUN_140202700\` → \`Feature_Servicing_IdealProcessorEventOutsideLocks__private_ReportDeviceUsage\` em \`decompiled_01.c:1992\`; VA \`0x140202700\`.
+- \`FUN_140202738\` → \`KiCheckKeepAlive\` em \`decompiled_01.c:2003\`; VA \`0x140202738\`.
+- \`FUN_140202870\` → \`PpmParkReportMask\` em \`decompiled_01.c:2066\`; VA \`0x140202870\`.
+- \`FUN_140202990\` → \`KeCpuSetReportParkedProcessors\` em \`decompiled_01.c:2121\`; VA \`0x140202990\`.
+- \`FUN_140202ce0\` → \`MmReportParkedProcessors\` em \`decompiled_01.c:2300\`; VA \`0x140202ce0\`.
+- \`FUN_140202e04\` → \`HvlParkedVirtualProcessors\` em \`decompiled_01.c:2392\`; VA \`0x140202e04\`.
+- \`FUN_140202ef0\` → \`MiMoveBackgroundZeroThreads\` em \`decompiled_01.c:2436\`; VA \`0x140202ef0\`.
+- \`FUN_140203198\` → \`KiUpdateGlobalCpuSetConfiguration\` em \`decompiled_01.c:2549\`; VA \`0x140203198\`.
+- \`FUN_140203720\` → \`KiUpdateVPBackingThreadPriority\` em \`decompiled_01.c:2826\`; VA \`0x140203720\`.
+- \`FUN_140203934\` → \`KiIsThreadStateControlledByProcessor\` em \`decompiled_01.c:2929\`; VA \`0x140203934\`.
+- \`FUN_140203980\` → \`HvlRetargetDeviceInterrupt\` em \`decompiled_01.c:2951\`; VA \`0x140203980\`.
+- \`FUN_140203c94\` → \`HvlpFastFlushAddressSpaceTbEx\` em \`decompiled_01.c:3161\`; VA \`0x140203c94\`.
+- \`FUN_140203d50\` → \`HvlpFlushRangeListTbEx\` em \`decompiled_01.c:3192\`; VA \`0x140203d50\`.
+- \`FUN_140203e40\` → \`HvlpCountFlushVaList\` em \`decompiled_01.c:3237\`; VA \`0x140203e40\`.
+- \`FUN_140203e64\` → \`HvlpFastFlushListTbEx\` em \`decompiled_01.c:3266\`; VA \`0x140203e64\`.
+- \`FUN_140203fd4\` → \`HvlpAffinityToHvProcessorSet\` em \`decompiled_01.c:3308\`; VA \`0x140203fd4\`.
+- \`FUN_14020412c\` → \`HvlpAllowFastFlushList\` em \`decompiled_01.c:3371\`; VA \`0x14020412c\`.
+- \`FUN_140204158\` → \`HvlGetSparseGpaPagesAccessState\` em \`decompiled_01.c:3388\`; VA \`0x140204158\`.
+- \`FUN_140204374\` → \`IommupHvMapDeviceLogicalRange\` em \`decompiled_01.c:3491\`; VA \`0x140204374\`.
+- \`FUN_140204430\` → \`HalPutScatterGatherListDmarThin\` em \`decompiled_01.c:3517\`; VA \`0x140204430\`.
+- \`FUN_140204494\` → \`HalpPutScatterGatherListDmarThin\` em \`decompiled_01.c:3536\`; VA \`0x140204494\`.
+- \`FUN_1402045a0\` → \`IommuUnmapLogicalRange\` em \`decompiled_01.c:3582\`; VA \`0x1402045a0\`.
+- \`FUN_140204660\` → \`IommuUnmapIdentityRangeEx\` em \`decompiled_01.c:3623\`; VA \`0x140204660\`.
+- \`FUN_1402047cc\` → \`HalpIommuDomainFreeLogicalAddressRange\` em \`decompiled_01.c:3711\`; VA \`0x1402047cc\`.
+- \`FUN_140204820\` → \`HalpBuddyAllocatorFreeLogicalAddress\` em \`decompiled_01.c:3730\`; VA \`0x140204820\`.
+- \`FUN_140204938\` → \`HalpIommuDomainUnmapLogicalRange\` em \`decompiled_01.c:3782\`; VA \`0x140204938\`.
+- \`FUN_1402049ec\` → \`IommupHvUnmapDeviceLogicalRange\` em \`decompiled_01.c:3813\`; VA \`0x1402049ec\`.
+- \`FUN_140204a70\` → \`HvlDmaUnmapDeviceLogicalRange\` em \`decompiled_01.c:3835\`; VA \`0x140204a70\`.
+- \`FUN_140204b90\` → \`IommuMapLogicalRangeEx\` em \`decompiled_01.c:3889\`; VA \`0x140204b90\`.
+- \`FUN_140204d7c\` → \`HalpIommuDomainMapLogical\` em \`decompiled_01.c:3977\`; VA \`0x140204d7c\`.
+- \`FUN_140204dd4\` → \`IommupHvMapDeviceLogical\` em \`decompiled_01.c:3992\`; VA \`0x140204dd4\`.
+- \`FUN_140204eb0\` → \`HvlDmaMapDeviceLogicalRange\` em \`decompiled_01.c:4025\`; VA \`0x140204eb0\`.
+- \`FUN_140205290\` → \`HvlpHvStatusIsInsufficientMemory\` em \`decompiled_01.c:4260\`; VA \`0x140205290\`.
+- \`FUN_1402052b8\` → \`HvlpHvToNtStatus\` em \`decompiled_01.c:4274\`; VA \`0x1402052b8\`.
+- \`FUN_1402052f0\` → \`IommuMapIdentityRangeEx\` em \`decompiled_01.c:4296\`; VA \`0x1402052f0\`.
+- \`FUN_140205528\` → \`HalpIommuDomainGetLogicalAddressRange\` em \`decompiled_01.c:4418\`; VA \`0x140205528\`.
+- \`FUN_1402055c0\` → \`HalpBuddyAllocatorAllocateLogicalAddress\` em \`decompiled_01.c:4449\`; VA \`0x1402055c0\`.
+- \`FUN_140205970\` → \`HalpIommuMapLogical\` em \`decompiled_01.c:4619\`; VA \`0x140205970\`.
+- \`FUN_140205ca0\` → \`HalpIommuFlushDomainTbs\` em \`decompiled_01.c:4760\`; VA \`0x140205ca0\`.
+- \`FUN_140205d40\` → \`HalpIommuUnmapLogicalRange\` em \`decompiled_01.c:4787\`; VA \`0x140205d40\`.
+- \`FUN_140205f3c\` → \`HalpIommuFlushPhysicalPtesFromCacheSize\` em \`decompiled_01.c:4879\`; VA \`0x140205f3c\`.
+- \`FUN_140206024\` → \`MiFlushCacheForAttributeChange\` em \`decompiled_01.c:4921\`; VA \`0x140206024\`.
+- \`FUN_1402061c0\` → \`MiFlushEntireTbDueToAttributeChange\` em \`decompiled_01.c:5001\`; VA \`0x1402061c0\`.
+- \`FUN_140206450\` → \`HvlFlushTbAllPartitions\` em \`decompiled_01.c:5122\`; VA \`0x140206450\`.
+- \`FUN_1402064e0\` → \`KiPreprocessFlushTb\` em \`decompiled_01.c:5152\`; VA \`0x1402064e0\`.
+- \`FUN_140206630\` → \`KiFlushAddressSpaceTb\` em \`decompiled_01.c:5220\`; VA \`0x140206630\`.
+- \`FUN_14020674c\` → \`HvlpUseExtendedProcessorSetHypercalls\` em \`decompiled_01.c:5277\`; VA \`0x14020674c\`.
+- \`FUN_140206774\` → \`KxFlushEntireTb\` em \`decompiled_01.c:5292\`; VA \`0x140206774\`.
+- \`FUN_140206a94\` → \`HalpIommuFlushDmaDomain\` em \`decompiled_01.c:5376\`; VA \`0x140206a94\`.
+- \`FUN_140206b78\` → \`KiIsFlushEntire\` em \`decompiled_01.c:5419\`; VA \`0x140206b78\`.
+- \`FUN_140206ba8\` → \`KiTransitionSchedulingGroupGeneration\` em \`decompiled_01.c:5438\`; VA \`0x140206ba8\`.
+- \`FUN_1402072a4\` → \`KiResumeThreadCycleAccumulation\` em \`decompiled_01.c:5845\`; VA \`0x1402072a4\`.
+- \`FUN_1402072f0\` → \`KiStartThreadCycleAccumulationContextSwap\` em \`decompiled_01.c:5878\`; VA \`0x1402072f0\`.
+- \`FUN_140207d10\` → \`KiBeginThreadAccountingPeriod\` em \`decompiled_01.c:6365\`; VA \`0x140207d10\`.
+- \`FUN_140207fc8\` → \`KiInsertDeferredPreemptionApc\` em \`decompiled_01.c:6530\`; VA \`0x140207fc8\`.
+- \`FUN_140208094\` → \`KiGroupSchedulingGenerationEnd\` em \`decompiled_01.c:6578\`; VA \`0x140208094\`.
+- \`FUN_140208818\` → \`KiAddProcessorToSoftwareInterruptBatch\` em \`decompiled_01.c:6945\`; VA \`0x140208818\`.
+- \`FUN_140208890\` → \`KiAffinityContainsProcessorsOtherThanSelf\` em \`decompiled_01.c:6968\`; VA \`0x140208890\`.
+- \`FUN_1402088e0\` → \`KiIsThreadConstrainedBySchedulingGroup\` em \`decompiled_01.c:6989\`; VA \`0x1402088e0\`.
+- \`FUN_140208900\` → \`KiGroupSchedulingQuantumEnd\` em \`decompiled_01.c:7004\`; VA \`0x140208900\`.
+- \`FUN_140208e2c\` → \`EtwTraceScheduleThread\` em \`decompiled_01.c:7220\`; VA \`0x140208e2c\`.
+- \`FUN_140208ef8\` → \`KiSoftParkElectionUnparkProcessor\` em \`decompiled_01.c:7274\`; VA \`0x140208ef8\`.
+- \`FUN_140209410\` → \`KiAdjustReadyQueueScanOwnerOnParkingChange\` em \`decompiled_01.c:7497\`; VA \`0x140209410\`.
+- \`FUN_140209534\` → \`KiEnterLongDpcProcessing\` em \`decompiled_01.c:7558\`; VA \`0x140209534\`.
+- \`FUN_140209980\` → \`KiScheduleThreadToRescheduleContext\` em \`decompiled_01.c:7783\`; VA \`0x140209980\`.
+- \`FUN_140209d90\` → \`KiStartRescheduleContext\` em \`decompiled_01.c:7953\`; VA \`0x140209d90\`.
+- \`FUN_14020a0c8\` → \`KiRescheduleThreadAfterAffinityChange\` em \`decompiled_01.c:8171\`; VA \`0x14020a0c8\`.
+- \`FUN_14020a600\` → \`KiCommitRescheduleContext\` em \`decompiled_01.c:8424\`; VA \`0x14020a600\`.
+- \`FUN_14020abb0\` → \`KiAcquireMultiplePrcbLockArrays\` em \`decompiled_01.c:8777\`; VA \`0x14020abb0\`.
+- \`FUN_14020ac78\` → \`KiTryAcquirePrcbLocksForIsolationUnit\` em \`decompiled_01.c:8832\`; VA \`0x14020ac78\`.
+- \`FUN_14020ad20\` → \`KiFindStandbyThreadForSteal\` em \`decompiled_01.c:8896\`; VA \`0x14020ad20\`.
+- \`FUN_14020ade4\` → \`KiMayStealStandbyThread\` em \`decompiled_01.c:8925\`; VA \`0x14020ade4\`.
+- \`FUN_14020ae70\` → \`KiAttemptToStealStandbyThread\` em \`decompiled_01.c:8953\`; VA \`0x14020ae70\`.
+- \`FUN_14020b460\` → \`KiReadyDeferredReadyList\` em \`decompiled_01.c:9292\`; VA \`0x14020b460\`.
+- \`FUN_14020b590\` → \`KiAbDeferredProcessingWorker\` em \`decompiled_01.c:9347\`; VA \`0x14020b590\`.
+- \`FUN_14020bf14\` → \`KiSendSoftwareInterruptAffinity\` em \`decompiled_01.c:9791\`; VA \`0x14020bf14\`.
+- \`FUN_14020bfa0\` → \`KiAcquireThreadStateLockForWrite\` em \`decompiled_01.c:9821\`; VA \`0x14020bfa0\`.
+- \`FUN_14020c320\` → \`KiAcquirePrcbLocksForPreemptionAttempt\` em \`decompiled_01.c:10044\`; VA \`0x14020c320\`.
+- \`FUN_14020c440\` → \`KiAcquirePrcbLocksForIsolationUnit\` em \`decompiled_01.c:10103\`; VA \`0x14020c440\`.
+- \`FUN_14020c510\` → \`KeQueryValuesThread\` em \`decompiled_01.c:10154\`; VA \`0x14020c510\`.
+- \`FUN_14020cb40\` → \`HvlNotifyLongSpinWait\` em \`decompiled_01.c:10505\`; VA \`0x14020cb40\`.
+- \`FUN_14020cb70\` → \`KiCheckVpBackingLongSpinWaitHypercall\` em \`decompiled_01.c:10514\`; VA \`0x14020cb70\`.
+- \`FUN_14020cbe0\` → \`KiSearchForNewThreadsOnTarget\` em \`decompiled_01.c:10545\`; VA \`0x14020cbe0\`.
+- \`FUN_14020e9b0\` → \`KiIpiSendRequestEx\` em \`decompiled_01.c:11813\`; VA \`0x14020e9b0\`.
+- \`FUN_14020eaa0\` → \`KiIpiSendRequest\` em \`decompiled_01.c:11856\`; VA \`0x14020eaa0\`.
+- \`FUN_14020f150\` → \`KiFlushRangeWorker\` em \`decompiled_01.c:12213\`; VA \`0x14020f150\`.
+- \`FUN_14020f2b0\` → \`VmpFlushTb\` em \`decompiled_01.c:12285\`; VA \`0x14020f2b0\`.
+- \`FUN_14020f6a0\` → \`MiFlushTbList\` em \`decompiled_01.c:12475\`; VA \`0x14020f6a0\`.
+- \`FUN_140210214\` → \`ExFlushTb\` em \`decompiled_01.c:12975\`; VA \`0x140210214\`.
+- \`FUN_1402102b0\` → \`VmFlushTb\` em \`decompiled_01.c:13000\`; VA \`0x1402102b0\`.
+- \`FUN_1402102f0\` → \`HvlFlushRangeListTb\` em \`decompiled_01.c:13015\`; VA \`0x1402102f0\`.
+- \`FUN_140210aa0\` → \`KiIpiWaitForRequestBarrier\` em \`decompiled_01.c:13289\`; VA \`0x140210aa0\`.
+- \`FUN_140210b04\` → \`KiPrepareFlushCurrentAffinity\` em \`decompiled_01.c:13311\`; VA \`0x140210b04\`.
+- \`FUN_140210b60\` → \`HvlpReleaseHypercallPage\` em \`decompiled_01.c:13328\`; VA \`0x140210b60\`.
+- \`FUN_140210bcc\` → \`KeFlushCurrentTbOnly\` em \`decompiled_01.c:13382\`; VA \`0x140210bcc\`.
+- \`FUN_140210df0\` → \`MiGetNextPageTableTail\` em \`decompiled_01.c:13469\`; VA \`0x140210df0\`.
+- \`FUN_140210e10\` → \`MiFlushTbAsNeeded\` em \`decompiled_01.c:13480\`; VA \`0x140210e10\`.
+- \`FUN_140211350\` → \`MiReleaseProcessorFlushList\` em \`decompiled_01.c:13696\`; VA \`0x140211350\`.
+- \`FUN_1402113a0\` → \`HvlpCopyFlushVaList\` em \`decompiled_01.c:13712\`; VA \`0x1402113a0\`.
+- \`FUN_140211400\` → \`MiLinkPoolCommitChain\` em \`decompiled_01.c:13766\`; VA \`0x140211400\`.
+- \`FUN_140211820\` → \`KeFlushTb\` em \`decompiled_01.c:13906\`; VA \`0x140211820\`.
+- \`FUN_140211e84\` → \`VmpProcessContextLockExclusive\` em \`decompiled_01.c:14136\`; VA \`0x140211e84\`.
+- \`FUN_140211ed0\` → \`VmpConvertPortionVpnRangeToGpnRange\` em \`decompiled_01.c:14150\`; VA \`0x140211ed0\`.
+- \`FUN_1402121d4\` → \`HvlpFastFlushAddressSpaceTb\` em \`decompiled_01.c:14354\`; VA \`0x1402121d4\`.
+- \`FUN_1402123a0\` → \`KxSetTimeStampBusy\` em \`decompiled_01.c:14463\`; VA \`0x1402123a0\`.
+- \`FUN_140212424\` → \`VslSlowFlushSecureRangeList\` em \`decompiled_01.c:14496\`; VA \`0x140212424\`.
+- \`FUN_140212530\` → \`KxFlushNonGlobalTb\` em \`decompiled_01.c:14541\`; VA \`0x140212530\`.
+- \`FUN_1402126f8\` → \`MiFreeDeferredCrcPages\` em \`decompiled_01.c:14612\`; VA \`0x1402126f8\`.
+- \`FUN_1402127f0\` → \`MiSharePages\` em \`decompiled_01.c:14661\`; VA \`0x1402127f0\`.
+- \`FUN_140213820\` → \`MiReplenishCombineResources\` em \`decompiled_01.c:15272\`; VA \`0x140213820\`.
+- \`FUN_140213970\` → \`MiCombineCandidate\` em \`decompiled_01.c:15357\`; VA \`0x140213970\`.
+- \`FUN_140213cf0\` → \`MiVadSupportsCombine\` em \`decompiled_01.c:15466\`; VA \`0x140213cf0\`.
+- \`FUN_140213d70\` → \`MiObtainReferencedVadEx\` em \`decompiled_01.c:15490\`; VA \`0x140213d70\`.
+- \`FUN_140213fb0\` → \`MiLocateAddress\` em \`decompiled_01.c:15622\`; VA \`0x140213fb0\`.
+- \`FUN_140214060\` → \`MiReturnLockedVadOrNextVa\` em \`decompiled_01.c:15661\`; VA \`0x140214060\`.
+- \`FUN_1402144c0\` → \`MiLockVadShared\` em \`decompiled_01.c:15881\`; VA \`0x1402144c0\`.
+- \`FUN_140214540\` → \`MiUnlockAndDereferenceVad\` em \`decompiled_01.c:15909\`; VA \`0x140214540\`.
+- \`FUN_1402145fc\` → \`MiWaitForVadDeletion\` em \`decompiled_01.c:15965\`; VA \`0x1402145fc\`.
+- \`FUN_1402146b0\` → \`MiVadSupportsPrivateCommit\` em \`decompiled_01.c:15996\`; VA \`0x1402146b0\`.
+- \`FUN_140214708\` → \`MiCrcStillIntact\` em \`decompiled_01.c:16017\`; VA \`0x140214708\`.
+- \`FUN_140214974\` → \`MiAllocateCombineBlock\` em \`decompiled_01.c:16103\`; VA \`0x140214974\`.
+- \`FUN_140214a50\` → \`MiInsertTbFlushEntry\` em \`decompiled_01.c:16157\`; VA \`0x140214a50\`.
+- \`FUN_140214ce0\` → \`MiIsPfnCommitNotCharged\` em \`decompiled_01.c:16251\`; VA \`0x140214ce0\`.
+- \`FUN_140214d40\` → \`SmFpAllocate\` em \`decompiled_01.c:16263\`; VA \`0x140214d40\`.
+- \`FUN_1402152dc\` → \`MiObtainProtoReference\` em \`decompiled_01.c:16485\`; VA \`0x1402152dc\`.
+- \`FUN_1402153d0\` → \`MiRelockProtoPoolPage\` em \`decompiled_01.c:16544\`; VA \`0x1402153d0\`.
+- \`FUN_140215488\` → \`MiDoubleLockMdlPage\` em \`decompiled_01.c:16590\`; VA \`0x140215488\`.
+- \`FUN_140215540\` → \`MiCheckProtoPtePageState\` em \`decompiled_01.c:16627\`; VA \`0x140215540\`.
+- \`FUN_140215880\` → \`MiAreChargesNeededToLockPage\` em \`decompiled_01.c:16768\`; VA \`0x140215880\`.
+- \`FUN_140215900\` → \`SmMapPage\` em \`decompiled_01.c:16799\`; VA \`0x140215900\`.
+- \`FUN_140215e80\` → \`MiReservePtes\` em \`decompiled_01.c:16825\`; VA \`0x140215e80\`.
+- \`FUN_1402169b0\` → \`MiFillSystemPtes\` em \`decompiled_01.c:17374\`; VA \`0x1402169b0\`.
+- \`FUN_1402174a0\` → \`MiLockPageInline\` em \`decompiled_01.c:17723\`; VA \`0x1402174a0\`.
+- \`FUN_140217590\` → \`MiCheckProcessorPteCache\` em \`decompiled_01.c:17770\`; VA \`0x140217590\`.
+- \`FUN_140217c44\` → \`MiEmptyPteBins\` em \`decompiled_01.c:18155\`; VA \`0x140217c44\`.
+- \`FUN_140217ee4\` → \`MiVaToFlushVm\` em \`decompiled_01.c:18271\`; VA \`0x140217ee4\`.
+- \`FUN_140217f44\` → \`MiCompareTbFlushTimeStamp\` em \`decompiled_01.c:18296\`; VA \`0x140217f44\`.
+- \`FUN_140217fe0\` → \`MiFindRebuildCandidate\` em \`decompiled_01.c:18328\`; VA \`0x140217fe0\`.
+- \`FUN_140218220\` → \`MiPfnsWorthTrying\` em \`decompiled_01.c:18404\`; VA \`0x140218220\`.
+- \`FUN_140218c60\` → \`MiActivePageClaimCandidate\` em \`decompiled_01.c:18712\`; VA \`0x140218c60\`.
+- \`FUN_1402197dc\` → \`MiSafeLockPageAtDpc\` em \`decompiled_01.c:19124\`; VA \`0x1402197dc\`.
+- \`FUN_140219870\` → \`MiGetPfnPageSizeIndex\` em \`decompiled_01.c:19159\`; VA \`0x140219870\`.
+- \`FUN_1402198b0\` → \`MiGetBaseResidentPage\` em \`decompiled_01.c:19176\`; VA \`0x1402198b0\`.
+- \`FUN_140219a50\` → \`MiIdentifyPfnWrapper\` em \`decompiled_01.c:19262\`; VA \`0x140219a50\`.
+- \`FUN_140219c20\` → \`MiIdentifyPfn\` em \`decompiled_01.c:19328\`; VA \`0x140219c20\`.
+- \`FUN_14021a77c\` → \`MmSetPfnListInfo\` em \`decompiled_01.c:19711\`; VA \`0x14021a77c\`.
+- \`FUN_14021aae0\` → \`MiConvertLargeActivePageToChain\` em \`decompiled_01.c:19856\`; VA \`0x14021aae0\`.
+- \`FUN_14021ae34\` → \`MiHyperPage\` em \`decompiled_01.c:19971\`; VA \`0x14021ae34\`.
+- \`FUN_14021aeec\` → \`MiGetBackgroundHugePageToZero\` em \`decompiled_01.c:19998\`; VA \`0x14021aeec\`.
+- \`FUN_14021b0e8\` → \`MiGetLargePagesForChain\` em \`decompiled_01.c:20069\`; VA \`0x14021b0e8\`.
+- \`FUN_14021b370\` → \`MiGetLargePage\` em \`decompiled_01.c:20171\`; VA \`0x14021b370\`.
+- \`FUN_14021b710\` → \`MiAssignDefaultChannel\` em \`decompiled_01.c:20320\`; VA \`0x14021b710\`.
+- \`FUN_14021b744\` → \`MiIsFreeZeroPfnCold\` em \`decompiled_01.c:20335\`; VA \`0x14021b744\`.
+- \`FUN_14021b780\` → \`MiSetZeroPageThreadPriority\` em \`decompiled_01.c:20354\`; VA \`0x14021b780\`.
+- \`FUN_14021b838\` → \`MiZeroThreadContextPrepareToWait\` em \`decompiled_01.c:20384\`; VA \`0x14021b838\`.
+- \`FUN_14021b880\` → \`MiTryZeroMemory\` em \`decompiled_01.c:20397\`; VA \`0x14021b880\`.
+- \`FUN_14021baa0\` → \`MiMapBackgroundPagesToZero\` em \`decompiled_01.c:20445\`; VA \`0x14021baa0\`.
+- \`FUN_14021c090\` → \`MiBackgroundZeroLocalPages\` em \`decompiled_01.c:20625\`; VA \`0x14021c090\`.
+- \`FUN_14021c9c0\` → \`MiLockMultipleZeroChunks\` em \`decompiled_01.c:21050\`; VA \`0x14021c9c0\`.
+- \`FUN_14021cc60\` → \`MiUnlockMultipleZeroChunks\` em \`decompiled_01.c:21156\`; VA \`0x14021cc60\`.
+- \`FUN_14021ce90\` → \`MiMoveZeroedPages\` em \`decompiled_01.c:21256\`; VA \`0x14021ce90\`.
+- \`FUN_14021cfb0\` → \`MiExamineZeroChunks\` em \`decompiled_01.c:21298\`; VA \`0x14021cfb0\`.
+- \`FUN_14021d200\` → \`MiGetBestPageToZero\` em \`decompiled_01.c:21386\`; VA \`0x14021d200\`.
+- \`FUN_14021d570\` → \`MiInitializePageColorBase\` em \`decompiled_01.c:21547\`; VA \`0x14021d570\`.
+- \`FUN_14021d680\` → \`MiDispatchFault\` em \`decompiled_01.c:21589\`; VA \`0x14021d680\`.
+- \`FUN_14021df70\` → \`MiLockProtoPoolPageForce\` em \`decompiled_01.c:21934\`; VA \`0x14021df70\`.
+- \`FUN_14021e370\` → \`MiUpdatePfnForPrefetchByPte\` em \`decompiled_01.c:22098\`; VA \`0x14021e370\`.
+- \`FUN_14021e780\` → \`MiSafeLockPage\` em \`decompiled_01.c:22243\`; VA \`0x14021e780\`.
+- \`FUN_14021e8b0\` → \`MiResolveProtoPteFault\` em \`decompiled_01.c:22293\`; VA \`0x14021e8b0\`.
+- \`FUN_14021f6c0\` → \`MiLockOwnedProtoPage\` em \`decompiled_01.c:22750\`; VA \`0x14021f6c0\`.
+- \`FUN_14021f850\` → \`MiGetPfnPriority\` em \`decompiled_01.c:22840\`; VA \`0x14021f850\`.
+- \`FUN_14021f920\` → \`MiComputeCombineHash\` em \`decompiled_01.c:22861\`; VA \`0x14021f920\`.
+- \`FUN_14021fafc\` → \`MiReleaseNonPagedResources\` em \`decompiled_01.c:22926\`; VA \`0x14021fafc\`.
+- \`FUN_14021fdf0\` → \`MiDeleteUltraThreadContext\` em \`decompiled_01.c:23091\`; VA \`0x14021fdf0\`.
+- \`FUN_140220010\` → \`MiGetPteMappingSet\` em \`decompiled_01.c:23181\`; VA \`0x140220010\`.
+- \`FUN_1402200f0\` → \`MiAllocateHyperSpace\` em \`decompiled_01.c:23208\`; VA \`0x1402200f0\`.
+- \`FUN_14022014c\` → \`MiRewritePteWithLockBit\` em \`decompiled_01.c:23222\`; VA \`0x14022014c\`.
+- \`FUN_1402203d0\` → \`MiGetUltraMapping\` em \`decompiled_01.c:23319\`; VA \`0x1402203d0\`.
+- \`FUN_140220a00\` → \`MiLockWorkingSetExclusive\` em \`decompiled_01.c:23515\`; VA \`0x140220a00\`.
+- \`FUN_140220b00\` → \`ExpWaitForSpinLockExclusiveAndAcquire\` em \`decompiled_01.c:23571\`; VA \`0x140220b00\`.
+- \`FUN_140220bd0\` → \`ExpAcquireSpinLockExclusiveAtDpcLevelInstrumented\` em \`decompiled_01.c:23619\`; VA \`0x140220bd0\`.
+- \`FUN_140220d08\` → \`RtlpHpLfhOwnerListCompact\` em \`decompiled_01.c:23690\`; VA \`0x140220d08\`.
+- \`FUN_140220e40\` → \`RtlpHpLfhSubsegmentDelayFreeListProcess\` em \`decompiled_01.c:23748\`; VA \`0x140220e40\`.
+- \`FUN_140221390\` → \`RtlpHpReleaseLockExclusive\` em \`decompiled_01.c:24011\`; VA \`0x140221390\`.
+- \`FUN_140221550\` → \`RtlpHpSegLfhVsDecommit\` em \`decompiled_01.c:24094\`; VA \`0x140221550\`.
+- \`FUN_140221630\` → \`RtlpHpLfhSubsegmentDecBlockCounts\` em \`decompiled_01.c:24122\`; VA \`0x140221630\`.
+- \`FUN_140221710\` → \`RtlpHpReleaseLockShared\` em \`decompiled_01.c:24168\`; VA \`0x140221710\`.
+- \`FUN_140221760\` → \`RtlpHpLfhSubsegmentFindEmptyUnits\` em \`decompiled_01.c:24194\`; VA \`0x140221760\`.
+- \`FUN_140221810\` → \`RtlpHpAcquireLockExclusive\` em \`decompiled_01.c:24234\`; VA \`0x140221810\`.
+- \`FUN_140221980\` → \`RtlpHpAcquireQueuedLockExclusive\` em \`decompiled_01.c:24294\`; VA \`0x140221980\`.
+- \`FUN_140221af0\` → \`MiAddViewsForSection\` em \`decompiled_01.c:24359\`; VA \`0x140221af0\`.
+- \`FUN_1402221c0\` → \`MiReferenceActiveSubsection\` em \`decompiled_01.c:24682\`; VA \`0x1402221c0\`.
+- \`FUN_1402228b0\` → \`RtlpHpSegLfhVsCommit\` em \`decompiled_01.c:24929\`; VA \`0x1402228b0\`.
+- \`FUN_1402229c0\` → \`RtlpHpSegPageRangeCoalesce\` em \`decompiled_01.c:24963\`; VA \`0x1402229c0\`.
+- \`FUN_140222d1c\` → \`MiComputeCrossPartitionSectionCharges\` em \`decompiled_01.c:25109\`; VA \`0x140222d1c\`.
+- \`FUN_140222d5c\` → \`MiGetCrossPartitionCharges\` em \`decompiled_01.c:25134\`; VA \`0x140222d5c\`.
+- \`FUN_140222e40\` → \`MiGetCommittedPages\` em \`decompiled_01.c:25171\`; VA \`0x140222e40\`.
+- \`FUN_140222e6c\` → \`RtlpHpSegPageRangeCommit\` em \`decompiled_01.c:25182\`; VA \`0x140222e6c\`.
+- \`FUN_140223334\` → \`MiDeleteSegmentPages\` em \`decompiled_01.c:25447\`; VA \`0x140223334\`.
+- \`FUN_1402234a0\` → \`MiDeleteSubsectionPages\` em \`decompiled_01.c:25504\`; VA \`0x1402234a0\`.
+- \`FUN_140223600\` → \`RtlpHpEnvCompactionSchedule\` em \`decompiled_01.c:25567\`; VA \`0x140223600\`.
+- \`FUN_1402236e0\` → \`RtlpHpAllocateHeapBackend\` em \`decompiled_01.c:25628\`; VA \`0x1402236e0\`.
+- \`FUN_14022371c\` → \`RtlpHpSegAlloc\` em \`decompiled_01.c:25643\`; VA \`0x14022371c\`.
+- \`FUN_1402238f0\` → \`RtlpHpSegPageRangeAllocate\` em \`decompiled_01.c:25699\`; VA \`0x1402238f0\`.
+- \`FUN_140223bd8\` → \`RtlpHpSegSegmentAllocate\` em \`decompiled_01.c:25821\`; VA \`0x140223bd8\`.
+- \`FUN_140223ce0\` → \`RtlpHpSegPageRangeCountCommittedPages\` em \`decompiled_01.c:25864\`; VA \`0x140223ce0\`.
+- \`FUN_140223d44\` → \`RtlpHpSegMgrCommit\` em \`decompiled_01.c:25894\`; VA \`0x140223d44\`.
+- \`FUN_1402240f0\` → \`RtlpHpSegContextCompact\` em \`decompiled_01.c:26062\`; VA \`0x1402240f0\`.
+- \`FUN_1402242c4\` → \`RtlpHpSegHeapCheckCommitLimit\` em \`decompiled_01.c:26152\`; VA \`0x1402242c4\`.
+- \`FUN_14022433c\` → \`RtlpHpSegMgrCommitInitiate\` em \`decompiled_01.c:26175\`; VA \`0x14022433c\`.
+- \`FUN_1402244c4\` → \`RtlSparseArrayElementAllocated\` em \`decompiled_01.c:26261\`; VA \`0x1402244c4\`.
+- \`FUN_140224520\` → \`RtlpHpVaMgrCtxQuery\` em \`decompiled_01.c:26282\`; VA \`0x140224520\`.
+- \`FUN_14022460c\` → \`RtlCSparseBitmapFindBitSetCapped\` em \`decompiled_01.c:26322\`; VA \`0x14022460c\`.
+- \`FUN_140224800\` → \`RtlpHpAllocVA\` em \`decompiled_01.c:26416\`; VA \`0x140224800\`.
+- \`FUN_1402249dc\` → \`MiMapContiguousMemory\` em \`decompiled_01.c:26497\`; VA \`0x1402249dc\`.
+- \`FUN_140224e9c\` → \`MiGetPoolPages\` em \`decompiled_01.c:26666\`; VA \`0x140224e9c\`.
+- \`FUN_1402250b0\` → \`MiFreeExcessSegments\` em \`decompiled_01.c:26743\`; VA \`0x1402250b0\`.
+- \`FUN_140225158\` → \`MiGetLargePoolPages\` em \`decompiled_01.c:26773\`; VA \`0x140225158\`.
+- \`FUN_140225214\` → \`MiValidFault\` em \`decompiled_01.c:26815\`; VA \`0x140225214\`.
+- \`FUN_1402256c8\` → \`MiReturnPhysicalPoolPages\` em \`decompiled_01.c:27007\`; VA \`0x1402256c8\`.
+- \`FUN_140225a00\` → \`MiIsFaultPteIntact\` em \`decompiled_01.c:27153\`; VA \`0x140225a00\`.
+- \`FUN_140225afc\` → \`MiFindActualFaultingPte\` em \`decompiled_01.c:27203\`; VA \`0x140225afc\`.
+- \`FUN_140225cd0\` → \`MiIsPrototypePteVadLookup\` em \`decompiled_01.c:27294\`; VA \`0x140225cd0\`.
+- \`FUN_140225d0c\` → \`MiLockPoolCommitPageTable\` em \`decompiled_01.c:27308\`; VA \`0x140225d0c\`.
+- \`FUN_140225e9c\` → \`MiReturnExcessPoolCommit\` em \`decompiled_01.c:27388\`; VA \`0x140225e9c\`.
+- \`FUN_140225f30\` → \`MiInitializePoolCommitPacket\` em \`decompiled_01.c:27419\`; VA \`0x140225f30\`.
+- \`FUN_1402260b0\` → \`RtlpHpEnvAllocVA\` em \`decompiled_01.c:27480\`; VA \`0x1402260b0\`.
+- \`FUN_1402265e0\` → \`MiMakeProtectionMask\` em \`decompiled_01.c:27681\`; VA \`0x1402265e0\`.
+- \`FUN_140226680\` → \`MiCommitPoolMemory\` em \`decompiled_01.c:27733\`; VA \`0x140226680\`.
+- \`FUN_14022693c\` → \`MiUnlockPoolCommitWs\` em \`decompiled_01.c:27847\`; VA \`0x14022693c\`.
+- \`FUN_1402269a0\` → \`MiUserFault\` em \`decompiled_01.c:27865\`; VA \`0x1402269a0\`.
+- \`FUN_1402272c0\` → \`MiReducePteUseCount\` em \`decompiled_01.c:28193\`; VA \`0x1402272c0\`.
+- \`FUN_1402274cc\` → \`MiIsPteEvaluated\` em \`decompiled_01.c:28261\`; VA \`0x1402274cc\`.
+- \`FUN_14022759c\` → \`MiCleanupLazyStampedPageTable\` em \`decompiled_01.c:28305\`; VA \`0x14022759c\`.
+- \`FUN_1402277b0\` → \`MiGetPfnProtection\` em \`decompiled_01.c:28386\`; VA \`0x1402277b0\`.
+- \`FUN_1402279c0\` → \`MiCommitExistingVad\` em \`decompiled_01.c:28446\`; VA \`0x1402279c0\`.
+- \`FUN_1402287ec\` → \`MiClearPageFileReservation\` em \`decompiled_01.c:29001\`; VA \`0x1402287ec\`.
+- \`FUN_140228880\` → \`MiAccessCheck\` em \`decompiled_01.c:29032\`; VA \`0x140228880\`.
+- \`FUN_140228af8\` → \`MiPteHasShadow\` em \`decompiled_01.c:29114\`; VA \`0x140228af8\`.
+- \`FUN_140228b30\` → \`MiPureAweVad\` em \`decompiled_01.c:29131\`; VA \`0x140228b30\`.
+- \`FUN_140228b70\` → \`MiGetPageProtection\` em \`decompiled_01.c:29146\`; VA \`0x140228b70\`.
+- \`FUN_1402294e0\` → \`MiQueryAddressState\` em \`decompiled_01.c:29467\`; VA \`0x1402294e0\`.
+- \`FUN_14022a7e0\` → \`MiZeroFault\` em \`decompiled_01.c:30207\`; VA \`0x14022a7e0\`.
+- \`FUN_14022b140\` → \`MiCheckProtoAccess\` em \`decompiled_01.c:30654\`; VA \`0x14022b140\`.
+- \`FUN_14022b650\` → \`MiCheckVirtualAddress\` em \`decompiled_01.c:30860\`; VA \`0x14022b650\`.
+- \`FUN_14022ba90\` → \`MiVadExtentCommitted\` em \`decompiled_01.c:31039\`; VA \`0x14022ba90\`.
+- \`FUN_14022bad0\` → \`MiGetProtoPteAddress\` em \`decompiled_01.c:31052\`; VA \`0x14022bad0\`.
+- \`FUN_14022bd40\` → \`MiCheckVadSequential\` em \`decompiled_01.c:31158\`; VA \`0x14022bd40\`.
+- \`FUN_14022c080\` → \`MiResolveSharedZeroFault\` em \`decompiled_01.c:31316\`; VA \`0x14022c080\`.
+- \`FUN_14022c880\` → \`MiIsVadLargePrivate\` em \`decompiled_01.c:31619\`; VA \`0x14022c880\`.
+- \`FUN_14022c8c0\` → \`MiResolvePrivateZeroFault\` em \`decompiled_01.c:31634\`; VA \`0x14022c8c0\`.
+- \`FUN_14022d290\` → \`MiGetPageChain\` em \`decompiled_01.c:31987\`; VA \`0x14022d290\`.
+- \`FUN_14022da30\` → \`MiIsAddressGlobal\` em \`decompiled_01.c:32281\`; VA \`0x14022da30\`.
+- \`FUN_14022da90\` → \`MiPfnShareCountIsZero\` em \`decompiled_01.c:32297\`; VA \`0x14022da90\`.
+- \`FUN_14022de20\` → \`MiCompletePrivateZeroFault\` em \`decompiled_01.c:32418\`; VA \`0x14022de20\`.
+- \`FUN_14022efc0\` → \`MiInitializePfn\` em \`decompiled_01.c:33039\`; VA \`0x14022efc0\`.
+- \`FUN_14022f6f0\` → \`MiZeroPhysicalPage\` em \`decompiled_01.c:33284\`; VA \`0x14022f6f0\`.
+- \`FUN_14022fa70\` → \`MiFillPhysicalPages\` em \`decompiled_01.c:33384\`; VA \`0x14022fa70\`.
+- \`FUN_14022fc70\` → \`MiMapPageInHyperSpaceWorker\` em \`decompiled_01.c:33446\`; VA \`0x14022fc70\`.
+- \`FUN_14022ff90\` → \`MiFinalizePageAttribute\` em \`decompiled_01.c:33515\`; VA \`0x14022ff90\`.
+- \`FUN_14023002c\` → \`MiChangePageAttribute\` em \`decompiled_01.c:33559\`; VA \`0x14023002c\`.
+- \`FUN_140230420\` → \`MiAllocateWsle\` em \`decompiled_01.c:33749\`; VA \`0x140230420\`.
+- \`FUN_1402310d0\` → \`MiDecrementShareCountEx\` em \`decompiled_01.c:34133\`; VA \`0x1402310d0\`.
+- \`FUN_1402314e0\` → \`MiConfirmPageIsZero\` em \`decompiled_01.c:34272\`; VA \`0x1402314e0\`.
+- \`FUN_1402315c0\` → \`MiPurgePartitionStandby\` em \`decompiled_01.c:34303\`; VA \`0x1402315c0\`.
+- \`FUN_140231760\` → \`MiRemoveLowestPriorityStandbyPage\` em \`decompiled_01.c:34374\`; VA \`0x140231760\`.
+- \`FUN_140231c40\` → \`MiReleaseFreshPage\` em \`decompiled_01.c:34549\`; VA \`0x140231c40\`.
+- \`FUN_140231cb0\` → \`MiReleaseFreshPageAtDpc\` em \`decompiled_01.c:34568\`; VA \`0x140231cb0\`.
+- \`FUN_140231d30\` → \`MiReturnFreeZeroPage\` em \`decompiled_01.c:34601\`; VA \`0x140231d30\`.
+- \`FUN_140231e80\` → \`MiInsertPageInFreeOrZeroedList\` em \`decompiled_01.c:34649\`; VA \`0x140231e80\`.
+- \`FUN_1402334a0\` → \`MiCoalesceFreeSmallPages\` em \`decompiled_01.c:35509\`; VA \`0x1402334a0\`.
+- \`FUN_140233da0\` → \`MiUnlinkFreeOrZeroedPage\` em \`decompiled_01.c:35929\`; VA \`0x140233da0\`.
+- \`FUN_140234980\` → \`MI_PAGE_TO_FULL_COLOR\` em \`decompiled_01.c:36385\`; VA \`0x140234980\`.
+- \`FUN_140234b60\` → \`MiMakeDemandZeroPte\` em \`decompiled_01.c:36449\`; VA \`0x140234b60\`.
+- \`FUN_140234b90\` → \`MiPageFreeToZero\` em \`decompiled_01.c:36466\`; VA \`0x140234b90\`.
+- \`FUN_140234e20\` → \`MiLocatePageCollisionByPfn\` em \`decompiled_01.c:36581\`; VA \`0x140234e20\`.
+- \`FUN_140234e80\` → \`MmCreateKernelStack\` em \`decompiled_01.c:36604\`; VA \`0x140234e80\`.
+- \`FUN_140235870\` → \`MiAddKernelStackToPrcbCache\` em \`decompiled_01.c:36919\`; VA \`0x140235870\`.
+- \`FUN_140235ef8\` → \`MiValidateKernelShadowStackPage\` em \`decompiled_01.c:37160\`; VA \`0x140235ef8\`.
+- \`FUN_140235f50\` → \`MiLockStandbyLookasidePage\` em \`decompiled_01.c:37173\`; VA \`0x140235f50\`.
+- \`FUN_140236930\` → \`MiReplaceStandbyLookaside\` em \`decompiled_01.c:37435\`; VA \`0x140236930\`.
+- \`FUN_140237220\` → \`MiFindSuitableLookasideReplacement\` em \`decompiled_01.c:37634\`; VA \`0x140237220\`.
+- \`FUN_140237ac0\` → \`MmDeleteKernelStack\` em \`decompiled_01.c:37888\`; VA \`0x140237ac0\`.
+- \`FUN_1402381e0\` → \`MiUnlinkSecondaryListStandbyPage\` em \`decompiled_01.c:38127\`; VA \`0x1402381e0\`.
+- \`FUN_140238690\` → \`MiWriteStandbyLookasideEntry\` em \`decompiled_01.c:38306\`; VA \`0x140238690\`.
+- \`FUN_140238bf0\` → \`MiGetPfnChannel\` em \`decompiled_01.c:38463\`; VA \`0x140238bf0\`.
+- \`FUN_140238c40\` → \`MiPfnToStandbyLookaside\` em \`decompiled_01.c:38478\`; VA \`0x140238c40\`.
+- \`FUN_140238f84\` → \`MiSearchChannelTable\` em \`decompiled_01.c:38598\`; VA \`0x140238f84\`.
+- \`FUN_140239040\` → \`MiInsertSecondaryListStandbyPage\` em \`decompiled_01.c:38639\`; VA \`0x140239040\`.
+- \`FUN_1402398d0\` → \`MiUnlinkProtectedStandbyPfn\` em \`decompiled_01.c:38991\`; VA \`0x1402398d0\`.
+- \`FUN_140239a98\` → \`MiDecayNodeNowEmpty\` em \`decompiled_01.c:39092\`; VA \`0x140239a98\`.
+- \`FUN_140239bd0\` → \`MiSharedInsertPfnChainInList\` em \`decompiled_01.c:39145\`; VA \`0x140239bd0\`.
+- \`FUN_14023a5e0\` → \`MiUnlinkStandbyPage\` em \`decompiled_01.c:39554\`; VA \`0x14023a5e0\`.
+- \`FUN_14023aef0\` → \`MiRestoreTransitionPte\` em \`decompiled_01.c:39909\`; VA \`0x14023aef0\`.
+- \`FUN_14023b3d0\` → \`MiInsertPagesInList\` em \`decompiled_01.c:40123\`; VA \`0x14023b3d0\`.
+- \`FUN_14023c0e0\` → \`MiUpdateLargePageCandidateValue\` em \`decompiled_01.c:40688\`; VA \`0x14023c0e0\`.
+- \`FUN_14023c420\` → \`CcFreeVirtualAddress\` em \`decompiled_01.c:40860\`; VA \`0x14023c420\`.
+- \`FUN_14023cc00\` → \`ExpPartitionCreateThreadIfNecessary\` em \`decompiled_01.c:41275\`; VA \`0x14023cc00\`.
+- \`FUN_14023cc50\` → \`ExpNewThreadNecessary\` em \`decompiled_01.c:41289\`; VA \`0x14023cc50\`.
+- \`FUN_14023cca0\` → \`CcPinFileData\` em \`decompiled_01.c:41309\`; VA \`0x14023cca0\`.
+- \`FUN_14023ddfc\` → \`CcGetVirtualAddress\` em \`decompiled_01.c:42083\`; VA \`0x14023ddfc\`.
+- \`FUN_14023e170\` → \`MiDecrementVadsBeingDeleted\` em \`decompiled_01.c:42249\`; VA \`0x14023e170\`.
+- \`FUN_14023e1b0\` → \`ExpWakePushLock\` em \`decompiled_01.c:42268\`; VA \`0x14023e1b0\`.
+- \`FUN_14023e320\` → \`ExpAcquireSharedStarveExclusive\` em \`decompiled_01.c:42375\`; VA \`0x14023e320\`.
+- \`FUN_14023e960\` → \`CcFindBcb\` em \`decompiled_01.c:42675\`; VA \`0x14023e960\`.
+- \`FUN_14023eaf0\` → \`CcGetBcbListHeadLargeOffset\` em \`decompiled_01.c:42749\`; VA \`0x14023eaf0\`.
+- \`FUN_14023ee3c\` → \`PfpPartitionDereferenceParent\` em \`decompiled_01.c:42933\`; VA \`0x14023ee3c\`.
+- \`FUN_14023ee60\` → \`PfpPartitionIterate\` em \`decompiled_01.c:42942\`; VA \`0x14023ee60\`.
+- \`FUN_14023f1f0\` → \`PfLogFileDataAccess\` em \`decompiled_01.c:43099\`; VA \`0x14023f1f0\`.
+- \`FUN_14023ffd0\` → \`PsDereferencePartition\` em \`decompiled_01.c:43845\`; VA \`0x14023ffd0\`.
+- \`FUN_140240030\` → \`PfpPartitionGetFirst\` em \`decompiled_01.c:43873\`; VA \`0x140240030\`.
+- \`FUN_1402401d0\` → \`PfSnLogPageFaultCommon\` em \`decompiled_01.c:43952\`; VA \`0x1402401d0\`.
+- \`FUN_140240370\` → \`PfSnGetFileInformation\` em \`decompiled_01.c:44010\`; VA \`0x140240370\`.
+- \`FUN_1402408b4\` → \`PfpPartitionReferenceParentSafe\` em \`decompiled_01.c:44242\`; VA \`0x1402408b4\`.
+- \`FUN_140240900\` → \`PfSnTraceGetLogEntry\` em \`decompiled_01.c:44282\`; VA \`0x140240900\`.
+- \`FUN_140240a90\` → \`PsGetIoPriorityThread\` em \`decompiled_01.c:44388\`; VA \`0x140240a90\`.
+- \`FUN_140240af0\` → \`NtReleaseWorkerFactoryWorker\` em \`decompiled_01.c:44411\`; VA \`0x140240af0\`.
+- \`FUN_140240f80\` → \`ExpSetResourceOwnerPointerEx\` em \`decompiled_01.c:44635\`; VA \`0x140240f80\`.
+- \`FUN_1402414b0\` → \`ExpLeaveWorkerFactoryAwayMode\` em \`decompiled_01.c:44861\`; VA \`0x1402414b0\`.
+- \`FUN_1402415c0\` → \`ExpWorkerFactoryCheckCreate\` em \`decompiled_01.c:44922\`; VA \`0x1402415c0\`.
+- \`FUN_140241970\` → \`ExpWorkerFactoryCompletionPacketRoutine\` em \`decompiled_01.c:45056\`; VA \`0x140241970\`.
+- \`FUN_140241ab0\` → \`PfSnLogPageFault\` em \`decompiled_01.c:45122\`; VA \`0x140241ab0\`.
+- \`FUN_140241be0\` → \`PfSnReferenceProcessTrace\` em \`decompiled_01.c:45172\`; VA \`0x140241be0\`.
+- \`FUN_140241d70\` → \`KiWakeQueueWaiter\` em \`decompiled_01.c:45292\`; VA \`0x140241d70\`.
+- \`FUN_140242060\` → \`MiFillPoolCommitPageTable\` em \`decompiled_01.c:45467\`; VA \`0x140242060\`.
+- \`FUN_140242350\` → \`MiAssignNonPagedPoolPte\` em \`decompiled_01.c:45596\`; VA \`0x140242350\`.
+- \`FUN_140242870\` → \`MiCompleteProtoPteFault\` em \`decompiled_01.c:45781\`; VA \`0x140242870\`.
+- \`FUN_140243950\` → \`MiGetContainingPageTable\` em \`decompiled_01.c:46395\`; VA \`0x140243950\`.
+- \`FUN_140243a20\` → \`KeReleaseSemaphoreEx\` em \`decompiled_01.c:46403\`; VA \`0x140243a20\`.
+- \`FUN_140243dc0\` → \`MiGetSessionIdForVa\` em \`decompiled_01.c:46619\`; VA \`0x140243dc0\`.
+- \`FUN_140243e10\` → \`MiDeleteClusterPage\` em \`decompiled_01.c:46636\`; VA \`0x140243e10\`.
+- \`FUN_140244270\` → \`MiConvertLockedSmallPageToLarge\` em \`decompiled_01.c:46825\`; VA \`0x140244270\`.
+- \`FUN_1402445a0\` → \`MiMakeSystemCacheRangeValid\` em \`decompiled_01.c:46965\`; VA \`0x1402445a0\`.
+- \`FUN_140244a70\` → \`MiEmptyDeferredWorkingSetEntries\` em \`decompiled_01.c:47164\`; VA \`0x140244a70\`.
+- \`FUN_140244b10\` → \`MiGetMultiplexedVm\` em \`decompiled_01.c:47190\`; VA \`0x140244b10\`.
+- \`FUN_140244c10\` → \`CcWrapperMmCopyToCachedPage\` em \`decompiled_01.c:47229\`; VA \`0x140244c10\`.
+- \`FUN_140244ca4\` → \`MmCopyToCachedPage\` em \`decompiled_01.c:47249\`; VA \`0x140244ca4\`.
+- \`FUN_140245360\` → \`MiSystemCacheVaControlArea\` em \`decompiled_01.c:47471\`; VA \`0x140245360\`.
+- \`FUN_140245440\` → \`MiStartingOffset\` em \`decompiled_01.c:47509\`; VA \`0x140245440\`.
+- \`FUN_1402454f0\` → \`MiReferenceControlAreaFileWithTag\` em \`decompiled_01.c:47537\`; VA \`0x1402454f0\`.
+- \`FUN_14024563c\` → \`MiConvertSmallPageRangeToLarge\` em \`decompiled_01.c:47617\`; VA \`0x14024563c\`.
+- \`FUN_140245860\` → \`MiEmptyPageAccessLog\` em \`decompiled_01.c:47708\`; VA \`0x140245860\`.
+- \`FUN_140245bac\` → \`MiKernelStackVaToStackNode\` em \`decompiled_01.c:47860\`; VA \`0x140245bac\`.
+- \`FUN_140245c28\` → \`MiCheckSlabPage\` em \`decompiled_01.c:47889\`; VA \`0x140245c28\`.
+- \`FUN_140245d50\` → \`MiReleaseSpinLockShared\` em \`decompiled_01.c:47940\`; VA \`0x140245d50\`.
+- \`FUN_140245de4\` → \`MiTransientCombineAddress\` em \`decompiled_01.c:47978\`; VA \`0x140245de4\`.
+- \`FUN_140245eb8\` → \`MiGetSharedProtos\` em \`decompiled_01.c:48018\`; VA \`0x140245eb8\`.
+- \`FUN_140245f40\` → \`MiObtainParkedCoreMasks\` em \`decompiled_01.c:48038\`; VA \`0x140245f40\`.
+- \`FUN_140246010\` → \`MiQueuePageAccessLog\` em \`decompiled_01.c:48107\`; VA \`0x140246010\`.
+- \`FUN_140246190\` → \`MiAddMappedPtes\` em \`decompiled_01.c:48172\`; VA \`0x140246190\`.
+- \`FUN_140246550\` → \`IoGetIoRateControl\` em \`decompiled_01.c:48313\`; VA \`0x140246550\`.
+- \`FUN_1402467d0\` → \`IopFindDiskIoAttribution\` em \`decompiled_01.c:48431\`; VA \`0x1402467d0\`.
+- \`FUN_1402468b8\` → \`IopRecordIoAttribution\` em \`decompiled_01.c:48492\`; VA \`0x1402468b8\`.
+- \`FUN_140246ad8\` → \`IoDiskIoAttributionDereference\` em \`decompiled_01.c:48602\`; VA \`0x140246ad8\`.
+- \`FUN_140246b2c\` → \`SmpKeyedStoreReference\` em \`decompiled_01.c:48631\`; VA \`0x140246b2c\`.
+- \`FUN_140246bfc\` → \`CmpDoFlushAll\` em \`decompiled_01.c:48677\`; VA \`0x140246bfc\`.
+- \`FUN_140246ca0\` → \`PfFbLogEntryComplete\` em \`decompiled_01.c:48705\`; VA \`0x140246ca0\`.
+- \`FUN_140246d08\` → \`PfLogEvent\` em \`decompiled_01.c:48731\`; VA \`0x140246d08\`.
+- \`FUN_140246fa0\` → \`IoReleaseIoRateControl\` em \`decompiled_01.c:48839\`; VA \`0x140246fa0\`.
+- \`FUN_140247084\` → \`SmKmStoreGet\` em \`decompiled_01.c:48942\`; VA \`0x140247084\`.
+- \`FUN_1402470b4\` → \`SmStoreExistsForProcess\` em \`decompiled_01.c:48958\`; VA \`0x1402470b4\`.
+- \`FUN_140247110\` → \`SmpKeyedStoreEntryGet\` em \`decompiled_01.c:48979\`; VA \`0x140247110\`.
+- \`FUN_1402477a0\` → \`PfpEventHandleFullBuffer\` em \`decompiled_01.c:49206\`; VA \`0x1402477a0\`.
+- \`FUN_1402477f0\` → \`Feature_PrefetchQueueWorkerProactivelyForProcessExit__private_IsEnabledDeviceUsageNoInline\` em \`decompiled_01.c:49219\`; VA \`0x1402477f0\`.
+- \`FUN_140247828\` → \`MiRaisedIrqlFault\` em \`decompiled_01.c:49235\`; VA \`0x140247828\`.
+- \`FUN_140247bc4\` → \`MiSystemFault\` em \`decompiled_01.c:49368\`; VA \`0x140247bc4\`.
+- \`FUN_140248424\` → \`MiSystemVaTypeHasWsles\` em \`decompiled_01.c:49691\`; VA \`0x140248424\`.
+- \`FUN_140248450\` → \`MiCheckSystemPageTables\` em \`decompiled_01.c:49702\`; VA \`0x140248450\`.
+- \`FUN_140248550\` → \`KeInvalidAccessAllowed\` em \`decompiled_01.c:49764\`; VA \`0x140248550\`.
+- \`FUN_14024866c\` → \`MiGenerateAccessViolation\` em \`decompiled_01.c:49817\`; VA \`0x14024866c\`.
+- \`FUN_140248710\` → \`MiAllowGuardFault\` em \`decompiled_01.c:49858\`; VA \`0x140248710\`.
+- \`FUN_140248780\` → \`ExpWorkerFactoryCreateThread\` em \`decompiled_01.c:49889\`; VA \`0x140248780\`.
+- \`FUN_140248960\` → \`MiUnlockSystemVa\` em \`decompiled_01.c:49948\`; VA \`0x140248960\`.
+- \`FUN_1402489c4\` → \`SmPageWrite\` em \`decompiled_01.c:49971\`; VA \`0x1402489c4\`.
+- \`FUN_1402491d8\` → \`PfTFullEventListAdd\` em \`decompiled_01.c:50197\`; VA \`0x1402491d8\`.
+- \`FUN_140249244\` → \`KiRspInIstStack\` em \`decompiled_01.c:50219\`; VA \`0x140249244\`.
+- \`FUN_1402492c0\` → \`MiVaIsUltra\` em \`decompiled_01.c:50241\`; VA \`0x1402492c0\`.
+- \`FUN_1402492f4\` → \`MiIsPageSecured\` em \`decompiled_01.c:50252\`; VA \`0x1402492f4\`.
+- \`FUN_140249730\` → \`MiTranslatePageForCopy\` em \`decompiled_01.c:50442\`; VA \`0x140249730\`.
+- \`FUN_140249c80\` → \`MiInitializePageFaultPacket\` em \`decompiled_01.c:50713\`; VA \`0x140249c80\`.
+- \`FUN_140249d74\` → \`MiCopySinglePage\` em \`decompiled_01.c:50764\`; VA \`0x140249d74\`.
+- \`FUN_140249f54\` → \`MiReplacePageTablePage\` em \`decompiled_01.c:50811\`; VA \`0x140249f54\`.
+- \`FUN_14024a924\` → \`MiReplaceActivePageTableLinks\` em \`decompiled_01.c:51158\`; VA \`0x14024a924\`.
+- \`FUN_14024aaa0\` → \`MiMakeProtectionPfnCompatible\` em \`decompiled_01.c:51205\`; VA \`0x14024aaa0\`.
+- \`FUN_14024aad0\` → \`MiMapSinglePage\` em \`decompiled_01.c:51220\`; VA \`0x14024aad0\`.
+- \`FUN_14024ac44\` → \`MiCombineWithStandbyExisting\` em \`decompiled_01.c:51263\`; VA \`0x14024ac44\`.
+- \`FUN_14024af18\` → \`MiStandbyPageStillCombineCandidate\` em \`decompiled_01.c:51384\`; VA \`0x14024af18\`.
+- \`FUN_14024afcc\` → \`MiRecheckCombineVm\` em \`decompiled_01.c:51405\`; VA \`0x14024afcc\`.
+- \`FUN_14024b05c\` → \`MiReleaseArbitraryPage\` em \`decompiled_01.c:51433\`; VA \`0x14024b05c\`.
+- \`FUN_14024b100\` → \`MiConvertStandbyToProto\` em \`decompiled_01.c:51464\`; VA \`0x14024b100\`.
+- \`FUN_14024b21c\` → \`MiMapArbitraryPage\` em \`decompiled_01.c:51500\`; VA \`0x14024b21c\`.
+- \`FUN_14024b380\` → \`MiIsPageTableLocked\` em \`decompiled_01.c:51548\`; VA \`0x14024b380\`.
+- \`FUN_14024b488\` → \`MiResetAccessBitPteWorker\` em \`decompiled_01.c:51590\`; VA \`0x14024b488\`.
+- \`FUN_14024b5d0\` → \`MiResetAccessBitPte\` em \`decompiled_01.c:51643\`; VA \`0x14024b5d0\`.
+- \`FUN_14024b730\` → \`MiWalkVaCheckCommon\` em \`decompiled_01.c:51691\`; VA \`0x14024b730\`.
+- \`FUN_14024b900\` → \`MiTranslateVmToLock\` em \`decompiled_01.c:51751\`; VA \`0x14024b900\`.
+- \`FUN_14024b97c\` → \`MiDemoteCombinedPte\` em \`decompiled_01.c:51783\`; VA \`0x14024b97c\`.
+- \`FUN_14024be10\` → \`MiReferenceExistingCloneProto\` em \`decompiled_01.c:51955\`; VA \`0x14024be10\`.
+- \`FUN_14024beb4\` → \`MiConvertPrivateToProto\` em \`decompiled_01.c:51993\`; VA \`0x14024beb4\`.
+- \`FUN_14024bf48\` → \`MiCreateCombineAnchor\` em \`decompiled_01.c:52019\`; VA \`0x14024bf48\`.
+- \`FUN_14024c018\` → \`MiIncrementCombinedPte\` em \`decompiled_01.c:52060\`; VA \`0x14024c018\`.
+- \`FUN_14024c0c8\` → \`MiReferenceCloneProto\` em \`decompiled_01.c:52097\`; VA \`0x14024c0c8\`.
+- \`FUN_14024c178\` → \`MiLocateCombineBlock\` em \`decompiled_01.c:52127\`; VA \`0x14024c178\`.
+- \`FUN_14024c258\` → \`MiCombineWithExisting\` em \`decompiled_01.c:52175\`; VA \`0x14024c258\`.
+- \`FUN_14024c6e0\` → \`MiDecrementCombinedPteEx\` em \`decompiled_01.c:52351\`; VA \`0x14024c6e0\`.
+- \`FUN_14024c770\` → \`MiDecrementCloneBlockReference\` em \`decompiled_01.c:52377\`; VA \`0x14024c770\`.
+- \`FUN_14024c82c\` → \`MiDecrementCloneBlock\` em \`decompiled_01.c:52406\`; VA \`0x14024c82c\`.
+- \`FUN_14024c9ac\` → \`MiCombineInitialInstance\` em \`decompiled_01.c:52490\`; VA \`0x14024c9ac\`.
+- \`FUN_14024d83c\` → \`MiChargeCrossPartitionSharedPage\` em \`decompiled_01.c:52946\`; VA \`0x14024d83c\`.
+- \`FUN_14024d8fc\` → \`MiGetCloneCharges\` em \`decompiled_01.c:52976\`; VA \`0x14024d8fc\`.
+- \`FUN_14024da30\` → \`MiUpdateCloneReducedCommit\` em \`decompiled_01.c:53036\`; VA \`0x14024da30\`.
+- \`FUN_14024daa0\` → \`MiResolveProtoCombine\` em \`decompiled_01.c:53057\`; VA \`0x14024daa0\`.
+- \`FUN_14024de64\` → \`MiRemoveWsle\` em \`decompiled_01.c:53183\`; VA \`0x14024de64\`.
+- \`FUN_14024e0ec\` → \`MiHandleForkTransitionPte\` em \`decompiled_01.c:53278\`; VA \`0x14024e0ec\`.
+- \`FUN_14024e9bc\` → \`MiCloneVads\` em \`decompiled_01.c:53603\`; VA \`0x14024e9bc\`.
+- \`FUN_14024f0cc\` → \`MiBuildForkPte\` em \`decompiled_01.c:53943\`; VA \`0x14024f0cc\`.
+- \`FUN_1402500a8\` → \`MI_MAKE_PROTECT_WRITE_COPY\` em \`decompiled_01.c:54532\`; VA \`0x1402500a8\`.
+- \`FUN_1402500c0\` → \`MiTransferPageFileOwnership\` em \`decompiled_01.c:54543\`; VA \`0x1402500c0\`.
+- \`FUN_140250150\` → \`MiEncodeProtoFill\` em \`decompiled_01.c:54568\`; VA \`0x140250150\`.
+- \`FUN_140250270\` → \`IS_PTE_NOT_DEMAND_ZERO\` em \`decompiled_01.c:54609\`; VA \`0x140250270\`.
+- \`FUN_1402502b4\` → \`MiFindZeroCloneBlock\` em \`decompiled_01.c:54625\`; VA \`0x1402502b4\`.
+- \`FUN_1402502e8\` → \`MiAbandonPrivatePfn\` em \`decompiled_01.c:54644\`; VA \`0x1402502e8\`.
+- \`FUN_1402503f0\` → \`MiCapturePfnPageFileInfoInline\` em \`decompiled_01.c:54696\`; VA \`0x1402503f0\`.
+- \`FUN_14025045c\` → \`MiUpdatePageFileBlockOwner\` em \`decompiled_01.c:54719\`; VA \`0x14025045c\`.
+- \`FUN_1402504c0\` → \`MI_PROTO_FORMAT_COMBINED\` em \`decompiled_01.c:54770\`; VA \`0x1402504c0\`.
+- \`FUN_140250508\` → \`SessionIsInteractive\` em \`decompiled_01.c:54789\`; VA \`0x140250508\`.
+- \`FUN_14025058c\` → \`MiMakePerSessionProtoPte\` em \`decompiled_01.c:54822\`; VA \`0x14025058c\`.
+- \`FUN_1402506bc\` → \`PopPowerRequestCreateUserModeRequest\` em \`decompiled_01.c:54866\`; VA \`0x1402506bc\`.
+- \`FUN_1402507b0\` → \`CmpCompleteLazyWrite\` em \`decompiled_01.c:54908\`; VA \`0x1402507b0\`.
+- \`FUN_1402508a8\` → \`KiTraceSetTimer\` em \`decompiled_01.c:54946\`; VA \`0x1402508a8\`.
+- \`FUN_1402509dc\` → \`PspProcessUnbindVirtualizedTimers\` em \`decompiled_01.c:55006\`; VA \`0x1402509dc\`.
+- \`FUN_140250a8c\` → \`ExRemoveVirtualizedTimer\` em \`decompiled_01.c:55042\`; VA \`0x140250a8c\`.
+- \`FUN_140250b00\` → \`ExpTimerResume\` em \`decompiled_01.c:55059\`; VA \`0x140250b00\`.
+- \`FUN_140250ba0\` → \`PopFxArmResidentTimer\` em \`decompiled_01.c:55093\`; VA \`0x140250ba0\`.
+- \`FUN_140250c30\` → \`CcRescheduleLazyWriteScanOnVolume\` em \`decompiled_01.c:55114\`; VA \`0x140250c30\`.
+- \`FUN_140250d48\` → \`PopFxScheduleDeviceIdleTimer\` em \`decompiled_01.c:55164\`; VA \`0x140250d48\`.
+- \`FUN_140250ecc\` → \`PoStoreDiagnosticContext\` em \`decompiled_01.c:55251\`; VA \`0x140250ecc\`.
+- \`FUN_140250f80\` → \`PopPowerRequestCreateCommon\` em \`decompiled_01.c:55294\`; VA \`0x140250f80\`.
+- \`FUN_140251248\` → \`PopUmpoSendPowerRequestOverrideQuery\` em \`decompiled_01.c:55475\`; VA \`0x140251248\`.
+- \`FUN_140251304\` → \`PoStoreRequester\` em \`decompiled_01.c:55504\`; VA \`0x140251304\`.
+- \`FUN_140251560\` → \`PopUmpoSendPowerMessage\` em \`decompiled_01.c:55636\`; VA \`0x140251560\`.
+- \`FUN_140251818\` → \`PoCaptureReasonContext\` em \`decompiled_01.c:55746\`; VA \`0x140251818\`.
+- \`FUN_140251940\` → \`NtCancelTimer\` em \`decompiled_01.c:55795\`; VA \`0x140251940\`.
+- \`FUN_140251d40\` → \`NtSetTimer\` em \`decompiled_01.c:55995\`; VA \`0x140251d40\`.
+- \`FUN_140251fcc\` → \`KiEncodeTolerableDelayValue\` em \`decompiled_01.c:56080\`; VA \`0x140251fcc\`.
+- \`FUN_140252030\` → \`NtSetTimerEx\` em \`decompiled_01.c:56118\`; VA \`0x140252030\`.
+- \`FUN_140252900\` → \`ExpSetTimerObject\` em \`decompiled_01.c:56548\`; VA \`0x140252900\`.
+- \`FUN_140253850\` → \`ExpCancelTimer\` em \`decompiled_01.c:57349\`; VA \`0x140253850\`.
+- \`FUN_140253ad0\` → \`KiSetTimerEx\` em \`decompiled_01.c:57490\`; VA \`0x140253ad0\`.
+- \`FUN_140254108\` → \`KiComputeDueTime\` em \`decompiled_01.c:57823\`; VA \`0x140254108\`.
+- \`FUN_140254220\` → \`KiInsertTimerTable\` em \`decompiled_01.c:57878\`; VA \`0x140254220\`.
+- \`FUN_1402545f0\` → \`KiTimerWaitTest\` em \`decompiled_01.c:58082\`; VA \`0x1402545f0\`.
+- \`FUN_140254a00\` → \`KiProcessExpiredTimerList\` em \`decompiled_01.c:58321\`; VA \`0x140254a00\`.
+- \`FUN_140254f00\` → \`KiSendClockInterruptToTargetProcessor\` em \`decompiled_01.c:58586\`; VA \`0x140254f00\`.
+- \`FUN_140255040\` → \`KiTimerExpiration\` em \`decompiled_01.c:58637\`; VA \`0x140255040\`.
+- \`FUN_140255b50\` → \`EtwTraceKernelEvent\` em \`decompiled_01.c:59247\`; VA \`0x140255b50\`.
+- \`FUN_140255c10\` → \`ExpUpdateTimerConfigurationWorker\` em \`decompiled_01.c:59286\`; VA \`0x140255c10\`.
+- \`FUN_140255e70\` → \`KeSetTimeAdjustment\` em \`decompiled_01.c:59389\`; VA \`0x140255e70\`.
+- \`FUN_140255ef0\` → \`EtwpTraceNetwork\` em \`decompiled_01.c:59416\`; VA \`0x140255ef0\`.
+- \`FUN_140255f78\` → \`EtwpNetProvTraceNetwork\` em \`decompiled_01.c:59441\`; VA \`0x140255f78\`.
+- \`FUN_140256180\` → \`HalpPCIConfig\` em \`decompiled_01.c:59531\`; VA \`0x140256180\`.
+- \`FUN_140256650\` → \`VslpEnterIumSecureMode\` em \`decompiled_01.c:59753\`; VA \`0x140256650\`.
+- \`FUN_140256ad8\` → \`HalpPCIReleaseConfigSpaceLock\` em \`decompiled_01.c:59983\`; VA \`0x140256ad8\`.
+- \`FUN_140256b40\` → \`HalpPciMapMmConfigPhysicalAddress\` em \`decompiled_01.c:60007\`; VA \`0x140256b40\`.
+- \`FUN_140256bf0\` → \`KiSetNextClockTickDueTime\` em \`decompiled_01.c:60029\`; VA \`0x140256bf0\`.
+- \`FUN_140256f1c\` → \`KiSetClockTimerKTimerDeadlines\` em \`decompiled_01.c:60244\`; VA \`0x140256f1c\`.
+- \`FUN_14025703c\` → \`HalpPciAccessMmConfigSpace\` em \`decompiled_01.c:60342\`; VA \`0x14025703c\`.
+- \`FUN_1402571c8\` → \`MiLogPerfMemoryEvent\` em \`decompiled_01.c:60415\`; VA \`0x1402571c8\`.
+
+## Limites
+
+- Os nomes vêm de registros públicos S_PUB32, não de símbolos privados de variáveis locais.
+- Um endereço idêntico associa o ponto de entrada público à função decompilada, mas não recupera o corpo original.
+- Este relatório não renomeia automaticamente funções nem infere protótipos.
