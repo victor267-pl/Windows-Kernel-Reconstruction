@@ -2,28 +2,6 @@
 
 Cada erro está associado ao marcador de função Ghidra mais próximo. O contexto serve para reconstrução orientada por evidência.
 
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:8
-reconstrucao/src/../include/ghidra_function_prototypes.h:8:1: error: unknown type name ‘NTSTATUS’
-
-    5: 
-    6: /* Ghidra label: FUN_140200008 */
-    7: /* Ghidra address: 140200008 */
-    8: void FUN_140200008(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
-    9:                   undefined8 param_5,undefined8 param_6,undefined8 param_7,undefined8 param_8,
-    10:                   undefined8 *param_9,undefined8 *param_10,undefined8 param_11,undefined8 param_12,
-    11:                   undefined8 *param_13,undefined8 param_14,undefined8 param_15,undefined8 *param_16,
-
-## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:8
-reconstrucao/src/../include/ghidra_function_prototypes.h:8:46: error: unknown type name ‘HANDLE’
-
-    5: 
-    6: /* Ghidra label: FUN_140200008 */
-    7: /* Ghidra address: 140200008 */
-    8: void FUN_140200008(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
-    9:                   undefined8 param_5,undefined8 param_6,undefined8 param_7,undefined8 param_8,
-    10:                   undefined8 *param_9,undefined8 *param_10,undefined8 param_11,undefined8 param_12,
-    11:                   undefined8 *param_13,undefined8 param_14,undefined8 param_15,undefined8 *param_16,
-
 ## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:9
 reconstrucao/src/../include/ghidra_function_prototypes.h:9:1: error: unknown type name ‘NTSTATUS’
 
@@ -35,16 +13,27 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:9:1: error: unknown typ
     11:                   undefined8 *param_13,undefined8 param_14,undefined8 param_15,undefined8 *param_16,
     12:                   undefined8 param_17,undefined8 param_18,undefined8 *param_19,undefined8 param_20,
 
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1112
-reconstrucao/src/../include/ghidra_function_prototypes.h:1112:1: error: unknown type name ‘errno_t’
+## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:9
+reconstrucao/src/../include/ghidra_function_prototypes.h:9:46: error: unknown type name ‘HANDLE’
 
-    1109:   undefined1 uVar1;
-    1110:   uint uVar2;
-    1111:   ulonglong uVar3;
-    1112:   
-    1113:   uVar3 = 0;
-    1114:   if (DAT_140fc7ad0 != (uint *)0x0) {
-    1115:     uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
+    6: /* Ghidra label: FUN_140200008 */
+    7: /* Ghidra address: 140200008 */
+    8: void FUN_140200008(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
+    9:                   undefined8 param_5,undefined8 param_6,undefined8 param_7,undefined8 param_8,
+    10:                   undefined8 *param_9,undefined8 *param_10,undefined8 param_11,undefined8 param_12,
+    11:                   undefined8 *param_13,undefined8 param_14,undefined8 param_15,undefined8 *param_16,
+    12:                   undefined8 param_17,undefined8 param_18,undefined8 *param_19,undefined8 param_20,
+
+## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:10
+reconstrucao/src/../include/ghidra_function_prototypes.h:10:1: error: unknown type name ‘NTSTATUS’
+
+    7: /* Ghidra address: 140200008 */
+    8: void FUN_140200008(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
+    9:                   undefined8 param_5,undefined8 param_6,undefined8 param_7,undefined8 param_8,
+    10:                   undefined8 *param_9,undefined8 *param_10,undefined8 param_11,undefined8 param_12,
+    11:                   undefined8 *param_13,undefined8 param_14,undefined8 param_15,undefined8 *param_16,
+    12:                   undefined8 param_17,undefined8 param_18,undefined8 *param_19,undefined8 param_20,
+    13:                   undefined8 param_21,undefined8 *param_22,undefined8 param_23,undefined8 param_24,
 
 ## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1113
 reconstrucao/src/../include/ghidra_function_prototypes.h:1113:1: error: unknown type name ‘errno_t’
@@ -189,28 +178,6 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1125:1: error: unknown 
     1127: }
     1128: 
 
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1125
-reconstrucao/src/../include/ghidra_function_prototypes.h:1125:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1122:       } while (uVar2 < *DAT_140fc7ad0);
-    1123:     }
-    1124:     KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
-    1125:   }
-    1126:   return;
-    1127: }
-    1128: 
-
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1125
-reconstrucao/src/../include/ghidra_function_prototypes.h:1125:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1122:       } while (uVar2 < *DAT_140fc7ad0);
-    1123:     }
-    1124:     KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
-    1125:   }
-    1126:   return;
-    1127: }
-    1128: 
-
 ## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1126
 reconstrucao/src/../include/ghidra_function_prototypes.h:1126:1: error: unknown type name ‘errno_t’
 
@@ -223,7 +190,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1126:1: error: unknown 
     1129: /* Ghidra label: FUN_140201790 */
 
 ## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1126
-reconstrucao/src/../include/ghidra_function_prototypes.h:1126:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1126:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1123:     }
     1124:     KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
@@ -234,7 +201,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1126:38: error: unknown
     1129: /* Ghidra label: FUN_140201790 */
 
 ## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1126
-reconstrucao/src/../include/ghidra_function_prototypes.h:1126:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1126:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1123:     }
     1124:     KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
@@ -256,7 +223,18 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1127:1: error: unknown 
     1130: /* Ghidra address: 140201790 */
 
 ## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1127
-reconstrucao/src/../include/ghidra_function_prototypes.h:1127:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1127:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1124:     KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
+    1125:   }
+    1126:   return;
+    1127: }
+    1128: 
+    1129: /* Ghidra label: FUN_140201790 */
+    1130: /* Ghidra address: 140201790 */
+
+## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1127
+reconstrucao/src/../include/ghidra_function_prototypes.h:1127:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1124:     KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
     1125:   }
@@ -300,18 +278,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1129:1: error: unknown 
     1132: 
 
 ## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1126:   return;
-    1127: }
-    1128: 
-    1129: /* Ghidra label: FUN_140201790 */
-    1130: /* Ghidra address: 140201790 */
-    1131: void FUN_140201790(longlong param_1,byte param_2,char param_3)
-    1132: 
-
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1129:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1126:   return;
     1127: }
@@ -366,7 +333,18 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1131:1: error: unknown 
     1134:   undefined8 uVar1;
 
 ## FUN_140201790 */ — reconstrucao/src/decompiled_01.c:1131
-reconstrucao/src/../include/ghidra_function_prototypes.h:1131:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1131:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1128: 
+    1129: /* Ghidra label: FUN_140201790 */
+    1130: /* Ghidra address: 140201790 */
+    1131: void FUN_140201790(longlong param_1,byte param_2,char param_3)
+    1132: 
+    1133: {
+    1134:   undefined8 uVar1;
+
+## FUN_140201790 */ — reconstrucao/src/decompiled_01.c:1131
+reconstrucao/src/../include/ghidra_function_prototypes.h:1131:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1128: 
     1129: /* Ghidra label: FUN_140201790 */
@@ -410,18 +388,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1133:1: error: unknown 
     1136:   byte bVar3;
 
 ## FUN_140201790 */ — reconstrucao/src/decompiled_01.c:1133
-reconstrucao/src/../include/ghidra_function_prototypes.h:1133:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1130: /* Ghidra address: 140201790 */
-    1131: void FUN_140201790(longlong param_1,byte param_2,char param_3)
-    1132: 
-    1133: {
-    1134:   undefined8 uVar1;
-    1135:   longlong lVar2;
-    1136:   byte bVar3;
-
-## FUN_140201790 */ — reconstrucao/src/decompiled_01.c:1133
-reconstrucao/src/../include/ghidra_function_prototypes.h:1133:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1133:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1130: /* Ghidra address: 140201790 */
     1131: void FUN_140201790(longlong param_1,byte param_2,char param_3)
@@ -464,38 +431,49 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1134:76: error: unknown
     1136:   byte bVar3;
     1137:   uint uVar4;
 
-## FUN_14020412c */ — reconstrucao/src/decompiled_01.c:3380
-reconstrucao/src/../include/ghidra_function_prototypes.h:3380:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+## FUN_140201790 */ — reconstrucao/src/decompiled_01.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:1: error: unknown type name ‘errno_t’
 
-    3377:   
+    1132: 
+    1133: {
+    1134:   undefined8 uVar1;
+    1135:   longlong lVar2;
+    1136:   byte bVar3;
+    1137:   uint uVar4;
+    1138:   longlong lVar5;
+
+## FUN_140201790 */ — reconstrucao/src/decompiled_01.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1132: 
+    1133: {
+    1134:   undefined8 uVar1;
+    1135:   longlong lVar2;
+    1136:   byte bVar3;
+    1137:   uint uVar4;
+    1138:   longlong lVar5;
+
+## FUN_140201790 */ — reconstrucao/src/decompiled_01.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1132: 
+    1133: {
+    1134:   undefined8 uVar1;
+    1135:   longlong lVar2;
+    1136:   byte bVar3;
+    1137:   uint uVar4;
+    1138:   longlong lVar5;
+
+## FUN_14020412c */ — reconstrucao/src/decompiled_01.c:3381
+reconstrucao/src/../include/ghidra_function_prototypes.h:3381:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+
     3378:   uVar1 = (ulonglong)DAT_140fc7ab8;
     3379:   uVar2 = 0;
     3380:   if (((char)DAT_140fc7ab8 < '\0') &&
     3381:      ((param_1 == 0 || (uVar1 = (ulonglong)(param_2 + 1U), param_2 + 1U < 0xd)))) {
     3382:     uVar2 = 1;
     3383:   }
-
-## FUN_140215e80 */ — reconstrucao/src/decompiled_01.c:17366
-reconstrucao/src/../include/ghidra_function_prototypes.h:17366:37: error: unknown type name ‘PSLIST_HEADER’
-
-    17363:     uStack_150 = 0x3f - (int)lVar4;
-    17364:     uVar22 = (ulonglong)uStack_150;
-    17365:     puVar11 = puVar11 + 1;
-    17366:   }
-    17367:   goto LAB_1402165b3;
-    17368: code_r0x0001402167a8:
-    17369:   if (*puVar11 != 0) goto LAB_1402167ae;
-
-## FUN_140215e80 */ — reconstrucao/src/decompiled_01.c:17366
-reconstrucao/src/../include/ghidra_function_prototypes.h:17366:59: error: unknown type name ‘ULONGLONG’
-
-    17363:     uStack_150 = 0x3f - (int)lVar4;
-    17364:     uVar22 = (ulonglong)uStack_150;
-    17365:     puVar11 = puVar11 + 1;
-    17366:   }
-    17367:   goto LAB_1402165b3;
-    17368: code_r0x0001402167a8:
-    17369:   if (*puVar11 != 0) goto LAB_1402167ae;
+    3384:   return CONCAT71((int7)(uVar1 >> 8),uVar2);
 
 ## FUN_140215e80 */ — reconstrucao/src/decompiled_01.c:17367
 reconstrucao/src/../include/ghidra_function_prototypes.h:17367:37: error: unknown type name ‘PSLIST_HEADER’
@@ -508,27 +486,49 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:17367:37: error: unknow
     17369:   if (*puVar11 != 0) goto LAB_1402167ae;
     17370:   goto LAB_14021679f;
 
-## FUN_14021baa0 */ — reconstrucao/src/decompiled_01.c:20616
-reconstrucao/src/../include/ghidra_function_prototypes.h:20616:55: error: unknown type name ‘_EXCEPTION_RECORD’
+## FUN_140215e80 */ — reconstrucao/src/decompiled_01.c:17367
+reconstrucao/src/../include/ghidra_function_prototypes.h:17367:59: error: unknown type name ‘ULONGLONG’
 
-    20613:         _DAT_140ef5270 = _DAT_140ef5270 + 1;
+    17364:     uVar22 = (ulonglong)uStack_150;
+    17365:     puVar11 = puVar11 + 1;
+    17366:   }
+    17367:   goto LAB_1402165b3;
+    17368: code_r0x0001402167a8:
+    17369:   if (*puVar11 != 0) goto LAB_1402167ae;
+    17370:   goto LAB_14021679f;
+
+## FUN_140215e80 */ — reconstrucao/src/decompiled_01.c:17368
+reconstrucao/src/../include/ghidra_function_prototypes.h:17368:37: error: unknown type name ‘PSLIST_HEADER’
+
+    17365:     puVar11 = puVar11 + 1;
+    17366:   }
+    17367:   goto LAB_1402165b3;
+    17368: code_r0x0001402167a8:
+    17369:   if (*puVar11 != 0) goto LAB_1402167ae;
+    17370:   goto LAB_14021679f;
+    17371: }
+
+## FUN_14021baa0 */ — reconstrucao/src/decompiled_01.c:20617
+reconstrucao/src/../include/ghidra_function_prototypes.h:20617:55: error: unknown type name ‘_EXCEPTION_RECORD’
+
     20614:       }
     20615:       uVar16 = (int)uVar17 + 1;
     20616:       uVar17 = (ulonglong)uVar16;
     20617:       uStack_a0 = uStack_a0 + lVar6 * 0x1000;
     20618:     } while (uVar16 < *(uint *)(lStack_80 + 0x118));
     20619:     uVar12 = (ulonglong)uVar7;
+    20620:   }
 
-## FUN_14021baa0 */ — reconstrucao/src/decompiled_01.c:20619
-reconstrucao/src/../include/ghidra_function_prototypes.h:20619:36: error: unknown type name ‘PSLIST_HEADER’
+## FUN_14021baa0 */ — reconstrucao/src/decompiled_01.c:20620
+reconstrucao/src/../include/ghidra_function_prototypes.h:20620:36: error: unknown type name ‘PSLIST_HEADER’
 
-    20616:       uVar17 = (ulonglong)uVar16;
     20617:       uStack_a0 = uStack_a0 + lVar6 * 0x1000;
     20618:     } while (uVar16 < *(uint *)(lStack_80 + 0x118));
     20619:     uVar12 = (ulonglong)uVar7;
     20620:   }
     20621:   return uVar12;
     20622: }
+    20623: 
 
 ## FUN_140200008 */ — reconstrucao/src/decompiled_01.c:107
 reconstrucao/src/decompiled_01.c:107:15: error: ‘DAT_140e0a740’ undeclared (first use in this function)
@@ -1322,28 +1322,6 @@ reconstrucao/src/decompiled_01.c:647:7: error: implicit declaration of function 
     649:   }
     650:   return;
 
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:8
-reconstrucao/src/../include/ghidra_function_prototypes.h:8:1: error: unknown type name ‘NTSTATUS’
-
-    5: 
-    6: /* Ghidra label: FUN_140531850 */
-    7: /* Ghidra address: 140531850 */
-    8: void FUN_140531850(longlong param_1,ulonglong *param_2,ulonglong *param_3,ulonglong *param_4)
-    9: 
-    10: {
-    11:   ulonglong uVar1;
-
-## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:8
-reconstrucao/src/../include/ghidra_function_prototypes.h:8:46: error: unknown type name ‘HANDLE’
-
-    5: 
-    6: /* Ghidra label: FUN_140531850 */
-    7: /* Ghidra address: 140531850 */
-    8: void FUN_140531850(longlong param_1,ulonglong *param_2,ulonglong *param_3,ulonglong *param_4)
-    9: 
-    10: {
-    11:   ulonglong uVar1;
-
 ## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:9
 reconstrucao/src/../include/ghidra_function_prototypes.h:9:1: error: unknown type name ‘NTSTATUS’
 
@@ -1355,16 +1333,27 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:9:1: error: unknown typ
     11:   ulonglong uVar1;
     12:   ulonglong uVar2;
 
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1112
-reconstrucao/src/../include/ghidra_function_prototypes.h:1112:1: error: unknown type name ‘errno_t’
+## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:9
+reconstrucao/src/../include/ghidra_function_prototypes.h:9:46: error: unknown type name ‘HANDLE’
 
-    1109:   uVar1 = SUB168(auVar21 * auVar75,0);
-    1110:   uVar129 = (ulonglong)(CARRY8(uVar134,uVar6) || CARRY8(uVar5,uVar3));
-    1111:   uVar6 = uVar135 + uVar1;
-    1112:   uVar126 = SUB168(auVar21 * auVar75,8) +
-    1113:             (ulonglong)(CARRY8(uVar135,uVar1) || CARRY8(uVar6,uVar129));
-    1114:   puVar124 = (ulonglong *)(param_1 + 0x80);
-    1115:   uVar134 = uVar7 * *(longlong *)(param_1 + 0x18);
+    6: /* Ghidra label: FUN_140531850 */
+    7: /* Ghidra address: 140531850 */
+    8: void FUN_140531850(longlong param_1,ulonglong *param_2,ulonglong *param_3,ulonglong *param_4)
+    9: 
+    10: {
+    11:   ulonglong uVar1;
+    12:   ulonglong uVar2;
+
+## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:10
+reconstrucao/src/../include/ghidra_function_prototypes.h:10:1: error: unknown type name ‘NTSTATUS’
+
+    7: /* Ghidra address: 140531850 */
+    8: void FUN_140531850(longlong param_1,ulonglong *param_2,ulonglong *param_3,ulonglong *param_4)
+    9: 
+    10: {
+    11:   ulonglong uVar1;
+    12:   ulonglong uVar2;
+    13:   ulonglong uVar3;
 
 ## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1113
 reconstrucao/src/../include/ghidra_function_prototypes.h:1113:1: error: unknown type name ‘errno_t’
@@ -1509,28 +1498,6 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1125:1: error: unknown 
     1127:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar23 * auVar77,0) +
     1128:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
 
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1125
-reconstrucao/src/../include/ghidra_function_prototypes.h:1125:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1122:   Var10 = (unkuint9)(uVar130 + uVar9) + (unkuint9)SUB168(auVar22 * auVar76,8);
-    1123:   auVar23._8_8_ = 0;
-    1124:   auVar23._0_8_ = uVar134;
-    1125:   auVar77._8_8_ = 0;
-    1126:   auVar77._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    1127:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar23 * auVar77,0) +
-    1128:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1125
-reconstrucao/src/../include/ghidra_function_prototypes.h:1125:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1122:   Var10 = (unkuint9)(uVar130 + uVar9) + (unkuint9)SUB168(auVar22 * auVar76,8);
-    1123:   auVar23._8_8_ = 0;
-    1124:   auVar23._0_8_ = uVar134;
-    1125:   auVar77._8_8_ = 0;
-    1126:   auVar77._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    1127:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar23 * auVar77,0) +
-    1128:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-
 ## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1126
 reconstrucao/src/../include/ghidra_function_prototypes.h:1126:1: error: unknown type name ‘errno_t’
 
@@ -1543,7 +1510,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1126:1: error: unknown 
     1129:   Var12 = (unkuint9)(uVar4 + uVar2) + (unkuint9)SUB168(auVar23 * auVar77,8) +
 
 ## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1126
-reconstrucao/src/../include/ghidra_function_prototypes.h:1126:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1126:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1123:   auVar23._8_8_ = 0;
     1124:   auVar23._0_8_ = uVar134;
@@ -1554,7 +1521,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1126:38: error: unknown
     1129:   Var12 = (unkuint9)(uVar4 + uVar2) + (unkuint9)SUB168(auVar23 * auVar77,8) +
 
 ## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1126
-reconstrucao/src/../include/ghidra_function_prototypes.h:1126:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1126:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1123:   auVar23._8_8_ = 0;
     1124:   auVar23._0_8_ = uVar134;
@@ -1576,7 +1543,18 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1127:1: error: unknown 
     1130:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
 
 ## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1127
-reconstrucao/src/../include/ghidra_function_prototypes.h:1127:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1127:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1124:   auVar23._0_8_ = uVar134;
+    1125:   auVar77._8_8_ = 0;
+    1126:   auVar77._0_8_ = *(ulonglong *)(param_1 + 0x88);
+    1127:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar23 * auVar77,0) +
+    1128:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
+    1129:   Var12 = (unkuint9)(uVar4 + uVar2) + (unkuint9)SUB168(auVar23 * auVar77,8) +
+    1130:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1127
+reconstrucao/src/../include/ghidra_function_prototypes.h:1127:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1124:   auVar23._0_8_ = uVar134;
     1125:   auVar77._8_8_ = 0;
@@ -1620,18 +1598,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1129:1: error: unknown 
     1132:   auVar24._0_8_ = uVar134;
 
 ## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1126:   auVar77._0_8_ = *(ulonglong *)(param_1 + 0x88);
-    1127:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar23 * auVar77,0) +
-    1128:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-    1129:   Var12 = (unkuint9)(uVar4 + uVar2) + (unkuint9)SUB168(auVar23 * auVar77,8) +
-    1130:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    1131:   auVar24._8_8_ = 0;
-    1132:   auVar24._0_8_ = uVar134;
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1129:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1126:   auVar77._0_8_ = *(ulonglong *)(param_1 + 0x88);
     1127:   Var8 = (unkuint9)(ulonglong)Var10 + (unkuint9)SUB168(auVar23 * auVar77,0) +
@@ -1686,7 +1653,18 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1131:1: error: unknown 
     1134:   auVar78._0_8_ = *(ulonglong *)(param_1 + 0x90);
 
 ## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1131
-reconstrucao/src/../include/ghidra_function_prototypes.h:1131:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1131:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1128:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
+    1129:   Var12 = (unkuint9)(uVar4 + uVar2) + (unkuint9)SUB168(auVar23 * auVar77,8) +
+    1130:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
+    1131:   auVar24._8_8_ = 0;
+    1132:   auVar24._0_8_ = uVar134;
+    1133:   auVar78._8_8_ = 0;
+    1134:   auVar78._0_8_ = *(ulonglong *)(param_1 + 0x90);
+
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1131
+reconstrucao/src/../include/ghidra_function_prototypes.h:1131:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1128:          (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
     1129:   Var12 = (unkuint9)(uVar4 + uVar2) + (unkuint9)SUB168(auVar23 * auVar77,8) +
@@ -1730,18 +1708,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1133:1: error: unknown 
     1136:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
 
 ## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1133
-reconstrucao/src/../include/ghidra_function_prototypes.h:1133:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1130:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
-    1131:   auVar24._8_8_ = 0;
-    1132:   auVar24._0_8_ = uVar134;
-    1133:   auVar78._8_8_ = 0;
-    1134:   auVar78._0_8_ = *(ulonglong *)(param_1 + 0x90);
-    1135:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar24 * auVar78,0) +
-    1136:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
-
-## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1133
-reconstrucao/src/../include/ghidra_function_prototypes.h:1133:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1133:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1130:           (unkuint9)((char)((unkuint9)Var10 >> 0x40) != '\0');
     1131:   auVar24._8_8_ = 0;
@@ -1784,38 +1751,49 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1134:76: error: unknown
     1136:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
     1137:   Var13 = (unkuint9)(uVar127 - uVar134) + (unkuint9)SUB168(auVar24 * auVar78,8) +
 
-## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:3380
-reconstrucao/src/../include/ghidra_function_prototypes.h:3380:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:1: error: unknown type name ‘errno_t’
 
-    3377:          (unkuint9)((char)((unkuint9)Var4 >> 0x40) != '\0');
+    1132:   auVar24._0_8_ = uVar134;
+    1133:   auVar78._8_8_ = 0;
+    1134:   auVar78._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    1135:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar24 * auVar78,0) +
+    1136:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
+    1137:   Var13 = (unkuint9)(uVar127 - uVar134) + (unkuint9)SUB168(auVar24 * auVar78,8) +
+    1138:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1132:   auVar24._0_8_ = uVar134;
+    1133:   auVar78._8_8_ = 0;
+    1134:   auVar78._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    1135:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar24 * auVar78,0) +
+    1136:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
+    1137:   Var13 = (unkuint9)(uVar127 - uVar134) + (unkuint9)SUB168(auVar24 * auVar78,8) +
+    1138:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+
+## FUN_140531d60 */ — reconstrucao/src/decompiled_02.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1132:   auVar24._0_8_ = uVar134;
+    1133:   auVar78._8_8_ = 0;
+    1134:   auVar78._0_8_ = *(ulonglong *)(param_1 + 0x90);
+    1135:   Var10 = (unkuint9)(ulonglong)Var12 + (unkuint9)SUB168(auVar24 * auVar78,0) +
+    1136:           (unkuint9)((char)((unkuint9)Var8 >> 0x40) != '\0');
+    1137:   Var13 = (unkuint9)(uVar127 - uVar134) + (unkuint9)SUB168(auVar24 * auVar78,8) +
+    1138:           (unkuint9)((char)((unkuint9)Var12 >> 0x40) != '\0');
+
+## FUN_140532320 */ — reconstrucao/src/decompiled_02.c:3381
+reconstrucao/src/../include/ghidra_function_prototypes.h:3381:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+
     3378:   auVar78._8_8_ = 0;
     3379:   auVar78._0_8_ = uVar1;
     3380:   auVar334._8_8_ = 0;
     3381:   auVar334._0_8_ = param_1[3];
     3382:   Var4 = (unkuint9)(ulonglong)Var5 + (unkuint9)SUB168(auVar78 * auVar334,0) +
     3383:          (unkuint9)((char)((unkuint9)Var3 >> 0x40) != '\0');
-
-## FUN_1405412ec */ — reconstrucao/src/decompiled_02.c:17366
-reconstrucao/src/../include/ghidra_function_prototypes.h:17366:37: error: unknown type name ‘PSLIST_HEADER’
-
-    17363: undefined8 * FUN_1405412ec(longlong param_1)
-    17364: 
-    17365: {
-    17366:   undefined1 uVar1;
-    17367:   char cVar2;
-    17368:   undefined8 *puVar3;
-    17369:   undefined8 *puVar4;
-
-## FUN_1405412ec */ — reconstrucao/src/decompiled_02.c:17366
-reconstrucao/src/../include/ghidra_function_prototypes.h:17366:59: error: unknown type name ‘ULONGLONG’
-
-    17363: undefined8 * FUN_1405412ec(longlong param_1)
-    17364: 
-    17365: {
-    17366:   undefined1 uVar1;
-    17367:   char cVar2;
-    17368:   undefined8 *puVar3;
-    17369:   undefined8 *puVar4;
+    3384:   Var6 = (unkuint9)(ulonglong)Var6 + (unkuint9)SUB168(auVar78 * auVar334,8) +
 
 ## FUN_1405412ec */ — reconstrucao/src/decompiled_02.c:17367
 reconstrucao/src/../include/ghidra_function_prototypes.h:17367:37: error: unknown type name ‘PSLIST_HEADER’
@@ -1828,27 +1806,49 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:17367:37: error: unknow
     17369:   undefined8 *puVar4;
     17370:   
 
-## FUN_140545320 */ — reconstrucao/src/decompiled_02.c:20616
-reconstrucao/src/../include/ghidra_function_prototypes.h:20616:55: error: unknown type name ‘_EXCEPTION_RECORD’
+## FUN_1405412ec */ — reconstrucao/src/decompiled_02.c:17367
+reconstrucao/src/../include/ghidra_function_prototypes.h:17367:59: error: unknown type name ‘ULONGLONG’
 
-    20613:   undefined8 uVar1;
+    17364: 
+    17365: {
+    17366:   undefined1 uVar1;
+    17367:   char cVar2;
+    17368:   undefined8 *puVar3;
+    17369:   undefined8 *puVar4;
+    17370:   
+
+## FUN_1405412ec */ — reconstrucao/src/decompiled_02.c:17368
+reconstrucao/src/../include/ghidra_function_prototypes.h:17368:37: error: unknown type name ‘PSLIST_HEADER’
+
+    17365: {
+    17366:   undefined1 uVar1;
+    17367:   char cVar2;
+    17368:   undefined8 *puVar3;
+    17369:   undefined8 *puVar4;
+    17370:   
+    17371:   if (param_1 == 0) {
+
+## FUN_140545320 */ — reconstrucao/src/decompiled_02.c:20617
+reconstrucao/src/../include/ghidra_function_prototypes.h:20617:55: error: unknown type name ‘_EXCEPTION_RECORD’
+
     20614:   
     20615:   uVar1 = FUN_140541388(SystemReserved1[0xf],0,0);
     20616:   FUN_140710f0c(param_2,uVar1,param_3);
     20617:   return;
     20618: }
     20619: 
+    20620: /* Ghidra label: FUN_140545364 */
 
-## FUN_140545320 */ — reconstrucao/src/decompiled_02.c:20619
-reconstrucao/src/../include/ghidra_function_prototypes.h:20619:36: error: unknown type name ‘PSLIST_HEADER’
+## FUN_140545320 */ — reconstrucao/src/decompiled_02.c:20620
+reconstrucao/src/../include/ghidra_function_prototypes.h:20620:36: error: unknown type name ‘PSLIST_HEADER’
 
-    20616:   FUN_140710f0c(param_2,uVar1,param_3);
     20617:   return;
     20618: }
     20619: 
     20620: /* Ghidra label: FUN_140545364 */
     20621: /* Ghidra address: 140545364 */
     20622: ulonglong FUN_140545364(void)
+    20623: 
 
 ## FUN_140531850 */ — reconstrucao/src/decompiled_02.c:14
 reconstrucao/src/decompiled_02.c:14:3: error: unknown type name ‘unkint9’; did you mean ‘uint’?
@@ -2642,28 +2642,6 @@ reconstrucao/src/decompiled_02.c:214:26: error: invalid operands to binary * (ha
     216:   auVar24._0_8_ = uVar85;
     217:   auVar56._8_8_ = 0;
 
-## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:8
-reconstrucao/src/../include/ghidra_function_prototypes.h:8:1: error: unknown type name ‘NTSTATUS’
-
-    5: 
-    6: /* Ghidra label: FUN_14077f3e0 */
-    7: /* Ghidra address: 14077f3e0 */
-    8: int FUN_14077f3e0(longlong param_1,undefined4 *param_2,longlong param_3,undefined4 param_4,
-    9:                  longlong *param_5)
-    10: 
-    11: {
-
-## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:8
-reconstrucao/src/../include/ghidra_function_prototypes.h:8:46: error: unknown type name ‘HANDLE’
-
-    5: 
-    6: /* Ghidra label: FUN_14077f3e0 */
-    7: /* Ghidra address: 14077f3e0 */
-    8: int FUN_14077f3e0(longlong param_1,undefined4 *param_2,longlong param_3,undefined4 param_4,
-    9:                  longlong *param_5)
-    10: 
-    11: {
-
 ## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:9
 reconstrucao/src/../include/ghidra_function_prototypes.h:9:1: error: unknown type name ‘NTSTATUS’
 
@@ -2675,16 +2653,27 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:9:1: error: unknown typ
     11: {
     12:   undefined4 uVar1;
 
-## FUN_140780d0c */ — reconstrucao/src/decompiled_03.c:1112
-reconstrucao/src/../include/ghidra_function_prototypes.h:1112:1: error: unknown type name ‘errno_t’
+## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:9
+reconstrucao/src/../include/ghidra_function_prototypes.h:9:46: error: unknown type name ‘HANDLE’
 
-    1109:     uStack_54 = param_2;
-    1110:     uStack_30 = param_4;
-    1111:     FUN_1409e7d20(0x57,&uStack_68,0x60,0,0);
-    1112:   }
-    1113:   return;
-    1114: }
-    1115: 
+    6: /* Ghidra label: FUN_14077f3e0 */
+    7: /* Ghidra address: 14077f3e0 */
+    8: int FUN_14077f3e0(longlong param_1,undefined4 *param_2,longlong param_3,undefined4 param_4,
+    9:                  longlong *param_5)
+    10: 
+    11: {
+    12:   undefined4 uVar1;
+
+## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:10
+reconstrucao/src/../include/ghidra_function_prototypes.h:10:1: error: unknown type name ‘NTSTATUS’
+
+    7: /* Ghidra address: 14077f3e0 */
+    8: int FUN_14077f3e0(longlong param_1,undefined4 *param_2,longlong param_3,undefined4 param_4,
+    9:                  longlong *param_5)
+    10: 
+    11: {
+    12:   undefined4 uVar1;
+    13:   undefined4 uVar2;
 
 ## FUN_140780d0c */ — reconstrucao/src/decompiled_03.c:1113
 reconstrucao/src/../include/ghidra_function_prototypes.h:1113:1: error: unknown type name ‘errno_t’
@@ -2829,28 +2818,6 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1125:1: error: unknown 
     1127:   aiStack_18[0] = 0;
     1128:   uStack_c = 0;
 
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1125
-reconstrucao/src/../include/ghidra_function_prototypes.h:1125:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1122:   int iVar1;
-    1123:   int aiStack_18 [2];
-    1124:   undefined4 uStack_10;
-    1125:   undefined4 uStack_c;
-    1126:   
-    1127:   aiStack_18[0] = 0;
-    1128:   uStack_c = 0;
-
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1125
-reconstrucao/src/../include/ghidra_function_prototypes.h:1125:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1122:   int iVar1;
-    1123:   int aiStack_18 [2];
-    1124:   undefined4 uStack_10;
-    1125:   undefined4 uStack_c;
-    1126:   
-    1127:   aiStack_18[0] = 0;
-    1128:   uStack_c = 0;
-
 ## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1126
 reconstrucao/src/../include/ghidra_function_prototypes.h:1126:1: error: unknown type name ‘errno_t’
 
@@ -2863,7 +2830,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1126:1: error: unknown 
     1129:   uStack_10 = 0x25;
 
 ## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1126
-reconstrucao/src/../include/ghidra_function_prototypes.h:1126:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1126:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1123:   int aiStack_18 [2];
     1124:   undefined4 uStack_10;
@@ -2874,7 +2841,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1126:38: error: unknown
     1129:   uStack_10 = 0x25;
 
 ## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1126
-reconstrucao/src/../include/ghidra_function_prototypes.h:1126:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1126:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1123:   int aiStack_18 [2];
     1124:   undefined4 uStack_10;
@@ -2896,7 +2863,18 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1127:1: error: unknown 
     1130:   iVar1 = FUN_1409e7d20(0x57,&uStack_10,8,aiStack_18,4);
 
 ## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1127
-reconstrucao/src/../include/ghidra_function_prototypes.h:1127:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1127:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1124:   undefined4 uStack_10;
+    1125:   undefined4 uStack_c;
+    1126:   
+    1127:   aiStack_18[0] = 0;
+    1128:   uStack_c = 0;
+    1129:   uStack_10 = 0x25;
+    1130:   iVar1 = FUN_1409e7d20(0x57,&uStack_10,8,aiStack_18,4);
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1127
+reconstrucao/src/../include/ghidra_function_prototypes.h:1127:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1124:   undefined4 uStack_10;
     1125:   undefined4 uStack_c;
@@ -2940,18 +2918,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1129:1: error: unknown 
     1132:     iVar1 = -1;
 
 ## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1126:   
-    1127:   aiStack_18[0] = 0;
-    1128:   uStack_c = 0;
-    1129:   uStack_10 = 0x25;
-    1130:   iVar1 = FUN_1409e7d20(0x57,&uStack_10,8,aiStack_18,4);
-    1131:   if (iVar1 < 0) {
-    1132:     iVar1 = -1;
-
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1129:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1126:   
     1127:   aiStack_18[0] = 0;
@@ -3006,7 +2973,18 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1131:1: error: unknown 
     1134:   else {
 
 ## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1131
-reconstrucao/src/../include/ghidra_function_prototypes.h:1131:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1131:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1128:   uStack_c = 0;
+    1129:   uStack_10 = 0x25;
+    1130:   iVar1 = FUN_1409e7d20(0x57,&uStack_10,8,aiStack_18,4);
+    1131:   if (iVar1 < 0) {
+    1132:     iVar1 = -1;
+    1133:   }
+    1134:   else {
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1131
+reconstrucao/src/../include/ghidra_function_prototypes.h:1131:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1128:   uStack_c = 0;
     1129:   uStack_10 = 0x25;
@@ -3050,18 +3028,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1133:1: error: unknown 
     1136:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
 
 ## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1133
-reconstrucao/src/../include/ghidra_function_prototypes.h:1133:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1130:   iVar1 = FUN_1409e7d20(0x57,&uStack_10,8,aiStack_18,4);
-    1131:   if (iVar1 < 0) {
-    1132:     iVar1 = -1;
-    1133:   }
-    1134:   else {
-    1135:     iVar1 = aiStack_18[0];
-    1136:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
-
-## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1133
-reconstrucao/src/../include/ghidra_function_prototypes.h:1133:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1133:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1130:   iVar1 = FUN_1409e7d20(0x57,&uStack_10,8,aiStack_18,4);
     1131:   if (iVar1 < 0) {
@@ -3104,38 +3071,49 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1134:76: error: unknown
     1136:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
     1137:                     /* WARNING: Subroutine does not return */
 
-## FUN_140783a08 */ — reconstrucao/src/decompiled_03.c:3380
-reconstrucao/src/../include/ghidra_function_prototypes.h:3380:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:1: error: unknown type name ‘errno_t’
 
-    3377:   undefined4 uStack_1c;
+    1132:     iVar1 = -1;
+    1133:   }
+    1134:   else {
+    1135:     iVar1 = aiStack_18[0];
+    1136:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
+    1137:                     /* WARNING: Subroutine does not return */
+    1138:       KeBugCheckEx(param_2,param_3,param_4,param_5,param_6);
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1132:     iVar1 = -1;
+    1133:   }
+    1134:   else {
+    1135:     iVar1 = aiStack_18[0];
+    1136:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
+    1137:                     /* WARNING: Subroutine does not return */
+    1138:       KeBugCheckEx(param_2,param_3,param_4,param_5,param_6);
+
+## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1132:     iVar1 = -1;
+    1133:   }
+    1134:   else {
+    1135:     iVar1 = aiStack_18[0];
+    1136:     if ((DAT_140e67b50 != '\0') && (aiStack_18[0] == 0)) {
+    1137:                     /* WARNING: Subroutine does not return */
+    1138:       KeBugCheckEx(param_2,param_3,param_4,param_5,param_6);
+
+## FUN_140783a08 */ — reconstrucao/src/decompiled_03.c:3381
+reconstrucao/src/../include/ghidra_function_prototypes.h:3381:51: error: unknown type name ‘IMAGE_DOS_HEADER’
+
     3378:   ulonglong uStack_18;
     3379:   
     3380:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_e8;
     3381:   if (5 < DAT_140fd98c8) {
     3382:     auStackX_18[0] = param_3;
     3383:     cVar1 = FUN_14042b0b0(&DAT_140fd98c8,1);
-
-## FUN_1407943f8 */ — reconstrucao/src/decompiled_03.c:17366
-reconstrucao/src/../include/ghidra_function_prototypes.h:17366:37: error: unknown type name ‘PSLIST_HEADER’
-
-    17363:       iVar1 = 0;
-    17364:     }
-    17365:   }
-    17366:   *puStack_40 = 0x10;
-    17367:   if (lStack_48 != 0) {
-    17368:     ObfDereferenceObject();
-    17369:   }
-
-## FUN_1407943f8 */ — reconstrucao/src/decompiled_03.c:17366
-reconstrucao/src/../include/ghidra_function_prototypes.h:17366:59: error: unknown type name ‘ULONGLONG’
-
-    17363:       iVar1 = 0;
-    17364:     }
-    17365:   }
-    17366:   *puStack_40 = 0x10;
-    17367:   if (lStack_48 != 0) {
-    17368:     ObfDereferenceObject();
-    17369:   }
+    3384:     if (cVar1 != '\0') {
 
 ## FUN_1407943f8 */ — reconstrucao/src/decompiled_03.c:17367
 reconstrucao/src/../include/ghidra_function_prototypes.h:17367:37: error: unknown type name ‘PSLIST_HEADER’
@@ -3148,27 +3126,49 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:17367:37: error: unknow
     17369:   }
     17370:   return iVar1;
 
-## FUN_14079888c */ — reconstrucao/src/decompiled_03.c:20616
-reconstrucao/src/../include/ghidra_function_prototypes.h:20616:55: error: unknown type name ‘_EXCEPTION_RECORD’
+## FUN_1407943f8 */ — reconstrucao/src/decompiled_03.c:17367
+reconstrucao/src/../include/ghidra_function_prototypes.h:17367:59: error: unknown type name ‘ULONGLONG’
 
-    20613:     }
+    17364:     }
+    17365:   }
+    17366:   *puStack_40 = 0x10;
+    17367:   if (lStack_48 != 0) {
+    17368:     ObfDereferenceObject();
+    17369:   }
+    17370:   return iVar1;
+
+## FUN_1407943f8 */ — reconstrucao/src/decompiled_03.c:17368
+reconstrucao/src/../include/ghidra_function_prototypes.h:17368:37: error: unknown type name ‘PSLIST_HEADER’
+
+    17365:   }
+    17366:   *puStack_40 = 0x10;
+    17367:   if (lStack_48 != 0) {
+    17368:     ObfDereferenceObject();
+    17369:   }
+    17370:   return iVar1;
+    17371: }
+
+## FUN_14079888c */ — reconstrucao/src/decompiled_03.c:20617
+reconstrucao/src/../include/ghidra_function_prototypes.h:20617:55: error: unknown type name ‘_EXCEPTION_RECORD’
+
     20614:   }
     20615:   else {
     20616:     uVar7 = uVar3;
     20617:     if (sVar1 == 3) {
     20618:       for (uVar3 = 0; uVar3 < *(uint *)(param_1 + 2); uVar3 = uVar3 + 1) {
     20619:         iVar2 = FUN_140456aec(*(undefined8 *)(param_1[3] + (ulonglong)uVar3 * 8),0xffff,&uStackX_8);
+    20620:         if (iVar2 < 0) {
 
-## FUN_14079888c */ — reconstrucao/src/decompiled_03.c:20619
-reconstrucao/src/../include/ghidra_function_prototypes.h:20619:36: error: unknown type name ‘PSLIST_HEADER’
+## FUN_14079888c */ — reconstrucao/src/decompiled_03.c:20620
+reconstrucao/src/../include/ghidra_function_prototypes.h:20620:36: error: unknown type name ‘PSLIST_HEADER’
 
-    20616:     uVar7 = uVar3;
     20617:     if (sVar1 == 3) {
     20618:       for (uVar3 = 0; uVar3 < *(uint *)(param_1 + 2); uVar3 = uVar3 + 1) {
     20619:         iVar2 = FUN_140456aec(*(undefined8 *)(param_1[3] + (ulonglong)uVar3 * 8),0xffff,&uStackX_8);
     20620:         if (iVar2 < 0) {
     20621:           return iVar2;
     20622:         }
+    20623:         uVar5 = (uint)uStackX_8 + 2;
 
 ## FUN_14077f3e0 */ — reconstrucao/src/decompiled_03.c:26
 reconstrucao/src/decompiled_03.c:26:26: error: implicit declaration of function ‘ExAllocatePool2’; did you mean ‘ExAllocatePool’? [-Wimplicit-function-declaration]
@@ -3962,28 +3962,6 @@ reconstrucao/src/decompiled_03.c:372:41: error: passing argument 1 of ‘AlpcGet
     374:         AlpcInitializeMessageAttribute(0x20000000);
     375:         uStack_18 = 0;
 
-## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:8
-reconstrucao/src/../include/ghidra_function_prototypes.h:8:1: error: unknown type name ‘NTSTATUS’
-
-    5: 
-    6: /* Ghidra label: FUN_140ac2d20 */
-    7: /* Ghidra address: 140ac2d20 */
-    8: undefined8 FUN_140ac2d20(longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
-    9: 
-    10: {
-    11:   undefined8 uStack_40;
-
-## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:8
-reconstrucao/src/../include/ghidra_function_prototypes.h:8:46: error: unknown type name ‘HANDLE’
-
-    5: 
-    6: /* Ghidra label: FUN_140ac2d20 */
-    7: /* Ghidra address: 140ac2d20 */
-    8: undefined8 FUN_140ac2d20(longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
-    9: 
-    10: {
-    11:   undefined8 uStack_40;
-
 ## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:9
 reconstrucao/src/../include/ghidra_function_prototypes.h:9:1: error: unknown type name ‘NTSTATUS’
 
@@ -3995,16 +3973,27 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:9:1: error: unknown typ
     11:   undefined8 uStack_40;
     12:   undefined8 uStack_38;
 
-## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1112
-reconstrucao/src/../include/ghidra_function_prototypes.h:1112:1: error: unknown type name ‘errno_t’
+## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:9
+reconstrucao/src/../include/ghidra_function_prototypes.h:9:46: error: unknown type name ‘HANDLE’
 
-    1109: /* Ghidra address: 140ac41e0 */
-    1110: uint * FUN_140ac41e0(longlong param_1,uint param_2,longlong param_3,undefined8 param_4,
-    1111:                     undefined2 param_5)
-    1112: 
-    1113: {
-    1114:   uint *puVar1;
-    1115:   uint uVar2;
+    6: /* Ghidra label: FUN_140ac2d20 */
+    7: /* Ghidra address: 140ac2d20 */
+    8: undefined8 FUN_140ac2d20(longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
+    9: 
+    10: {
+    11:   undefined8 uStack_40;
+    12:   undefined8 uStack_38;
+
+## FUN_140ac2d20 */ — reconstrucao/src/decompiled_04.c:10
+reconstrucao/src/../include/ghidra_function_prototypes.h:10:1: error: unknown type name ‘NTSTATUS’
+
+    7: /* Ghidra address: 140ac2d20 */
+    8: undefined8 FUN_140ac2d20(longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
+    9: 
+    10: {
+    11:   undefined8 uStack_40;
+    12:   undefined8 uStack_38;
+    13:   undefined8 uStack_30;
 
 ## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1113
 reconstrucao/src/../include/ghidra_function_prototypes.h:1113:1: error: unknown type name ‘errno_t’
@@ -4149,28 +4138,6 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1125:1: error: unknown 
     1127:     if (puVar4 == (uint *)0x0) {
     1128:       return (uint *)0x0;
 
-## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1125
-reconstrucao/src/../include/ghidra_function_prototypes.h:1125:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1122:   lStack_20 = 0;
-    1123:   uVar2 = (param_2 >> 9 ^ param_2) * 0x18aa3;
-    1124:   puVar4 = *(uint **)(*(longlong *)(param_1 + 0x670) + 0x10 +
-    1125:                      (ulonglong)((uVar2 >> 9 ^ uVar2) & *(int *)(param_1 + 0x678) - 1U) * 0x18);
-    1126:   do {
-    1127:     if (puVar4 == (uint *)0x0) {
-    1128:       return (uint *)0x0;
-
-## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1125
-reconstrucao/src/../include/ghidra_function_prototypes.h:1125:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1122:   lStack_20 = 0;
-    1123:   uVar2 = (param_2 >> 9 ^ param_2) * 0x18aa3;
-    1124:   puVar4 = *(uint **)(*(longlong *)(param_1 + 0x670) + 0x10 +
-    1125:                      (ulonglong)((uVar2 >> 9 ^ uVar2) & *(int *)(param_1 + 0x678) - 1U) * 0x18);
-    1126:   do {
-    1127:     if (puVar4 == (uint *)0x0) {
-    1128:       return (uint *)0x0;
-
 ## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1126
 reconstrucao/src/../include/ghidra_function_prototypes.h:1126:1: error: unknown type name ‘errno_t’
 
@@ -4183,7 +4150,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1126:1: error: unknown 
     1129:     }
 
 ## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1126
-reconstrucao/src/../include/ghidra_function_prototypes.h:1126:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1126:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1123:   uVar2 = (param_2 >> 9 ^ param_2) * 0x18aa3;
     1124:   puVar4 = *(uint **)(*(longlong *)(param_1 + 0x670) + 0x10 +
@@ -4194,7 +4161,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1126:38: error: unknown
     1129:     }
 
 ## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1126
-reconstrucao/src/../include/ghidra_function_prototypes.h:1126:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1126:65: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1123:   uVar2 = (param_2 >> 9 ^ param_2) * 0x18aa3;
     1124:   puVar4 = *(uint **)(*(longlong *)(param_1 + 0x670) + 0x10 +
@@ -4216,7 +4183,18 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1127:1: error: unknown 
     1130:     if ((*puVar4 == param_2) && (*(longlong *)(puVar4 + 0xe) == param_3)) {
 
 ## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1127
-reconstrucao/src/../include/ghidra_function_prototypes.h:1127:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1127:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1124:   puVar4 = *(uint **)(*(longlong *)(param_1 + 0x670) + 0x10 +
+    1125:                      (ulonglong)((uVar2 >> 9 ^ uVar2) & *(int *)(param_1 + 0x678) - 1U) * 0x18);
+    1126:   do {
+    1127:     if (puVar4 == (uint *)0x0) {
+    1128:       return (uint *)0x0;
+    1129:     }
+    1130:     if ((*puVar4 == param_2) && (*(longlong *)(puVar4 + 0xe) == param_3)) {
+
+## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1127
+reconstrucao/src/../include/ghidra_function_prototypes.h:1127:66: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1124:   puVar4 = *(uint **)(*(longlong *)(param_1 + 0x670) + 0x10 +
     1125:                      (ulonglong)((uVar2 >> 9 ^ uVar2) & *(int *)(param_1 + 0x678) - 1U) * 0x18);
@@ -4260,18 +4238,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1129:1: error: unknown 
     1132:       if ((*puVar1 & 1) == 0) {
 
 ## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1126:   do {
-    1127:     if (puVar4 == (uint *)0x0) {
-    1128:       return (uint *)0x0;
-    1129:     }
-    1130:     if ((*puVar4 == param_2) && (*(longlong *)(puVar4 + 0xe) == param_3)) {
-    1131:       puVar1 = *(uint **)(puVar4 + 0x10);
-    1132:       if ((*puVar1 & 1) == 0) {
-
-## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1129
-reconstrucao/src/../include/ghidra_function_prototypes.h:1129:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1129:37: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1126:   do {
     1127:     if (puVar4 == (uint *)0x0) {
@@ -4326,7 +4293,18 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1131:1: error: unknown 
     1134:         lStack_20 = (longlong)puVar1 + 0x1a;
 
 ## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1131
-reconstrucao/src/../include/ghidra_function_prototypes.h:1131:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1131:38: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1128:       return (uint *)0x0;
+    1129:     }
+    1130:     if ((*puVar4 == param_2) && (*(longlong *)(puVar4 + 0xe) == param_3)) {
+    1131:       puVar1 = *(uint **)(puVar4 + 0x10);
+    1132:       if ((*puVar1 & 1) == 0) {
+    1133:         uStack_28._0_4_ = CONCAT22((short)puVar1[6],(short)puVar1[6]);
+    1134:         lStack_20 = (longlong)puVar1 + 0x1a;
+
+## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1131
+reconstrucao/src/../include/ghidra_function_prototypes.h:1131:70: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1128:       return (uint *)0x0;
     1129:     }
@@ -4370,18 +4348,7 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1133:1: error: unknown 
     1136:       }
 
 ## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1133
-reconstrucao/src/../include/ghidra_function_prototypes.h:1133:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
-
-    1130:     if ((*puVar4 == param_2) && (*(longlong *)(puVar4 + 0xe) == param_3)) {
-    1131:       puVar1 = *(uint **)(puVar4 + 0x10);
-    1132:       if ((*puVar1 & 1) == 0) {
-    1133:         uStack_28._0_4_ = CONCAT22((short)puVar1[6],(short)puVar1[6]);
-    1134:         lStack_20 = (longlong)puVar1 + 0x1a;
-    1135:         iVar3 = FUN_14096be90(&uStack_28,param_4,param_5,1);
-    1136:       }
-
-## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1133
-reconstrucao/src/../include/ghidra_function_prototypes.h:1133:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+reconstrucao/src/../include/ghidra_function_prototypes.h:1133:40: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
 
     1130:     if ((*puVar4 == param_2) && (*(longlong *)(puVar4 + 0xe) == param_3)) {
     1131:       puVar1 = *(uint **)(puVar4 + 0x10);
@@ -4401,4 +4368,37 @@ reconstrucao/src/../include/ghidra_function_prototypes.h:1134:1: error: unknown 
     1135:         iVar3 = FUN_14096be90(&uStack_28,param_4,param_5,1);
     1136:       }
     1137:       else {
+
+## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1134
+reconstrucao/src/../include/ghidra_function_prototypes.h:1134:41: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1131:       puVar1 = *(uint **)(puVar4 + 0x10);
+    1132:       if ((*puVar1 & 1) == 0) {
+    1133:         uStack_28._0_4_ = CONCAT22((short)puVar1[6],(short)puVar1[6]);
+    1134:         lStack_20 = (longlong)puVar1 + 0x1a;
+    1135:         iVar3 = FUN_14096be90(&uStack_28,param_4,param_5,1);
+    1136:       }
+    1137:       else {
+
+## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1134
+reconstrucao/src/../include/ghidra_function_prototypes.h:1134:76: error: unknown type name ‘rsize_t’; did you mean ‘size_t’?
+
+    1131:       puVar1 = *(uint **)(puVar4 + 0x10);
+    1132:       if ((*puVar1 & 1) == 0) {
+    1133:         uStack_28._0_4_ = CONCAT22((short)puVar1[6],(short)puVar1[6]);
+    1134:         lStack_20 = (longlong)puVar1 + 0x1a;
+    1135:         iVar3 = FUN_14096be90(&uStack_28,param_4,param_5,1);
+    1136:       }
+    1137:       else {
+
+## FUN_140ac41e0 */ — reconstrucao/src/decompiled_04.c:1135
+reconstrucao/src/../include/ghidra_function_prototypes.h:1135:1: error: unknown type name ‘errno_t’
+
+    1132:       if ((*puVar1 & 1) == 0) {
+    1133:         uStack_28._0_4_ = CONCAT22((short)puVar1[6],(short)puVar1[6]);
+    1134:         lStack_20 = (longlong)puVar1 + 0x1a;
+    1135:         iVar3 = FUN_14096be90(&uStack_28,param_4,param_5,1);
+    1136:       }
+    1137:       else {
+    1138:         iVar3 = FUN_1408b58e0(param_4,param_5,(longlong)puVar1 + 0x1a,(short)puVar1[6]);
 
