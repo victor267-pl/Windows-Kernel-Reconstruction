@@ -6,6 +6,9 @@ on:
       - 'reconstrucao/scripts/filter_prototypes_by_arity.py'
       - 'reconstrucao/include/ghidra_function_prototypes.h'
       - '.github/workflows/audit-prototype-arity.yml'
+concurrency:
+  group: repo-main-writes-${{ github.ref }}
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
