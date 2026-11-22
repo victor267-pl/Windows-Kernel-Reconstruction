@@ -97,13 +97,49 @@ def main():
             if candidates:u["complete_type_index"]=candidates[-1]["type_index"]
     key_names=("_EPROCESS","_ETHREAD","_KPROCESS","_KTHREAD","_CONTEXT")
     selected={n:[u for u in udts if u.get("name")==n and u["complete"]] for n in key_names}
+    manifest_path=OUT/"layout_manifest.json"
+    layout_comparison={}
+    if manifest_path.is_file():
+        manifest=json.loads(manifest_path.read_text(encoding="utf-8"))
+        for name in key_names:
+            entries=selected.get(name,[])
+            current=entries[-1] if entries else None
+            expected=manifest.get(name)
+            if not current or not expected:
+                layout_comparison[name]={"present_in_pdb":bool(current),"present_in_manifest":bool(expected)}
+                continue
+            pdb_pairs=Counter((f.get("name"),f.get("offset")) for f in current["fields"] if f.get("kind")=="member")
+            old_fields=[f for f in expected.get("fields",[]) if f.get("name") not in (None,"null")]
+            manifest_pairs=Counter((f.get("name"),f.get("offset")) for f in old_fields)
+            exact=sum((pdb_pairs & manifest_pairs).values())
+            same_name_offsets={}
+            pdb_by_name=defaultdict(set)
+            for f in current["fields"]:
+                if f.get("kind")=="member": pdb_by_name[f.get("name")].add(f.get("offset"))
+            offset_conflicts=[]
+            for f in old_fields:
+                candidates=pdb_by_name.get(f.get("name"),set())
+                if candidates and f.get("offset") not in candidates:
+                    offset_conflicts.append({"field":f.get("name"),"manifest_offset":f.get("offset"),"pdb_offsets":sorted(candidates)})
+            layout_comparison[name]={
+                "pdb_size_bytes":current.get("size_bytes"),
+                "manifest_size_bytes":expected.get("size"),
+                "size_matches":current.get("size_bytes")==expected.get("size"),
+                "pdb_named_member_entries":sum(pdb_pairs.values()),
+                "manifest_named_field_entries":sum(manifest_pairs.values()),
+                "exact_name_and_offset_matches":exact,
+                "manifest_fields_missing_from_pdb":sum((manifest_pairs-pdb_pairs).values()),
+                "pdb_fields_not_in_manifest":sum((pdb_pairs-manifest_pairs).values()),
+                "same_name_offset_conflicts":offset_conflicts[:100],
+                "same_name_offset_conflict_count":len(offset_conflicts),
+            }
     counts=Counter(r["kind"] for r in records)
     result={"source":str(TYPE_FILE),"source_bytes":TYPE_FILE.stat().st_size,
             "source_sha256":hashlib.sha256(TYPE_FILE.read_bytes()).hexdigest(),
             "record_count":len(records),"record_kind_counts":dict(counts),
             "udt_count":len(udts),"complete_udt_count":sum(u["complete"] for u in udts),
             "forward_udt_count":sum(u["forward_ref"] for u in udts),
-            "fieldlist_count":counts.get("LF_FIELDLIST",0),
+            "fieldlist_count":counts.get("LF_FIELDLIST",0),"layout_manifest_comparison":layout_comparison,
             "types":records,"udts":udts,"key_layouts":selected}
     (OUT/"pdb_type_graph.json").write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     md=["# Grafo de tipos CodeView extraído do PDB","",
@@ -119,6 +155,14 @@ def main():
                f"- Tamanho: {u['size_bytes']} bytes",f"- Campos: {len(u['fields'])}"]
         for field in u["fields"][:12]:
             md.append(f"- {field.get('name',field['kind'])} — offset {field.get('offset','n/a')}; tipo CodeView {field.get('type_index','n/a')} ({field.get('type_display') or field.get('referenced_type_name') or 'sem nome resolvido'})")
+        md.append("")
+    if layout_comparison:
+        md += ["## Comparação com o manifesto de layouts existente",""]
+        for name, comparison in layout_comparison.items():
+            if "size_matches" not in comparison:
+                md.append(f"- {name}: sem comparação completa")
+            else:
+                md.append(f"- {name}: tamanho PDB {comparison['pdb_size_bytes']} / manifesto {comparison['manifest_size_bytes']} bytes; tamanhos iguais={comparison['size_matches']}; campos com nome+offset coincidentes={comparison['exact_name_and_offset_matches']}; conflitos de offset={comparison['same_name_offset_conflict_count']}")
         md.append("")
     md += ["## Limites","",
            "- Os registros preservam índices CodeView e offsets fornecidos pelo PDB.",
