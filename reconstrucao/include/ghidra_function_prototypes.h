@@ -5,6 +5,7 @@
 #include <stdarg.h>
 
 /* Generated only from clean signatures with call-arity cross-checks. */
+
 NTSTATUS __stdcall LsaDeregisterLogonProcess(HANDLE LsaHandle);
 NTSTATUS __stdcall LsaFreeReturnBuffer(void * Buffer);
 bool CcCopyWriteWontFlush(longlong param_1,undefined8 param_2,ulonglong param_3);
