@@ -4,6 +4,23 @@
 #include <stddef.h>
 #include <stdbool.h>
 #include "ghidra_scalar_helpers.h"
+/* Evidence-backed Ghidra integer widths used by scalar concatenation code.
+ * 3-byte and 7-byte integers are widened to native containers; CONCATxx
+ * helpers mask the exact source width. The 9-byte temporaries carry 65-bit
+ * sums/carries and therefore require a wider host integer type.
+ */
+typedef uint8_t undefined;
+typedef uint32_t uint3;
+typedef uint64_t int7;
+typedef uint64_t uint7;
+typedef uint64_t undefined7;
+#if defined(__SIZEOF_INT128__)
+typedef __int128 unkint9;
+typedef unsigned __int128 unkuint9;
+#else
+#error "This reconstruction requires a compiler with 128-bit integer support for 65-bit Ghidra arithmetic"
+#endif
+typedef uintptr_t code(); /* generic decompiler function type; return register is 64-bit on x64 */
 typedef uint8_t undefined1;
 typedef uint16_t undefined2;
 typedef uint32_t undefined4;
