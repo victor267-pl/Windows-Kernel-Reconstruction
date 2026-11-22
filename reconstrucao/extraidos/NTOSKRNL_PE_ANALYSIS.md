@@ -181,6 +181,9 @@ Contagem por referências, não por símbolos. `loader_zero_fill` significa que 
 |0x140f8f530|0xf8f530|92|.data|virtual_only|loader_zero_fill|00000000000000000000000000000000|
 |0x140fc8250|0xfc8250|92|ALMOSTRO|virtual_only|loader_zero_fill|00000000000000000000000000000000|
 
+## Candidatos semânticos apoiados por evidência
+- Nenhum candidato passou pelos critérios.
+
 ## Interpretação e limites
 - `file_backed`: há bytes correspondentes no executável; o preview é evidência bruta, não um tipo C.
 - `loader_zero_fill`: endereço dentro de VirtualSize, mas além de SizeOfRawData; a imagem carregada começa com zeros nessa região.
