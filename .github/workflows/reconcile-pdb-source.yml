@@ -1,0 +1,26 @@
+name: Reconcile PDB and decompiled source evidence
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reconstrucao/scripts/reconcile_pdb_source.py'
+      - 'reconstrucao/extraidos/pdb/**'
+      - 'reconstrucao/src/decompiled_*.c'
+      - '.github/workflows/reconcile-pdb-source.yml'
+permissions:
+  contents: write
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cross-reference exact symbol and function names
+        run: python3 reconstrucao/scripts/reconcile_pdb_source.py
+      - name: Commit cross-reference reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reconstrucao/extraidos/pdb_source_cross_reference.json reconstrucao/extraidos/PDB_SOURCE_CROSS_REFERENCE.md
+          git commit -m "Cruzar nomes do PDB com funções decompiladas" || exit 0
+          git pull --rebase origin main
+          git push
