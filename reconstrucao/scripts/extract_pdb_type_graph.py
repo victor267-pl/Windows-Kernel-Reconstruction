@@ -68,9 +68,9 @@ def main():
                                  "argument_list_index":int(m.group(3),16)}
             m=re.search(r"element type = "+HEX+r".*?size = (\d+)",line)
             if m:r["array"]={"element_type_index":int(m.group(1),16),"size_bytes":int(m.group(2))}
-            m=re.search(r"underlying type = "+HEX+r".*?length = (\d+), position = (\d+)",line)
+            m=re.search(r"type = "+HEX+r".*?bit offset = (\d+), # bits = (\d+)",line)
             if m:r["bitfield"]={"underlying_type_index":int(m.group(1),16),
-                                "length_bits":int(m.group(2)),"position_bits":int(m.group(3))}
+                                "position_bits":int(m.group(2)),"length_bits":int(m.group(3))}
     udts=[]
     for r in records:
         if r["kind"] not in ("LF_STRUCTURE","LF_CLASS","LF_UNION","LF_ENUM"): continue
@@ -108,14 +108,18 @@ def main():
             if not current or not expected:
                 layout_comparison[name]={"present_in_pdb":bool(current),"present_in_manifest":bool(expected)}
                 continue
-            pdb_pairs=Counter((f.get("name"),f.get("offset")) for f in current["fields"] if f.get("kind")=="member")
+            def effective_member_offset(field):
+                target=by_index.get(field.get("type_index"))
+                bitfield=target.get("bitfield") if target else None
+                return field.get("offset",0)+(bitfield.get("position_bits",0)//8 if bitfield else 0)
+            pdb_pairs=Counter((f.get("name"),effective_member_offset(f)) for f in current["fields"] if f.get("kind")=="member")
             old_fields=[f for f in expected.get("fields",[]) if f.get("name") not in (None,"null")]
             manifest_pairs=Counter((f.get("name"),f.get("offset")) for f in old_fields)
             exact=sum((pdb_pairs & manifest_pairs).values())
             same_name_offsets={}
             pdb_by_name=defaultdict(set)
             for f in current["fields"]:
-                if f.get("kind")=="member": pdb_by_name[f.get("name")].add(f.get("offset"))
+                if f.get("kind")=="member": pdb_by_name[f.get("name")].add(effective_member_offset(f))
             offset_conflicts=[]
             for f in old_fields:
                 candidates=pdb_by_name.get(f.get("name"),set())
