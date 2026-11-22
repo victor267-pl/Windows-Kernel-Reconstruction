@@ -1,18 +1,18 @@
 # Diagnóstico de compilação C
 
-Este teste é apenas diagnóstico de sintaxe. Não equivale a um build do kernel NT.
+Teste diagnóstico, não equivalente a um build do kernel NT.
 - Arquivos examinados: 4
 - Arquivos com erros: 4
 - Tipos não declarados distintos: 3
 - Identificadores não declarados distintos: 71
 
-## Tipos ausentes mais frequentes
+## Tipos ausentes
 
 - undefined: 9
 - unkint9: 8
 - code: 3
 
-## Identificadores ausentes mais frequentes
+## Identificadores ausentes
 
 - DAT_140e0a740: 7
 - FiberData: 5
@@ -89,7 +89,8 @@ Este teste é apenas diagnóstico de sintaxe. Não equivale a um build do kernel
 ## Classes de erro
 
 - undeclared_identifier: 118
-- other_error: 284
+- implicit_function: 191
+- other_error: 95
 - syntax_expected: 60
 - unknown_type: 20
 - conflicting_type: 2
