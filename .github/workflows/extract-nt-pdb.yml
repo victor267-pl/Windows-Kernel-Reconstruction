@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md reconstrucao/extraidos/pdb/ reconstrucao/extraidos/module_data_symbols.txt reconstrucao/extraidos/modules.txt
+          git add -A reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md reconstrucao/extraidos/pdb/ reconstrucao/extraidos/modules.txt
           if git diff --cached --quiet; then
             echo "No report changes."
           else
@@ -46,7 +46,6 @@ jobs:
           path: |
             reconstrucao/extraidos/PDB_EXTRACTION_REPORT.md
             reconstrucao/extraidos/pdb/
-            reconstrucao/extraidos/module_data_symbols.txt
             reconstrucao/extraidos/modules.txt
           if-no-files-found: warn
           retention-days: 30
