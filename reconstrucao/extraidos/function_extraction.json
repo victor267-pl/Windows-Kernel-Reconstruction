@@ -88,8 +88,8 @@
           "signature_name": "if"
         }
       ],
-      "output_bytes": 19240781,
-      "sha256": "d9410042c95a10340bcd409482c3d56349f4d4f9af8d5ba22a79bf377467eb7f",
+      "output_bytes": 19240835,
+      "sha256": "8f703b719e4d6fb17c6966f63ccabfd9536b099fb982d4820ba46280e1c0cd87",
       "rejected_functions": [
         {
           "name": "MmAllocatePagesForMdl",
@@ -213,8 +213,8 @@
           "signature_name": "if"
         }
       ],
-      "output_bytes": 19085892,
-      "sha256": "dcb08e2c16b56eeb63e7da26ad6fbcdb32389212e3587fc2b5f45c99e619a65c",
+      "output_bytes": 19085946,
+      "sha256": "3fde00541d683229478cd44236656b18637b8c4cbf86f93e7f1a9024473157c0",
       "rejected_functions": [
         {
           "name": "DbgPrintReturnControlC",
@@ -330,8 +330,8 @@
           "signature_name": "if"
         }
       ],
-      "output_bytes": 19070445,
-      "sha256": "54c833d19d7d3f93715281572144bcfdf52a521427811073795326f5d20a8657",
+      "output_bytes": 19070499,
+      "sha256": "b470e7eba0e7393d3acada3d3b2dea88973a52ce0b0a6c2923ab64e9c1e26221",
       "rejected_functions": [
         {
           "name": "PsRegisterSystemAvailableCpusChangeNotification",
@@ -403,8 +403,8 @@
           "signature_name": "if"
         }
       ],
-      "output_bytes": 7635863,
-      "sha256": "bffd5025f5b269de05f50f92dca46bf338233ce842bf374b2a6cb15f8b8da270",
+      "output_bytes": 7635917,
+      "sha256": "56f1e19d6920d55ef4112c026291a996d87c802c463f4d4ed822029bcb851060",
       "rejected_functions": [
         {
           "name": "IoFastQueryNetworkAttributes",
