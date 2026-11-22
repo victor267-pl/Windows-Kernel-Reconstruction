@@ -1,0 +1,60 @@
+name: Extract kernel archive
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Extract text files safely
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          from zipfile import ZipFile
+
+          archive = Path("Kernel_GitHub_Partes.zip")
+          output = Path("dados")
+          output.mkdir(exist_ok=True)
+
+          with ZipFile(archive) as z:
+              entries = [
+                  item for item in z.infolist()
+                  if not item.is_dir()
+                  and PurePosixPath(item.filename).suffix.lower() == ".txt"
+              ]
+              if len(entries) != 7:
+                  raise SystemExit(
+                      f"Esperados 7 arquivos TXT; encontrados {len(entries)}."
+                  )
+
+              names = set()
+              for item in entries:
+                  name = PurePosixPath(item.filename).name
+                  if name in names:
+                      raise SystemExit(f"Nome duplicado no ZIP: {name}")
+                  names.add(name)
+                  (output / name).write_bytes(z.read(item))
+
+          print(f"Extraídos {len(entries)} arquivos para {output}/")
+          PY
+
+      - name: Commit extracted files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para enviar."
+          else
+            git commit -m "Extrair arquivos TXT do pacote do kernel"
+            git push
+          fi
