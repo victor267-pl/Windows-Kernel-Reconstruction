@@ -78,3 +78,4 @@ md += ["","## Exemplos excluídos",""]+[f"- {n}: esperado {v['expected']}; obser
 Path("reconstrucao/extraidos/PROTOTYPE_ARITY_AUDIT.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({k:v for k,v in report.items() if k!="examples"},indent=2))
 
+
