@@ -24,7 +24,7 @@ UNKNOWN = {"undefined","code","uint3","int7","unkint9","unkuint9","BADSPACEBASE"
 
 def main():
     existing = (INC / "ghidra_function_prototypes.h").read_text(encoding="utf-8", errors="replace")
-    declared = set(re.findall(r"\b(FUN_[0-9A-Fa-f]+)\s*\(", existing))
+    declared = set(re.findall(r"\b([A-Za-z_]\w*)\s*\(", existing))
     returns = defaultdict(set)
     rejects = defaultdict(int)
     scanned = 0
@@ -34,7 +34,7 @@ def main():
         markers = list(re.finditer(r"/\*\s*Ghidra label:\s*([^*]+?)\s*\*/", source))
         for i, marker in enumerate(markers):
             name = marker.group(1).strip()
-            if not re.fullmatch(r"[A-Za-z_]\\w*", name):
+            if not re.fullmatch(r"[A-Za-z_]\w*", name):
                 continue
             scanned += 1
             end = markers[i+1].start() if i+1 < len(markers) else len(source)
