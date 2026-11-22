@@ -128,7 +128,7 @@ for path in INPUTS:
     summary["total_rejected"] += len(rejected)
     summary["functions"].extend(
         {"name": name, "address": address, "source": path.name,
-         "signature_name": (re.search(r"([A-Za-z_]\\w*)\\s*\\(", code).group(1)
+         "signature_name": (re.search(r"([A-Za-z_]\w*)\s*\(", code).group(1)
                             if re.search(r"([A-Za-z_]\\w*)\\s*\\(", code) else None)}
         for name, code, address in funcs
     )
