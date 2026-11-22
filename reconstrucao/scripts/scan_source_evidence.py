@@ -31,3 +31,4 @@ for q,info in result["queries"].items():
     md.append("")
 Path("reconstrucao/extraidos/SOURCE_SYMBOL_EVIDENCE.md").write_text("\n".join(md)+"\n",encoding="utf-8")
 print(json.dumps({q:v["total_hits"] for q,v in result["queries"].items()},indent=2))
+
