@@ -115,8 +115,13 @@ def main():
      nm=ident(raw) if raw and raw.lower()!="null" else f"_ghidra_field_{f['index']}"
      used[nm]=used.get(nm,0)+1
      if used[nm]>1: nm=f"{nm}_{used[nm]}"
-     lines.append(f"        uint8_t {nm}[{f['size']}]; /* +0x{f['offset']:04X}; Ghidra={f['type']}; sobreposicao preservada */")
-     members.append({"index":f["index"],"name":raw,"c_member":f"{uname}.{nm}","offset":f["offset"],"size":f["size"],"ghidra_type":f["type"],"c_type":f"uint8_t[{f['size']}]","resolution":"overlapping_storage_raw"})
+     relative=f["offset"]-start
+     lines.append("        struct {")
+     if relative:
+      lines.append(f"            uint8_t _relative_padding[{relative}];")
+     lines.append(f"            uint8_t {nm}[{f['size']}]; /* Ghidra={f['type']}; sobreposicao preservada */")
+     lines.append(f"        }} {nm}_view;")
+     members.append({"index":f["index"],"name":raw,"c_member":f"{uname}.{nm}_view.{nm}","offset":f["offset"],"size":f["size"],"ghidra_type":f["type"],"c_type":f"uint8_t[{f['size']}]","resolution":"overlapping_storage_raw"})
     lines.append(f"        uint8_t _storage[{finish-start}];")
     lines.append(f"    }} {uname}; /* +0x{start:04X}; intervalo sobreposto */")
    else:
