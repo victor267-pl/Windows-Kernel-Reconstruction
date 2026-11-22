@@ -13,11 +13,10 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 
 - FiberData: 7
 - DAT_140fc7d20: 5
-- DAT_140fc7ad0: 5
-- DAT_140f0cf28: 4
 - DAT_140f06d48: 4
 - DAT_140fc62ac: 3
 - DAT_140fc7ab8: 3
+- DAT_140e67b01: 3
 - DAT_140f06ba8: 3
 - DAT_140f06bb0: 3
 - SystemReserved1: 3
@@ -32,7 +31,6 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - DAT_140fc4ac0: 2
 - PTR_DAT_1400dd860: 2
 - DAT_140f06b20: 2
-- DAT_140e67b01: 2
 - DAT_140f085e0: 2
 - DAT_140e0a590: 1
 - DAT_140fc7b04: 1
@@ -71,6 +69,8 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 - DAT_140e27e00: 1
 - DAT_140e27e08: 1
 - DAT_140e27e10: 1
+- DAT_140010410: 1
+- DAT_140010420: 1
 - DAT_14001bcb8: 1
 - DAT_140f07240: 1
 - DAT_14001a0b8: 1
@@ -114,8 +114,8 @@ Teste diagnóstico, não equivalente a um build do kernel NT.
 
 ## Classes de erro
 
-- undeclared_identifier: 152
-- other_error: 302
-- syntax_expected: 123
+- undeclared_identifier: 146
+- other_error: 308
+- syntax_expected: 127
 - implicit_function: 22
 - conflicting_type: 3

@@ -14,7 +14,7 @@ reconstrucao/src/decompiled_01.c:203:18: error: ‘DAT_140e0a590’ undeclared (
     206: 
 
 ## FUN_140200740 */ — reconstrucao/src/decompiled_01.c:338
-reconstrucao/src/decompiled_01.c:338:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:338:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     335:   undefined8 auStackX_10 [3];
     336:   
@@ -69,7 +69,7 @@ reconstrucao/src/decompiled_01.c:362:5: error: implicit declaration of function 
     365:       uVar4 = uVar4 + 1;
 
 ## FUN_1402007a8 */ — reconstrucao/src/decompiled_01.c:366
-reconstrucao/src/decompiled_01.c:366:14: error: ‘DAT_140fc62ac’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:366:14: error: ‘DAT_140fc62ac’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     363:     if ((uVar2 & 1) == 0) break;
     364:     do {
@@ -80,7 +80,7 @@ reconstrucao/src/decompiled_01.c:366:14: error: ‘DAT_140fc62ac’ undeclared (
     369:       }
 
 ## FUN_1402007a8 */ — reconstrucao/src/decompiled_01.c:366
-reconstrucao/src/decompiled_01.c:366:48: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘FUN_1402c7ab8’?
+reconstrucao/src/decompiled_01.c:366:48: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     363:     if ((uVar2 & 1) == 0) break;
     364:     do {
@@ -91,7 +91,7 @@ reconstrucao/src/decompiled_01.c:366:48: error: ‘DAT_140fc7ab8’ undeclared (
     369:       }
 
 ## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:407
-reconstrucao/src/decompiled_01.c:407:15: error: ‘DAT_140fc7b04’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:407:15: error: ‘DAT_140fc7b04’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     404:     *(undefined8 *)(param_1 + 0x40) = 0;
     405:     iVar3 = iVar1;
@@ -102,7 +102,7 @@ reconstrucao/src/decompiled_01.c:407:15: error: ‘DAT_140fc7b04’ undeclared (
     410:                            (char)(*(uint *)(param_1 + 0x74) >> 3)) & 0xffffff01,0,
 
 ## FUN_140200820 */ — reconstrucao/src/decompiled_01.c:413
-reconstrucao/src/decompiled_01.c:413:29: error: ‘DAT_140fc7b10’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:413:29: error: ‘DAT_140fc7b10’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     410:                            (char)(*(uint *)(param_1 + 0x74) >> 3)) & 0xffffff01,0,
     411:                   *(undefined8 *)(param_1 + 0x240),0x536);
@@ -111,28 +111,6 @@ reconstrucao/src/decompiled_01.c:413:29: error: ‘DAT_140fc7b10’ undeclared (
     414:     FUN_1403be528(param_1,0x546,iVar1,iVar3);
     415:   }
     416:   return;
-
-## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:431
-reconstrucao/src/decompiled_01.c:431:7: error: ‘DAT_140fc7ad0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
-
-    428:   ulonglong uVar5;
-    429:   ulonglong uVar6;
-    430:   
-    431:   if (DAT_140fc7ad0 != (uint *)0x0) {
-    432:     uVar2 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
-    433:     uVar6 = 0;
-    434:     if (*DAT_140fc7ad0 != 0) {
-
-## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:432
-reconstrucao/src/decompiled_01.c:432:42: error: ‘DAT_140f0cf28’ undeclared (first use in this function)
-
-    429:   ulonglong uVar6;
-    430:   
-    431:   if (DAT_140fc7ad0 != (uint *)0x0) {
-    432:     uVar2 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
-    433:     uVar6 = 0;
-    434:     if (*DAT_140fc7ad0 != 0) {
-    435:       do {
 
 ## FUN_140200950 */ — reconstrucao/src/decompiled_01.c:447
 reconstrucao/src/decompiled_01.c:447:45: error: passing argument 1 of ‘FUN_140201790’ makes integer from pointer without a cast [-Wint-conversion]
@@ -157,7 +135,7 @@ reconstrucao/src/decompiled_01.c:459:1: error: return type defaults to ‘int’
     462: {
 
 ## FUN_1402009ec */ — reconstrucao/src/decompiled_01.c:466
-reconstrucao/src/decompiled_01.c:466:17: error: ‘DAT_140fc7c20’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:466:17: error: ‘DAT_140fc7c20’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     463:   undefined4 uVar1;
     464:   
@@ -179,7 +157,7 @@ reconstrucao/src/decompiled_01.c:467:33: error: passing argument 2 of ‘FUN_140
     470: }
 
 ## FUN_140200a58 */ — reconstrucao/src/decompiled_01.c:479
-reconstrucao/src/decompiled_01.c:479:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:479:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     476: {
     477:   undefined1 in_CR8;
@@ -190,7 +168,7 @@ reconstrucao/src/decompiled_01.c:479:7: error: ‘DAT_140fc7d20’ undeclared (f
     482:   *param_2 = in_CR8;
 
 ## KeSetSelectedCpuSetsThread */ — reconstrucao/src/decompiled_01.c:515
-reconstrucao/src/decompiled_01.c:515:15: error: ‘DAT_140fc6014’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:515:15: error: ‘DAT_140fc6014’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     512:     }
     513:     else {
@@ -201,7 +179,7 @@ reconstrucao/src/decompiled_01.c:515:15: error: ‘DAT_140fc6014’ undeclared (
     518:     uVar8 = 0;
 
 ## KeSetSelectedCpuSetsThread */ — reconstrucao/src/decompiled_01.c:528
-reconstrucao/src/decompiled_01.c:528:16: error: ‘DAT_140fc62ac’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:528:16: error: ‘DAT_140fc62ac’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     525:       if ((uVar2 & 1) == 0) break;
     526:       do {
@@ -212,7 +190,7 @@ reconstrucao/src/decompiled_01.c:528:16: error: ‘DAT_140fc62ac’ undeclared (
     531:         }
 
 ## KeSetSelectedCpuSetsThread */ — reconstrucao/src/decompiled_01.c:528
-reconstrucao/src/decompiled_01.c:528:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘FUN_1402c7ab8’?
+reconstrucao/src/decompiled_01.c:528:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     525:       if ((uVar2 & 1) == 0) break;
     526:       do {
@@ -267,7 +245,7 @@ reconstrucao/src/decompiled_01.c:572:14: error: assignment to ‘undefined8’ {
     575:     uVar2 = FUN_1402fd8a0();
 
 ## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:573
-reconstrucao/src/decompiled_01.c:573:8: error: ‘DAT_140fc7a90’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:573:8: error: ‘DAT_140fc7a90’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     570:   uVar6 = 0;
     571:   uStack_108 = 0;
@@ -322,7 +300,7 @@ reconstrucao/src/decompiled_01.c:591:47: error: request for member ‘_1_7_’ i
     594:       }
 
 ## FUN_140200bc0 */ — reconstrucao/src/decompiled_01.c:592
-reconstrucao/src/decompiled_01.c:592:34: error: ‘DAT_140fc7d20’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:592:34: error: ‘DAT_140fc7d20’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     589:         puVar5 = auStack_e0;
     590:       }
@@ -432,7 +410,7 @@ reconstrucao/src/decompiled_01.c:638:7: error: ‘DAT_140e67941’ undeclared (f
     641:     if (cVar1 != '\0') {
 
 ## FUN_140200dcc */ — reconstrucao/src/decompiled_01.c:640
-reconstrucao/src/decompiled_01.c:640:29: error: ‘DAT_140f0bb00’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:640:29: error: ‘DAT_140f0bb00’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     637:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_68;
     638:   if (DAT_140e67941 != '\0') {
@@ -454,7 +432,7 @@ reconstrucao/src/decompiled_01.c:640:44: error: ‘DAT_140010400’ undeclared (
     643:       puStack_28 = auStackX_8;
 
 ## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:676
-reconstrucao/src/decompiled_01.c:676:32: error: ‘DAT_140f230b0’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:676:32: error: ‘DAT_140f230b0’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     673:   undefined4 auStack_38 [8];
     674:   undefined8 auStack_18 [2];
@@ -520,7 +498,7 @@ reconstrucao/src/decompiled_01.c:693:13: error: assignment to ‘undefined8’ {
     696:     *(short *)((longlong)puVar5 + -0x8c) = *(short *)((longlong)puVar5 + -0x8c) + 1;
 
 ## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:719
-reconstrucao/src/decompiled_01.c:719:15: error: ‘DAT_140fc62ac’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:719:15: error: ‘DAT_140fc62ac’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     716:       if ((uVar2 & 1) == 0) break;
     717:       do {
@@ -531,7 +509,7 @@ reconstrucao/src/decompiled_01.c:719:15: error: ‘DAT_140fc62ac’ undeclared (
     722:           if (cVar4 != '\0') {
 
 ## FUN_140200e70 */ — reconstrucao/src/decompiled_01.c:719
-reconstrucao/src/decompiled_01.c:719:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘FUN_1402c7ab8’?
+reconstrucao/src/decompiled_01.c:719:50: error: ‘DAT_140fc7ab8’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     716:       if ((uVar2 & 1) == 0) break;
     717:       do {
@@ -630,7 +608,7 @@ reconstrucao/src/decompiled_01.c:819:25: error: passing argument 1 of ‘KeSetPr
     822:   if (param_3 != 1) {
 
 ## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:824
-reconstrucao/src/decompiled_01.c:824:12: error: ‘DAT_140fc7b14’ undeclared (first use in this function); did you mean ‘FUN_140ac7b14’?
+reconstrucao/src/decompiled_01.c:824:12: error: ‘DAT_140fc7b14’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     821:   }
     822:   if (param_3 != 1) {
@@ -729,7 +707,7 @@ reconstrucao/src/decompiled_01.c:882:15: error: invalid use of void expression
     885:       } while (uVar7 != 0);
 
 ## FUN_140200fd8 */ — reconstrucao/src/decompiled_01.c:899
-reconstrucao/src/decompiled_01.c:899:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:899:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     896:   param_1[0x10] = 0;
     897:   param_1[0x11] = 0;
@@ -817,7 +795,7 @@ reconstrucao/src/decompiled_01.c:1024:18: error: invalid use of void expression
     1027:         } while (uVar8 != 0);
 
 ## FUN_140201280 */ — reconstrucao/src/decompiled_01.c:1037
-reconstrucao/src/decompiled_01.c:1037:29: error: ‘DAT_140fc7b14’ undeclared (first use in this function); did you mean ‘FUN_140ac7b14’?
+reconstrucao/src/decompiled_01.c:1037:29: error: ‘DAT_140fc7b14’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1034:     **(uint **)(param_1 + 0x3c8) = **(uint **)(param_1 + 0x3c8) & 0xffefffff;
     1035:     UNLOCK();
@@ -839,7 +817,7 @@ reconstrucao/src/decompiled_01.c:1054:40: error: ‘DAT_140f08470’ undeclared 
     1057:     uVar3 = *DAT_140f08468;
 
 ## FUN_1402015a0 */ — reconstrucao/src/decompiled_01.c:1055
-reconstrucao/src/decompiled_01.c:1055:12: error: ‘DAT_140f08468’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1055:12: error: ‘DAT_140f08468’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1052:   
     1053:   lStackX_10 = 0;
@@ -849,19 +827,8 @@ reconstrucao/src/decompiled_01.c:1055:12: error: ‘DAT_140f08468’ undeclared 
     1057:     uVar3 = *DAT_140f08468;
     1058:     if (((uVar3 & 0x10) != 0) && ((uVar3 & 1) != (uint)param_1)) {
 
-## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1086
-reconstrucao/src/decompiled_01.c:1086:40: error: ‘DAT_140f0cf28’ undeclared (first use in this function)
-
-    1083: {
-    1084:   undefined1 uVar1;
-    1085:   
-    1086:   uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
-    1087:   FUN_140201790(DAT_140fc7ad0 + (ulonglong)param_1 * 0x70 + 0x14,1,param_2);
-    1088:   KeReleaseSpinLock(&DAT_140f0cf28,uVar1);
-    1089:   if (param_1 == *DAT_140fc7ad0 - 1U) {
-
 ## FUN_14020164c */ — reconstrucao/src/decompiled_01.c:1087
-reconstrucao/src/decompiled_01.c:1087:17: error: ‘DAT_140fc7ad0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1087:59: error: passing argument 1 of ‘FUN_140201790’ makes integer from pointer without a cast [-Wint-conversion]
 
     1084:   undefined1 uVar1;
     1085:   
@@ -871,30 +838,19 @@ reconstrucao/src/decompiled_01.c:1087:17: error: ‘DAT_140fc7ad0’ undeclared 
     1089:   if (param_1 == *DAT_140fc7ad0 - 1U) {
     1090:     if (param_2 == '\0') {
 
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1116
-reconstrucao/src/decompiled_01.c:1116:7: error: ‘DAT_140fc7ad0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1120
+reconstrucao/src/decompiled_01.c:1120:52: error: passing argument 1 of ‘FUN_140201790’ makes integer from pointer without a cast [-Wint-conversion]
 
-    1113:   ulonglong uVar3;
-    1114:   
-    1115:   uVar3 = 0;
-    1116:   if (DAT_140fc7ad0 != (uint *)0x0) {
-    1117:     uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
-    1118:     if (*DAT_140fc7ad0 != 0) {
-    1119:       do {
-
-## FUN_140201708 */ — reconstrucao/src/decompiled_01.c:1117
-reconstrucao/src/decompiled_01.c:1117:42: error: ‘DAT_140f0cf28’ undeclared (first use in this function)
-
-    1114:   
-    1115:   uVar3 = 0;
-    1116:   if (DAT_140fc7ad0 != (uint *)0x0) {
     1117:     uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
     1118:     if (*DAT_140fc7ad0 != 0) {
     1119:       do {
     1120:         FUN_140201790(DAT_140fc7ad0 + uVar3 * 0x70 + 0x14,CONCAT71((int7)(uVar3 >> 8),2),
+    1121:                       CONCAT71((int7)(uVar3 * 0x1c0 >> 8),param_1));
+    1122:         uVar2 = (int)uVar3 + 1;
+    1123:         uVar3 = (ulonglong)uVar2;
 
 ## FUN_140201834 */ — reconstrucao/src/decompiled_01.c:1191
-reconstrucao/src/decompiled_01.c:1191:40: error: ‘DAT_140f0e990’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1191:40: error: ‘DAT_140f0e990’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1188: {
     1189:   undefined1 uVar1;
@@ -905,7 +861,7 @@ reconstrucao/src/decompiled_01.c:1191:40: error: ‘DAT_140f0e990’ undeclared 
     1194:     if (param_1 == '\0') {
 
 ## FUN_140201834 */ — reconstrucao/src/decompiled_01.c:1192
-reconstrucao/src/decompiled_01.c:1192:7: error: ‘DAT_140f0e9a1’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1192:7: error: ‘DAT_140f0e9a1’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1189:   undefined1 uVar1;
     1190:   
@@ -916,7 +872,7 @@ reconstrucao/src/decompiled_01.c:1192:7: error: ‘DAT_140f0e9a1’ undeclared (
     1195:       FUN_1404b8ffc(_DAT_fffff78000000008,0);
 
 ## FUN_140201834 */ — reconstrucao/src/decompiled_01.c:1193
-reconstrucao/src/decompiled_01.c:1193:9: error: ‘DAT_140f0e9a0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1193:9: error: ‘DAT_140f0e9a0’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1190:   
     1191:   uVar1 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0e990);
@@ -938,7 +894,7 @@ reconstrucao/src/decompiled_01.c:1195:21: error: ‘_DAT_fffff78000000008’ und
     1198:       DAT_140f0e9a8 = _DAT_fffff78000000008;
 
 ## FUN_140201834 */ — reconstrucao/src/decompiled_01.c:1198
-reconstrucao/src/decompiled_01.c:1198:7: error: ‘DAT_140f0e9a8’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1198:7: error: ‘DAT_140f0e9a8’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1195:       FUN_1404b8ffc(_DAT_fffff78000000008,0);
     1196:     }
@@ -949,7 +905,7 @@ reconstrucao/src/decompiled_01.c:1198:7: error: ‘DAT_140f0e9a8’ undeclared (
     1201:   if (DAT_140f0e9a0 != param_1) {
 
 ## FUN_1402018b8 */ — reconstrucao/src/decompiled_01.c:1218
-reconstrucao/src/decompiled_01.c:1218:40: error: ‘DAT_140f0ce60’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1218:40: error: ‘DAT_140f0ce60’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1215:   undefined1 uVar1;
     1216:   undefined8 uVar2;
@@ -960,7 +916,7 @@ reconstrucao/src/decompiled_01.c:1218:40: error: ‘DAT_140f0ce60’ undeclared 
     1221:     if (param_1 == '\0') {
 
 ## FUN_1402018b8 */ — reconstrucao/src/decompiled_01.c:1219
-reconstrucao/src/decompiled_01.c:1219:7: error: ‘DAT_140f0c0d8’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1219:7: error: ‘DAT_140f0c0d8’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1216:   undefined8 uVar2;
     1217:   
@@ -982,7 +938,7 @@ reconstrucao/src/decompiled_01.c:1220:11: error: invalid use of void expression
     1223:     }
 
 ## FUN_1402018b8 */ — reconstrucao/src/decompiled_01.c:1225
-reconstrucao/src/decompiled_01.c:1225:7: error: ‘DAT_140f0c0d0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1225:7: error: ‘DAT_140f0c0d0’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1222:       FUN_1404bc4ec(uVar2);
     1223:     }
@@ -993,7 +949,7 @@ reconstrucao/src/decompiled_01.c:1225:7: error: ‘DAT_140f0c0d0’ undeclared (
     1228:   KeReleaseSpinLock(&DAT_140f0ce60,uVar1);
 
 ## FUN_140201918 */ — reconstrucao/src/decompiled_01.c:1239
-reconstrucao/src/decompiled_01.c:1239:18: error: ‘DAT_140fc6014’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1239:18: error: ‘DAT_140fc6014’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1236: {
     1237:   ulonglong uVar1;
@@ -1004,7 +960,7 @@ reconstrucao/src/decompiled_01.c:1239:18: error: ‘DAT_140fc6014’ undeclared 
     1242:       if (param_2 <= (uint)uVar1) {
 
 ## FUN_140201918 */ — reconstrucao/src/decompiled_01.c:1245
-reconstrucao/src/decompiled_01.c:1245:53: error: ‘DAT_140fc8128’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1245:53: error: ‘DAT_140fc8128’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1242:       if (param_2 <= (uint)uVar1) {
     1243:         return 0;
@@ -1026,7 +982,7 @@ reconstrucao/src/decompiled_01.c:1273:25: error: passing argument 1 of ‘FUN_14
     1276:        (iVar2 = KeIsSubsetAffinityEx(param_3,&DAT_140fc8120), iVar2 != 0)) {
 
 ## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1276
-reconstrucao/src/decompiled_01.c:1276:47: error: ‘DAT_140fc8120’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1276:47: error: ‘DAT_140fc8120’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1273:   uVar3 = FUN_140201918(param_2,param_1);
     1274:   if (-1 < (int)uVar3) {
@@ -1037,7 +993,7 @@ reconstrucao/src/decompiled_01.c:1276:47: error: ‘DAT_140fc8120’ undeclared 
     1279:         uVar12 = param_1;
 
 ## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1282
-reconstrucao/src/decompiled_01.c:1282:36: error: ‘DAT_140f23730’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1282:36: error: ‘DAT_140f23730’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1279:         uVar12 = param_1;
     1280:       }
@@ -1048,7 +1004,7 @@ reconstrucao/src/decompiled_01.c:1282:36: error: ‘DAT_140f23730’ undeclared 
     1285:         while ((uVar4 & 1) != 0) {
 
 ## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1283
-reconstrucao/src/decompiled_01.c:1283:15: error: ‘DAT_140fc7bf8’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1283:15: error: ‘DAT_140fc7bf8’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1280:       }
     1281:       uVar7 = 0;
@@ -1059,7 +1015,7 @@ reconstrucao/src/decompiled_01.c:1283:15: error: ‘DAT_140fc7bf8’ undeclared 
     1286:           uVar4 = DAT_140fc7bf8;
 
 ## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1300
-reconstrucao/src/decompiled_01.c:1300:21: error: ‘DAT_140fc9320’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1300:21: error: ‘DAT_140fc9320’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1297:       } while (!bVar13);
     1298:       uVar4 = 0;
@@ -1070,7 +1026,7 @@ reconstrucao/src/decompiled_01.c:1300:21: error: ‘DAT_140fc9320’ undeclared 
     1303:       do {
 
 ## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1301
-reconstrucao/src/decompiled_01.c:1301:26: error: ‘DAT_140fc8128’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1301:26: error: ‘DAT_140fc8128’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1298:       uVar4 = 0;
     1299:       lVar10 = 0;
@@ -1081,7 +1037,7 @@ reconstrucao/src/decompiled_01.c:1301:26: error: ‘DAT_140fc8128’ undeclared 
     1304:         uVar1 = *(ulonglong *)(lVar9 + (longlong)param_2);
 
 ## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1302
-reconstrucao/src/decompiled_01.c:1302:27: error: ‘DAT_140fc9720’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1302:27: error: ‘DAT_140fc9720’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1299:       lVar10 = 0;
     1300:       puStack_38 = &DAT_140fc9320 + param_4;
@@ -1092,7 +1048,7 @@ reconstrucao/src/decompiled_01.c:1302:27: error: ‘DAT_140fc9720’ undeclared 
     1305:         if (param_3 == (ushort *)0x0) {
 
 ## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1331
-reconstrucao/src/decompiled_01.c:1331:41: error: ‘DAT_140fc7c20’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1331:41: error: ‘DAT_140fc7c20’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1328:         else if (param_5 == 2) {
     1329:           uVar6 = ~uVar5 & *puStack_38;
@@ -1103,7 +1059,7 @@ reconstrucao/src/decompiled_01.c:1331:41: error: ‘DAT_140fc7c20’ undeclared 
     1334:         else {
 
 ## FUN_140201958 */ — reconstrucao/src/decompiled_01.c:1349
-reconstrucao/src/decompiled_01.c:1349:9: error: ‘DAT_140fc7e74’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1349:9: error: ‘DAT_140fc7e74’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1346:         lVar10 = lVar10 + 2;
     1347:       } while (uVar8 < 0x20);
@@ -1136,7 +1092,7 @@ reconstrucao/src/decompiled_01.c:1373:23: error: ‘DAT_140e2edc8’ undeclared 
     1376:   ExReleaseSpinLockSharedFromDpcLevel(&DAT_140e2edc0);
 
 ## FUN_140201b84 */ — reconstrucao/src/decompiled_01.c:1374
-reconstrucao/src/decompiled_01.c:1374:30: error: ‘DAT_140e2edd0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1374:30: error: ‘DAT_140e2edd0’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1371:   bVar2 = false;
     1372:   ExAcquireSpinLockSharedAtDpcLevel(&DAT_140e2edc0);
@@ -1147,7 +1103,7 @@ reconstrucao/src/decompiled_01.c:1374:30: error: ‘DAT_140e2edd0’ undeclared 
     1377:   return bVar2;
 
 ## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1409
-reconstrucao/src/decompiled_01.c:1409:23: error: ‘DAT_140fc601a’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1409:23: error: ‘DAT_140fc601a’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1406:   
     1407:   puVar16 = auStack_48;
@@ -1158,7 +1114,7 @@ reconstrucao/src/decompiled_01.c:1409:23: error: ‘DAT_140fc601a’ undeclared 
     1412:   do {
 
 ## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1411
-reconstrucao/src/decompiled_01.c:1411:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1411:7: error: ‘DAT_140fc7d20’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1408:   lVar5 = *param_1;
     1409:   uVar13 = (ulonglong)DAT_140fc601a;
@@ -1180,7 +1136,7 @@ reconstrucao/src/decompiled_01.c:1425:41: error: ‘FiberData’ undeclared (fir
     1428:       if (iVar10 != 0) {
 
 ## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1444
-reconstrucao/src/decompiled_01.c:1444:16: error: ‘DAT_140f23250’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1444:16: error: ‘DAT_140f23250’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1441:     plVar11 = (longlong *)*plVar1;
     1442:     if (plVar11 == plVar1) {
@@ -1191,7 +1147,7 @@ reconstrucao/src/decompiled_01.c:1444:16: error: ‘DAT_140f23250’ undeclared 
     1447:         plVar1 = (longlong *)*plVar11;
 
 ## FUN_140201bf0 */ — reconstrucao/src/decompiled_01.c:1492
-reconstrucao/src/decompiled_01.c:1492:35: error: ‘DAT_140f23818’ undeclared (first use in this function)
+reconstrucao/src/decompiled_01.c:1492:35: error: ‘DAT_140f23818’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1489:         uVar17 = uVar17 & ~(1L << (uVar7 & 0x3f));
     1490:         piVar2 = (int *)((longlong)plVar11 +
@@ -1202,7 +1158,7 @@ reconstrucao/src/decompiled_01.c:1492:35: error: ‘DAT_140f23818’ undeclared 
     1495:         *piVar2 = *piVar2 + -1;
 
 ## FUN_140201e00 */ — reconstrucao/src/decompiled_01.c:1527
-reconstrucao/src/decompiled_01.c:1527:40: error: ‘DAT_140e27f48’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1527:40: error: ‘DAT_140e27f48’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     1524:   undefined1 uVar1;
     1525:   undefined8 uVar2;
@@ -1224,7 +1180,7 @@ reconstrucao/src/decompiled_01.c:1529:5: error: ‘DAT_140e27f44’ undeclared (
     1532:     uVar2 = 1;
 
 ## FUN_140201e00 */ — reconstrucao/src/decompiled_01.c:1531
-reconstrucao/src/decompiled_01.c:1531:22: error: ‘DAT_140e27df0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1531:22: error: ‘DAT_140e27df0’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1528:   if (param_1 == '\0') {
     1529:     DAT_140e27f44 = DAT_140e27f44 + -1;
@@ -1246,7 +1202,7 @@ reconstrucao/src/decompiled_01.c:1531:37: error: ‘DAT_140e27df8’ undeclared 
     1534:   else {
 
 ## FUN_140201e00 */ — reconstrucao/src/decompiled_01.c:1540
-reconstrucao/src/decompiled_01.c:1540:24: error: ‘DAT_140e27e00’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1540:24: error: ‘DAT_140e27e00’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1537:     FUN_14049fa04(0,&DAT_140e27df0,&DAT_140e27df8);
     1538:     uVar2 = 0;
@@ -1268,7 +1224,7 @@ reconstrucao/src/decompiled_01.c:1540:39: error: ‘DAT_140e27e08’ undeclared 
     1543:   KeReleaseSpinLock(&DAT_140e27f48,uVar1);
 
 ## FUN_140201e00 */ — reconstrucao/src/decompiled_01.c:1540
-reconstrucao/src/decompiled_01.c:1540:54: error: ‘DAT_140e27e10’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_01.c:1540:54: error: ‘DAT_140e27e10’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1537:     FUN_14049fa04(0,&DAT_140e27df0,&DAT_140e27df8);
     1538:     uVar2 = 0;
@@ -1277,28 +1233,6 @@ reconstrucao/src/decompiled_01.c:1540:54: error: ‘DAT_140e27e10’ undeclared 
     1541: LAB_140201e85:
     1542:   FUN_140200dcc(DAT_140e27f44);
     1543:   KeReleaseSpinLock(&DAT_140e27f48,uVar1);
-
-## FUN_140201ec0 */ — reconstrucao/src/decompiled_01.c:1568
-reconstrucao/src/decompiled_01.c:1568:12: error: ‘DAT_140fc7ad0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
-
-    1565:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_158;
-    1566:   acStack_138[0] = '\0';
-    1567:   FUN_1406d1200(auStack_120,0,0x100);
-    1568:   puVar1 = DAT_140fc7ad0;
-    1569:   if (DAT_140fc7ad0 == (uint *)0x0) {
-    1570:     return -0x3fffff45;
-    1571:   }
-
-## FUN_140201ec0 */ — reconstrucao/src/decompiled_01.c:1576
-reconstrucao/src/decompiled_01.c:1576:40: error: ‘DAT_140f0cf28’ undeclared (first use in this function)
-
-    1573:   if (*DAT_140fc7ad0 <= uVar2) {
-    1574:     return -0x3ffffff3;
-    1575:   }
-    1576:   uVar3 = KeAcquireSpinLockRaiseToDpc(&DAT_140f0cf28);
-    1577:   iVar4 = FUN_140202010(*(undefined1 *)(param_1 + 0xc),*(undefined4 *)(param_1 + 8),
-    1578:                         puVar1 + (ulonglong)uVar2 * 0x70 + 0x14,acStack_138);
-    1579:   if (-1 < iVar4) {
 
 ## FUN_140201ec0 */ — reconstrucao/src/decompiled_01.c:1593
 reconstrucao/src/decompiled_01.c:1593:75: error: ‘FiberData’ undeclared (first use in this function)
@@ -1321,6 +1255,72 @@ reconstrucao/src/decompiled_01.c:1599:46: error: passing argument 1 of ‘KeFind
     1600:         KeAddProcessorAffinityEx(&uStack_128,uVar6);
     1601:         FUN_14038b9f4(&uStack_128,HalAdjustResourceList,0,0);
     1602:         return iVar4;
+
+## FUN_140201ec0 */ — reconstrucao/src/decompiled_01.c:1601
+reconstrucao/src/decompiled_01.c:1601:23: error: passing argument 1 of ‘FUN_14038b9f4’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1598:         FUN_1406d1200(auStack_120,0,0x100);
+    1599:         uVar6 = KeFindFirstSetLeftAffinityEx(puVar1);
+    1600:         KeAddProcessorAffinityEx(&uStack_128,uVar6);
+    1601:         FUN_14038b9f4(&uStack_128,HalAdjustResourceList,0,0);
+    1602:         return iVar4;
+    1603:       }
+    1604:     }
+
+## FUN_140201ec0 */ — reconstrucao/src/decompiled_01.c:1601
+reconstrucao/src/decompiled_01.c:1601:35: error: passing argument 2 of ‘FUN_14038b9f4’ makes integer from pointer without a cast [-Wint-conversion]
+
+    1598:         FUN_1406d1200(auStack_120,0,0x100);
+    1599:         uVar6 = KeFindFirstSetLeftAffinityEx(puVar1);
+    1600:         KeAddProcessorAffinityEx(&uStack_128,uVar6);
+    1601:         FUN_14038b9f4(&uStack_128,HalAdjustResourceList,0,0);
+    1602:         return iVar4;
+    1603:       }
+    1604:     }
+
+## FUN_140202010 */ — reconstrucao/src/decompiled_01.c:1690
+reconstrucao/src/decompiled_01.c:1690:19: error: assignment to ‘undefined8’ {aka ‘long unsigned int’} from ‘uint *’ {aka ‘unsigned int *’} makes integer from pointer without a cast [-Wint-conversion]
+
+    1687:           } while ((uint *)*puVar5 != puVar1);
+    1688:           *(uint **)puVar8 = puVar1;
+    1689:           *(undefined8 **)(puVar8 + 2) = puVar5;
+    1690:           *puVar5 = puVar8;
+    1691:           *(uint **)(param_3 + 4) = puVar8;
+    1692:           return 0;
+    1693:         }
+
+## FUN_1402021f4 */ — reconstrucao/src/decompiled_01.c:1756
+reconstrucao/src/decompiled_01.c:1756:13: error: ‘DAT_140010410’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+
+    1753:   ulonglong uStack_18;
+    1754:   
+    1755:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+    1756:   puVar2 = &DAT_140010410;
+    1757:   if (param_3 != '\0') {
+    1758:     puVar2 = &DAT_140010420;
+    1759:   }
+
+## FUN_1402021f4 */ — reconstrucao/src/decompiled_01.c:1758
+reconstrucao/src/decompiled_01.c:1758:15: error: ‘DAT_140010420’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+
+    1755:   uStack_18 = DAT_140e0a740 ^ (ulonglong)auStack_78;
+    1756:   puVar2 = &DAT_140010410;
+    1757:   if (param_3 != '\0') {
+    1758:     puVar2 = &DAT_140010420;
+    1759:   }
+    1760:   if (DAT_140e67b01 != '\0') {
+    1761:     auStackX_8[0] = param_1;
+
+## FUN_1402021f4 */ — reconstrucao/src/decompiled_01.c:1760
+reconstrucao/src/decompiled_01.c:1760:7: error: ‘DAT_140e67b01’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+
+    1757:   if (param_3 != '\0') {
+    1758:     puVar2 = &DAT_140010420;
+    1759:   }
+    1760:   if (DAT_140e67b01 != '\0') {
+    1761:     auStackX_8[0] = param_1;
+    1762:     auStackX_10[0] = param_2;
+    1763:     cVar1 = EtwEventEnabled(DAT_140f085e0,puVar2);
 
 ## FUN_1405318f0 */ — reconstrucao/src/decompiled_02.c:157
 reconstrucao/src/decompiled_02.c:157:10: error: request for member ‘_8_8_’ in something not a structure or union
@@ -2665,7 +2665,7 @@ reconstrucao/src/decompiled_03.c:79:16: error: ‘DAT_14001bcb8’ undeclared (f
     82: 
 
 ## FUN_14077f4f8 */ — reconstrucao/src/decompiled_03.c:79
-reconstrucao/src/decompiled_03.c:79:47: error: ‘DAT_140f07240’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:79:47: error: ‘DAT_140f07240’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     76: void FUN_14077f4f8(void)
     77: 
@@ -2698,7 +2698,7 @@ reconstrucao/src/decompiled_03.c:88:37: error: ‘DAT_14001a0b8’ undeclared (f
     91: 
 
 ## FUN_14077f528 */ — reconstrucao/src/decompiled_03.c:88
-reconstrucao/src/decompiled_03.c:88:68: error: ‘DAT_140f06d38’ undeclared (first use in this function)
+reconstrucao/src/decompiled_03.c:88:68: error: ‘DAT_140f06d38’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     85: void FUN_14077f528(void)
     86: 
@@ -2709,7 +2709,7 @@ reconstrucao/src/decompiled_03.c:88:68: error: ‘DAT_140f06d38’ undeclared (f
     91: 
 
 ## FUN_14077f55c */ — reconstrucao/src/decompiled_03.c:97
-reconstrucao/src/decompiled_03.c:97:36: error: ‘DAT_140f06d38’ undeclared (first use in this function)
+reconstrucao/src/decompiled_03.c:97:36: error: ‘DAT_140f06d38’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     94: void FUN_14077f55c(void)
     95: 
@@ -2753,7 +2753,7 @@ reconstrucao/src/decompiled_03.c:146:19: error: passing argument 1 of ‘FUN_140
     149:     FUN_140485460(puVar2);
 
 ## FUN_14077f580 */ — reconstrucao/src/decompiled_03.c:154
-reconstrucao/src/decompiled_03.c:154:17: error: ‘DAT_140f06d48’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:154:17: error: ‘DAT_140f06d48’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     151:   if (iVar1 != -0x3fffff45) {
     152:     return iVar1;
@@ -2808,7 +2808,7 @@ reconstrucao/src/decompiled_03.c:197:19: error: passing argument 1 of ‘FUN_140
     200:     FUN_140485460(puVar2);
 
 ## FUN_14077f660 */ — reconstrucao/src/decompiled_03.c:205
-reconstrucao/src/decompiled_03.c:205:17: error: ‘DAT_140f06d48’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:205:17: error: ‘DAT_140f06d48’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     202:   if (iVar1 != -0x3fffff45) {
     203:     return iVar1;
@@ -2874,7 +2874,7 @@ reconstrucao/src/decompiled_03.c:245:45: error: passing argument 2 of ‘FUN_140
     248:       }
 
 ## FUN_14077f730 */ — reconstrucao/src/decompiled_03.c:255
-reconstrucao/src/decompiled_03.c:255:17: error: ‘DAT_140f06d48’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:255:17: error: ‘DAT_140f06d48’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     252:   if (iVar1 != -0x3fffff45) {
     253:     return iVar1;
@@ -2940,7 +2940,7 @@ reconstrucao/src/decompiled_03.c:293:19: error: passing argument 1 of ‘FUN_140
     296:     FUN_140485460(puVar2);
 
 ## FUN_14077f830 */ — reconstrucao/src/decompiled_03.c:301
-reconstrucao/src/decompiled_03.c:301:17: error: ‘DAT_140f06d48’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:301:17: error: ‘DAT_140f06d48’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     298:   if (iVar1 != -0x3fffff45) {
     299:     return iVar1;
@@ -2973,7 +2973,7 @@ reconstrucao/src/decompiled_03.c:313:3: error: implicit declaration of function 
     316: 
 
 ## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:327
-reconstrucao/src/decompiled_03.c:327:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
+reconstrucao/src/decompiled_03.c:327:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     324:   undefined8 uStack_18;
     325:   undefined8 uStack_10;
@@ -3006,7 +3006,7 @@ reconstrucao/src/decompiled_03.c:331:3: error: implicit declaration of function 
     334:   }
 
 ## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:338
-reconstrucao/src/decompiled_03.c:338:3: error: ‘DAT_140f06bb8’ undeclared (first use in this function)
+reconstrucao/src/decompiled_03.c:338:3: error: ‘DAT_140f06bb8’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     335:   if (lVar2 != 0) {
     336:     *(undefined1 *)(lVar2 + 10) = 1;
@@ -3017,7 +3017,7 @@ reconstrucao/src/decompiled_03.c:338:3: error: ‘DAT_140f06bb8’ undeclared (f
     341:     uStack_10 = 0xffffffffffffffff;
 
 ## FUN_14077f918 */ — reconstrucao/src/decompiled_03.c:342
-reconstrucao/src/decompiled_03.c:342:18: error: ‘DAT_140f06bc0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:342:18: error: ‘DAT_140f06bc0’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     339:   if (DAT_140f06bb8 == 0) {
     340:     uStack_18 = 0;
@@ -3039,7 +3039,7 @@ reconstrucao/src/decompiled_03.c:369:7: error: implicit declaration of function 
     372:         iVar1 = ZwAlpcSendWaitReceivePort(DAT_140f06ba0,0,0,0,lVar3,&uStackX_20,lVar2,&uStack_18);
 
 ## FUN_14077f9b0 */ — reconstrucao/src/decompiled_03.c:372
-reconstrucao/src/decompiled_03.c:372:43: error: ‘DAT_140f06ba0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:372:43: error: ‘DAT_140f06ba0’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     369:       AlpcInitializeMessageAttribute(0x20000000,lVar2,0xa0,auStack_10);
     370:       while( true ) {
@@ -3061,7 +3061,7 @@ reconstrucao/src/decompiled_03.c:374:41: error: passing argument 1 of ‘AlpcGet
     377:         uStack_18 = 0;
 
 ## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:394
-reconstrucao/src/decompiled_03.c:394:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
+reconstrucao/src/decompiled_03.c:394:26: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     391:   ulonglong uVar1;
     392:   longlong lVar2;
@@ -3072,7 +3072,7 @@ reconstrucao/src/decompiled_03.c:394:26: error: ‘DAT_140f06ba8’ undeclared (
     397:   DAT_140f06ba8 = DAT_140f06ba8 | 1;
 
 ## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:406
-reconstrucao/src/decompiled_03.c:406:10: error: ‘DAT_140f06bbc’ undeclared (first use in this function)
+reconstrucao/src/decompiled_03.c:406:10: error: ‘DAT_140f06bbc’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     403:     *(undefined1 *)(lVar2 + 10) = 1;
     404:   }
@@ -3083,7 +3083,7 @@ reconstrucao/src/decompiled_03.c:406:10: error: ‘DAT_140f06bbc’ undeclared (
     409:   }
 
 ## FUN_14077faf0 */ — reconstrucao/src/decompiled_03.c:406
-reconstrucao/src/decompiled_03.c:406:47: error: ‘DAT_140f06bb8’ undeclared (first use in this function)
+reconstrucao/src/decompiled_03.c:406:47: error: ‘DAT_140f06bb8’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     403:     *(undefined1 *)(lVar2 + 10) = 1;
     404:   }
@@ -3094,7 +3094,7 @@ reconstrucao/src/decompiled_03.c:406:47: error: ‘DAT_140f06bb8’ undeclared (
     409:   }
 
 ## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:450
-reconstrucao/src/decompiled_03.c:450:32: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘FUN_140206ba8’?
+reconstrucao/src/decompiled_03.c:450:32: error: ‘DAT_140f06ba8’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     447:   if (uVar5 != 1) {
     448:     if ((uVar5 != 2) && (uVar5 != 3)) {
@@ -3105,7 +3105,7 @@ reconstrucao/src/decompiled_03.c:450:32: error: ‘DAT_140f06ba8’ undeclared (
     453:         DAT_140f06ba8 = DAT_140f06ba8 | 1;
 
 ## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:461
-reconstrucao/src/decompiled_03.c:461:17: error: ‘DAT_140f06bb0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:461:17: error: ‘DAT_140f06bb0’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     458:         if (lVar4 != 0) {
     459:           *(undefined1 *)(lVar4 + 10) = 1;
@@ -3116,7 +3116,7 @@ reconstrucao/src/decompiled_03.c:461:17: error: ‘DAT_140f06bb0’ undeclared (
     464:         ZwClose(lVar4);
 
 ## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:494
-reconstrucao/src/decompiled_03.c:494:54: error: ‘DAT_140f06ba0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:494:54: error: ‘DAT_140f06ba0’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     491:       uStack_d0 = 0;
     492:       uStack_e0 = 0;
@@ -3127,7 +3127,7 @@ reconstrucao/src/decompiled_03.c:494:54: error: ‘DAT_140f06ba0’ undeclared (
     497:         uStack_c8 = 0;
 
 ## FUN_14077fb9c */ — reconstrucao/src/decompiled_03.c:504
-reconstrucao/src/decompiled_03.c:504:32: error: ‘DAT_140fc4ac0’ undeclared (first use in this function)
+reconstrucao/src/decompiled_03.c:504:32: error: ‘DAT_140fc4ac0’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     501:         ZwAlpcAcceptConnectPort(&DAT_140f06bb0,DAT_140f06ba0,0,&uStack_b0);
     502:       }
@@ -3149,7 +3149,7 @@ reconstrucao/src/decompiled_03.c:507:26: error: ‘PTR_DAT_1400dd860’ undeclar
     510:       }
 
 ## FUN_14077fdf8 */ — reconstrucao/src/decompiled_03.c:532
-reconstrucao/src/decompiled_03.c:532:10: error: ‘DAT_140fc4ac0’ undeclared (first use in this function)
+reconstrucao/src/decompiled_03.c:532:10: error: ‘DAT_140fc4ac0’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     529:   uint uVar2;
     530:   
@@ -3171,7 +3171,7 @@ reconstrucao/src/decompiled_03.c:534:22: error: ‘PTR_DAT_1400dd860’ undeclar
     537:   }
 
 ## FUN_14077fdf8 */ — reconstrucao/src/decompiled_03.c:546
-reconstrucao/src/decompiled_03.c:546:31: error: ‘DAT_140f06bb0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:546:31: error: ‘DAT_140f06bb0’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     543:     }
     544:     uVar1 = FUN_14077eff0(*(undefined8 *)(param_1 + 0x30));
@@ -3193,7 +3193,7 @@ reconstrucao/src/decompiled_03.c:554:6: error: conflicting types for ‘FUN_1407
     557:   longlong lVar1;
 
 ## FUN_14077ff18 */ — reconstrucao/src/decompiled_03.c:576
-reconstrucao/src/decompiled_03.c:576:11: error: ‘DAT_140f06bb0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:576:11: error: ‘DAT_140f06bb0’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     573:   undefined1 auStack_c8 [160];
     574:   ulonglong uStack_28;
@@ -3237,7 +3237,7 @@ reconstrucao/src/decompiled_03.c:635:19: error: passing argument 1 of ‘FUN_140
     638:     cVar1 = FUN_140781098(uStackX_18,param_1,param_2,&lStackX_20);
 
 ## TtmNotifyDeviceDeparture */ — reconstrucao/src/decompiled_03.c:645
-reconstrucao/src/decompiled_03.c:645:28: error: ‘DAT_140f06b20’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:645:28: error: ‘DAT_140f06b20’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     642:         FUN_140781cb4(uStackX_18,1);
     643:       }
@@ -3303,7 +3303,7 @@ reconstrucao/src/decompiled_03.c:714:19: error: passing argument 1 of ‘FUN_140
     717:   FUN_1407846c4(param_1,param_2,param_3,cVar1,uVar2,uVar6);
 
 ## TtmNotifyDeviceInput */ — reconstrucao/src/decompiled_03.c:719
-reconstrucao/src/decompiled_03.c:719:28: error: ‘DAT_140f06b20’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:719:28: error: ‘DAT_140f06b20’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     716: LAB_140780448:
     717:   FUN_1407846c4(param_1,param_2,param_3,cVar1,uVar2,uVar6);
@@ -3710,7 +3710,7 @@ reconstrucao/src/decompiled_03.c:1120:1: error: return type defaults to ‘int�
     1123: {
 
 ## FUN_140780db0 */ — reconstrucao/src/decompiled_03.c:1138
-reconstrucao/src/decompiled_03.c:1138:10: error: ‘DAT_140e67b50’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_03.c:1138:10: error: ‘DAT_140e67b50’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     1135:   }
     1136:   else {
@@ -4007,7 +4007,7 @@ reconstrucao/src/decompiled_04.c:235:48: error: request for member ‘_1_7_’ i
     238:   if ((lStack_2b0 != 0) && ((ushort)uStack_2b8 < 3)) {
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:271
-reconstrucao/src/decompiled_04.c:271:20: error: ‘DAT_140f8c958’ undeclared (first use in this function)
+reconstrucao/src/decompiled_04.c:271:20: error: ‘DAT_140f8c958’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     268:   plStack_208 = plStack_2a0;
     269:   uStack_220 = 2;
@@ -4018,7 +4018,7 @@ reconstrucao/src/decompiled_04.c:271:20: error: ‘DAT_140f8c958’ undeclared (
     274:       cVar4 = RtlPrefixUnicodeString(auStack_240,lVar11 + 0x28);
 
 ## FUN_140ac2e00 */ — reconstrucao/src/decompiled_04.c:272
-reconstrucao/src/decompiled_04.c:272:60: error: ‘DAT_140f8adc0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_04.c:272:60: error: ‘DAT_140f8adc0’ undeclared (first use in this function); did you mean ‘DAT_140fc7ad0’?
 
     269:   uStack_220 = 2;
     270:   uStack_21c = 3;
@@ -4182,17 +4182,6 @@ reconstrucao/src/decompiled_04.c:656:44: error: ‘DAT_14001e1b8’ undeclared (
     658:     if (cVar4 != '\0') {
     659:       if (DAT_140fc7ad0 == (uint *)0x0) {
 
-## FUN_140ac393c */ — reconstrucao/src/decompiled_04.c:657
-reconstrucao/src/decompiled_04.c:657:14: error: ‘DAT_140fc7ad0’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
-
-    654:   
-    655:   if (DAT_140e67b01 != '\0') {
-    656:     cVar4 = EtwEventEnabled(DAT_140f085e0,&DAT_14001e1b8);
-    657:     puVar3 = DAT_140fc7ad0;
-    658:     if (cVar4 != '\0') {
-    659:       if (DAT_140fc7ad0 == (uint *)0x0) {
-    660:         auStackX_8[0] = 0;
-
 ## FUN_140ac3ab0 */ — reconstrucao/src/decompiled_04.c:759
 reconstrucao/src/decompiled_04.c:759:11: error: implicit declaration of function ‘FUN_1404a86a0’; did you mean ‘FUN_1404a8660’? [-Wimplicit-function-declaration]
 
@@ -4293,7 +4282,7 @@ reconstrucao/src/decompiled_04.c:798:27: error: request for member ‘_4_4_’ i
     801: LAB_140ac3cc3:
 
 ## FUN_140ac3d18 */ — reconstrucao/src/decompiled_04.c:822
-reconstrucao/src/decompiled_04.c:822:14: error: ‘DAT_140f09690’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_04.c:822:14: error: ‘DAT_140f09690’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     819: void FUN_140ac3d18(undefined4 *param_1)
     820: 
@@ -4392,7 +4381,7 @@ reconstrucao/src/decompiled_04.c:877:12: error: assignment to ‘undefined8’ {
     880: 
 
 ## FUN_140ac3ddc */ — reconstrucao/src/decompiled_04.c:893
-reconstrucao/src/decompiled_04.c:893:18: error: ‘DAT_140f0f410’ undeclared (first use in this function); did you mean ‘DAT_140e0a740’?
+reconstrucao/src/decompiled_04.c:893:18: error: ‘DAT_140f0f410’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
 
     890:   undefined1 auStack_28 [8];
     891:   undefined1 auStack_20 [24];
@@ -4401,4 +4390,15 @@ reconstrucao/src/decompiled_04.c:893:18: error: ‘DAT_140f0f410’ undeclared (
     894:   puVar4 = auStack_28;
     895:   do {
     896:     puVar3 = DAT_140f0f430;
+
+## FUN_140ac3ddc */ — reconstrucao/src/decompiled_04.c:896
+reconstrucao/src/decompiled_04.c:896:14: error: ‘DAT_140f0f430’ undeclared (first use in this function); did you mean ‘DAT_140f0cf28’?
+
+    893:   FUN_14042d154(&DAT_140f0f410);
+    894:   puVar4 = auStack_28;
+    895:   do {
+    896:     puVar3 = DAT_140f0f430;
+    897:     if ((undefined8 **)DAT_140f0f430 == &DAT_140f0f430) {
+    898: LAB_140ac3e2e:
+    899:       *(undefined8 *)(puVar4 + -8) = 0x140ac3e3a;
 
