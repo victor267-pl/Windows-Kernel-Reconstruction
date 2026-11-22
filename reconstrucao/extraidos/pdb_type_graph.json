@@ -19,6 +19,76 @@
   "complete_udt_count": 1991,
   "forward_udt_count": 1713,
   "fieldlist_count": 2383,
+  "layout_manifest_comparison": {
+    "_EPROCESS": {
+      "pdb_size_bytes": 2112,
+      "manifest_size_bytes": 2112,
+      "size_matches": true,
+      "pdb_named_member_entries": 264,
+      "manifest_named_field_entries": 151,
+      "exact_name_and_offset_matches": 150,
+      "manifest_fields_missing_from_pdb": 1,
+      "pdb_fields_not_in_manifest": 114,
+      "same_name_offset_conflicts": [
+        {
+          "field": "LastAppState",
+          "manifest_offset": 1703,
+          "pdb_offsets": [
+            1696
+          ]
+        }
+      ],
+      "same_name_offset_conflict_count": 1
+    },
+    "_ETHREAD": {
+      "pdb_size_bytes": 1944,
+      "manifest_size_bytes": 1944,
+      "size_matches": true,
+      "pdb_named_member_entries": 149,
+      "manifest_named_field_entries": 66,
+      "exact_name_and_offset_matches": 66,
+      "manifest_fields_missing_from_pdb": 0,
+      "pdb_fields_not_in_manifest": 83,
+      "same_name_offset_conflicts": [],
+      "same_name_offset_conflict_count": 0
+    },
+    "_KPROCESS": {
+      "pdb_size_bytes": 456,
+      "manifest_size_bytes": 456,
+      "size_matches": true,
+      "pdb_named_member_entries": 65,
+      "manifest_named_field_entries": 52,
+      "exact_name_and_offset_matches": 52,
+      "manifest_fields_missing_from_pdb": 0,
+      "pdb_fields_not_in_manifest": 13,
+      "same_name_offset_conflicts": [],
+      "same_name_offset_conflict_count": 0
+    },
+    "_KTHREAD": {
+      "pdb_size_bytes": 1216,
+      "manifest_size_bytes": 1216,
+      "size_matches": true,
+      "pdb_named_member_entries": 237,
+      "manifest_named_field_entries": 108,
+      "exact_name_and_offset_matches": 108,
+      "manifest_fields_missing_from_pdb": 0,
+      "pdb_fields_not_in_manifest": 129,
+      "same_name_offset_conflicts": [],
+      "same_name_offset_conflict_count": 0
+    },
+    "_CONTEXT": {
+      "pdb_size_bytes": 1232,
+      "manifest_size_bytes": 1232,
+      "size_matches": true,
+      "pdb_named_member_entries": 64,
+      "manifest_named_field_entries": 45,
+      "exact_name_and_offset_matches": 45,
+      "manifest_fields_missing_from_pdb": 0,
+      "pdb_fields_not_in_manifest": 19,
+      "same_name_offset_conflicts": [],
+      "same_name_offset_conflict_count": 0
+    }
+  },
   "types": [
     {
       "index": 4096,
